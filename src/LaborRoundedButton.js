@@ -97,7 +97,7 @@ export default class LaborRoundedButton extends BodyComponent {
                     'width': this.getAttribute('width'),
                     'height': this.calculateVmlHeight(),
                   },
-                  'arcsize': this.getAttribute('arcsize') ? this.getAttribute('arcsize') : '50%',
+                  'arcsize': '50%',
 
                   'stroked': bordered,
                   'strokecolor': this.getAttribute('border-color'),
@@ -118,43 +118,55 @@ export default class LaborRoundedButton extends BodyComponent {
                       },
                     })}
                     >
-                        ${this.getContent()}
+                      <![endif]-->
+                      <!--[if !mso]><!-->
+                        <span ${this.htmlAttributes({
+                          style: {
+                            'background-color': filled
+                              ? this.getAttribute('background-color')
+                              : 'transparent',
+                            'border-radius': '30px',
+                            'border': bordered
+                              ? this.getAttribute('border-width') +
+                                ' solid ' +
+                                this.getAttribute('border-color')
+                              : 'none',
+
+                            'display': 'inline-block',
+                            'text-align': 'center',
+                          },
+                        })}
+                        >
+                          <!--<![endif]-->
+                            <a ${this.htmlAttributes({
+                              href: this.getAttribute('href'),
+                              target: '_blank',
+                              style: {
+                                'color': this.getAttribute('color'),
+
+                                'font-family': this.getAttribute('font-family'),
+                                'font-size': this.getAttribute('font-size'),
+                                'line-height': this.getAttribute('line-height'),
+                                'font-weight': this.getAttribute('font-weight'),
+
+                                'padding': this.getAttribute('inner-padding'),
+                                'display': 'inline-block',
+                                'width': this.calculateAWidth(this.getAttribute('width')),
+
+                                'text-align': 'center',
+                                'text-decoration': 'none',
+                              },
+                            })}
+                            >
+                              ${this.getContent()}
+                            </a>
+                          <!--[if !mso]><!-->
+                        </span>
+                      <!--<![endif]-->
+                      <!--[if mso]>
                     </center>
                 </v:roundrect>
             <![endif]-->
-            <!--[if !mso]><!-->
-                <a ${this.htmlAttributes({
-                  href: this.getAttribute('href'),
-                  target: '_blank',
-                  style: {
-                    'color': this.getAttribute('color'),
-                    'background-color': filled
-                      ? this.getAttribute('background-color')
-                      : 'transparent',
-                    'border-radius':  this.getAttribute('border-radius') ? this.getAttribute('border-radius') : '30px',
-                    'border': bordered
-                      ? this.getAttribute('border-width') +
-                        ' solid ' +
-                        this.getAttribute('border-color')
-                      : 'none',
-
-                    'font-family': this.getAttribute('font-family'),
-                    'font-size': this.getAttribute('font-size'),
-                    'line-height': this.getAttribute('line-height'),
-                    'font-weight': this.getAttribute('font-weight'),
-
-                    'padding': this.getAttribute('inner-padding'),
-                    'display': 'inline-block',
-                    'width': this.calculateAWidth(this.getAttribute('width')),
-
-                    'text-align': 'center',
-                    'text-decoration': 'none',
-                  },
-                })}
-                >
-                    ${this.getContent()}
-                </a>
-            <!--<![endif]-->
         `
   }
 }
