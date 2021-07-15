@@ -1,8 +1,14 @@
 import fs from 'fs'
 import glob from 'glob'
 import gulp from 'gulp'
+import watch from 'gulp-watch'
 import babel from 'gulp-babel'
 import path from 'path'
+import { registerComponent } from 'mjml-core'
+import mjml2html from 'mjml'
+import pretty from 'pretty'
+import through from 'through2'
+import collect from 'gulp-collect'
 
 const indexJSPath = './src/index.js'
 const libDestination = './lib'
@@ -40,3 +46,50 @@ const removeIndexJs = (cb) => {
 const compileComponents = () => gulp.src(srcPattern).pipe(babel()).pipe(gulp.dest(libDestination))
 
 exports.build = gulp.series(clean, generateIndexJS, compileComponents, removeIndexJs)
+
+const compileAndRegisterComponents = (files) => {
+  if (typeof files == 'object') {
+    for (let idx in files) {
+      files[idx] = './' + path.relative(__dirname, files[idx]).replace('\\', '/')
+    }
+  }
+
+  return gulp
+    .src(files)
+    .pipe(babel())
+    .pipe(gulp.dest(libDestination))
+    .pipe(collect.list((files) => files))
+    .pipe(
+      through.obj((file, enc, cb) => {
+        delete require.cache[file.path]
+        if (filterNonComponent(file.path)) {
+          registerComponent(require(file.path).default)
+        }
+        cb(null, file)
+      })
+    )
+}
+
+const compileTemplates = (files) => {
+  return gulp.src(files).pipe(
+    through.obj((file, enc, cb) => {
+      const data = fs.readFileSync(file.path, enc)
+      const parsed = path.parse(file.path)
+      const result = pretty(mjml2html(data).html, { ocd: true })
+      fs.writeFileSync(path.normalize(parsed.dir + '/' + parsed.name + '.html'), result)
+      cb(null, file)
+    })
+  )
+}
+
+exports.watch = () => {
+  clean(() => {})
+  return compileAndRegisterComponents(srcPattern).on('end', () => {
+    watch(srcPattern, (cb) => {
+      return compileAndRegisterComponents(cb.history)
+    })
+    watch('src/**/*.mjml', (cb) => {
+      return compileTemplates(cb.history)
+    })
+  })
+}

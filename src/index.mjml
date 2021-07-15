@@ -1,0 +1,306 @@
+<mjml owa="desktop">
+  <mj-head>
+    <mj-title>SUBJECT</mj-title>
+    <mj-preview>PREHEADER</mj-preview>
+
+    <mj-font href="https://use.typekit.net/onr8tbr.css" name="adobe-clean" />
+    <mj-attributes>
+      <mj-class name="body-bg" background-color="#eaeaea" />
+      <mj-class name="footer-bg" background-color="#f5f5f5" />
+      <mj-class name="content-bg" background-color="#010619" />
+
+      <mj-all
+        font-family="'adobe-clean', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'"
+        padding="0"
+      />
+
+      <!-- TEMPORARY START -->
+      <!-- for this template only -->
+      <mj-class name="content-bg-alt" background-color="#ffffff" />
+      <!-- TEMPORARY END -->
+    </mj-attributes>
+    <mj-breakpoint width="480px" />
+    <mj-style> a { text-decoration: none; color: inherit; } </mj-style>
+  </mj-head>
+  <mj-body mj-class="body-bg">
+    <!-- HEADER START -->
+    <!--
+			<labor-adobe-header>
+				src -> URL to the product image | you can find a list of available already hosted images in "product-images.txt"
+				header-bg-class -> name of the mj-class for the background | DEFAULT: content-bg
+				height -> height of the product image | ENUM(28px, 30px, 34px) | DEFAULT: 30px
+					The top and bottom padding will be computed depending on the height and if you have a top border or not
+				width -> width of the product image (Remember that most of the images are @2x, so you have to half the width of the product image)
+				href -> Set a URL here to let the image link to somewhere
+				title -> title for the product image
+				target -> target for the link | DEFAULT: _blank
+				border -> Set here if you want to have the top red border for operational emails | BOOL | DEFAULT: false
+				padding-bottom-overwrite -> As stated with the height the padding is computed. If you want to overwrite the bottom-padding you can do that here
+		-->
+    <labor-adobe-header
+      src="https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_creative_cloud.white.442x60.png"
+      height="30px"
+      width="221px"
+    />
+    <labor-adobe-header
+      header-bg-class="content-bg"
+      src="https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_creative_cloud.white.442x60.png"
+      height="30px"
+      width="221px"
+      padding-bottom-overwrite="0"
+    />
+    <!-- HEADER END -->
+
+    <labor-adobe-section with-padding="false" section-bg-class="content-bg" padding-bottom="0">
+      <mj-column>
+        <labor-responsive-image
+          src="https://landing.adobe.com/dam/uploads/2020/emea/20200826.CCT.header01.desktop_v2.jpg"
+          src-mobile="https://landing.adobe.com/dam/uploads/2020/emea/20200826.CCT.header01.mobile_v2.jpg"
+          fluid-on-mobile="true"
+          width="600px"
+          align="left"
+        />
+      </mj-column>
+    </labor-adobe-section>
+
+    <labor-adobe-section with-padding="true" padding-bottom="100px">
+      <mj-column>
+        <labor-adobe-typo-displayone on-background="true" type="normal" responsive="true"
+          >Display 1</labor-adobe-typo-displayone
+        >
+        <labor-adobe-typo-displayone on-background="true" type="quiet" responsive="true"
+          >Display 1 Quiet</labor-adobe-typo-displayone
+        >
+        <labor-adobe-typo-displayone
+          on-background="true"
+          type="bold"
+          responsive="true"
+          padding-bottom="40px"
+          >Display 1 Bold</labor-adobe-typo-displayone
+        >
+
+        <labor-adobe-typo-displaytwo on-background="true" type="normal"
+          >Display 2</labor-adobe-typo-displaytwo
+        >
+        <labor-adobe-typo-displaytwo on-background="true" type="quiet"
+          >Display 2 Quiet</labor-adobe-typo-displaytwo
+        >
+        <labor-adobe-typo-displaytwo on-background="true" type="bold" padding-bottom="40px"
+          >Display 2 Bold</labor-adobe-typo-displaytwo
+        >
+
+        <labor-adobe-typo-displaythree on-background="true" type="normal"
+          >Display 3</labor-adobe-typo-displaythree
+        >
+        <labor-adobe-typo-displaythree on-background="true" type="quiet"
+          >Display 3 Quiet</labor-adobe-typo-displaythree
+        >
+        <labor-adobe-typo-displaythree on-background="true" type="bold" padding-bottom="40px"
+          >Display 3 Bold</labor-adobe-typo-displaythree
+        >
+
+        <labor-adobe-typo-headingone on-background="true" type="normal"
+          >Heading 1</labor-adobe-typo-headingone
+        >
+        <labor-adobe-typo-headingone on-background="true" type="quiet"
+          >Heading 1 Quiet</labor-adobe-typo-headingone
+        >
+        <labor-adobe-typo-headingone on-background="true" type="bold" padding-bottom="40px"
+          >Heading 1 Bold</labor-adobe-typo-headingone
+        >
+
+        <labor-adobe-typo-headingtwo on-background="true" type="normal"
+          >Heading 2</labor-adobe-typo-headingtwo
+        >
+        <labor-adobe-typo-headingtwo on-background="true" type="quiet"
+          >Heading 2 Quiet</labor-adobe-typo-headingtwo
+        >
+        <labor-adobe-typo-headingtwo on-background="true" type="bold" padding-bottom="40px"
+          >Heading 2 Bold</labor-adobe-typo-headingtwo
+        >
+
+        <labor-adobe-typo-headingthree on-background="true" padding-bottom="40px"
+          >Heading 3</labor-adobe-typo-headingthree
+        >
+
+        <labor-adobe-typo-headingfour on-background="true" padding-bottom="40px"
+          >Heading 4</labor-adobe-typo-headingfour
+        >
+
+        <labor-adobe-typo-body on-background="true" padding-bottom="7px"
+          >Body copy. Body copy.Body copy. Body copy.Body copy. Body copy.Body copy. Body copy.Body
+          copy. Body copy.</labor-adobe-typo-body
+        >
+        <labor-adobe-typo-body on-background="true" padding-bottom="40px"
+          >And this is a paragraph with 7px as padding-bottom of the upper
+          paragraph.</labor-adobe-typo-body
+        >
+
+        <labor-adobe-typo-caption on-background="true" padding-bottom="40px"
+          >Caption copy | Use this one for little details or for image
+          captions</labor-adobe-typo-caption
+        >
+
+        <labor-adobe-typo-detail type="normal" on-background="true" padding-bottom="40px"
+          >Detail copy | Use the detail style sparingly, only for the quietest level of hierarchy.
+          For example, a table column header or subcategories within a block of text can use the
+          detail style. Most emails will not use this style.</labor-adobe-typo-detail
+        >
+
+        <labor-adobe-typo-detail type="light" on-background="true" padding-bottom="40px"
+          >Detail light copy | Use the detail style sparingly, only for the quietest level of
+          hierarchy. For example, a table column header or subcategories within a block of text can
+          use the detail style. Most emails will not use this style.</labor-adobe-typo-detail
+        >
+
+        <labor-adobe-rounded-button type="cta" padding-bottom="10px" href="https://google.com"
+          >CTA cta</labor-adobe-rounded-button
+        >
+        <labor-adobe-rounded-button type="quiet" padding-bottom="10px" href="https://google.com"
+          >CTA quiet</labor-adobe-rounded-button
+        >
+        <labor-adobe-rounded-button type="inverted" padding-bottom="40px" href="https://google.com"
+          >CTA inverted</labor-adobe-rounded-button
+        >
+
+        <labor-adobe-secondary-cta type="normal" padding-bottom="10px" href="#"
+          >Secondary CTA normal</labor-adobe-secondary-cta
+        >
+        <labor-adobe-secondary-cta type="quiet" padding-bottom="10px" href="#"
+          >Secondary CTA quiet</labor-adobe-secondary-cta
+        >
+        <labor-adobe-secondary-cta type="inverted" padding-bottom="40px" href="#"
+          >Secondary CTA inverted</labor-adobe-secondary-cta
+        >
+      </mj-column>
+    </labor-adobe-section>
+
+    <labor-adobe-header
+      src="https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_education_exchange.red.658x60.png"
+      height="28px"
+      width="307px"
+      header-bg-class="content-bg-alt"
+    />
+    <labor-adobe-section
+      with-padding="false"
+      section-bg-class="content-bg-alt"
+      padding-bottom="33px"
+    >
+      <mj-column>
+        <labor-responsive-image
+          src="https://landing.adobe.com/dam/uploads/2020/na/20200819.edex.en.email.1_v2.jpg"
+          fluid-on-mobile="true"
+          width="600px"
+          align="left"
+        />
+      </mj-column>
+    </labor-adobe-section>
+
+    <labor-adobe-section
+      with-padding="true"
+      padding-bottom="100px"
+      section-bg-class="content-bg-alt"
+    >
+      <mj-column>
+        <labor-adobe-typo-displayone type="normal" responsive="true"
+          >Display 1</labor-adobe-typo-displayone
+        >
+        <labor-adobe-typo-displayone type="quiet" responsive="true"
+          >Display 1 Quiet</labor-adobe-typo-displayone
+        >
+        <labor-adobe-typo-displayone type="bold" responsive="true" padding-bottom="40px"
+          >Display 1 Bold</labor-adobe-typo-displayone
+        >
+
+        <labor-adobe-typo-displaytwo type="normal">Display 2</labor-adobe-typo-displaytwo>
+        <labor-adobe-typo-displaytwo type="quiet">Display 2 Quiet</labor-adobe-typo-displaytwo>
+        <labor-adobe-typo-displaytwo type="bold" padding-bottom="40px"
+          >Display 2 Bold</labor-adobe-typo-displaytwo
+        >
+
+        <labor-adobe-typo-displaythree type="normal">Display 3</labor-adobe-typo-displaythree>
+        <labor-adobe-typo-displaythree type="quiet">Display 3 Quiet</labor-adobe-typo-displaythree>
+        <labor-adobe-typo-displaythree type="bold" padding-bottom="40px"
+          >Display 3 Bold</labor-adobe-typo-displaythree
+        >
+
+        <labor-adobe-typo-headingone type="normal">Heading 1</labor-adobe-typo-headingone>
+        <labor-adobe-typo-headingone type="quiet">Heading 1 Quiet</labor-adobe-typo-headingone>
+        <labor-adobe-typo-headingone type="bold" padding-bottom="40px"
+          >Heading 1 Bold</labor-adobe-typo-headingone
+        >
+
+        <labor-adobe-typo-headingtwo type="normal">Heading 2</labor-adobe-typo-headingtwo>
+        <labor-adobe-typo-headingtwo type="quiet">Heading 2 Quiet</labor-adobe-typo-headingtwo>
+        <labor-adobe-typo-headingtwo type="bold" padding-bottom="40px"
+          >Heading 2 Bold</labor-adobe-typo-headingtwo
+        >
+
+        <labor-adobe-typo-headingthree padding-bottom="40px"
+          >Heading 3</labor-adobe-typo-headingthree
+        >
+
+        <labor-adobe-typo-headingfour padding-bottom="40px">Heading 4</labor-adobe-typo-headingfour>
+
+        <labor-adobe-typo-body padding-bottom="7px"
+          >Body copy. Body copy.Body copy. Body copy.Body copy. Body copy.Body copy. Body copy.Body
+          copy. Body copy.</labor-adobe-typo-body
+        >
+        <labor-adobe-typo-body padding-bottom="40px"
+          >And this is a paragraph with 7px as padding-bottom of the upper
+          paragraph.</labor-adobe-typo-body
+        >
+
+        <labor-adobe-typo-caption padding-bottom="40px"
+          >Caption copy | Use this one for little details or for image
+          captions</labor-adobe-typo-caption
+        >
+
+        <labor-adobe-typo-detail type="normal" padding-bottom="40px"
+          >Detail copy | Use the detail style sparingly, only for the quietest level of hierarchy.
+          For example, a table column header or subcategories within a block of text can use the
+          detail style. Most emails will not use this style.</labor-adobe-typo-detail
+        >
+
+        <labor-adobe-typo-detail type="light" padding-bottom="40px"
+          >Detail light copy | Use the detail style sparingly, only for the quietest level of
+          hierarchy. For example, a table column header or subcategories within a block of text can
+          use the detail style. Most emails will not use this style.</labor-adobe-typo-detail
+        >
+
+        <labor-adobe-rounded-button type="cta" padding-bottom="10px" href="#"
+          >CTA cta</labor-adobe-rounded-button
+        >
+        <labor-adobe-rounded-button type="quiet" padding-bottom="40px" href="#"
+          >CTA quiet</labor-adobe-rounded-button
+        >
+
+        <labor-adobe-secondary-cta type="normal" padding-bottom="10px" href="#"
+          >Secondary CTA normal</labor-adobe-secondary-cta
+        >
+        <labor-adobe-secondary-cta type="quiet" padding-bottom="40px" href="#"
+          >Secondary CTA quiet</labor-adobe-secondary-cta
+        >
+      </mj-column>
+    </labor-adobe-section>
+
+    <labor-adobe-footer
+      facebook-url="#"
+      twitter-url="#"
+      instagram-url="#"
+      footer-bg-class="footer-bg"
+    >
+      <labor-adobe-typo-legal padding-bottom="10px">
+        Here comes the footer.
+      </labor-adobe-typo-legal>
+      <labor-adobe-typo-legal padding-bottom="10px"> This is a paragraph. </labor-adobe-typo-legal>
+      <labor-adobe-typo-legal padding-bottom="10px">
+        Use the class labor-adobe-footer-link for
+        <a href="#" class="labor-adobe-footer-link">links</a>.
+      </labor-adobe-typo-legal>
+      <labor-adobe-typo-legal>
+        And the last paragraph has no padding-bottom
+      </labor-adobe-typo-legal>
+    </labor-adobe-footer>
+  </mj-body>
+</mjml>
