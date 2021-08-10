@@ -1,6 +1,6 @@
 import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
-import LaborHurSection from './LaborGwaSection';
+import LaborHurSection from './LaborHurSection';
 
 registerDependencies({
   'mj-body': ['labor-hur-image'],
