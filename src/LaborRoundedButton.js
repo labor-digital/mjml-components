@@ -91,7 +91,6 @@ export default class LaborRoundedButton extends BodyComponent {
                 <v:roundrect ${this.htmlAttributes({
                   'xmlns:v': 'urn:schemas-microsoft-com:vml',
                   'xmlns:w': 'urn:schemas-microsoft-com:office:word',
-                  'href': this.getAttribute('href'),
                   'style': {
                     'v-text-anchor': 'middle',
                     'width': this.getAttribute('width'),
