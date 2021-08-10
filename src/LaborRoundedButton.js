@@ -25,6 +25,8 @@ export default class LaborRoundedButton extends BodyComponent {
     'background-color': 'color',
     'border-color': 'color',
     'border-width': 'unit(px)',
+    'border-radius': 'string',
+    'arcsize': 'string'
   }
 
   static defaultAttributes = {
@@ -42,6 +44,8 @@ export default class LaborRoundedButton extends BodyComponent {
     'background-color': '',
     'border-color': '',
     'border-width': '2px',
+    'border-radius': '30px',
+    'arcsize': '50%'
   }
 
   calculateAWidth(width) {
@@ -93,7 +97,7 @@ export default class LaborRoundedButton extends BodyComponent {
                     'width': this.getAttribute('width'),
                     'height': this.calculateVmlHeight(),
                   },
-                  'arcsize': '50%',
+                  'arcsize': this.getAttribute('arcsize') ? this.getAttribute('arcsize') : '50%',
 
                   'stroked': bordered,
                   'strokecolor': this.getAttribute('border-color'),
@@ -127,7 +131,7 @@ export default class LaborRoundedButton extends BodyComponent {
                     'background-color': filled
                       ? this.getAttribute('background-color')
                       : 'transparent',
-                    'border-radius': '30px',
+                    'border-radius':  this.getAttribute('border-radius') ? this.getAttribute('border-radius') : '30px',
                     'border': bordered
                       ? this.getAttribute('border-width') +
                         ' solid ' +
