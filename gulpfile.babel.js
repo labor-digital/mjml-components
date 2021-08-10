@@ -23,15 +23,16 @@ const filesToIgnore = ['AdobeProductMapping.js', 'index.js']
 const filterNonComponent = (file) => !filesToIgnore.includes(path.basename(file))
 
 const generateIndexJS = (cb) => {
-  const fileContent = glob
+  let fileContent = ""
+  fileContent += glob
     .sync(srcPattern)
     .filter(filterNonComponent)
     .map((filePath) => {
       const relativePath = path.dirname(filePath).replace('src', '')
       const fileName = path.basename(filePath, '.js')
-      const from = './' + path.join(relativePath, fileName)
+      const from = '.' + path.sep + path.join('.', relativePath, fileName)
 
-      return `export { default as ${fileName}} from '${from}'`
+      return `export { default as ${fileName}} from '${from.replace(/\\/g, '\\\\')}'`
     })
     .join('\n')
   fs.writeFileSync(indexJSPath, fileContent)
@@ -42,10 +43,6 @@ const removeIndexJs = (cb) => {
   fs.unlinkSync(indexJSPath)
   cb()
 }
-
-const compileComponents = () => gulp.src(srcPattern).pipe(babel()).pipe(gulp.dest(libDestination))
-
-exports.build = gulp.series(clean, generateIndexJS, compileComponents, removeIndexJs)
 
 const compileAndRegisterComponents = (files) => {
   if (typeof files == 'object') {
@@ -82,13 +79,27 @@ const compileTemplates = (files) => {
   )
 }
 
+exports.build = gulp.series(
+    clean,
+    generateIndexJS,
+    () => {
+      return compileAndRegisterComponents(srcPattern);
+    },
+    removeIndexJs,
+    () => {
+      return compileTemplates('src/index.mjml');
+    }
+);
+
 exports.watch = () => {
   clean(() => {})
+  generateIndexJS(() => {})
   return compileAndRegisterComponents(srcPattern).on('end', () => {
+    removeIndexJs(() => {})
     watch(srcPattern, (cb) => {
       return compileAndRegisterComponents(cb.history)
     })
-    watch('src/**/*.mjml', (cb) => {
+    watch('src/index.mjml', (cb) => {
       return compileTemplates(cb.history)
     })
   })
