@@ -131,7 +131,7 @@ export default class AdobeProductMapping {
     },
     experience_cloud: {
       name: 'Adobe Experience Cloud',
-      width: 'px',
+      width: '492px',
       images: {
         white:
           'https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_experience_cloud.white.492x60.png',
@@ -235,6 +235,16 @@ export default class AdobeProductMapping {
           'https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_character_animator.white.532x60.png',
         black:
           'https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_character_animator.black.532x60.png',
+      },
+    },
+    twitter_ace: {
+      name: '#AdobeEduCreative on Twitter',
+      width: '600',
+      images: {
+        white:
+            'https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/twitter_educator.600x60.png',
+        black:
+            'https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/twitter_educator.600x60.png',
       },
     },
   }
