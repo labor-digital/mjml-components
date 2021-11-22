@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/labor-digital/mjml-components/compare/v1.3.0...v1.4.0) (2021-11-22)
+
+
+### Features
+
+* added twitter product for ace newsletter ([2cd719f](https://github.com/labor-digital/mjml-components/commit/2cd719f674387133e785a6b417930a48480e8ec1))
+
 ## [1.3.0](https://github.com/labor-digital/mjml-components/compare/v1.2.1...v1.3.0) (2021-11-22)
 
 
