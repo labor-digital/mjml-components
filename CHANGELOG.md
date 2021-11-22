@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/labor-digital/mjml-components/compare/v1.1.1...v1.2.0) (2021-11-22)
+
+
+### Features
+
+* added image-href to edex article ([003e21b](https://github.com/labor-digital/mjml-components/commit/003e21b92bcad3782d83c21f220c0f67aaa98a80))
+
 ### [1.1.1](https://github.com/labor-digital/mjml-components/compare/v1.1.0...v1.1.1) (2021-08-10)
 
 
