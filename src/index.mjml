@@ -37,6 +37,13 @@
 				border -> Set here if you want to have the top red border for operational emails | BOOL | DEFAULT: false
 				padding-bottom-overwrite -> As stated with the height the padding is computed. If you want to overwrite the bottom-padding you can do that here
 		-->
+    <labor-adobe-header-badge
+      src="https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_creative_educator.red.616x60.png"
+      height="22px"
+      width="226px"
+      badge-src="https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_creative_educator_badge.color.276x280.png"
+      badge-width="40px"
+    />
     <labor-adobe-header
       src="https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_creative_cloud.white.442x60.png"
       height="30px"
@@ -49,6 +56,7 @@
       width="221px"
       padding-bottom-overwrite="0"
     />
+
     <!-- HEADER END -->
 
     <labor-adobe-section with-padding="false" section-bg-class="content-bg" padding-bottom="0">

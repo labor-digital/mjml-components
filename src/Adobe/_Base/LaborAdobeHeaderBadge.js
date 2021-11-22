@@ -1,0 +1,95 @@
+import {registerDependencies} from 'mjml-validator'
+import {BodyComponent} from 'mjml-core'
+import LaborAdobeSection from './LaborAdobeSection'
+
+registerDependencies({
+    'mj-body': ['labor-adobe-header-badge'],
+    'labor-adobe-header-badge': [],
+})
+
+export default class LaborAdobeHeaderBadge extends BodyComponent {
+    static endingTag = true
+
+    static allowedAttributes = {
+        'src': 'string',
+        'header-bg-class': 'string',
+        'height': 'enum(22px, 28px, 30px, 34px)',
+        'width': 'unit(px,%)',
+        'href': 'string',
+        'title': 'string',
+        'alt': 'string',
+        'target': 'string',
+        'border': 'boolean',
+        'padding-bottom-overwrite': 'unit(px)',
+        'with-padding': 'boolean',
+        'badge-src': 'string',
+        'badge-width': 'unit(px,%)'
+    }
+
+    static defaultAttributes = {
+        'src': '',
+        'header-bg-class': 'content-bg',
+        'height': '30px',
+        'width': 'auto',
+        'href': '',
+        'target': '_blank',
+        'border': false,
+        'with-padding': true,
+        'badge-src': '',
+        'badge-width': '60px'
+    }
+
+    headStyle = (breakpoint) => `
+      @media only screen and (max-width:${breakpoint}) {
+        .labor-adobe-header-responsive {
+          padding-left: ${LaborAdobeSection.mobileLeftRightPadding} !important;
+        }
+      }
+    `
+
+    render() {
+        const imgHeight = parseInt(this.getAttribute('height').replace('px', ''))
+        let padding = (124 - imgHeight - (this.getAttribute('border') ? 4 : 0)) / 2
+
+        let imgAttrs = {
+            'src': this.getAttribute('src'),
+            'height': this.getAttribute('height'),
+            'width': this.getAttribute('width'),
+            'href': this.getAttribute('href'),
+            'target': this.getAttribute('target'),
+            'align': 'left',
+            'css-class': this.getAttribute('with-padding') ? 'labor-adobe-header-responsive' : '',
+            'padding-top': padding + 'px',
+            'padding-bottom': this.getAttribute('padding-bottom-overwrite')
+                ? this.getAttribute('padding-bottom-overwrite')
+                : padding + 'px',
+            'padding-left': this.getAttribute('with-padding')
+                ? LaborAdobeSection.desktopLeftRightPadding
+                : '0',
+            'padding-right': '0'
+        }
+        if (this.getAttribute('title')) imgAttrs['title'] = this.getAttribute('title')
+        if (this.getAttribute('alt')) imgAttrs['alt'] = this.getAttribute('alt')
+
+        return this.renderMJML(`
+            <labor-adobe-section
+                section-bg-class="${this.getAttribute('header-bg-class')}"
+                border-top="${this.getAttribute('border') ? '4px solid #fa0f00' : ''}"
+                with-padding="false"
+            >
+                <mj-group>
+                    <mj-column width="85%">
+                        <mj-image ${this.htmlAttributes(imgAttrs)} />
+                    </mj-column>
+                    <mj-column width="15%">
+                        <mj-image 
+                            src="${this.getAttribute('badge-src')}"
+                            width="${this.getAttribute('badge-width')}"
+                            align="left"
+                         />
+                    </mj-column>
+                </mj-group>
+            </labor-adobe-section>
+        `)
+    }
+}
