@@ -13,6 +13,7 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
     static allowedAttributes = {
         'image-src': 'string',
         'image-src-mobile': 'string',
+        'image-href': 'string',
         'href': 'string',
         'headline': 'string',
         'category': 'string',
@@ -26,6 +27,7 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
 
     static defaultAttributes = {
         'image-src-mobile': '',
+        'image-href': '',
         'cta-width': '180px',
         'product': '',
         'secondary-cta': '',
@@ -46,7 +48,7 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
                         width="600px"
                         align="left"
                         target="_blank"
-                        href="${this.getAttribute('href')}"
+                        href="${this.getAttribute('image-href') ? this.getAttribute('image-href') : this.getAttribute('href')}"
                         alt="${this.getAttribute('headline')}"
                     />
                 </mj-column>
