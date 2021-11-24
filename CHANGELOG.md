@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.1](https://github.com/labor-digital/mjml-components/compare/v1.4.0...v1.4.1) (2021-11-24)
+
+
+### Bug Fixes
+
+* change twitter product images ([a7707bc](https://github.com/labor-digital/mjml-components/commit/a7707bc85149bf37fb6da871911771547b3fb24b))
+
 ## [1.4.0](https://github.com/labor-digital/mjml-components/compare/v1.3.0...v1.4.0) (2021-11-22)
 
 
