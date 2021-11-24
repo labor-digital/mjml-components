@@ -242,9 +242,9 @@ export default class AdobeProductMapping {
       width: '600',
       images: {
         white:
-            'https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/twitter_educator.600x60.png',
+            'https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/twitter_educator.white.600x60.png',
         black:
-            'https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/twitter_educator.600x60.png',
+            'https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/twitter_educator.black.600x60.png',
       },
     },
   }
