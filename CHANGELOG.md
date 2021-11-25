@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/labor-digital/mjml-components/compare/v1.4.1...v1.5.0) (2021-11-25)
+
+
+### Features
+
+* added header badge styling options ([00b7f16](https://github.com/labor-digital/mjml-components/commit/00b7f160887992c6700c6c79a9f040800f0b9797))
+
 ### [1.4.1](https://github.com/labor-digital/mjml-components/compare/v1.4.0...v1.4.1) (2021-11-24)
 
 
