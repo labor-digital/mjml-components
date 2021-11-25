@@ -42,7 +42,9 @@
       height="22px"
       width="226px"
       badge-src="https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_creative_educator_badge.color.276x280.png"
-      badge-width="40px"
+      badge-width="60px"
+      badge-align="left"
+      badge-padding-right="40px"
     />
     <labor-adobe-header
       src="https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_creative_cloud.white.442x60.png"

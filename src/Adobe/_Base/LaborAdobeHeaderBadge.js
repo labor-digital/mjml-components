@@ -23,7 +23,9 @@ export default class LaborAdobeHeaderBadge extends BodyComponent {
         'padding-bottom-overwrite': 'unit(px)',
         'with-padding': 'boolean',
         'badge-src': 'string',
-        'badge-width': 'unit(px,%)'
+        'badge-width': 'unit(px,%)',
+        'badge-padding-right': 'unit(px,%)',
+        'badge-align': 'string'
     }
 
     static defaultAttributes = {
@@ -36,7 +38,9 @@ export default class LaborAdobeHeaderBadge extends BodyComponent {
         'border': false,
         'with-padding': true,
         'badge-src': '',
-        'badge-width': '60px'
+        'badge-width': '60px',
+        'badge-padding-right': '0px',
+        'badge-align': 'left'
     }
 
     headStyle = (breakpoint) => `
@@ -78,14 +82,14 @@ export default class LaborAdobeHeaderBadge extends BodyComponent {
                 with-padding="false"
             >
                 <mj-group>
-                    <mj-column width="85%">
+                    <mj-column width="80%">
                         <mj-image ${this.htmlAttributes(imgAttrs)} />
                     </mj-column>
-                    <mj-column width="15%">
+                    <mj-column width="20%" padding-right="${this.getAttribute('badge-padding-right')}">
                         <mj-image 
                             src="${this.getAttribute('badge-src')}"
                             width="${this.getAttribute('badge-width')}"
-                            align="left"
+                            align="${this.getAttribute('badge-align')}"
                          />
                     </mj-column>
                 </mj-group>
