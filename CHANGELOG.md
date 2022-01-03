@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.1](https://github.com/labor-digital/mjml-components/compare/v1.5.0...v1.5.1) (2022-01-03)
+
+
+### Bug Fixes
+
+* adding ccx to the product mapping ([6d98306](https://github.com/labor-digital/mjml-components/commit/6d983065acaeebf31dbba77107a98ca39ae0aa50))
+
 ## [1.5.0](https://github.com/labor-digital/mjml-components/compare/v1.4.1...v1.5.0) (2021-11-25)
 
 
