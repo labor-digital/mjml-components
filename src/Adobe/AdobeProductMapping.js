@@ -1,13 +1,23 @@
 export default class AdobeProductMapping {
   static productMapping = {
+    ccx: {
+      name: 'Adobe Creative Cloud Express',
+      width: '580px',
+      images: {
+        white:
+            'https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_creative_cloud_ecpress.white.580x60.png',
+        black:
+            'https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_creative_cloud_ecpress.black.580x60.png',
+      },
+    },
     aero: {
       name: 'Adobe Aero',
       width: '280px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_aero.white.280x60.png',
+            'https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_aero.white.280x60.png',
         black:
-          'https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_aero.black.280x60.png',
+            'https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_aero.black.280x60.png',
       },
     },
     xd: {
