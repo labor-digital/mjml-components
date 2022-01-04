@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.2](https://github.com/labor-digital/mjml-components/compare/v1.5.1...v1.5.2) (2022-01-04)
+
+
+### Bug Fixes
+
+* adding a new class to the typo body comp for <ul> ([5b545bd](https://github.com/labor-digital/mjml-components/commit/5b545bdec0b4006bdca9d48cb257fb6beab2091e))
+
 ### [1.5.1](https://github.com/labor-digital/mjml-components/compare/v1.5.0...v1.5.1) (2022-01-03)
 
 
