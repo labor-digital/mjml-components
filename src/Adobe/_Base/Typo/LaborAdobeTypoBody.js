@@ -20,6 +20,9 @@ export default class LaborAdobeTypoBody extends BodyComponent {
   }
 
   headStyle = (breakpoint) => `
+    .labor-adobe-type-body-ul {
+      padding-left: 20px;
+    }
     .labor-adobe-typo-body-link {
         text-decoration: underline !important;
         color: ${this.getAttribute('on-background') ? '#ffffff' : '#505050'} !important;
