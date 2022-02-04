@@ -294,6 +294,15 @@
       </mj-column>
     </labor-adobe-section>
 
+    <labor-adobe-actioncard
+      section-bg-class="content-bg-alt"
+      padding-top-overwrite="0"
+      padding-bottom-overwrite="50px"
+    >
+      <labor-adobe-typo-headingthree padding-bottom="17px">Some Heading here</labor-adobe-typo-headingthree>
+      <labor-adobe-typo-body>Lorem irpsum dolor sit ametLorem irpsum dolor sit ametLorem irpsum dolor sit ametLorem irpsum dolor sit ametLorem irpsum dolor sit ametLorem irpsum dolor sit amet</labor-adobe-typo-body>
+    </labor-adobe-actioncard>
+
     <labor-adobe-footer
       facebook-url="#"
       twitter-url="#"
