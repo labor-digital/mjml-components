@@ -38,22 +38,22 @@
 				padding-bottom-overwrite -> As stated with the height the padding is computed. If you want to overwrite the bottom-padding you can do that here
 		-->
     <labor-adobe-header-badge
-      src="https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_creative_educator.red.616x60.png"
+      src="https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_creative_educator.red.616x60.png"
       height="22px"
       width="226px"
-      badge-src="https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_creative_educator_badge.color.276x280.png"
+      badge-src="https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_creative_educator_badge.color.276x280.png"
       badge-width="60px"
       badge-align="left"
       badge-padding-right="40px"
     />
     <labor-adobe-header
-      src="https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_creative_cloud.white.442x60.png"
+      src="https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_creative_cloud.white.442x60.png"
       height="30px"
       width="221px"
     />
     <labor-adobe-header
       header-bg-class="content-bg"
-      src="https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_creative_cloud.white.442x60.png"
+      src="https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_creative_cloud.white.442x60.png"
       height="30px"
       width="221px"
       padding-bottom-overwrite="0"
@@ -186,7 +186,7 @@
     </labor-adobe-section>
 
     <labor-adobe-header
-      src="https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_education_exchange.red.658x60.png"
+      src="https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_education_exchange.red.658x60.png"
       height="28px"
       width="307px"
       header-bg-class="content-bg-alt"

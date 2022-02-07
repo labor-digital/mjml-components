@@ -45,7 +45,7 @@ export default class LaborAdobeFooter extends BodyComponent {
           href="${this.getAttribute('facebook-url')}"
           background-color="none"
           border-radius="0px"
-          src="https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/footer/facebook.959595.100x64.png"
+          src="https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/footer/facebook.959595.100x64.png"
           alt="Facebook"
         ></mj-social-element>
       `
@@ -56,7 +56,7 @@ export default class LaborAdobeFooter extends BodyComponent {
           href="${this.getAttribute('instagram-url')}"
           background-color="none"
           border-radius="0px"
-          src="https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/footer/instagram.959595.100x64.png"
+          src="https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/footer/instagram.959595.100x64.png"
           alt="Instagram"
         ></mj-social-element>
       `
@@ -67,7 +67,7 @@ export default class LaborAdobeFooter extends BodyComponent {
           href="${this.getAttribute('twitter-url')}"
           background-color="none"
           border-radius="0px"
-          src="https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/footer/twitter.959595.100x64.png"
+          src="https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/footer/twitter.959595.100x64.png"
           alt="Twitter"
         ></mj-social-element>
       `
@@ -78,7 +78,7 @@ export default class LaborAdobeFooter extends BodyComponent {
           href="${this.getAttribute('youtube-url')}"
           background-color="none"
           border-radius="0px"
-          src="https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/footer/youtube.959595.120x64.png"
+          src="https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/footer/youtube.959595.120x64.png"
           alt="Youtube"
         ></mj-social-element>
       `
@@ -89,7 +89,7 @@ export default class LaborAdobeFooter extends BodyComponent {
           href="${this.getAttribute('linkedin-url')}"
           background-color="none"
           border-radius="0px"
-          src="https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/footer/linkedin.959595.100x64.png"
+          src="https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/footer/linkedin.959595.100x64.png"
           alt="Youtube"
         ></mj-social-element>
       `
@@ -104,7 +104,7 @@ export default class LaborAdobeFooter extends BodyComponent {
         <mj-group>
           <mj-column width="30%">
             <mj-image
-              src="https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/footer/adobe-logo.fa0f00.60x80.png"
+              src="https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/footer/adobe-logo.fa0f00.60x80.png"
               width="30px"
               height="40px"
               align="left"
