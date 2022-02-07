@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.5](https://github.com/labor-digital/mjml-components/compare/v1.5.4...v1.5.5) (2022-02-07)
+
+
+### Bug Fixes
+
+* add fresco to products and change 2020 assets to 2022 ([da21415](https://github.com/labor-digital/mjml-components/commit/da21415c97d55d679fa4cfc94d8fdf31ba45e1f2))
+
 ### [1.5.4](https://github.com/labor-digital/mjml-components/compare/v1.5.3...v1.5.4) (2022-02-07)
 
 
