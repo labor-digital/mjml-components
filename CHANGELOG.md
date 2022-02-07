@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.6](https://github.com/labor-digital/mjml-components/compare/v1.5.5...v1.5.6) (2022-02-07)
+
+
+### Bug Fixes
+
+* adding actioncard component ([5578ba9](https://github.com/labor-digital/mjml-components/commit/5578ba9707507e8d82c96c047431d234b97afaf0))
+
 ### [1.5.5](https://github.com/labor-digital/mjml-components/compare/v1.5.4...v1.5.5) (2022-02-07)
 
 
