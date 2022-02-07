@@ -33,7 +33,7 @@ export default class LaborAdobeActioncard extends BodyComponent {
         section-bg-class="${this.getAttribute('section-bg-class')}"
         ${this.htmlAttributes(attrs)}
       >
-        <mj-column background-color="#eaeaea" padding="60px 50px">
+        <mj-column background-color="#eaeaea" padding="50px 50px">
             ${this.renderChildren(this.props.children, {
               rawXML: true,
               renderer: (component) => component.render,
