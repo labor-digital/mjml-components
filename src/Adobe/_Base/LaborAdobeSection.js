@@ -11,6 +11,8 @@ export default class LaborAdobeSection extends MjSection {
   static allowedAttributes = {
     'with-padding': 'boolean',
     'section-bg-class': 'string',
+    'padding-bottom': 'unit(px,%)',
+    'padding-top': 'unit(px,%)'
   }
 
   static defaultAttributes = {
