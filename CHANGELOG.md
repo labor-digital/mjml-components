@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.10](https://github.com/labor-digital/mjml-components/compare/v1.5.9...v1.5.10) (2022-02-08)
+
+
+### Bug Fixes
+
+* Fix EdEx Article ([8d0dc4e](https://github.com/labor-digital/mjml-components/commit/8d0dc4e82d9e240a0bdf92cdbe4c81fc15ad3129))
+
 ### [1.5.9](https://github.com/labor-digital/mjml-components/compare/v1.5.8...v1.5.9) (2022-02-08)
 
 
