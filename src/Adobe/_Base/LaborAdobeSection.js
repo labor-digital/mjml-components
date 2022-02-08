@@ -34,6 +34,8 @@ export default class LaborAdobeSection extends MjSection {
     let attrs = {}
     for (var attrName in this.attributes) {
       if (attrName == 'with-padding') continue
+      if (attrName == 'padding-top') continue
+      if (attrName == 'padding-bottom') continue
       attrs[attrName] = this.getAttribute(attrName)
     }
     let pT = this.getAttribute('padding-top') ? this.getAttribute('padding-top') : '0'
