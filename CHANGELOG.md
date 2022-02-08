@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.7](https://github.com/labor-digital/mjml-components/compare/v1.5.6...v1.5.7) (2022-02-08)
+
+
+### Bug Fixes
+
+* Fixing Adobe Section ([0516938](https://github.com/labor-digital/mjml-components/commit/0516938b9199d0bdf575e278d2512386b745e135))
+
 ### [1.5.6](https://github.com/labor-digital/mjml-components/compare/v1.5.5...v1.5.6) (2022-02-07)
 
 
