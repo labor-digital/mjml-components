@@ -40,9 +40,9 @@ export default class LaborAdobeSection extends MjSection {
       if (attrName == 'padding-bottom') continue
       attrs[attrName] = this.getAttribute(attrName)
     }
-    let pT = this.getAttribute('padding-top') ? this.getAttribute('padding-top') : '0'
+    let pT = this.getAttribute('padding-top') && this.getAttribute('padding-top') != 'undefined' ? this.getAttribute('padding-top') : '0'
     let pR = this.getAttribute('with-padding') ? LaborAdobeSection.desktopLeftRightPadding : '0'
-    let pB = this.getAttribute('padding-bottom') ? this.getAttribute('padding-bottom') : '0'
+    let pB = this.getAttribute('padding-bottom') && this.getAttribute('padding-bottom') != 'undefined' ? this.getAttribute('padding-bottom') : '0'
     let pL = this.getAttribute('with-padding') ? LaborAdobeSection.desktopLeftRightPadding : '0'
     attrs['padding'] = pT + ' ' + pR + ' ' + pB + ' ' + pL
 
