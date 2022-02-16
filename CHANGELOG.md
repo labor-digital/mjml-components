@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.11](https://github.com/labor-digital/mjml-components/compare/v1.5.10...v1.5.11) (2022-02-16)
+
+
+### Bug Fixes
+
+* add link class to detail and caption components ([4f3c204](https://github.com/labor-digital/mjml-components/commit/4f3c20400f7c25fc7b56b4b345b86a84ab2826ad))
+
 ### [1.5.10](https://github.com/labor-digital/mjml-components/compare/v1.5.9...v1.5.10) (2022-02-08)
 
 
