@@ -23,6 +23,17 @@ export default class LaborAdobeTypoCaption extends BodyComponent {
     'padding-right': '0px',
   }
 
+  headStyle = (breakpoint) => `
+    .labor-adobe-typo-caption-link {
+        text-decoration: underline !important;
+        color: ${this.getAttribute('on-background') ? '#ffffff' : '#959595'} !important;
+    }
+    .labor-adobe-typo-caption-link:hover {
+        text-decoration: none !important;
+        cursor: pointer;
+    }
+  `
+
   render() {
     const attrs = {
       'font-size': '14px',

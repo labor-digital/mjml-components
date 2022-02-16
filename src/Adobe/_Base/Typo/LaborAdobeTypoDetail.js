@@ -25,6 +25,17 @@ export default class LaborAdobeTypoDetail extends BodyComponent {
     light: 400,
   }
 
+  headStyle = (breakpoint) => `
+    .labor-adobe-typo-detail-link {
+        text-decoration: underline !important;
+        color: ${this.getAttribute('on-background') ? '#ffffff' : '#505050'} !important;
+    }
+    .labor-adobe-typo-detail-link:hover {
+        text-decoration: none !important;
+        cursor: pointer;
+    }
+  `
+
   render() {
     const attrs = {
       'font-size': '11px',

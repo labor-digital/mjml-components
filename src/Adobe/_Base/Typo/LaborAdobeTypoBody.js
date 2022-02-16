@@ -35,9 +35,9 @@ export default class LaborAdobeTypoBody extends BodyComponent {
         text-decoration: none !important;
         cursor: pointer;
     }
-    @media only screen and (max-width:${breakpoint}) {
-      .labor-adobe-typo-body {
-      }
+    .labor-adobe-typo-body-link-blue:hover {
+        text-decoration: underline !important;
+        cursor: pointer;
     }
   `
 
