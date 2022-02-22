@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/labor-digital/mjml-components/compare/v1.5.11...v1.6.0) (2022-02-22)
+
+
+### Features
+
+* add new footer band component ([7116f1b](https://github.com/labor-digital/mjml-components/commit/7116f1b31cecec0ec300ce23f2d48a5c5d5c8f13))
+
 ### [1.5.11](https://github.com/labor-digital/mjml-components/compare/v1.5.10...v1.5.11) (2022-02-16)
 
 
