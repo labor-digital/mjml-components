@@ -3,11 +3,11 @@ import {BodyComponent} from 'mjml-core'
 import LaborAdobeSection from './LaborAdobeSection'
 
 registerDependencies({
-    'mj-body': ['labor-adobe-footer-band'],
-    'labor-adobe-footer-band': [],
+    'mj-body': ['labor-adobe-footer-red-band'],
+    'labor-adobe-footer-red-band': [],
 })
 
-export default class LaborAdobeFooterBand extends BodyComponent {
+export default class LaborAdobeFooterRedBand extends BodyComponent {
     static endingTag = true
 
     render() {
