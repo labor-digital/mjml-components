@@ -22,6 +22,8 @@ export default class LaborAdobeTypoBody extends BodyComponent {
   headStyle = (breakpoint) => `
     .labor-adobe-type-body-ul {
       padding-left: 20px;
+      margin-top: 0;
+      margin-bottom: 0;
     }
     .labor-adobe-typo-body-link {
         text-decoration: underline !important;
