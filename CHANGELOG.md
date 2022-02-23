@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.1](https://github.com/labor-digital/mjml-components/compare/v1.6.0...v1.6.1) (2022-02-23)
+
+
+### Bug Fixes
+
+* fix ul style in labor-adobe-typo-body ([27b65e7](https://github.com/labor-digital/mjml-components/commit/27b65e77eb928906e41dbc6b4e3174055aa2ec99))
+* rename labor-adobe-footer-band to labor-adobe-footer-red-band ([243cb3d](https://github.com/labor-digital/mjml-components/commit/243cb3d45c370b1f5b83b4fb997d3f6454aa5ba0))
+
 ## [1.6.0](https://github.com/labor-digital/mjml-components/compare/v1.5.11...v1.6.0) (2022-02-22)
 
 
