@@ -11,19 +11,27 @@ export default class LaborAdobeTypoHeadingthree extends BodyComponent {
 
   static allowedAttributes = {
     'on-background': 'boolean',
+    'type': 'enum(normal,quiet,bold)',
     'padding-bottom': 'unit(px,%)',
   }
 
   static defaultAttributes = {
     'on-background': false,
+    'type': 'normal',
     'padding-bottom': '0px',
+  }
+
+  static fontWeights = {
+    normal: 600,
+    quiet: 400,
+    bold: 800,
   }
 
   render() {
     const attrs = {
       'font-size': '22px',
       'line-height': '29px',
-      'font-weight': 600,
+      'font-weight': LaborAdobeTypoHeadingthree.fontWeights[this.getAttribute('type')],
       'color': this.getAttribute('on-background') ? '#ffffff' : '#000000',
       'padding-bottom': this.getAttribute('padding-bottom'),
       'align': this.getAttribute('align'),
