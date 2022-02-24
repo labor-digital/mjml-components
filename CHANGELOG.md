@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.2](https://github.com/labor-digital/mjml-components/compare/v1.6.1...v1.6.2) (2022-02-24)
+
+
+### Bug Fixes
+
+* adding type to labor-adobe-typo-headingthree ([b5678e4](https://github.com/labor-digital/mjml-components/commit/b5678e481339118875163e9dbf308c98dd9c3e47))
+
 ### [1.6.1](https://github.com/labor-digital/mjml-components/compare/v1.6.0...v1.6.1) (2022-02-23)
 
 
