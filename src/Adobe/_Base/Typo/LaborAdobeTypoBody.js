@@ -20,7 +20,7 @@ export default class LaborAdobeTypoBody extends BodyComponent {
   }
 
   headStyle = (breakpoint) => `
-    .labor-adobe-type-body-ul {
+    .labor-adobe-typo-body-ul {
       padding-left: 20px;
       margin-top: 0;
       margin-bottom: 0;
