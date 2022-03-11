@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.3](https://github.com/labor-digital/mjml-components/compare/v1.6.2...v1.6.3) (2022-03-11)
+
+
+### Bug Fixes
+
+* fix ul style in labor-adobe-typo-body ([1add704](https://github.com/labor-digital/mjml-components/commit/1add704f2a764636e5a27067c46ead122d43dd12))
+
 ### [1.6.2](https://github.com/labor-digital/mjml-components/compare/v1.6.1...v1.6.2) (2022-02-24)
 
 
