@@ -2,7 +2,7 @@ export default class AdobeProductMapping {
   static productMapping = {
     ccx: {
       name: 'Adobe Express',
-      width: '580px',
+      width: '328px',
       images: {
         white:
             'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_creative_cloud_ecpress.white.328x60.png',
