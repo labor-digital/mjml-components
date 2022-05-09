@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/labor-digital/mjml-components/compare/v1.6.3...v1.7.0) (2022-05-09)
+
+
+### Features
+
+* changed ccx name and images ([3b3ac13](https://github.com/labor-digital/mjml-components/commit/3b3ac1315a9107959ae2d4ed063f8a78f67ffffa))
+
+
+### Bug Fixes
+
+* width fix ([ecd21f6](https://github.com/labor-digital/mjml-components/commit/ecd21f62057477cd247a5b325d652925881a7ebf))
+
 ### [1.6.3](https://github.com/labor-digital/mjml-components/compare/v1.6.2...v1.6.3) (2022-03-11)
 
 
