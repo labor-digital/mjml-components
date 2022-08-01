@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/labor-digital/mjml-components/compare/v1.7.0...v1.8.0) (2022-08-01)
+
+
+### Features
+
+* added padding-bottom to Labor Adobe Edex Article ([268cb1f](https://github.com/labor-digital/mjml-components/commit/268cb1f887f65503c87b8e0d0dc36faf011cdf21))
+
 ## [1.7.0](https://github.com/labor-digital/mjml-components/compare/v1.6.3...v1.7.0) (2022-05-09)
 
 
