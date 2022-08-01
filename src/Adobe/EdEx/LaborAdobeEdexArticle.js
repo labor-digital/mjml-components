@@ -23,6 +23,7 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
         'product': 'string',
         'secondary-cta': 'string',
         'secondary-href': 'string',
+        'padding-bottom': 'unit(px)',
     }
 
     static defaultAttributes = {
@@ -32,6 +33,7 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
         'product': '',
         'secondary-cta': '',
         'secondary-href': '',
+        'padding-bottom': '100px',
     }
 
     render() {
@@ -53,7 +55,7 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
                 </labor-adobe-section>
             `) +
             this.renderMJML(`
-                <labor-adobe-section padding-bottom="100px">
+                <labor-adobe-section padding-bottom=${this.getAttribute('padding-bottom')}>
                     <mj-column>
                         ${
                             this.getAttribute('product') ?
