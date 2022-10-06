@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/labor-digital/mjml-components/compare/v1.8.0...v1.9.0) (2022-10-06)
+
+
+### Features
+
+* updated express logo ([02625bb](https://github.com/labor-digital/mjml-components/commit/02625bbfbc61f8a5e59f9c4be763d2fb04410cbd))
+
 ## [1.8.0](https://github.com/labor-digital/mjml-components/compare/v1.7.0...v1.8.0) (2022-08-01)
 
 
