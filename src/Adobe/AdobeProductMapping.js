@@ -5,9 +5,9 @@ export default class AdobeProductMapping {
       width: '328px',
       images: {
         white:
-            'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_creative_cloud_ecpress.white.328x60.png',
+            'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_creative_cloud_express.white.328x60.png',
         black:
-            'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_creative_cloud_ecpress.black.328x60.png',
+            'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_creative_cloud_express.black.328x60.png',
       },
     },
     fresco: {
