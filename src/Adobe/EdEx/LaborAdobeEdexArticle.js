@@ -34,6 +34,8 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
         'secondary-cta': '',
         'secondary-href': '',
         'padding-bottom': '100px',
+        'cta': '',
+        'href': '',
     }
 
     render() {
@@ -80,14 +82,20 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
                                 ``
                         }
                         <labor-adobe-typo-headingthree padding-bottom="7px">${this.getAttribute('headline')}</labor-adobe-typo-headingthree>
-                        <labor-adobe-typo-body padding-bottom="33px">${this.getAttribute('text')}</labor-adobe-typo-body>
-                        <labor-adobe-rounded-button type="quiet" href="${this.getAttribute('href')}" width="${this.getAttribute('cta-width')}">
-                            ${this.getAttribute('cta')}
-                        </labor-adobe-rounded-button>
+                        <labor-adobe-typo-body padding-bottom="${this.getAttribute('href') ? '33px' : '0px'}">${this.getAttribute('text')}</labor-adobe-typo-body>
+                        ${
+                            this.getAttribute('href') ?
+                                `
+                                    <labor-adobe-rounded-button type="quiet" href="${this.getAttribute('href')}" width="${this.getAttribute('cta-width')}">
+                                        ${this.getAttribute('cta')}
+                                    </labor-adobe-rounded-button>
+                                ` :
+                                ``
+                        }
                         ${
                             this.getAttribute('secondary-href') ?
                                 `
-                                    <labor-adobe-secondary-cta padding-top="10px" type="quiet" href="${this.getAttribute('secondary-href')}">${this.getAttribute('secondary-cta')}</labor-adobe-secondary-cta>
+                                    <labor-adobe-secondary-cta padding-top="${this.getAttribute('href') ? '10px' : '30px'}" type="quiet" href="${this.getAttribute('secondary-href')}">${this.getAttribute('secondary-cta')}</labor-adobe-secondary-cta>
                                 ` :
                                 ``
                         }

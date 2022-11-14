@@ -32,6 +32,10 @@ export default class LaborAdobeEdexTwoColArticle extends BodyComponent {
     static defaultAttributes = {
         '1-product': '',
         '2-product': '',
+        '1-cta': '',
+        '2-cta': '',
+        '1-href': '',
+        '2-href': '',
     }
 
     headStyle = (breakpoint) => `
@@ -129,14 +133,18 @@ export default class LaborAdobeEdexTwoColArticle extends BodyComponent {
                     <labor-adobe-typo-headingthree css-class="laborAdobeEdexTwoColArticle-first-elem" padding-bottom="7px">
                         ${this.getAttribute('1-headline')}
                     </labor-adobe-typo-headingthree>
-                    <labor-adobe-typo-body css-class="laborAdobeEdexTwoColArticle-first-elem" padding-bottom="30px">
+                    <labor-adobe-typo-body css-class="laborAdobeEdexTwoColArticle-first-elem" padding-bottom="${this.getAttribute('1-href') ? '30px' : '0px'}">
                         ${this.getAttribute('1-text')}
                     </labor-adobe-typo-body>
-                    <labor-adobe-secondary-cta css-class="laborAdobeEdexTwoColArticle-first-elem" type="quiet" href="${this.getAttribute(
-            '1-href'
-        )}">
-                        ${this.getAttribute('1-cta')}
-                    </labor-adobe-secondary-cta>
+                    ${
+                        this.getAttribute('1-href') ?
+                            `
+                                <labor-adobe-secondary-cta css-class="laborAdobeEdexTwoColArticle-first-elem" type="quiet" href="${this.getAttribute('1-href')}">
+                                    ${this.getAttribute('1-cta')}
+                                </labor-adobe-secondary-cta>
+                            ` :
+                            ``
+                    }
                 </mj-column>
                 <mj-column css-class="laborAdobeEdexTwoColArticle-second" padding-left="2px" padding-bottom="100px">
                     <labor-responsive-image
@@ -186,14 +194,18 @@ export default class LaborAdobeEdexTwoColArticle extends BodyComponent {
                     <labor-adobe-typo-headingthree css-class="laborAdobeEdexTwoColArticle-second-elem" padding-bottom="7px">
                         ${this.getAttribute('2-headline')}
                     </labor-adobe-typo-headingthree>
-                    <labor-adobe-typo-body css-class="laborAdobeEdexTwoColArticle-second-elem" padding-bottom="30px">
+                    <labor-adobe-typo-body css-class="laborAdobeEdexTwoColArticle-second-elem" padding-bottom="${this.getAttribute('2-href') ? '30px' : '0px'}">
                         ${this.getAttribute('2-text')}
                     </labor-adobe-typo-body>
-                    <labor-adobe-secondary-cta css-class="laborAdobeEdexTwoColArticle-second-elem" type="quiet" href="${this.getAttribute(
-            '2-href'
-        )}">
-                        ${this.getAttribute('2-cta')}
-                    </labor-adobe-secondary-cta>
+                    ${
+                        this.getAttribute('2-href') ?
+                            `
+                                <labor-adobe-secondary-cta css-class="laborAdobeEdexTwoColArticle-second-elem" type="quiet" href="${this.getAttribute('2-href')}">
+                                    ${this.getAttribute('2-cta')}
+                                </labor-adobe-secondary-cta>
+                            ` :
+                            ``
+                    }
                 </mj-column>
             </labor-adobe-section>
         `)
