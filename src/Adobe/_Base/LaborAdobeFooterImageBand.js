@@ -10,12 +10,12 @@ registerDependencies({
 export default class LaborAdobeFooterImageBand extends BodyComponent {
     static allowedAttributes = {
         'src': 'string',
-        'src-mobile': 'string',
+        'src-mobile': 'string'
     }
 
     static defaultAttributes = {
         'src': '',
-        'src-mobile': '',
+        'src-mobile': ''
     }
 
     static endingTag = true
@@ -23,7 +23,10 @@ export default class LaborAdobeFooterImageBand extends BodyComponent {
     render() {
         let imgAttrs = {
             'src': this.getAttribute('src'),
-            'src-mobile': this.getAttribute('src-mobile')
+            'src-mobile': this.getAttribute('src-mobile'),
+            'fluid-on-mobile': true,
+            'width': '600px',
+            'align': 'left'
         }
 
         return this.renderMJML(`
