@@ -30,6 +30,7 @@ export default class LaborAdobeFooterImageBand extends BodyComponent {
         }
 
         return this.renderMJML(`
+        <labor-adobe-section with-padding="false" section-bg-class="content-bg" padding-bottom="0">
             <mj-column>
                 <labor-responsive-image
                        ${this.htmlAttributes(imgAttrs)}
