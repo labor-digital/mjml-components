@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.10.0](https://github.com/labor-digital/mjml-components/compare/v1.9.0...v1.10.0) (2022-11-14)
+
+
+### Features
+
+* add footer image band ([9c22f14](https://github.com/labor-digital/mjml-components/commit/9c22f14ed7e5f62a45aa3a1ef47853a6d2c3a788))
+
 ## [1.9.0](https://github.com/labor-digital/mjml-components/compare/v1.8.0...v1.9.0) (2022-10-06)
 
 
