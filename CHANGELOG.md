@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.10.3](https://github.com/labor-digital/mjml-components/compare/v1.10.2...v1.10.3) (2022-11-14)
+
+
+### Bug Fixes
+
+* allow edexArticles to have no cta ([201325c](https://github.com/labor-digital/mjml-components/commit/201325c71300edf0f2102994091067ddc63d0edc))
+
 ### [1.10.2](https://github.com/labor-digital/mjml-components/compare/v1.10.1...v1.10.2) (2022-11-14)
 
 
