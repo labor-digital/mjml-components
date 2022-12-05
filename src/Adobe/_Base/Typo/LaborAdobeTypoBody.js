@@ -12,11 +12,27 @@ export default class LaborAdobeTypoBody extends BodyComponent {
   static allowedAttributes = {
     'on-background': 'boolean',
     'padding-bottom': 'unit(px,%)',
+    'tone': 'enum(white, light, 300, 400, 500, 600, 700, 800, dark, black)'
+    // #FFFFFF, #EAEAEA, #D3D3D3, #BCBCBC, #959595, #747474, #505050, #2C2C2C, #000000
   }
 
   static defaultAttributes = {
     'on-background': false,
     'padding-bottom': '0px',
+    'tone': '800'
+  }
+
+  static tones = {
+    'white': '#FFFFFF',
+    'light': '#F5F5F5',
+    '300': '#EAEAEA',
+    '400': '#D3D3D3',
+    '500': '#BCBCBC',
+    '600': '#959595',
+    '700': '#747474',
+    '800': '#505050',
+    'dark': '#2C2C2C',
+    'black': '#000000'
   }
 
   headStyle = (breakpoint) => `
@@ -27,7 +43,7 @@ export default class LaborAdobeTypoBody extends BodyComponent {
     }
     .labor-adobe-typo-body-link {
         text-decoration: underline !important;
-        color: ${this.getAttribute('on-background') ? '#ffffff' : '#505050'} !important;
+        color: ${this.getAttribute('on-background') ? '#ffffff' : LaborAdobeTypoBody.tones[this.getAttribute('tone')]} !important;
     }
     .labor-adobe-typo-body-link-blue {
         text-decoration: none !important;
@@ -48,7 +64,7 @@ export default class LaborAdobeTypoBody extends BodyComponent {
       'font-size': '18px',
       'line-height': '26px',
       'font-weight': 400,
-      'color': this.getAttribute('on-background') ? '#ffffff' : '#505050',
+      'color': this.getAttribute('on-background') ? '#ffffff' : LaborAdobeTypoBody.tones[this.getAttribute('tone')],
       'padding-bottom': this.getAttribute('padding-bottom'),
       'align': this.getAttribute('align'),
     }
