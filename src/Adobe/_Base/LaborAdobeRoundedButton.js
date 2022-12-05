@@ -13,12 +13,27 @@ export default class LaborAdobeRoundedButton extends BodyComponent {
     type: 'enum(cta,inverted,quiet)',
     href: 'string',
     width: 'unit(px)',
+    tone: 'enum(white, light, 300, 400, 500, 600, 700, 800, dark, black)'
   }
 
   static defaultAttributes = {
     type: 'cta',
     href: '#',
     width: '180px',
+    tone: '700'
+  }
+
+  static tones = {
+    'white': '#FFFFFF',
+    'light': '#F5F5F5',
+    '300': '#EAEAEA',
+    '400': '#D3D3D3',
+    '500': '#BCBCBC',
+    '600': '#959595',
+    '700': '#747474',
+    '800': '#505050',
+    'dark': '#2C2C2C',
+    'black': '#000000'
   }
 
   render() {
@@ -34,9 +49,9 @@ export default class LaborAdobeRoundedButton extends BodyComponent {
     }
     switch (this.getAttribute('type')) {
       case 'quiet':
-        attrs['color'] = '#747474'
+        attrs['color'] = LaborAdobeRoundedButton.tones[this.getAttribute('tone')]
         attrs['background-color'] = ''
-        attrs['border-color'] = '#747474'
+        attrs['border-color'] = LaborAdobeRoundedButton.tones[this.getAttribute('tone')]
         break
       case 'inverted':
         attrs['color'] = '#ffffff'

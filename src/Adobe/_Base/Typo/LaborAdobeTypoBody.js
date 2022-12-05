@@ -13,7 +13,6 @@ export default class LaborAdobeTypoBody extends BodyComponent {
     'on-background': 'boolean',
     'padding-bottom': 'unit(px,%)',
     'tone': 'enum(white, light, 300, 400, 500, 600, 700, 800, dark, black)'
-    // #FFFFFF, #EAEAEA, #D3D3D3, #BCBCBC, #959595, #747474, #505050, #2C2C2C, #000000
   }
 
   static defaultAttributes = {
