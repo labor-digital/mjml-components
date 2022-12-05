@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.10.5](https://github.com/labor-digital/mjml-components/compare/v1.10.4...v1.10.5) (2022-12-05)
+
+
+### Bug Fixes
+
+* add color tone selection to components ([65bbe7f](https://github.com/labor-digital/mjml-components/commit/65bbe7ff061bb7d73dbb4837a845a7c19bb568ac))
+
 ### [1.10.4](https://github.com/labor-digital/mjml-components/compare/v1.10.3...v1.10.4) (2022-12-05)
 
 
