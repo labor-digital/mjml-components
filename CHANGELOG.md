@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/labor-digital/mjml-components/compare/v1.10.5...v2.0.0) (2023-04-14)
+
+
+### Features
+
+* new version ([4e718ed](https://github.com/labor-digital/mjml-components/commit/4e718ed20b08d798208456689591bc1cecae8d7f))
+
 ### [1.10.5](https://github.com/labor-digital/mjml-components/compare/v1.10.4...v1.10.5) (2022-12-05)
 
 
