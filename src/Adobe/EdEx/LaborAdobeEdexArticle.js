@@ -11,6 +11,7 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
     static endingTag = true
 
     static allowedAttributes = {
+        'section-bg-class': 'string',
         'image-src': 'string',
         'image-src-mobile': 'string',
         'image-href': 'string',
@@ -27,6 +28,7 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
     }
 
     static defaultAttributes = {
+        'section-bg-class': 'content-bg',
         'image-src-mobile': '',
         'image-href': '',
         'cta-width': '180px',
@@ -41,7 +43,7 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
     render() {
         return (
             this.renderMJML(`
-                <labor-adobe-section with-padding="false" padding-bottom="${this.getAttribute('product') ? '40px' : '34px'}">
+                <labor-adobe-section with-padding="false" padding-bottom="${this.getAttribute('product') ? '40px' : '34px'}" section-bg-class="${this.getAttribute('section-bg-class')}">
                     <mj-column>
                         <labor-responsive-image
                             src="${this.getAttribute('image-src')}"
@@ -57,7 +59,7 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
                 </labor-adobe-section>
             `) +
             this.renderMJML(`
-                <labor-adobe-section padding-bottom=${this.getAttribute('padding-bottom')}>
+                <labor-adobe-section padding-bottom="${this.getAttribute('padding-bottom')}" section-bg-class="${this.getAttribute('section-bg-class')}">
                     <mj-column>
                         ${
                             this.getAttribute('product') ?

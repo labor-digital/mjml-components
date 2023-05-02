@@ -11,6 +11,7 @@ export default class LaborAdobeEdexTwoColArticle extends BodyComponent {
     static endingTag = true
 
     static allowedAttributes = {
+        'section-bg-class': 'string',
         '1-image-src': 'string',
         '1-image-src-mobile': 'string',
         '1-href': 'string',
@@ -30,6 +31,7 @@ export default class LaborAdobeEdexTwoColArticle extends BodyComponent {
     }
 
     static defaultAttributes = {
+        'section-bg-class': 'content-bg',
         '1-product': '',
         '2-product': '',
         '1-cta': '',
@@ -84,7 +86,7 @@ export default class LaborAdobeEdexTwoColArticle extends BodyComponent {
 
     render() {
         return this.renderMJML(`
-            <labor-adobe-section with-padding="false">
+            <labor-adobe-section with-padding="false" section-bg-class="${this.getAttribute('section-bg-class')}">
                 <mj-column css-class="laborAdobeEdexTwoColArticle-first" padding-right="2px" padding-bottom="100px">
                     <labor-responsive-image
                         src="${this.getAttribute('1-image-src')}"
