@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.10.6](https://github.com/labor-digital/mjml-components/compare/v1.10.5...v1.10.6) (2023-05-02)
+
+
+### Bug Fixes
+
+* allow edexArticle to receive a section-bg-class ([0a8046f](https://github.com/labor-digital/mjml-components/commit/0a8046f3e2002994bc644c2415d20c7d9c7f0313))
+
 ### [1.10.5](https://github.com/labor-digital/mjml-components/compare/v1.10.4...v1.10.5) (2022-12-05)
 
 
