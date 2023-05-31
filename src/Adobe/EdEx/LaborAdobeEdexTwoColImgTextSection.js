@@ -11,6 +11,7 @@ export default class LaborAdobeEdexTwoColImgTextSection extends BodyComponent {
   static endingTag = true
 
   static allowedAttributes = {
+    'section-bg-class': 'string',
     'direction': 'enum(ltr,rtl)',
     'image-src': 'string',
     'image-src-mobile': 'string',
@@ -21,6 +22,7 @@ export default class LaborAdobeEdexTwoColImgTextSection extends BodyComponent {
   }
 
   static defaultAttributes = {
+    'section-bg-class': 'content-bg',
     'direction': 'ltr',
     'image-src': '',
     'image-src-mobile': '',
@@ -56,6 +58,7 @@ export default class LaborAdobeEdexTwoColImgTextSection extends BodyComponent {
         with-padding="false"
         padding-bottom="${this.getAttribute('padding-bottom')}"
         padding-top="${this.getAttribute('padding-top')}"
+        section-bg-class="${this.getAttribute('section-bg-class')}"
       >
         <mj-column 
           vertical-align="middle"
