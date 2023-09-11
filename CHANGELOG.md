@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.10.7](https://github.com/labor-digital/mjml-components/compare/v1.10.6...v1.10.7) (2023-05-31)
+
+
+### Bug Fixes
+
+* allow edexTwoColImgTextSection to receive a section-bg-class ([91d9e5b](https://github.com/labor-digital/mjml-components/commit/91d9e5b0b9f8c63518f2f79d60ac2dfcc30549a0))
+
 ### [1.10.6](https://github.com/labor-digital/mjml-components/compare/v1.10.5...v1.10.6) (2023-05-02)
 
 
