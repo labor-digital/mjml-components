@@ -19,6 +19,7 @@ export default class LaborAdobeEdexTwoColImgTextSection extends BodyComponent {
     'with-padding': 'boolean',
     'padding-bottom': 'unit(px,%)',
     'padding-top': 'unit(px,%)',
+    'with-padding-image': 'boolean',
   }
 
   static defaultAttributes = {
@@ -28,6 +29,7 @@ export default class LaborAdobeEdexTwoColImgTextSection extends BodyComponent {
     'image-src-mobile': '',
     'text': '',
     'with-padding': true,
+    'with-padding-image': true,
   }
 
   headStyle = (breakpoint) => `
@@ -42,13 +44,16 @@ export default class LaborAdobeEdexTwoColImgTextSection extends BodyComponent {
   render() {
     const defaultPadding = this.getAttribute('with-padding')
       ? LaborAdobeSection.desktopLeftRightPadding
-      : 0
+      : 0;
+    const imageDefaultPadding = this.getAttribute('with-padding-image')
+        ? LaborAdobeSection.desktopLeftRightPadding
+        : 0;
 
-    let imagePadding = [0, 0, 0, defaultPadding]
+    let imagePadding = [0, 0, 0, imageDefaultPadding]
     let textPadding = [0, defaultPadding, 0, 0]
 
     if ('rtl' === this.getAttribute('direction')) {
-      imagePadding = [0, defaultPadding, 0, 0]
+      imagePadding = [0, imageDefaultPadding, 0, 0]
       textPadding = [0, 0, 0, defaultPadding]
     }
 
