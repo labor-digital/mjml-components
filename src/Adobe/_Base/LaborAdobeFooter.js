@@ -60,6 +60,17 @@ export default class LaborAdobeFooter extends BodyComponent {
           alt="Instagram"
         ></mj-social-element>
       `
+    if (this.getAttribute('rss-url'))
+      socialElements += `
+        <mj-social-element
+          name="rss"
+          href="${this.getAttribute('rss-url')}"
+          background-color="none"
+          border-radius="0px"
+          src="https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/footer/rss.959595.100x64.png"
+          alt="RSS"
+        ></mj-social-element>
+      `
     if (this.getAttribute('twitter-url'))
       socialElements += `
         <mj-social-element
@@ -67,33 +78,32 @@ export default class LaborAdobeFooter extends BodyComponent {
           href="${this.getAttribute('twitter-url')}"
           background-color="none"
           border-radius="0px"
-          src="https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/footer/twitter.959595.100x64.png"
+          src="https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/footer/x.959595.100x64.png"
           alt="Twitter"
         ></mj-social-element>
       `
     if (this.getAttribute('youtube-url'))
       socialElements += `
         <mj-social-element
-          name="instagram"
+          name="youtube"
           href="${this.getAttribute('youtube-url')}"
           background-color="none"
           border-radius="0px"
           src="https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/footer/youtube.959595.120x64.png"
-          alt="Youtube"
+          alt="YouTube"
         ></mj-social-element>
       `
     if (this.getAttribute('linkedin-url'))
       socialElements += `
         <mj-social-element
-          name="instagram"
+          name="linkedin"
           href="${this.getAttribute('linkedin-url')}"
           background-color="none"
           border-radius="0px"
           src="https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/footer/linkedin.959595.100x64.png"
-          alt="Youtube"
+          alt="LinkedIn"
         ></mj-social-element>
       `
-
     return (
       this.renderMJML(`
       <labor-adobe-section
