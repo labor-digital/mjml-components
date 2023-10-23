@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.11.1](https://github.com/labor-digital/mjml-components/compare/v1.11.0...v1.11.1) (2023-10-23)
+
+
+### Bug Fixes
+
+* add children padding to adobe hero ([a570994](https://github.com/labor-digital/mjml-components/commit/a570994a2a110ccd1029c1308d1848569fc44f4c))
+
 ## [1.11.0](https://github.com/labor-digital/mjml-components/compare/v1.10.8...v1.11.0) (2023-10-19)
 
 
