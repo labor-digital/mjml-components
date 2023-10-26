@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.11.2](https://github.com/labor-digital/mjml-components/compare/v1.11.1...v1.11.2) (2023-10-26)
+
+
+### Bug Fixes
+
+* fixed the footer with -noshare ([8d890a4](https://github.com/labor-digital/mjml-components/commit/8d890a4de5c8ed60273d0c7ef65cc8439f33f3ba))
+
 ### [1.11.1](https://github.com/labor-digital/mjml-components/compare/v1.11.0...v1.11.1) (2023-10-23)
 
 
