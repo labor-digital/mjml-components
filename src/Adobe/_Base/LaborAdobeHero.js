@@ -20,6 +20,8 @@ export default class LaborAdobeHero extends BodyComponent {
     'product-image-title': 'string',
     'product-image-target': 'string',
     'product-image-padding-bottom-overwrite': 'unit(px)',
+    'padding-left': 'unit(px)',
+    'padding-right': 'unit(px)',
   }
 
   static defaultAttributes = {
@@ -45,8 +47,10 @@ export default class LaborAdobeHero extends BodyComponent {
   render() {
     for (var idx in this.props.children) {
       this.props.children[idx].attributes['padding-left'] =
-        LaborAdobeSection.desktopLeftRightPadding
+          this.getAttribute('padding-left') ? this.getAttribute('padding-left') :
+                  LaborAdobeSection.desktopLeftRightPadding
       this.props.children[idx].attributes['padding-right'] =
+          this.getAttribute('padding-right') ? this.getAttribute('padding-right') :
         LaborAdobeSection.desktopLeftRightPadding
       this.props.children[idx].attributes['css-class'] =
         this.props.children[idx].attributes['css-class'] || ''
@@ -66,6 +70,8 @@ export default class LaborAdobeHero extends BodyComponent {
           background-height="${this.getAttribute('height')}"
           height="${this.getAttribute('height')}"
           width="100%"
+          padding-left="${this.getAttribute('padding-left')}"
+          padding-right="${this.getAttribute('padding-left')}"
       >
         ${
           this.getAttribute('product-image-src')

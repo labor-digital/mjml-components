@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.11.1](https://github.com/labor-digital/mjml-components/compare/v1.11.0...v1.11.1) (2023-10-23)
+
+
+### Bug Fixes
+
+* add children padding to adobe hero ([a570994](https://github.com/labor-digital/mjml-components/commit/a570994a2a110ccd1029c1308d1848569fc44f4c))
+
+## [1.11.0](https://github.com/labor-digital/mjml-components/compare/v1.10.8...v1.11.0) (2023-10-19)
+
+
+### Features
+
+* update adobe footer twitter / x logo, add rss logo ([020835c](https://github.com/labor-digital/mjml-components/commit/020835c681fab0bf05a4db78cc1230bec92ca882))
+
+### [1.10.8](https://github.com/labor-digital/mjml-components/compare/v1.10.7...v1.10.8) (2023-09-11)
+
+
+### Bug Fixes
+
+* allow edexTwoColImgTextSection to receive a with-padding-image ([815a1be](https://github.com/labor-digital/mjml-components/commit/815a1be0e0e16f0db2f6cf7fd32d40378888a8a3))
+
 ### [1.10.7](https://github.com/labor-digital/mjml-components/compare/v1.10.6...v1.10.7) (2023-05-31)
 
 
