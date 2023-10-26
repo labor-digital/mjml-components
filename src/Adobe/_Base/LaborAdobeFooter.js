@@ -74,7 +74,7 @@ export default class LaborAdobeFooter extends BodyComponent {
     if (this.getAttribute('youtube-url'))
       socialElements += `
         <mj-social-element
-          name="instagram"
+          name="youtube"
           href="${this.getAttribute('youtube-url')}"
           background-color="none"
           border-radius="0px"
@@ -85,7 +85,7 @@ export default class LaborAdobeFooter extends BodyComponent {
     if (this.getAttribute('linkedin-url'))
       socialElements += `
         <mj-social-element
-          name="instagram"
+          name="linkedin-noshare"
           href="${this.getAttribute('linkedin-url')}"
           background-color="none"
           border-radius="0px"
