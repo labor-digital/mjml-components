@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.11.3](https://github.com/labor-digital/mjml-components/compare/v1.11.2...v1.11.3) (2024-01-31)
+
+
+### Bug Fixes
+
+* update adobe acrobat sign logo ([1b9ddde](https://github.com/labor-digital/mjml-components/commit/1b9dddee1a758e008c19d0b2eb11b06160eb0ce4))
+
 ### [1.11.2](https://github.com/labor-digital/mjml-components/compare/v1.11.1...v1.11.2) (2023-10-26)
 
 
