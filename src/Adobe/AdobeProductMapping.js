@@ -62,12 +62,12 @@ export default class AdobeProductMapping {
     },
     sign: {
       name: 'Adobe Sign',
-      width: '268px',
+      width: '409px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_sign.white.268x60.png',
+          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_acrobat_sign_lockup_horizontal.white.409x60.png',
         black:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_sign.black.268x60.png',
+          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_acrobat_sign_lockup_horizontal.black.409x60.png',
       },
     },
     scan: {
