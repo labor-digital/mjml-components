@@ -1,5 +1,6 @@
 import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { md5 } from 'js-md5'
 
 registerDependencies({
   'mj-column': ['labor-adobe-typo-body'],
@@ -34,29 +35,39 @@ export default class LaborAdobeTypoBody extends BodyComponent {
     'black': '#000000'
   }
 
-  headStyle = (breakpoint) => `
-    .labor-adobe-typo-body-ul {
+  constructor(initialDatas = {}) {
+    super(initialDatas)
+    this.setCustomStyles = false
+    if(!this.attributes['css-class']) {
+      this.setCustomStyles = true
+      const cssClass = "labor-adobe-typo-body-" + md5(this.getContent());
+      this.attributes['css-class'] = cssClass
+    }
+  }
+
+  componentHeadStyle = (breakpoint) => this.setCustomStyles ? `
+    .${this.attributes['css-class']} .labor-adobe-typo-body-ul {
       padding-left: 20px;
       margin-top: 0;
       margin-bottom: 0;
     }
-    .labor-adobe-typo-body-link {
+    .${this.attributes['css-class']} .labor-adobe-typo-body-link {
         text-decoration: underline !important;
         color: ${this.getAttribute('on-background') ? '#ffffff' : LaborAdobeTypoBody.tones[this.getAttribute('tone')]} !important;
     }
-    .labor-adobe-typo-body-link-blue {
+    .${this.attributes['css-class']} .labor-adobe-typo-body-link-blue {
         text-decoration: none !important;
         color: ${this.getAttribute('on-background') ? '#ffffff' : '#1473E6'} !important;
     }
-    .labor-adobe-typo-body-link:hover {
+    .${this.attributes['css-class']} .labor-adobe-typo-body-link:hover {
         text-decoration: none !important;
         cursor: pointer;
     }
-    .labor-adobe-typo-body-link-blue:hover {
+    .${this.attributes['css-class']} .labor-adobe-typo-body-link-blue:hover {
         text-decoration: underline !important;
         cursor: pointer;
     }
-  `
+  ` : ``
 
   render() {
     const attrs = {
