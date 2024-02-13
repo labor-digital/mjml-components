@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.11.5](https://github.com/labor-digital/mjml-components/compare/v1.11.4...v1.11.5) (2024-02-13)
+
+
+### Bug Fixes
+
+* making the css-class of adobeTypoBody component independent from each other ([3c64c2d](https://github.com/labor-digital/mjml-components/commit/3c64c2d9d5c4a87d03e1b91a8aeacf7107cc7331))
+
 ### [1.11.4](https://github.com/labor-digital/mjml-components/compare/v1.11.3...v1.11.4) (2024-01-31)
 
 
