@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.11.8](https://github.com/labor-digital/mjml-components/compare/v1.11.7...v1.11.8) (2024-02-13)
+
+
+### Bug Fixes
+
+* changing the img path for product logos and assets to 2024 ([3ee1cb7](https://github.com/labor-digital/mjml-components/commit/3ee1cb7c07f887a69f28cd39d524b65cd8bc9a64))
+
 ### [1.11.7](https://github.com/labor-digital/mjml-components/compare/v1.11.6...v1.11.7) (2024-02-13)
 
 
