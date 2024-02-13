@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.11.7](https://github.com/labor-digital/mjml-components/compare/v1.11.6...v1.11.7) (2024-02-13)
+
+
+### Bug Fixes
+
+* changing the adobe red to the new one (logos still missing) ([72ddfc9](https://github.com/labor-digital/mjml-components/commit/72ddfc9a84d32d15be320b40cb5ae78c648a4660))
+
 ### [1.11.6](https://github.com/labor-digital/mjml-components/compare/v1.11.5...v1.11.6) (2024-02-13)
 
 
