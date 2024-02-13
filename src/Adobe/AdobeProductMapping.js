@@ -5,9 +5,9 @@ export default class AdobeProductMapping {
       width: '328px',
       images: {
         white:
-            'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_creative_cloud_express.white.328x60.png',
+            'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_creative_cloud_express.white.328x60.png',
         black:
-            'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_creative_cloud_express.black.328x60.png',
+            'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_creative_cloud_express.black.328x60.png',
       },
     },
     fresco: {
@@ -15,9 +15,9 @@ export default class AdobeProductMapping {
       width: '310px',
       images: {
         white:
-            'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_fresco.white.310x60.png',
+            'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_fresco.white.310x60.png',
         black:
-            'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_fresco.black.310x60.png',
+            'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_fresco.black.310x60.png',
       },
     },
     aero: {
@@ -25,9 +25,9 @@ export default class AdobeProductMapping {
       width: '280px',
       images: {
         white:
-            'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_aero.white.280x60.png',
+            'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_aero.white.280x60.png',
         black:
-            'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_aero.black.280x60.png',
+            'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_aero.black.280x60.png',
       },
     },
     xd: {
@@ -35,9 +35,9 @@ export default class AdobeProductMapping {
       width: '246px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_xd.white.246x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_xd.white.246x60.png',
         black:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_xd.black.246x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_xd.black.246x60.png',
       },
     },
     stock: {
@@ -45,9 +45,9 @@ export default class AdobeProductMapping {
       width: '292px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_stock.white.292x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_stock.white.292x60.png',
         black:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_stock.black.292x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_stock.black.292x60.png',
       },
     },
     spark: {
@@ -55,9 +55,9 @@ export default class AdobeProductMapping {
       width: '296px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_spark.white.296x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_spark.white.296x60.png',
         black:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_spark.black.296x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_spark.black.296x60.png',
       },
     },
     sign: {
@@ -65,9 +65,9 @@ export default class AdobeProductMapping {
       width: '409px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_acrobat_sign_lockup_horizontal.white.409x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_acrobat_sign_lockup_horizontal.white.409x60.png',
         black:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_acrobat_sign_lockup_horizontal.black.409x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_acrobat_sign_lockup_horizontal.black.409x60.png',
       },
     },
     scan: {
@@ -75,9 +75,9 @@ export default class AdobeProductMapping {
       width: '276px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_scan.white.276x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_scan.white.276x60.png',
         black:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_scan.black.276x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_scan.black.276x60.png',
       },
     },
     rush: {
@@ -85,9 +85,9 @@ export default class AdobeProductMapping {
       width: '446px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_premiere_rush.white.446x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_premiere_rush.white.446x60.png',
         black:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_premiere_rush.black.446x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_premiere_rush.black.446x60.png',
       },
     },
     premiere: {
@@ -95,9 +95,9 @@ export default class AdobeProductMapping {
       width: '442px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_premiere_pro.white.442x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_premiere_pro.white.442x60.png',
         black:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_premiere_pro.black.442x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_premiere_pro.black.442x60.png',
       },
     },
     lightroom: {
@@ -105,9 +105,9 @@ export default class AdobeProductMapping {
       width: '568px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_photoshop_lightroom.white.568x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_photoshop_lightroom.white.568x60.png',
         black:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_photoshop_lightroom.black.568x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_photoshop_lightroom.black.568x60.png',
       },
     },
     photoshop: {
@@ -115,9 +115,9 @@ export default class AdobeProductMapping {
       width: '382px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_photoshop.white.382x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_photoshop.white.382x60.png',
         black:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_photoshop.black.382x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_photoshop.black.382x60.png',
       },
     },
     live: {
@@ -125,8 +125,8 @@ export default class AdobeProductMapping {
       width: '266px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_live.white.266x60.png',
-        red: 'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_live.red.266x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_live.white.266x60.png',
+        red: 'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_live.red.266x60.png',
       },
     },
     indesign: {
@@ -134,9 +134,9 @@ export default class AdobeProductMapping {
       width: '346px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_indesign.white.346x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_indesign.white.346x60.png',
         black:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_indesign.black.346x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_indesign.black.346x60.png',
       },
     },
     illustrator: {
@@ -144,9 +144,9 @@ export default class AdobeProductMapping {
       width: '364px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_illustrator.white.364x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_illustrator.white.364x60.png',
         black:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_illustrator.black.364x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_illustrator.black.364x60.png',
       },
     },
     experience_cloud: {
@@ -154,9 +154,9 @@ export default class AdobeProductMapping {
       width: '492px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_experience_cloud.white.492x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_experience_cloud.white.492x60.png',
         black:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_experience_cloud.black.492x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_experience_cloud.black.492x60.png',
       },
     },
     document_cloud: {
@@ -164,8 +164,8 @@ export default class AdobeProductMapping {
       width: '482px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_document_cloud.white.482x60.png',
-        red: 'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_document_cloud.red.482x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_document_cloud.white.482x60.png',
+        red: 'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_document_cloud.red.482x60.png',
       },
     },
     creative_cloud: {
@@ -173,8 +173,8 @@ export default class AdobeProductMapping {
       width: '442px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_creative_cloud.white.442x60.png',
-        red: 'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_creative_cloud.red.442x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_creative_cloud.white.442x60.png',
+        red: 'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_creative_cloud.red.442x60.png',
       },
     },
     behance: {
@@ -182,9 +182,9 @@ export default class AdobeProductMapping {
       width: '224px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_behance.white.224x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_behance.white.224x60.png',
         black:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_behance.black.224x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_behance.black.224x60.png',
       },
     },
     acrobat_reader: {
@@ -192,9 +192,9 @@ export default class AdobeProductMapping {
       width: '460px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_acrobat_reader.white.460x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_acrobat_reader.white.460x60.png',
         black:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_acrobat_reader.black.460x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_acrobat_reader.black.460x60.png',
       },
     },
     acrobat_pro: {
@@ -202,9 +202,9 @@ export default class AdobeProductMapping {
       width: '398px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_acrobat_pro.white.398x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_acrobat_pro.white.398x60.png',
         black:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_acrobat_pro.black.398x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_acrobat_pro.black.398x60.png',
       },
     },
     acrobat_pro_dc: {
@@ -212,9 +212,9 @@ export default class AdobeProductMapping {
       width: '458px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_acrobat_pro.white.458x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_acrobat_pro.white.458x60.png',
         black:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_acrobat_pro.black.458x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_acrobat_pro.black.458x60.png',
       },
     },
     acrobat: {
@@ -222,9 +222,9 @@ export default class AdobeProductMapping {
       width: '330px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_acrobat.white.330x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_acrobat.white.330x60.png',
         black:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_acrobat.black.330x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_acrobat.black.330x60.png',
       },
     },
     audition: {
@@ -232,9 +232,9 @@ export default class AdobeProductMapping {
       width: '342px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_audition.white.342x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_audition.white.342x60.png',
         black:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_audition.black.342x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_audition.black.342x60.png',
       },
     },
     portfolio: {
@@ -242,9 +242,9 @@ export default class AdobeProductMapping {
       width: '348px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_portfolio.white.348x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_portfolio.white.348x60.png',
         black:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_portfolio.black.348x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_portfolio.black.348x60.png',
       },
     },
     animator: {
@@ -252,9 +252,9 @@ export default class AdobeProductMapping {
       width: '532px',
       images: {
         white:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_character_animator.white.532x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_character_animator.white.532x60.png',
         black:
-          'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/adobe_character_animator.black.532x60.png',
+          'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_character_animator.black.532x60.png',
       },
     },
     twitter_ace: {
@@ -262,9 +262,9 @@ export default class AdobeProductMapping {
       width: '600',
       images: {
         white:
-            'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/twitter_educator.white.600x60.png',
+            'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/twitter_educator.white.600x60.png',
         black:
-            'https://landing.adobe.com/dam/uploads/2022/na/labor-email-assets/products-and-header/twitter_educator.black.600x60.png',
+            'https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/twitter_educator.black.600x60.png',
       },
     },
   }
