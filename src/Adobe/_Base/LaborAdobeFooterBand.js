@@ -17,7 +17,7 @@ export default class LaborAdobeFooterBand extends BodyComponent {
     }
 
     static defaultAttributes = {
-        'bg-color': '#fa0f00',
+        'bg-color': '#eb1000',
         'color': '#ffffff',
         'font-size': '16px',
         'font-weight': 800,
