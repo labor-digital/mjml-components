@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.11.6](https://github.com/labor-digital/mjml-components/compare/v1.11.5...v1.11.6) (2024-02-13)
+
+
+### Bug Fixes
+
+* adding a new cta_inverted to the adobe button ([0280527](https://github.com/labor-digital/mjml-components/commit/028052769e6a2b0ad2961a7356ea51c96d6c5a10))
+
 ### [1.11.5](https://github.com/labor-digital/mjml-components/compare/v1.11.4...v1.11.5) (2024-02-13)
 
 
