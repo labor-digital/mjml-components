@@ -1,45 +1,61 @@
 {
-	"name": "@labor-digital/mjml-components",
-	"version": "1.11.8",
-	"description": "A library of MJML components for internal email projects",
-	"homepage": "https://github.com/labor-digital/mjml-components",
-	"license": "Apache-2.0",
-	"bugs": {
-		"url": "https://github.com/labor-digital/mjml-components/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+ssh://git@github.com:labor-digital/mjml-components.git"
-	},
-	"author": {
-		"name": "LABOR.digital",
-		"email": "info@labor.tools",
-		"url": "https://labor.digital"
-	},
-	"main": "lib/index.js",
-	"scripts": {
-		"watch": "gulp watch",
-		"build": "gulp build",
-		"prettier-format": "prettier --config .prettierrc 'src/**/*.js' --write"
-	},
-	"sideEffects": false,
-	"dependencies": {
-		"js-md5": "^0.8.3",
-		"mjml": "4.6.*"
-	},
-	"devDependencies": {
-		"babel-core": "^6.13.2",
-		"babel-eslint": "^6.1.2",
-		"babel-plugin-transform-decorators-legacy": "^1.3.4",
-		"babel-preset-env": "^1.6.1",
-		"babel-preset-stage-0": "^6.5.0",
-		"babel-register": "^6.14.0",
-		"glob": "^7.1.7",
-		"gulp": "^4.0.2",
-		"gulp-babel": "^6.1.2",
-		"gulp-collect": "^0.1.0",
-		"gulp-watch": "^4.3.9",
-		"prettier": "^2.3.2",
-		"pretty": "^2.0.0"
-	}
+  "name": "@labor-digital/mjml-components",
+  "version": "1.11.8",
+  "description": "A library of MJML components for internal email projects",
+  "homepage": "https://github.com/labor-digital/mjml-components",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/labor-digital/mjml-components/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:labor-digital/mjml-components.git"
+  },
+  "author": {
+    "name": "LABOR.digital",
+    "email": "info@labor.tools",
+    "url": "https://labor.digital"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "watch": "gulp watch",
+    "build": "gulp build",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.js' --write",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@storybook/addon-storysource": "^8.1.4",
+    "js-md5": "^0.8.3",
+    "mjml": "4.15.*",
+    "mjml-core": "^4.15.3",
+    "mjml-validator": "^4.15.3",
+    "through2": "^4.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.6",
+    "@babel/eslint-parser": "^7.24.6",
+    "@babel/plugin-proposal-decorators": "^7.24.6",
+    "@babel/preset-env": "^7.24.6",
+    "@babel/register": "^7.24.6",
+    "@chromatic-com/storybook": "^1.4.0",
+    "@storybook/addon-essentials": "^8.1.4",
+    "@storybook/addon-interactions": "^8.1.4",
+    "@storybook/addon-links": "^8.1.4",
+    "@storybook/addon-mdx-gfm": "^8.1.4",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.2",
+    "@storybook/blocks": "^8.1.4",
+    "@storybook/html": "^8.1.4",
+    "@storybook/html-webpack5": "^8.1.4",
+    "@storybook/test": "^8.1.4",
+    "glob": "^10.4.1",
+    "gulp": "^5.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-collect": "^0.1.0",
+    "gulp-watch": "^4.3.9",
+    "prettier": "^2.3.2",
+    "pretty": "^2.0.0",
+    "storybook": "^8.1.4"
+  }
 }

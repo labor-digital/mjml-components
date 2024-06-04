@@ -9,3 +9,4 @@ dist/
 lib/
 *.html
 SyncToy*
+*storybook.log
