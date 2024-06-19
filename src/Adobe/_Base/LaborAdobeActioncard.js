@@ -1,10 +1,9 @@
 import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
-import LaborAdobeSection from './LaborAdobeSection'
 
 registerDependencies({
   'mj-body': ['labor-adobe-actioncard'],
-  'labor-adobe-actioncard': [],
+  'labor-adobe-actioncard': ['labor-adobe-typo-headingthree', 'labor-adobe-typo-body'],
 })
 
 export default class LaborAdobeActioncard extends BodyComponent {

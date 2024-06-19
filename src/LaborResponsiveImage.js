@@ -7,6 +7,12 @@ registerDependencies({
 })
 
 export default class LaborResponsiveImage extends MjImage {
+
+  static allowedAttributes = {
+    ...MjImage.allowedAttributes,
+    'src-mobile': 'string'
+  }
+
   static endingTag = true
 
   headStyle = (breakpoint) =>

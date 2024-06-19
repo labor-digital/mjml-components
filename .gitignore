@@ -10,3 +10,4 @@ lib/
 *.html
 SyncToy*
 *storybook.log
+src/errors.json
