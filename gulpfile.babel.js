@@ -1,29 +1,32 @@
 import fs from 'fs'
-import glob from 'glob'
-import gulp from 'gulp'
+import { glob } from 'glob'
+import gulp, { series } from 'gulp'
 import watch from 'gulp-watch'
 import babel from 'gulp-babel'
 import path from 'path'
 import { registerComponent } from 'mjml-core'
 import mjml2html from 'mjml'
 import pretty from 'pretty'
-import through from 'through2'
 import collect from 'gulp-collect'
+import through2 from 'through2'
 
 const indexJSPath = './src/index.js'
+const indexMJMLPath = 'src/index.mjml'
 const libDestination = './lib'
 const srcPattern = 'src/**/*.js'
 
-const clean = (cb) => {
-  fs.rmdirSync(libDestination, { recursive: true })
-  cb()
+const clean = (done) => {
+  if (fs.existsSync(libDestination)) {
+    fs.rmSync(libDestination, { recursive: true, force: true })
+  }
+  done()
 }
 
-const filesToIgnore = ['AdobeProductMapping.js', 'index.js']
+const filesToIgnore = ['AdobeProductMapping.js', 'index.js', 'code-example.js']
 const filterNonComponent = (file) => !filesToIgnore.includes(path.basename(file))
 
-const generateIndexJS = (cb) => {
-  let fileContent = ""
+const generateIndexJS = (done) => {
+  let fileContent = ''
   fileContent += glob
     .sync(srcPattern)
     .filter(filterNonComponent)
@@ -36,66 +39,78 @@ const generateIndexJS = (cb) => {
     })
     .join('\n')
   fs.writeFileSync(indexJSPath, fileContent)
-  cb()
+  done()
 }
 
-const removeIndexJs = (cb) => {
-  fs.unlinkSync(indexJSPath)
-  cb()
-}
-
-const compileAndRegisterComponents = (files) => {
-  if (typeof files == 'object') {
-    for (let idx in files) {
-      files[idx] = './' + path.relative(__dirname, files[idx]).replace('\\', '/')
-    }
+const removeIndexJs = (done) => {
+  if (fs.existsSync(indexJSPath)) {
+    fs.rmSync(indexJSPath, { force: true })
   }
+  done()
+}
 
+const compileAndRegisterComponents = (done) => {
   return gulp
-    .src(files)
+    .src(srcPattern)
     .pipe(babel())
     .pipe(gulp.dest(libDestination))
     .pipe(collect.list((files) => files))
     .pipe(
-      through.obj((file, enc, cb) => {
+      through2.obj((file, enc, cb) => {
         delete require.cache[file.path]
         if (filterNonComponent(file.path)) {
           registerComponent(require(file.path).default)
         }
         cb(null, file)
-      })
+      }),
     )
 }
 
-const compileTemplates = (files) => {
-  return gulp.src(files).pipe(
-    through.obj((file, enc, cb) => {
+const compileTemplates = (done) => {
+  return gulp.src(indexMJMLPath).pipe(
+    through2.obj((file, enc, cb) => {
       const data = fs.readFileSync(file.path, enc)
       const parsed = path.parse(file.path)
-      const result = pretty(mjml2html(data).html, { ocd: true })
-      fs.writeFileSync(path.normalize(parsed.dir + '/' + parsed.name + '.html'), result)
+      const parsed_data = mjml2html(data)
+
+      const errorsJson = path.normalize(parsed.dir + '/errors.json')
+      if (fs.existsSync(errorsJson)) {
+        fs.rmSync(errorsJson)
+      }
+
+      if (parsed_data.errors.length) {
+        const errorMessage = `${parsed_data.errors.length} error(s) occurred. Check errors.json`
+        console.log(`---- ${errorMessage}`)
+        fs.writeFileSync(path.normalize(parsed.dir + '/errors.json'), JSON.stringify(parsed_data.errors))
+        fs.writeFileSync(path.normalize(parsed.dir + '/' + parsed.name + '.html'), errorMessage)
+        process.exit(1)
+      } else {
+        const result = pretty(parsed_data.html, { ocd: true })
+        fs.writeFileSync(path.normalize(parsed.dir + '/' + parsed.name + '.html'), result)
+      }
+
       cb(null, file)
-    })
+    }),
   )
 }
 
-exports.build = gulp.series(
-    clean,
-    generateIndexJS,
-    () => {
-      return compileAndRegisterComponents(srcPattern);
-    },
-    removeIndexJs,
-    () => {
-      return compileTemplates('src/index.mjml');
-    }
-);
+exports.build = series(
+  clean,
+  generateIndexJS,
+  compileAndRegisterComponents,
+  removeIndexJs,
+  compileTemplates,
+)
 
 exports.watch = () => {
-  clean(() => {})
-  generateIndexJS(() => {})
-  return compileAndRegisterComponents(srcPattern).on('end', () => {
-    removeIndexJs(() => {})
+  clean(() => {
+  })
+  generateIndexJS(() => {
+  })
+
+  return compileAndRegisterComponents(() => {
+    removeIndexJs(() => {
+    })
     watch(srcPattern, (cb) => {
       return compileAndRegisterComponents(cb.history)
     })

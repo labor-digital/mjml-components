@@ -10,7 +10,7 @@ Install this package using npm:
 npm install @labor-digital/mjml-components
 ```
 
-Currently this package only supports `MJML 4.6.*`.
+Currently this package only supports `MJML 4.7.*`.
 
 ## Setup
 

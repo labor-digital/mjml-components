@@ -13,7 +13,7 @@ export default class LaborAdobeHeader extends BodyComponent {
     static allowedAttributes = {
         'src': 'string',
         'header-bg-class': 'string',
-        'height': 'enum(22px, 28px, 30px, 34px)',
+        'height': 'enum(22px,28px,30px,34px)',
         'width': 'unit(px,%)',
         'href': 'string',
         'title': 'string',

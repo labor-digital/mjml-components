@@ -12,6 +12,7 @@ export default class LaborAdobeSecondaryCta extends BodyComponent {
   static allowedAttributes = {
     type: 'enum(normal,inverted,quiet)',
     href: 'string',
+    'padding-bottom': 'unit(px,%)',
   }
 
   static defaultAttributes = {

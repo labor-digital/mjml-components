@@ -12,16 +12,14 @@ export default class LaborRoundedButton extends BodyComponent {
 
   static allowedAttributes = {
     'href': 'string',
-
+    'padding-bottom': 'unit(px,%)',
     'width': 'unit(px)',
     'inner-padding': 'unit(px){1,4}',
-
     'color': 'color',
     'font-family': 'string',
     'font-size': 'unit(px)',
     'line-height': 'unit(px)',
     'font-weight': 'string',
-
     'background-color': 'color',
     'border-color': 'color',
     'border-width': 'unit(px)',

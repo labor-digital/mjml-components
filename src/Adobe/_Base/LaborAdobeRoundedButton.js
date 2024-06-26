@@ -10,10 +10,11 @@ export default class LaborAdobeRoundedButton extends BodyComponent {
   static endingTag = true
 
   static allowedAttributes = {
-    type: 'enum(cta, inverted, quiet, cta_inverted)',
+    type: 'enum(cta,inverted,quiet,cta_inverted)',
     href: 'string',
+    'padding-bottom': 'unit(px,%)',
     width: 'unit(px)',
-    tone: 'enum(white, light, 300, 400, 500, 600, 700, 800, dark, black)'
+    tone: 'enum(white, light,300,400,500,600,700,800,dark,black)'
   }
 
   static defaultAttributes = {
@@ -39,7 +40,6 @@ export default class LaborAdobeRoundedButton extends BodyComponent {
   render() {
     let attrs = {
       'href': this.getAttribute('href'),
-
       'width': this.getAttribute('width'),
       'inner-padding': '8px 18px 10px 18px',
       'font-size': '16px',
