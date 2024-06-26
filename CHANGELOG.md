@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.12.0](https://github.com/labor-digital/mjml-components/compare/v1.11.8...v1.12.0) (2024-06-26)
+
+
+### Features
+
+* working builder ([3aa1bff](https://github.com/labor-digital/mjml-components/commit/3aa1bff3b371cd4e753480396cfa386dfd62afde))
+
+
+### Bug Fixes
+
+* ready for Node 18 with mjml 4.7 ([aef6cbb](https://github.com/labor-digital/mjml-components/commit/aef6cbbfa3f67185db6fedcb367bbb07f7602822))
+
 ### [1.11.8](https://github.com/labor-digital/mjml-components/compare/v1.11.7...v1.11.8) (2024-02-13)
 
 
