@@ -4,6 +4,7 @@ import MjSection from 'mjml-section'
 registerDependencies({
   'labor-adobe-section': ['mj-group', 'mj-column'],
   'mj-wrapper': ['labor-adobe-section'],
+  'labor-bg-wrapper': ['labor-adobe-section'],
   'mj-body': ['labor-adobe-section'],
 })
 

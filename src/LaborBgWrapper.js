@@ -3,7 +3,7 @@ import MjWrapper from 'mjml-wrapper'
 
 registerDependencies({
   'labor-bg-wrapper': ['mj-section'],
-  'mj-body': ['labor-adobe-section'],
+  'mj-body': ['labor-bg-wrapper'],
 })
 
 export default class LaborBgWrapper extends MjWrapper {
