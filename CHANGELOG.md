@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.13.0](https://github.com/labor-digital/mjml-components/compare/v1.12.0...v1.13.0) (2024-07-23)
+
+
+### Features
+
+* Added a new wrapper component so that we´re finally able to have a bg image on nearly all clients ([2c726af](https://github.com/labor-digital/mjml-components/commit/2c726afb41109ddd1932304a4047e4463a37247c))
+
 ## [1.12.0](https://github.com/labor-digital/mjml-components/compare/v1.11.8...v1.12.0) (2024-06-26)
 
 
