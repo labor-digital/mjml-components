@@ -1,47 +1,24 @@
 import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
 import { md5 } from 'js-md5'
+import AdobeComponentMapping from '../../_Styles/AdobeComponentMapping'
 
-registerDependencies({
-  'mj-column': ['labor-adobe-typo-body'],
-  'labor-adobe-typo-body': [],
-})
+const mapping = AdobeComponentMapping.LaborAdobeTypoBody;
+registerDependencies(mapping.dependencies);
 
 export default class LaborAdobeTypoBody extends BodyComponent {
-  static endingTag = true
 
-  static allowedAttributes = {
-    'on-background': 'boolean',
-    'padding-bottom': 'unit(px,%)',
-    'tone': 'enum(white, light, 300, 400, 500, 600, 700, 800, dark, black)'
-  }
+  static endingTag = mapping.endingTag;
 
-  static defaultAttributes = {
-    'on-background': false,
-    'padding-bottom': '0px',
-    'tone': '800'
-  }
-
-  static tones = {
-    'white': '#FFFFFF',
-    'light': '#F5F5F5',
-    '300': '#EAEAEA',
-    '400': '#D3D3D3',
-    '500': '#BCBCBC',
-    '600': '#959595',
-    '700': '#747474',
-    '800': '#505050',
-    'dark': '#2C2C2C',
-    'black': '#000000'
-  }
+  static allowedAttributes = mapping.allowedAttributes;
+  static defaultAttributes = mapping.defaultAttributes;
 
   constructor(initialDatas = {}) {
     super(initialDatas)
     this.setCustomStyles = false
     if(!this.attributes['css-class']) {
       this.setCustomStyles = true
-      const cssClass = "labor-adobe-typo-body-" + md5(this.getContent());
-      this.attributes['css-class'] = cssClass
+      this.attributes['css-class'] = "labor-adobe-typo-body-" + md5(this.getContent())
     }
   }
 
@@ -53,11 +30,11 @@ export default class LaborAdobeTypoBody extends BodyComponent {
     }
     .${this.attributes['css-class']} .labor-adobe-typo-body-link {
         text-decoration: underline !important;
-        color: ${this.getAttribute('on-background') ? '#ffffff' : LaborAdobeTypoBody.tones[this.getAttribute('tone')]} !important;
+        color: ${this.getAttribute('on-background') ? mapping.additionalAttributes.onBackgroundColor : mapping.additionalAttributes.tone} !important;
     }
     .${this.attributes['css-class']} .labor-adobe-typo-body-link-blue {
         text-decoration: none !important;
-        color: ${this.getAttribute('on-background') ? '#ffffff' : '#1473E6'} !important;
+        color: ${this.getAttribute('on-background') ? mapping.additionalAttributes.onBackgroundColor : mapping.additionalAttributes.linkColor} !important;
     }
     .${this.attributes['css-class']} .labor-adobe-typo-body-link:hover {
         text-decoration: none !important;
@@ -71,14 +48,12 @@ export default class LaborAdobeTypoBody extends BodyComponent {
 
   render() {
     const attrs = {
-      'font-size': '18px',
-      'line-height': '26px',
-      'font-weight': 400,
-      'color': this.getAttribute('on-background') ? '#ffffff' : LaborAdobeTypoBody.tones[this.getAttribute('tone')],
+      'font-size': mapping.additionalAttributes.fontSize,
+      'line-height': mapping.additionalAttributes.lineHeight,
+      'font-weight': mapping.additionalAttributes.fontWeight,
+      'color': this.getAttribute('on-background') ? mapping.additionalAttributes.onBackgroundColor : mapping.additionalAttributes.color,
       'padding-bottom': this.getAttribute('padding-bottom'),
-      'align': this.getAttribute('align'),
     }
-    if (this.getAttribute('color')) attrs['color'] = this.getAttribute('color')
 
     return this.renderMJML(`
       <mj-text

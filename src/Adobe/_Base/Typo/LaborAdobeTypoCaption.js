@@ -1,32 +1,21 @@
 import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import AdobeComponentMapping from '../../_Styles/AdobeComponentMapping'
 
-registerDependencies({
-  'mj-column': ['labor-adobe-typo-caption'],
-  'labor-adobe-typo-caption': [],
-})
+const mapping = AdobeComponentMapping.LaborAdobeTypoCaption;
+registerDependencies(mapping.dependencies);
 
 export default class LaborAdobeTypoCaption extends BodyComponent {
-  static endingTag = true
 
-  static allowedAttributes = {
-    'on-background': 'boolean',
-    'padding-bottom': 'unit(px,%)',
-    'padding-left': 'unit(px,%)',
-    'padding-right': 'unit(px,%)',
-  }
+  static endingTag = mapping.endingTag;
 
-  static defaultAttributes = {
-    'on-background': false,
-    'padding-bottom': '0px',
-    'padding-left': '0px',
-    'padding-right': '0px',
-  }
+  static allowedAttributes = mapping.allowedAttributes;
+  static defaultAttributes = mapping.defaultAttributes;
 
   headStyle = (breakpoint) => `
     .labor-adobe-typo-caption-link {
         text-decoration: underline !important;
-        color: ${this.getAttribute('on-background') ? '#ffffff' : '#959595'} !important;
+        color: ${this.getAttribute('on-background') ? mapping.additionalAttributes.onBackgroundColor : mapping.additionalAttributes.linkColor} !important;
     }
     .labor-adobe-typo-caption-link:hover {
         text-decoration: none !important;
@@ -36,15 +25,14 @@ export default class LaborAdobeTypoCaption extends BodyComponent {
 
   render() {
     const attrs = {
-      'font-size': '14px',
-      'line-height': '20px',
-      'font-style': 'italic',
-      'font-weight': 400,
-      'color': this.getAttribute('on-background') ? '#ffffff' : '#959595',
+      'font-weight': mapping.additionalAttributes.fontWeight,
+      'font-size': mapping.additionalAttributes.fontSize,
+      'line-height': mapping.additionalAttributes.lineHeight,
+      'font-style': mapping.additionalAttributes.fontStyle,
+      'color': this.getAttribute('on-background') ? mapping.additionalAttributes.onBackgroundColor : mapping.additionalAttributes.color,
       'padding-bottom': this.getAttribute('padding-bottom'),
       'padding-left': this.getAttribute('padding-left'),
       'padding-right': this.getAttribute('padding-right'),
-      'align': this.getAttribute('align'),
     }
 
     return this.renderMJML(`

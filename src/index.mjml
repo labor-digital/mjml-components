@@ -78,67 +78,45 @@
 
         <labor-adobe-section with-padding="true" padding-bottom="100px">
             <mj-column>
-                <labor-adobe-typo-displayone on-background="true" type="normal" responsive="true">
+                <labor-adobe-typo-display-one on-background="true" type="normal" responsive="true">
                     Display 1
-                </labor-adobe-typo-displayone>
-                <labor-adobe-typo-displayone on-background="true" type="quiet" responsive="true">
+                </labor-adobe-typo-display-one>
+                <labor-adobe-typo-display-one on-background="true" type="quiet" responsive="true">
                     Display 1 Quiet
-                </labor-adobe-typo-displayone>
-                <labor-adobe-typo-displayone
-                        on-background="true"
-                        type="bold"
-                        responsive="true"
-                        padding-bottom="40px">
-                    Display 1 Bold
-                </labor-adobe-typo-displayone>
+                </labor-adobe-typo-display-one>
 
-                <labor-adobe-typo-displaytwo on-background="true" type="normal">
+                <labor-adobe-typo-display-two on-background="true" type="normal">
                     Display 2
-                </labor-adobe-typo-displaytwo>
-                <labor-adobe-typo-displaytwo on-background="true" type="quiet">
+                </labor-adobe-typo-display-two>
+                <labor-adobe-typo-display-two on-background="true" type="quiet">
                     Display 2 Quiet
-                </labor-adobe-typo-displaytwo>
-                <labor-adobe-typo-displaytwo on-background="true" type="bold" padding-bottom="40px">
-                    Display 2 Bold
-                </labor-adobe-typo-displaytwo>
+                </labor-adobe-typo-display-two>
 
-                <labor-adobe-typo-displaythree on-background="true" type="normal">
+                <labor-adobe-typo-display-three on-background="true" type="normal">
                     Display 3
-                </labor-adobe-typo-displaythree>
-                <labor-adobe-typo-displaythree on-background="true" type="quiet">
+                </labor-adobe-typo-display-three>
+                <labor-adobe-typo-display-three on-background="true" type="quiet">
                     Display 3 Quiet
-                </labor-adobe-typo-displaythree>
-                <labor-adobe-typo-displaythree on-background="true" type="bold" padding-bottom="40px">
+                </labor-adobe-typo-display-three>
+                <labor-adobe-typo-display-three on-background="true" type="bold" padding-bottom="40px">
                     Display 3 Bold
-                </labor-adobe-typo-displaythree>
+                </labor-adobe-typo-display-three>
 
-                <labor-adobe-typo-headingone on-background="true" type="normal">
+                <labor-adobe-typo-heading-one on-background="true">
                     Heading 1
-                </labor-adobe-typo-headingone>
-                <labor-adobe-typo-headingone on-background="true" type="quiet">
-                    Heading 1 Quiet
-                </labor-adobe-typo-headingone>
-                <labor-adobe-typo-headingone on-background="true" type="bold" padding-bottom="40px"
-                >Heading 1 Bold
-                </labor-adobe-typo-headingone>
+                </labor-adobe-typo-heading-one>
 
-                <labor-adobe-typo-headingtwo on-background="true" type="normal">
+                <labor-adobe-typo-heading-two on-background="true">
                     Heading 2
-                </labor-adobe-typo-headingtwo>
-                <labor-adobe-typo-headingtwo on-background="true" type="quiet">
-                    Heading 2 Quiet
-                </labor-adobe-typo-headingtwo>
-                <labor-adobe-typo-headingtwo on-background="true" type="bold" padding-bottom="40px">
-                    Heading 2 Bold
-                </labor-adobe-typo-headingtwo>
+                </labor-adobe-typo-heading-two>
 
-                <labor-adobe-typo-headingthree on-background="true" padding-bottom="40px">
+                <labor-adobe-typo-heading-three on-background="true" padding-bottom="40px">
                     Heading 3
-                </labor-adobe-typo-headingthree>
+                </labor-adobe-typo-heading-three>
 
-                <labor-adobe-typo-headingfour on-background="true" padding-bottom="40px">
+                <labor-adobe-typo-heading-four on-background="true" padding-bottom="40px">
                     Heading 4
-                </labor-adobe-typo-headingfour>
+                </labor-adobe-typo-heading-four>
 
                 <labor-adobe-typo-body on-background="true" padding-bottom="7px">
                     Body copy. Body copy.Body copy. Body copy.Body copy. Body copy.Body copy. Body copy.Body
@@ -215,45 +193,34 @@
                 section-bg-class="content-bg-alt"
         >
             <mj-column>
-                <labor-adobe-typo-displayone type="normal" responsive="true">
+                <labor-adobe-typo-display-one type="normal" responsive="true">
                     Display 1
-                </labor-adobe-typo-displayone>
-                <labor-adobe-typo-displayone type="quiet" responsive="true">
+                </labor-adobe-typo-display-one>
+                <labor-adobe-typo-display-one type="quiet" responsive="true">
                     Display 1 Quiet
-                </labor-adobe-typo-displayone>
-                <labor-adobe-typo-displayone type="bold" responsive="true" padding-bottom="40px">
-                    Display 1 Bold
-                </labor-adobe-typo-displayone>
+                </labor-adobe-typo-display-one>
+<!--                <labor-adobe-typo-displayone type="bold" responsive="true" padding-bottom="40px">-->
+<!--                    Display 1 Bold-->
+<!--                </labor-adobe-typo-displayone>-->
 
-                <labor-adobe-typo-displaytwo type="normal">Display 2</labor-adobe-typo-displaytwo>
-                <labor-adobe-typo-displaytwo type="quiet">Display 2 Quiet</labor-adobe-typo-displaytwo>
-                <labor-adobe-typo-displaytwo type="bold" padding-bottom="40px">
-                    Display 2 Bold
-                </labor-adobe-typo-displaytwo>
+                <labor-adobe-typo-display-two type="normal">Display 2</labor-adobe-typo-display-two>
+                <labor-adobe-typo-display-two type="quiet">Display 2 Quiet</labor-adobe-typo-display-two>
 
-                <labor-adobe-typo-displaythree type="normal">Display 3</labor-adobe-typo-displaythree>
-                <labor-adobe-typo-displaythree type="quiet">Display 3 Quiet</labor-adobe-typo-displaythree>
-                <labor-adobe-typo-displaythree type="bold" padding-bottom="40px">
+                <labor-adobe-typo-display-three type="normal">Display 3</labor-adobe-typo-display-three>
+                <labor-adobe-typo-display-three type="quiet">Display 3 Quiet</labor-adobe-typo-display-three>
+                <labor-adobe-typo-display-three type="bold" padding-bottom="40px">
                     Display 3 Bold
-                </labor-adobe-typo-displaythree>
+                </labor-adobe-typo-display-three>
 
-                <labor-adobe-typo-headingone type="normal">Heading 1</labor-adobe-typo-headingone>
-                <labor-adobe-typo-headingone type="quiet">Heading 1 Quiet</labor-adobe-typo-headingone>
-                <labor-adobe-typo-headingone type="bold" padding-bottom="40px">
-                    Heading 1 Bold
-                </labor-adobe-typo-headingone>
+                <labor-adobe-typo-heading-one>Heading 1</labor-adobe-typo-heading-one>
 
-                <labor-adobe-typo-headingtwo type="normal">Heading 2</labor-adobe-typo-headingtwo>
-                <labor-adobe-typo-headingtwo type="quiet">Heading 2 Quiet</labor-adobe-typo-headingtwo>
-                <labor-adobe-typo-headingtwo type="bold" padding-bottom="40px">
-                    Heading 2 Bold
-                </labor-adobe-typo-headingtwo>
+                <labor-adobe-typo-heading-two>Heading 2</labor-adobe-typo-heading-two>
 
-                <labor-adobe-typo-headingthree padding-bottom="40px">
+                <labor-adobe-typo-heading-three padding-bottom="40px">
                     Heading 3
-                </labor-adobe-typo-headingthree>
+                </labor-adobe-typo-heading-three>
 
-                <labor-adobe-typo-headingfour padding-bottom="40px">Heading 4</labor-adobe-typo-headingfour>
+                <labor-adobe-typo-heading-four padding-bottom="40px">Heading 4</labor-adobe-typo-heading-four>
 
                 <labor-adobe-typo-body padding-bottom="7px">
                     Body copy. Body copy.Body copy. Body copy.Body copy. Body copy.Body copy. Body copy.Body
@@ -302,7 +269,7 @@
                 padding-top-overwrite="0"
                 padding-bottom-overwrite="50px"
         >
-            <labor-adobe-typo-headingthree padding-bottom="17px">Some Heading here</labor-adobe-typo-headingthree>
+            <labor-adobe-typo-heading-three padding-bottom="17px">Some Heading here</labor-adobe-typo-heading-three>
             <labor-adobe-typo-body>Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit
                 ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
             </labor-adobe-typo-body>

@@ -2,10 +2,10 @@ import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
 import AdobeComponentMapping from '../../_Styles/AdobeComponentMapping'
 
-const mapping = AdobeComponentMapping.LaborAdobeTypoDetail;
+const mapping = AdobeComponentMapping.LaborAdobeTypoDisplayTwo;
 registerDependencies(mapping.dependencies);
 
-export default class LaborAdobeTypoDetail extends BodyComponent {
+export default class LaborAdobeTypoDisplayTwo extends BodyComponent {
 
   static endingTag = mapping.endingTag;
 
@@ -13,21 +13,20 @@ export default class LaborAdobeTypoDetail extends BodyComponent {
   static defaultAttributes = mapping.defaultAttributes;
 
   headStyle = (breakpoint) => `
-    .labor-adobe-typo-detail-link {
-        text-decoration: underline !important;
-        color: ${this.getAttribute('on-background') ? mapping.additionalAttributes.onBackgroundColor : mapping.additionalAttributes.linkColor } !important;
-    }
-    .labor-adobe-typo-detail-link:hover {
-        text-decoration: none !important;
-        cursor: pointer;
-    }
-  `
+      @media only screen and (max-width:${breakpoint}) {
+        .labor-adobe-typo-displaytwo-responsive {
+          font-size: 40px !important;
+          line-height: 46px !important;
+        }
+      }
+    `
 
   render() {
     const attrs = {
       'font-size': mapping.additionalAttributes.fontSize,
       'line-height': mapping.additionalAttributes.lineHeight,
-      'font-weight':  mapping.additionalAttributes.fontWeight,
+      'font-weight': mapping.additionalAttributes.fontWeight[this.getAttribute('type')],
+      'letter-spacing': mapping.additionalAttributes.letterSpacing,
       'color': this.getAttribute('on-background') ? mapping.additionalAttributes.onBackgroundColor : mapping.additionalAttributes.color,
       'padding-bottom': this.getAttribute('padding-bottom'),
     }
@@ -36,7 +35,9 @@ export default class LaborAdobeTypoDetail extends BodyComponent {
       <mj-text
         ${this.htmlAttributes(attrs)}
       >
-        ${this.getContent().toUpperCase()}
+        <div ${this.htmlAttributes({
+          class: this.getAttribute('responsive') ? 'labor-adobe-typo-displaytwo-responsive' : '',
+        })}>${this.getContent()}</div>
       </mj-text>
     `)
   }

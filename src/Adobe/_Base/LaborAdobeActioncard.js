@@ -3,7 +3,7 @@ import { BodyComponent } from 'mjml-core'
 
 registerDependencies({
   'mj-body': ['labor-adobe-actioncard'],
-  'labor-adobe-actioncard': ['labor-adobe-typo-headingthree', 'labor-adobe-typo-body'],
+  'labor-adobe-actioncard': ['labor-adobe-typo-heading-three', 'labor-adobe-typo-body'],
 })
 
 export default class LaborAdobeActioncard extends BodyComponent {

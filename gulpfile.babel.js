@@ -22,8 +22,18 @@ const clean = (done) => {
   done()
 }
 
-const filesToIgnore = ['AdobeProductMapping.js', 'index.js', 'code-example.js']
-const filterNonComponent = (file) => !filesToIgnore.includes(path.basename(file))
+const filesToIgnore = ['AdobeProductMapping.js', 'index.js', 'code-example.js', 'AdobeRedStyleMapping.js', 'AdobeComponentMapping.js']
+const fileTypesToIgnore = ['.style.js']
+const filterNonComponent = (file) => {
+  let filterFiles = function (file){
+    return !filesToIgnore.includes(path.basename(file))
+  }
+  let filterFileExtensions = function (file){
+    return !fileTypesToIgnore.includes(path.basename(file).substring(path.basename(file).indexOf('.')))
+  }
+
+  return filterFiles(file) && filterFileExtensions(file)
+}
 
 const generateIndexJS = (done) => {
   let fileContent = ''
