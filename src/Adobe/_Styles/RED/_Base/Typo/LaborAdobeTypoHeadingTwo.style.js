@@ -1,4 +1,4 @@
-import AdobeRedStyleMapping from './AdobeRedStyleMapping'
+import AdobeRedStyleMapping from '../../AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
