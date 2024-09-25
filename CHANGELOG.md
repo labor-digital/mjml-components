@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/labor-digital/mjml-components/compare/v1.13.1...v3.0.0) (2024-09-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* rebuild composite components for red
+
+### Features
+
+* initial commit, typo components updated, index building working ([f431507](https://github.com/labor-digital/mjml-components/commit/f4315072c565507615e7ddf1097cb33b12e8cee1))
+* rebuild composite components for red ([3bc2843](https://github.com/labor-digital/mjml-components/commit/3bc2843fa2699e547836a7e3459a6499985710bc))
+
+
+### Bug Fixes
+
+* refactor ([4baf7f3](https://github.com/labor-digital/mjml-components/commit/4baf7f3b11f536f7aea8901c6a0fe15db9862353))
+* rename branch yaml ([9834a2f](https://github.com/labor-digital/mjml-components/commit/9834a2fd2276deb417e326f568881fed82f6a403))
+* rename release yaml ([81feb11](https://github.com/labor-digital/mjml-components/commit/81feb112c265050e11b8a9c6a640f0a9a7d5cd07))
+* rename yaml ([f1273dd](https://github.com/labor-digital/mjml-components/commit/f1273dd7209c6c1f5e7aa10ae4fd07b20e232fc9))
+* update package lock ([aa4f896](https://github.com/labor-digital/mjml-components/commit/aa4f89644907b7df4f644888736d2ad1930c6242))
+* update version ([5e008ab](https://github.com/labor-digital/mjml-components/commit/5e008ab4990cddd1f5b3f9fd293ae054462b274c))
+
 ### [1.13.1](https://github.com/labor-digital/mjml-components/compare/v1.13.0...v1.13.1) (2024-07-23)
 
 
