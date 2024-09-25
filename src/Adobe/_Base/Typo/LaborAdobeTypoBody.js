@@ -1,17 +1,35 @@
 import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
 import { md5 } from 'js-md5'
-import AdobeComponentMapping from '../../_Styles/AdobeComponentMapping'
+import AdobeRedStyleMapping from '../../_Styles/RED/AdobeRedStyleMapping'
 
-const mapping = AdobeComponentMapping.LaborAdobeTypoBody;
-registerDependencies(mapping.dependencies);
+const styleMapping = AdobeRedStyleMapping
+
+registerDependencies({
+  'mj-column': ['labor-adobe-typo-body'],
+  'labor-adobe-typo-body': [],
+});
 
 export default class LaborAdobeTypoBody extends BodyComponent {
 
-  static endingTag = mapping.endingTag;
-
-  static allowedAttributes = mapping.allowedAttributes;
-  static defaultAttributes = mapping.defaultAttributes;
+  static endingTag= true;
+  static allowedAttributes = {
+    'on-background': 'boolean',
+    'padding-bottom': 'unit(px,%)',
+  };
+  static defaultAttributes = {
+    'on-background': false,
+    'padding-bottom': styleMapping.spacings.vertical.px0,
+  };
+  static additionalAttributes = {
+    fontWeight: styleMapping.typographies.body.fontWeight,
+    fontSize: styleMapping.typographies.body.fontSize,
+    lineHeight: styleMapping.typographies.body.lineHeight,
+    // todophilipp
+    color: styleMapping.labor.colors.body.hex,
+    linkColor: styleMapping.typographies.body.linkColor,
+    onBackgroundColor: styleMapping.colors.white.hex
+  };
 
   constructor(initialDatas = {}) {
     super(initialDatas)
@@ -30,11 +48,11 @@ export default class LaborAdobeTypoBody extends BodyComponent {
     }
     .${this.attributes['css-class']} .labor-adobe-typo-body-link {
         text-decoration: underline !important;
-        color: ${this.getAttribute('on-background') ? mapping.additionalAttributes.onBackgroundColor : mapping.additionalAttributes.tone} !important;
+        color: ${this.getAttribute('on-background') ? LaborAdobeTypoBody.additionalAttributes.onBackgroundColor : LaborAdobeTypoBody.additionalAttributes.tone} !important;
     }
     .${this.attributes['css-class']} .labor-adobe-typo-body-link-blue {
         text-decoration: none !important;
-        color: ${this.getAttribute('on-background') ? mapping.additionalAttributes.onBackgroundColor : mapping.additionalAttributes.linkColor} !important;
+        color: ${this.getAttribute('on-background') ? LaborAdobeTypoBody.additionalAttributes.onBackgroundColor : LaborAdobeTypoBody.additionalAttributes.linkColor} !important;
     }
     .${this.attributes['css-class']} .labor-adobe-typo-body-link:hover {
         text-decoration: none !important;
@@ -48,10 +66,10 @@ export default class LaborAdobeTypoBody extends BodyComponent {
 
   render() {
     const attrs = {
-      'font-size': mapping.additionalAttributes.fontSize,
-      'line-height': mapping.additionalAttributes.lineHeight,
-      'font-weight': mapping.additionalAttributes.fontWeight,
-      'color': this.getAttribute('on-background') ? mapping.additionalAttributes.onBackgroundColor : mapping.additionalAttributes.color,
+      'font-size': LaborAdobeTypoBody.additionalAttributes.fontSize,
+      'line-height': LaborAdobeTypoBody.additionalAttributes.lineHeight,
+      'font-weight': LaborAdobeTypoBody.additionalAttributes.fontWeight,
+      'color': this.getAttribute('on-background') ? LaborAdobeTypoBody.additionalAttributes.onBackgroundColor : LaborAdobeTypoBody.additionalAttributes.color,
       'padding-bottom': this.getAttribute('padding-bottom'),
     }
 

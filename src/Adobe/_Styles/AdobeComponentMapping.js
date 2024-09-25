@@ -9,6 +9,11 @@ import { LaborAdobeTypoHeadingTwo } from './RED/_Base/Typo/LaborAdobeTypoHeading
 import { LaborAdobeTypoHeadingThree } from './RED/_Base/Typo/LaborAdobeTypoHeadingThree.style';
 import { LaborAdobeTypoHeadingFour } from './RED/_Base/Typo/LaborAdobeTypoHeadingFour.style';
 import { LaborAdobeTypoLegal } from './RED/_Base/Typo/LaborAdobeTypoLegal.style';
+import { LaborAdobeSection } from './RED/_Base/LaborAdobeSection.style';
+import { LaborAdobeHeader } from './RED/_Base/LaborAdobeHeader.style';
+import { LaborAdobeHeaderBadge } from './RED/_Base/LaborAdobeHeaderBadge.style';
+import { LaborAdobeAvatar } from './RED/_Base/LaborAdobeAvatar.style';
+import { LaborAdobeFooter } from './RED/_Base/LaborAdobeFooter.style';
 
 export default class AdobeComponentMapping {
   static LaborAdobeTypoBody = LaborAdobeTypoBody;
@@ -22,4 +27,9 @@ export default class AdobeComponentMapping {
   static LaborAdobeTypoHeadingThree = LaborAdobeTypoHeadingThree;
   static LaborAdobeTypoHeadingFour = LaborAdobeTypoHeadingFour;
   static LaborAdobeTypoLegal = LaborAdobeTypoLegal;
+  static LaborAdobeSection = LaborAdobeSection;
+  static LaborAdobeHeader = LaborAdobeHeader;
+  static LaborAdobeHeaderBadge = LaborAdobeHeaderBadge;
+  static LaborAdobeAvatar = LaborAdobeAvatar;
+  static LaborAdobeFooter = LaborAdobeFooter;
 }

@@ -10,6 +10,9 @@ export default class LaborAdobeFooterRedBand extends BodyComponent {
     static endingTag = true
 
     render() {
-        return this.renderMJML(`<labor-adobe-footer-band padding-top="4px" padding-bottom="6px">${this.getContent()}</labor-adobe-footer-band>`)
+        return this.renderMJML(`
+          <labor-adobe-footer-band padding-top="4px" padding-bottom="6px">
+              ${this.getContent()}
+          </labor-adobe-footer-band>`)
     }
 }

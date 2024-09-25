@@ -1,5 +1,8 @@
 import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import AdobeRedStyleMapping from '../_Styles/RED/AdobeRedStyleMapping'
+
+const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
   'labor-adobe-secondary-cta': [],
@@ -24,23 +27,22 @@ export default class LaborAdobeSecondaryCta extends BodyComponent {
     let color = ''
     switch (this.getAttribute('type')) {
       case 'quiet':
-        color = '#747474'
+        color = styleMapping.colors.gray700.hex
         break
       case 'inverted':
-        color = '#ffffff'
+        color = styleMapping.colors.white.hex
         break
       case 'normal':
       default:
-        color = '#1473e6'
+        color = styleMapping.colors.blue900.hex
         break
     }
     return {
       a: {
-        'font-size': '16px',
-        'line-height': '18px',
-        'font-weight': '600',
+        'font-size': styleMapping.typographyFontSize.size16,
+        'line-height': styleMapping.typographyLineHeight.size18,
+        'font-weight': styleMapping.typographyFontWeight.regular,
         'text-decoration': 'none',
-        'font-family': this.getAttribute('font-family'),
         'color': color,
       },
     }

@@ -1,6 +1,9 @@
 import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
 import LaborAdobeSection from '../_Base/LaborAdobeSection'
+import AdobeRedStyleMapping from '../_Styles/RED/AdobeRedStyleMapping'
+
+const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
   'mj-body': ['labor-adobe-edex-two-col-img-text-section'],
@@ -35,18 +38,18 @@ export default class LaborAdobeEdexTwoColImgTextSection extends BodyComponent {
   headStyle = (breakpoint) => `
       @media only screen and (max-width:${breakpoint}) {
         .labor-adobe-edex-two-col-img-text-section-responsive > table > tbody > tr > td {
-          padding-left: ${LaborAdobeSection.mobileLeftRightPadding} !important;
-          padding-right: ${LaborAdobeSection.mobileLeftRightPadding} !important;
+          padding-left: ${styleMapping.grids.mobile.contentSpacing} !important;
+          padding-right: ${styleMapping.grids.mobile.contentSpacing} !important;
         }
       }
     `
 
   render() {
     const defaultPadding = this.getAttribute('with-padding')
-      ? LaborAdobeSection.desktopLeftRightPadding
+      ? styleMapping.grids.desktop.contentSpacing
       : 0;
     const imageDefaultPadding = this.getAttribute('with-padding-image')
-        ? LaborAdobeSection.desktopLeftRightPadding
+        ? styleMapping.grids.desktop.contentSpacing
         : 0;
 
     let imagePadding = [0, 0, 0, imageDefaultPadding]

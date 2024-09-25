@@ -1,5 +1,8 @@
 import {registerDependencies} from 'mjml-validator'
 import {BodyComponent} from 'mjml-core'
+import AdobeRedStyleMapping from '../_Styles/RED/AdobeRedStyleMapping'
+
+const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
     'mj-body': ['labor-adobe-footer-band'],
@@ -7,6 +10,7 @@ registerDependencies({
 })
 
 export default class LaborAdobeFooterBand extends BodyComponent {
+
     static endingTag = true
 
     static allowedAttributes = {
@@ -17,10 +21,10 @@ export default class LaborAdobeFooterBand extends BodyComponent {
     }
 
     static defaultAttributes = {
-        'bg-color': '#eb1000',
-        'color': '#ffffff',
+        'bg-color': styleMapping.colors.adobeRed.hex,
+        'color': styleMapping.colors.white.hex,
         'font-size': '16px',
-        'font-weight': 800,
+        'font-weight': styleMapping.typographyFontWeight.extraBold,
         'line-height': '20px',
         'align': 'left',
         'padding-top': '5px',

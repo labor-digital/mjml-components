@@ -1,6 +1,9 @@
 import {registerDependencies} from 'mjml-validator'
 import {BodyComponent} from 'mjml-core'
 import AdobeProductMapping from '../AdobeProductMapping'
+import AdobeRedStyleMapping from '../_Styles/RED/AdobeRedStyleMapping'
+
+const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
     'mj-column': ['labor-adobe-edex-article'],
@@ -43,7 +46,7 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
     render() {
         return (
             this.renderMJML(`
-                <labor-adobe-section with-padding="false" padding-bottom="${this.getAttribute('product') ? '40px' : '34px'}" section-bg-class="${this.getAttribute('section-bg-class')}">
+                <labor-adobe-section with-padding="false" padding-bottom="${this.getAttribute('product') ? styleMapping.spacings.horizontal.px40 : styleMapping.spacings.horizontal.px34 }" section-bg-class="${this.getAttribute('section-bg-class')}">
                     <mj-column>
                         <labor-responsive-image
                             src="${this.getAttribute('image-src')}"
@@ -70,7 +73,7 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
                                         width="${Math.floor(parseInt(AdobeProductMapping.productMapping[this.getAttribute('product')]['width'].replace('px', '')) / 2)}px"
                                         height="30px"
                                         target="_blank"
-                                        padding-bottom="24px"
+                                        padding-bottom="${styleMapping.spacings.horizontal.px24}"
                                         alt="${AdobeProductMapping.productMapping[this.getAttribute('product')]['name']}"
                                     />
                                 ` :
@@ -79,12 +82,12 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
                         ${
                             this.getAttribute('category') ?
                                 `
-                                    <labor-adobe-typo-body padding-bottom="7px">${this.getAttribute('category')}</labor-adobe-typo-body>
+                                    <labor-adobe-typo-body padding-bottom="${styleMapping.spacings.horizontal.px7}">${this.getAttribute('category')}</labor-adobe-typo-body>
                                 ` :
                                 ``
                         }
-                        <labor-adobe-typo-headingthree padding-bottom="7px">${this.getAttribute('headline')}</labor-adobe-typo-headingthree>
-                        <labor-adobe-typo-body padding-bottom="${this.getAttribute('href') ? '33px' : '0px'}">${this.getAttribute('text')}</labor-adobe-typo-body>
+                        <labor-adobe-typo-headingthree padding-bottom="${styleMapping.spacings.horizontal.px7}">${this.getAttribute('headline')}</labor-adobe-typo-headingthree>
+                        <labor-adobe-typo-body padding-bottom="${this.getAttribute('href') ? styleMapping.spacings.horizontal.px33 : styleMapping.spacings.horizontal.px0}">${this.getAttribute('text')}</labor-adobe-typo-body>
                         ${
                             this.getAttribute('href') ?
                                 `
@@ -97,7 +100,7 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
                         ${
                             this.getAttribute('secondary-href') ?
                                 `
-                                    <labor-adobe-secondary-cta padding-top="${this.getAttribute('href') ? '10px' : '30px'}" type="quiet" href="${this.getAttribute('secondary-href')}">${this.getAttribute('secondary-cta')}</labor-adobe-secondary-cta>
+                                    <labor-adobe-secondary-cta padding-top="${this.getAttribute('href') ? styleMapping.spacings.horizontal.px10 : styleMapping.spacings.horizontal.px30}" type="quiet" href="${this.getAttribute('secondary-href')}">${this.getAttribute('secondary-cta')}</labor-adobe-secondary-cta>
                                 ` :
                                 ``
                         }

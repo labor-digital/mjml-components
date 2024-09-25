@@ -1,6 +1,9 @@
 import {registerDependencies} from 'mjml-validator'
 import {BodyComponent} from 'mjml-core'
 import AdobeProductMapping from '../AdobeProductMapping'
+import AdobeRedStyleMapping from '../_Styles/RED/AdobeRedStyleMapping'
+
+const styleMapping = AdobeRedStyleMapping;
 
 registerDependencies({
     'mj-column': ['labor-adobe-edex-two-col-article'],
@@ -87,7 +90,7 @@ export default class LaborAdobeEdexTwoColArticle extends BodyComponent {
     render() {
         return this.renderMJML(`
             <labor-adobe-section with-padding="false" section-bg-class="${this.getAttribute('section-bg-class')}">
-                <mj-column css-class="laborAdobeEdexTwoColArticle-first" padding-right="2px" padding-bottom="100px">
+                <mj-column css-class="laborAdobeEdexTwoColArticle-first" padding-right="2px" padding-bottom="${styleMapping.spacings.horizontal.px100}">
                     <labor-responsive-image
                         src="${this.getAttribute('1-image-src')}"
                         src-mobile="${this.getAttribute('1-image-src-mobile')}"
@@ -95,7 +98,7 @@ export default class LaborAdobeEdexTwoColArticle extends BodyComponent {
                         width="600px"
                         align="left"
                         target="_blank"
-                        padding-bottom="${this.getAttribute('1-product') ? '40px' : '34px'}"
+                        padding-bottom="${this.getAttribute('1-product') ? styleMapping.spacings.horizontal.px40 : styleMapping.spacings.horizontal.px34}"
                         href="${this.getAttribute('1-href')}"
                         alt="${this.getAttribute('1-headline')}"
                     />
@@ -129,10 +132,10 @@ export default class LaborAdobeEdexTwoColArticle extends BodyComponent {
                     `
                 : ``
         }
-                    <labor-adobe-typo-body css-class="laborAdobeEdexTwoColArticle-first-elem" padding-bottom="7px">
+                    <labor-adobe-typo-body css-class="laborAdobeEdexTwoColArticle-first-elem" padding-bottom="${styleMapping.spacings.horizontal.px7}">
                         ${this.getAttribute('1-category')}
                     </labor-adobe-typo-body>
-                    <labor-adobe-typo-headingthree css-class="laborAdobeEdexTwoColArticle-first-elem" padding-bottom="7px">
+                    <labor-adobe-typo-headingthree css-class="laborAdobeEdexTwoColArticle-first-elem" padding-bottom="${styleMapping.spacings.horizontal.px7}">
                         ${this.getAttribute('1-headline')}
                     </labor-adobe-typo-headingthree>
                     <labor-adobe-typo-body css-class="laborAdobeEdexTwoColArticle-first-elem" padding-bottom="${this.getAttribute('1-href') ? '30px' : '0px'}">
@@ -148,7 +151,7 @@ export default class LaborAdobeEdexTwoColArticle extends BodyComponent {
                             ``
                     }
                 </mj-column>
-                <mj-column css-class="laborAdobeEdexTwoColArticle-second" padding-left="2px" padding-bottom="100px">
+                <mj-column css-class="laborAdobeEdexTwoColArticle-second" padding-left="2px" padding-bottom="${styleMapping.spacings.horizontal.px100}">
                     <labor-responsive-image
                         src="${this.getAttribute('2-image-src')}"
                         src-mobile="${this.getAttribute('2-image-src-mobile')}"
@@ -156,7 +159,7 @@ export default class LaborAdobeEdexTwoColArticle extends BodyComponent {
                         width="600px"
                         align="left"
                         target="_blank"
-                        padding-bottom="${this.getAttribute('2-product') ? '40px' : '34px'}"
+                        padding-bottom="${this.getAttribute('2-product') ? styleMapping.spacings.horizontal.px40 : styleMapping.spacings.horizontal.px34}"
                         href="${this.getAttribute('2-href')}"
                         alt="${this.getAttribute('2-headline')}"
                     />
@@ -179,7 +182,7 @@ export default class LaborAdobeEdexTwoColArticle extends BodyComponent {
                 )}px"
                             height="30px"
                             target="_blank"
-                            padding-bottom="24px"
+                            padding-bottom="${styleMapping.spacings.horizontal.px24}"
                             css-class="laborAdobeEdexTwoColArticle-second-elem-product"
                             alt="${
                     AdobeProductMapping.productMapping[this.getAttribute('2-product')][
@@ -190,13 +193,13 @@ export default class LaborAdobeEdexTwoColArticle extends BodyComponent {
                     `
                 : ``
         }
-                    <labor-adobe-typo-body css-class="laborAdobeEdexTwoColArticle-second-elem" padding-bottom="7px">
+                    <labor-adobe-typo-body css-class="laborAdobeEdexTwoColArticle-second-elem" padding-bottom="${styleMapping.spacings.horizontal.px7}">
                         ${this.getAttribute('2-category')}
                     </labor-adobe-typo-body>
-                    <labor-adobe-typo-headingthree css-class="laborAdobeEdexTwoColArticle-second-elem" padding-bottom="7px">
+                    <labor-adobe-typo-headingthree css-class="laborAdobeEdexTwoColArticle-second-elem" padding-bottom="${styleMapping.spacings.horizontal.px7}">
                         ${this.getAttribute('2-headline')}
                     </labor-adobe-typo-headingthree>
-                    <labor-adobe-typo-body css-class="laborAdobeEdexTwoColArticle-second-elem" padding-bottom="${this.getAttribute('2-href') ? '30px' : '0px'}">
+                    <labor-adobe-typo-body css-class="laborAdobeEdexTwoColArticle-second-elem" padding-bottom="${this.getAttribute('2-href') ? styleMapping.spacings.horizontal.px30 : styleMapping.spacings.horizontal.px0}">
                         ${this.getAttribute('2-text')}
                     </labor-adobe-typo-body>
                     ${

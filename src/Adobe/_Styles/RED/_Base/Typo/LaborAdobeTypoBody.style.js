@@ -20,9 +20,9 @@ export const LaborAdobeTypoBody = {
     fontWeight: styleMapping.typographies.body.fontWeight,
     fontSize: styleMapping.typographies.body.fontSize,
     lineHeight: styleMapping.typographies.body.lineHeight,
-    color: styleMapping.typographies.body.color,
+    color: "#505050",
+    // color: styleMapping.typographies.body.color,
     linkColor: styleMapping.typographies.body.linkColor,
-
     onBackgroundColor: styleMapping.colors.white.hex
   },
 }

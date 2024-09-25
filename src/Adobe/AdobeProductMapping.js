@@ -1,3 +1,5 @@
+
+// TODO remove old logos
 export default class AdobeProductMapping {
   static productMapping = {
     ccx: {

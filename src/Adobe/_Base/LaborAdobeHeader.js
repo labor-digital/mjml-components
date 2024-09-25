@@ -1,45 +1,21 @@
 import {registerDependencies} from 'mjml-validator'
 import {BodyComponent} from 'mjml-core'
-import LaborAdobeSection from './LaborAdobeSection'
+import AdobeComponentMapping from '../_Styles/AdobeComponentMapping'
 
-registerDependencies({
-    'mj-body': ['labor-adobe-header'],
-    'labor-adobe-header': [],
-})
+const mapping = AdobeComponentMapping.LaborAdobeHeader;
+registerDependencies(mapping.dependencies);
 
 export default class LaborAdobeHeader extends BodyComponent {
-    static endingTag = true
 
-    static allowedAttributes = {
-        'src': 'string',
-        'header-bg-class': 'string',
-        'height': 'enum(22px,28px,30px,34px)',
-        'width': 'unit(px,%)',
-        'href': 'string',
-        'title': 'string',
-        'alt': 'string',
-        'target': 'string',
-        'border': 'boolean',
-        'padding-bottom-overwrite': 'unit(px)',
-        'with-padding': 'boolean',
-    }
-
-    static defaultAttributes = {
-        'src': '',
-        'header-bg-class': 'content-bg',
-        'height': '30px',
-        'width': 'auto',
-        'href': '',
-        'target': '_blank',
-        'border': false,
-        'with-padding': true,
-    }
+    static endingTag = mapping.endingTag;
+    static allowedAttributes = mapping.allowedAttributes;
+    static defaultAttributes = mapping.defaultAttributes;
 
     headStyle = (breakpoint) => `
       @media only screen and (max-width:${breakpoint}) {
         .labor-adobe-header-responsive {
-          padding-left: ${LaborAdobeSection.mobileLeftRightPadding} !important;
-          padding-right: ${LaborAdobeSection.mobileLeftRightPadding} !important;
+          padding-left: ${mapping.additionalAttributes.mobileLeftRightPadding} !important;
+          padding-right: ${mapping.additionalAttributes.mobileLeftRightPadding} !important;
         }
       }
     `
@@ -54,17 +30,17 @@ export default class LaborAdobeHeader extends BodyComponent {
             'width': this.getAttribute('width'),
             'href': this.getAttribute('href'),
             'target': this.getAttribute('target'),
-            'align': 'left',
+            'align': mapping.additionalAttributes.align,
             'css-class': this.getAttribute('with-padding') ? 'labor-adobe-header-responsive' : '',
             'padding-top': padding + 'px',
             'padding-bottom': this.getAttribute('padding-bottom-overwrite')
                 ? this.getAttribute('padding-bottom-overwrite')
                 : padding + 'px',
             'padding-left': this.getAttribute('with-padding')
-                ? LaborAdobeSection.desktopLeftRightPadding
+                ? mapping.additionalAttributes.desktopLeftRightPadding
                 : '0',
             'padding-right': this.getAttribute('with-padding')
-                ? LaborAdobeSection.desktopLeftRightPadding
+                ? mapping.additionalAttributes.desktopLeftRightPadding
                 : '0',
         }
         if (this.getAttribute('title')) imgAttrs['title'] = this.getAttribute('title')
@@ -73,7 +49,7 @@ export default class LaborAdobeHeader extends BodyComponent {
         return this.renderMJML(`
       <labor-adobe-section
         section-bg-class="${this.getAttribute('header-bg-class')}"
-        border-top="${this.getAttribute('border') ? '4px solid #eb1000' : ''}"
+        border-top="${this.getAttribute('border') ? mapping.additionalAttributes.border : ''}"
         with-padding="false"
       >
         <mj-column>

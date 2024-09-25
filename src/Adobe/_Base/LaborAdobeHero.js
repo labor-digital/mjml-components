@@ -1,6 +1,9 @@
 import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
-import LaborAdobeSection from './LaborAdobeSection'
+// import LaborAdobeSection from './LaborAdobeSection'
+import AdobeRedStyleMapping from '../_Styles/RED/AdobeRedStyleMapping'
+
+const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
   'mj-body': ['labor-adobe-hero'],
@@ -38,8 +41,8 @@ export default class LaborAdobeHero extends BodyComponent {
   headStyle = (breakpoint) => `
       @media only screen and (max-width:${breakpoint}) {
         .labor-adobe-hero-element-responsive {
-          padding-left: ${LaborAdobeSection.mobileLeftRightPadding} !important;
-          padding-right: ${LaborAdobeSection.mobileLeftRightPadding} !important;
+          padding-left: ${styleMapping.grids.mobile.contentSpacing} !important;
+          padding-right: ${styleMapping.grids.mobile.contentSpacing} !important;
         }
       }
     `
@@ -48,10 +51,10 @@ export default class LaborAdobeHero extends BodyComponent {
     for (var idx in this.props.children) {
       this.props.children[idx].attributes['padding-left'] =
           this.getAttribute('padding-left') ? this.getAttribute('padding-left') :
-                  LaborAdobeSection.desktopLeftRightPadding
+            styleMapping.grids.desktop.contentSpacing
       this.props.children[idx].attributes['padding-right'] =
           this.getAttribute('padding-right') ? this.getAttribute('padding-right') :
-        LaborAdobeSection.desktopLeftRightPadding
+            styleMapping.grids.desktop.contentSpacing
       this.props.children[idx].attributes['css-class'] =
         this.props.children[idx].attributes['css-class'] || ''
       this.props.children[idx].attributes['css-class'] += ' labor-adobe-hero-element-responsive'
@@ -91,8 +94,8 @@ export default class LaborAdobeHero extends BodyComponent {
                 ? this.getAttribute('product-image-padding-bottom-overwrite')
                 : productImgPadding + 'px'
             }"
-            padding-left="${LaborAdobeSection.desktopLeftRightPadding}"
-            padding-right="${LaborAdobeSection.desktopLeftRightPadding}"
+            padding-left="${styleMapping.grids.desktop.contentSpacing}"
+            padding-right="${styleMapping.grids.desktop.contentSpacing}"
           />
         `
             : ``

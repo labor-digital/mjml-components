@@ -1,6 +1,5 @@
 import {registerDependencies} from 'mjml-validator'
 import {BodyComponent} from 'mjml-core'
-import LaborAdobeSection from './LaborAdobeSection'
 
 registerDependencies({
     'mj-body': ['labor-adobe-footer-image-band'],
@@ -8,6 +7,8 @@ registerDependencies({
 })
 
 export default class LaborAdobeFooterImageBand extends BodyComponent {
+
+    static endingTag = true
     static allowedAttributes = {
         'src': 'string',
         'src-mobile': 'string'
@@ -18,7 +19,7 @@ export default class LaborAdobeFooterImageBand extends BodyComponent {
         'src-mobile': ''
     }
 
-    static endingTag = true
+
 
     render() {
         let imgAttrs = {

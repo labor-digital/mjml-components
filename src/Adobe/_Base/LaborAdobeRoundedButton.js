@@ -1,5 +1,8 @@
 import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import AdobeRedStyleMapping from '../_Styles/RED/AdobeRedStyleMapping'
+
+const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
   'labor-adobe-rounded-button': [],
@@ -14,27 +17,12 @@ export default class LaborAdobeRoundedButton extends BodyComponent {
     href: 'string',
     'padding-bottom': 'unit(px,%)',
     width: 'unit(px)',
-    tone: 'enum(white, light,300,400,500,600,700,800,dark,black)'
   }
 
   static defaultAttributes = {
     type: 'cta',
     href: '#',
     width: '180px',
-    tone: '700'
-  }
-
-  static tones = {
-    'white': '#FFFFFF',
-    'light': '#F5F5F5',
-    '300': '#EAEAEA',
-    '400': '#D3D3D3',
-    '500': '#BCBCBC',
-    '600': '#959595',
-    '700': '#747474',
-    '800': '#505050',
-    'dark': '#2C2C2C',
-    'black': '#000000'
   }
 
   render() {
@@ -49,25 +37,25 @@ export default class LaborAdobeRoundedButton extends BodyComponent {
     }
     switch (this.getAttribute('type')) {
       case 'quiet':
-        attrs['color'] = LaborAdobeRoundedButton.tones[this.getAttribute('tone')]
+        attrs['color'] = styleMapping.colors.gray700.hex
         attrs['background-color'] = ''
-        attrs['border-color'] = LaborAdobeRoundedButton.tones[this.getAttribute('tone')]
+        attrs['border-color'] = styleMapping.colors.gray700.hex
         break
       case 'inverted':
-        attrs['color'] = '#ffffff'
+        attrs['color'] = styleMapping.colors.white.hex
         attrs['background-color'] = ''
-        attrs['border-color'] = '#ffffff'
+        attrs['border-color'] = styleMapping.colors.white.hex
         break
       case 'cta_inverted':
-        attrs['color'] = LaborAdobeRoundedButton.tones[this.getAttribute('tone')]
-        attrs['background-color'] = '#ffffff'
-        attrs['border-color'] = '#ffffff'
+        attrs['color'] = styleMapping.colors.gray700.hex
+        attrs['background-color'] = styleMapping.colors.white.hex
+        attrs['border-color'] = styleMapping.colors.white.hex
         break
       case 'cta':
       default:
-        attrs['color'] = '#ffffff'
-        attrs['background-color'] = '#1473e6'
-        attrs['border-color'] = '#1473e6'
+        attrs['color'] = styleMapping.colors.white.hex
+        attrs['background-color'] = styleMapping.colors.blue900.hex
+        attrs['border-color'] = styleMapping.colors.blue900.hex
         break
     }
 

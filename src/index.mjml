@@ -266,14 +266,21 @@
 
         <labor-adobe-actioncard
                 section-bg-class="content-bg-alt"
-                padding-top-overwrite="0"
-                padding-bottom-overwrite="50px"
         >
-            <labor-adobe-typo-heading-three padding-bottom="17px">Some Heading here</labor-adobe-typo-heading-three>
-            <labor-adobe-typo-body>Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit
+            <labor-adobe-typo-heading-three padding-bottom="17px">Some Heading Three</labor-adobe-typo-heading-three>
+            <labor-adobe-typo-body>Actioncard Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit
                 ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
             </labor-adobe-typo-body>
         </labor-adobe-actioncard>
+
+        <labor-adobe-section padding-bottom="60px" padding-top="60px" section-bg-class="content-bg-alt">
+            <mj-column>
+                <labor-adobe-avatar padding-bottom="34px" src="example_avatar.png" name="awesome name"></labor-adobe-avatar>
+                <labor-adobe-typo-body>Example avatar text!</labor-adobe-typo-body>
+            </mj-column>
+        </labor-adobe-section>
+
+        <labor-adobe-footer-band>Footer Band - Acrobat’s got it.</labor-adobe-footer-band>
 
         <labor-adobe-footer
                 facebook-url="#"

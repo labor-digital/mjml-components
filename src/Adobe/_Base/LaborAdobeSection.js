@@ -1,34 +1,20 @@
 import { registerDependencies } from 'mjml-validator'
 import MjSection from 'mjml-section'
+import AdobeComponentMapping from '../_Styles/AdobeComponentMapping'
 
-registerDependencies({
-  'labor-adobe-section': ['mj-group', 'mj-column'],
-  'mj-wrapper': ['labor-adobe-section'],
-  'labor-bg-wrapper': ['labor-adobe-section'],
-  'mj-body': ['labor-adobe-section'],
-})
+const mapping = AdobeComponentMapping.LaborAdobeSection;
+registerDependencies(mapping.dependencies);
 
 export default class LaborAdobeSection extends MjSection {
-  static allowedAttributes = {
-    'with-padding': 'boolean',
-    'section-bg-class': 'string',
-    'padding-bottom': 'unit(px,%)',
-    'padding-top': 'unit(px,%)'
-  }
 
-  static defaultAttributes = {
-    'with-padding': true,
-    'section-bg-class': 'content-bg',
-  }
-
-  static desktopLeftRightPadding = '50px'
-  static mobileLeftRightPadding = '30px'
+  static allowedAttributes = mapping.allowedAttributes;
+  static defaultAttributes = mapping.defaultAttributes;
 
   headStyle = (breakpoint) => `
       @media only screen and (max-width:${breakpoint}) {
         .labor-adobe-section-responsive > table > tbody > tr > td {
-          padding-left: ${LaborAdobeSection.mobileLeftRightPadding} !important;
-          padding-right: ${LaborAdobeSection.mobileLeftRightPadding} !important;
+          padding-left: ${mapping.additionalAttributes.mobileLeftRightPadding} !important;
+          padding-right: ${mapping.additionalAttributes.mobileLeftRightPadding} !important;
         }
       }
     `
@@ -41,10 +27,11 @@ export default class LaborAdobeSection extends MjSection {
       if (attrName == 'padding-bottom') continue
       attrs[attrName] = this.getAttribute(attrName)
     }
-    let pT = this.getAttribute('padding-top') && this.getAttribute('padding-top') != 'undefined' ? this.getAttribute('padding-top') : '0'
-    let pR = this.getAttribute('with-padding') ? LaborAdobeSection.desktopLeftRightPadding : '0'
-    let pB = this.getAttribute('padding-bottom') && this.getAttribute('padding-bottom') != 'undefined' ? this.getAttribute('padding-bottom') : '0'
-    let pL = this.getAttribute('with-padding') ? LaborAdobeSection.desktopLeftRightPadding : '0'
+
+    let pT = (this.getAttribute('padding-top') && this.getAttribute('padding-top') != 'undefined') ? this.getAttribute('padding-top') : '0'
+    let pR = this.getAttribute('with-padding') ? mapping.additionalAttributes.desktopLeftRightPadding : '0'
+    let pB = (this.getAttribute('padding-bottom') && this.getAttribute('padding-bottom') != 'undefined') ? this.getAttribute('padding-bottom') : '0'
+    let pL = this.getAttribute('with-padding') ? mapping.additionalAttributes.desktopLeftRightPadding : '0'
     attrs['padding'] = pT + ' ' + pR + ' ' + pB + ' ' + pL
 
     return this.renderMJML(`

@@ -1,34 +1,48 @@
 import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import AdobeRedStyleMapping from '../_Styles/RED/AdobeRedStyleMapping'
+
+const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
   'mj-body': ['labor-adobe-footer'],
   'labor-adobe-footer': [],
-})
+});
 
 export default class LaborAdobeFooter extends BodyComponent {
-  static endingTag = true
 
-  static allowedAttributes = {
+  static endingTag = true;
+  static allowedAttributes =  {
     'facebook-url': 'string',
     'twitter-url': 'string',
     'instagram-url': 'string',
     'youtube-url': 'string',
     'footer-bg-class': 'string',
-  }
-
+  };
   static defaultAttributes = {
     'facebook-url': '',
     'twitter-url': '',
     'instagram-url': '',
     'youtube-url': '',
     'footer-bg-class': 'footer-bg',
+  };
+
+  static additionalAttributes = {
+    desktopLeftRightPadding: styleMapping.grids.desktop.contentSpacing,
+    mobileLeftRightPadding: styleMapping.grids.mobile.contentSpacing,
+    linkColor: styleMapping.labor.colors.footerLink.hex,
+    align: 'left',
+    socialIconBackgroundColor: styleMapping.labor.colors.socialIconBackgroundColor.hex,
+    socialIconBorderRadius: "0px",
+    socialSectionPaddingTop: "40px",
+    socialSectionPaddingBottom: "40px",
+    contentSectionPaddingBottom: "100px"
   }
 
   headStyle = (breakpoint) => `
     .labor-adobe-footer-link {
         text-decoration: underline;
-        color: #959595;
+        color: ${LaborAdobeFooter.additionalAttributes.linkColor};
     }
     .labor-adobe-footer-link:hover {
         text-decoration: none !important;
@@ -43,7 +57,7 @@ export default class LaborAdobeFooter extends BodyComponent {
         <mj-social-element
           name="facebook-noshare"
           href="${this.getAttribute('facebook-url')}"
-          background-color="none"
+          background-color="${LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor}"
           border-radius="0px"
           src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/footer/facebook.959595.100x64.png"
           alt="Facebook"
@@ -54,8 +68,8 @@ export default class LaborAdobeFooter extends BodyComponent {
         <mj-social-element
           name="instagram"
           href="${this.getAttribute('instagram-url')}"
-          background-color="none"
-          border-radius="0px"
+          background-color="${LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor}"
+          border-radius="${LaborAdobeFooter.additionalAttributes.socialIconBorderRadius}"
           src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/footer/instagram.959595.100x64.png"
           alt="Instagram"
         ></mj-social-element>
@@ -65,8 +79,8 @@ export default class LaborAdobeFooter extends BodyComponent {
         <mj-social-element
           name="rss"
           href="${this.getAttribute('rss-url')}"
-          background-color="none"
-          border-radius="0px"
+          background-color="${LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor}"
+          border-radius="${LaborAdobeFooter.additionalAttributes.socialIconBorderRadius}"
           src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/footer/rss.959595.100x64.png"
           alt="RSS"
         ></mj-social-element>
@@ -76,8 +90,8 @@ export default class LaborAdobeFooter extends BodyComponent {
         <mj-social-element
           name="twitter-noshare"
           href="${this.getAttribute('twitter-url')}"
-          background-color="none"
-          border-radius="0px"
+          background-color="${LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor}"
+          border-radius="${LaborAdobeFooter.additionalAttributes.socialIconBorderRadius}"
           src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/footer/x.959595.100x64.png"
           alt="Twitter"
         ></mj-social-element>
@@ -87,8 +101,8 @@ export default class LaborAdobeFooter extends BodyComponent {
         <mj-social-element
           name="youtube"
           href="${this.getAttribute('youtube-url')}"
-          background-color="none"
-          border-radius="0px"
+          background-color="${LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor}"
+          border-radius="${LaborAdobeFooter.additionalAttributes.socialIconBorderRadius}"
           src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/footer/youtube.959595.120x64.png"
           alt="YouTube"
         ></mj-social-element>
@@ -98,8 +112,8 @@ export default class LaborAdobeFooter extends BodyComponent {
         <mj-social-element
           name="linkedin-noshare"
           href="${this.getAttribute('linkedin-url')}"
-          background-color="none"
-          border-radius="0px"
+          background-color=${LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor}
+          border-radius="${LaborAdobeFooter.additionalAttributes.socialIconBorderRadius}"
           src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/footer/linkedin.959595.100x64.png"
           alt="LinkedIn"
         ></mj-social-element>
@@ -108,8 +122,8 @@ export default class LaborAdobeFooter extends BodyComponent {
       this.renderMJML(`
       <labor-adobe-section
         section-bg-class="${this.getAttribute('footer-bg-class')}"
-        padding-top="40px"
-        padding-bottom="40px"
+        padding-top=${LaborAdobeFooter.additionalAttributes.socialSectionPaddingTop}
+        padding-bottom=${LaborAdobeFooter.additionalAttributes.socialSectionPaddingBottom}
       >
         <mj-group>
           <mj-column width="30%">
@@ -132,7 +146,7 @@ export default class LaborAdobeFooter extends BodyComponent {
       this.renderMJML(`
       <labor-adobe-section
         section-bg-class="${this.getAttribute('footer-bg-class')}"
-        padding-bottom="100px"
+        padding-bottom=${LaborAdobeFooter.additionalAttributes.contentSectionPaddingBottom}
       >
         <mj-column>
           ${this.getContent()}
