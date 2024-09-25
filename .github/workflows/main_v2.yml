@@ -3,7 +3,7 @@ name: Release_v2
 on:
   push:
     branches:
-      - feature/component_mapping
+      - feature/component-mapping
 
 jobs:
   build:
@@ -24,7 +24,7 @@ jobs:
         run: npm run build
       -
         name: Create Changelog and bump release version
-        uses: labor-digital/conventional-release-action@feature/component_mapping
+        uses: labor-digital/conventional-release-action@feature/component-mapping
         with:
           github-token: ${{ secrets.github_token }}
       -
