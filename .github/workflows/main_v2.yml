@@ -24,7 +24,7 @@ jobs:
         run: npm run build
       -
         name: Create Changelog and bump release version
-        uses: labor-digital/conventional-release-action@feature/component-mapping
+        uses: labor-digital/conventional-release-action@master
         with:
           github-token: ${{ secrets.github_token }}
       -
