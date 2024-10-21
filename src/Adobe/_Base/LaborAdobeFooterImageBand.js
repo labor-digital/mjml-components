@@ -1,5 +1,8 @@
 import {registerDependencies} from 'mjml-validator'
 import {BodyComponent} from 'mjml-core'
+import AdobeRedStyleMapping from '../_Styles/RED/AdobeRedStyleMapping'
+
+const styleMapping = AdobeRedStyleMapping;
 
 registerDependencies({
     'mj-body': ['labor-adobe-footer-image-band'],
@@ -8,18 +11,17 @@ registerDependencies({
 
 export default class LaborAdobeFooterImageBand extends BodyComponent {
 
-    static endingTag = true
+    static endingTag = true;
+
     static allowedAttributes = {
         'src': 'string',
         'src-mobile': 'string'
-    }
+    };
 
     static defaultAttributes = {
         'src': '',
         'src-mobile': ''
-    }
-
-
+    };
 
     render() {
         let imgAttrs = {
@@ -30,6 +32,7 @@ export default class LaborAdobeFooterImageBand extends BodyComponent {
             'align': 'left'
         }
 
+        //todophilipp
         return this.renderMJML(`
         <labor-adobe-section with-padding="false" section-bg-class="content-bg" padding-bottom="0">
             <mj-column>

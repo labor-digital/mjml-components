@@ -1,17 +1,44 @@
 import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
-import AdobeComponentMapping from '../../_Styles/AdobeComponentMapping'
+import AdobeRedStyleMapping from '../../_Styles/RED/AdobeRedStyleMapping'
 
-const mapping = AdobeComponentMapping.LaborAdobeTypoDisplayOne;
-registerDependencies(mapping.dependencies);
+const styleMapping = AdobeRedStyleMapping;
+
+registerDependencies({
+  'mj-column': ['labor-adobe-typo-display-one'],
+  'labor-adobe-typo-display-one': [],
+});
 
 export default class LaborAdobeTypoDisplayOne extends BodyComponent {
 
-  static endingTag = mapping.endingTag;
+  static endingTag = true;
 
-  static allowedAttributes = mapping.allowedAttributes;
-  static defaultAttributes = mapping.defaultAttributes;
+  static allowedAttributes =  {
+    'on-background': 'boolean',
+    'type': 'enum(normal,quiet)',
+    'responsive': 'boolean',
+    'padding-bottom': 'unit(px,%)',
+  };
+  static defaultAttributes = {
+    'on-background': false,
+    'type': 'normal',
+    'responsive': false,
+    'padding-bottom': styleMapping.spacings.vertical.px0,
+  };
 
+  static additionalAttributes = {
+    fontSize: styleMapping.typographies.displayOne.fontSize,
+    lineHeight: styleMapping.typographies.displayOne.lineHeight,
+    fontWeight: {
+      normal: styleMapping.typographies.displayOne.fontWeight,
+      quiet: styleMapping.typographies.displayOne.fontWeight,
+    },
+    letterSpacing: styleMapping.typographies.displayOne.letterSpacing,
+    color: styleMapping.typographies.displayOne.color,
+    onBackgroundColor: styleMapping.colors.white.hex
+  };
+
+  // todophilipp
   headStyle = (breakpoint) => `
       @media only screen and (max-width:${breakpoint}) {
         .labor-adobe-typo-display-one-responsive {
@@ -23,11 +50,11 @@ export default class LaborAdobeTypoDisplayOne extends BodyComponent {
 
   render() {
     const attrs = {
-      'font-size': mapping.additionalAttributes.fontSize,
-      'line-height': mapping.additionalAttributes.lineHeight,
-      'font-weight': mapping.additionalAttributes.fontWeight[this.getAttribute('type')],
-      'letter-spacing': mapping.additionalAttributes.letterSpacing,
-      'color': this.getAttribute('on-background') ? mapping.additionalAttributes.onBackgroundColor : mapping.additionalAttributes.color,
+      'font-size': LaborAdobeTypoDisplayOne.additionalAttributes.fontSize,
+      'line-height': LaborAdobeTypoDisplayOne.additionalAttributes.lineHeight,
+      'font-weight': LaborAdobeTypoDisplayOne.additionalAttributes.fontWeight[this.getAttribute('type')],
+      'letter-spacing': LaborAdobeTypoDisplayOne.additionalAttributes.letterSpacing,
+      'color': this.getAttribute('on-background') ? LaborAdobeTypoDisplayOne.additionalAttributes.onBackgroundColor : LaborAdobeTypoDisplayOne.additionalAttributes.color,
       'padding-bottom': this.getAttribute('padding-bottom'),
     }
 

@@ -37,9 +37,9 @@ export default class LaborAdobeRoundedButton extends BodyComponent {
     }
     switch (this.getAttribute('type')) {
       case 'quiet':
-        attrs['color'] = styleMapping.colors.gray700.hex
+        attrs['color'] = styleMapping.colors.buttonCta.hex
         attrs['background-color'] = ''
-        attrs['border-color'] = styleMapping.colors.gray700.hex
+        attrs['border-color'] = styleMapping.colors.buttonCta.hex
         break
       case 'inverted':
         attrs['color'] = styleMapping.colors.white.hex
@@ -47,7 +47,7 @@ export default class LaborAdobeRoundedButton extends BodyComponent {
         attrs['border-color'] = styleMapping.colors.white.hex
         break
       case 'cta_inverted':
-        attrs['color'] = styleMapping.colors.gray700.hex
+        attrs['color'] = styleMapping.colors.buttonCta.hex
         attrs['background-color'] = styleMapping.colors.white.hex
         attrs['border-color'] = styleMapping.colors.white.hex
         break

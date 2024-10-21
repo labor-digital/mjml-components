@@ -1,23 +1,42 @@
 import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
-import AdobeComponentMapping from '../../_Styles/AdobeComponentMapping'
+import AdobeRedStyleMapping from '../../_Styles/RED/AdobeRedStyleMapping'
 
-const mapping = AdobeComponentMapping.LaborAdobeTypoLegal;
-registerDependencies(mapping.dependencies);
+const styleMapping = AdobeRedStyleMapping;
+
+registerDependencies({
+  'mj-column': ['labor-adobe-typo-legal'],
+  'labor-adobe-typo-legal': [],
+});
 
 export default class LaborAdobeTypoLegal extends BodyComponent {
 
-  static endingTag = mapping.endingTag;
+  static endingTag = true;
 
-  static allowedAttributes = mapping.allowedAttributes;
-  static defaultAttributes = mapping.defaultAttributes;
+  static allowedAttributes =  {
+    'on-background': 'boolean',
+    'padding-bottom': 'unit(px,%)',
+  };
+
+  static defaultAttributes =  {
+    'on-background': false,
+    'padding-bottom': styleMapping.spacings.vertical.px0,
+  };
+
+  static additionalAttributes = {
+    fontWeight: styleMapping.typographies.legal.fontWeight,
+    fontSize: styleMapping.typographies.legal.fontSize,
+    lineHeight: styleMapping.typographies.legal.lineHeight,
+    color: styleMapping.typographies.legal.color,
+    onBackgroundColor: styleMapping.colors.white.hex,
+  };
 
   render() {
     const attrs = {
-      'font-size': mapping.additionalAttributes.fontSize,
-      'line-height': mapping.additionalAttributes.lineHeight,
-      'font-weight': mapping.additionalAttributes.fontWeight,
-      'color': this.getAttribute('on-background') ? mapping.additionalAttributes.onBackgroundColor : mapping.additionalAttributes.color,
+      'font-size': LaborAdobeTypoLegal.additionalAttributes.fontSize,
+      'line-height': LaborAdobeTypoLegal.additionalAttributes.lineHeight,
+      'font-weight': LaborAdobeTypoLegal.additionalAttributes.fontWeight,
+      'color': this.getAttribute('on-background') ? LaborAdobeTypoLegal.additionalAttributes.onBackgroundColor : LaborAdobeTypoLegal.additionalAttributes.color,
       'padding-bottom': this.getAttribute('padding-bottom'),
     }
 

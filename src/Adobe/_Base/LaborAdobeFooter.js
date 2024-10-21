@@ -2,11 +2,11 @@ import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
 import AdobeRedStyleMapping from '../_Styles/RED/AdobeRedStyleMapping'
 
-const styleMapping = AdobeRedStyleMapping
+const styleMapping = AdobeRedStyleMapping;
 
 registerDependencies({
   'mj-body': ['labor-adobe-footer'],
-  'labor-adobe-footer': [],
+  'labor-adobe-footer': ['labor-adobe-typo-legal'],
 });
 
 export default class LaborAdobeFooter extends BodyComponent {
@@ -33,6 +33,7 @@ export default class LaborAdobeFooter extends BodyComponent {
     linkColor: styleMapping.labor.colors.footerLink.hex,
     align: 'left',
     socialIconBackgroundColor: styleMapping.labor.colors.socialIconBackgroundColor.hex,
+    //todophilipp
     socialIconBorderRadius: "0px",
     socialSectionPaddingTop: "40px",
     socialSectionPaddingBottom: "40px",

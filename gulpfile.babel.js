@@ -59,7 +59,7 @@ const removeIndexJs = (done) => {
   done()
 }
 
-const compileAndRegisterComponents = (done) => {
+const compileAndRegisterComponents = (done = null) => {
   return gulp
     .src(srcPattern)
     .pipe(babel())
@@ -71,7 +71,7 @@ const compileAndRegisterComponents = (done) => {
         if (filterNonComponent(file.path)) {
           registerComponent(require(file.path).default)
         }
-        cb(null, file)
+        cb(null, file);
       }),
     )
 }
@@ -118,7 +118,6 @@ exports.watch = () => {
   generateIndexJS(() => {
   })
 
-  return compileAndRegisterComponents(() => {
     removeIndexJs(() => {
     })
     watch(srcPattern, (cb) => {
@@ -127,5 +126,4 @@ exports.watch = () => {
     watch('src/index.mjml', (cb) => {
       return compileTemplates(cb.history)
     })
-  })
 }

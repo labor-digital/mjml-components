@@ -2,7 +2,7 @@ import {registerDependencies} from 'mjml-validator'
 import {BodyComponent} from 'mjml-core'
 import AdobeRedStyleMapping from '../_Styles/RED/AdobeRedStyleMapping'
 
-const styleMapping = AdobeRedStyleMapping
+const styleMapping = AdobeRedStyleMapping;
 
 registerDependencies({
     'mj-body': ['labor-adobe-footer-band'],
@@ -20,6 +20,7 @@ export default class LaborAdobeFooterBand extends BodyComponent {
         'padding-bottom': 'unit(px,%)'
     }
 
+    //todophilipp
     static defaultAttributes = {
         'bg-color': styleMapping.colors.adobeRed.hex,
         'color': styleMapping.colors.white.hex,

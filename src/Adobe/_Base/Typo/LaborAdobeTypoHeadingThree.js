@@ -1,24 +1,44 @@
 import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
-import AdobeComponentMapping from '../../_Styles/AdobeComponentMapping'
+import AdobeRedStyleMapping from '../../_Styles/RED/AdobeRedStyleMapping'
 
-const mapping = AdobeComponentMapping.LaborAdobeTypoHeadingThree;
-registerDependencies(mapping.dependencies);
+const styleMapping = AdobeRedStyleMapping;
+
+registerDependencies({
+  'mj-column': ['labor-adobe-typo-heading-three'],
+  'labor-adobe-typo-heading-three': [],
+});
 
 export default class LaborAdobeTypoHeadingThree extends BodyComponent {
 
-  static endingTag = mapping.endingTag;
+  static endingTag = true;
 
-  static allowedAttributes = mapping.allowedAttributes;
-  static defaultAttributes = mapping.defaultAttributes;
+  static allowedAttributes = {
+    'on-background': 'boolean',
+    'padding-bottom': 'unit(px,%)',
+  };
+
+  static defaultAttributes = {
+    'on-background': false,
+    'padding-bottom': styleMapping.spacings.vertical.px0,
+  };
+
+  static additionalAttributes = {
+    fontSize: styleMapping.typographies.headingThree.fontSize,
+    lineHeight: styleMapping.typographies.headingThree.lineHeight,
+    fontWeight: styleMapping.typographies.headingThree.fontWeight,
+    letterSpacing: styleMapping.typographies.headingThree.letterSpacing,
+    color: styleMapping.typographies.headingThree.color,
+    onBackgroundColor: styleMapping.colors.white.hex
+  };
 
   render() {
     const attrs = {
-      'font-size': mapping.additionalAttributes.fontSize,
-      'line-height': mapping.additionalAttributes.lineHeight,
-      'font-weight': mapping.additionalAttributes.fontWeight,
-      'letter-spacing': mapping.additionalAttributes.letterSpacing,
-      'color': this.getAttribute('on-background') ? mapping.additionalAttributes.onBackgroundColor : mapping.additionalAttributes.color,
+      'font-size': LaborAdobeTypoHeadingThree.additionalAttributes.fontSize,
+      'line-height': LaborAdobeTypoHeadingThree.additionalAttributes.lineHeight,
+      'font-weight': LaborAdobeTypoHeadingThree.additionalAttributes.fontWeight,
+      'letter-spacing': LaborAdobeTypoHeadingThree.additionalAttributes.letterSpacing,
+      'color': this.getAttribute('on-background') ? LaborAdobeTypoHeadingThree.additionalAttributes.onBackgroundColor : LaborAdobeTypoHeadingThree.additionalAttributes.color,
       'padding-bottom': this.getAttribute('padding-bottom'),
     }
 

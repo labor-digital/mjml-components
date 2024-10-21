@@ -1,21 +1,42 @@
 import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
-import AdobeComponentMapping from '../../_Styles/AdobeComponentMapping'
+import AdobeRedStyleMapping from '../../_Styles/RED/AdobeRedStyleMapping'
 
-const mapping = AdobeComponentMapping.LaborAdobeTypoDetail;
-registerDependencies(mapping.dependencies);
+const styleMapping = AdobeRedStyleMapping;
+
+registerDependencies({
+  'mj-column': ['labor-adobe-typo-detail'],
+  'labor-adobe-typo-detail': [],
+});
 
 export default class LaborAdobeTypoDetail extends BodyComponent {
 
-  static endingTag = mapping.endingTag;
+  static endingTag = true;
 
-  static allowedAttributes = mapping.allowedAttributes;
-  static defaultAttributes = mapping.defaultAttributes;
+  static allowedAttributes = {
+    'on-background': 'boolean',
+    'padding-bottom': 'unit(px,%)',
+    'type': 'enum(normal,light)',
+  };
+  static defaultAttributes = {
+    'on-background': false,
+    'padding-bottom': styleMapping.spacings.vertical.px0,
+    'type': 'normal'
+  };
+
+  static additionalAttributes = {
+    lineHeight: styleMapping.typographies.detail.lineHeight,
+    color: styleMapping.typographies.detail.color,
+    linkColor: styleMapping.typographies.detail.linkColor,
+    onBackgroundColor: styleMapping.colors.white.hex
+  };
+
+  fontWeight = 'a';
 
   headStyle = (breakpoint) => `
     .labor-adobe-typo-detail-link {
         text-decoration: underline !important;
-        color: ${this.getAttribute('on-background') ? mapping.additionalAttributes.onBackgroundColor : mapping.additionalAttributes.linkColor } !important;
+        color: ${this.getAttribute('on-background') ? LaborAdobeTypoDetail.additionalAttributes.onBackgroundColor : LaborAdobeTypoDetail.additionalAttributes.linkColor } !important;
     }
     .labor-adobe-typo-detail-link:hover {
         text-decoration: none !important;
@@ -24,11 +45,24 @@ export default class LaborAdobeTypoDetail extends BodyComponent {
   `
 
   render() {
+
+    let fontWeight;
+    switch (this.getAttribute('type')) {
+      case 'light':
+        fontWeight = styleMapping.typographies.detail.fontWeight.light;
+        break;
+      case 'normal':
+        fontWeight = styleMapping.typographies.detail.fontWeight.normal;
+        break;
+      default:
+        fontWeight = styleMapping.typographies.detail.fontWeight.normal;
+    }
+
     const attrs = {
-      'font-size': mapping.additionalAttributes.fontSize,
-      'line-height': mapping.additionalAttributes.lineHeight,
-      'font-weight':  mapping.additionalAttributes.fontWeight,
-      'color': this.getAttribute('on-background') ? mapping.additionalAttributes.onBackgroundColor : mapping.additionalAttributes.color,
+      'font-size': LaborAdobeTypoDetail.additionalAttributes.fontSize,
+      'line-height': LaborAdobeTypoDetail.additionalAttributes.lineHeight,
+      'font-weight':  fontWeight,
+      'color': this.getAttribute('on-background') ? LaborAdobeTypoDetail.additionalAttributes.onBackgroundColor : LaborAdobeTypoDetail.additionalAttributes.color,
       'padding-bottom': this.getAttribute('padding-bottom'),
     }
 

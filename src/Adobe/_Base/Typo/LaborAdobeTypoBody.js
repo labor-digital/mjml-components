@@ -3,7 +3,7 @@ import { BodyComponent } from 'mjml-core'
 import { md5 } from 'js-md5'
 import AdobeRedStyleMapping from '../../_Styles/RED/AdobeRedStyleMapping'
 
-const styleMapping = AdobeRedStyleMapping
+const styleMapping = AdobeRedStyleMapping;
 
 registerDependencies({
   'mj-column': ['labor-adobe-typo-body'],

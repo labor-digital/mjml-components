@@ -7,7 +7,8 @@ registerDependencies({
 })
 
 export default class LaborAdobeFooterRedBand extends BodyComponent {
-    static endingTag = true
+
+    //todophilipp  static endingTag = true
 
     render() {
         return this.renderMJML(`

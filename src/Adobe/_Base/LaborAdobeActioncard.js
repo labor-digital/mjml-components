@@ -2,7 +2,7 @@ import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
 import AdobeRedStyleMapping from '../_Styles/RED/AdobeRedStyleMapping'
 
-const styleMapping = AdobeRedStyleMapping
+const styleMapping = AdobeRedStyleMapping;
 
 registerDependencies( {
   'mj-body': ['labor-adobe-actioncard'],

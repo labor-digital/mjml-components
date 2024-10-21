@@ -42,6 +42,9 @@ export default class AdobeRedStyleMapping {
     adobeRed: {
       hex: "#EB1000"
     },
+    buttonCta: {
+      hex: "#747474"
+    },
     blue900: {
       hex: "#0265DC"
     },
@@ -157,12 +160,12 @@ export default class AdobeRedStyleMapping {
     black : 900,
     extraBold: 800,
     bold: 700,
-    regular: 600,
+    regular: 400,
   }
 
   static typographyLetterSpacing = {
-    minusTwo : "-2%",
-    minusThree: "-3%",
+    minusTwo : "-0.02em",
+    minusThree: "-0.02em",
   }
 
   static typographyFontStyle = {

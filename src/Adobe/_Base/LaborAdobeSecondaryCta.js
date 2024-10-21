@@ -43,6 +43,7 @@ export default class LaborAdobeSecondaryCta extends BodyComponent {
         'line-height': styleMapping.typographyLineHeight.size18,
         'font-weight': styleMapping.typographyFontWeight.regular,
         'text-decoration': 'none',
+        'font-family': this.getAttribute('font-family'),
         'color': color,
       },
     }

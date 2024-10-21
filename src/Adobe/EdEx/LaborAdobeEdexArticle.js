@@ -6,7 +6,7 @@ import AdobeRedStyleMapping from '../_Styles/RED/AdobeRedStyleMapping'
 const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
-    'mj-column': ['labor-adobe-edex-article'],
+    'mj-body': ['labor-adobe-edex-article'],
     'labor-adobe-edex-article': [],
 })
 
@@ -86,7 +86,7 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
                                 ` :
                                 ``
                         }
-                        <labor-adobe-typo-headingthree padding-bottom="${styleMapping.spacings.horizontal.px7}">${this.getAttribute('headline')}</labor-adobe-typo-headingthree>
+                        <labor-adobe-typo-heading-three padding-bottom="${styleMapping.spacings.horizontal.px7}">${this.getAttribute('headline')}</labor-adobe-typo-heading-three>
                         <labor-adobe-typo-body padding-bottom="${this.getAttribute('href') ? styleMapping.spacings.horizontal.px33 : styleMapping.spacings.horizontal.px0}">${this.getAttribute('text')}</labor-adobe-typo-body>
                         ${
                             this.getAttribute('href') ?

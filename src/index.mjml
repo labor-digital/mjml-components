@@ -1,303 +1,137 @@
 <mjml owa="desktop">
     <mj-head>
-        <mj-title>SUBJECT</mj-title>
-        <mj-preview>PREHEADER</mj-preview>
-
+        <mj-title>Explore 3 courses to help you master video in the classroom and beyond</mj-title>
+        <mj-preview>Plus creative video-focused lesson plans, projects, and more for all skill levels and subjects.</mj-preview>
         <mj-font href="https://use.typekit.net/onr8tbr.css" name="adobe-clean"/>
         <mj-attributes>
-            <mj-class name="body-bg" background-color="#eaeaea"/>
-            <mj-class name="footer-bg" background-color="#f5f5f5"/>
-            <mj-class name="content-bg" background-color="#010619"/>
+            <mj-class name="body-bg" background-color="#eaeaea" />
+            <mj-class name="footer-bg" background-color="#f5f5f5" />
+            <mj-class name="content-bg" background-color="#ffffff" />
 
-            <mj-all
-                    font-family="'adobe-clean', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'"
-                    padding="0"
-            />
-
-            <!-- TEMPORARY START -->
-            <!-- for this template only -->
-            <mj-class name="content-bg-alt" background-color="#ffffff"/>
-            <!-- TEMPORARY END -->
+            <mj-all font-family="'adobe-clean', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'" padding="0" />
         </mj-attributes>
         <mj-breakpoint width="480px"/>
-        <mj-style> a {
-            text-decoration: none;
-            color: inherit;
-        } </mj-style>
+        <mj-style>
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        </mj-style>
     </mj-head>
     <mj-body mj-class="body-bg">
-        <!-- HEADER START -->
-        <!--
-                <labor-adobe-header>
-                    src -> URL to the product image | you can find a list of available already hosted images in "product-images.txt"
-                    header-bg-class -> name of the mj-class for the background | DEFAULT: content-bg
-                    height -> height of the product image | ENUM(28px, 30px, 34px) | DEFAULT: 30px
-                        The top and bottom padding will be computed depending on the height and if you have a top border or not
-                    width -> width of the product image (Remember that most of the images are @2x, so you have to half the width of the product image)
-                    href -> Set a URL here to let the image link to somewhere
-                    title -> title for the product image
-                    target -> target for the link | DEFAULT: _blank
-                    border -> Set here if you want to have the top red border for operational emails | BOOL | DEFAULT: false
-                    padding-bottom-overwrite -> As stated with the height the padding is computed. If you want to overwrite the bottom-padding you can do that here
-            -->
-        <labor-adobe-header-badge
-                src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_creative_educator.red.616x60.png"
+
+        <labor-adobe-header
+                src="https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_education_exchange.red.658x60.png"
                 height="22px"
-                width="226px"
-                badge-src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_creative_educator_badge.color.276x280.png"
-                badge-width="60px"
-                badge-align="left"
-                badge-padding-right="40px"
-        />
-        <labor-adobe-header
-                src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_creative_cloud.white.442x60.png"
-                height="30px"
-                width="221px"
-        />
-        <labor-adobe-header
-                header-bg-class="content-bg"
-                src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_creative_cloud.white.442x60.png"
-                height="30px"
-                width="221px"
-                padding-bottom-overwrite="0"
+                width="241px"
+                alt="Adobe Education Exchange"
         />
 
-        <!-- HEADER END -->
-
-        <labor-adobe-section with-padding="false" section-bg-class="content-bg" padding-bottom="0">
+        <labor-adobe-section padding-top="10px" padding-bottom="5px" section-bg-class="footer-bg">
             <mj-column>
-                <labor-responsive-image
-                        src="https://landing.adobe.com/dam/uploads/2020/emea/20200826.CCT.header01.desktop_v2.jpg"
-                        src-mobile="https://landing.adobe.com/dam/uploads/2020/emea/20200826.CCT.header01.mobile_v2.jpg"
-                        fluid-on-mobile="true"
-                        width="600px"
-                        align="left"
-                />
+                <labor-adobe-typo-body padding-bottom="6px">Check out the latest on the Education Exchange this week.</labor-adobe-typo-body>
             </mj-column>
         </labor-adobe-section>
 
-        <labor-adobe-section with-padding="true" padding-bottom="100px">
-            <mj-column>
-                <labor-adobe-typo-display-one on-background="true" type="normal" responsive="true">
-                    Display 1
-                </labor-adobe-typo-display-one>
-                <labor-adobe-typo-display-one on-background="true" type="quiet" responsive="true">
-                    Display 1 Quiet
-                </labor-adobe-typo-display-one>
-
-                <labor-adobe-typo-display-two on-background="true" type="normal">
-                    Display 2
-                </labor-adobe-typo-display-two>
-                <labor-adobe-typo-display-two on-background="true" type="quiet">
-                    Display 2 Quiet
-                </labor-adobe-typo-display-two>
-
-                <labor-adobe-typo-display-three on-background="true" type="normal">
-                    Display 3
-                </labor-adobe-typo-display-three>
-                <labor-adobe-typo-display-three on-background="true" type="quiet">
-                    Display 3 Quiet
-                </labor-adobe-typo-display-three>
-                <labor-adobe-typo-display-three on-background="true" type="bold" padding-bottom="40px">
-                    Display 3 Bold
-                </labor-adobe-typo-display-three>
-
-                <labor-adobe-typo-heading-one on-background="true">
-                    Heading 1
-                </labor-adobe-typo-heading-one>
-
-                <labor-adobe-typo-heading-two on-background="true">
-                    Heading 2
-                </labor-adobe-typo-heading-two>
-
-                <labor-adobe-typo-heading-three on-background="true" padding-bottom="40px">
-                    Heading 3
-                </labor-adobe-typo-heading-three>
-
-                <labor-adobe-typo-heading-four on-background="true" padding-bottom="40px">
-                    Heading 4
-                </labor-adobe-typo-heading-four>
-
-                <labor-adobe-typo-body on-background="true" padding-bottom="7px">
-                    Body copy. Body copy.Body copy. Body copy.Body copy. Body copy.Body copy. Body copy.Body
-                    copy. Body copy.
-                </labor-adobe-typo-body>
-                <labor-adobe-typo-body on-background="true" padding-bottom="40px">
-                    And this is a paragraph with 7px as padding-bottom of the upper
-                    paragraph.
-                </labor-adobe-typo-body>
-
-                <labor-adobe-typo-caption on-background="true" padding-bottom="40px">
-                    Caption copy | Use this one for little details or for image
-                    captions
-                </labor-adobe-typo-caption>
-
-                <labor-adobe-typo-detail type="normal" on-background="true" padding-bottom="40px">
-                    Detail copy | Use the detail style sparingly, only for the quietest level of hierarchy.
-                    For example, a table column header or subcategories within a block of text can use the
-                    detail style. Most emails will not use this style.
-                </labor-adobe-typo-detail>
-
-                <labor-adobe-typo-detail type="light" on-background="true" padding-bottom="40px">
-                    Detail light copy | Use the detail style sparingly, only for the quietest level of
-                    hierarchy. For example, a table column header or subcategories within a block of text can
-                    use the detail style. Most emails will not use this style.
-                </labor-adobe-typo-detail>
-
-                <labor-adobe-rounded-button type="cta" padding-bottom="10px" href="https://google.com">
-                    CTA cta
-                </labor-adobe-rounded-button>
-                <labor-adobe-rounded-button type="quiet" padding-bottom="10px" href="https://google.com">
-                    CTA quiet
-                </labor-adobe-rounded-button>
-                <labor-adobe-rounded-button type="inverted" padding-bottom="40px" href="https://google.com">
-                    CTA inverted
-                </labor-adobe-rounded-button>
-
-                <labor-adobe-secondary-cta type="normal" padding-bottom="10px" href="#">
-                    Secondary CTA normal
-                </labor-adobe-secondary-cta>
-                <labor-adobe-secondary-cta type="quiet" padding-bottom="10px" href="#">
-                    Secondary CTA quiet
-                </labor-adobe-secondary-cta>
-                <labor-adobe-secondary-cta type="inverted" padding-bottom="40px" href="#">
-                    Secondary CTA inverted
-                </labor-adobe-secondary-cta>
-            </mj-column>
-        </labor-adobe-section>
-
-        <labor-adobe-header
-                src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_education_exchange.red.658x60.png"
-                height="28px"
-                width="307px"
-                header-bg-class="content-bg-alt"
+        <labor-adobe-edex-article
+                headline="Jump-start creativity with Adobe Spark Video"
+                category="Self-paced course"
+                text="Learn the basics of working with Adobe Spark and review sample assignments designed to help students tell powerful stories and present new information. To dig deeper into video production, spend more time with the third lesson, which is focused on using Adobe Spark Video."
+                cta="Enroll now"
+                href="https://edex.adobe.com/pd/course/spark-in-the-classroom"
+                image-src="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.01.jpg"
+                product="spark"
         />
-        <labor-adobe-section
-                with-padding="false"
-                section-bg-class="content-bg-alt"
-                padding-bottom="33px"
-        >
-            <mj-column>
-                <labor-responsive-image
-                        src="https://landing.adobe.com/dam/uploads/2020/na/20200819.edex.en.email.1_v2.jpg"
-                        fluid-on-mobile="true"
-                        width="600px"
-                        align="left"
-                />
-            </mj-column>
-        </labor-adobe-section>
 
-        <labor-adobe-section
-                with-padding="true"
-                padding-bottom="100px"
-                section-bg-class="content-bg-alt"
-        >
-            <mj-column>
-                <labor-adobe-typo-display-one type="normal" responsive="true">
-                    Display 1
-                </labor-adobe-typo-display-one>
-                <labor-adobe-typo-display-one type="quiet" responsive="true">
-                    Display 1 Quiet
-                </labor-adobe-typo-display-one>
-<!--                <labor-adobe-typo-displayone type="bold" responsive="true" padding-bottom="40px">-->
-<!--                    Display 1 Bold-->
-<!--                </labor-adobe-typo-displayone>-->
+        <labor-adobe-edex-article
+                headline="Level-up your skills with Adobe Premiere Rush
+"
+                category="Self-paced course"
+                text="In this more in-depth course, we’ll introduce you to the essentials of creating video with Premiere Rush and we'll explore a variety of techniques you can use in your classroom. The course also includes step-by-step examples and instructions for mobile video production."
+                cta="Enroll now"
+                href="https://edex.adobe.com/pd/course/engaging-video-projects-in-the-classroom"
+                image-src="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.02.jpg"
+                product="rush"
+        />
 
-                <labor-adobe-typo-display-two type="normal">Display 2</labor-adobe-typo-display-two>
-                <labor-adobe-typo-display-two type="quiet">Display 2 Quiet</labor-adobe-typo-display-two>
+        <labor-adobe-edex-article
+                headline="Take center stage with Adobe Premiere Pro
+"
+                category="Self-paced course"
+                text="This course is designed to help teachers edit and produce professional-quality video and create engaging classroom activities to inspire students in all content areas. Whether you teach in a media lab or a history classroom, this course has helpful tips for you."
+                cta="Enroll now"
+                href="https://edex.adobe.com/pd/course/make-impactful-videos-for-social-media/"
+                image-src="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.03.jpg"
+                product="premiere"
+        />
 
-                <labor-adobe-typo-display-three type="normal">Display 3</labor-adobe-typo-display-three>
-                <labor-adobe-typo-display-three type="quiet">Display 3 Quiet</labor-adobe-typo-display-three>
-                <labor-adobe-typo-display-three type="bold" padding-bottom="40px">
-                    Display 3 Bold
-                </labor-adobe-typo-display-three>
+        <labor-adobe-edex-article
+                headline="Register now for <i>How to Create a One-of-a-kind Career</i> with Meg Lewis"
+                category="Event"
+                text="Join Adobe for an Ask Me Anything (AMA) session with Meg Lewis, a designer, comedian, performer, and educator working to make the world a happier place. Tune in to learn more about Meg, ask questions, and hear how she created a one-of-a-kind career for herself."
+                cta="Register now"
+                href="https://www.eventbrite.com/e/meg-lewis-how-to-create-a-one-of-a-kind-career-tickets-153939269499?aff=erelpanelorg"
+                image-src="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.04.jpg"
+                product=""
+        />
 
-                <labor-adobe-typo-heading-one>Heading 1</labor-adobe-typo-heading-one>
+        <labor-adobe-edex-two-col-article
+                1-headline="Film a short video to reflect on how bias shapes texts"
+                1-category="K-12 lesson"
+                1-text="In this lesson from expert educator Dr. Andrea Mills, students use Adobe Spark to explore how bias shapes the writing and reception of literature."
+                1-cta="Explore now"
+                1-href="https://edex.adobe.com/resource/xhlj-tcrn"
+                1-image-src="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.05.jpg"
+                1-image-src-mobile="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.05_m.jpg"
+                1-product="spark"
+                2-headline="Film a presentation explaining cellular functions"
+                2-category="K-12 lesson"
+                2-text="In this lesson, students use Premiere Rush to create a video about cell functions in the body."
+                2-cta="Explore now"
+                2-href="https://edex.adobe.com/resource/v8cb08272"
+                2-image-src="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.06.jpg"
+                2-image-src-mobile="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.06_m.jpg"
+                2-product="rush"
+        />
 
-                <labor-adobe-typo-heading-two>Heading 2</labor-adobe-typo-heading-two>
-
-                <labor-adobe-typo-heading-three padding-bottom="40px">
-                    Heading 3
-                </labor-adobe-typo-heading-three>
-
-                <labor-adobe-typo-heading-four padding-bottom="40px">Heading 4</labor-adobe-typo-heading-four>
-
-                <labor-adobe-typo-body padding-bottom="7px">
-                    Body copy. Body copy.Body copy. Body copy.Body copy. Body copy.Body copy. Body copy.Body
-                    copy. Body copy.
-                </labor-adobe-typo-body>
-                <labor-adobe-typo-body padding-bottom="40px">
-                    And this is a paragraph with 7px as padding-bottom of the upper
-                    paragraph.
-                </labor-adobe-typo-body>
-
-                <labor-adobe-typo-caption padding-bottom="40px">
-                    Caption copy | Use this one for little details or for image
-                    captions
-                </labor-adobe-typo-caption>
-
-                <labor-adobe-typo-detail type="normal" padding-bottom="40px">
-                    Detail copy | Use the detail style sparingly, only for the quietest level of hierarchy.
-                    For example, a table column header or subcategories within a block of text can use the
-                    detail style. Most emails will not use this style.
-                </labor-adobe-typo-detail>
-
-                <labor-adobe-typo-detail type="light" padding-bottom="40px">
-                    Detail light copy | Use the detail style sparingly, only for the quietest level of
-                    hierarchy. For example, a table column header or subcategories within a block of text can
-                    use the detail style. Most emails will not use this style.
-                </labor-adobe-typo-detail>
-
-                <labor-adobe-rounded-button type="cta" padding-bottom="10px" href="#">
-                    CTA cta
-                </labor-adobe-rounded-button>
-                <labor-adobe-rounded-button type="quiet" padding-bottom="40px" href="#">
-                    CTA quiet
-                </labor-adobe-rounded-button>
-
-                <labor-adobe-secondary-cta type="normal" padding-bottom="10px" href="#">
-                    Secondary CTA normal
-                </labor-adobe-secondary-cta>
-                <labor-adobe-secondary-cta type="quiet" padding-bottom="40px" href="#">
-                    Secondary CTA quiet
-                </labor-adobe-secondary-cta>
-            </mj-column>
-        </labor-adobe-section>
-
-        <labor-adobe-actioncard
-                section-bg-class="content-bg-alt"
-        >
-            <labor-adobe-typo-heading-three padding-bottom="17px">Some Heading Three</labor-adobe-typo-heading-three>
-            <labor-adobe-typo-body>Actioncard Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit
-                ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
-            </labor-adobe-typo-body>
-        </labor-adobe-actioncard>
-
-        <labor-adobe-section padding-bottom="60px" padding-top="60px" section-bg-class="content-bg-alt">
-            <mj-column>
-                <labor-adobe-avatar padding-bottom="34px" src="example_avatar.png" name="awesome name"></labor-adobe-avatar>
-                <labor-adobe-typo-body>Example avatar text!</labor-adobe-typo-body>
-            </mj-column>
-        </labor-adobe-section>
-
-        <labor-adobe-footer-band>Footer Band - Acrobat’s got it.</labor-adobe-footer-band>
+        <labor-adobe-edex-two-col-article
+                1-headline="Information matters II"
+                1-category="Higher ed project"
+                1-text="In this project by expert educator Rachel Bryson, students create a video demonstrating how to identify, analyze, and correct online misinformation for a general audience."
+                1-cta="Explore now"
+                1-href="https://edex.adobe.com/resource/zQJ2Np0JZ"
+                1-image-src="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.07.jpg"
+                1-image-src-mobile="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.07_m.jpg"
+                1-product="spark"
+                2-headline="Film a researched mini-documentary about a specific topic"
+                2-category="Higher ed project"
+                2-text="In this project by expert educator Brian Puente, students use Premiere Pro to create a mini-documentary on a topic of their choosing."
+                2-cta="Explore now"
+                2-href="https://edex.adobe.com/resource/DIMj716ja"
+                2-image-src="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.08.jpg"
+                2-image-src-mobile="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.08_m.jpg"
+                2-product="premiere"
+        />
 
         <labor-adobe-footer
-                facebook-url="#"
-                twitter-url="#"
-                instagram-url="#"
-                footer-bg-class="footer-bg"
+                facebook-url="https://www.facebook.com/AdobeEdEx/"
+                twitter-url="https://www.twitter.com/AdobeForEdu"
+                youtube-url="https://www.youtube.com/user/AdobeEduPD"
         >
             <labor-adobe-typo-legal padding-bottom="10px">
-                Here comes the footer.
+                Adobe, the Adobe logo, Adobe Premiere, and Adobe Premiere Rush are either registered trademarks or trademarks of Adobe in the United States and/or other countries.
             </labor-adobe-typo-legal>
-            <labor-adobe-typo-legal padding-bottom="10px">This is a paragraph.</labor-adobe-typo-legal>
             <labor-adobe-typo-legal padding-bottom="10px">
-                Use the class labor-adobe-footer-link for
-                <a href="#" class="labor-adobe-footer-link">links</a>.
+                This is a marketing email from Adobe Inc., 345 Park Avenue, San Jose, CA 95110 USA. <span class="nl-dce-fragment nl-dce-done" data-nl-name="adbeServiceComUnsubscriptionLink" data-nl-label="Adobe service communications unsubscription link (adbeServiceComUnsubscriptionLink)">Adobe service communications unsubscription link</span> to unsubscribe. Please review the <a href="https://www.adobe.com/privacy.html" target="_blank" class="labor-adobe-footer-link">Adobe&nbsp;Privacy&nbsp;Policy</a>.
+            </labor-adobe-typo-legal>
+            <labor-adobe-typo-legal padding-bottom="10px">
+                To ensure email delivery, add <a href="https://landing.adobe.com/dam/downloads/vcards/adobe.vcf" target="_blank" class="labor-adobe-footer-link">mail@mail.adobe.com</a> to your address book, contacts, or safe sender&nbsp;list.
+            </labor-adobe-typo-legal>
+            <labor-adobe-typo-legal padding-bottom="10px">
+                Please do not reply to this message. To contact the Adobe Education Exchange team, find options <a href="http://edex.adobe.com/help-center" target="_blank" class="labor-adobe-footer-link">online</a>.
             </labor-adobe-typo-legal>
             <labor-adobe-typo-legal>
-                And the last paragraph has no padding-bottom
+                <a href="#" class="labor-adobe-footer-link" _label="Mirror Page" _type="mirrorPage" alias="Read Online" target="_blank" data-nl-format="datetime" data-nl-lnkep-perso-attr-href="&lt;span class=&quot;nl-dce-fragment nl-dce-done&quot; data-nl-name=&quot;MirrorPageUrl&quot; data-nl-label=&quot;Mirror page URL (MirrorPageUrl)&quot; contenteditable=&quot;false&quot;&gt;Mirror page URL&lt;/span&gt;" data-nl-type="externalLink">Read&nbsp;online</a>
             </labor-adobe-typo-legal>
         </labor-adobe-footer>
     </mj-body>
