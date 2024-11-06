@@ -33,7 +33,6 @@ export default class LaborAdobeFooter extends BodyComponent {
     linkColor: styleMapping.labor.colors.footerLink.hex,
     align: 'left',
     socialIconBackgroundColor: styleMapping.labor.colors.socialIconBackgroundColor.hex,
-    //todophilipp
     socialIconBorderRadius: "0px",
     socialSectionPaddingTop: "40px",
     socialSectionPaddingBottom: "40px",

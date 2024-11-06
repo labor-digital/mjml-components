@@ -26,10 +26,7 @@ export default class LaborAdobeTypoDisplayThree extends BodyComponent {
   static additionalAttributes = {
     fontSize: styleMapping.typographies.displayThree.fontSize,
     lineHeight: styleMapping.typographies.displayThree.lineHeight,
-    fontWeight: {
-      normal: styleMapping.typographies.displayThree.fontWeight,
-      quiet: styleMapping.typographies.displayThree.fontWeight,
-    },
+    fontWeight: styleMapping.typographies.displayThree.fontWeight,
     letterSpacing: styleMapping.typographies.displayThree.letterSpacing,
     onBackgroundColor: styleMapping.colors.white.hex,
     color: styleMapping.typographies.displayThree.color

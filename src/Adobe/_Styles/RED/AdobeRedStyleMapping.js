@@ -117,6 +117,7 @@ export default class AdobeRedStyleMapping {
       px0: "0px",
       px7: "7px",
       px10: "10px",
+      px12: "12px",
       px16: "16px",
       px20: "20px",
       px24: "24px",
@@ -150,6 +151,7 @@ export default class AdobeRedStyleMapping {
     size38: "38px",
     size36: "36px",
     size31: "31px",
+    size26: "26px",
     size25: "25px",
     size24: "24px",
     size20: "20px",
@@ -160,6 +162,7 @@ export default class AdobeRedStyleMapping {
     black : 900,
     extraBold: 800,
     bold: 700,
+    medium: 500,
     regular: 400,
   }
 
@@ -178,8 +181,8 @@ export default class AdobeRedStyleMapping {
       fontSize: AdobeRedStyleMapping.typographyFontSize.size60,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size57,
       fontWeight: {
-        normal: AdobeRedStyleMapping.typographyFontWeight.black,
-        quiet: AdobeRedStyleMapping.typographyFontWeight.extraBold
+        normal: AdobeRedStyleMapping.typographyFontWeight.bold,
+        quiet: AdobeRedStyleMapping.typographyFontWeight.medium
       },
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusTwo,
       color: AdobeRedStyleMapping.colors.black.hex,
@@ -190,8 +193,8 @@ export default class AdobeRedStyleMapping {
       fontSize: AdobeRedStyleMapping.typographyFontSize.size45,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size43,
       fontWeight: {
-        normal: AdobeRedStyleMapping.typographyFontWeight.black,
-        quiet: AdobeRedStyleMapping.typographyFontWeight.extraBold
+        normal: AdobeRedStyleMapping.typographyFontWeight.bold,
+        quiet: AdobeRedStyleMapping.typographyFontWeight.medium
       },
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusTwo,
       color: AdobeRedStyleMapping.colors.black.hex,
@@ -202,8 +205,8 @@ export default class AdobeRedStyleMapping {
       fontSize: AdobeRedStyleMapping.typographyFontSize.size40,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size38,
       fontWeight: {
-        normal: AdobeRedStyleMapping.typographyFontWeight.black,
-        quiet: AdobeRedStyleMapping.typographyFontWeight.extraBold
+        normal: AdobeRedStyleMapping.typographyFontWeight.bold,
+        quiet: AdobeRedStyleMapping.typographyFontWeight.medium
       },
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusTwo,
       color: AdobeRedStyleMapping.colors.black.hex,
@@ -212,7 +215,7 @@ export default class AdobeRedStyleMapping {
     headingOne: {
       fontSize: AdobeRedStyleMapping.typographyFontSize.size36,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size40,
-      fontWeight: AdobeRedStyleMapping.typographyFontWeight.extraBold,
+      fontWeight: AdobeRedStyleMapping.typographyFontWeight.medium,
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusTwo,
       color: AdobeRedStyleMapping.colors.black.hex
     },
@@ -220,7 +223,7 @@ export default class AdobeRedStyleMapping {
     headingTwo: {
       fontSize: AdobeRedStyleMapping.typographyFontSize.size28,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size31,
-      fontWeight: AdobeRedStyleMapping.typographyFontWeight.extraBold,
+      fontWeight: AdobeRedStyleMapping.typographyFontWeight.medium,
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusTwo,
       color: AdobeRedStyleMapping.colors.black.hex
     },
@@ -228,7 +231,7 @@ export default class AdobeRedStyleMapping {
     headingThree: {
       fontSize: AdobeRedStyleMapping.typographyFontSize.size22,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size24,
-      fontWeight: AdobeRedStyleMapping.typographyFontWeight.extraBold,
+      fontWeight: AdobeRedStyleMapping.typographyFontWeight.medium,
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusTwo,
       color: AdobeRedStyleMapping.colors.black.hex
     },
@@ -236,7 +239,7 @@ export default class AdobeRedStyleMapping {
     headingFour: {
       fontSize: AdobeRedStyleMapping.typographyFontSize.size18,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size20,
-      fontWeight: AdobeRedStyleMapping.typographyFontWeight.extraBold,
+      fontWeight: AdobeRedStyleMapping.typographyFontWeight.medium,
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusTwo,
       color: AdobeRedStyleMapping.colors.black.hex
     },

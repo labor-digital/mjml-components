@@ -39,9 +39,9 @@ export default class LaborAdobeSecondaryCta extends BodyComponent {
     }
     return {
       a: {
-        'font-size': styleMapping.typographyFontSize.size16,
-        'line-height': styleMapping.typographyLineHeight.size18,
-        'font-weight': styleMapping.typographyFontWeight.regular,
+        'font-size': styleMapping.typographyFontSize.size18,
+        'line-height': styleMapping.typographyLineHeight.size26,
+        'font-weight': styleMapping.typographyFontWeight.bold,
         'text-decoration': 'none',
         'font-family': this.getAttribute('font-family'),
         'color': color,

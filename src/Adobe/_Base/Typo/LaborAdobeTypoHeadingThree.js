@@ -19,8 +19,7 @@ export default class LaborAdobeTypoHeadingThree extends BodyComponent {
   };
 
   static defaultAttributes = {
-    'on-background': false,
-    'padding-bottom': styleMapping.spacings.vertical.px0,
+    'on-background': false
   };
 
   static additionalAttributes = {

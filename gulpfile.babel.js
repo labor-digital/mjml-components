@@ -12,6 +12,7 @@ import through2 from 'through2'
 
 const indexJSPath = './src/index.js'
 const indexMJMLPath = 'src/index.mjml'
+const indexMJMLPodPath = 'src/Adobe/_Base/Pods/index.mjml'
 const libDestination = './lib'
 const srcPattern = 'src/**/*.js'
 
@@ -77,7 +78,7 @@ const compileAndRegisterComponents = (done = null) => {
 }
 
 const compileTemplates = (done) => {
-  return gulp.src(indexMJMLPath).pipe(
+  return gulp.src([indexMJMLPath, indexMJMLPodPath]).pipe(
     through2.obj((file, enc, cb) => {
       const data = fs.readFileSync(file.path, enc)
       const parsed = path.parse(file.path)

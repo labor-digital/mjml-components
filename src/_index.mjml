@@ -1,0 +1,138 @@
+<mjml owa="desktop">
+    <mj-head>
+        <mj-title>Explore 3 courses to help you master video in the classroom and beyond</mj-title>
+        <mj-preview>Plus creative video-focused lesson plans, projects, and more for all skill levels and subjects.</mj-preview>
+        <mj-font href="https://use.typekit.net/onr8tbr.css" name="adobe-clean"/>
+        <mj-attributes>
+            <mj-class name="body-bg" background-color="#eaeaea" />
+            <mj-class name="footer-bg" background-color="#f5f5f5" />
+            <mj-class name="content-bg" background-color="#ffffff" />
+
+            <mj-all font-family="'adobe-clean', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'" padding="0" />
+        </mj-attributes>
+        <mj-breakpoint width="480px"/>
+        <mj-style>
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        </mj-style>
+    </mj-head>
+    <mj-body mj-class="body-bg">
+
+        <labor-adobe-header
+                src="https://landing.adobe.com/dam/uploads/2020/na/labor-email-assets/products-and-header/adobe_education_exchange.red.658x60.png"
+                height="22px"
+                width="241px"
+                alt="Adobe Education Exchange"
+        />
+
+        <labor-adobe-section padding-top="10px" padding-bottom="5px" section-bg-class="footer-bg">
+            <mj-column>
+                <labor-adobe-typo-body padding-bottom="6px">Check out the latest on the Education Exchange this week.</labor-adobe-typo-body>
+            </mj-column>
+        </labor-adobe-section>
+
+        <labor-adobe-edex-article
+                headline="Jump-start creativity with Adobe Spark Video"
+                category="Self-paced course"
+                text="Learn the basics of working with Adobe Spark and review sample assignments designed to help students tell powerful stories and present new information. To dig deeper into video production, spend more time with the third lesson, which is focused on using Adobe Spark Video."
+                cta="Enroll now"
+                href="https://edex.adobe.com/pd/course/spark-in-the-classroom"
+                image-src="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.01.jpg"
+                product="spark"
+        />
+
+        <labor-adobe-edex-article
+                headline="Level-up your skills with Adobe Premiere Rush
+"
+                category="Self-paced course"
+                text="In this more in-depth course, we’ll introduce you to the essentials of creating video with Premiere Rush and we'll explore a variety of techniques you can use in your classroom. The course also includes step-by-step examples and instructions for mobile video production."
+                cta="Enroll now"
+                href="https://edex.adobe.com/pd/course/engaging-video-projects-in-the-classroom"
+                image-src="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.02.jpg"
+                product="rush"
+        />
+
+        <labor-adobe-edex-article
+                headline="Take center stage with Adobe Premiere Pro
+"
+                category="Self-paced course"
+                text="This course is designed to help teachers edit and produce professional-quality video and create engaging classroom activities to inspire students in all content areas. Whether you teach in a media lab or a history classroom, this course has helpful tips for you."
+                cta="Enroll now"
+                href="https://edex.adobe.com/pd/course/make-impactful-videos-for-social-media/"
+                image-src="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.03.jpg"
+                product="premiere"
+        />
+
+        <labor-adobe-edex-article
+                headline="Register now for <i>How to Create a One-of-a-kind Career</i> with Meg Lewis"
+                category="Event"
+                text="Join Adobe for an Ask Me Anything (AMA) session with Meg Lewis, a designer, comedian, performer, and educator working to make the world a happier place. Tune in to learn more about Meg, ask questions, and hear how she created a one-of-a-kind career for herself."
+                cta="Register now"
+                href="https://www.eventbrite.com/e/meg-lewis-how-to-create-a-one-of-a-kind-career-tickets-153939269499?aff=erelpanelorg"
+                image-src="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.04.jpg"
+                product=""
+        />
+
+        <labor-adobe-edex-two-col-article
+                1-headline="Film a short video to reflect on how bias shapes texts"
+                1-category="K-12 lesson"
+                1-text="In this lesson from expert educator Dr. Andrea Mills, students use Adobe Spark to explore how bias shapes the writing and reception of literature."
+                1-cta="Explore now"
+                1-href="https://edex.adobe.com/resource/xhlj-tcrn"
+                1-image-src="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.05.jpg"
+                1-image-src-mobile="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.05_m.jpg"
+                1-product="spark"
+                2-headline="Film a presentation explaining cellular functions"
+                2-category="K-12 lesson"
+                2-text="In this lesson, students use Premiere Rush to create a video about cell functions in the body."
+                2-cta="Explore now"
+                2-href="https://edex.adobe.com/resource/v8cb08272"
+                2-image-src="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.06.jpg"
+                2-image-src-mobile="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.06_m.jpg"
+                2-product="rush"
+        />
+
+        <labor-adobe-edex-two-col-article
+                1-headline="Information matters II"
+                1-category="Higher ed project"
+                1-text="In this project by expert educator Rachel Bryson, students create a video demonstrating how to identify, analyze, and correct online misinformation for a general audience."
+                1-cta="Explore now"
+                1-href="https://edex.adobe.com/resource/zQJ2Np0JZ"
+                1-image-src="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.07.jpg"
+                1-image-src-mobile="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.07_m.jpg"
+                1-product="spark"
+                2-headline="Film a researched mini-documentary about a specific topic"
+                2-category="Higher ed project"
+                2-text="In this project by expert educator Brian Puente, students use Premiere Pro to create a mini-documentary on a topic of their choosing."
+                2-cta="Explore now"
+                2-href="https://edex.adobe.com/resource/DIMj716ja"
+                2-image-src="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.08.jpg"
+                2-image-src-mobile="https://landing.adobe.com/dam/uploads/2021/na/20210623.EdEx.Newsletter.08_m.jpg"
+                2-product="premiere"
+        />
+
+        <labor-adobe-footer
+                facebook-url="https://www.facebook.com/AdobeEdEx/"
+                twitter-url="https://www.twitter.com/AdobeForEdu"
+                youtube-url="https://www.youtube.com/user/AdobeEduPD"
+        >
+            <labor-adobe-typo-legal padding-bottom="10px">
+                Adobe, the Adobe logo, Adobe Premiere, and Adobe Premiere Rush are either registered trademarks or trademarks of Adobe in the United States and/or other countries.
+            </labor-adobe-typo-legal>
+            <labor-adobe-typo-legal padding-bottom="10px">
+                This is a marketing email from Adobe Inc., 345 Park Avenue, San Jose, CA 95110 USA. <span class="nl-dce-fragment nl-dce-done" data-nl-name="adbeServiceComUnsubscriptionLink" data-nl-label="Adobe service communications unsubscription link (adbeServiceComUnsubscriptionLink)">Adobe service communications unsubscription link</span> to unsubscribe. Please review the <a href="https://www.adobe.com/privacy.html" target="_blank" class="labor-adobe-footer-link">Adobe&nbsp;Privacy&nbsp;Policy</a>.
+            </labor-adobe-typo-legal>
+            <labor-adobe-typo-legal padding-bottom="10px">
+                To ensure email delivery, add <a href="https://landing.adobe.com/dam/downloads/vcards/adobe.vcf" target="_blank" class="labor-adobe-footer-link">mail@mail.adobe.com</a> to your address book, contacts, or safe sender&nbsp;list.
+            </labor-adobe-typo-legal>
+            <labor-adobe-typo-legal padding-bottom="10px">
+                Please do not reply to this message. To contact the Adobe Education Exchange team, find options <a href="http://edex.adobe.com/help-center" target="_blank" class="labor-adobe-footer-link">online</a>.
+            </labor-adobe-typo-legal>
+            <labor-adobe-typo-legal>
+                <a href="#" class="labor-adobe-footer-link" _label="Mirror Page" _type="mirrorPage" alias="Read Online" target="_blank" data-nl-format="datetime" data-nl-lnkep-perso-attr-href="&lt;span class=&quot;nl-dce-fragment nl-dce-done&quot; data-nl-name=&quot;MirrorPageUrl&quot; data-nl-label=&quot;Mirror page URL (MirrorPageUrl)&quot; contenteditable=&quot;false&quot;&gt;Mirror page URL&lt;/span&gt;" data-nl-type="externalLink">Read&nbsp;online</a>
+            </labor-adobe-typo-legal>
+        </labor-adobe-footer>
+    </mj-body>
+</mjml>

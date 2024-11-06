@@ -29,16 +29,12 @@ export default class LaborAdobeTypoDisplayOne extends BodyComponent {
   static additionalAttributes = {
     fontSize: styleMapping.typographies.displayOne.fontSize,
     lineHeight: styleMapping.typographies.displayOne.lineHeight,
-    fontWeight: {
-      normal: styleMapping.typographies.displayOne.fontWeight,
-      quiet: styleMapping.typographies.displayOne.fontWeight,
-    },
+    fontWeight: styleMapping.typographies.displayOne.fontWeight,
     letterSpacing: styleMapping.typographies.displayOne.letterSpacing,
     color: styleMapping.typographies.displayOne.color,
     onBackgroundColor: styleMapping.colors.white.hex
   };
 
-  // todophilipp
   headStyle = (breakpoint) => `
       @media only screen and (max-width:${breakpoint}) {
         .labor-adobe-typo-display-one-responsive {

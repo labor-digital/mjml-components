@@ -22,7 +22,7 @@ export default class LaborAdobeRoundedButton extends BodyComponent {
   static defaultAttributes = {
     type: 'cta',
     href: '#',
-    width: '180px',
+    width: '200px',
   }
 
   render() {

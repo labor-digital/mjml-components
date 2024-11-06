@@ -18,6 +18,8 @@ export default class LaborAdobeSection extends MjSection {
     'section-bg-class': 'string',
     'padding-bottom': 'unit(px,%)',
     'padding-top': 'unit(px,%)',
+    'override-padding-left': 'unit(px,%)',
+    'override-padding-right': 'unit(px,%)',
   };
 
   static defaultAttributes = {
@@ -49,9 +51,16 @@ export default class LaborAdobeSection extends MjSection {
     }
 
     let pT = (this.getAttribute('padding-top') && this.getAttribute('padding-top') != 'undefined') ? this.getAttribute('padding-top') : '0'
-    let pR = this.getAttribute('with-padding') ? LaborAdobeSection.additionalAttributes.desktopLeftRightPadding : '0'
     let pB = (this.getAttribute('padding-bottom') && this.getAttribute('padding-bottom') != 'undefined') ? this.getAttribute('padding-bottom') : '0'
-    let pL = this.getAttribute('with-padding') ? LaborAdobeSection.additionalAttributes.desktopLeftRightPadding : '0'
+
+    let pL = this.getAttribute('with-padding') ?
+      (this.getAttribute('padding-left-override') ? '100px' : LaborAdobeSection.additionalAttributes.desktopLeftRightPadding)
+        : '0'
+
+    let pR = this.getAttribute('with-padding') ?
+      (this.getAttribute('padding-right-override') ? '100px' : LaborAdobeSection.additionalAttributes.desktopLeftRightPadding)
+      : '0'
+
     attrs['padding'] = pT + ' ' + pR + ' ' + pB + ' ' + pL
 
     return this.renderMJML(`

@@ -8,8 +8,6 @@ registerDependencies({
 
 export default class LaborAdobeFooterRedBand extends BodyComponent {
 
-    //todophilipp  static endingTag = true
-
     render() {
         return this.renderMJML(`
           <labor-adobe-footer-band padding-top="4px" padding-bottom="6px">

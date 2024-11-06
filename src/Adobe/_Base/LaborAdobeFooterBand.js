@@ -20,7 +20,6 @@ export default class LaborAdobeFooterBand extends BodyComponent {
         'padding-bottom': 'unit(px,%)'
     }
 
-    //todophilipp
     static defaultAttributes = {
         'bg-color': styleMapping.colors.adobeRed.hex,
         'color': styleMapping.colors.white.hex,

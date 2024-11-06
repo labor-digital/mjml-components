@@ -6,6 +6,7 @@ import AdobeRedStyleMapping from '../_Styles/RED/AdobeRedStyleMapping'
 const styleMapping = AdobeRedStyleMapping;
 
 registerDependencies({
+    'mj-body': ['labor-adobe-edex-two-col-article'],
     'mj-column': ['labor-adobe-edex-two-col-article'],
     'labor-adobe-edex-two-col-article': [],
 })
@@ -135,9 +136,9 @@ export default class LaborAdobeEdexTwoColArticle extends BodyComponent {
                     <labor-adobe-typo-body css-class="laborAdobeEdexTwoColArticle-first-elem" padding-bottom="${styleMapping.spacings.horizontal.px7}">
                         ${this.getAttribute('1-category')}
                     </labor-adobe-typo-body>
-                    <labor-adobe-typo-headingthree css-class="laborAdobeEdexTwoColArticle-first-elem" padding-bottom="${styleMapping.spacings.horizontal.px7}">
+                    <labor-adobe-typo-heading-three css-class="laborAdobeEdexTwoColArticle-first-elem" padding-bottom="${styleMapping.spacings.horizontal.px7}">
                         ${this.getAttribute('1-headline')}
-                    </labor-adobe-typo-headingthree>
+                    </labor-adobe-typo-heading-three>
                     <labor-adobe-typo-body css-class="laborAdobeEdexTwoColArticle-first-elem" padding-bottom="${this.getAttribute('1-href') ? '30px' : '0px'}">
                         ${this.getAttribute('1-text')}
                     </labor-adobe-typo-body>
@@ -196,9 +197,9 @@ export default class LaborAdobeEdexTwoColArticle extends BodyComponent {
                     <labor-adobe-typo-body css-class="laborAdobeEdexTwoColArticle-second-elem" padding-bottom="${styleMapping.spacings.horizontal.px7}">
                         ${this.getAttribute('2-category')}
                     </labor-adobe-typo-body>
-                    <labor-adobe-typo-headingthree css-class="laborAdobeEdexTwoColArticle-second-elem" padding-bottom="${styleMapping.spacings.horizontal.px7}">
+                    <labor-adobe-typo-heading-three css-class="laborAdobeEdexTwoColArticle-second-elem" padding-bottom="${styleMapping.spacings.horizontal.px7}">
                         ${this.getAttribute('2-headline')}
-                    </labor-adobe-typo-headingthree>
+                    </labor-adobe-typo-heading-three>
                     <labor-adobe-typo-body css-class="laborAdobeEdexTwoColArticle-second-elem" padding-bottom="${this.getAttribute('2-href') ? styleMapping.spacings.horizontal.px30 : styleMapping.spacings.horizontal.px0}">
                         ${this.getAttribute('2-text')}
                     </labor-adobe-typo-body>

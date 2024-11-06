@@ -6,6 +6,7 @@ import AdobeRedStyleMapping from '../../_Styles/RED/AdobeRedStyleMapping'
 const styleMapping = AdobeRedStyleMapping;
 
 registerDependencies({
+  'labor-adobe-pod-base': ['labor-adobe-typo-body'],
   'mj-column': ['labor-adobe-typo-body'],
   'labor-adobe-typo-body': [],
 });
@@ -25,9 +26,9 @@ export default class LaborAdobeTypoBody extends BodyComponent {
     fontWeight: styleMapping.typographies.body.fontWeight,
     fontSize: styleMapping.typographies.body.fontSize,
     lineHeight: styleMapping.typographies.body.lineHeight,
-    // todophilipp
     color: styleMapping.labor.colors.body.hex,
     linkColor: styleMapping.typographies.body.linkColor,
+    linkColorBlue: styleMapping.typographies.body.linkColor,
     onBackgroundColor: styleMapping.colors.white.hex
   };
 
@@ -36,7 +37,8 @@ export default class LaborAdobeTypoBody extends BodyComponent {
     this.setCustomStyles = false
     if(!this.attributes['css-class']) {
       this.setCustomStyles = true
-      this.attributes['css-class'] = "labor-adobe-typo-body-" + md5(this.getContent())
+      const cssClass = "labor-adobe-typo-body-" + md5(this.getContent());
+      this.attributes['css-class'] = cssClass
     }
   }
 
@@ -48,7 +50,7 @@ export default class LaborAdobeTypoBody extends BodyComponent {
     }
     .${this.attributes['css-class']} .labor-adobe-typo-body-link {
         text-decoration: underline !important;
-        color: ${this.getAttribute('on-background') ? LaborAdobeTypoBody.additionalAttributes.onBackgroundColor : LaborAdobeTypoBody.additionalAttributes.tone} !important;
+        color: ${this.getAttribute('on-background') ? LaborAdobeTypoBody.additionalAttributes.onBackgroundColor : LaborAdobeTypoBody.additionalAttributes.color} !important;
     }
     .${this.attributes['css-class']} .labor-adobe-typo-body-link-blue {
         text-decoration: none !important;

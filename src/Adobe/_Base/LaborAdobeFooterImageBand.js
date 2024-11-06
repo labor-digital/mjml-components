@@ -32,7 +32,6 @@ export default class LaborAdobeFooterImageBand extends BodyComponent {
             'align': 'left'
         }
 
-        //todophilipp
         return this.renderMJML(`
         <labor-adobe-section with-padding="false" section-bg-class="content-bg" padding-bottom="0">
             <mj-column>

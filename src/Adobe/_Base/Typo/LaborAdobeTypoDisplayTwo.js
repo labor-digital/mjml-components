@@ -30,16 +30,12 @@ export default class LaborAdobeTypoDisplayTwo extends BodyComponent {
   static additionalAttributes = {
     fontSize: styleMapping.typographies.displayTwo.fontSize,
     lineHeight: styleMapping.typographies.displayTwo.lineHeight,
-    fontWeight: {
-      normal: styleMapping.typographies.displayTwo.fontWeight,
-      quiet: styleMapping.typographies.displayTwo.fontWeight,
-    },
+    fontWeight: styleMapping.typographies.displayTwo.fontWeight,
     letterSpacing: styleMapping.typographies.displayTwo.letterSpacing,
     onBackgroundColor: styleMapping.colors.white.hex,
     color: styleMapping.typographies.displayTwo.color
   };
 
-  // todophilipp
   headStyle = (breakpoint) => `
       @media only screen and (max-width:${breakpoint}) {
         .labor-adobe-typo-displaytwo-responsive {

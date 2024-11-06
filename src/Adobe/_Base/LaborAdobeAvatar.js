@@ -32,7 +32,6 @@ export default class LaborAdobeAvatar extends BodyComponent {
 
   render() {
     const attrs = {
-      // todo
       'font-size': '14px',
       'line-height': '20px',
       'font-style': 'italic',
