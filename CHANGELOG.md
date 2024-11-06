@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.1](https://github.com/labor-digital/mjml-components/compare/v3.0.0...v3.0.1) (2024-11-06)
+
+
+### Bug Fixes
+
+* pod rebuild ([28d414a](https://github.com/labor-digital/mjml-components/commit/28d414ae1e1c28faef42b4d178454e504d73066f))
+* wokring ([8b4b89b](https://github.com/labor-digital/mjml-components/commit/8b4b89b2e3e34eb88431b4b1742987147afc1030))
+
 ## [3.0.0](https://github.com/labor-digital/mjml-components/compare/v1.13.1...v3.0.0) (2024-09-25)
 
 
