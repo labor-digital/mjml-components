@@ -79,7 +79,7 @@ holy
           href="${this.getAttribute('facebook-url')}"
           background-color="${LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor}"
           border-radius="0px"
-          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/red/footer/facebook-logo.50x32.png"
+          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/red/footer/facebook-logo.100x64.png"
           alt="Facebook"
         ></mj-social-element>
       `
@@ -90,7 +90,7 @@ holy
           href="${this.getAttribute('instagram-url')}"
           background-color="${LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor}"
           border-radius="${LaborAdobeFooter.additionalAttributes.socialIconBorderRadius}"
-          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/red/footer/instagram-logo.50x32.png"
+          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/red/footer/instagram-logo.100x64.png"
           alt="Instagram"
         ></mj-social-element>
       `
@@ -101,7 +101,7 @@ holy
           href="${this.getAttribute('youtube-url')}"
           background-color="${LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor}"
           border-radius="${LaborAdobeFooter.additionalAttributes.socialIconBorderRadius}"
-          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/red/footer/youtube-logo.50x32.png"
+          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/red/footer/youtube-logo.100x64.png"
           alt="YouTube"
         ></mj-social-element>
       `
@@ -112,7 +112,7 @@ holy
           href="${this.getAttribute('x-url')}"
           background-color="${LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor}"
           border-radius="${LaborAdobeFooter.additionalAttributes.socialIconBorderRadius}"
-          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/red/footer/x-logo.50x32.png"
+          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/red/footer/x-logo.100x64.png"
           alt="X"
         ></mj-social-element>
       `
@@ -124,7 +124,7 @@ holy
           href="${this.getAttribute('tiktok-url')}"
           background-color="${LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor}"
           border-radius="${LaborAdobeFooter.additionalAttributes.socialIconBorderRadius}"
-          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/red/footer/tiktok-logo.50x32.png"
+          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/red/footer/tiktok-logo.100x64.png"
           alt="TikTok"
         ></mj-social-element>
       `
@@ -134,7 +134,7 @@ holy
           name="tiktok"
           href="${this.getAttribute('tiktok-url')}"
           background-color="${LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor}" 
-          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/red/footer/discord-logo.50x32.png"
+          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/red/footer/discord-logo.100x64.png"
           alt="Discord"
         ></mj-social-element>
       `
