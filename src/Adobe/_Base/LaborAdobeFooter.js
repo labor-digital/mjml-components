@@ -14,16 +14,20 @@ export default class LaborAdobeFooter extends BodyComponent {
   static endingTag = true;
   static allowedAttributes =  {
     'facebook-url': 'string',
-    'twitter-url': 'string',
+    'x-url': 'string',
     'instagram-url': 'string',
     'youtube-url': 'string',
+    'tiktok-url': 'string',
+    'discord-url': 'string',
     'footer-bg-class': 'string',
   };
   static defaultAttributes = {
     'facebook-url': '',
-    'twitter-url': '',
+    'x-url': '',
     'instagram-url': '',
     'youtube-url': '',
+    'tiktok-url': '',
+    'discord-url': '',
     'footer-bg-class': 'footer-bg',
   };
 
@@ -33,12 +37,16 @@ export default class LaborAdobeFooter extends BodyComponent {
     linkColor: styleMapping.labor.colors.footerLink.hex,
     align: 'left',
     socialIconBackgroundColor: styleMapping.labor.colors.socialIconBackgroundColor.hex,
-    socialIconBorderRadius: "0px",
-    socialSectionPaddingTop: "40px",
-    socialSectionPaddingBottom: "40px",
-    contentSectionPaddingBottom: "100px"
-  }
+    socialIconBorderRadius: styleMapping.spacings.vertical.px0,
 
+    socialSectionPaddingTop: styleMapping.spacings.vertical.px34,
+    socialSectionLogoPaddingTop: styleMapping.spacings.vertical.px6,
+    socialSectionPaddingTopResponsive: styleMapping.spacings.vertical.px60,
+
+    socialSectionPaddingBottom: styleMapping.spacings.vertical.px40,
+    contentSectionPaddingBottom: styleMapping.spacings.vertical.px100
+  }
+holy
   headStyle = (breakpoint) => `
     .labor-adobe-footer-link {
         text-decoration: underline;
@@ -47,6 +55,18 @@ export default class LaborAdobeFooter extends BodyComponent {
     .labor-adobe-footer-link:hover {
         text-decoration: none !important;
         cursor: pointer;
+    }
+    
+    
+
+    @media only screen and (max-width:${breakpoint}) {
+      .labor-adobe-footer-section-social-column-responsive {
+        padding-top: ${LaborAdobeFooter.additionalAttributes.socialSectionPaddingTopResponsive}
+      }
+      
+      .labor-adobe-footer-section-social-responsive {
+        text-align: -webkit-center;
+      }
     }
   `
 
@@ -59,7 +79,7 @@ export default class LaborAdobeFooter extends BodyComponent {
           href="${this.getAttribute('facebook-url')}"
           background-color="${LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor}"
           border-radius="0px"
-          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/footer/facebook.959595.100x64.png"
+          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/red/footer/facebook-logo.50x32.png"
           alt="Facebook"
         ></mj-social-element>
       `
@@ -70,30 +90,8 @@ export default class LaborAdobeFooter extends BodyComponent {
           href="${this.getAttribute('instagram-url')}"
           background-color="${LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor}"
           border-radius="${LaborAdobeFooter.additionalAttributes.socialIconBorderRadius}"
-          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/footer/instagram.959595.100x64.png"
+          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/red/footer/instagram-logo.50x32.png"
           alt="Instagram"
-        ></mj-social-element>
-      `
-    if (this.getAttribute('rss-url'))
-      socialElements += `
-        <mj-social-element
-          name="rss"
-          href="${this.getAttribute('rss-url')}"
-          background-color="${LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor}"
-          border-radius="${LaborAdobeFooter.additionalAttributes.socialIconBorderRadius}"
-          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/footer/rss.959595.100x64.png"
-          alt="RSS"
-        ></mj-social-element>
-      `
-    if (this.getAttribute('twitter-url'))
-      socialElements += `
-        <mj-social-element
-          name="twitter-noshare"
-          href="${this.getAttribute('twitter-url')}"
-          background-color="${LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor}"
-          border-radius="${LaborAdobeFooter.additionalAttributes.socialIconBorderRadius}"
-          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/footer/x.959595.100x64.png"
-          alt="Twitter"
         ></mj-social-element>
       `
     if (this.getAttribute('youtube-url'))
@@ -103,44 +101,65 @@ export default class LaborAdobeFooter extends BodyComponent {
           href="${this.getAttribute('youtube-url')}"
           background-color="${LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor}"
           border-radius="${LaborAdobeFooter.additionalAttributes.socialIconBorderRadius}"
-          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/footer/youtube.959595.120x64.png"
+          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/red/footer/youtube-logo.50x32.png"
           alt="YouTube"
         ></mj-social-element>
       `
-    if (this.getAttribute('linkedin-url'))
+    if (this.getAttribute('x-url'))
       socialElements += `
         <mj-social-element
-          name="linkedin-noshare"
-          href="${this.getAttribute('linkedin-url')}"
-          background-color=${LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor}
+          name="x-noshare"
+          href="${this.getAttribute('x-url')}"
+          background-color="${LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor}"
           border-radius="${LaborAdobeFooter.additionalAttributes.socialIconBorderRadius}"
-          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/footer/linkedin.959595.100x64.png"
-          alt="LinkedIn"
+          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/red/footer/x-logo.50x32.png"
+          alt="X"
+        ></mj-social-element>
+      `
+
+    if (this.getAttribute('tiktok-url'))
+      socialElements += `
+        <mj-social-element
+          name="tiktok"
+          href="${this.getAttribute('tiktok-url')}"
+          background-color="${LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor}"
+          border-radius="${LaborAdobeFooter.additionalAttributes.socialIconBorderRadius}"
+          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/red/footer/tiktok-logo.50x32.png"
+          alt="TikTok"
+        ></mj-social-element>
+      `
+    if (this.getAttribute('discord-url'))
+      socialElements += `
+        <mj-social-element
+          name="tiktok"
+          href="${this.getAttribute('tiktok-url')}"
+          background-color="${LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor}" 
+          src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/red/footer/discord-logo.50x32.png"
+          alt="Discord"
         ></mj-social-element>
       `
     return (
       this.renderMJML(`
       <labor-adobe-section
-        section-bg-class="${this.getAttribute('footer-bg-class')}"
-        padding-top=${LaborAdobeFooter.additionalAttributes.socialSectionPaddingTop}
+        section-bg-class="${this.getAttribute('footer-bg-class')}"     
         padding-bottom=${LaborAdobeFooter.additionalAttributes.socialSectionPaddingBottom}
+        padding-top=${LaborAdobeFooter.additionalAttributes.socialSectionPaddingTop}
       >
-        <mj-group>
-          <mj-column width="30%">
-            <mj-image
-              src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/footer/adobe-logo.fa0f00.60x80.png"
-              width="30px"
-              height="40px"
-              align="left"
-              alt="Adobe logo"
-            />
-          </mj-column>
-          <mj-column width="70%">
-            <mj-social align="right" icon-size="50px" icon-height="32px" mode="horizontal">
-              ${socialElements}
-            </mj-social>
-          </mj-column>
-        </mj-group>
+     
+        <mj-column vertical-align="top" width="30%" padding-top=${LaborAdobeFooter.additionalAttributes.socialSectionLogoPaddingTop}>
+          <mj-image
+            src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/red/footer/adobe-logo.red.315x16.png"
+            width="78px"
+            height="19px"
+            align="left"
+            alt="Adobe logo"
+          />
+        </mj-column>
+        <mj-column vertical-align="top" width="70%" css-class="labor-adobe-footer-section-social-column-responsive">
+          <mj-social align="right" icon-size="50px" icon-height="32px" mode="horizontal" css-class="labor-adobe-footer-section-social-responsive">
+            ${socialElements}
+          </mj-social>
+        </mj-column>
       </labor-adobe-section>
     `) +
       this.renderMJML(`

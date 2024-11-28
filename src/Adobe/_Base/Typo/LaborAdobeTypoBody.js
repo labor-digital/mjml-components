@@ -18,15 +18,17 @@ export default class LaborAdobeTypoBody extends BodyComponent {
     'on-background': 'boolean',
     'padding-bottom': 'unit(px,%)',
   };
+
   static defaultAttributes = {
     'on-background': false,
-    'padding-bottom': styleMapping.spacings.vertical.px0,
+    'padding-bottom': styleMapping.spacings.vertical.px40,
   };
+
   static additionalAttributes = {
     fontWeight: styleMapping.typographies.body.fontWeight,
     fontSize: styleMapping.typographies.body.fontSize,
     lineHeight: styleMapping.typographies.body.lineHeight,
-    color: styleMapping.labor.colors.body.hex,
+    color: styleMapping.colors.body.hex,
     linkColor: styleMapping.typographies.body.linkColor,
     linkColorBlue: styleMapping.typographies.body.linkColor,
     onBackgroundColor: styleMapping.colors.white.hex

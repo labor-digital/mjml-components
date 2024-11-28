@@ -106,8 +106,11 @@ export default class AdobeRedStyleMapping {
   static spacings = {
     vertical : {
       px0: "0px",
+      px6: "6px",
+      px8: "8px",
       px16: "16px",
       px20: "20px",
+      px34: "34px",
       px40: "40px",
       px42: "42px",
       px60: "60px",
@@ -181,7 +184,7 @@ export default class AdobeRedStyleMapping {
       fontSize: AdobeRedStyleMapping.typographyFontSize.size60,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size57,
       fontWeight: {
-        normal: AdobeRedStyleMapping.typographyFontWeight.bold,
+        normal: AdobeRedStyleMapping.typographyFontWeight.black,
         quiet: AdobeRedStyleMapping.typographyFontWeight.medium
       },
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusTwo,
@@ -193,7 +196,7 @@ export default class AdobeRedStyleMapping {
       fontSize: AdobeRedStyleMapping.typographyFontSize.size45,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size43,
       fontWeight: {
-        normal: AdobeRedStyleMapping.typographyFontWeight.bold,
+        normal: AdobeRedStyleMapping.typographyFontWeight.black,
         quiet: AdobeRedStyleMapping.typographyFontWeight.medium
       },
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusTwo,
@@ -205,7 +208,7 @@ export default class AdobeRedStyleMapping {
       fontSize: AdobeRedStyleMapping.typographyFontSize.size40,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size38,
       fontWeight: {
-        normal: AdobeRedStyleMapping.typographyFontWeight.bold,
+        normal: AdobeRedStyleMapping.typographyFontWeight.black,
         quiet: AdobeRedStyleMapping.typographyFontWeight.medium
       },
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusTwo,
@@ -280,6 +283,11 @@ export default class AdobeRedStyleMapping {
       color: AdobeRedStyleMapping.colors.gray800.hex,
       linkColor: AdobeRedStyleMapping.labor.colors.detailLink.hex,
     },
+    cta: {
+      fontSize: AdobeRedStyleMapping.typographyFontSize.size16,
+      lineHeight: AdobeRedStyleMapping.typographyLineHeight.size20,
+      fontWeight: AdobeRedStyleMapping.typographyFontWeight.bold,
+    }
 
   };
 }

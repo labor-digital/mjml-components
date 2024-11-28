@@ -33,9 +33,7 @@ export default class LaborAdobePod extends BodyComponent {
 
         'secondary-cta': 'string',
         'secondary-cta-href': 'string',
-        'padding-bottom': 'unit(px)',
-
-        'z-formation-align': 'enum(left, right)',
+        'padding-bottom': 'unit(px)'
     }
 
     static defaultAttributes = {

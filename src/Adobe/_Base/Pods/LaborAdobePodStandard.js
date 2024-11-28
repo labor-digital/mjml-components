@@ -46,7 +46,7 @@ export default class LaborAdobePodStandard extends BodyComponent {
                     
                     primary-cta="${this.getAttribute('primary-cta')}"
                     primary-cta-href="${this.getAttribute('primary-cta-href')}"
-                    primary-cta-width="${this.getAttribute('cta-width')}"
+                    primary-cta-width="${this.getAttribute('primary-cta-width')}"
                 >
                     ${this.getContent()}
                 </labor-adobe-pod>

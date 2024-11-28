@@ -29,11 +29,11 @@ export default class LaborAdobeRoundedButton extends BodyComponent {
     let attrs = {
       'href': this.getAttribute('href'),
       'width': this.getAttribute('width'),
-      'inner-padding': '8px 18px 10px 18px',
-      'font-size': '16px',
-      'line-height': '18px',
-      'font-weight': '600',
+      'inner-padding': '7px 18px 9px 18px',
       'border-width': '2px',
+      'font-size': styleMapping.typographies.cta.fontSize,
+      'line-height': styleMapping.typographies.cta.lineHeight,
+      'font-weight': styleMapping.typographies.cta.fontWeight,
     }
     switch (this.getAttribute('type')) {
       case 'quiet':

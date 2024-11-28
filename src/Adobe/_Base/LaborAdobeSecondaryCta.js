@@ -27,7 +27,7 @@ export default class LaborAdobeSecondaryCta extends BodyComponent {
     let color = ''
     switch (this.getAttribute('type')) {
       case 'quiet':
-        color = styleMapping.colors.gray700.hex
+        color = styleMapping.colors.buttonCta.hex
         break
       case 'inverted':
         color = styleMapping.colors.white.hex

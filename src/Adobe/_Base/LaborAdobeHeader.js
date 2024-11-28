@@ -16,7 +16,7 @@ export default class LaborAdobeHeader extends BodyComponent {
     static allowedAttributes = {
         'src': 'string',
         'header-bg-class': 'string',
-        'height': 'enum(22px,28px,30px,34px)',
+        'height': 'enum(22px,28px,30px,34px,42px)',
         'width': 'unit(px,%)',
         'href': 'string',
         'title': 'string',
@@ -30,7 +30,7 @@ export default class LaborAdobeHeader extends BodyComponent {
     static defaultAttributes = {
         'src': '',
         'header-bg-class': 'content-bg',
-        'height': '30px',
+        'height': '42px',
         'width': 'auto',
         'href': '',
         'target': '_blank',
@@ -56,6 +56,7 @@ export default class LaborAdobeHeader extends BodyComponent {
 
     render() {
         const imgHeight = parseInt(this.getAttribute('height').replace('px', ''))
+        // default: 42 img + 21 p top + 21 p bottom = 124px;
         let padding = (124 - imgHeight - (this.getAttribute('border') ? 4 : 0)) / 2
 
         let imgAttrs = {

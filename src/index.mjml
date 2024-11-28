@@ -40,15 +40,7 @@
                     border -> Set here if you want to have the top red border for operational emails | BOOL | DEFAULT: false
                     padding-bottom-overwrite -> As stated with the height the padding is computed. If you want to overwrite the bottom-padding you can do that here
             -->
-        <labor-adobe-header-badge
-                src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_creative_educator.red.616x60.png"
-                height="22px"
-                width="226px"
-                badge-src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_creative_educator_badge.color.276x280.png"
-                badge-width="60px"
-                badge-align="left"
-                badge-padding-right="40px"
-        />
+
         <labor-adobe-header
                 src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_creative_cloud.white.442x60.png"
                 height="30px"
@@ -257,19 +249,14 @@
             </mj-column>
         </labor-adobe-section>
 
-        <labor-adobe-actioncard
-                section-bg-class="content-bg-alt"
-        >
-            <labor-adobe-typo-heading-three padding-bottom="17px">Actioncard heading</labor-adobe-typo-heading-three>
-            <labor-adobe-typo-body>Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit
-                ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet
-            </labor-adobe-typo-body>
-        </labor-adobe-actioncard>
 
         <labor-adobe-footer
                 facebook-url="#"
-                twitter-url="#"
+                tiktok-url="#"
+                x-url="#"
                 instagram-url="#"
+                youtube-url="#"
+                discord-url="#"
                 footer-bg-class="footer-bg"
         >
             <labor-adobe-typo-legal padding-bottom="10px">

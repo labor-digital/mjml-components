@@ -23,7 +23,7 @@ export default class LaborAdobeTypoDisplayOne extends BodyComponent {
     'on-background': false,
     'type': 'normal',
     'responsive': false,
-    'padding-bottom': styleMapping.spacings.vertical.px0,
+    'padding-bottom': styleMapping.spacings.vertical.px8,
   };
 
   static additionalAttributes = {
@@ -39,7 +39,7 @@ export default class LaborAdobeTypoDisplayOne extends BodyComponent {
       @media only screen and (max-width:${breakpoint}) {
         .labor-adobe-typo-display-one-responsive {
           font-size: 45px !important;
-          line-height: 50px !important;
+          line-height: 43px !important;
         }
       }
     `

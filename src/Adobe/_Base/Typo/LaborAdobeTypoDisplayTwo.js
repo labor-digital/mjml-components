@@ -24,7 +24,7 @@ export default class LaborAdobeTypoDisplayTwo extends BodyComponent {
     'on-background': false,
     'type': 'normal',
     'responsive': false,
-    'padding-bottom': styleMapping.spacings.vertical.px0,
+    'padding-bottom': styleMapping.spacings.vertical.px8,
   };
 
   static additionalAttributes = {
@@ -38,7 +38,7 @@ export default class LaborAdobeTypoDisplayTwo extends BodyComponent {
 
   headStyle = (breakpoint) => `
       @media only screen and (max-width:${breakpoint}) {
-        .labor-adobe-typo-displaytwo-responsive {
+        .labor-adobe-typo-display-two-responsive {
           font-size: 40px !important;
           line-height: 46px !important;
         }
@@ -60,7 +60,7 @@ export default class LaborAdobeTypoDisplayTwo extends BodyComponent {
         ${this.htmlAttributes(attrs)}
       >
         <div ${this.htmlAttributes({
-          class: this.getAttribute('responsive') ? 'labor-adobe-typo-displaytwo-responsive' : '',
+          class: this.getAttribute('responsive') ? 'labor-adobe-typo-display-two-responsive' : '',
         })}>${this.getContent()}</div>
       </mj-text>
     `)

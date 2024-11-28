@@ -20,7 +20,7 @@ export default class LaborAdobeTypoDisplayThree extends BodyComponent {
   static defaultAttributes = {
     'on-background': false,
     'type': 'normal',
-    'padding-bottom': styleMapping.spacings.vertical.px0,
+    'padding-bottom': styleMapping.spacings.vertical.px8,
   };
 
   static additionalAttributes = {
