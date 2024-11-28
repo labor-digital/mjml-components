@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.2](https://github.com/labor-digital/mjml-components/compare/v3.0.1...v3.0.2) (2024-11-28)
+
+
+### Bug Fixes
+
+* removed deprecated components, further work on adobe pods ([a6cde5a](https://github.com/labor-digital/mjml-components/commit/a6cde5a5663bacf09863122b2b84905deeec216a))
+
 ### [3.0.1](https://github.com/labor-digital/mjml-components/compare/v3.0.0...v3.0.1) (2024-11-06)
 
 
