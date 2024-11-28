@@ -148,8 +148,8 @@ holy
      
         <mj-column vertical-align="top" width="30%" padding-top=${LaborAdobeFooter.additionalAttributes.socialSectionLogoPaddingTop}>
           <mj-image
-            src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/red/footer/adobe-logo.red.315x16.png"
-            width="78px"
+            src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/red/footer/adobe-logo.red.320x76.png"
+            width="80px"
             height="19px"
             align="left"
             alt="Adobe logo"
