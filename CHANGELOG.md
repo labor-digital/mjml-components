@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.4](https://github.com/labor-digital/mjml-components/compare/v3.0.3...v3.0.4) (2024-11-28)
+
+
+### Bug Fixes
+
+* hi-res social icons ([2953b38](https://github.com/labor-digital/mjml-components/commit/2953b38e7191d9c45b65b0ff08a09fa6157c7726))
+
 ### [3.0.3](https://github.com/labor-digital/mjml-components/compare/v3.0.2...v3.0.3) (2024-11-28)
 
 
