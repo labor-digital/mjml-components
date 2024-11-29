@@ -34,7 +34,7 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
         'section-bg-class': 'content-bg',
         'image-src-mobile': '',
         'image-href': '',
-        'cta-width': '180px',
+        'cta-width': '200px',
         'product': '',
         'secondary-cta': '',
         'secondary-href': '',
@@ -82,12 +82,12 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
                         ${
                             this.getAttribute('category') ?
                                 `
-                                    <labor-adobe-typo-body padding-bottom="${styleMapping.spacings.horizontal.px7}">${this.getAttribute('category')}</labor-adobe-typo-body>
+                                    <labor-adobe-edex-category padding-bottom="${styleMapping.spacings.horizontal.px12}">${this.getAttribute('category')}</labor-adobe-edex-category>
                                 ` :
                                 ``
                         }
-                        <labor-adobe-typo-heading-three padding-bottom="${styleMapping.spacings.horizontal.px7}">${this.getAttribute('headline')}</labor-adobe-typo-heading-three>
-                        <labor-adobe-typo-body padding-bottom="${this.getAttribute('href') ? styleMapping.spacings.horizontal.px33 : styleMapping.spacings.horizontal.px0}">${this.getAttribute('text')}</labor-adobe-typo-body>
+                        <labor-adobe-typo-heading-three padding-bottom="${styleMapping.spacings.horizontal.px12}">${this.getAttribute('headline')}</labor-adobe-typo-heading-three>
+                        <labor-adobe-typo-body padding-bottom="${this.getAttribute('href') ? styleMapping.spacings.horizontal.px40 : styleMapping.spacings.horizontal.px0}">${this.getAttribute('text')}</labor-adobe-typo-body>
                         ${
                             this.getAttribute('href') ?
                                 `

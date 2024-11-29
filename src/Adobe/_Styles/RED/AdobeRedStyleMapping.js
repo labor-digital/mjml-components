@@ -25,6 +25,9 @@ export default class AdobeRedStyleMapping {
       },
       socialIconBackgroundColor: {
         hex: "#F5F5F5"
+      },
+      edexCategory: {
+        hex: "#7C7C7C"
       }
     },
     borders: {
@@ -218,7 +221,7 @@ export default class AdobeRedStyleMapping {
     headingOne: {
       fontSize: AdobeRedStyleMapping.typographyFontSize.size36,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size40,
-      fontWeight: AdobeRedStyleMapping.typographyFontWeight.medium,
+      fontWeight: AdobeRedStyleMapping.typographyFontWeight.extraBold,
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusTwo,
       color: AdobeRedStyleMapping.colors.black.hex
     },
@@ -226,7 +229,7 @@ export default class AdobeRedStyleMapping {
     headingTwo: {
       fontSize: AdobeRedStyleMapping.typographyFontSize.size28,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size31,
-      fontWeight: AdobeRedStyleMapping.typographyFontWeight.medium,
+      fontWeight: AdobeRedStyleMapping.typographyFontWeight.extraBold,
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusTwo,
       color: AdobeRedStyleMapping.colors.black.hex
     },
@@ -234,7 +237,7 @@ export default class AdobeRedStyleMapping {
     headingThree: {
       fontSize: AdobeRedStyleMapping.typographyFontSize.size22,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size24,
-      fontWeight: AdobeRedStyleMapping.typographyFontWeight.medium,
+      fontWeight: AdobeRedStyleMapping.typographyFontWeight.extraBold,
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusTwo,
       color: AdobeRedStyleMapping.colors.black.hex
     },
@@ -242,7 +245,7 @@ export default class AdobeRedStyleMapping {
     headingFour: {
       fontSize: AdobeRedStyleMapping.typographyFontSize.size18,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size20,
-      fontWeight: AdobeRedStyleMapping.typographyFontWeight.medium,
+      fontWeight: AdobeRedStyleMapping.typographyFontWeight.extraBold,
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusTwo,
       color: AdobeRedStyleMapping.colors.black.hex
     },
