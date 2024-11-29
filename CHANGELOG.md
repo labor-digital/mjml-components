@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.5](https://github.com/labor-digital/mjml-components/compare/v3.0.4...v3.0.5) (2024-11-29)
+
+
+### Bug Fixes
+
+* updated edex article // new product logos wip ([0146e83](https://github.com/labor-digital/mjml-components/commit/0146e83ba977ad00bc83fb9b162c559952ff69d1))
+
 ### [3.0.4](https://github.com/labor-digital/mjml-components/compare/v3.0.3...v3.0.4) (2024-11-28)
 
 
