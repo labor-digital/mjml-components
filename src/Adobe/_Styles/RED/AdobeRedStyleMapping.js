@@ -45,7 +45,7 @@ export default class AdobeRedStyleMapping {
     adobeRed: {
       hex: "#EB1000"
     },
-    buttonCta: {
+    buttonQuiet: {
       hex: "#747474"
     },
     blue900: {
