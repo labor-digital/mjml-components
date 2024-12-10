@@ -1,6 +1,6 @@
 import {registerDependencies} from 'mjml-validator'
 import {BodyComponent} from 'mjml-core'
-import AdobeProductMapping from '../AdobeProductMapping'
+import AdobeApplicationMapping from '../AdobeApplicationMapping'
 import AdobeRedStyleMapping from '../_Styles/RED/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
@@ -68,13 +68,13 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
                             this.getAttribute('product') ?
                                 `
                                     <mj-image
-                                        src="${AdobeProductMapping.productMapping[this.getAttribute('product')]['images']['black']}"
+                                        src="${AdobeApplicationMapping.applicationMapping[this.getAttribute('product')]['images']['black_alt']['location']}"
                                         align="left"
-                                        width="${Math.floor(parseInt(AdobeProductMapping.productMapping[this.getAttribute('product')]['width'].replace('px', '')) / 2)}px"
+                                        width="${Math.floor(parseInt(AdobeApplicationMapping.applicationMapping[this.getAttribute('product')]['images']['black_alt']['width'].replace('px', '')) / 2)}px"
                                         height="30px"
                                         target="_blank"
                                         padding-bottom="${styleMapping.spacings.horizontal.px24}"
-                                        alt="${AdobeProductMapping.productMapping[this.getAttribute('product')]['name']}"
+                                        alt="${AdobeApplicationMapping.applicationMapping[this.getAttribute('product')]['name']}"
                                     />
                                 ` :
                                 ``

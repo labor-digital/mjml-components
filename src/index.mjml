@@ -1,276 +1,125 @@
 <mjml owa="desktop">
     <mj-head>
-        <mj-title>SUBJECT</mj-title>
-        <mj-preview>PREHEADER</mj-preview>
-
+        <mj-title>Get a chance to win Adobe swag in our winter challenge</mj-title>
+        <mj-preview>Plus, get lesson ideas and PD opportunities when you join the ACE program.</mj-preview>
         <mj-font href="https://use.typekit.net/onr8tbr.css" name="adobe-clean"/>
         <mj-attributes>
-            <mj-class name="body-bg" background-color="#eaeaea"/>
-            <mj-class name="footer-bg" background-color="#f5f5f5"/>
-            <mj-class name="content-bg" background-color="#010619"/>
+            <mj-class name="body-bg" background-color="#eaeaea" />
+            <mj-class name="footer-bg" background-color="#f5f5f5" />
+            <mj-class name="content-bg" background-color="#ffffff" />
 
-            <mj-all
-                    font-family="'adobe-clean', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'"
-                    padding="0"
-            />
-
-            <!-- TEMPORARY START -->
-            <!-- for this template only -->
-            <mj-class name="content-bg-alt" background-color="#ffffff"/>
-            <!-- TEMPORARY END -->
+            <mj-all font-family="'adobe-clean', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'" padding="0" />
         </mj-attributes>
         <mj-breakpoint width="480px"/>
-        <mj-style> a {
-            text-decoration: none;
-            color: inherit;
-        } </mj-style>
+        <mj-style>
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        </mj-style>
     </mj-head>
     <mj-body mj-class="body-bg">
-        <!-- HEADER START -->
-        <!--
-                <labor-adobe-header>
-                    src -> URL to the product image | you can find a list of available already hosted images in "product-images.txt"
-                    header-bg-class -> name of the mj-class for the background | DEFAULT: content-bg
-                    height -> height of the product image | ENUM(28px, 30px, 34px) | DEFAULT: 30px
-                        The top and bottom padding will be computed depending on the height and if you have a top border or not
-                    width -> width of the product image (Remember that most of the images are @2x, so you have to half the width of the product image)
-                    href -> Set a URL here to let the image link to somewhere
-                    title -> title for the product image
-                    target -> target for the link | DEFAULT: _blank
-                    border -> Set here if you want to have the top red border for operational emails | BOOL | DEFAULT: false
-                    padding-bottom-overwrite -> As stated with the height the padding is computed. If you want to overwrite the bottom-padding you can do that here
-            -->
 
         <labor-adobe-header
-                src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_creative_cloud.white.442x60.png"
-                height="30px"
-                width="221px"
-        />
-        <labor-adobe-header
+                src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_education_exchange.red.928x168.png"
+                height="42px"
+                width="232px"
+                alt="Adobe Education Exchange"
                 header-bg-class="content-bg"
-                src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_creative_cloud.white.442x60.png"
-                height="30px"
-                width="221px"
-                padding-bottom-overwrite="0"
         />
 
-        <!-- HEADER END -->
-
-        <labor-adobe-section with-padding="false" section-bg-class="content-bg" padding-bottom="0">
+        <labor-adobe-section padding-top="10px" padding-bottom="5px" section-bg-class="footer-bg">
             <mj-column>
-                <labor-responsive-image
-                        src="https://landing.adobe.com/dam/uploads/2020/emea/20200826.CCT.header01.desktop_v2.jpg"
-                        src-mobile="https://landing.adobe.com/dam/uploads/2020/emea/20200826.CCT.header01.mobile_v2.jpg"
-                        fluid-on-mobile="true"
-                        width="600px"
-                        align="left"
-                />
+                <labor-adobe-typo-body padding-bottom="6px">Check out the latest on the Education Exchange this week.</labor-adobe-typo-body>
             </mj-column>
         </labor-adobe-section>
 
-        <labor-adobe-section with-padding="true" padding-bottom="100px">
-            <mj-column>
-                <labor-adobe-typo-display-one on-background="true" type="normal" responsive="true" padding-bottom="40px">
-                    Display 1
-                </labor-adobe-typo-display-one>
-                <labor-adobe-typo-display-one on-background="true" type="quiet" responsive="true" padding-bottom="40px">
-                    Display 1 Quiet
-                </labor-adobe-typo-display-one>
+        <labor-adobe-edex-article
+                section-bg-class="content-bg"
+                headline="Explore &quot;12 Days of Creativity&quot; activities"
+                category="Challenge"
+                text="Inspire students to design their own emojis, symmetrical snowflakes, mashup stuffies, and more. They&#39;ll build essential creative and critical thinking skills along the way."
+                cta="Explore"
+                href="https://new.express.adobe.com/learn?playlist=playlist%2Fexpress%2Ftwelve-days-of-creativity"
+                image-src="https://landing.adobe.com/dam/uploads/2024/na/edex/20241204.EdEx.Newsletter.01.png"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2024/na/edex/20241204.EdEx.Newsletter.01_m.png"
+                product="ccx"
 
-
-                <labor-adobe-typo-display-two on-background="true" type="normal" padding-bottom="40px">
-                    Display 2
-                </labor-adobe-typo-display-two>
-                <labor-adobe-typo-display-two on-background="true" type="quiet" padding-bottom="40px">
-                    Display 2 Quiet
-                </labor-adobe-typo-display-two>
-
-                <labor-adobe-typo-display-three on-background="true" type="normal" padding-bottom="40px">
-                    Display 3
-                </labor-adobe-typo-display-three>
-                <labor-adobe-typo-display-three on-background="true" type="quiet" padding-bottom="40px">
-                    Display 3 Quiet
-                </labor-adobe-typo-display-three>
-
-                <labor-adobe-typo-heading-one on-background="true" padding-bottom="40px">
-                    Heading 1
-                </labor-adobe-typo-heading-one>
-
-                <labor-adobe-typo-heading-two on-background="true" padding-bottom="40px">
-                    Heading 2
-                </labor-adobe-typo-heading-two>
-
-                <labor-adobe-typo-heading-three on-background="true" padding-bottom="40px">
-                    Heading 3
-                </labor-adobe-typo-heading-three>
-
-                <labor-adobe-typo-heading-four on-background="true" padding-bottom="40px">
-                    Heading 4
-                </labor-adobe-typo-heading-four>
-
-                <labor-adobe-typo-body on-background="true" padding-bottom="7px">
-                    Body copy. Body copy.Body copy. Body copy.Body copy. Body copy.Body copy. Body copy.Body
-                    copy. Body copy.
-                </labor-adobe-typo-body>
-                <labor-adobe-typo-body on-background="true" padding-bottom="40px">
-                    And this is a paragraph with 7px as padding-bottom of the upper
-                    paragraph.
-                </labor-adobe-typo-body>
-
-                <labor-adobe-typo-caption on-background="true" padding-bottom="40px">
-                    Caption copy | Use this one for little details or for image
-                    captions
-                </labor-adobe-typo-caption>
-
-                <labor-adobe-typo-detail type="normal" on-background="true" padding-bottom="40px">
-                    Detail copy | Use the detail style sparingly, only for the quietest level of hierarchy.
-                    For example, a table column header or subcategories within a block of text can use the
-                    detail style. Most emails will not use this style.
-                </labor-adobe-typo-detail>
-
-                <labor-adobe-typo-detail type="light" on-background="true" padding-bottom="40px">
-                    Detail light copy | Use the detail style sparingly, only for the quietest level of
-                    hierarchy. For example, a table column header or subcategories within a block of text can
-                    use the detail style. Most emails will not use this style.
-                </labor-adobe-typo-detail>
-
-                <labor-adobe-rounded-button type="cta" padding-bottom="10px" href="https://google.com">
-                    CTA cta
-                </labor-adobe-rounded-button>
-                <labor-adobe-rounded-button type="quiet" padding-bottom="10px" href="https://google.com">
-                    CTA quiet
-                </labor-adobe-rounded-button>
-                <labor-adobe-rounded-button type="inverted" padding-bottom="40px" href="https://google.com">
-                    CTA inverted
-                </labor-adobe-rounded-button>
-
-                <labor-adobe-secondary-cta type="normal" padding-bottom="10px" href="#">
-                    Secondary CTA normal
-                </labor-adobe-secondary-cta>
-                <labor-adobe-secondary-cta type="quiet" padding-bottom="10px" href="#">
-                    Secondary CTA quiet
-                </labor-adobe-secondary-cta>
-                <labor-adobe-secondary-cta type="inverted" padding-bottom="40px" href="#">
-                    Secondary CTA inverted
-                </labor-adobe-secondary-cta>
-            </mj-column>
-        </labor-adobe-section>
-
-        <labor-adobe-header
-                src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_education_exchange.red.658x60.png"
-                height="28px"
-                width="307px"
-                header-bg-class="content-bg-alt"
         />
-        <labor-adobe-section
-                with-padding="false"
-                section-bg-class="content-bg-alt"
-                padding-bottom="33px"
-        >
-            <mj-column>
-                <labor-responsive-image
-                        src="https://landing.adobe.com/dam/uploads/2020/na/20200819.edex.en.email.1_v2.jpg"
-                        fluid-on-mobile="true"
-                        width="600px"
-                        align="left"
-                />
-            </mj-column>
-        </labor-adobe-section>
 
-        <labor-adobe-section
-                with-padding="true"
-                padding-bottom="100px"
-                section-bg-class="content-bg-alt"
-        >
-            <mj-column>
-                <labor-adobe-typo-display-one type="normal" responsive="true"  padding-bottom="40px">
-                    Display 1
-                </labor-adobe-typo-display-one>
+        <labor-adobe-edex-article
+                section-bg-class="content-bg"
+                headline="Design an ugly winter sweater"
+                category="Template"
+                text="Students can use our template, generative AI, and their writing skills to create their own sweater designs."
+                cta="Get started"
+                href="https://new.express.adobe.com/new?learn=exercise%3Aexpress%2Fhow-to%2Fin-app%2Fdesign-an-ugly-sweater&sdid=CW761TBH&mv=display&mv2=abmkt"
+                image-src="https://landing.adobe.com/dam/uploads/2024/na/edex/20241204.EdEx.Newsletter.12.png"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2024/na/edex/20241204.EdEx.Newsletter.12_m.png"
+                product="ccx"
 
-                <labor-adobe-typo-display-one type="quiet" responsive="true" padding-bottom="40px">
-                    Display 1 Quiet
-                </labor-adobe-typo-display-one>
+        />
 
-                <labor-adobe-typo-display-two type="normal" padding-bottom="40px">Display 2</labor-adobe-typo-display-two>
-                <labor-adobe-typo-display-two type="quiet" padding-bottom="40px">Display 2 Quiet</labor-adobe-typo-display-two>
+        <labor-adobe-edex-article
+                section-bg-class="content-bg"
+                headline="Create a &quot;you-in-the-box&quot; animation "
+                category="Template"
+                text="In this activity, students will learn to remove backgrounds from photos and change template design properties to make their own unique creations."
+                cta="Get started"
+                href="https://new.express.adobe.com/new?learn=exercise%3Aexpress%2Fhow-to%2Fin-app%2Fanimate-a-you-in-a-box&sdid=CZY71PLG&mv=display&mv2=abmkt"
+                image-src="https://landing.adobe.com/dam/uploads/2024/na/edex/20241204.EdEx.Newsletter.21.png"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2024/na/edex/20241204.EdEx.Newsletter.21_m.png"
+                product="ccx"
 
-                <labor-adobe-typo-display-three type="normal" padding-bottom="40px">Display 3</labor-adobe-typo-display-three>
-                <labor-adobe-typo-display-three type="quiet" padding-bottom="40px">Display 3 Quiet</labor-adobe-typo-display-three>
+        />
 
-                <labor-adobe-typo-heading-one padding-bottom="40px">Heading 1</labor-adobe-typo-heading-one>
+        <labor-adobe-edex-article
+                section-bg-class="content-bg"
+                headline="Make a desktop vision board"
+                category="Template"
+                text="Students can build image editing and design skills as they create visual representations of their goals for 2025."
+                cta="Get started"
+                href="https://new.express.adobe.com/new?learn=exercise%3Aexpress%2Fhow-to%2Fin-app%2Fcreate-a-desktop-vision-board&sdid=D4P81KVF&mv=display&mv2=abmkt"
+                image-src="https://landing.adobe.com/dam/uploads/2024/na/edex/20241204.EdEx.Newsletter.31.png"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2024/na/edex/20241204.EdEx.Newsletter.31_m.png"
+                product="ccx"
 
-                <labor-adobe-typo-heading-two padding-bottom="40px">Heading 2</labor-adobe-typo-heading-two>
+        />
 
-                <labor-adobe-typo-heading-three padding-bottom="40px">
-                    Heading 3
-                </labor-adobe-typo-heading-three>
+        <labor-adobe-edex-article
+                section-bg-class="content-bg"
+                headline="Join Adobe Creative Educators on Facebook"
+                category="Resources"
+                text="Inspire the next generation to become lifelong creators with support from a global community of educators. Get curated PD materials, information about virtual and in-person events, and the opportunity to earn badges for your resume."
+                cta="Join"
+                href="https://adobe.ly/ACEFB"
+                image-src="https://landing.adobe.com/dam/uploads/2024/na/edex/20241204.EdEx.Newsletter.41.png"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2024/na/edex/20241204.EdEx.Newsletter.41_m.png"
+                product=""
 
-                <labor-adobe-typo-heading-four padding-bottom="40px">Heading 4</labor-adobe-typo-heading-four>
-
-                <labor-adobe-typo-body padding-bottom="7px">
-                    Body copy. Body copy.Body copy. Body copy.Body copy. Body copy.Body copy. Body copy.Body
-                    copy. Body copy.
-                </labor-adobe-typo-body>
-                <labor-adobe-typo-body padding-bottom="40px">
-                    And this is a paragraph with 7px as padding-bottom of the upper
-                    paragraph.
-                </labor-adobe-typo-body>
-
-                <labor-adobe-typo-caption padding-bottom="40px">
-                    Caption copy | Use this one for little details or for image
-                    captions
-                </labor-adobe-typo-caption>
-
-                <labor-adobe-typo-detail type="normal" padding-bottom="40px">
-                    Detail copy | Use the detail style sparingly, only for the quietest level of hierarchy.
-                    For example, a table column header or subcategories within a block of text can use the
-                    detail style. Most emails will not use this style.
-                </labor-adobe-typo-detail>
-
-                <labor-adobe-typo-detail type="light" padding-bottom="40px">
-                    Detail light copy | Use the detail style sparingly, only for the quietest level of
-                    hierarchy. For example, a table column header or subcategories within a block of text can
-                    use the detail style. Most emails will not use this style.
-                </labor-adobe-typo-detail>
-
-                <labor-adobe-rounded-button type="cta" padding-bottom="10px" href="#">
-                    CTA cta
-                </labor-adobe-rounded-button>
-                <labor-adobe-rounded-button type="quiet" padding-bottom="40px" href="#">
-                    CTA quiet
-                </labor-adobe-rounded-button>
-
-                <labor-adobe-secondary-cta type="normal" padding-bottom="10px" href="#">
-                    Secondary CTA normal
-                </labor-adobe-secondary-cta>
-                <labor-adobe-secondary-cta type="quiet" padding-bottom="40px" href="#">
-                    Secondary CTA quiet
-                </labor-adobe-secondary-cta>
-            </mj-column>
-        </labor-adobe-section>
-
+        />
 
         <labor-adobe-footer
-                facebook-url="#"
-                tiktok-url="#"
-                x-url="#"
-                instagram-url="#"
-                youtube-url="#"
-                discord-url="#"
-                footer-bg-class="footer-bg"
+                facebook-url="https://www.facebook.com/AdobeEdEx/"
+                x-url="https://www.twitter.com/AdobeForEdu"
+                youtube-url="https://www.youtube.com/user/AdobeEduPD"
+                instagram-url="https://instagram.com/adobeforedu"
         >
             <labor-adobe-typo-legal padding-bottom="10px">
-                Here comes the footer.
+                Adobe, the Adobe logo, Adobe Express, and the Adobe Express logo are either registered trademarks or trademarks of Adobe in the United States and/or other countries.
             </labor-adobe-typo-legal>
-            <labor-adobe-typo-legal padding-bottom="10px">This is a paragraph.</labor-adobe-typo-legal>
             <labor-adobe-typo-legal padding-bottom="10px">
-                Use the class labor-adobe-footer-link for
-                <a href="#" class="labor-adobe-footer-link">links</a>.
+                This is a marketing email from Adobe Inc., 345 Park Avenue, San Jose, CA 95110 USA. <span class="nl-dce-fragment nl-dce-done" data-nl-name="adbeServiceComUnsubscriptionLink" data-nl-label="Adobe service communications unsubscription link (adbeServiceComUnsubscriptionLink)">Adobe service communications unsubscription link</span> to unsubscribe. Please review the <a href="https://www.adobe.com/privacy.html" target="_blank" class="labor-adobe-footer-link">Adobe Privacy Policy</a>.
+            </labor-adobe-typo-legal>
+            <labor-adobe-typo-legal padding-bottom="10px">
+                To ensure email delivery, add <a href="https://landing.adobe.com/dam/downloads/vcards/adobe.vcf" target="_blank" class="labor-adobe-footer-link">mail@mail.adobe.com</a> to your address book, contacts, or safe sender&nbsp;list.
+            </labor-adobe-typo-legal>
+            <labor-adobe-typo-legal padding-bottom="10px">
+                Please do not reply to this message. To contact the Adobe Education Exchange team, find options <a href="http://edex.adobe.com/help-center" target="_blank" class="labor-adobe-footer-link">online</a>.
             </labor-adobe-typo-legal>
             <labor-adobe-typo-legal>
-                And the last paragraph has no padding-bottom
+                <a href="#" class="labor-adobe-footer-link" _label="Mirror Page" _type="mirrorPage" alias="Read Online" target="_blank" data-nl-format="datetime" data-nl-lnkep-perso-attr-href="&lt;span class=&quot;nl-dce-fragment nl-dce-done&quot; data-nl-name=&quot;MirrorPageUrl&quot; data-nl-label=&quot;Mirror page URL (MirrorPageUrl)&quot; contenteditable=&quot;false&quot;&gt;Mirror page URL&lt;/span&gt;" data-nl-type="externalLink">Read&nbsp;online</a>
             </labor-adobe-typo-legal>
         </labor-adobe-footer>
-
     </mj-body>
 </mjml>

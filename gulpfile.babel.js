@@ -23,7 +23,7 @@ const clean = (done) => {
   done()
 }
 
-const filesToIgnore = ['AdobeProductMapping.js', 'index.js', 'code-example.js', 'AdobeRedStyleMapping.js', 'AdobeComponentMapping.js']
+const filesToIgnore = ['AdobeProductMapping.js', 'AdobeApplicationMapping.js', 'index.js', 'code-example.js', 'AdobeRedStyleMapping.js', 'AdobeComponentMapping.js']
 const fileTypesToIgnore = ['.style.js']
 const filterNonComponent = (file) => {
   let filterFiles = function (file){
