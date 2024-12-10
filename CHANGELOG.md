@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.7](https://github.com/labor-digital/mjml-components/compare/v3.0.6...v3.0.7) (2024-12-10)
+
+
+### Bug Fixes
+
+* add application pod logos ([059a50d](https://github.com/labor-digital/mjml-components/commit/059a50d434eb336ab768705192a1fe4ab156988c))
+
 ### [3.0.6](https://github.com/labor-digital/mjml-components/compare/v3.0.5...v3.0.6) (2024-12-02)
 
 
