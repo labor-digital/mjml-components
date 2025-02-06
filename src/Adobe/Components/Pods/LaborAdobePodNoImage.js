@@ -1,25 +1,25 @@
 import {registerDependencies} from 'mjml-validator'
 import {BodyComponent} from 'mjml-core'
-import AdobeRedStyleMapping from '../../_Styles/RED/AdobeRedStyleMapping'
+import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
-    'mj-body': ['labor-adobe-pod-application'],
+    'mj-body': ['labor-adobe-pod-no-image'],
     'labor-adobe-pod': [],
 })
 
-export default class LaborAdobePodApplication extends BodyComponent {
+export default class LaborAdobePodNoImage extends BodyComponent {
 
     static endingTag = true
 
     static allowedAttributes = {
         'section-bg-class': 'string',
 
-        'product': 'string',
+        'headline': 'string',
 
-        'primary-cta': 'string',
-        'primary-cta-href': 'string',
+        'secondary-cta': 'string',
+        'secondary-cta-href': 'string',
     }
 
     static defaultAttributes = {
@@ -32,10 +32,10 @@ export default class LaborAdobePodApplication extends BodyComponent {
                 <labor-adobe-pod
                     section-bg-class="${this.getAttribute('section-bg-class')}"
      
-                    product="${this.getAttribute('product')}"
+                    headline="${this.getAttribute('headline')}"
                     
-                    primary-cta="${this.getAttribute('primary-cta')}"
-                    primary-cta-href="${this.getAttribute('primary-cta-href')}"
+                    secondary-cta="${this.getAttribute('secondary-cta')}"
+                    secondary-cta-href="${this.getAttribute('secondary-cta-href')}"
                 >
                     ${this.getContent()}
                 </labor-adobe-pod>

@@ -1,7 +1,7 @@
 import {registerDependencies} from 'mjml-validator'
 import {BodyComponent} from 'mjml-core'
-import AdobeApplicationMapping from '../AdobeApplicationMapping'
-import AdobeRedStyleMapping from '../_Styles/RED/AdobeRedStyleMapping'
+import AdobeApplicationMapping from '../../../Mapping/AdobeApplicationMapping'
+import AdobeRedStyleMapping from '../../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
