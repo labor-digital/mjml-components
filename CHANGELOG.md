@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.13.2](https://github.com/labor-digital/mjml-components/compare/v1.13.1...v1.13.2) (2025-03-06)
+
+
+### Bug Fixes
+
+* adding 900 font weight to display three ([991aa86](https://github.com/labor-digital/mjml-components/commit/991aa86cf97b5c93f7968edcc6ee946c4afaefe4))
+
 ### [1.13.1](https://github.com/labor-digital/mjml-components/compare/v1.13.0...v1.13.1) (2024-07-23)
 
 
