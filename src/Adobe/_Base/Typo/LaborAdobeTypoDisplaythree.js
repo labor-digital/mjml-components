@@ -26,6 +26,7 @@ export default class LaborAdobeTypoDisplaythree extends BodyComponent {
     quiet: 400,
     quiet_small: 400,
     bold: 800,
+    black: 900,
   }
 
   render() {
