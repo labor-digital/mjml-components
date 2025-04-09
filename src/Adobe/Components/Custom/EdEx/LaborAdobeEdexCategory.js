@@ -1,7 +1,7 @@
 import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
 import { md5 } from 'js-md5'
-import AdobeRedStyleMapping from '../../../../Styles/AdobeRedStyleMapping'
+import AdobeRedStyleMapping from '../../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping;
 

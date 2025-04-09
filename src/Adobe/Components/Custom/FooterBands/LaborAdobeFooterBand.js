@@ -1,6 +1,6 @@
 import {registerDependencies} from 'mjml-validator'
 import {BodyComponent} from 'mjml-core'
-import AdobeRedStyleMapping from '../_Styles/RED/AdobeRedStyleMapping'
+import AdobeRedStyleMapping from '../../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping;
 
@@ -27,8 +27,8 @@ export default class LaborAdobeFooterBand extends BodyComponent {
         'font-weight': styleMapping.typographyFontWeight.extraBold,
         'line-height': '20px',
         'align': 'left',
-        'padding-top': '5px',
-        'padding-bottom': '5px'
+        'padding-top': '4px',
+        'padding-bottom': '6px'
     }
 
     render() {

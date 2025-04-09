@@ -1,0 +1,205 @@
+<mjml owa="desktop">
+    <mj-head>
+        <mj-title>LABOR Adobe Pods</mj-title>
+        <mj-preview></mj-preview>
+        <mj-font href="https://use.typekit.net/onr8tbr.css" name="adobe-clean"/>
+        <mj-attributes>
+            <mj-class name="body-bg" background-color="#eaeaea" />
+            <mj-class name="footer-bg" background-color="#f5f5f5" />
+            <mj-class name="content-bg" background-color="#ffffff" />
+            <mj-class name="heading-bg"  background-color="#FAFAFA" />
+            <mj-class name="divider" border-width="1px" border-style="dotted" border-color="#646464" />
+
+            <mj-all font-family="'adobe-clean', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'" padding="0" />
+        </mj-attributes>
+        <mj-breakpoint width="480px"/>
+        <mj-style>
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        </mj-style>
+    </mj-head>
+    <mj-body mj-class="body-bg">
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px">
+            <mj-column>
+                <labor-adobe-typo-heading-one>
+                    LABOR Adobe Pods
+                </labor-adobe-typo-heading-one>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Pod Standard
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-pod-standard
+            headline="Lorem ipsum dolor sit amet"
+            image-src="https://landing.adobe.com/dam/uploads/2024/na/edex/20241030.EdEx.Newsletter.01.png"
+            primary-cta="Lorem ipsum"
+            primary-cta-href="#"
+        >
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            <a class="labor-adobe-typo-body-link-blue" href="#" target="_blank">consetetur sadipscing elitr</a>
+        </labor-adobe-pod-standard>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-bottom="40px" padding-top="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Pod Standard Full Width
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-pod-standard-full-width
+                headline="Lorem ipsum dolor sit amet"
+                image-src="https://landing.adobe.com/dam/uploads/2024/na/edex/20241030.EdEx.Newsletter.01.png"
+                primary-cta="Lorem ipsum"
+                primary-cta-href="#"
+        >
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            <a class="labor-adobe-typo-body-link-blue" href="#" target="_blank">consetetur sadipscing elitr</a>
+        </labor-adobe-pod-standard-full-width>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-bottom="40px" padding-top="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Pod Standard No Image
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-pod-no-image
+                headline="Lorem ipsum dolor sit amet"
+                secondary-cta="Lorem ipsum"
+                secondary-cta-href="#"
+        >
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            <a class="labor-adobe-typo-body-link-blue" href="#" target="_blank">consetetur sadipscing elitr</a>
+        </labor-adobe-pod-no-image>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-bottom="40px" padding-top="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Application Pod (35px logos)
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-pod-application
+                product="ccx"
+                primary-cta="Lorem ipsum"
+                primary-cta-href="#"
+        >
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            <a class="labor-adobe-typo-body-link-blue" href="#" target="_blank">consetetur sadipscing elitr</a>
+        </labor-adobe-pod-application>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider"/>
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-bottom="40px" padding-top="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Application Pod (different logo)
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-pod-application
+                product="firefly"
+                primary-cta="Lorem ipsum"
+                primary-cta-href="#"
+        >
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            <a class="labor-adobe-typo-body-link-blue" href="#" target="_blank">consetetur sadipscing elitr</a>
+        </labor-adobe-pod-application>
+
+        <labor-adobe-section padding-bottom="40px" padding-top="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    TBD: Application Pod Alt (30px height logos)
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider"/>
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-bottom="100px" section-bg-class="heading-bg">
+
+        </labor-adobe-section>
+
+    </mj-body>
+</mjml>

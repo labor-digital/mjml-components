@@ -1,26 +1,26 @@
 import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
-import AdobeRedStyleMapping from '../_Styles/RED/AdobeRedStyleMapping'
+import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
-  'labor-adobe-rounded-button': [],
-  'mj-column': ['labor-adobe-rounded-button'],
+  'labor-adobe-button': [],
+  'mj-column': ['labor-adobe-button'],
 })
 
-export default class LaborAdobeRoundedButton extends BodyComponent {
+export default class LaborAdobeButton extends BodyComponent {
   static endingTag = true
 
   static allowedAttributes = {
-    type: 'enum(cta,inverted,quiet,cta_inverted)',
+    type: 'enum(standard,inverted,quiet)',
     href: 'string',
     'padding-bottom': 'unit(px,%)',
     width: 'unit(px)',
   }
 
   static defaultAttributes = {
-    type: 'cta',
+    type: 'standard',
     href: '#',
     width: '200px',
   }
@@ -43,15 +43,9 @@ export default class LaborAdobeRoundedButton extends BodyComponent {
         break
       case 'inverted':
         attrs['color'] = styleMapping.colors.white.hex
-        attrs['background-color'] = ''
         attrs['border-color'] = styleMapping.colors.white.hex
         break
-      case 'cta_inverted':
-        attrs['color'] = styleMapping.colors.buttonQuiet.hex
-        attrs['background-color'] = styleMapping.colors.white.hex
-        attrs['border-color'] = styleMapping.colors.white.hex
-        break
-      case 'cta':
+      case 'standard':
       default:
         attrs['color'] = styleMapping.colors.white.hex
         attrs['background-color'] = styleMapping.colors.blue900.hex

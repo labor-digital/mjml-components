@@ -1,0 +1,737 @@
+<mjml owa="desktop">
+    <mj-head>
+        <mj-title>LABOR Adobe Typo</mj-title>
+        <mj-preview></mj-preview>
+        <mj-font href="https://use.typekit.net/onr8tbr.css" name="adobe-clean"/>
+        <mj-attributes>
+            <mj-class name="body-bg" background-color="#eaeaea" />
+            <mj-class name="footer-bg" background-color="#f5f5f5" />
+            <mj-class name="content-bg" background-color="#ffffff" />
+            <mj-class name="heading-bg"  background-color="#FAFAFA" />
+            <mj-class name="background-bg"  background-color="#0265DC" />
+            <mj-class name="divider" border-width="1px" border-style="dotted" border-color="#646464" />
+
+            <mj-all font-family="'adobe-clean', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'" padding="0" />
+        </mj-attributes>
+        <mj-breakpoint width="480px"/>
+        <mj-style>
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        </mj-style>
+    </mj-head>
+    <mj-body mj-class="body-bg">
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px">
+            <mj-column>
+                <labor-adobe-typo-heading-one>
+                    LABOR Adobe Typo
+                </labor-adobe-typo-heading-one>
+            </mj-column>
+        </labor-adobe-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Body
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section>
+            <mj-column>
+                <labor-adobe-typo-body>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </labor-adobe-typo-body>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Body - on-background
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section section-bg-class="background-bg">
+            <mj-column>
+                <labor-adobe-typo-body on-background="true">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </labor-adobe-typo-body>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Caption
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section>
+            <mj-column>
+                <labor-adobe-typo-caption>My Test caption</labor-adobe-typo-caption>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Caption - on-background
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section section-bg-class="background-bg">
+            <mj-column>
+                <labor-adobe-typo-caption on-background="true">My Test caption</labor-adobe-typo-caption>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Detail - normal
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section>
+            <mj-column>
+                <labor-adobe-typo-detail>My Test detail</labor-adobe-typo-detail>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Detail - light
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section>
+            <mj-column>
+                <labor-adobe-typo-detail type="light">My Test detail</labor-adobe-typo-detail>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Detail - normal - on-background
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section section-bg-class="background-bg">
+            <mj-column>
+                <labor-adobe-typo-detail on-background="true">My Test detail</labor-adobe-typo-detail>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Detail - light - on-background
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section section-bg-class="background-bg">
+            <mj-column>
+                <labor-adobe-typo-detail type="light" on-background="true">My Test detail</labor-adobe-typo-detail>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Display One - normal
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section>
+            <mj-column>
+                <labor-adobe-typo-display-one>Display One</labor-adobe-typo-display-one>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Display One - quiet
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider"/>
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section>
+            <mj-column>
+                <labor-adobe-typo-display-one type="quiet">Display One</labor-adobe-typo-display-one>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Display One - normal - on-background
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section section-bg-class="background-bg">
+            <mj-column>
+                <labor-adobe-typo-display-one on-background="true" >Display One</labor-adobe-typo-display-one>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Display One - quiet - on-background
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider"/>
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section section-bg-class="background-bg">
+            <mj-column>
+                <labor-adobe-typo-display-one type="quiet" on-background="true">Display One</labor-adobe-typo-display-one>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Display Two - normal
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section>
+            <mj-column>
+                <labor-adobe-typo-display-two>Display Two</labor-adobe-typo-display-two>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Display Two - quiet
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider"/>
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section>
+            <mj-column>
+                <labor-adobe-typo-display-two type="quiet">Display Two</labor-adobe-typo-display-two>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Display Two - normal - on-background
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section section-bg-class="background-bg">
+            <mj-column>
+                <labor-adobe-typo-display-two on-background="true" >Display Two</labor-adobe-typo-display-two>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Display Two - quiet - on-background
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider"/>
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section section-bg-class="background-bg">
+            <mj-column>
+                <labor-adobe-typo-display-two type="quiet" on-background="true">Display Two</labor-adobe-typo-display-two>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Display Three - normal
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section>
+            <mj-column>
+                <labor-adobe-typo-display-three>Display Three</labor-adobe-typo-display-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Display Three - quiet
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider"/>
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section>
+            <mj-column>
+                <labor-adobe-typo-display-three type="quiet">Display Three</labor-adobe-typo-display-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Display Three - normal - on-background
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section section-bg-class="background-bg">
+            <mj-column>
+                <labor-adobe-typo-display-three on-background="true" >Display Three</labor-adobe-typo-display-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Display Three - quiet - on-background
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider"/>
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section section-bg-class="background-bg">
+            <mj-column>
+                <labor-adobe-typo-display-three type="quiet" on-background="true">Display Three</labor-adobe-typo-display-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Heading One
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section>
+            <mj-column>
+                <labor-adobe-typo-heading-one>Heading One</labor-adobe-typo-heading-one>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Heading One - on-background
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider"/>
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section section-bg-class="background-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-one on-background="true">Heading One</labor-adobe-typo-heading-one>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Heading Two
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section>
+            <mj-column>
+                <labor-adobe-typo-heading-two>Heading Two</labor-adobe-typo-heading-two>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Heading Two - on-background
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider"/>
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section section-bg-class="background-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-two on-background="true">Heading Two</labor-adobe-typo-heading-two>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Heading Three
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section>
+            <mj-column>
+                <labor-adobe-typo-heading-three>Heading Three</labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Heading Three - on-background
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider"/>
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section section-bg-class="background-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three on-background="true">Heading Three</labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Heading Four
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section>
+            <mj-column>
+                <labor-adobe-typo-heading-four>Heading Four</labor-adobe-typo-heading-four>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Heading Four - on-background
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider"/>
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section section-bg-class="background-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-four on-background="true">Heading Four</labor-adobe-typo-heading-four>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Legal
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section>
+            <mj-column>
+                <labor-adobe-typo-legal>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </labor-adobe-typo-legal>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Legal - on-background
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider"/>
+            </mj-column>
+        </mj-section>
+        <labor-adobe-section section-bg-class="background-bg">
+            <mj-column>
+                <labor-adobe-typo-legal on-background="true">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </labor-adobe-typo-legal>
+            </mj-column>
+        </labor-adobe-section>
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-bottom="100px" section-bg-class="heading-bg">
+
+        </labor-adobe-section>
+
+    </mj-body>
+</mjml>

@@ -1,25 +1,25 @@
 import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
-import AdobeRedStyleMapping from '../_Styles/RED/AdobeRedStyleMapping'
+import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
-  'labor-adobe-secondary-cta': [],
-  'mj-column': ['labor-adobe-secondary-cta'],
+  'labor-adobe-link': [],
+  'mj-column': ['labor-adobe-link'],
 })
 
-export default class LaborAdobeSecondaryCta extends BodyComponent {
+export default class LaborAdobeLink extends BodyComponent {
   static endingTag = true
 
   static allowedAttributes = {
-    type: 'enum(normal,inverted,quiet)',
+    type: 'enum(standard,inverted,quiet)',
     href: 'string',
     'padding-bottom': 'unit(px,%)',
   }
 
   static defaultAttributes = {
-    type: 'normal',
+    type: 'standard',
     href: '#',
   }
 

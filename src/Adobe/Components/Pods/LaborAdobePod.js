@@ -1,8 +1,7 @@
 import {registerDependencies} from 'mjml-validator'
 import {BodyComponent} from 'mjml-core'
-import AdobeRedStyleMapping from '../../_Styles/RED/AdobeRedStyleMapping'
-import { md5 } from 'js-md5'
-import AdobeProductMapping from '../../AdobeProductMapping'
+import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
+import AdobeProductLogoMapping from '../../Mapping/AdobeProductLogoMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
@@ -24,7 +23,9 @@ export default class LaborAdobePod extends BodyComponent {
 
         'headline': 'string',
 
-        'product': 'string',
+        'application': 'string',
+        'application-type': 'enum(regular, alt)',
+
         'custom-category': 'string',
 
         'primary-cta': 'string',
@@ -38,6 +39,8 @@ export default class LaborAdobePod extends BodyComponent {
 
     static defaultAttributes = {
         'section-bg-class': 'content-bg',
+
+        'application-type': 'regular',
 
         'image-with-padding': 'false',
         'primary-cta-width': '200px',
@@ -101,13 +104,13 @@ export default class LaborAdobePod extends BodyComponent {
                     
                         ${this.getAttribute('product') ? `
                             <mj-image
-                                src="${AdobeProductMapping.productMapping[this.getAttribute('product')]['images']['black']}"
+                                src="${AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('application-type')]['location']}"
                                 align="left"
-                                width="${Math.floor(parseInt(AdobeProductMapping.productMapping[this.getAttribute('product')]['width'].replace('px', '')) / 2)}px"
-                                height="30px"
+                                width="${Math.floor(parseInt(AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('application-type')]['width'].replace('px', '')) / 2)}px"
+                                height="${Math.floor(parseInt(AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('application-type')]['height'].replace('px', '')) / 2)}px"
                                 target="_blank"
                                 padding-bottom="${styleMapping.spacings.horizontal.px24}"
-                                alt="${AdobeProductMapping.productMapping[this.getAttribute('product')]['name']}"
+                                alt="${AdobeProductLogoMapping.logos[this.getAttribute('product')]['name']}"
                             />` : ``
                         }
                         

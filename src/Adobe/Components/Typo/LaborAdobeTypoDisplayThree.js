@@ -1,6 +1,6 @@
 import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
-import AdobeRedStyleMapping from '../../_Styles/RED/AdobeRedStyleMapping'
+import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping;
 
@@ -14,7 +14,7 @@ export default class LaborAdobeTypoDisplayThree extends BodyComponent {
 
   static allowedAttributes = {
     'on-background': 'boolean',
-    'type': 'enum(normal,quiet,bold)',
+    'type': 'enum(normal,quiet)',
     'padding-bottom': 'unit(px,%)',
   };
   static defaultAttributes = {

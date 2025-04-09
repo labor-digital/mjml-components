@@ -12,7 +12,8 @@ import through2 from 'through2'
 
 const indexJSPath = './src/index.js'
 const indexMJMLPath = 'src/index.mjml'
-const indexMJMLPodPath = 'src/Adobe/_Base/Pods/index.mjml'
+const adobeMJMLPath = 'src/Adobe/**/*.mjml'
+const htmlDestination = './previews'
 const libDestination = './lib'
 const srcPattern = 'src/**/*.js'
 
@@ -23,7 +24,7 @@ const clean = (done) => {
   done()
 }
 
-const filesToIgnore = ['AdobeProductMapping.js', 'AdobeApplicationMapping.js', 'index.js', 'code-example.js', 'AdobeRedStyleMapping.js', 'AdobeComponentMapping.js']
+const filesToIgnore = ['AdobeProductLockupMapping.js', 'AdobeProductLogoMapping.js', 'index.js', 'code-example.js', 'AdobeRedStyleMapping.js', 'AdobeComponentMapping.js']
 const fileTypesToIgnore = ['.style.js']
 const filterNonComponent = (file) => {
   let filterFiles = function (file){
@@ -65,6 +66,7 @@ const compileAndRegisterComponents = (done = null) => {
     .src(srcPattern)
     .pipe(babel())
     .pipe(gulp.dest(libDestination))
+    .pipe(gulp.dest(htmlDestination))
     .pipe(collect.list((files) => files))
     .pipe(
       through2.obj((file, enc, cb) => {
@@ -78,13 +80,19 @@ const compileAndRegisterComponents = (done = null) => {
 }
 
 const compileTemplates = (done) => {
-  return gulp.src([indexMJMLPath, indexMJMLPodPath]).pipe(
+
+  if(fs.existsSync(htmlDestination)) {
+    fs.rmSync(htmlDestination, { recursive: true, force: true })
+  }
+  fs.mkdirSync(htmlDestination);
+
+  return gulp.src([indexMJMLPath, adobeMJMLPath]).pipe(
     through2.obj((file, enc, cb) => {
       const data = fs.readFileSync(file.path, enc)
       const parsed = path.parse(file.path)
       const parsed_data = mjml2html(data)
 
-      const errorsJson = path.normalize(parsed.dir + '/errors.json')
+      const errorsJson = path.normalize(parsed.dir + '/' + parsed.name +'-errors.json')
       if (fs.existsSync(errorsJson)) {
         fs.rmSync(errorsJson)
       }
@@ -97,7 +105,7 @@ const compileTemplates = (done) => {
         process.exit(1)
       } else {
         const result = pretty(parsed_data.html, { ocd: true })
-        fs.writeFileSync(path.normalize(parsed.dir + '/' + parsed.name + '.html'), result)
+        fs.writeFileSync(path.normalize(htmlDestination + '/' + parsed.name + '.html'), result)
       }
 
       cb(null, file)

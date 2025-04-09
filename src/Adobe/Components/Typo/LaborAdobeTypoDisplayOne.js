@@ -1,6 +1,6 @@
 import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
-import AdobeRedStyleMapping from '../../_Styles/RED/AdobeRedStyleMapping'
+import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping;
 
@@ -22,8 +22,9 @@ export default class LaborAdobeTypoDisplayOne extends BodyComponent {
   static defaultAttributes = {
     'on-background': false,
     'type': 'normal',
+    // responsive added for hero cards which have different padding in mobile/desktop
     'responsive': false,
-    'padding-bottom': styleMapping.spacings.vertical.px8,
+    'padding-bottom': styleMapping.spacings.vertical.px0,
   };
 
   static additionalAttributes = {
@@ -36,10 +37,15 @@ export default class LaborAdobeTypoDisplayOne extends BodyComponent {
   };
 
   headStyle = (breakpoint) => `
+       .labor-adobe-typo-display-one-responsive {
+          padding-bottom: 20px !important;
+       }
+  
       @media only screen and (max-width:${breakpoint}) {
         .labor-adobe-typo-display-one-responsive {
           font-size: 45px !important;
           line-height: 43px !important;
+          padding-bottom: 16px !important;
         }
       }
     `
@@ -51,7 +57,7 @@ export default class LaborAdobeTypoDisplayOne extends BodyComponent {
       'font-weight': LaborAdobeTypoDisplayOne.additionalAttributes.fontWeight[this.getAttribute('type')],
       'letter-spacing': LaborAdobeTypoDisplayOne.additionalAttributes.letterSpacing,
       'color': this.getAttribute('on-background') ? LaborAdobeTypoDisplayOne.additionalAttributes.onBackgroundColor : LaborAdobeTypoDisplayOne.additionalAttributes.color,
-      'padding-bottom': this.getAttribute('padding-bottom'),
+      'padding-bottom': this.getAttribute('padding-bottom') ? styleMapping.spacings.vertical.px0 : this.getAttribute('padding-bottom'),
     }
 
     return this.renderMJML(`

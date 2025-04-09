@@ -5,9 +5,10 @@
 .idea/
 .vs-code/
 node_modules/
+previews/
 dist/
 lib/
 *.html
 SyncToy*
 *storybook.log
-src/errors.json
+src/*-errors.json
