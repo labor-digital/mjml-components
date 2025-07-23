@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.12](https://github.com/labor-digital/mjml-components/compare/v3.0.11...v3.0.12) (2025-07-23)
+
+
+### Bug Fixes
+
+* add caption style ([8ba944d](https://github.com/labor-digital/mjml-components/commit/8ba944db1f0a775d8a24e9aab10bfc02c6951a36))
+
 ### [3.0.11](https://github.com/labor-digital/mjml-components/compare/v3.0.10...v3.0.11) (2025-07-23)
 
 
