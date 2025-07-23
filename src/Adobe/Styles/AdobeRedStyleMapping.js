@@ -178,6 +178,7 @@ export default class AdobeRedStyleMapping {
   }
 
   static typographyFontStyle = {
+    regular: "regular",
     italic: "italic"
   }
 
@@ -269,7 +270,10 @@ export default class AdobeRedStyleMapping {
       fontWeight: AdobeRedStyleMapping.typographyFontWeight.regular,
       fontSize: AdobeRedStyleMapping.typographyFontSize.size14,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size20,
-      fontStyle: AdobeRedStyleMapping.typographyFontStyle.italic,
+      fontStyle: {
+        regular: AdobeRedStyleMapping.typographyFontStyle.regular,
+        italic: AdobeRedStyleMapping.typographyFontStyle.italic
+      },
       color: AdobeRedStyleMapping.colors.gray800.hex,
       linkColor: AdobeRedStyleMapping.labor.colors.captionLink.hex,
     },

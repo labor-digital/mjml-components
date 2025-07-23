@@ -18,6 +18,7 @@ export default class LaborAdobeTypoCaption extends BodyComponent {
     'padding-bottom': 'unit(px,%)',
     'padding-left': 'unit(px,%)',
     'padding-right': 'unit(px,%)',
+    'font-style': 'enum(regular,italic)'
   };
 
   static defaultAttributes = {
@@ -25,13 +26,13 @@ export default class LaborAdobeTypoCaption extends BodyComponent {
     'padding-bottom': styleMapping.spacings.vertical.px0,
     'padding-left':  styleMapping.spacings.horizontal.px0,
     'padding-right': styleMapping.spacings.horizontal.px0,
+    'font-style': 'italic'
   };
 
   static additionalAttributes = {
     fontWeight: styleMapping.typographies.caption.fontWeight,
     fontSize: styleMapping.typographies.caption.fontSize,
     lineHeight: styleMapping.typographies.caption.lineHeight,
-    fontStyle: styleMapping.typographies.caption.fontStyle,
     color: styleMapping.typographies.caption.color,
     linkColor: styleMapping.typographies.caption.linkColor,
     onBackgroundColor: styleMapping.colors.white.hex,
@@ -53,7 +54,7 @@ export default class LaborAdobeTypoCaption extends BodyComponent {
       'font-weight': LaborAdobeTypoCaption.additionalAttributes.fontWeight,
       'font-size': LaborAdobeTypoCaption.additionalAttributes.fontSize,
       'line-height': LaborAdobeTypoCaption.additionalAttributes.lineHeight,
-      'font-style': LaborAdobeTypoCaption.additionalAttributes.fontStyle,
+      'font-style': this.getAttribute('font-style'),
       'color': this.getAttribute('on-background') ? LaborAdobeTypoCaption.additionalAttributes.onBackgroundColor : LaborAdobeTypoCaption.additionalAttributes.color,
       'padding-bottom': this.getAttribute('padding-bottom'),
       'padding-left': this.getAttribute('padding-left'),
