@@ -21,7 +21,7 @@ export default class LaborAdobeTypoBody extends BodyComponent {
 
   static defaultAttributes = {
     'on-background': false,
-    'padding-bottom': styleMapping.spacings.vertical.px40,
+    'padding-bottom': styleMapping.spacings.vertical.px0,
   };
 
   static additionalAttributes = {
