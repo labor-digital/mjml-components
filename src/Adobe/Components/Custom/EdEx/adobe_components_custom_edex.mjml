@@ -64,9 +64,38 @@
 
         <mj-section>
             <mj-column>
-                <mj-divider mj-class="divider"/>
+                <mj-divider mj-class="divider" />
             </mj-column>
         </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    EdEx Two Col Img Text Section
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-edex-two-col-img-text-section
+                padding-top="40px"
+                section-bg-class="content-bg"
+                padding-bottom="100px"
+                image-src="https://landing.adobe.com/dam/uploads/2024/na/edex/20240911.EdEx.Newsletter.41.png"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2024/na/edex/20240911.EdEx.Newsletter.41_m.png"
+                direction="rtl"
+                with-padding-image="true"
+                with-padding="true"
+        >
+            <labor-adobe-typo-heading-four padding-top="40px" padding-bottom="8px">Give your students exclusive access to Adobe MAX.</labor-adobe-typo-heading-four>
+            <labor-adobe-typo-body padding-bottom="30px">Give your students exclusive access to Adobe MAX — the premier conference for creators. They’ll learn from leading experts through live or on-demand sessions, all available for free. Use our “Classroom Conference Kit” to easily integrate these sessions into your lessons and inspire the next generation of creators.</labor-adobe-typo-body>
+            <labor-adobe-button href="https://adobe.ly/eduadobemaxstudentkit">Learn more</labor-adobe-button>
+        </labor-adobe-edex-two-col-img-text-section>
 
         <labor-adobe-section padding-bottom="100px" section-bg-class="heading-bg">
 
