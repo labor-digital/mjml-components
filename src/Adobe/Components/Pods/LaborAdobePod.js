@@ -137,13 +137,13 @@ export default class LaborAdobePod extends BodyComponent {
                         </labor-adobe-typo-body>
   
                         ${this.getAttribute('primary-cta-href') ? `
-                              <labor-adobe-rounded-button
+                              <labor-adobe-button
                                   type="quiet"
                                   href="${this.getAttribute('primary-cta-href')}"
                                   width="${this.getAttribute('primary-cta-width')}"               
                               >
                                   ${this.getAttribute('primary-cta')}
-                              </labor-adobe-rounded-button>` : ``
+                              </labor-adobe-button>` : ``
                     }
   
                         ${this.getAttribute('secondary-cta-href') ? `

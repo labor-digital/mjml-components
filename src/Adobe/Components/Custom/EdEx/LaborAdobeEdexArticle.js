@@ -91,9 +91,9 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
                         ${
                             this.getAttribute('href') ?
                                 `
-                                    <labor-adobe-rounded-button type="quiet" href="${this.getAttribute('href')}" width="${this.getAttribute('cta-width')}">
+                                    <labor-adobe-button type="quiet" href="${this.getAttribute('href')}" width="${this.getAttribute('cta-width')}">
                                         ${this.getAttribute('cta')}
-                                    </labor-adobe-rounded-button>
+                                    </labor-adobe-button>
                                 ` :
                                 ``
                         }
