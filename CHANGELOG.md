@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.10](https://github.com/labor-digital/mjml-components/compare/v3.0.9...v3.0.10) (2025-07-23)
+
+
+### Bug Fixes
+
+* remove body padding ([6ba3624](https://github.com/labor-digital/mjml-components/commit/6ba3624a5ea59637621e5ae08b5a8263dd6b4f19))
+
 ### [3.0.9](https://github.com/labor-digital/mjml-components/compare/v3.0.8...v3.0.9) (2025-07-23)
 
 
