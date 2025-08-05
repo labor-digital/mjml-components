@@ -21,14 +21,14 @@ export default class AdobeProductLogoMapping {
       name: 'Adobe Express',
       images: {
         regular: {
-          width: '500px',
+          width: '320px',
           height: '70px',
-          location: 'https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/logos/express/adobe_express.black.500x70.png'
+          location: 'https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/logos/express/adobe_express.black.320x70.png'
         },
         alt: {
-          width: '392px',
+          width: '320px',
           height: '60px',
-          location: 'https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/logos/express/adobe_express.black.392x60.png',
+          location: 'https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/logos/express/adobe_express.black.320x60.png',
         }
       },
     },
