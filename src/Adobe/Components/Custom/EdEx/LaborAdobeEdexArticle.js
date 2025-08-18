@@ -25,6 +25,7 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
         'cta-width': 'unit(px)',
         'text': 'string',
         'product': 'string',
+        'product-type': 'string',
         'secondary-cta': 'string',
         'secondary-href': 'string',
         'padding-bottom': 'unit(px)',
@@ -36,6 +37,7 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
         'image-href': '',
         'cta-width': '200px',
         'product': '',
+        'product-type': 'regular',
         'secondary-cta': '',
         'secondary-href': '',
         'padding-bottom': '100px',
@@ -68,10 +70,10 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
                             this.getAttribute('product') ?
                                 `
                                     <mj-image
-                                        src="${AdobeProductLogoMapping.logos[this.getAttribute('product')]['images']['alt']['location']}"
+                                        src="${AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')]['location']}"
                                         align="left"
-                                        width="${Math.floor(parseInt(AdobeProductLogoMapping.logos[this.getAttribute('product')]['images']['alt']['width'].replace('px', '')) / 2)}px"
-                                        height="30px"
+                                        width="${Math.floor(parseInt(AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')]['width'].replace('px', '')) / 2)}px"
+                                        height="35px"
                                         target="_blank"
                                         padding-bottom="${styleMapping.spacings.horizontal.px24}"
                                         alt="${AdobeProductLogoMapping.logos[this.getAttribute('product')]['name']}"
