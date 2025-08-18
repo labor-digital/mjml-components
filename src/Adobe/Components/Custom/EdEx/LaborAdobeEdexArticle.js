@@ -72,7 +72,7 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
                                     <mj-image
                                         src="${AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')]['location']}"
                                         align="left"
-                                        width="${Math.floor(parseInt(AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')]['width'].replace('px', '')) / 2)}px"
+                                        width="${Math.floor(parseInt(AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')]['width'].replace('px', '')) / 3)}px"
                                         height="35px"
                                         target="_blank"
                                         padding-bottom="${styleMapping.spacings.horizontal.px24}"
