@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.17](https://github.com/labor-digital/mjml-components/compare/v3.0.16...v3.0.17) (2025-08-18)
+
+
+### Bug Fixes
+
+* new logo width ([4d951ba](https://github.com/labor-digital/mjml-components/commit/4d951bab3655c2f75306be1bd71b19f3c9df3b07))
+
 ### [3.0.16](https://github.com/labor-digital/mjml-components/compare/v3.0.15...v3.0.16) (2025-08-18)
 
 
