@@ -141,7 +141,6 @@
 
         <labor-adobe-pod-application
                 product="ccx"
-                product-type="black"
                 primary-cta="Lorem ipsum"
                 primary-cta-href="#"
         >
@@ -171,7 +170,6 @@
 
         <labor-adobe-pod-application
                 product="ccx"
-                product-type="black"
                 primary-cta="Lorem ipsum"
                 primary-cta-href="#"
         >

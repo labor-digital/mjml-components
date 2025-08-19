@@ -25,7 +25,7 @@ export default class LaborAdobePodApplication extends BodyComponent {
 
     static defaultAttributes = {
         'product': 'ccx',
-        'product-type': 'black',
+        'product-type': 'grey',
 
         'section-bg-class': 'content-bg',
     }

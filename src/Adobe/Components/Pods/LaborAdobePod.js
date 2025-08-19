@@ -42,7 +42,7 @@ export default class LaborAdobePod extends BodyComponent {
         'section-bg-class': 'content-bg',
 
         'product': '',
-        'product-type': 'regular',
+        'product-type': 'grey',
         'product-height': '35px',
 
         'image-with-padding': 'false',
