@@ -1,38 +1,37 @@
-import {registerDependencies} from 'mjml-validator'
-import {BodyComponent} from 'mjml-core'
+import { registerDependencies } from 'mjml-validator'
+import { BodyComponent } from 'mjml-core'
 import AdobeRedStyleMapping from '../../../Styles/AdobeRedStyleMapping'
 
-const styleMapping = AdobeRedStyleMapping;
+const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
-    'mj-body': ['labor-adobe-footer-image-band'],
-    'labor-adobe-footer-image-band': [],
+  'mj-body': ['labor-adobe-footer-image-band'],
+  'labor-adobe-footer-image-band': [],
 })
 
 export default class LaborAdobeFooterImageBand extends BodyComponent {
+  static endingTag = true
 
-    static endingTag = true;
+  static allowedAttributes = {
+    'src': 'string',
+    'src-mobile': 'string',
+  }
 
-    static allowedAttributes = {
-        'src': 'string',
-        'src-mobile': 'string'
-    };
+  static defaultAttributes = {
+    'src': '',
+    'src-mobile': '',
+  }
 
-    static defaultAttributes = {
-        'src': '',
-        'src-mobile': ''
-    };
+  render() {
+    let imgAttrs = {
+      'src': this.getAttribute('src'),
+      'src-mobile': this.getAttribute('src-mobile'),
+      'fluid-on-mobile': true,
+      'width': '600px',
+      'align': 'left',
+    }
 
-    render() {
-        let imgAttrs = {
-            'src': this.getAttribute('src'),
-            'src-mobile': this.getAttribute('src-mobile'),
-            'fluid-on-mobile': true,
-            'width': '600px',
-            'align': 'left'
-        }
-
-        return this.renderMJML(`
+    return this.renderMJML(`
         <labor-adobe-section with-padding="false" section-bg-class="content-bg" padding-bottom="0">
             <mj-column>
                 <labor-responsive-image
@@ -41,5 +40,5 @@ export default class LaborAdobeFooterImageBand extends BodyComponent {
             </mj-column>
         </labor-adobe-section>
         `)
-    }
+  }
 }

@@ -3,25 +3,24 @@ import { BodyComponent } from 'mjml-core'
 import { md5 } from 'js-md5'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
-const styleMapping = AdobeRedStyleMapping;
+const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
   'mj-column': ['labor-adobe-typo-body'],
   'labor-adobe-typo-body': [],
-});
+})
 
 export default class LaborAdobeTypoBody extends BodyComponent {
-
-  static endingTag= true;
+  static endingTag = true
   static allowedAttributes = {
     'on-background': 'boolean',
     'padding-bottom': 'unit(px,%)',
-  };
+  }
 
   static defaultAttributes = {
     'on-background': false,
     'padding-bottom': styleMapping.spacings.vertical.px40,
-  };
+  }
 
   static additionalAttributes = {
     fontWeight: styleMapping.typographies.body.fontWeight,
@@ -30,20 +29,22 @@ export default class LaborAdobeTypoBody extends BodyComponent {
     color: styleMapping.colors.body.hex,
     linkColor: styleMapping.typographies.body.linkColor,
     linkColorBlue: styleMapping.typographies.body.linkColor,
-    onBackgroundColor: styleMapping.colors.white.hex
-  };
+    onBackgroundColor: styleMapping.colors.white.hex,
+  }
 
   constructor(initialDatas = {}) {
     super(initialDatas)
     this.setCustomStyles = false
-    if(!this.attributes['css-class']) {
+    if (!this.attributes['css-class']) {
       this.setCustomStyles = true
-      const cssClass = "labor-adobe-typo-body-" + md5(this.getContent());
+      const cssClass = 'labor-adobe-typo-body-' + md5(this.getContent())
       this.attributes['css-class'] = cssClass
     }
   }
 
-  componentHeadStyle = (breakpoint) => this.setCustomStyles ? `
+  componentHeadStyle = (breakpoint) =>
+    this.setCustomStyles
+      ? `
     .${this.attributes['css-class']} .labor-adobe-typo-body-ul {
       padding-left: 20px;
       margin-top: 0;
@@ -51,11 +52,19 @@ export default class LaborAdobeTypoBody extends BodyComponent {
     }
     .${this.attributes['css-class']} .labor-adobe-typo-body-link {
         text-decoration: underline !important;
-        color: ${this.getAttribute('on-background') ? LaborAdobeTypoBody.additionalAttributes.onBackgroundColor : LaborAdobeTypoBody.additionalAttributes.color} !important;
+        color: ${
+          this.getAttribute('on-background')
+            ? LaborAdobeTypoBody.additionalAttributes.onBackgroundColor
+            : LaborAdobeTypoBody.additionalAttributes.color
+        } !important;
     }
     .${this.attributes['css-class']} .labor-adobe-typo-body-link-blue {
         text-decoration: none !important;
-        color: ${this.getAttribute('on-background') ? LaborAdobeTypoBody.additionalAttributes.onBackgroundColor : LaborAdobeTypoBody.additionalAttributes.linkColor} !important;
+        color: ${
+          this.getAttribute('on-background')
+            ? LaborAdobeTypoBody.additionalAttributes.onBackgroundColor
+            : LaborAdobeTypoBody.additionalAttributes.linkColor
+        } !important;
     }
     .${this.attributes['css-class']} .labor-adobe-typo-body-link:hover {
         text-decoration: none !important;
@@ -65,14 +74,17 @@ export default class LaborAdobeTypoBody extends BodyComponent {
         text-decoration: underline !important;
         cursor: pointer;
     }
-  ` : ``
+  `
+      : ``
 
   render() {
     const attrs = {
       'font-size': LaborAdobeTypoBody.additionalAttributes.fontSize,
       'line-height': LaborAdobeTypoBody.additionalAttributes.lineHeight,
       'font-weight': LaborAdobeTypoBody.additionalAttributes.fontWeight,
-      'color': this.getAttribute('on-background') ? LaborAdobeTypoBody.additionalAttributes.onBackgroundColor : LaborAdobeTypoBody.additionalAttributes.color,
+      'color': this.getAttribute('on-background')
+        ? LaborAdobeTypoBody.additionalAttributes.onBackgroundColor
+        : LaborAdobeTypoBody.additionalAttributes.color,
       'padding-bottom': this.getAttribute('padding-bottom'),
     }
 

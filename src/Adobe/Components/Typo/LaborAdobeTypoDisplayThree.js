@@ -2,26 +2,25 @@ import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
-const styleMapping = AdobeRedStyleMapping;
+const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
   'mj-column': ['labor-adobe-typo-display-three'],
   'labor-adobe-typo-display-three': [],
-});
+})
 export default class LaborAdobeTypoDisplayThree extends BodyComponent {
-
-  static endingTag = true;
+  static endingTag = true
 
   static allowedAttributes = {
     'on-background': 'boolean',
     'type': 'enum(normal,quiet)',
     'padding-bottom': 'unit(px,%)',
-  };
+  }
   static defaultAttributes = {
     'on-background': false,
     'type': 'normal',
     'padding-bottom': styleMapping.spacings.vertical.px8,
-  };
+  }
 
   static additionalAttributes = {
     fontSize: styleMapping.typographies.displayThree.fontSize,
@@ -29,8 +28,8 @@ export default class LaborAdobeTypoDisplayThree extends BodyComponent {
     fontWeight: styleMapping.typographies.displayThree.fontWeight,
     letterSpacing: styleMapping.typographies.displayThree.letterSpacing,
     onBackgroundColor: styleMapping.colors.white.hex,
-    color: styleMapping.typographies.displayThree.color
-  };
+    color: styleMapping.typographies.displayThree.color,
+  }
 
   render() {
     const attrs = {
@@ -38,7 +37,9 @@ export default class LaborAdobeTypoDisplayThree extends BodyComponent {
       'line-height': LaborAdobeTypoDisplayThree.additionalAttributes.lineHeight,
       'font-weight': LaborAdobeTypoDisplayThree.additionalAttributes.fontWeight[this.getAttribute('type')],
       'letter-spacing': LaborAdobeTypoDisplayThree.additionalAttributes.letterSpacing,
-      'color': this.getAttribute('on-background') ? LaborAdobeTypoDisplayThree.additionalAttributes.onBackgroundColor : LaborAdobeTypoDisplayThree.additionalAttributes.color,
+      'color': this.getAttribute('on-background')
+        ? LaborAdobeTypoDisplayThree.additionalAttributes.onBackgroundColor
+        : LaborAdobeTypoDisplayThree.additionalAttributes.color,
       'padding-bottom': this.getAttribute('padding-bottom'),
     }
 

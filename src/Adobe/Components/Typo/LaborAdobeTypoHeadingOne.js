@@ -2,35 +2,34 @@ import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
-const styleMapping = AdobeRedStyleMapping;
+const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
   'mj-column': ['labor-adobe-typo-heading-one'],
   'labor-adobe-typo-heading-one': [],
-});
+})
 
 export default class LaborAdobeTypoHeadingOne extends BodyComponent {
-
-  static endingTag = true;
+  static endingTag = true
 
   static allowedAttributes = {
     'on-background': 'boolean',
     'padding-bottom': 'unit(px,%)',
-  };
+  }
 
   static defaultAttributes = {
     'on-background': false,
     'padding-bottom': styleMapping.spacings.vertical.px0,
-  };
+  }
 
-  static  additionalAttributes = {
+  static additionalAttributes = {
     fontSize: styleMapping.typographies.headingOne.fontSize,
     lineHeight: styleMapping.typographies.headingOne.lineHeight,
     fontWeight: styleMapping.typographies.headingOne.fontWeight,
     letterSpacing: styleMapping.typographies.headingOne.letterSpacing,
     color: styleMapping.typographies.headingOne.color,
     onBackgroundColor: styleMapping.colors.white.hex,
-  };
+  }
 
   render() {
     const attrs = {
@@ -38,7 +37,9 @@ export default class LaborAdobeTypoHeadingOne extends BodyComponent {
       'line-height': LaborAdobeTypoHeadingOne.additionalAttributes.lineHeight,
       'font-weight': LaborAdobeTypoHeadingOne.additionalAttributes.fontWeight,
       'letter-spacing': LaborAdobeTypoHeadingOne.additionalAttributes.letterSpacing,
-      'color': this.getAttribute('on-background') ? LaborAdobeTypoHeadingOne.additionalAttributes.onBackgroundColor : LaborAdobeTypoHeadingOne.additionalAttributes.color,
+      'color': this.getAttribute('on-background')
+        ? LaborAdobeTypoHeadingOne.additionalAttributes.onBackgroundColor
+        : LaborAdobeTypoHeadingOne.additionalAttributes.color,
       'padding-bottom': this.getAttribute('padding-bottom'),
     }
 

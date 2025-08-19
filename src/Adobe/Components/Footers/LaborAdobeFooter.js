@@ -2,17 +2,16 @@ import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
-const styleMapping = AdobeRedStyleMapping;
+const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
   'mj-body': ['labor-adobe-footer'],
   'labor-adobe-footer': ['labor-adobe-typo-legal'],
-});
+})
 
 export default class LaborAdobeFooter extends BodyComponent {
-
-  static endingTag = false;
-  static allowedAttributes =  {
+  static endingTag = false
+  static allowedAttributes = {
     'facebook-url': 'string',
     'x-url': 'string',
     'instagram-url': 'string',
@@ -21,7 +20,7 @@ export default class LaborAdobeFooter extends BodyComponent {
     'discord-url': 'string',
     'linkedin-url': 'string',
     'footer-bg-class': 'string',
-  };
+  }
   static defaultAttributes = {
     'facebook-url': '',
     'x-url': '',
@@ -31,7 +30,7 @@ export default class LaborAdobeFooter extends BodyComponent {
     'discord-url': '',
     'linkedin-url': '',
     'footer-bg-class': 'footer-bg',
-  };
+  }
 
   static additionalAttributes = {
     desktopLeftRightPadding: styleMapping.grids.desktop.contentSpacing,
@@ -46,9 +45,9 @@ export default class LaborAdobeFooter extends BodyComponent {
     socialSectionPaddingTopResponsive: styleMapping.spacings.vertical.px60,
 
     socialSectionPaddingBottom: styleMapping.spacings.vertical.px40,
-    contentSectionPaddingBottom: styleMapping.spacings.vertical.px100
+    contentSectionPaddingBottom: styleMapping.spacings.vertical.px100,
   }
-holy
+  holy
   headStyle = (breakpoint) => `
     .labor-adobe-footer-link {
         text-decoration: underline;
@@ -75,8 +74,8 @@ holy
   render() {
     let socialElements = ``
 
-    let backgroundColor = LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor;
-    let iconRadius = LaborAdobeFooter.additionalAttributes.socialIconBorderRadius;
+    let backgroundColor = LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor
+    let iconRadius = LaborAdobeFooter.additionalAttributes.socialIconBorderRadius
     if (this.getAttribute('facebook-url'))
       socialElements += `
         <mj-social-element
@@ -163,7 +162,9 @@ holy
         padding-bottom=${LaborAdobeFooter.additionalAttributes.socialSectionPaddingBottom}
         padding-top=${LaborAdobeFooter.additionalAttributes.socialSectionPaddingTop}
       >
-        <mj-column vertical-align="top" width="30%" padding-top=${LaborAdobeFooter.additionalAttributes.socialSectionLogoPaddingTop}>
+        <mj-column vertical-align="top" width="30%" padding-top=${
+          LaborAdobeFooter.additionalAttributes.socialSectionLogoPaddingTop
+        }>
           <mj-image
             src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/social-icons/adobe-logo.red.320x76.png"
             width="80px"

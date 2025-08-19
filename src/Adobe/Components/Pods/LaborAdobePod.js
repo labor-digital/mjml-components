@@ -1,103 +1,128 @@
-import {registerDependencies} from 'mjml-validator'
-import {BodyComponent} from 'mjml-core'
+import { registerDependencies } from 'mjml-validator'
+import { BodyComponent } from 'mjml-core'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 import AdobeProductLogoMapping from '../../Mapping/AdobeProductLogoMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
-    'mj-body': ['labor-adobe-pod'],
-    'labor-adobe-pod': [],
+  'mj-body': ['labor-adobe-pod'],
+  'labor-adobe-pod': [],
 })
 
 export default class LaborAdobePod extends BodyComponent {
-    static endingTag = true
+  static endingTag = true
 
-    static allowedAttributes = {
-        'section-bg-class': 'string',
+  static allowedAttributes = {
+    'section-bg-class': 'string',
 
-        'image-src': 'string',
-        'image-src-mobile': 'string',
-        'image-with-padding': 'boolean',
-        'image-href': 'string',
+    'image-src': 'string',
+    'image-src-mobile': 'string',
+    'image-with-padding': 'boolean',
+    'image-href': 'string',
 
-        'headline': 'string',
+    'headline': 'string',
 
-        'product': 'string',
-        'product-type': 'string',
-        'product-height': 'unit(px)',
+    'product': 'string',
+    'product-type': 'string',
+    'product-height': 'unit(px)',
 
-        'custom-category': 'string',
+    'custom-category': 'string',
 
-        'primary-cta': 'string',
-        'primary-cta-width': 'unit(px)',
-        'primary-cta-href': 'string',
+    'primary-cta': 'string',
+    'primary-cta-width': 'unit(px)',
+    'primary-cta-href': 'string',
 
-        'secondary-cta': 'string',
-        'secondary-cta-href': 'string',
-        'padding-bottom': 'unit(px)'
-    }
+    'secondary-cta': 'string',
+    'secondary-cta-href': 'string',
+    'padding-bottom': 'unit(px)',
+  }
 
-    static defaultAttributes = {
-        'section-bg-class': 'content-bg',
+  static defaultAttributes = {
+    'section-bg-class': 'content-bg',
 
-        'product': '',
-        'product-type': 'grey',
-        'product-height': '35px',
+    'product': '',
+    'product-type': 'grey',
+    'product-height': '35px',
 
-        'image-with-padding': 'false',
-        'primary-cta-width': '200px',
-        'padding-bottom': styleMapping.spacings.horizontal.px100,
-    }
+    'image-with-padding': 'false',
+    'primary-cta-width': '200px',
+    'padding-bottom': styleMapping.spacings.horizontal.px100,
+  }
 
-    // TODO
-    static calculateZPodPaddings = () => {
+  // TODO
+  static calculateZPodPaddings = () => {
+    const desktopLeftPadding =
+      this.getAttribute('z-formation-align') === 'left'
+        ? '0px'
+        : this.getAttribute('z-formation-align') === 'right'
+        ? '0px'
+        : styleMapping.grids.desktop.contentSpacing
 
-      const desktopLeftPadding =
-        this.getAttribute('z-formation-align') === 'left' ? "0px"
-          : (this.getAttribute('z-formation-align') === 'right' ? "0px": styleMapping.grids.desktop.contentSpacing );
+    const mobileLeftPadding =
+      this.getAttribute('z-formation-align') === 'left'
+        ? '0px'
+        : this.getAttribute('z-formation-align') === 'right'
+        ? '0px'
+        : styleMapping.grids.mobile.contentSpacing
 
-      const mobileLeftPadding=
-        this.getAttribute('z-formation-align') === 'left' ? "0px"
-          : (this.getAttribute('z-formation-align') === 'right' ? "0px": styleMapping.grids.mobile.contentSpacing );
+    const desktopRightPadding =
+      this.getAttribute('z-formation-align') === 'left'
+        ? '0px'
+        : this.getAttribute('z-formation-align') === 'right'
+        ? '0px'
+        : styleMapping.grids.desktop.contentSpacing
 
-      const desktopRightPadding=
-        this.getAttribute('z-formation-align') === 'left' ? "0px"
-         : (this.getAttribute('z-formation-align') === 'right' ? "0px": styleMapping.grids.desktop.contentSpacing );
-
-      const mobileRightPadding=
-        this.getAttribute('z-formation-align') === 'left' ? "0px"
-          : (this.getAttribute('z-formation-align') === 'right' ? "0px": styleMapping.grids.desktop.contentSpacing );
-
-    }
+    const mobileRightPadding =
+      this.getAttribute('z-formation-align') === 'left'
+        ? '0px'
+        : this.getAttribute('z-formation-align') === 'right'
+        ? '0px'
+        : styleMapping.grids.desktop.contentSpacing
+  }
 
   render() {
     // Calculate height based on ratio
     let calculateLogoHeight = () => {
-      let ratio = 3;
-      return Math.floor(parseInt(AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')]['height'].toString().replace('px', '')) / ratio) +'px'
+      let ratio = 3
+      return (
+        Math.floor(
+          parseInt(
+            AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')][
+              'height'
+            ]
+              .toString()
+              .replace('px', '')
+          ) / ratio
+        ) + 'px'
+      )
     }
 
     // Calculate the product width based on it's height
     let calculateLogoWidth = () => {
-      let logoHeight = AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')]['height'];
-      let logoWidth = AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')]['width'];
+      let logoHeight =
+        AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')][
+          'height'
+        ]
+      let logoWidth =
+        AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')][
+          'width'
+        ]
 
-      let cleanLogoHeight = parseInt(logoHeight.replace('px', ''));
-      let cleanLogoWidth = parseInt(logoWidth.replace('px', ''));
+      let cleanLogoHeight = parseInt(logoHeight.replace('px', ''))
+      let cleanLogoWidth = parseInt(logoWidth.replace('px', ''))
 
-      let cleanTargetHeight = parseInt(this.getAttribute('product-height').replace('px', ''));
+      let cleanTargetHeight = parseInt(this.getAttribute('product-height').replace('px', ''))
 
-      let quotient = cleanLogoHeight / cleanTargetHeight;
-      let newLogoWidth = cleanLogoWidth / quotient;
+      let quotient = cleanLogoHeight / cleanTargetHeight
+      let newLogoWidth = cleanLogoWidth / quotient
 
-      return Math.floor(newLogoWidth).toString() + 'px' ;
+      return Math.floor(newLogoWidth).toString() + 'px'
     }
 
-        return (
-            (
-                this.getAttribute('image-src') ?
-                    this.renderMJML(`
+    return (
+      (this.getAttribute('image-src')
+        ? this.renderMJML(`
                         <labor-adobe-section 
                             with-padding="${this.getAttribute('image-with-padding')}"
                             padding-bottom=${styleMapping.spacings.horizontal.px40}
@@ -116,44 +141,60 @@ export default class LaborAdobePod extends BodyComponent {
                                 />
                             </mj-column>
                         </labor-adobe-section>           
-                    `) : ``
-            )
-
-            + this.renderMJML(`
+                    `)
+        : ``) +
+      this.renderMJML(`
                 <labor-adobe-section
                     with-padding="true"
                     padding-bottom="${this.getAttribute('padding-bottom')}"
                     section-bg-class="${this.getAttribute('section-bg-class')}"
-                    padding-top="${this.getAttribute('image-src') ? styleMapping.spacings.horizontal.px0 :  styleMapping.spacings.horizontal.px100}"
+                    padding-top="${
+                      this.getAttribute('image-src')
+                        ? styleMapping.spacings.horizontal.px0
+                        : styleMapping.spacings.horizontal.px100
+                    }"
                 >
                     <mj-column>
                     
-                        ${this.getAttribute('product') ? `
+                        ${
+                          this.getAttribute('product')
+                            ? `
                             <mj-image
-                                src="${AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')]['location']}"
+                                src="${
+                                  AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][
+                                    this.getAttribute('product-type')
+                                  ]['location']
+                                }"
                                 align="left"
                                 width=${calculateLogoWidth()}
                                 height=${calculateLogoHeight()}  
                                 target="_blank"
                                 padding-bottom="${styleMapping.spacings.horizontal.px24}"
                                 alt="${AdobeProductLogoMapping.logos[this.getAttribute('product')]['name']}"
-                            />` : ``
+                            />`
+                            : ``
                         }
                         
-                        ${this.getAttribute('category') ? `
+                        ${
+                          this.getAttribute('category')
+                            ? `
                             <labor-adobe-typo-body
                                 padding-bottom="${styleMapping.spacings.horizontal.px7}"
                             >
                                 ${this.getAttribute('category')}
-                            </labor-adobe-typo-body>` : ``
+                            </labor-adobe-typo-body>`
+                            : ``
                         }
                         
-                        ${this.getAttribute('headline') ? `
+                        ${
+                          this.getAttribute('headline')
+                            ? `
                             <labor-adobe-typo-heading-three
                                 padding-bottom="${styleMapping.spacings.horizontal.px12}"
                             >
                                 ${this.getAttribute('headline')}
-                            </labor-adobe-typo-heading-three>` : ``
+                            </labor-adobe-typo-heading-three>`
+                            : ``
                         }
                     
                         <labor-adobe-typo-body
@@ -162,27 +203,33 @@ export default class LaborAdobePod extends BodyComponent {
                             ${this.getContent()}
                         </labor-adobe-typo-body>
   
-                        ${this.getAttribute('primary-cta-href') ? `
+                        ${
+                          this.getAttribute('primary-cta-href')
+                            ? `
                               <labor-adobe-button
                                   type="quiet"
                                   href="${this.getAttribute('primary-cta-href')}"
                                   width="${this.getAttribute('primary-cta-width')}"               
                               >
                                   ${this.getAttribute('primary-cta')}
-                              </labor-adobe-button>` : ``
-                    }
+                              </labor-adobe-button>`
+                            : ``
+                        }
   
-                        ${this.getAttribute('secondary-cta-href') ? `
+                        ${
+                          this.getAttribute('secondary-cta-href')
+                            ? `
                               <labor-adobe-secondary-cta
                                   type="normal"
                                   href="${this.getAttribute('secondary-cta-href')}"
                               >
                                   ${this.getAttribute('secondary-cta')}
-                              </labor-adobe-secondary-cta>` : ``
-                    }
+                              </labor-adobe-secondary-cta>`
+                            : ``
+                        }
                     </mj-column>
                 </labor-adobe-section>
               `)
-        )
-    }
+    )
+  }
 }
