@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.18](https://github.com/labor-digital/mjml-components/compare/v3.0.17...v3.0.18) (2025-08-19)
+
+
+### Bug Fixes
+
+* some more logo issues ([ddc0617](https://github.com/labor-digital/mjml-components/commit/ddc0617739000d18c587a308563a60c883b0d40b))
+* update logo handling, clean up dependencies ([64fac19](https://github.com/labor-digital/mjml-components/commit/64fac19a9b2dd59bbf80d1fcad46137c5db3b69d))
+
 ### [3.0.17](https://github.com/labor-digital/mjml-components/compare/v3.0.16...v3.0.17) (2025-08-18)
 
 
