@@ -6,7 +6,6 @@ import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 const styleMapping = AdobeRedStyleMapping;
 
 registerDependencies({
-  'labor-adobe-pod-base': ['labor-adobe-typo-body'],
   'mj-column': ['labor-adobe-typo-body'],
   'labor-adobe-typo-body': [],
 });

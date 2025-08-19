@@ -46,6 +46,28 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
     }
 
     render() {
+
+      let calculateLogoHeight = () => {
+        let ratio = 3;
+        return Math.floor(parseInt(AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')]['height'].toString().replace('px', '')) / ratio) +'px'
+      }
+
+      // Calculate the product width based on it's height
+      let calculateLogoWidth = () => {
+        let logoHeight = AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')]['height'];
+        let logoWidth = AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')]['width'];
+
+        let cleanLogoHeight = parseInt(logoHeight.replace('px', ''));
+        let cleanLogoWidth = parseInt(logoWidth.replace('px', ''));
+
+        let cleanTargetHeight = parseInt(this.getAttribute('product-height').replace('px', ''));
+
+        let quotient = cleanLogoHeight / cleanTargetHeight;
+        let newLogoWidth = cleanLogoWidth / quotient;
+
+        return Math.floor(newLogoWidth).toString() + 'px' ;
+      }
+
         return (
             this.renderMJML(`
                 <labor-adobe-section with-padding="false" padding-bottom="${this.getAttribute('product') ? styleMapping.spacings.horizontal.px40 : styleMapping.spacings.horizontal.px34 }" section-bg-class="${this.getAttribute('section-bg-class')}">
@@ -72,8 +94,8 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
                                     <mj-image
                                         src="${AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')]['location']}"
                                         align="left"
-                                        width="${Math.floor(parseInt(AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')]['width'].replace('px', '')) / 3)}px"
-                                        height="35px"
+                                        width=${calculateLogoWidth()}
+                                        height=${calculateLogoHeight()}  
                                         target="_blank"
                                         padding-bottom="${styleMapping.spacings.horizontal.px24}"
                                         alt="${AdobeProductLogoMapping.logos[this.getAttribute('product')]['name']}"

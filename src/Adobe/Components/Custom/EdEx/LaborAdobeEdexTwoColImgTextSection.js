@@ -5,10 +5,12 @@ import AdobeRedStyleMapping from '../../../Styles/AdobeRedStyleMapping'
 const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
-  'mj-body': ['labor-adobe-edex-two-col-img-text-section']})
+  'mj-body': ['labor-adobe-edex-two-col-img-text-section'],
+  'labor-adobe-edex-two-col-img-text-section': ['labor-adobe-typo-body', 'labor-adobe-typo-heading-four', 'labor-adobe-button']}
+)
 
 export default class LaborAdobeEdexTwoColImgTextSection extends BodyComponent {
-  static endingTag = true
+  static endingTag = false;
 
   static allowedAttributes = {
     'section-bg-class': 'string',

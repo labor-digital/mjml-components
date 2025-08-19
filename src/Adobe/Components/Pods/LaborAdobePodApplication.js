@@ -17,12 +17,16 @@ export default class LaborAdobePodApplication extends BodyComponent {
         'section-bg-class': 'string',
 
         'product': 'string',
+        'product-type': 'string',
 
         'primary-cta': 'string',
         'primary-cta-href': 'string',
     }
 
     static defaultAttributes = {
+        'product': 'ccx',
+        'product-type': 'black',
+
         'section-bg-class': 'content-bg',
     }
 
@@ -33,6 +37,7 @@ export default class LaborAdobePodApplication extends BodyComponent {
                     section-bg-class="${this.getAttribute('section-bg-class')}"
      
                     product="${this.getAttribute('product')}"
+                    product-type="${this.getAttribute('product-type')}"
                     
                     primary-cta="${this.getAttribute('primary-cta')}"
                     primary-cta-href="${this.getAttribute('primary-cta-href')}"

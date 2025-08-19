@@ -39,10 +39,13 @@
         </mj-section>
 
         <labor-adobe-footer
-                facebook-url="https://www.facebook.com/AdobeEdEx/"
-                x-url="https://www.twitter.com/AdobeForEdu"
-                youtube-url="https://www.youtube.com/user/AdobeEduPD"
-                instagram-url="https://instagram.com/adobeforedu"
+                facebook-url="https://www.facebook.com/Adobe/"
+                x-url="https://x.com/adobe?lang=de"
+                youtube-url="https://www.youtube.com/adobe"
+                instagram-url="https://www.instagram.com/adobe/"
+                discord-url="https://discord.com/invite/adobeexpress"
+                tiktok-url="https://www.tiktok.com/@adobe"
+                linkedin-url="https://de.linkedin.com/company/adobe"
         >
             <labor-adobe-typo-legal padding-bottom="10px">
                 Adobe, the Adobe logo, Adobe Express, and the Adobe Express logo are either registered trademarks or trademarks of Adobe in the United States and/or other countries.

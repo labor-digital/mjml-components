@@ -141,6 +141,7 @@
 
         <labor-adobe-pod-application
                 product="ccx"
+                product-type="black"
                 primary-cta="Lorem ipsum"
                 primary-cta-href="#"
         >
@@ -169,7 +170,8 @@
         </mj-section>
 
         <labor-adobe-pod-application
-                product="firefly"
+                product="ccx"
+                product-type="black"
                 primary-cta="Lorem ipsum"
                 primary-cta-href="#"
         >
