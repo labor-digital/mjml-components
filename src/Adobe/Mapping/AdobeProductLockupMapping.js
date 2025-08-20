@@ -1,6 +1,5 @@
-
 export default class AdobeProductLockupMapping {
-  static baseURL = 'https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/lockups/';
+  static baseURL = 'https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/lockups/'
 
   static lockups = {
     ccx: {
@@ -8,14 +7,10 @@ export default class AdobeProductLockupMapping {
       width: '704px',
       height: '168px',
       images: {
-        red_black:
-          AdobeProductLockupMapping.baseURL + 'adobe_express_red_black_704x168.png',
-        red_gray:
-          AdobeProductLockupMapping.baseURL + 'adobe_express_red_gray_704x168.png',
-        red_white:
-          AdobeProductLockupMapping.baseURL + 'adobe_express_red_white_704x168.png',
-        white_black:
-          AdobeProductLockupMapping.baseURL + 'adobe_express_white_black_704x168.png',
+        red_black: AdobeProductLockupMapping.baseURL + 'adobe_express_red_black_704x168.png',
+        red_gray: AdobeProductLockupMapping.baseURL + 'adobe_express_red_gray_704x168.png',
+        red_white: AdobeProductLockupMapping.baseURL + 'adobe_express_red_white_704x168.png',
+        white_black: AdobeProductLockupMapping.baseURL + 'adobe_express_white_black_704x168.png',
       },
     },
     firefly: {
@@ -23,102 +18,81 @@ export default class AdobeProductLockupMapping {
       width: '648px',
       height: '168px',
       images: {
-        red_black:
-          AdobeProductLockupMapping.baseURL + 'adobe_firefly_red_black_648x168.png',
-        red_gray:
-          AdobeProductLockupMapping.baseURL + 'adobe_firefly_red_gray_648x168.png',
-        red_white:
-          AdobeProductLockupMapping.baseURL + 'adobe_firefly_red_white_648x168.png',
-        white_black:
-          AdobeProductLockupMapping.baseURL + 'adobe_firefly_white_black_648x168.png',
+        red_black: AdobeProductLockupMapping.baseURL + 'adobe_firefly_red_black_648x168.png',
+        red_gray: AdobeProductLockupMapping.baseURL + 'adobe_firefly_red_gray_648x168.png',
+        red_white: AdobeProductLockupMapping.baseURL + 'adobe_firefly_red_white_648x168.png',
+        white_black: AdobeProductLockupMapping.baseURL + 'adobe_firefly_white_black_648x168.png',
       },
     },
     stock: {
       name: 'Adobe Stock',
       width: '292px',
       images: {
-        white:
-          AdobeProductLockupMapping.baseURL + 'adobe_stock.white.292x60.png',
-        black:
-          AdobeProductLockupMapping.baseURL + 'adobe_stock.black.292x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'adobe_stock.white.292x60.png',
+        black: AdobeProductLockupMapping.baseURL + 'adobe_stock.black.292x60.png',
       },
     },
     spark: {
       name: 'Adobe Spark',
       width: '296px',
       images: {
-        white:
-          AdobeProductLockupMapping.baseURL + 'adobe_spark.white.296x60.png',
-        black:
-          AdobeProductLockupMapping.baseURL + 'adobe_spark.black.296x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'adobe_spark.white.296x60.png',
+        black: AdobeProductLockupMapping.baseURL + 'adobe_spark.black.296x60.png',
       },
     },
     sign: {
       name: 'Adobe Sign',
       width: '409px',
       images: {
-        white:
-          AdobeProductLockupMapping.baseURL + 'adobe_acrobat_sign_lockup_horizontal.white.409x60.png',
-        black:
-          AdobeProductLockupMapping.baseURL + 'adobe_acrobat_sign_lockup_horizontal.black.409x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'adobe_acrobat_sign_lockup_horizontal.white.409x60.png',
+        black: AdobeProductLockupMapping.baseURL + 'adobe_acrobat_sign_lockup_horizontal.black.409x60.png',
       },
     },
     scan: {
       name: 'Adobe Scan',
       width: '276px',
       images: {
-        white:
-          AdobeProductLockupMapping.baseURL + 'adobe_scan.white.276x60.png',
-        black:
-          AdobeProductLockupMapping.baseURL + 'adobe_scan.black.276x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'adobe_scan.white.276x60.png',
+        black: AdobeProductLockupMapping.baseURL + 'adobe_scan.black.276x60.png',
       },
     },
     rush: {
       name: 'Adobe Premiere Rush',
       width: '446px',
       images: {
-        white:
-          AdobeProductLockupMapping.baseURL + 'adobe_premiere_rush.white.446x60.png',
-        black:
-          AdobeProductLockupMapping.baseURL + 'adobe_premiere_rush.black.446x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'adobe_premiere_rush.white.446x60.png',
+        black: AdobeProductLockupMapping.baseURL + 'adobe_premiere_rush.black.446x60.png',
       },
     },
     premiere: {
       name: 'Adobe Premiere Pro',
       width: '442px',
       images: {
-        white:
-          AdobeProductLockupMapping.baseURL + 'adobe_premiere_pro.white.442x60.png',
-        black:
-          AdobeProductLockupMapping.baseURL + 'adobe_premiere_pro.black.442x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'adobe_premiere_pro.white.442x60.png',
+        black: AdobeProductLockupMapping.baseURL + 'adobe_premiere_pro.black.442x60.png',
       },
     },
     lightroom: {
       name: 'Adobe Photoshop Lightroom',
       width: '568px',
       images: {
-        white:
-          AdobeProductLockupMapping.baseURL + 'adobe_photoshop_lightroom.white.568x60.png',
-        black:
-          AdobeProductLockupMapping.baseURL + 'adobe_photoshop_lightroom.black.568x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'adobe_photoshop_lightroom.white.568x60.png',
+        black: AdobeProductLockupMapping.baseURL + 'adobe_photoshop_lightroom.black.568x60.png',
       },
     },
     photoshop: {
       name: 'Adobe Photoshop',
       width: '382px',
       images: {
-        white:
-          AdobeProductLockupMapping.baseURL + 'adobe_photoshop.white.382x60.png',
-        black:
-          AdobeProductLockupMapping.baseURL + 'adobe_photoshop.black.382x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'adobe_photoshop.white.382x60.png',
+        black: AdobeProductLockupMapping.baseURL + 'adobe_photoshop.black.382x60.png',
       },
     },
     live: {
       name: 'Adobe Live',
       width: '266px',
       images: {
-        white:
-          AdobeProductLockupMapping.baseURL + 'adobe_live.white.266x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'adobe_live.white.266x60.png',
         red: AdobeProductLockupMapping.baseURL + 'adobe_live.red.266x60.png',
       },
     },
@@ -126,38 +100,31 @@ export default class AdobeProductLockupMapping {
       name: 'Adobe Indesign',
       width: '346px',
       images: {
-        white:
-          AdobeProductLockupMapping.baseURL + 'adobe_indesign.white.346x60.png',
-        black:
-          AdobeProductLockupMapping.baseURL + 'adobe_indesign.black.346x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'adobe_indesign.white.346x60.png',
+        black: AdobeProductLockupMapping.baseURL + 'adobe_indesign.black.346x60.png',
       },
     },
     illustrator: {
       name: 'Adobe Illustrator',
       width: '364px',
       images: {
-        white:
-          AdobeProductLockupMapping.baseURL + 'adobe_illustrator.white.364x60.png',
-        black:
-          AdobeProductLockupMapping.baseURL + 'adobe_illustrator.black.364x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'adobe_illustrator.white.364x60.png',
+        black: AdobeProductLockupMapping.baseURL + 'adobe_illustrator.black.364x60.png',
       },
     },
     experience_cloud: {
       name: 'Adobe Experience Cloud',
       width: '492px',
       images: {
-        white:
-          AdobeProductLockupMapping.baseURL + 'adobe_experience_cloud.white.492x60.png',
-        black:
-          AdobeProductLockupMapping.baseURL + 'adobe_experience_cloud.black.492x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'adobe_experience_cloud.white.492x60.png',
+        black: AdobeProductLockupMapping.baseURL + 'adobe_experience_cloud.black.492x60.png',
       },
     },
     document_cloud: {
       name: 'Adobe Document Cloud',
       width: '482px',
       images: {
-        white:
-          AdobeProductLockupMapping.baseURL + 'adobe_document_cloud.white.482x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'adobe_document_cloud.white.482x60.png',
         red: AdobeProductLockupMapping.baseURL + 'adobe_document_cloud.red.482x60.png',
       },
     },
@@ -165,8 +132,7 @@ export default class AdobeProductLockupMapping {
       name: 'Adobe Creative Cloud',
       width: '442px',
       images: {
-        white:
-          AdobeProductLockupMapping.baseURL + 'adobe_creative_cloud.white.442x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'adobe_creative_cloud.white.442x60.png',
         red: AdobeProductLockupMapping.baseURL + 'adobe_creative_cloud.red.442x60.png',
       },
     },
@@ -174,90 +140,72 @@ export default class AdobeProductLockupMapping {
       name: 'Adobe Behance',
       width: '224px',
       images: {
-        white:
-          AdobeProductLockupMapping.baseURL + 'adobe_behance.white.224x60.png',
-        black:
-          AdobeProductLockupMapping.baseURL + 'adobe_behance.black.224x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'adobe_behance.white.224x60.png',
+        black: AdobeProductLockupMapping.baseURL + 'adobe_behance.black.224x60.png',
       },
     },
     acrobat_reader: {
       name: 'Adobe Acrobat Reader',
       width: '460px',
       images: {
-        white:
-          AdobeProductLockupMapping.baseURL + 'adobe_acrobat_reader.white.460x60.png',
-        black:
-          AdobeProductLockupMapping.baseURL + 'adobe_acrobat_reader.black.460x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'adobe_acrobat_reader.white.460x60.png',
+        black: AdobeProductLockupMapping.baseURL + 'adobe_acrobat_reader.black.460x60.png',
       },
     },
     acrobat_pro: {
       name: 'Adobe Acrobat Pro',
       width: '398px',
       images: {
-        white:
-          AdobeProductLockupMapping.baseURL + 'adobe_acrobat_pro.white.398x60.png',
-        black:
-          AdobeProductLockupMapping.baseURL + 'adobe_acrobat_pro.black.398x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'adobe_acrobat_pro.white.398x60.png',
+        black: AdobeProductLockupMapping.baseURL + 'adobe_acrobat_pro.black.398x60.png',
       },
     },
     acrobat_pro_dc: {
       name: 'Adobe Acrobat Pro DC',
       width: '458px',
       images: {
-        white:
-          AdobeProductLockupMapping.baseURL + 'adobe_acrobat_pro.white.458x60.png',
-        black:
-          AdobeProductLockupMapping.baseURL + 'adobe_acrobat_pro.black.458x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'adobe_acrobat_pro.white.458x60.png',
+        black: AdobeProductLockupMapping.baseURL + 'adobe_acrobat_pro.black.458x60.png',
       },
     },
     acrobat: {
       name: 'Adobe Acrobat',
       width: '330px',
       images: {
-        white:
-          AdobeProductLockupMapping.baseURL + 'adobe_acrobat.white.330x60.png',
-        black:
-          AdobeProductLockupMapping.baseURL + 'adobe_acrobat.black.330x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'adobe_acrobat.white.330x60.png',
+        black: AdobeProductLockupMapping.baseURL + 'adobe_acrobat.black.330x60.png',
       },
     },
     audition: {
       name: 'Adobe Audition',
       width: '342px',
       images: {
-        white:
-          AdobeProductLockupMapping.baseURL + 'adobe_audition.white.342x60.png',
-        black:
-          AdobeProductLockupMapping.baseURL + 'adobe_audition.black.342x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'adobe_audition.white.342x60.png',
+        black: AdobeProductLockupMapping.baseURL + 'adobe_audition.black.342x60.png',
       },
     },
     portfolio: {
       name: 'Adobe Portfolio',
       width: '348px',
       images: {
-        white:
-          AdobeProductLockupMapping.baseURL + 'adobe_portfolio.white.348x60.png',
-        black:
-          AdobeProductLockupMapping.baseURL + 'adobe_portfolio.black.348x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'adobe_portfolio.white.348x60.png',
+        black: AdobeProductLockupMapping.baseURL + 'adobe_portfolio.black.348x60.png',
       },
     },
     animator: {
       name: 'Adobe Charcter Animator',
       width: '532px',
       images: {
-        white:
-          AdobeProductLockupMapping.baseURL + 'adobe_character_animator.white.532x60.png',
-        black:
-          AdobeProductLockupMapping.baseURL + 'adobe_character_animator.black.532x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'adobe_character_animator.white.532x60.png',
+        black: AdobeProductLockupMapping.baseURL + 'adobe_character_animator.black.532x60.png',
       },
     },
     twitter_ace: {
       name: '#AdobeEduCreative on Twitter',
       width: '600',
       images: {
-        white:
-            AdobeProductLockupMapping.baseURL + 'twitter_educator.white.600x60.png',
-        black:
-            AdobeProductLockupMapping.baseURL + 'twitter_educator.black.600x60.png',
+        white: AdobeProductLockupMapping.baseURL + 'twitter_educator.white.600x60.png',
+        black: AdobeProductLockupMapping.baseURL + 'twitter_educator.black.600x60.png',
       },
     },
   }

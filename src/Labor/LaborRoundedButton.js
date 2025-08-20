@@ -24,7 +24,7 @@ export default class LaborRoundedButton extends BodyComponent {
     'border-color': 'color',
     'border-width': 'unit(px)',
     'border-radius': 'unit(px)',
-    'arcsize': 'unit(%)'
+    'arcsize': 'unit(%)',
   }
 
   static defaultAttributes = {
@@ -43,7 +43,7 @@ export default class LaborRoundedButton extends BodyComponent {
     'border-color': '',
     'border-width': '2px',
     'border-radius': '30px',
-    'arcsize': '50%'
+    'arcsize': '50%',
   }
 
   calculateAWidth(width) {
@@ -57,8 +57,7 @@ export default class LaborRoundedButton extends BodyComponent {
     const { borders } = this.getBoxWidths()
 
     const innerPaddings =
-      this.getShorthandAttrValue('inner-padding', 'left') +
-      this.getShorthandAttrValue('inner-padding', 'right')
+      this.getShorthandAttrValue('inner-padding', 'left') + this.getShorthandAttrValue('inner-padding', 'right')
 
     return `${parsedWidth - innerPaddings - borders}px`
   }
@@ -66,8 +65,7 @@ export default class LaborRoundedButton extends BodyComponent {
   calculateVmlHeight() {
     const lineheight = parseInt(this.getAttribute('line-height').replace('px', ''))
     const innerPaddings =
-      this.getShorthandAttrValue('inner-padding', 'top') +
-      this.getShorthandAttrValue('inner-padding', 'bottom')
+      this.getShorthandAttrValue('inner-padding', 'top') + this.getShorthandAttrValue('inner-padding', 'bottom')
     const borderwidth = parseInt(this.getAttribute('border-width').replace('px', ''))
 
     return lineheight + innerPaddings + borderwidth * 2 + 'px'
@@ -75,14 +73,9 @@ export default class LaborRoundedButton extends BodyComponent {
 
   render() {
     const filled =
-      this.getAttribute('background-color') &&
-      this.getAttribute('background-color') != 'transparent'
-        ? true
-        : false
+      this.getAttribute('background-color') && this.getAttribute('background-color') != 'transparent' ? true : false
     const bordered =
-      this.getAttribute('border-color') && this.getAttribute('border-color') != 'transparent'
-        ? true
-        : false
+      this.getAttribute('border-color') && this.getAttribute('border-color') != 'transparent' ? true : false
 
     return `
             <!--[if mso]>
@@ -119,14 +112,10 @@ export default class LaborRoundedButton extends BodyComponent {
                       <!--[if !mso]><!-->
                         <span ${this.htmlAttributes({
                           style: {
-                            'background-color': filled
-                              ? this.getAttribute('background-color')
-                              : 'transparent',
+                            'background-color': filled ? this.getAttribute('background-color') : 'transparent',
                             'border-radius': this.getAttribute('border-radius'),
                             'border': bordered
-                              ? this.getAttribute('border-width') +
-                                ' solid ' +
-                                this.getAttribute('border-color')
+                              ? this.getAttribute('border-width') + ' solid ' + this.getAttribute('border-color')
                               : 'none',
 
                             'display': 'inline-block',

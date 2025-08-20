@@ -92,8 +92,8 @@
                 with-padding-image="true"
                 with-padding="true"
         >
-            <labor-adobe-typo-heading-four padding-top="40px" padding-bottom="8px">Give your students exclusive access to Adobe MAX.</labor-adobe-typo-heading-four>
-            <labor-adobe-typo-body padding-bottom="30px">Give your students exclusive access to Adobe MAX — the premier conference for creators. They’ll learn from leading experts through live or on-demand sessions, all available for free. Use our “Classroom Conference Kit” to easily integrate these sessions into your lessons and inspire the next generation of creators.</labor-adobe-typo-body>
+            <labor-adobe-typo-heading-four padding-bottom="8px">Give your students exclusive access to Adobe MAX.</labor-adobe-typo-heading-four>
+            <labor-adobe-typo-body padding-bottom="40px">Give your students exclusive access to Adobe MAX — the premier conference for creators. They’ll learn from leading experts through live or on-demand sessions, all available for free. Use our “Classroom Conference Kit” to easily integrate these sessions into your lessons and inspire the next generation of creators.</labor-adobe-typo-body>
             <labor-adobe-button href="https://adobe.ly/eduadobemaxstudentkit">Learn more</labor-adobe-button>
         </labor-adobe-edex-two-col-img-text-section>
 

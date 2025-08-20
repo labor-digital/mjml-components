@@ -1,43 +1,42 @@
-import {registerDependencies} from 'mjml-validator'
-import {BodyComponent} from 'mjml-core'
+import { registerDependencies } from 'mjml-validator'
+import { BodyComponent } from 'mjml-core'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
-    'mj-body': ['labor-adobe-hero-card-immersive-one'],
-    'labor-adobe-hero-card-immersive-one': [],
+  'mj-body': ['labor-adobe-hero-card-immersive-one'],
+  'labor-adobe-hero-card-immersive-one': [],
 })
 
 export default class LaborAdobeHeroCardImmersiveOne extends BodyComponent {
+  static endingTag = true
 
-    static endingTag = true
+  static allowedAttributes = {
+    'section-bg-class': 'string',
 
-    static allowedAttributes = {
-        'section-bg-class': 'string',
+    'header-image-src': 'string',
+    'header-alt': 'string',
+    'header-height': 'enum(22px,28px,30px,34px,42px)',
+    'header-width': 'unit(px,%)',
 
-        'header-image-src': 'string',
-        'header-alt': 'string',
-        'header-height': 'enum(22px,28px,30px,34px,42px)',
-        'header-width':  'unit(px,%)',
+    'headline': 'string',
 
-        'headline': 'string',
+    'cta-text': 'string,',
+    'cta-href': 'string',
 
-        'cta-text': 'string,',
-        'cta-href': 'string',
+    'image-src': 'string',
+    'image-src-mobile': 'string',
+    'image-alt': 'string',
+  }
 
-        'image-src': 'string',
-        'image-src-mobile': 'string',
-        'image-alt': 'string'
-    }
+  static defaultAttributes = {
+    'section-bg-class': 'content-bg',
+  }
 
-    static defaultAttributes = {
-        'section-bg-class': 'content-bg',
-    }
-
-    render() {
-        return (
-          this.renderMJML(`
+  render() {
+    return (
+      this.renderMJML(`
             <labor-adobe-header
                 src="${this.getAttribute('header-image-src')}"
                 height="${this.getAttribute('header-height')}"
@@ -46,8 +45,8 @@ export default class LaborAdobeHeroCardImmersiveOne extends BodyComponent {
                 header-bg-class="${this.getAttribute('section-bg-class')}"
                 padding-bottom="20px"
             />
-           `)
-          + this.renderMJML(`
+           `) +
+      this.renderMJML(`
              <labor-adobe-section padding-bottom="40px" section-bg-class="${this.getAttribute('section-bg-class')}">
                 <mj-column>
                     <labor-adobe-typo-display-one
@@ -70,8 +69,8 @@ export default class LaborAdobeHeroCardImmersiveOne extends BodyComponent {
                     </labor-adobe-button>
                   </mj-column>    
                </labor-adobe-section>
-            `)
-          + this.renderMJML(`
+            `) +
+      this.renderMJML(`
             <labor-adobe-section with-padding="false" section-bg-class="${this.getAttribute('section-bg-class')}">
               <mj-column>
                 <labor-responsive-image
@@ -85,5 +84,5 @@ export default class LaborAdobeHeroCardImmersiveOne extends BodyComponent {
             </labor-adobe-section>
           `)
     )
-    }
+  }
 }

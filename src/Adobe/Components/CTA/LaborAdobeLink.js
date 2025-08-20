@@ -13,8 +13,8 @@ export default class LaborAdobeLink extends BodyComponent {
   static endingTag = true
 
   static allowedAttributes = {
-    type: 'enum(standard,inverted,quiet)',
-    href: 'string',
+    'type': 'enum(standard,inverted,quiet)',
+    'href': 'string',
     'padding-bottom': 'unit(px,%)',
   }
 

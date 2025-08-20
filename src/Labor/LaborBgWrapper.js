@@ -7,24 +7,23 @@ registerDependencies({
 })
 
 export default class LaborBgWrapper extends MjWrapper {
-
   getStyles() {
-    const fullWidth = this.isFullWidth();
-    let styles = super.getStyles();
+    const fullWidth = this.isFullWidth()
+    let styles = super.getStyles()
 
     if (fullWidth && this.getAttribute('background-url')) {
-        styles['tableFullwidth']['background-color'] = this.getAttribute('background-color');
+      styles['tableFullwidth']['background-color'] = this.getAttribute('background-color')
     }
 
     if (!fullWidth && this.getAttribute('background-url')) {
-        styles['table']['background-color'] = this.getAttribute('background-color');
-        styles['div']['background-color'] = this.getAttribute('background-color');
+      styles['table']['background-color'] = this.getAttribute('background-color')
+      styles['div']['background-color'] = this.getAttribute('background-color')
     }
 
-    return styles;
+    return styles
   }
 
   renderWithBackground(content) {
-    return `${content}`;
+    return `${content}`
   }
 }

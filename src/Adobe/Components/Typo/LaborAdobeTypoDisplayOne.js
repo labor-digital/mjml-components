@@ -2,30 +2,29 @@ import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
-const styleMapping = AdobeRedStyleMapping;
+const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
   'mj-column': ['labor-adobe-typo-display-one'],
   'labor-adobe-typo-display-one': [],
-});
+})
 
 export default class LaborAdobeTypoDisplayOne extends BodyComponent {
+  static endingTag = true
 
-  static endingTag = true;
-
-  static allowedAttributes =  {
+  static allowedAttributes = {
     'on-background': 'boolean',
     'type': 'enum(normal,quiet)',
     'responsive': 'boolean',
     'padding-bottom': 'unit(px,%)',
-  };
+  }
   static defaultAttributes = {
     'on-background': false,
     'type': 'normal',
     // responsive added for hero cards which have different padding in mobile/desktop
     'responsive': false,
     'padding-bottom': styleMapping.spacings.vertical.px0,
-  };
+  }
 
   static additionalAttributes = {
     fontSize: styleMapping.typographies.displayOne.fontSize,
@@ -33,8 +32,8 @@ export default class LaborAdobeTypoDisplayOne extends BodyComponent {
     fontWeight: styleMapping.typographies.displayOne.fontWeight,
     letterSpacing: styleMapping.typographies.displayOne.letterSpacing,
     color: styleMapping.typographies.displayOne.color,
-    onBackgroundColor: styleMapping.colors.white.hex
-  };
+    onBackgroundColor: styleMapping.colors.white.hex,
+  }
 
   headStyle = (breakpoint) => `
        .labor-adobe-typo-display-one-responsive {
@@ -56,8 +55,12 @@ export default class LaborAdobeTypoDisplayOne extends BodyComponent {
       'line-height': LaborAdobeTypoDisplayOne.additionalAttributes.lineHeight,
       'font-weight': LaborAdobeTypoDisplayOne.additionalAttributes.fontWeight[this.getAttribute('type')],
       'letter-spacing': LaborAdobeTypoDisplayOne.additionalAttributes.letterSpacing,
-      'color': this.getAttribute('on-background') ? LaborAdobeTypoDisplayOne.additionalAttributes.onBackgroundColor : LaborAdobeTypoDisplayOne.additionalAttributes.color,
-      'padding-bottom': this.getAttribute('padding-bottom') ? styleMapping.spacings.vertical.px0 : this.getAttribute('padding-bottom'),
+      'color': this.getAttribute('on-background')
+        ? LaborAdobeTypoDisplayOne.additionalAttributes.onBackgroundColor
+        : LaborAdobeTypoDisplayOne.additionalAttributes.color,
+      'padding-bottom': this.getAttribute('padding-bottom')
+        ? styleMapping.spacings.vertical.px0
+        : this.getAttribute('padding-bottom'),
     }
 
     return this.renderMJML(`

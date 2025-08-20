@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.19](https://github.com/labor-digital/mjml-components/compare/v3.0.18...v3.0.19) (2025-08-19)
+
+
+### Bug Fixes
+
+* update prettier config and run formatting ([9ada4ca](https://github.com/labor-digital/mjml-components/commit/9ada4caccc77a962e1e930515cf2454cf0b23755))
+
+### [3.0.18](https://github.com/labor-digital/mjml-components/compare/v3.0.17...v3.0.18) (2025-08-19)
+
+
+### Bug Fixes
+
+* some more logo issues ([ddc0617](https://github.com/labor-digital/mjml-components/commit/ddc0617739000d18c587a308563a60c883b0d40b))
+* update logo handling, clean up dependencies ([64fac19](https://github.com/labor-digital/mjml-components/commit/64fac19a9b2dd59bbf80d1fcad46137c5db3b69d))
+
+### [3.0.17](https://github.com/labor-digital/mjml-components/compare/v3.0.16...v3.0.17) (2025-08-18)
+
+
+### Bug Fixes
+
+* new logo width ([4d951ba](https://github.com/labor-digital/mjml-components/commit/4d951bab3655c2f75306be1bd71b19f3c9df3b07))
+
+### [3.0.16](https://github.com/labor-digital/mjml-components/compare/v3.0.15...v3.0.16) (2025-08-18)
+
+
+### Bug Fixes
+
+* add new logo mappings for express, allow product type selection for edex articles and fix their logo height ([85c6772](https://github.com/labor-digital/mjml-components/commit/85c6772ab98cae92146ab1644a1b8cc9b31fb0f7))
+
 ### [3.0.15](https://github.com/labor-digital/mjml-components/compare/v3.0.14...v3.0.15) (2025-08-05)
 
 

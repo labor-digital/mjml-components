@@ -2,30 +2,29 @@ import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
-const styleMapping = AdobeRedStyleMapping;
+const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
   'mj-column': ['labor-adobe-typo-display-two'],
   'labor-adobe-typo-display-two': [],
-});
+})
 
 export default class LaborAdobeTypoDisplayTwo extends BodyComponent {
-
-  static endingTag = true;
+  static endingTag = true
 
   static allowedAttributes = {
     'on-background': 'boolean',
     'type': 'enum(normal,quiet)',
     'responsive': 'boolean',
     'padding-bottom': 'unit(px,%)',
-  };
+  }
 
   static defaultAttributes = {
     'on-background': false,
     'type': 'normal',
     'responsive': false,
     'padding-bottom': styleMapping.spacings.vertical.px8,
-  };
+  }
 
   static additionalAttributes = {
     fontSize: styleMapping.typographies.displayTwo.fontSize,
@@ -33,8 +32,8 @@ export default class LaborAdobeTypoDisplayTwo extends BodyComponent {
     fontWeight: styleMapping.typographies.displayTwo.fontWeight,
     letterSpacing: styleMapping.typographies.displayTwo.letterSpacing,
     onBackgroundColor: styleMapping.colors.white.hex,
-    color: styleMapping.typographies.displayTwo.color
-  };
+    color: styleMapping.typographies.displayTwo.color,
+  }
 
   headStyle = (breakpoint) => `
       @media only screen and (max-width:${breakpoint}) {
@@ -51,7 +50,9 @@ export default class LaborAdobeTypoDisplayTwo extends BodyComponent {
       'line-height': LaborAdobeTypoDisplayTwo.additionalAttributes.lineHeight,
       'font-weight': LaborAdobeTypoDisplayTwo.additionalAttributes.fontWeight[this.getAttribute('type')],
       'letter-spacing': LaborAdobeTypoDisplayTwo.additionalAttributes.letterSpacing,
-      'color': this.getAttribute('on-background') ? LaborAdobeTypoDisplayTwo.additionalAttributes.onBackgroundColor : LaborAdobeTypoDisplayTwo.additionalAttributes.color,
+      'color': this.getAttribute('on-background')
+        ? LaborAdobeTypoDisplayTwo.additionalAttributes.onBackgroundColor
+        : LaborAdobeTypoDisplayTwo.additionalAttributes.color,
       'padding-bottom': this.getAttribute('padding-bottom'),
     }
 

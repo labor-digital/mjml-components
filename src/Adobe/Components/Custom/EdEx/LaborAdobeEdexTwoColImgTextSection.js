@@ -5,10 +5,16 @@ import AdobeRedStyleMapping from '../../../Styles/AdobeRedStyleMapping'
 const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
-  'mj-body': ['labor-adobe-edex-two-col-img-text-section']})
+  'mj-body': ['labor-adobe-edex-two-col-img-text-section'],
+  'labor-adobe-edex-two-col-img-text-section': [
+    'labor-adobe-typo-body',
+    'labor-adobe-typo-heading-four',
+    'labor-adobe-button',
+  ],
+})
 
 export default class LaborAdobeEdexTwoColImgTextSection extends BodyComponent {
-  static endingTag = true
+  static endingTag = false
 
   static allowedAttributes = {
     'section-bg-class': 'string',
@@ -42,12 +48,8 @@ export default class LaborAdobeEdexTwoColImgTextSection extends BodyComponent {
     `
 
   render() {
-    const defaultPadding = this.getAttribute('with-padding')
-      ? styleMapping.grids.desktop.contentSpacing
-      : 0;
-    const imageDefaultPadding = this.getAttribute('with-padding-image')
-        ? styleMapping.grids.desktop.contentSpacing
-        : 0;
+    const defaultPadding = this.getAttribute('with-padding') ? styleMapping.grids.desktop.contentSpacing : 0
+    const imageDefaultPadding = this.getAttribute('with-padding-image') ? styleMapping.grids.desktop.contentSpacing : 0
 
     let imagePadding = [0, 0, 0, imageDefaultPadding]
     let textPadding = [0, defaultPadding, 0, 0]
@@ -67,11 +69,7 @@ export default class LaborAdobeEdexTwoColImgTextSection extends BodyComponent {
       >
         <mj-column 
           vertical-align="middle"
-          css-class="${
-            this.getAttribute('with-padding')
-              ? 'labor-adobe-edex-two-col-img-text-section-responsive'
-              : ''
-          }"
+          css-class="${this.getAttribute('with-padding') ? 'labor-adobe-edex-two-col-img-text-section-responsive' : ''}"
           padding-top="${imagePadding[0]}"
           padding-right="${imagePadding[1]}"
           padding-bottom="${imagePadding[2]}"
@@ -85,11 +83,7 @@ export default class LaborAdobeEdexTwoColImgTextSection extends BodyComponent {
         </mj-column>
         <mj-column 
           vertical-align="middle" 
-          css-class="${
-            this.getAttribute('with-padding')
-              ? 'labor-adobe-edex-two-col-img-text-section-responsive'
-              : ''
-          }"
+          css-class="${this.getAttribute('with-padding') ? 'labor-adobe-edex-two-col-img-text-section-responsive' : ''}"
           padding-top="${textPadding[0]}"
           padding-right="${textPadding[1]}"
           padding-bottom="${textPadding[2]}"
