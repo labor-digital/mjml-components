@@ -100,7 +100,7 @@ export default class LaborAdobeHeader extends BodyComponent {
         return this.renderMJML(`
       <labor-adobe-section
         section-bg-class="${this.getAttribute('header-bg-class')}"
-        border-top="${this.getAttribute('border') ? LaborAdobeHeader.additionalAttributes.border : ''}"
+        border-top="${this.getAttribute('border') ? LaborAdobeHeader.additionalAttributes.withBorder : ''}"
         with-padding="false"
         padding-bottom=${this.getAttribute('padding-bottom')}"
       >
