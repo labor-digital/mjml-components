@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.20](https://github.com/labor-digital/mjml-components/compare/v3.0.19...v3.0.20) (2025-08-20)
+
+
+### Bug Fixes
+
+* border-top code-typo fix for the labor-adobe-header ([159c729](https://github.com/labor-digital/mjml-components/commit/159c729e7b602692eb2c7a8295cdfe1fc8a5d951))
+
 ### [3.0.19](https://github.com/labor-digital/mjml-components/compare/v3.0.18...v3.0.19) (2025-08-19)
 
 
