@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.21](https://github.com/labor-digital/mjml-components/compare/v3.0.20...v3.0.21) (2025-09-02)
+
+
+### Bug Fixes
+
+* fix edex product logo height/width and make backwards compatible to current logos ([44b0b8a](https://github.com/labor-digital/mjml-components/commit/44b0b8a5d1168fc02f1ccea5e1e58ceaacd3b11e))
+
 ### [3.0.20](https://github.com/labor-digital/mjml-components/compare/v3.0.19...v3.0.20) (2025-08-20)
 
 
