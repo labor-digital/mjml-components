@@ -50,12 +50,12 @@ export default class LaborAdobeFooter extends BodyComponent {
   holy
   headStyle = (breakpoint) => `
     .labor-adobe-footer-link {
-        text-decoration: underline;
-        color: ${LaborAdobeFooter.additionalAttributes.linkColor};
+      text-decoration: underline;
+      color: ${LaborAdobeFooter.additionalAttributes.linkColor};
     }
     .labor-adobe-footer-link:hover {
-        text-decoration: none !important;
-        cursor: pointer;
+      text-decoration: none !important;
+      cursor: pointer;
     }
     
     
@@ -186,7 +186,10 @@ export default class LaborAdobeFooter extends BodyComponent {
         padding-bottom=${LaborAdobeFooter.additionalAttributes.contentSectionPaddingBottom}
       >
         <mj-column>
-          ${this.getContent()}
+          ${this.renderChildren(this.props.children, {
+            rawXML: true,
+            renderer: (component) => component.render,
+          })}
         </mj-column>
       </labor-adobe-section>
     `)
