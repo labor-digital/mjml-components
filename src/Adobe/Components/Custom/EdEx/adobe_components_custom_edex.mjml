@@ -60,7 +60,72 @@
                 image-src="https://landing.adobe.com/dam/uploads/2025/na/edex/20250108.EdEx.Newsletter.01.gif"
                 image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/edex/20250108.EdEx.Newsletter.01_m.gif"
                 product="ccx"
+                product-type="grey"
         />
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    EdEx Article
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-edex-article
+                section-bg-class="content-bg"
+                headline="Design a 2025 moodboard"
+                category="Template"
+                text="Students will build visual storytelling skills as they use photos and design elements to create moodboards that set the tone for the year ahead."
+                cta="Get started"
+                href="#"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/edex/20250108.EdEx.Newsletter.01.gif"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/edex/20250108.EdEx.Newsletter.01_m.gif"
+                product="ccx"
+        />
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    EdEx Article
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-edex-article
+                section-bg-class="content-bg"
+                headline="Design a 2025 moodboard"
+                category="Template"
+                text="Students will build visual storytelling skills as they use photos and design elements to create moodboards that set the tone for the year ahead."
+                cta="Get started"
+                href="#"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/edex/20250108.EdEx.Newsletter.01.gif"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/edex/20250108.EdEx.Newsletter.01_m.gif"
+                product="premiere_pro"
+        />
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
 
         <mj-section>
             <mj-column>
@@ -92,9 +157,36 @@
                 with-padding-image="true"
                 with-padding="true"
         >
-            <labor-adobe-typo-heading-four padding-bottom="8px">Give your students exclusive access to Adobe MAX.</labor-adobe-typo-heading-four>
-            <labor-adobe-typo-body padding-bottom="40px">Give your students exclusive access to Adobe MAX — the premier conference for creators. They’ll learn from leading experts through live or on-demand sessions, all available for free. Use our “Classroom Conference Kit” to easily integrate these sessions into your lessons and inspire the next generation of creators.</labor-adobe-typo-body>
-            <labor-adobe-button href="https://adobe.ly/eduadobemaxstudentkit">Learn more</labor-adobe-button>
+            <labor-adobe-typo-heading-four>
+                Give your students exclusive access to Adobe MAX.
+            </labor-adobe-typo-heading-four>
+            <labor-adobe-typo-body padding-bottom="40px">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor magna aliquyam erat, sed diam voluptua.
+            </labor-adobe-typo-body>
+            <labor-adobe-button href="https://adobe.ly/eduadobemaxstudentkit">
+                Learn more
+            </labor-adobe-button>
+        </labor-adobe-edex-two-col-img-text-section>
+
+        <labor-adobe-edex-two-col-img-text-section
+                padding-top="40px"
+                section-bg-class="content-bg"
+                padding-bottom="100px"
+                image-src="https://landing.adobe.com/dam/uploads/2024/na/edex/20240911.EdEx.Newsletter.33.png"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2024/na/edex/20240911.EdEx.Newsletter.33_m.png"
+                direction="ltr"
+                with-padding-image="true"
+                with-padding="true"
+        >
+            <labor-adobe-typo-heading-four>
+                Give your students exclusive access to Adobe MAX.
+            </labor-adobe-typo-heading-four>
+            <labor-adobe-typo-body padding-bottom="40px">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor magna aliquyam erat, sed diam voluptua.
+            </labor-adobe-typo-body>
+            <labor-adobe-button href="https://adobe.ly/eduadobemaxstudentkit">
+                Learn more
+            </labor-adobe-button>
         </labor-adobe-edex-two-col-img-text-section>
 
         <labor-adobe-section padding-bottom="100px" section-bg-class="heading-bg">

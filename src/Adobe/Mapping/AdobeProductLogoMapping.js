@@ -24,7 +24,7 @@ export default class AdobeProductLogoMapping {
       name: 'Adobe Express',
       images: {
         regular: {
-          width: '320px',
+          width: '380px',
           height: '70px',
           location:
             'https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/logos/express/adobe_express.black.320x70.png',

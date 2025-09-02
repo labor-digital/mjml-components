@@ -38,7 +38,7 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
     'image-href': '',
     'cta-width': '200px',
     'product': '',
-    'product-type': 'grey',
+    'product-type': 'regular',
     'product-height': '35px',
     'secondary-cta': '',
     'secondary-href': '',
@@ -48,9 +48,22 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
   }
 
   render() {
+
+    let getImageRatio = () => {
+      let cleanTargetHeight = parseInt(this.getAttribute('product-height').replace('px', ''));
+
+      let imageHeight = AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')]['height'];
+      let cleanImageHeight = parseInt(imageHeight.replace('px', ''));
+
+      let ratio = cleanImageHeight / cleanTargetHeight;
+
+      return ratio;
+    }
+
     let calculateLogoHeight = () => {
-      let ratio = 3
-      return (
+      let imageRatio = getImageRatio();
+
+      let height = (
         Math.floor(
           parseInt(
             AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')][
@@ -58,31 +71,26 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
             ]
               .toString()
               .replace('px', '')
-          ) / ratio
+          ) / imageRatio
         ) + 'px'
       )
+
+      return height;
     }
 
     // Calculate the product width based on it's height
     let calculateLogoWidth = () => {
-      let logoHeight =
-        AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')][
-          'height'
-        ]
+      let imageRatio = getImageRatio();
+
       let logoWidth =
         AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')][
           'width'
         ]
 
-      let cleanLogoHeight = parseInt(logoHeight.replace('px', ''))
       let cleanLogoWidth = parseInt(logoWidth.replace('px', ''))
+      let newLogoWidth = Math.floor(cleanLogoWidth / imageRatio).toString() + 'px';
 
-      let cleanTargetHeight = parseInt(this.getAttribute('product-height').replace('px', ''))
-
-      let quotient = cleanLogoHeight / cleanTargetHeight
-      let newLogoWidth = cleanLogoWidth / quotient
-
-      return Math.floor(newLogoWidth).toString() + 'px'
+      return newLogoWidth;
     }
 
     return (
