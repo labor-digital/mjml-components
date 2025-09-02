@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.22](https://github.com/labor-digital/mjml-components/compare/v3.0.21...v3.0.22) (2025-09-02)
+
+
+### Bug Fixes
+
+* fix footer children rendering ([b40aece](https://github.com/labor-digital/mjml-components/commit/b40aeceba854febba2030c6283aaf077caf9f5ba))
+
 ### [3.0.21](https://github.com/labor-digital/mjml-components/compare/v3.0.20...v3.0.21) (2025-09-02)
 
 
