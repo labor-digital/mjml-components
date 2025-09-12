@@ -121,6 +121,24 @@ export default class AdobeProductLogoMapping {
           location:
             'https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/logos/premiere_pro/adobe_premiere_pro.black.392x60.png',
         },
+        black: {
+          width: '1050px',
+          height: '210px',
+          location:
+            'https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/logos/premiere_pro/premiere_pro.black.1050x210.png',
+        },
+        grey: {
+          width: '1050px',
+          height: '210px',
+          location:
+            'https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/logos/premiere_pro/premiere_pro.grey.1050x210.png',
+        },
+        white: {
+          width: '1050px',
+          height: '210px',
+          location:
+            'https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/logos/premiere_pro/premiere_pro.white.1050x210.png',
+        },
       },
     },
     stock: {
