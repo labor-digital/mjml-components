@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.23](https://github.com/labor-digital/mjml-components/compare/v3.0.22...v3.0.23) (2025-09-12)
+
+
+### Bug Fixes
+
+* add ppro logos ([fb7db8b](https://github.com/labor-digital/mjml-components/commit/fb7db8b802cf9766a9579f456a7c0d66ef5716f3))
+
 ### [3.0.22](https://github.com/labor-digital/mjml-components/compare/v3.0.21...v3.0.22) (2025-09-02)
 
 
