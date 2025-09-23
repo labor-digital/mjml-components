@@ -21,9 +21,6 @@
     <mj-body mj-class="body-bg">
 
         <labor-adobe-header
-                src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_education_exchange.red.928x168.png"
-                height="42px"
-                width="232px"
                 alt="Adobe Education Exchange"
                 header-bg-class="content-bg"
         />

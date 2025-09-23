@@ -13,56 +13,70 @@ export default class LaborAdobeHeroCardSimpleOne extends BodyComponent {
   static endingTag = true
 
   static allowedAttributes = {
+    'header-bg-class': 'string',
     'section-bg-class': 'string',
 
-    'header-image-src': 'string',
-    'header-alt': 'string',
-    'header-height': 'enum(22px,28px,30px,34px,42px)',
-    'header-width': 'unit(px,%)',
+    'product': 'string',
+    'product-color': 'enum(red_black,red_gray,red_white,white_black)',
 
     'headline': 'string',
-
     'cta-text': 'string,',
     'cta-href': 'string',
+
+    'padding-bottom': 'unit(px)',
+    'header-additional-padding-bottom' : 'unit(px)',
   }
 
   static defaultAttributes = {
+    'header-bg-class': 'content-bg',
     'section-bg-class': 'content-bg',
+
+    'product': 'express',
+    'product-color': 'red_gray',
+
+    'headline': '',
+    'cta-text': '',
+    'cta-href': '',
+
+    'padding-bottom': styleMapping.spacings.vertical.px100,
+    'header-additional-padding-bottom': styleMapping.spacings.vertical.px20,
   }
 
   render() {
     return (
       this.renderMJML(`
-            <labor-adobe-header
-                src="${this.getAttribute('header-image-src')}"
-                height="${this.getAttribute('header-height')}"
-                width="${this.getAttribute('header-width')}"
-                alt="${this.getAttribute('header-alt')}"
-                header-bg-class="content-bg"
-                padding-bottom="20px"
-            />
-           `) +
+        <labor-adobe-header
+          product="${this.getAttribute('product')}"
+          product-color="${this.getAttribute('product-color')}"
+          header-bg-class="${this.getAttribute('header-bg-class')}"
+          additional-padding-bottom="${this.getAttribute('header-additional-padding-bottom')}"
+        />
+      `) +
       this.renderMJML(`
-             <labor-adobe-section padding-bottom="100px">
-                <mj-column>
-                    <labor-adobe-typo-display-one
-                      responsive="true"
-                    >
-                      ${this.getAttribute('headline')}
-                    </labor-adobe-typo-display-one>
-                    
-                    <labor-adobe-typo-body>
-                      ${this.getContent()}
-                    </labor-adobe-typo-body>
-                    
-                    <labor-adobe-button
-                      href="${this.getAttribute('cta-href')}"
-                    >
-                    ${this.getAttribute('cta-text')}
-                    </labor-adobe-button>    
-                  </mj-column>    
-               </labor-adobe-section>
-            `)
+        <labor-adobe-section
+          padding-bottom="${this.getAttribute('padding-bottom')}"
+          section-bg-class="${this.getAttribute('section-bg-class')}"
+        >
+          <mj-column>
+            <labor-adobe-typo-display-one
+              responsive="displayTwo"
+            >
+              ${this.getAttribute('headline')}
+            </labor-adobe-typo-display-one>
+            
+            <labor-adobe-typo-body>
+              ${this.getContent()}
+            </labor-adobe-typo-body>
+             
+            <labor-adobe-button
+              href="${this.getAttribute('cta-href')}"
+              padding-bottom="0"
+            >
+              ${this.getAttribute('cta-text')}
+            </labor-adobe-button>    
+          </mj-column>    
+        </labor-adobe-section>
+      `)
     )
   }
 }

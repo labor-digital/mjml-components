@@ -5,7 +5,7 @@ export default class AdobeRedStyleMapping {
         hex: '#505050',
       },
       bodyLink: {
-        hex: '#1473E6',
+        hex: '#3B63FB',
       },
       captionLink: {
         hex: '#959595',
@@ -48,7 +48,7 @@ export default class AdobeRedStyleMapping {
       hex: '#747474',
     },
     blue900: {
-      hex: '#0265DC',
+      hex: '#3B63FB',
     },
     gray50: {
       hex: '#FFFFFF',
@@ -88,31 +88,28 @@ export default class AdobeRedStyleMapping {
     },
   }
 
-  static grids = {
-    mobile: {
-      width: '400px',
-      content: '340px',
-      contentSpacing: '30px',
-      column: '50px',
-      columnSpacing: '8px',
-    },
-    desktop: {
-      width: '600px',
-      content: '500px',
-      contentSpacing: '50px',
-      column: '75px',
-      columnSpacing: '10px',
-    },
-  }
-
   static spacings = {
-    vertical: {
+    custom: {
+      // default for elements without horizontal or vertical spacing
       px0: '0px',
+      // product logo regular padding bottom
+      px5: '5px',
+      // social section spacing
       px6: '6px',
-      px8: '8px',
+      // product logo regular padding bottom
+      px24: '24px',
+      px34: '34px',
+      // header lockup padding top/bottom
+      px41: '41px',
+      // actioncard default padding top/bottom
+      px50: '50px',
+      // footer padding with legal subtracted
+      px80: '80px',
+    },
+    vertical: {
+      px12: '12px',
       px16: '16px',
       px20: '20px',
-      px34: '34px',
       px40: '40px',
       px42: '42px',
       px60: '60px',
@@ -136,6 +133,23 @@ export default class AdobeRedStyleMapping {
     },
   }
 
+  static grids = {
+    mobile: {
+      width: '400px',
+      content: '340px',
+      contentSpacing: '30px',
+      column: '50px',
+      columnSpacing: '8px',
+    },
+    desktop: {
+      width: '600px',
+      content: '500px',
+      contentSpacing: '50px',
+      column: '75px',
+      columnSpacing: '10px',
+    },
+  }
+
   static typographyFontSize = {
     size60: '60px',
     size45: '45px',
@@ -151,6 +165,7 @@ export default class AdobeRedStyleMapping {
 
   static typographyLineHeight = {
     size57: '57px',
+    size46: '46px',
     size43: '43px',
     size40: '40px',
     size38: '38px',
@@ -183,19 +198,24 @@ export default class AdobeRedStyleMapping {
 
   static typographies = {
     displayOne: {
-      variants: ['quiet'],
       fontSize: AdobeRedStyleMapping.typographyFontSize.size60,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size57,
       fontWeight: {
         normal: AdobeRedStyleMapping.typographyFontWeight.black,
-        quiet: AdobeRedStyleMapping.typographyFontWeight.medium,
+        quiet: AdobeRedStyleMapping.typographyFontWeight.extraBold,
       },
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusTwo,
       color: AdobeRedStyleMapping.colors.black.hex,
+      colorOnBackground: AdobeRedStyleMapping.colors.white.hex,
+      padding: {
+        defaultPaddingBottom: AdobeRedStyleMapping.spacings.vertical.px20,
+        responsivePaddingBottomDesktop: AdobeRedStyleMapping.spacings.vertical.px20,
+        responsivePaddingBottomMobile: AdobeRedStyleMapping.spacings.vertical.px16,
+      }
+
     },
 
     displayTwo: {
-      variants: ['quiet'],
       fontSize: AdobeRedStyleMapping.typographyFontSize.size45,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size43,
       fontWeight: {
@@ -204,18 +224,19 @@ export default class AdobeRedStyleMapping {
       },
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusTwo,
       color: AdobeRedStyleMapping.colors.black.hex,
+      paddingBottom: AdobeRedStyleMapping.spacings.vertical.px16,
     },
 
     displayThree: {
-      variants: ['quiet'],
       fontSize: AdobeRedStyleMapping.typographyFontSize.size40,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size38,
       fontWeight: {
         normal: AdobeRedStyleMapping.typographyFontWeight.black,
-        quiet: AdobeRedStyleMapping.typographyFontWeight.medium,
+        quiet: AdobeRedStyleMapping.typographyFontWeight.extraBold,
       },
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusTwo,
       color: AdobeRedStyleMapping.colors.black.hex,
+      paddingBottom: AdobeRedStyleMapping.spacings.vertical.px16,
     },
 
     headingOne: {
@@ -224,6 +245,7 @@ export default class AdobeRedStyleMapping {
       fontWeight: AdobeRedStyleMapping.typographyFontWeight.extraBold,
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusTwo,
       color: AdobeRedStyleMapping.colors.black.hex,
+      paddingBottom: AdobeRedStyleMapping.spacings.vertical.px20,
     },
 
     headingTwo: {
@@ -232,6 +254,7 @@ export default class AdobeRedStyleMapping {
       fontWeight: AdobeRedStyleMapping.typographyFontWeight.extraBold,
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusTwo,
       color: AdobeRedStyleMapping.colors.black.hex,
+      paddingBottom: AdobeRedStyleMapping.spacings.vertical.px16,
     },
 
     headingThree: {
@@ -240,6 +263,7 @@ export default class AdobeRedStyleMapping {
       fontWeight: AdobeRedStyleMapping.typographyFontWeight.extraBold,
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusTwo,
       color: AdobeRedStyleMapping.colors.black.hex,
+      paddingBottom: AdobeRedStyleMapping.spacings.vertical.px12,
     },
 
     headingFour: {
@@ -248,6 +272,7 @@ export default class AdobeRedStyleMapping {
       fontWeight: AdobeRedStyleMapping.typographyFontWeight.extraBold,
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusTwo,
       color: AdobeRedStyleMapping.colors.black.hex,
+      paddingBottom: AdobeRedStyleMapping.spacings.vertical.px12,
     },
 
     body: {
@@ -256,6 +281,7 @@ export default class AdobeRedStyleMapping {
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size25,
       color: AdobeRedStyleMapping.colors.body.hex,
       linkColor: AdobeRedStyleMapping.labor.colors.bodyLink.hex,
+      paddingBottom: AdobeRedStyleMapping.spacings.vertical.px40,
     },
 
     legal: {
@@ -263,6 +289,7 @@ export default class AdobeRedStyleMapping {
       fontSize: AdobeRedStyleMapping.typographyFontSize.size11,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size18,
       color: AdobeRedStyleMapping.labor.colors.legal.hex,
+      paddingBottom: AdobeRedStyleMapping.spacings.vertical.px20,
     },
 
     caption: {
@@ -278,7 +305,6 @@ export default class AdobeRedStyleMapping {
     },
 
     detail: {
-      variants: ['light'],
       fontSize: AdobeRedStyleMapping.typographyFontSize.size18,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size20,
       fontWeight: {
@@ -288,11 +314,14 @@ export default class AdobeRedStyleMapping {
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusThree,
       color: AdobeRedStyleMapping.colors.gray800.hex,
       linkColor: AdobeRedStyleMapping.labor.colors.detailLink.hex,
+      paddingBottom: AdobeRedStyleMapping.spacings.vertical.px20,
     },
     cta: {
       fontSize: AdobeRedStyleMapping.typographyFontSize.size16,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size20,
       fontWeight: AdobeRedStyleMapping.typographyFontWeight.bold,
+      paddingBottom: AdobeRedStyleMapping.spacings.vertical.px100,
+      paddingTop: AdobeRedStyleMapping.spacings.custom.px0,
     },
   }
 }

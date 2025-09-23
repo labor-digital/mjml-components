@@ -14,12 +14,16 @@ export default class LaborAdobeTypoLegal extends BodyComponent {
 
   static allowedAttributes = {
     'on-background': 'boolean',
+
+    'padding-top': 'unit(px,%)',
     'padding-bottom': 'unit(px,%)',
   }
 
   static defaultAttributes = {
     'on-background': false,
-    'padding-bottom': styleMapping.spacings.vertical.px0,
+
+    'padding-bottom': styleMapping.typographies.legal.paddingBottom,
+    'css-class': 'labor-adobe-typo-legal',
   }
 
   static additionalAttributes = {
@@ -30,6 +34,17 @@ export default class LaborAdobeTypoLegal extends BodyComponent {
     onBackgroundColor: styleMapping.colors.white.hex,
   }
 
+  headStyle = (breakpoint) => `
+    .labor-adobe-typo-legal a {
+      text-decoration: underline;
+      color: ${LaborAdobeTypoLegal.additionalAttributes.color};
+    }
+    .labor-adobe-typo-legal a:hover {
+      text-decoration: none !important;
+      cursor: pointer;
+    }
+  `
+
   render() {
     const attrs = {
       'font-size': LaborAdobeTypoLegal.additionalAttributes.fontSize,
@@ -38,7 +53,6 @@ export default class LaborAdobeTypoLegal extends BodyComponent {
       'color': this.getAttribute('on-background')
         ? LaborAdobeTypoLegal.additionalAttributes.onBackgroundColor
         : LaborAdobeTypoLegal.additionalAttributes.color,
-      'padding-bottom': this.getAttribute('padding-bottom'),
     }
 
     return this.renderMJML(`

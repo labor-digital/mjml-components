@@ -7,6 +7,7 @@ const styleMapping = AdobeRedStyleMapping
 registerDependencies({
   'labor-adobe-link': [],
   'mj-column': ['labor-adobe-link'],
+  'labor-adobe-actioncard': ['labor-adobe-link'],
 })
 
 export default class LaborAdobeLink extends BodyComponent {
@@ -15,12 +16,17 @@ export default class LaborAdobeLink extends BodyComponent {
   static allowedAttributes = {
     'type': 'enum(standard,inverted,quiet)',
     'href': 'string',
+
     'padding-bottom': 'unit(px,%)',
+    'padding-top': 'unit(px,%)',
   }
 
   static defaultAttributes = {
-    type: 'standard',
-    href: '#',
+    'type': 'standard',
+    'href': '#',
+
+    'padding-bottom': styleMapping.spacings.vertical.px100,
+    'padding-top': styleMapping.spacings.custom.px0,
   }
 
   getStyles() {
@@ -32,7 +38,7 @@ export default class LaborAdobeLink extends BodyComponent {
       case 'inverted':
         color = styleMapping.colors.white.hex
         break
-      case 'normal':
+      case 'standard':
       default:
         color = styleMapping.colors.blue900.hex
         break
@@ -63,7 +69,7 @@ export default class LaborAdobeLink extends BodyComponent {
     return `
       <a
         ${this.htmlAttributes(attrs)}
-      >${this.getContent()}${this.getAttribute('type') != 'normal' ? '&nbsp;&rsaquo;' : ''}</a>
+      >${this.getContent()}${this.getAttribute('type') !== 'standard' ? '&nbsp;&rsaquo;' : ''}</a>
     `
   }
 }

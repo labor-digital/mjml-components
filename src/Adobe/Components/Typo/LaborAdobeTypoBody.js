@@ -7,6 +7,7 @@ const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
   'mj-column': ['labor-adobe-typo-body'],
+  'labor-adobe-actioncard': ['labor-adobe-typo-body'],
   'labor-adobe-typo-body': [],
 })
 
@@ -14,12 +15,15 @@ export default class LaborAdobeTypoBody extends BodyComponent {
   static endingTag = true
   static allowedAttributes = {
     'on-background': 'boolean',
+
     'padding-bottom': 'unit(px,%)',
+    'padding-top': 'unit(px,%)',
   }
 
   static defaultAttributes = {
     'on-background': false,
-    'padding-bottom': styleMapping.spacings.vertical.px40,
+
+    'padding-bottom': styleMapping.typographies.body.paddingBottom,
   }
 
   static additionalAttributes = {
@@ -50,30 +54,38 @@ export default class LaborAdobeTypoBody extends BodyComponent {
       margin-top: 0;
       margin-bottom: 0;
     }
-    .${this.attributes['css-class']} .labor-adobe-typo-body-link {
-        text-decoration: underline !important;
-        color: ${
+    .${this.attributes['css-class']} a {
+        text-decoration: ${
           this.getAttribute('on-background')
-            ? LaborAdobeTypoBody.additionalAttributes.onBackgroundColor
-            : LaborAdobeTypoBody.additionalAttributes.color
+            ? 'underline'
+            : 'none'
         } !important;
-    }
-    .${this.attributes['css-class']} .labor-adobe-typo-body-link-blue {
-        text-decoration: none !important;
         color: ${
           this.getAttribute('on-background')
             ? LaborAdobeTypoBody.additionalAttributes.onBackgroundColor
             : LaborAdobeTypoBody.additionalAttributes.linkColor
         } !important;
     }
-    .${this.attributes['css-class']} .labor-adobe-typo-body-link:hover {
-        text-decoration: none !important;
+    .${this.attributes['css-class']} a:hover {
+        text-decoration: ${
+        this.getAttribute('on-background')
+          ? 'none'
+          : 'underline'
+        } !important;
         cursor: pointer;
     }
-    .${this.attributes['css-class']} .labor-adobe-typo-body-link-blue:hover {
+    .${this.attributes['css-class']} .labor-adobe-typo-body-link-alt {
         text-decoration: underline !important;
-        cursor: pointer;
+        color: ${
+        this.getAttribute('on-background')
+          ? LaborAdobeTypoBody.additionalAttributes.onBackgroundColor
+          : LaborAdobeTypoBody.additionalAttributes.color
+      } !important;
     }
+    .${this.attributes['css-class']} .labor-adobe-typo-body-link-alt:hover {
+      text-decoration: none !important;
+      cursor: pointer;
+    }    
   `
       : ``
 
@@ -86,6 +98,7 @@ export default class LaborAdobeTypoBody extends BodyComponent {
         ? LaborAdobeTypoBody.additionalAttributes.onBackgroundColor
         : LaborAdobeTypoBody.additionalAttributes.color,
       'padding-bottom': this.getAttribute('padding-bottom'),
+      'padding-top': this.getAttribute('padding-top'),
     }
 
     return this.renderMJML(`

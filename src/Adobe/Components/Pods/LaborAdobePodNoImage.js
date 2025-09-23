@@ -6,7 +6,7 @@ const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
   'mj-body': ['labor-adobe-pod-no-image'],
-  'labor-adobe-pod': [],
+  'labor-adobe-pod-no-image': [],
 })
 
 export default class LaborAdobePodNoImage extends BodyComponent {
@@ -17,23 +17,38 @@ export default class LaborAdobePodNoImage extends BodyComponent {
 
     'headline': 'string',
 
-    'secondary-cta': 'string',
-    'secondary-cta-href': 'string',
+    'cta-type': 'enum(button,link)',
+    'cta': 'string',
+    'cta-href': 'string',
   }
 
   static defaultAttributes = {
     'section-bg-class': 'content-bg',
+    'cta-type': 'button',
   }
 
   render() {
-    return this.renderMJML(`
+    return this.getAttribute('cta-type') === 'button'
+      ? this.renderMJML(`
                 <labor-adobe-pod
                     section-bg-class="${this.getAttribute('section-bg-class')}"
      
                     headline="${this.getAttribute('headline')}"
                     
-                    secondary-cta="${this.getAttribute('secondary-cta')}"
-                    secondary-cta-href="${this.getAttribute('secondary-cta-href')}"
+                    primary-cta="${this.getAttribute('cta')}"
+                    primary-cta-href="${this.getAttribute('cta-href')}"
+                >
+                    ${this.getContent()}
+                </labor-adobe-pod>
+            `)
+        : this.renderMJML(`
+                <labor-adobe-pod
+                    section-bg-class="${this.getAttribute('section-bg-class')}"
+     
+                    headline="${this.getAttribute('headline')}"
+                    
+                    secondary-cta="${this.getAttribute('cta')}"
+                    secondary-cta-href="${this.getAttribute('cta-href')}"
                 >
                     ${this.getContent()}
                 </labor-adobe-pod>

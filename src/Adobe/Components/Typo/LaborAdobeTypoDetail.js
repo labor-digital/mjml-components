@@ -14,23 +14,25 @@ export default class LaborAdobeTypoDetail extends BodyComponent {
 
   static allowedAttributes = {
     'on-background': 'boolean',
-    'padding-bottom': 'unit(px,%)',
     'type': 'enum(normal,light)',
+
+    'padding-top': 'unit(px,%)',
+    'padding-bottom': 'unit(px,%)',
   }
   static defaultAttributes = {
     'on-background': false,
-    'padding-bottom': styleMapping.spacings.vertical.px0,
     'type': 'normal',
+
+    'padding-bottom': styleMapping.typographies.detail.paddingBottom,
   }
 
   static additionalAttributes = {
+    fontSize: styleMapping.typographies.detail.fontSize,
     lineHeight: styleMapping.typographies.detail.lineHeight,
     color: styleMapping.typographies.detail.color,
     linkColor: styleMapping.typographies.detail.linkColor,
     onBackgroundColor: styleMapping.colors.white.hex,
   }
-
-  fontWeight = 'a'
 
   headStyle = (breakpoint) => `
     .labor-adobe-typo-detail-link {
@@ -48,16 +50,14 @@ export default class LaborAdobeTypoDetail extends BodyComponent {
   `
 
   render() {
-    let fontWeight
+    let fontWeight = styleMapping.typographies.detail.fontWeight.normal;
     switch (this.getAttribute('type')) {
       case 'light':
-        fontWeight = styleMapping.typographies.detail.fontWeight.light
+        fontWeight = styleMapping.typographies.detail.fontWeight.light;
         break
       case 'normal':
-        fontWeight = styleMapping.typographies.detail.fontWeight.normal
+        fontWeight = styleMapping.typographies.detail.fontWeight.normal;
         break
-      default:
-        fontWeight = styleMapping.typographies.detail.fontWeight.normal
     }
 
     const attrs = {
@@ -67,7 +67,6 @@ export default class LaborAdobeTypoDetail extends BodyComponent {
       'color': this.getAttribute('on-background')
         ? LaborAdobeTypoDetail.additionalAttributes.onBackgroundColor
         : LaborAdobeTypoDetail.additionalAttributes.color,
-      'padding-bottom': this.getAttribute('padding-bottom'),
     }
 
     return this.renderMJML(`

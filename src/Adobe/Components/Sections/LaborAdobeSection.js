@@ -15,10 +15,9 @@ export default class LaborAdobeSection extends MjSection {
   static allowedAttributes = {
     'with-padding': 'boolean',
     'section-bg-class': 'string',
+
     'padding-bottom': 'unit(px,%)',
     'padding-top': 'unit(px,%)',
-    'override-padding-left': 'unit(px,%)',
-    'override-padding-right': 'unit(px,%)',
   }
 
   static defaultAttributes = {
@@ -32,7 +31,7 @@ export default class LaborAdobeSection extends MjSection {
   }
 
   headStyle = (breakpoint) => `
-      @media only screen and (max-width:${breakpoint}) {
+      @media only screen and (max-width: ${breakpoint}) {
         .labor-adobe-section-responsive > table > tbody > tr > td {
           padding-left: ${LaborAdobeSection.additionalAttributes.mobileLeftRightPadding} !important;
           padding-right: ${LaborAdobeSection.additionalAttributes.mobileLeftRightPadding} !important;
@@ -49,26 +48,10 @@ export default class LaborAdobeSection extends MjSection {
       attrs[attrName] = this.getAttribute(attrName)
     }
 
-    let pT =
-      this.getAttribute('padding-top') && this.getAttribute('padding-top') != 'undefined'
-        ? this.getAttribute('padding-top')
-        : '0'
-    let pB =
-      this.getAttribute('padding-bottom') && this.getAttribute('padding-bottom') != 'undefined'
-        ? this.getAttribute('padding-bottom')
-        : '0'
-
-    let pL = this.getAttribute('with-padding')
-      ? this.getAttribute('padding-left-override')
-        ? '100px'
-        : LaborAdobeSection.additionalAttributes.desktopLeftRightPadding
-      : '0'
-
-    let pR = this.getAttribute('with-padding')
-      ? this.getAttribute('padding-right-override')
-        ? '100px'
-        : LaborAdobeSection.additionalAttributes.desktopLeftRightPadding
-      : '0'
+    let pT = this.getAttribute('padding-top') && this.getAttribute('padding-top') != 'undefined' ? this.getAttribute('padding-top') : '0'
+    let pB = this.getAttribute('padding-bottom') && this.getAttribute('padding-bottom') != 'undefined' ? this.getAttribute('padding-bottom') : '0'
+    let pL = this.getAttribute('with-padding') ? LaborAdobeSection.additionalAttributes.desktopLeftRightPadding : '0'
+    let pR = this.getAttribute('with-padding') ? LaborAdobeSection.additionalAttributes.desktopLeftRightPadding : '0'
 
     attrs['padding'] = pT + ' ' + pR + ' ' + pB + ' ' + pL
 

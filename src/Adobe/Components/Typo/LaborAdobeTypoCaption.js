@@ -14,18 +14,22 @@ export default class LaborAdobeTypoCaption extends BodyComponent {
 
   static allowedAttributes = {
     'on-background': 'boolean',
+    'font-style': 'enum(regular,italic)',
+
     'padding-bottom': 'unit(px,%)',
+    'padding-top': 'unit(px,%)',
     'padding-left': 'unit(px,%)',
     'padding-right': 'unit(px,%)',
-    'font-style': 'enum(regular,italic)',
   }
 
   static defaultAttributes = {
     'on-background': false,
-    'padding-bottom': styleMapping.spacings.vertical.px0,
-    'padding-left': styleMapping.spacings.horizontal.px0,
-    'padding-right': styleMapping.spacings.horizontal.px0,
     'font-style': 'italic',
+
+    'padding-bottom': styleMapping.spacings.custom.px0,
+    'padding-top': styleMapping.spacings.custom.px0,
+    'padding-left': styleMapping.spacings.custom.px0,
+    'padding-right': styleMapping.spacings.custom.px0,
   }
 
   static additionalAttributes = {
@@ -62,6 +66,7 @@ export default class LaborAdobeTypoCaption extends BodyComponent {
         ? LaborAdobeTypoCaption.additionalAttributes.onBackgroundColor
         : LaborAdobeTypoCaption.additionalAttributes.color,
       'padding-bottom': this.getAttribute('padding-bottom'),
+      'padding-top': this.getAttribute('padding-top'),
       'padding-left': this.getAttribute('padding-left'),
       'padding-right': this.getAttribute('padding-right'),
     }

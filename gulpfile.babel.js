@@ -62,6 +62,7 @@ const removeIndexJs = (done) => {
 }
 
 const compileAndRegisterComponents = (done = null) => {
+  console.log('Compiling and registering components...')
   return gulp
     .src(srcPattern)
     .pipe(babel())
@@ -72,7 +73,12 @@ const compileAndRegisterComponents = (done = null) => {
       through2.obj((file, enc, cb) => {
         delete require.cache[file.path]
         if (filterNonComponent(file.path)) {
-          registerComponent(require(file.path).default)
+          try {
+            registerComponent(require(file.path).default)
+          } catch (e) {
+            console.log(`Error while registering ${file.path}: ${e.message}`)
+            return;
+          }
         }
         cb(null, file);
       }),

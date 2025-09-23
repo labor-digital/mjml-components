@@ -15,15 +15,16 @@ export default class LaborAdobeTypoDisplayTwo extends BodyComponent {
   static allowedAttributes = {
     'on-background': 'boolean',
     'type': 'enum(normal,quiet)',
-    'responsive': 'boolean',
+
+    'padding-top': 'unit(px,%)',
     'padding-bottom': 'unit(px,%)',
   }
 
   static defaultAttributes = {
     'on-background': false,
     'type': 'normal',
-    'responsive': false,
-    'padding-bottom': styleMapping.spacings.vertical.px8,
+
+    'padding-bottom': styleMapping.typographies.displayTwo.paddingBottom,
   }
 
   static additionalAttributes = {
@@ -35,15 +36,6 @@ export default class LaborAdobeTypoDisplayTwo extends BodyComponent {
     color: styleMapping.typographies.displayTwo.color,
   }
 
-  headStyle = (breakpoint) => `
-      @media only screen and (max-width:${breakpoint}) {
-        .labor-adobe-typo-display-two-responsive {
-          font-size: 40px !important;
-          line-height: 46px !important;
-        }
-      }
-    `
-
   render() {
     const attrs = {
       'font-size': LaborAdobeTypoDisplayTwo.additionalAttributes.fontSize,
@@ -53,16 +45,13 @@ export default class LaborAdobeTypoDisplayTwo extends BodyComponent {
       'color': this.getAttribute('on-background')
         ? LaborAdobeTypoDisplayTwo.additionalAttributes.onBackgroundColor
         : LaborAdobeTypoDisplayTwo.additionalAttributes.color,
-      'padding-bottom': this.getAttribute('padding-bottom'),
     }
 
     return this.renderMJML(`
       <mj-text
         ${this.htmlAttributes(attrs)}
       >
-        <div ${this.htmlAttributes({
-          class: this.getAttribute('responsive') ? 'labor-adobe-typo-display-two-responsive' : '',
-        })}>${this.getContent()}</div>
+        ${this.getContent()}
       </mj-text>
     `)
   }

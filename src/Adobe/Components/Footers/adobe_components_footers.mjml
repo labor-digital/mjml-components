@@ -2,7 +2,7 @@
     <mj-head>
         <mj-title>LABOR Adobe CTA</mj-title>
         <mj-preview></mj-preview>
-        <mj-font href="https://use.typekit.net/onr8tbr.css" name="adobe-clean"/>
+        <mj-font href="https://use.typekit.net/ulc2sof.css" name="adobe-clean"/>
         <mj-attributes>
             <mj-class name="body-bg" background-color="#eaeaea" />
             <mj-class name="footer-bg" background-color="#f5f5f5" />
@@ -51,16 +51,16 @@
                 Adobe, the Adobe logo, Adobe Express, and the Adobe Express logo are either registered trademarks or trademarks of Adobe in the United States and/or other countries.
             </labor-adobe-typo-legal>
             <labor-adobe-typo-legal padding-bottom="10px">
-                This is a marketing email from Adobe Inc., 345 Park Avenue, San Jose, CA 95110 USA. <span class="nl-dce-fragment nl-dce-done" data-nl-name="adbeServiceComUnsubscriptionLink" data-nl-label="Adobe service communications unsubscription link (adbeServiceComUnsubscriptionLink)">Adobe service communications unsubscription link</span> to unsubscribe. Please review the <a href="https://www.adobe.com/privacy.html" target="_blank" class="labor-adobe-footer-link">Adobe Privacy Policy</a>.
+                This is a marketing email from Adobe Inc., 345 Park Avenue, San Jose, CA 95110 USA. <span class="nl-dce-fragment nl-dce-done" data-nl-name="adbeServiceComUnsubscriptionLink" data-nl-label="Adobe service communications unsubscription link (adbeServiceComUnsubscriptionLink)">Adobe service communications unsubscription link</span> to unsubscribe. Please review the <a href="https://www.adobe.com/privacy.html" target="_blank">Adobe Privacy Policy</a>.
             </labor-adobe-typo-legal>
             <labor-adobe-typo-legal padding-bottom="10px">
-                To ensure email delivery, add <a href="https://landing.adobe.com/dam/downloads/vcards/adobe.vcf" target="_blank" class="labor-adobe-footer-link">mail@mail.adobe.com</a> to your address book, contacts, or safe sender&nbsp;list.
+                To ensure email delivery, add <a href="https://landing.adobe.com/dam/downloads/vcards/adobe.vcf" target="_blank">mail@mail.adobe.com</a> to your address book, contacts, or safe sender&nbsp;list.
             </labor-adobe-typo-legal>
             <labor-adobe-typo-legal padding-bottom="10px">
-                Please do not reply to this message. To contact the Adobe Education Exchange team, find options <a href="http://edex.adobe.com/help-center" target="_blank" class="labor-adobe-footer-link">online</a>.
+                Please do not reply to this message. To contact the Adobe Education Exchange team, find options <a href="http://edex.adobe.com/help-center" target="_blank">online</a>.
             </labor-adobe-typo-legal>
             <labor-adobe-typo-legal>
-                <a href="#" class="labor-adobe-footer-link" _label="Mirror Page" _type="mirrorPage" alias="Read Online" target="_blank" data-nl-format="datetime" data-nl-lnkep-perso-attr-href="&lt;span class=&quot;nl-dce-fragment nl-dce-done&quot; data-nl-name=&quot;MirrorPageUrl&quot; data-nl-label=&quot;Mirror page URL (MirrorPageUrl)&quot; contenteditable=&quot;false&quot;&gt;Mirror page URL&lt;/span&gt;" data-nl-type="externalLink">Read&nbsp;online</a>
+                <a href="#" _label="Mirror Page" _type="mirrorPage" alias="Read Online" target="_blank" data-nl-format="datetime" data-nl-lnkep-perso-attr-href="&lt;span class=&quot;nl-dce-fragment nl-dce-done&quot; data-nl-name=&quot;MirrorPageUrl&quot; data-nl-label=&quot;Mirror page URL (MirrorPageUrl)&quot; contenteditable=&quot;false&quot;&gt;Mirror page URL&lt;/span&gt;" data-nl-type="externalLink">Read&nbsp;online</a>
             </labor-adobe-typo-legal>
         </labor-adobe-footer>
 

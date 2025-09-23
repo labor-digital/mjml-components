@@ -1,0 +1,288 @@
+<mjml owa="desktop">
+    <mj-head>
+        <mj-title>LABOR Adobe Product Logos</mj-title>
+        <mj-preview></mj-preview>
+        <mj-font href="https://use.typekit.net/ulc2sof.css" name="adobe-clean"/>
+        <mj-attributes>
+            <mj-class name="body-bg" background-color="#eaeaea" />
+            <mj-class name="footer-bg" background-color="#f5f5f5" />
+            <mj-class name="content-bg" background-color="#ffffff" />
+            <mj-class name="heading-bg"  background-color="#FAFAFA" />
+            <mj-class name="inverted-bg"  background-color="#464646" />
+            <mj-class name="divider" border-width="1px" border-style="dotted" border-color="#646464" />
+            <mj-class name="divider-inverted" border-width="1px" border-style="dotted" border-color="#FFF" />
+
+            <mj-all font-family="'adobe-clean', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'" padding="0" />
+        </mj-attributes>
+        <mj-breakpoint width="480px"/>
+        <mj-style>
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        </mj-style>
+    </mj-head>
+    <mj-body mj-class="body-bg">
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px">
+            <mj-column>
+                <labor-adobe-typo-heading-one>
+                    LABOR Adobe Product Logos
+                </labor-adobe-typo-heading-one>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Product Logos - regular - gray
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section>
+            <mj-column>
+                <labor-adobe-product-logo product="acrobat_pro"/>
+                <labor-adobe-product-logo product="acrobat_reader"/>
+                <labor-adobe-product-logo product="acrobat_sign"/>
+                <labor-adobe-product-logo product="acrobat_standard"/>
+                <labor-adobe-product-logo product="after_effects"/>
+                <labor-adobe-product-logo product="creative_cloud"/>
+                <labor-adobe-product-logo product="document_cloud"/>
+                <labor-adobe-product-logo product="experience_cloud"/>
+                <labor-adobe-product-logo product="express"/>
+                <labor-adobe-product-logo product="firefly"/>
+                <labor-adobe-product-logo product="illustrator"/>
+                <labor-adobe-product-logo product="indesign"/>
+                <labor-adobe-product-logo product="photoshop"/>
+                <labor-adobe-product-logo product="premiere_pro"/>
+                <labor-adobe-product-logo product="scan"/>
+                <labor-adobe-product-logo product="stock"/>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider"/>
+            </mj-column>
+        </mj-section>
+
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Product Logos - regular - black
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section>
+            <mj-column>
+                <labor-adobe-product-logo product="acrobat_pro" product-color="black"/>
+                <labor-adobe-product-logo product="acrobat_reader" product-color="black"/>
+                <labor-adobe-product-logo product="acrobat_sign" product-color="black"/>
+                <labor-adobe-product-logo product="acrobat_standard" product-color="black"/>
+                <labor-adobe-product-logo product="after_effects" product-color="black"/>
+                <labor-adobe-product-logo product="creative_cloud" product-color="black"/>
+                <labor-adobe-product-logo product="document_cloud" product-color="black"/>
+                <labor-adobe-product-logo product="experience_cloud" product-color="black"/>
+                <labor-adobe-product-logo product="express" product-color="black"/>
+                <labor-adobe-product-logo product="firefly" product-color="black"/>
+                <labor-adobe-product-logo product="illustrator" product-color="black"/>
+                <labor-adobe-product-logo product="indesign" product-color="black"/>
+                <labor-adobe-product-logo product="photoshop" product-color="black"/>
+                <labor-adobe-product-logo product="premiere_pro" product-color="black"/>
+                <labor-adobe-product-logo product="scan" product-color="black"/>
+                <labor-adobe-product-logo product="stock" product-color="black"/>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider"/>
+            </mj-column>
+        </mj-section>
+
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Product Logos - regular - white
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section section-bg-class="inverted-bg">
+            <mj-column>
+                <labor-adobe-product-logo product="acrobat_pro" product-color="white"/>
+                <labor-adobe-product-logo product="acrobat_reader" product-color="white"/>
+                <labor-adobe-product-logo product="acrobat_sign" product-color="white"/>
+                <labor-adobe-product-logo product="acrobat_standard" product-color="white"/>
+                <labor-adobe-product-logo product="after_effects" product-color="white"/>
+                <labor-adobe-product-logo product="creative_cloud" product-color="white"/>
+                <labor-adobe-product-logo product="document_cloud" product-color="white"/>
+                <labor-adobe-product-logo product="experience_cloud" product-color="white"/>
+                <labor-adobe-product-logo product="express" product-color="white"/>
+                <labor-adobe-product-logo product="firefly" product-color="white"/>
+                <labor-adobe-product-logo product="illustrator" product-color="white"/>
+                <labor-adobe-product-logo product="indesign" product-color="white"/>
+                <labor-adobe-product-logo product="photoshop" product-color="white"/>
+                <labor-adobe-product-logo product="premiere_pro" product-color="white"/>
+                <labor-adobe-product-logo product="scan" product-color="white"/>
+                <labor-adobe-product-logo product="stock" product-color="white"/>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Product Logos - alt - gray
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section>
+            <mj-column>
+                <labor-adobe-product-logo product="acrobat_pro" product-type="alt"/>
+                <labor-adobe-product-logo product="acrobat_reader" product-type="alt"/>
+                <labor-adobe-product-logo product="acrobat_sign" product-type="alt"/>
+                <labor-adobe-product-logo product="acrobat_standard" product-type="alt"/>
+                <labor-adobe-product-logo product="after_effects" product-type="alt"/>
+                <labor-adobe-product-logo product="creative_cloud" product-type="alt"/>
+                <labor-adobe-product-logo product="document_cloud" product-type="alt"/>
+                <labor-adobe-product-logo product="experience_cloud" product-type="alt"/>
+                <labor-adobe-product-logo product="express" product-type="alt"/>
+                <labor-adobe-product-logo product="firefly" product-type="alt"/>
+                <labor-adobe-product-logo product="illustrator" product-type="alt"/>
+                <labor-adobe-product-logo product="indesign" product-type="alt"/>
+                <labor-adobe-product-logo product="photoshop" product-type="alt"/>
+                <labor-adobe-product-logo product="premiere_pro" product-type="alt"/>
+                <labor-adobe-product-logo product="scan" product-type="alt"/>
+                <labor-adobe-product-logo product="stock" product-type="alt"/>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider"/>
+            </mj-column>
+        </mj-section>
+
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Product Logos - regular - black
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section>
+            <mj-column>
+                <labor-adobe-product-logo product="acrobat_pro" product-color="black" product-type="alt"/>
+                <labor-adobe-product-logo product="acrobat_reader" product-color="black" product-type="alt"/>
+                <labor-adobe-product-logo product="acrobat_sign" product-color="black" product-type="alt"/>
+                <labor-adobe-product-logo product="acrobat_standard" product-color="black" product-type="alt"/>
+                <labor-adobe-product-logo product="after_effects" product-color="black" product-type="alt"/>
+                <labor-adobe-product-logo product="creative_cloud" product-color="black" product-type="alt"/>
+                <labor-adobe-product-logo product="document_cloud" product-color="black" product-type="alt"/>
+                <labor-adobe-product-logo product="experience_cloud" product-color="black" product-type="alt"/>
+                <labor-adobe-product-logo product="express" product-color="black" product-type="alt"/>
+                <labor-adobe-product-logo product="firefly" product-color="black" product-type="alt"/>
+                <labor-adobe-product-logo product="illustrator" product-color="black" product-type="alt"/>
+                <labor-adobe-product-logo product="indesign" product-color="black" product-type="alt"/>
+                <labor-adobe-product-logo product="photoshop" product-color="black" product-type="alt"/>
+                <labor-adobe-product-logo product="premiere_pro" product-color="black" product-type="alt"/>
+                <labor-adobe-product-logo product="scan" product-color="black" product-type="alt"/>
+                <labor-adobe-product-logo product="stock" product-color="black" product-type="alt"/>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider"/>
+            </mj-column>
+        </mj-section>
+
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Product Logos - regular - white
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section section-bg-class="inverted-bg">
+            <mj-column>
+                <labor-adobe-product-logo product="acrobat_pro" product-color="white" product-type="alt"/>
+                <labor-adobe-product-logo product="acrobat_reader" product-color="white" product-type="alt"/>
+                <labor-adobe-product-logo product="acrobat_sign" product-color="white" product-type="alt"/>
+                <labor-adobe-product-logo product="acrobat_standard" product-color="white" product-type="alt"/>
+                <labor-adobe-product-logo product="after_effects" product-color="white" product-type="alt"/>
+                <labor-adobe-product-logo product="creative_cloud" product-color="white" product-type="alt"/>
+                <labor-adobe-product-logo product="document_cloud" product-color="white" product-type="alt"/>
+                <labor-adobe-product-logo product="experience_cloud" product-color="white" product-type="alt"/>
+                <labor-adobe-product-logo product="express" product-color="white" product-type="alt"/>
+                <labor-adobe-product-logo product="firefly" product-color="white" product-type="alt"/>
+                <labor-adobe-product-logo product="illustrator" product-color="white" product-type="alt"/>
+                <labor-adobe-product-logo product="indesign" product-color="white" product-type="alt"/>
+                <labor-adobe-product-logo product="photoshop" product-color="white" product-type="alt"/>
+                <labor-adobe-product-logo product="premiere_pro" product-color="white" product-type="alt"/>
+                <labor-adobe-product-logo product="scan" product-color="white" product-type="alt"/>
+                <labor-adobe-product-logo product="stock" product-color="white" product-type="alt"/>
+            </mj-column>
+        </labor-adobe-section>
+
+        <labor-adobe-section padding-bottom="100px" section-bg-class="heading-bg" />
+
+    </mj-body>
+</mjml>

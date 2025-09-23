@@ -1,212 +1,242 @@
 export default class AdobeProductLockupMapping {
-  static baseURL = 'https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/lockups/'
+
+  static basePath = 'https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/product_lockups/';
+  static defaultHeight = 168;
+  static defaultColor = 'red_gray'
+
+  static getLockup = (product, color = this.defaultColor) => {
+
+    if( !product || !color || !this.lockups[product] || !this.lockups[product]['width'] || !this.lockups[product]['images'][color]) return null;
+
+    let width = this.lockups[product]['images'][color]['width'] ?? this.lockups[product]['width'];
+    let height =  this.lockups[product]['images'][color]['height'] ?? this.lockups[product]['height'] ?? this.defaultHeight;
+
+    return  {
+      name: this.lockups[product]['name'],
+      key: this.lockups[product]['key'],
+      // keep it possible to use image specific width/height eg. after an update, otherwise use the default values
+      width: width,
+      height: height,
+      location:
+        this.basePath + (this.lockups[product]['images'][color]['location'] ?? this.lockups[product]['key'] + '.' + color + '.' + width + 'x' + height + '.png'),
+    }
+  }
 
   static lockups = {
-    ccx: {
-      name: 'Adobe Express',
-      width: '704px',
-      height: '168px',
+    brand :{
+      name: 'Adobe',
+      key: 'brand',
+      width: 312,
+      height: 168,
+      scaling: 4,
       images: {
-        red_black: AdobeProductLockupMapping.baseURL + 'adobe_express_red_black_704x168.png',
-        red_gray: AdobeProductLockupMapping.baseURL + 'adobe_express_red_gray_704x168.png',
-        red_white: AdobeProductLockupMapping.baseURL + 'adobe_express_red_white_704x168.png',
-        white_black: AdobeProductLockupMapping.baseURL + 'adobe_express_white_black_704x168.png',
-      },
-    },
-    firefly: {
-      name: 'Adobe Firefly',
-      width: '648px',
-      height: '168px',
-      images: {
-        red_black: AdobeProductLockupMapping.baseURL + 'adobe_firefly_red_black_648x168.png',
-        red_gray: AdobeProductLockupMapping.baseURL + 'adobe_firefly_red_gray_648x168.png',
-        red_white: AdobeProductLockupMapping.baseURL + 'adobe_firefly_red_white_648x168.png',
-        white_black: AdobeProductLockupMapping.baseURL + 'adobe_firefly_white_black_648x168.png',
-      },
-    },
-    stock: {
-      name: 'Adobe Stock',
-      width: '292px',
-      images: {
-        white: AdobeProductLockupMapping.baseURL + 'adobe_stock.white.292x60.png',
-        black: AdobeProductLockupMapping.baseURL + 'adobe_stock.black.292x60.png',
-      },
-    },
-    spark: {
-      name: 'Adobe Spark',
-      width: '296px',
-      images: {
-        white: AdobeProductLockupMapping.baseURL + 'adobe_spark.white.296x60.png',
-        black: AdobeProductLockupMapping.baseURL + 'adobe_spark.black.296x60.png',
-      },
-    },
-    sign: {
-      name: 'Adobe Sign',
-      width: '409px',
-      images: {
-        white: AdobeProductLockupMapping.baseURL + 'adobe_acrobat_sign_lockup_horizontal.white.409x60.png',
-        black: AdobeProductLockupMapping.baseURL + 'adobe_acrobat_sign_lockup_horizontal.black.409x60.png',
-      },
-    },
-    scan: {
-      name: 'Adobe Scan',
-      width: '276px',
-      images: {
-        white: AdobeProductLockupMapping.baseURL + 'adobe_scan.white.276x60.png',
-        black: AdobeProductLockupMapping.baseURL + 'adobe_scan.black.276x60.png',
-      },
-    },
-    rush: {
-      name: 'Adobe Premiere Rush',
-      width: '446px',
-      images: {
-        white: AdobeProductLockupMapping.baseURL + 'adobe_premiere_rush.white.446x60.png',
-        black: AdobeProductLockupMapping.baseURL + 'adobe_premiere_rush.black.446x60.png',
-      },
-    },
-    premiere: {
-      name: 'Adobe Premiere Pro',
-      width: '442px',
-      images: {
-        white: AdobeProductLockupMapping.baseURL + 'adobe_premiere_pro.white.442x60.png',
-        black: AdobeProductLockupMapping.baseURL + 'adobe_premiere_pro.black.442x60.png',
-      },
-    },
-    lightroom: {
-      name: 'Adobe Photoshop Lightroom',
-      width: '568px',
-      images: {
-        white: AdobeProductLockupMapping.baseURL + 'adobe_photoshop_lightroom.white.568x60.png',
-        black: AdobeProductLockupMapping.baseURL + 'adobe_photoshop_lightroom.black.568x60.png',
-      },
-    },
-    photoshop: {
-      name: 'Adobe Photoshop',
-      width: '382px',
-      images: {
-        white: AdobeProductLockupMapping.baseURL + 'adobe_photoshop.white.382x60.png',
-        black: AdobeProductLockupMapping.baseURL + 'adobe_photoshop.black.382x60.png',
-      },
-    },
-    live: {
-      name: 'Adobe Live',
-      width: '266px',
-      images: {
-        white: AdobeProductLockupMapping.baseURL + 'adobe_live.white.266x60.png',
-        red: AdobeProductLockupMapping.baseURL + 'adobe_live.red.266x60.png',
-      },
-    },
-    indesign: {
-      name: 'Adobe Indesign',
-      width: '346px',
-      images: {
-        white: AdobeProductLockupMapping.baseURL + 'adobe_indesign.white.346x60.png',
-        black: AdobeProductLockupMapping.baseURL + 'adobe_indesign.black.346x60.png',
-      },
-    },
-    illustrator: {
-      name: 'Adobe Illustrator',
-      width: '364px',
-      images: {
-        white: AdobeProductLockupMapping.baseURL + 'adobe_illustrator.white.364x60.png',
-        black: AdobeProductLockupMapping.baseURL + 'adobe_illustrator.black.364x60.png',
-      },
-    },
-    experience_cloud: {
-      name: 'Adobe Experience Cloud',
-      width: '492px',
-      images: {
-        white: AdobeProductLockupMapping.baseURL + 'adobe_experience_cloud.white.492x60.png',
-        black: AdobeProductLockupMapping.baseURL + 'adobe_experience_cloud.black.492x60.png',
-      },
-    },
-    document_cloud: {
-      name: 'Adobe Document Cloud',
-      width: '482px',
-      images: {
-        white: AdobeProductLockupMapping.baseURL + 'adobe_document_cloud.white.482x60.png',
-        red: AdobeProductLockupMapping.baseURL + 'adobe_document_cloud.red.482x60.png',
-      },
-    },
-    creative_cloud: {
-      name: 'Adobe Creative Cloud',
-      width: '442px',
-      images: {
-        white: AdobeProductLockupMapping.baseURL + 'adobe_creative_cloud.white.442x60.png',
-        red: AdobeProductLockupMapping.baseURL + 'adobe_creative_cloud.red.442x60.png',
-      },
-    },
-    behance: {
-      name: 'Adobe Behance',
-      width: '224px',
-      images: {
-        white: AdobeProductLockupMapping.baseURL + 'adobe_behance.white.224x60.png',
-        black: AdobeProductLockupMapping.baseURL + 'adobe_behance.black.224x60.png',
-      },
-    },
-    acrobat_reader: {
-      name: 'Adobe Acrobat Reader',
-      width: '460px',
-      images: {
-        white: AdobeProductLockupMapping.baseURL + 'adobe_acrobat_reader.white.460x60.png',
-        black: AdobeProductLockupMapping.baseURL + 'adobe_acrobat_reader.black.460x60.png',
-      },
-    },
-    acrobat_pro: {
-      name: 'Adobe Acrobat Pro',
-      width: '398px',
-      images: {
-        white: AdobeProductLockupMapping.baseURL + 'adobe_acrobat_pro.white.398x60.png',
-        black: AdobeProductLockupMapping.baseURL + 'adobe_acrobat_pro.black.398x60.png',
-      },
-    },
-    acrobat_pro_dc: {
-      name: 'Adobe Acrobat Pro DC',
-      width: '458px',
-      images: {
-        white: AdobeProductLockupMapping.baseURL + 'adobe_acrobat_pro.white.458x60.png',
-        black: AdobeProductLockupMapping.baseURL + 'adobe_acrobat_pro.black.458x60.png',
+        red: {
+          location: 'brand.red.312x168.png'
+        },
+        white: {
+          location: 'brand.white.312x168.png'
+        },
       },
     },
     acrobat: {
       name: 'Adobe Acrobat',
-      width: '330px',
+      key: 'acrobat',
+      width: 732,
       images: {
-        white: AdobeProductLockupMapping.baseURL + 'adobe_acrobat.white.330x60.png',
-        black: AdobeProductLockupMapping.baseURL + 'adobe_acrobat.black.330x60.png',
+        red_black: {},
+        red_gray: {},
+        red_white: {},
+        white_black: {},
       },
     },
-    audition: {
-      name: 'Adobe Audition',
-      width: '342px',
+    acrobat_pro: {
+      name: 'Adobe Acrobat Pro',
+      key: 'acrobat_pro',
+      width: 920,
       images: {
-        white: AdobeProductLockupMapping.baseURL + 'adobe_audition.white.342x60.png',
-        black: AdobeProductLockupMapping.baseURL + 'adobe_audition.black.342x60.png',
+        red_black: {},
+        red_gray: {},
+        red_white: {},
+        white_black: {},
       },
     },
-    portfolio: {
-      name: 'Adobe Portfolio',
-      width: '348px',
+    acrobat_reader: {
+      name: 'Adobe Acrobat Reader',
+      key: 'acrobat_reader',
+      width: 1100,
       images: {
-        white: AdobeProductLockupMapping.baseURL + 'adobe_portfolio.white.348x60.png',
-        black: AdobeProductLockupMapping.baseURL + 'adobe_portfolio.black.348x60.png',
+        red_black: {},
+        red_gray: {},
+        red_white: {},
+        white_black: {},
       },
     },
-    animator: {
-      name: 'Adobe Charcter Animator',
-      width: '532px',
+    acrobat_sign: {
+      name: 'Adobe Acrobat Reader',
+      key: 'acrobat_sign',
+      width: 964,
       images: {
-        white: AdobeProductLockupMapping.baseURL + 'adobe_character_animator.white.532x60.png',
-        black: AdobeProductLockupMapping.baseURL + 'adobe_character_animator.black.532x60.png',
+        red_black: {},
+        red_gray: {},
+        red_white: {},
+        white_black: {},
       },
     },
-    twitter_ace: {
-      name: '#AdobeEduCreative on Twitter',
-      width: '600',
+    acrobat_standard: {
+      name: 'Adobe Acrobat Standard',
+      key: 'acrobat_standard',
+      width: 1192,
       images: {
-        white: AdobeProductLockupMapping.baseURL + 'twitter_educator.white.600x60.png',
-        black: AdobeProductLockupMapping.baseURL + 'twitter_educator.black.600x60.png',
+        red_black: {},
+        red_gray: {},
+        red_white: {},
+        white_black: {},
       },
     },
+    after_effects: {
+      name: 'Adobe After Effects',
+      key: 'after_effects',
+      width: 968,
+      images: {
+        red_black: {},
+        red_gray: {},
+        red_white: {},
+        white_black: {},
+      },
+    },
+    creative_cloud: {
+      name: 'Adobe Creative Cloud',
+      key: 'creative_cloud',
+      width: 1064,
+      images: {
+        red_black: {},
+        red_gray: {},
+        red_white: {},
+        white_black: {},
+      },
+    },
+    document_cloud: {
+      name: 'Adobe Document Cloud',
+      key: 'document_cloud',
+      width: 1156,
+      images: {
+        red_black: {},
+        red_gray: {},
+        red_white: {},
+        white_black: {},
+      },
+    },
+    experience_cloud: {
+      name: 'Adobe Experience Cloud',
+      key: 'experience_cloud',
+      width: 1192,
+      images: {
+        red_black: {},
+        red_gray: {},
+        red_white: {},
+        white_black: {},
+      },
+    },
+    express: {
+      name: 'Adobe Express',
+      key: 'express',
+      width: 732,
+      images: {
+        red_black: {},
+        red_gray: {},
+        red_white: {},
+        white_black: {},
+      },
+    },
+    firefly: {
+      name: 'Adobe Firefly',
+      key: 'firefly',
+      width: 664,
+      images: {
+        red_black: {},
+        red_gray: {},
+        red_white: {},
+        white_black: {},
+      },
+    },
+    illustrator: {
+      name: 'Adobe Illustrator',
+      key: 'illustrator',
+      width: 832,
+      images: {
+        red_black: {},
+        red_gray: {},
+        red_white: {},
+        white_black: {},
+      },
+    },
+    indesign: {
+      name: 'Adobe Indesign',
+      key: 'indesign',
+      width: 784,
+      images: {
+        red_black: {},
+        red_gray: {},
+        red_white: {},
+        white_black: {},
+      },
+    },
+    photoshop: {
+      name: 'Adobe Photoshop',
+      key: 'photoshop',
+      width: 892,
+      images: {
+        red_black: {},
+        red_gray: {},
+        red_white: {},
+        white_black: {},
+      },
+    },
+    premiere_pro: {
+      name: 'Adobe Premiere Pro',
+      key: 'premiere_pro',
+      width: 992,
+      images: {
+        red_black: {},
+        red_gray: {},
+        red_white: {},
+        white_black: {},
+      },
+    },
+    scan: {
+      name: 'Adobe Scan',
+      key: 'scan',
+      width: 584,
+      images: {
+        red_black: {},
+        red_gray: {},
+        red_white: {},
+        white_black: {},
+      },
+    },
+    stock: {
+      name: 'Adobe Stock',
+      key: 'stock',
+      width: 632,
+      images: {
+        red_black: {},
+        red_gray: {},
+        red_white: {},
+        white_black: {},
+      },
+    },
+    // Lightroom, Edex, Brand
+    // Check if needs to be added:
+    // spark
+    // sign
+    // scan
+    // rush
+    // live
+    // behance
+    // portfolio
+    // animator
+    // twitter_ace
+    // audition
+    // substance 3d
   }
 }

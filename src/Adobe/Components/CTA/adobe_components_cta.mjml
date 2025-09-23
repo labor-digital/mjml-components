@@ -2,7 +2,7 @@
     <mj-head>
         <mj-title>LABOR Adobe CTA</mj-title>
         <mj-preview></mj-preview>
-        <mj-font href="https://use.typekit.net/onr8tbr.css" name="adobe-clean"/>
+        <mj-font href="https://use.typekit.net/ulc2sof.css" name="adobe-clean"/>
         <mj-attributes>
             <mj-class name="body-bg" background-color="#eaeaea" />
             <mj-class name="footer-bg" background-color="#f5f5f5" />
@@ -51,6 +51,40 @@
                 <labor-adobe-button
                         type="standard"
                         href="#"
+                >
+                    Button Text
+                </labor-adobe-button>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider"/>
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Button - standard - extra width, different padding top/bottom
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section>
+            <mj-column>
+                <labor-adobe-button
+                        type="standard"
+                        href="#"
+                        width="250px"
+                        padding-bottom="20px"
+                        padding-top="20px"
                 >
                     Button Text
                 </labor-adobe-button>
@@ -163,6 +197,39 @@
         <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
             <mj-column>
                 <labor-adobe-typo-heading-three>
+                    Link - standard - different top/bottom padding
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section>
+            <mj-column>
+                <labor-adobe-link
+                        type="standard"
+                        href="#"
+                        padding-bottom="20px"
+                        padding-top="20px"
+                >
+                    Link Text
+                </labor-adobe-link>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider"/>
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
                     Link - quiet
                 </labor-adobe-typo-heading-three>
             </mj-column>
@@ -213,7 +280,7 @@
                         type="inverted"
                         href="#"
                 >
-                    Text
+                    Link Text
                 </labor-adobe-link>
             </mj-column>
         </labor-adobe-section>

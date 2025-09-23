@@ -17,26 +17,24 @@ export default class LaborResponsiveImage extends MjImage {
   headStyle = (breakpoint) =>
     new MjImage().headStyle(breakpoint) +
     `
+    .laborResponsiveImage-image--web {
+      display: block !important;
+    }
+    .laborResponsiveImage-image--mobile {
+      display: none !important;
+    }
+    @media only screen and (max-width: ${breakpoint}) {
       .laborResponsiveImage-image--web {
-          display: block !important;
+        display: none !important;
       }
       .laborResponsiveImage-image--mobile {
-          display: none !important;
-      }
-      @media only screen and (max-width:${breakpoint}) {
-        .laborResponsiveImage-image--web {
-          display: none !important;
-        }
-        .laborResponsiveImage-image--mobile {
           display: block !important;
-        }
       }
+    }
     `
 
   getStyles() {
     let styles = super.getStyles()
-
-    const fullWidth = this.getAttribute('full-width') === 'full-width'
 
     styles['imgMobile'] = Object.assign({}, styles['img'])
     styles['imgMobile']['display'] = 'none'

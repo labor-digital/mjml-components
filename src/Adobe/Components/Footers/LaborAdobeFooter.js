@@ -38,28 +38,17 @@ export default class LaborAdobeFooter extends BodyComponent {
     linkColor: styleMapping.labor.colors.footerLink.hex,
     align: 'left',
     socialIconBackgroundColor: styleMapping.labor.colors.socialIconBackgroundColor.hex,
-    socialIconBorderRadius: styleMapping.spacings.vertical.px0,
+    socialIconBorderRadius: styleMapping.spacings.custom.px0,
 
-    socialSectionPaddingTop: styleMapping.spacings.vertical.px34,
-    socialSectionLogoPaddingTop: styleMapping.spacings.vertical.px6,
+    socialSectionPaddingTop: styleMapping.spacings.custom.px34,
+    socialSectionLogoPaddingTop: styleMapping.spacings.custom.px6,
     socialSectionPaddingTopResponsive: styleMapping.spacings.vertical.px60,
 
     socialSectionPaddingBottom: styleMapping.spacings.vertical.px40,
-    contentSectionPaddingBottom: styleMapping.spacings.vertical.px100,
+    contentSectionPaddingBottom: styleMapping.spacings.custom.px80,
   }
   holy
   headStyle = (breakpoint) => `
-    .labor-adobe-footer-link {
-      text-decoration: underline;
-      color: ${LaborAdobeFooter.additionalAttributes.linkColor};
-    }
-    .labor-adobe-footer-link:hover {
-      text-decoration: none !important;
-      cursor: pointer;
-    }
-    
-    
-
     @media only screen and (max-width:${breakpoint}) {
       .labor-adobe-footer-section-social-column-responsive {
         padding-top: ${LaborAdobeFooter.additionalAttributes.socialSectionPaddingTopResponsive}
@@ -146,7 +135,7 @@ export default class LaborAdobeFooter extends BodyComponent {
     if (this.getAttribute('linkedin-url'))
       socialElements += `
         <mj-social-element
-          name="linkedin"
+          name="linkedin-noshare"
           href="${this.getAttribute('linked-url')}"
           src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/social-icons/linkedin-logo.100x64.png"
           alt="LinkedIn"
