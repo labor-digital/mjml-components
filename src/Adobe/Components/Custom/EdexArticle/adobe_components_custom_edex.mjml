@@ -57,8 +57,8 @@
                 text="Students will build visual storytelling skills as they use photos and design elements to create moodboards that set the tone for the year ahead."
                 cta="Get started"
                 href="#"
-                image-src="https://landing.adobe.com/dam/uploads/2025/na/edex/20250108.EdEx.Newsletter.01.gif"
-                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/edex/20250108.EdEx.Newsletter.01_m.gif"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/article_image.gif"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/article_image_m.gif"
                 product="acrobat"
         />
 
@@ -89,8 +89,8 @@
                 text="Students will build visual storytelling skills as they use photos and design elements to create moodboards that set the tone for the year ahead."
                 cta="Get started"
                 href="#"
-                image-src="../src/Adobe/Assets/Components/Custom/EdexArticle/article_image.gif"
-                image-src-mobile="../src/Adobe/Assets/Components/Custom/EdexArticle/article_image_m.gif"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/article_image.gif"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/article_image_m.gif"
                 product="express"
                 padding-bottom="150px"
                 padding-top="150px"
@@ -123,8 +123,8 @@
                 text="Students will build visual storytelling skills as they use photos and design elements to create moodboards that set the tone for the year ahead."
                 cta="Get started"
                 href="#"
-                image-src="../src/Adobe/Assets/Components/Custom/EdexArticle/article_image.gif"
-                image-src-mobile="../src/Adobe/Assets/Components/Custom/EdexArticle/article_image_m.gif"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/article_image.gif"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/article_image_m.gif"
                 product="premiere_pro"
         />
 

@@ -94,9 +94,9 @@ export default class LaborAdobeActionCard extends BodyComponent {
         <mj-column 
           background-color=${LaborAdobeActionCard.additionalAttributes['column-background-color']}
           border-radius=
-            ${imageSection 
-              ? LaborAdobeActionCard.additionalAttributes['border-radius-top-only']
-              : LaborAdobeActionCard.additionalAttributes['border-radius-both']}
+          "${imageSection 
+              ? LaborAdobeActionCard.additionalAttributes['border-radius-bottom-only']
+              : LaborAdobeActionCard.additionalAttributes['border-radius-both']}"
           padding-top=${this.getAttribute('image-src') ? LaborAdobeActionCard.additionalAttributes['image-section-padding'] : LaborAdobeActionCard.additionalAttributes['inner-padding-top-bottom']}
           padding-bottom=${LaborAdobeActionCard.additionalAttributes['inner-padding-top-bottom']}
           padding-left=${LaborAdobeActionCard.additionalAttributes['padding-left-right']}

@@ -52,8 +52,8 @@
 
         <labor-adobe-pod-standard
             headline="Lorem ipsum dolor sit amet"
-            image-src="../src/Adobe/Assets/Components/Pods/pod_image.png"
-            image-src-mobile="../src/Adobe/Assets/Components/Pods/pod_image_m.png"
+            image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/pod_image.png"
+            image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/pod_image_m.png"
             primary-cta="Lorem ipsum"
             primary-cta-href="#"
         >
@@ -83,8 +83,8 @@
 
         <labor-adobe-pod-standard-full-width
                 headline="Lorem ipsum dolor sit amet"
-                image-src="../src/Adobe/Assets/Components/Pods/pod_image.png"
-                image-src-mobile="../src/Adobe/Assets/Components/Pods/pod_image_m.png"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/pod_image.png"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/pod_image_m.png"
                 primary-cta="Lorem ipsum"
                 primary-cta-href="#"
         >

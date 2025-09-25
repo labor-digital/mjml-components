@@ -47,7 +47,7 @@
 
         <labor-adobe-section>
             <mj-column>
-                <labor-adobe-avatar src="../src/Adobe/Assets/Components/Custom/Avatars/avatar_01.png" name="Matt Niemietz" />
+                <labor-adobe-avatar src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/avatar_01.png" name="Matt Niemietz" />
             </mj-column>
         </labor-adobe-section>
 
@@ -73,7 +73,7 @@
 
         <labor-adobe-section>
             <mj-column>
-                <labor-adobe-avatar padding-bottom="34px" padding-top="34px" src="../src/Adobe/Assets/Components/Custom/Avatars/avatar_01.png" name="Matt Niemietz" />
+                <labor-adobe-avatar padding-bottom="34px" padding-top="34px" src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/avatar_01.png" name="Matt Niemietz" />
             </mj-column>
         </labor-adobe-section>
 
@@ -99,7 +99,7 @@
 
         <labor-adobe-section section-bg-class="inverted-bg">
             <mj-column>
-                <labor-adobe-avatar on-background="true" src="../src/Adobe/Assets/Components/Custom/Avatars/avatar_01.png" name="Matt Niemietz" />
+                <labor-adobe-avatar on-background="true" src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/avatar_01.png" name="Matt Niemietz" />
             </mj-column>
         </labor-adobe-section>
 

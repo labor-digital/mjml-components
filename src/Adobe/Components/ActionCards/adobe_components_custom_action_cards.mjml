@@ -51,7 +51,7 @@
         </mj-section>
 
         <labor-adobe-action-card
-            image-src="../src/Adobe/Assets/Components/HeroCards/hero_card_m.jpg"
+            image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/hero_card_m.jpg"
             image-alt="Alt Text"
         >
             <labor-adobe-typo-body padding-bottom="20px">
@@ -104,8 +104,8 @@
         </mj-section>
 
         <labor-adobe-action-card
-                image-src="../src/Adobe/Assets/Components/HeroCards/hero_card_m.jpg"
-                image-src-mobile="../src/Adobe/Assets/Components/HeroCards/hero_card.jpg"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/hero_card_m.jpg"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/hero_card.jpg"
                 image-alt="Alt Text"
                 padding-bottom="50px"
                 padding-top="50px"

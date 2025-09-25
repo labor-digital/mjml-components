@@ -93,8 +93,8 @@
         </mj-section>
 
         <labor-adobe-footer-image-band
-                src="https://landing.adobe.com/dam/uploads/2021/emea/202107.Nurture_Journey.CCT.gradient.dekstop.png"
-                src-mobile="https://landing.adobe.com/dam/uploads/2021/emea/202107.Nurture_Journey.CCT.gradient.mobile.png"
+            src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/nurture_journey_cct_gradient.png"
+            src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/nurture_journey_cct_gradient_m.png"
         />
 
         <mj-section>

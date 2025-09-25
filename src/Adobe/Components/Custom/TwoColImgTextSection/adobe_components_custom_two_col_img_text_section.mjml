@@ -52,8 +52,8 @@
 
         <labor-adobe-two-col-img-text-section
                 section-bg-class="content-bg"
-                image-src="../src/Adobe/Assets/Components/Custom/TwoColImgTextSection/placeholder_rtl.jpg"
-                image-src-mobile="../src/Adobe/Assets/Components/Custom/TwoColImgTextSection/placeholder_m.jpg"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_rtl.jpg"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_m.jpg"
                 direction="rtl"
         >
             <labor-adobe-typo-heading-four>
@@ -69,8 +69,8 @@
 
         <labor-adobe-two-col-img-text-section
                 section-bg-class="content-bg"
-                image-src="../src/Adobe/Assets/Components/Custom/TwoColImgTextSection/placeholder_ltr.jpg"
-                image-src-mobile="../src/Adobe/Assets/Components/Custom/TwoColImgTextSection/placeholder_m.jpg"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_ltr.jpg"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_m.jpg"
                 direction="ltr"
         >
             <labor-adobe-typo-body padding-bottom="0">
@@ -80,8 +80,8 @@
 
         <labor-adobe-two-col-img-text-section
                 section-bg-class="content-bg"
-                image-src="../src/Adobe/Assets/Components/Custom/TwoColImgTextSection/placeholder_rtl.jpg"
-                image-src-mobile="../src/Adobe/Assets/Components/Custom/TwoColImgTextSection/placeholder_m.jpg"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_rtl.jpg"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_m.jpg"
                 direction="rtl"
         >
             <labor-adobe-typo-heading-four>
@@ -117,8 +117,8 @@
 
         <labor-adobe-two-col-img-text-section
                 section-bg-class="content-bg"
-                image-src="../src/Adobe/Assets/Components/Custom/TwoColImgTextSection/placeholder_rtl.jpg"
-                image-src-mobile="../src/Adobe/Assets/Components/Custom/TwoColImgTextSection/placeholder_m.jpg"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_rtl.jpg"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_m.jpg"
                 direction="rtl"
                 padding-bottom="70px"
                 padding-top="70px"
@@ -137,8 +137,8 @@
 
         <labor-adobe-two-col-img-text-section
                 section-bg-class="content-bg"
-                image-src="../src/Adobe/Assets/Components/Custom/TwoColImgTextSection/placeholder_ltr.jpg"
-                image-src-mobile="../src/Adobe/Assets/Components/Custom/TwoColImgTextSection/placeholder_m.jpg"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_ltr.jpg"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_m.jpg"
                 direction="ltr"
                 padding-bottom="70px"
                 padding-top="70px"
@@ -151,8 +151,8 @@
 
         <labor-adobe-two-col-img-text-section
                 section-bg-class="content-bg"
-                image-src="../src/Adobe/Assets/Components/Custom/TwoColImgTextSection/placeholder_rtl.jpg"
-                image-src-mobile="../src/Adobe/Assets/Components/Custom/TwoColImgTextSection/placeholder_m.jpg"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_rtl.jpg"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_m.jpg"
                 direction="rtl"
                 padding-bottom="70px"
                 padding-top="70px"

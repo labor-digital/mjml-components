@@ -20,81 +20,19 @@
     </mj-head>
     <mj-body mj-class="body-bg">
 
-        <labor-adobe-header
-                alt="Adobe Education Exchange"
-                header-bg-class="content-bg"
-        />
-
-        <labor-adobe-section padding-top="10px" padding-bottom="5px" section-bg-class="footer-bg">
-            <mj-column>
-                <labor-adobe-typo-body padding-bottom="6px">Check out the latest on the Education Exchange this week.</labor-adobe-typo-body>
-            </mj-column>
-        </labor-adobe-section>
-
-        <labor-adobe-edex-article
-                section-bg-class="content-bg"
-                headline="Explore &quot;12 Days of Creativity&quot; activities"
-                category="Challenge"
-                text="Inspire students to design their own emojis, symmetrical snowflakes, mashup stuffies, and more. They&#39;ll build essential creative and critical thinking skills along the way."
-                cta="Explore"
-                href="https://new.express.adobe.com/learn?playlist=playlist%2Fexpress%2Ftwelve-days-of-creativity"
-                image-src="https://landing.adobe.com/dam/uploads/2024/na/edex/20241204.EdEx.Newsletter.01.png"
-                image-src-mobile="https://landing.adobe.com/dam/uploads/2024/na/edex/20241204.EdEx.Newsletter.01_m.png"
-                product="ccx"
-
-        />
-
-        <labor-adobe-edex-article
-                section-bg-class="content-bg"
-                headline="Design an ugly winter sweater"
-                category="Template"
-                text="Students can use our template, generative AI, and their writing skills to create their own sweater designs."
-                cta="Get started"
-                href="https://new.express.adobe.com/new?learn=exercise%3Aexpress%2Fhow-to%2Fin-app%2Fdesign-an-ugly-sweater&sdid=CW761TBH&mv=display&mv2=abmkt"
-                image-src="https://landing.adobe.com/dam/uploads/2024/na/edex/20241204.EdEx.Newsletter.12.png"
-                image-src-mobile="https://landing.adobe.com/dam/uploads/2024/na/edex/20241204.EdEx.Newsletter.12_m.png"
-                product="ccx"
-
-        />
-
-        <labor-adobe-edex-article
-                section-bg-class="content-bg"
-                headline="Create a &quot;you-in-the-box&quot; animation "
-                category="Template"
-                text="In this activity, students will learn to remove backgrounds from photos and change template design properties to make their own unique creations."
-                cta="Get started"
-                href="https://new.express.adobe.com/new?learn=exercise%3Aexpress%2Fhow-to%2Fin-app%2Fanimate-a-you-in-a-box&sdid=CZY71PLG&mv=display&mv2=abmkt"
-                image-src="https://landing.adobe.com/dam/uploads/2024/na/edex/20241204.EdEx.Newsletter.21.png"
-                image-src-mobile="https://landing.adobe.com/dam/uploads/2024/na/edex/20241204.EdEx.Newsletter.21_m.png"
-                product="ccx"
-
-        />
-
-        <labor-adobe-edex-article
-                section-bg-class="content-bg"
-                headline="Make a desktop vision board"
-                category="Template"
-                text="Students can build image editing and design skills as they create visual representations of their goals for 2025."
-                cta="Get started"
-                href="https://new.express.adobe.com/new?learn=exercise%3Aexpress%2Fhow-to%2Fin-app%2Fcreate-a-desktop-vision-board&sdid=D4P81KVF&mv=display&mv2=abmkt"
-                image-src="https://landing.adobe.com/dam/uploads/2024/na/edex/20241204.EdEx.Newsletter.31.png"
-                image-src-mobile="https://landing.adobe.com/dam/uploads/2024/na/edex/20241204.EdEx.Newsletter.31_m.png"
-                product="ccx"
-
-        />
-
-        <labor-adobe-edex-article
-                section-bg-class="content-bg"
-                headline="Join Adobe Creative Educators on Facebook"
-                category="Resources"
-                text="Inspire the next generation to become lifelong creators with support from a global community of educators. Get curated PD materials, information about virtual and in-person events, and the opportunity to earn badges for your resume."
-                cta="Join"
-                href="https://adobe.ly/ACEFB"
-                image-src="https://landing.adobe.com/dam/uploads/2024/na/edex/20241204.EdEx.Newsletter.41.png"
-                image-src-mobile="https://landing.adobe.com/dam/uploads/2024/na/edex/20241204.EdEx.Newsletter.41_m.png"
-                product=""
-
-        />
+        <labor-adobe-action-card
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/live-newsletter/2509-1-01.jpg"
+                image-alt="Alt Text"
+                padding-top="60px"
+                padding-bottom="60px"
+        >
+            <labor-adobe-typo-heading-four>Find us on:</labor-adobe-typo-heading-four>
+            <labor-adobe-link padding-bottom="0">Instagram</labor-adobe-link>
+            <labor-adobe-link padding-bottom="0">Facebook</labor-adobe-link>
+            <labor-adobe-link padding-bottom="0">Youtube</labor-adobe-link>
+            <labor-adobe-link padding-bottom="0">Discord</labor-adobe-link>
+            <labor-adobe-link padding-bottom="0">Threads</labor-adobe-link>
+        </labor-adobe-action-card>
 
         <labor-adobe-footer
                 facebook-url="https://www.facebook.com/AdobeEdEx/"
