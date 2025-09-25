@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.24](https://github.com/labor-digital/mjml-components/compare/v3.0.23...v3.0.24) (2025-09-25)
+
+
+### Bug Fixes
+
+* actioncard fix, move images to ftp for better email on acid testing, replace remaining placeholders ([43b2847](https://github.com/labor-digital/mjml-components/commit/43b2847eeb918a3b017d399f99c4bd159be5e5d7))
+* clean up components, add clean display, new logos/lockups & handling, fix body link classes and footer fixes ([01036e3](https://github.com/labor-digital/mjml-components/commit/01036e374818f2bc0a562bf1c1f53561dc4cb55f))
+* new actioncards, some code clean up and refactoring. todo: immersive pods ([b5fa428](https://github.com/labor-digital/mjml-components/commit/b5fa42867b8276f91111773514033d151d4a3ab0))
+* use new typekit in index ([6291e4b](https://github.com/labor-digital/mjml-components/commit/6291e4becb997135fad63f3f375bce980580b372))
+
 ### [3.0.23](https://github.com/labor-digital/mjml-components/compare/v3.0.22...v3.0.23) (2025-09-12)
 
 
