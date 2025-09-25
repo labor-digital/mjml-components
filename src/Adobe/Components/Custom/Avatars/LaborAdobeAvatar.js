@@ -39,13 +39,13 @@ export default class LaborAdobeAvatar extends BodyComponent {
     }
 
     return this.renderMJML(`
-            <mj-social align="left" icon-size="73px">
-                <mj-social-element 
-                    ${this.htmlAttributes(attrs)}
-                >
-                    ${this.getAttribute('name')}
-                </mj-social-element>
-            </mj-social>
-        `)
+      <mj-social align="left" icon-size="73px">
+        <mj-social-element 
+            ${this.htmlAttributes(attrs)}
+        >
+          ${this.getAttribute('name')}
+        </mj-social-element>
+      </mj-social>
+    `)
   }
 }

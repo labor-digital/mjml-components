@@ -18,18 +18,13 @@ export default class LaborAdobeTypoCaption extends BodyComponent {
 
     'padding-bottom': 'unit(px,%)',
     'padding-top': 'unit(px,%)',
-    'padding-left': 'unit(px,%)',
-    'padding-right': 'unit(px,%)',
   }
 
   static defaultAttributes = {
     'on-background': false,
     'font-style': 'italic',
 
-    'padding-bottom': styleMapping.spacings.custom.px0,
-    'padding-top': styleMapping.spacings.custom.px0,
-    'padding-left': styleMapping.spacings.custom.px0,
-    'padding-right': styleMapping.spacings.custom.px0,
+    'padding-bottom': styleMapping.typographies.caption.paddingBottom,
   }
 
   static additionalAttributes = {
@@ -43,16 +38,16 @@ export default class LaborAdobeTypoCaption extends BodyComponent {
 
   headStyle = (breakpoint) => `
     .labor-adobe-typo-caption-link {
-        text-decoration: underline !important;
-        color: ${
-          this.getAttribute('on-background')
-            ? LaborAdobeTypoCaption.additionalAttributes.onBackgroundColor
-            : LaborAdobeTypoCaption.additionalAttributes.linkColor
-        } !important;
+      text-decoration: underline !important;
+      color: ${
+        this.getAttribute('on-background')
+          ? LaborAdobeTypoCaption.additionalAttributes.onBackgroundColor
+          : LaborAdobeTypoCaption.additionalAttributes.linkColor
+      } !important;
     }
     .labor-adobe-typo-caption-link:hover {
-        text-decoration: none !important;
-        cursor: pointer;
+      text-decoration: none !important;
+      cursor: pointer;
     }
   `
 

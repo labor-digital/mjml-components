@@ -36,16 +36,16 @@ export default class LaborAdobeTypoDetail extends BodyComponent {
 
   headStyle = (breakpoint) => `
     .labor-adobe-typo-detail-link {
-        text-decoration: underline !important;
-        color: ${
-          this.getAttribute('on-background')
-            ? LaborAdobeTypoDetail.additionalAttributes.onBackgroundColor
-            : LaborAdobeTypoDetail.additionalAttributes.linkColor
-        } !important;
+      text-decoration: underline !important;
+      color: ${
+        this.getAttribute('on-background')
+          ? LaborAdobeTypoDetail.additionalAttributes.onBackgroundColor
+          : LaborAdobeTypoDetail.additionalAttributes.linkColor
+      } !important;
     }
     .labor-adobe-typo-detail-link:hover {
-        text-decoration: none !important;
-        cursor: pointer;
+      text-decoration: none !important;
+      cursor: pointer;
     }
   `
 

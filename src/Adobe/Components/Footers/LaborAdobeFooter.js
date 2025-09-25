@@ -45,9 +45,10 @@ export default class LaborAdobeFooter extends BodyComponent {
     socialSectionPaddingTopResponsive: styleMapping.spacings.vertical.px60,
 
     socialSectionPaddingBottom: styleMapping.spacings.vertical.px40,
-    contentSectionPaddingBottom: styleMapping.spacings.custom.px80,
+    // 80px to consider the default 18px padding bottom for legal text
+    contentSectionPaddingBottom: styleMapping.spacings.custom.px82,
   }
-  holy
+
   headStyle = (breakpoint) => `
     @media only screen and (max-width:${breakpoint}) {
       .labor-adobe-footer-section-social-column-responsive {
@@ -61,6 +62,8 @@ export default class LaborAdobeFooter extends BodyComponent {
   `
 
   render() {
+    let basepath = "https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/footer_icons/"
+
     let socialElements = ``
 
     let backgroundColor = LaborAdobeFooter.additionalAttributes.socialIconBackgroundColor
@@ -70,7 +73,7 @@ export default class LaborAdobeFooter extends BodyComponent {
         <mj-social-element
           name="facebook-noshare"
           href="${this.getAttribute('facebook-url')}"
-          src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/social-icons/facebook-logo-condensed.100x64.png"
+          src=${basepath + "facebook-logo-condensed.100x64.png"} 
           alt="Facebook"
           background-color=${backgroundColor}
           border-radius=${iconRadius}
@@ -81,7 +84,7 @@ export default class LaborAdobeFooter extends BodyComponent {
         <mj-social-element
           name="instagram"
           href="${this.getAttribute('instagram-url')}"
-          src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/social-icons/instagram-logo.100x64.png"
+          src=${basepath + "instagram-logo.100x64.png"}
           alt="Instagram"
           background-color=${backgroundColor}
           border-radius=${iconRadius}
@@ -92,7 +95,7 @@ export default class LaborAdobeFooter extends BodyComponent {
         <mj-social-element
           name="youtube"
           href="${this.getAttribute('youtube-url')}"
-          src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/social-icons/youtube-logo.100x64.png"
+          src=${basepath + "youtube-logo.100x64.png"}
           alt="YouTube"
           background-color=${backgroundColor}
           border-radius=${iconRadius}
@@ -103,7 +106,7 @@ export default class LaborAdobeFooter extends BodyComponent {
         <mj-social-element
           name="x-noshare"
           href="${this.getAttribute('x-url')}"
-          src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/social-icons/x-logo.100x64.png"
+          src=${basepath + "x-logo.100x64.png"}
           alt="X"
           background-color=${backgroundColor}
           border-radius=${iconRadius}
@@ -115,7 +118,7 @@ export default class LaborAdobeFooter extends BodyComponent {
         <mj-social-element
           name="tiktok"
           href="${this.getAttribute('tiktok-url')}"
-          src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/social-icons/tiktok-logo.100x64.png"
+          src=${basepath + "tiktok-logo.100x64.png"}
           alt="TikTok"
           background-color=${backgroundColor}
           border-radius=${iconRadius}
@@ -126,7 +129,7 @@ export default class LaborAdobeFooter extends BodyComponent {
         <mj-social-element
           name="discord"
           href="${this.getAttribute('discord-url')}"
-          src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/social-icons/discord-logo.100x64.png"
+          src=${basepath + "discord-logo.100x64.png"}
           alt="Discord"
           background-color=${backgroundColor}
           border-radius=${iconRadius}
@@ -136,8 +139,8 @@ export default class LaborAdobeFooter extends BodyComponent {
       socialElements += `
         <mj-social-element
           name="linkedin-noshare"
-          href="${this.getAttribute('linked-url')}"
-          src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/social-icons/linkedin-logo.100x64.png"
+          href="${this.getAttribute('linkedin-url')}"
+          src=${basepath + "linkedin-logo.100x64.png"}
           alt="LinkedIn"
           background-color=${backgroundColor}
           border-radius=${iconRadius}
@@ -155,7 +158,7 @@ export default class LaborAdobeFooter extends BodyComponent {
           LaborAdobeFooter.additionalAttributes.socialSectionLogoPaddingTop
         }>
           <mj-image
-            src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/social-icons/adobe-logo.red.320x76.png"
+            src=${basepath + "adobe-logo.red.320x76.png"}
             width="80px"
             height="19px"
             align="left"

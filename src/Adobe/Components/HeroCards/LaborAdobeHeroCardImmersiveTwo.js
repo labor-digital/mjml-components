@@ -5,11 +5,11 @@ import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
-  'mj-body': ['labor-adobe-hero-card-immersive-one'],
-  'labor-adobe-hero-card-immersive-one': [],
+  'mj-body': ['labor-adobe-hero-card-immersive-two'],
+  'labor-adobe-hero-card-immersive-two': [],
 })
 
-export default class LaborAdobeHeroCardImmersiveOne extends BodyComponent {
+export default class LaborAdobeHeroCardImmersiveTwo extends BodyComponent {
   static endingTag = true
 
   static allowedAttributes = {

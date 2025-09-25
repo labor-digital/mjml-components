@@ -47,16 +47,16 @@
                 tiktok-url="https://www.tiktok.com/@adobe"
                 linkedin-url="https://de.linkedin.com/company/adobe"
         >
-            <labor-adobe-typo-legal padding-bottom="10px">
+            <labor-adobe-typo-legal>
                 Adobe, the Adobe logo, Adobe Express, and the Adobe Express logo are either registered trademarks or trademarks of Adobe in the United States and/or other countries.
             </labor-adobe-typo-legal>
-            <labor-adobe-typo-legal padding-bottom="10px">
+            <labor-adobe-typo-legal>
                 This is a marketing email from Adobe Inc., 345 Park Avenue, San Jose, CA 95110 USA. <span class="nl-dce-fragment nl-dce-done" data-nl-name="adbeServiceComUnsubscriptionLink" data-nl-label="Adobe service communications unsubscription link (adbeServiceComUnsubscriptionLink)">Adobe service communications unsubscription link</span> to unsubscribe. Please review the <a href="https://www.adobe.com/privacy.html" target="_blank">Adobe Privacy Policy</a>.
             </labor-adobe-typo-legal>
-            <labor-adobe-typo-legal padding-bottom="10px">
+            <labor-adobe-typo-legal>
                 To ensure email delivery, add <a href="https://landing.adobe.com/dam/downloads/vcards/adobe.vcf" target="_blank">mail@mail.adobe.com</a> to your address book, contacts, or safe sender&nbsp;list.
             </labor-adobe-typo-legal>
-            <labor-adobe-typo-legal padding-bottom="10px">
+            <labor-adobe-typo-legal>
                 Please do not reply to this message. To contact the Adobe Education Exchange team, find options <a href="http://edex.adobe.com/help-center" target="_blank">online</a>.
             </labor-adobe-typo-legal>
             <labor-adobe-typo-legal>

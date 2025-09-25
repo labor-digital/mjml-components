@@ -19,7 +19,7 @@ export default class LaborAdobeTypoDisplayOne extends BodyComponent {
 
     // In the red figma, in all cases where DisplayOne is used in a pod or hero card, DisplayTwo or DisplayThree is used for the mobile version.
     // Examples: HeroCards (DisplayTwo), Focused - Single Pods (DisplayThree)
-    'responsive': 'enum(displayTwo,displayThree)',
+    'responsive': 'enum(none,displayTwo,displayThree)',
 
     // Only allow padding-bottom to be set if the responsive attribute is not set
     'padding-top': 'unit(px,%)',
@@ -29,6 +29,7 @@ export default class LaborAdobeTypoDisplayOne extends BodyComponent {
   static defaultAttributes = {
     'on-background': false,
     'type': 'normal',
+    'responsive': 'displayTwo',
 
     'padding-bottom': styleMapping.typographies.displayOne.padding.defaultPaddingBottom,
     'css-class': 'labor-adobe-typo-display-one-responsive-padding',
@@ -115,7 +116,7 @@ export default class LaborAdobeTypoDisplayOne extends BodyComponent {
     super(initialData);
 
     this.userAttributes = initialData.attributes || {};
-    if(!this.userAttributes['responsive'] || this.userAttributes['padding-bottom']){
+    if(!this.userAttributes['responsive'] || this.userAttributes['responsive'] === 'none' || this.userAttributes['padding-bottom']){
       this.attributes['css-class'] = '';
     } else {
       this.attributes['padding-bottom'] = styleMapping.typographies.displayOne.padding.defaultPaddingBottom;

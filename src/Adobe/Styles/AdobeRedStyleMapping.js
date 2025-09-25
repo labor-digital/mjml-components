@@ -25,6 +25,9 @@ export default class AdobeRedStyleMapping {
       socialIconBackgroundColor: {
         hex: '#F5F5F5',
       },
+      actionCardBackgroundColor: {
+        hex: '#F5F5F5',
+      },
       edexCategory: {
         hex: '#7C7C7C',
       },
@@ -98,13 +101,15 @@ export default class AdobeRedStyleMapping {
       px6: '6px',
       // product logo regular padding bottom
       px24: '24px',
+      // action card image mobile padding
+      px30: '30px',
       px34: '34px',
       // header lockup padding top/bottom
       px41: '41px',
       // actioncard default padding top/bottom
       px50: '50px',
       // footer padding with legal subtracted
-      px80: '80px',
+      px82: '82px',
     },
     vertical: {
       px12: '12px',
@@ -289,7 +294,7 @@ export default class AdobeRedStyleMapping {
       fontSize: AdobeRedStyleMapping.typographyFontSize.size11,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size18,
       color: AdobeRedStyleMapping.labor.colors.legal.hex,
-      paddingBottom: AdobeRedStyleMapping.spacings.vertical.px20,
+      paddingBottom: AdobeRedStyleMapping.typographyLineHeight.size18,
     },
 
     caption: {
@@ -302,6 +307,7 @@ export default class AdobeRedStyleMapping {
       },
       color: AdobeRedStyleMapping.colors.gray800.hex,
       linkColor: AdobeRedStyleMapping.labor.colors.captionLink.hex,
+      paddingBottom: AdobeRedStyleMapping.spacings.custom.px0,
     },
 
     detail: {

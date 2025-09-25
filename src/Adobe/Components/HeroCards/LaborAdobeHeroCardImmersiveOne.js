@@ -53,7 +53,7 @@ export default class LaborAdobeHeroCardImmersiveOne extends BodyComponent {
   }
   static additionalAttributes = {
     'header-additional-padding-bottom': styleMapping.spacings.vertical.px20,
-    'section-padding-bottom': styleMapping.spacings.vertical.px40,
+    'section-padding-bottom': styleMapping.spacings.vertical.px60,
   }
 
   render() {

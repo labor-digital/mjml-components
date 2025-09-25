@@ -86,18 +86,19 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
       `) +
       this.renderMJML(`
         <labor-adobe-section
-         padding-bottom="${this.getAttribute('padding-bottom')}" 
-         section-bg-class="${this.getAttribute('section-bg-class')}">
-         <mj-column>
-          ${
-            this.getAttribute('product')
-              ? `
-                <labor-adobe-product-logo
-                  product="${this.getAttribute('product')}"
-                  product-color="${this.getAttribute('product-color')}"
-                /> 
-                `
-              : ``
+          padding-bottom="${this.getAttribute('padding-bottom')}" 
+          section-bg-class="${this.getAttribute('section-bg-class')}"
+        >
+          <mj-column>
+            ${
+              this.getAttribute('product')
+                ? `
+                  <labor-adobe-product-logo
+                    product="${this.getAttribute('product')}"
+                    product-color="${this.getAttribute('product-color')}"
+                  /> 
+                  `
+                : ``
             }
             ${
               this.getAttribute('category')
@@ -133,7 +134,7 @@ export default class LaborAdobeEdexArticle extends BodyComponent {
                     width="${this.getAttribute('cta-width')}"
                     padding-bottom="0"
                   >
-                      ${this.getAttribute('cta')}
+                    ${this.getAttribute('cta')}
                   </labor-adobe-button>
                   `
                 : ``

@@ -55,28 +55,28 @@ export default class LaborAdobeTypoBody extends BodyComponent {
       margin-bottom: 0;
     }
     .${this.attributes['css-class']} a {
-        text-decoration: ${
-          this.getAttribute('on-background')
-            ? 'underline'
-            : 'none'
-        } !important;
-        color: ${
-          this.getAttribute('on-background')
-            ? LaborAdobeTypoBody.additionalAttributes.onBackgroundColor
-            : LaborAdobeTypoBody.additionalAttributes.linkColor
-        } !important;
+      text-decoration: ${
+        this.getAttribute('on-background')
+          ? 'underline'
+          : 'none'
+      } !important;
+      color: ${
+        this.getAttribute('on-background')
+          ? LaborAdobeTypoBody.additionalAttributes.onBackgroundColor
+          : LaborAdobeTypoBody.additionalAttributes.linkColor
+      } !important;
     }
     .${this.attributes['css-class']} a:hover {
-        text-decoration: ${
+      text-decoration: ${
         this.getAttribute('on-background')
           ? 'none'
           : 'underline'
-        } !important;
-        cursor: pointer;
+      } !important;
+      cursor: pointer;
     }
     .${this.attributes['css-class']} .labor-adobe-typo-body-link-alt {
-        text-decoration: underline !important;
-        color: ${
+      text-decoration: underline !important;
+      color: ${
         this.getAttribute('on-background')
           ? LaborAdobeTypoBody.additionalAttributes.onBackgroundColor
           : LaborAdobeTypoBody.additionalAttributes.color

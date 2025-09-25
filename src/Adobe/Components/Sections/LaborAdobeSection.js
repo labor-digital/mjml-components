@@ -56,9 +56,11 @@ export default class LaborAdobeSection extends MjSection {
     attrs['padding'] = pT + ' ' + pR + ' ' + pB + ' ' + pL
 
     return this.renderMJML(`
-      <mj-section mj-class="${this.getAttribute('section-bg-class')}" css-class="${
-      this.getAttribute('with-padding') ? 'labor-adobe-section-responsive' : ''
-    }" ${this.htmlAttributes(attrs)}>
+      <mj-section 
+        mj-class="${this.getAttribute('section-bg-class')}" 
+        css-class="${this.getAttribute('with-padding') ? 'labor-adobe-section-responsive' : ''}"
+        ${this.htmlAttributes(attrs)}
+      >
         ${this.renderChildren(this.props.children, {
           rawXML: true,
           renderer: (component) => component.render,

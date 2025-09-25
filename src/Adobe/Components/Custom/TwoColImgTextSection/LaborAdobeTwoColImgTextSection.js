@@ -42,13 +42,13 @@ export default class LaborAdobeTwoColImgTextSection extends BodyComponent {
   }
 
   headStyle = (breakpoint) => `
-      @media only screen and (max-width: ${breakpoint}) {
-        .labor-adobe-edex-two-col-img-text-section-responsive > table > tbody > tr > td {
-          padding-left: ${styleMapping.grids.mobile.contentSpacing} !important;
-          padding-right: ${styleMapping.grids.mobile.contentSpacing} !important;
-        }
+    @media only screen and (max-width: ${breakpoint}) {
+      .labor-adobe-edex-two-col-img-text-section-responsive > table > tbody > tr > td {
+        padding-left: ${styleMapping.grids.mobile.contentSpacing} !important;
+        padding-right: ${styleMapping.grids.mobile.contentSpacing} !important;
       }
-    `
+    }
+  `
 
   render() {
     const defaultPadding = this.getAttribute('with-padding') ? styleMapping.grids.desktop.contentSpacing : 0

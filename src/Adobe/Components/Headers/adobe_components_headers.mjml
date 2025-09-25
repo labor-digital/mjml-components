@@ -241,7 +241,7 @@
         <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
             <mj-column>
                 <labor-adobe-typo-heading-three>
-                    Header (product & custom src/height/width with href,alt, padding)
+                    Header (product & custom src/height/width with href, alt, padding)
                 </labor-adobe-typo-heading-three>
             </mj-column>
         </labor-adobe-section>
@@ -254,8 +254,8 @@
 
         <labor-adobe-header
                 product-src-overwrite="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_education_exchange.red.928x168.png"
-                product-height="42px"
-                product-width="232px"
+                product-height-overwrite="84px"
+                product-width-overwrite="464px"
                 header-bg-class="content-bg"
                 alt="Adobe Education Exchange"
                 href="https://google.com"
@@ -263,8 +263,17 @@
 
         <labor-adobe-header
                 product-src-overwrite="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_education_exchange.red.928x168.png"
-                product-height="42px"
-                product-width="232px"
+                product-height-overwrite="42px"
+                product-width-overwrite="232px"
+                header-bg-class="content-bg"
+                alt="Adobe Education Exchange"
+                href="https://google.com"
+        />
+
+        <labor-adobe-header
+                product-src-overwrite="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_education_exchange.red.928x168.png"
+                product-height-overwrite="42px"
+                product-width-overwrite="232px"
                 header-bg-class="content-bg"
                 alt="Adobe Education Exchange"
                 href="https://google.com"

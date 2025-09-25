@@ -129,7 +129,8 @@ export default class LaborAdobePod extends BodyComponent {
                               <labor-adobe-button
                                   type="quiet"
                                   href="${this.getAttribute('primary-cta-href')}"
-                                  width="${this.getAttribute('primary-cta-width')}"               
+                                  width="${this.getAttribute('primary-cta-width')}"   
+                                  padding-bottom="0"            
                               >
                                   ${this.getAttribute('primary-cta')}
                               </labor-adobe-button>`
@@ -142,6 +143,7 @@ export default class LaborAdobePod extends BodyComponent {
                               <labor-adobe-link
                                   type="normal"
                                   href="${this.getAttribute('secondary-cta-href')}"
+                                  padding-bottom="0"       
                               >
                                   ${this.getAttribute('secondary-cta')}
                               </labor-adobe-link>`

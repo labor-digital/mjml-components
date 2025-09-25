@@ -30,8 +30,8 @@ export default class LaborAdobeHeader extends BodyComponent {
     // Not all mails use the default lockups
     // In these cases it should still be possible to use a custom image
     'product-src-overwrite': 'string',
-    'product-height': 'unit(px)',
-    'product-width': 'unit(px)',
+    'product-height-overwrite': 'unit(px)',
+    'product-width-overwrite': 'unit(px)',
 
     'padding-top': 'unit(px)',
     'padding-bottom': 'unit(px)',
@@ -95,8 +95,8 @@ export default class LaborAdobeHeader extends BodyComponent {
       src = this.getAttribute('product-src-overwrite');
       title = this.getAttribute('title') ?? '';
       alt = this.getAttribute('alt') ?? '';
-      imgHeight = this.getAttribute('product-height');
-      imgWidth = this.getAttribute('product-width');
+      imgHeight = this.getAttribute('product-height-overwrite') ?? this.getAttribute('product-height');
+      imgWidth = this.getAttribute('product-width-overwrite') ?? this.getAttribute('product-width');
 
     } else {
       // default lockup, use values from mapping
@@ -107,7 +107,7 @@ export default class LaborAdobeHeader extends BodyComponent {
       alt = productLockup.name + ' logo';
 
       let getImageRatio = () => {
-        let cleanTargetHeight = parseInt(this.getAttribute('product-height').replace('px', ''))
+        let cleanTargetHeight = parseInt(imgHeight.replace('px', ''))
         let cleanImageHeight = parseInt(productLockup.height)
 
         return cleanImageHeight / cleanTargetHeight

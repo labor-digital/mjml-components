@@ -44,13 +44,13 @@ export default class LaborAdobeFooterBand extends BodyComponent {
     }
 
     return this.renderMJML(`
-            <labor-adobe-section background-color="${this.getAttribute('bg-color')}">
-                <mj-column>
-                    <mj-text ${this.htmlAttributes(typoAttrs)} >
-                        ${this.getContent()}
-                    </mj-text>
-                </mj-column>
-            </labor-adobe-section>
-        `)
+      <labor-adobe-section background-color="${this.getAttribute('bg-color')}">
+        <mj-column>
+          <mj-text ${this.htmlAttributes(typoAttrs)} >
+            ${this.getContent()}
+          </mj-text>
+        </mj-column>
+      </labor-adobe-section>
+    `)
   }
 }

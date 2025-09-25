@@ -26,15 +26,15 @@ export default class AdobeProductLockupMapping {
     brand :{
       name: 'Adobe',
       key: 'brand',
-      width: 312,
+      width: 328,
       height: 168,
       scaling: 4,
       images: {
         red: {
-          location: 'brand.red.312x168.png'
+          location: 'brand.01.red.328x168.png'
         },
         white: {
-          location: 'brand.white.312x168.png'
+          location: 'brand.01.white.328x168.png'
         },
       },
     },

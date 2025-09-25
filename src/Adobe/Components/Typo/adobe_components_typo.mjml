@@ -270,7 +270,7 @@
         </mj-section>
         <labor-adobe-section>
             <mj-column>
-                <labor-adobe-typo-display-one>Display One Rr1</labor-adobe-typo-display-one>
+                <labor-adobe-typo-display-one responsive="none">Display One Rr1</labor-adobe-typo-display-one>
             </mj-column>
         </labor-adobe-section>
         <mj-section>
@@ -293,7 +293,7 @@
         </mj-section>
         <labor-adobe-section>
             <mj-column>
-                <labor-adobe-typo-display-one padding-bottom="71px">Display One Rr2</labor-adobe-typo-display-one>
+                <labor-adobe-typo-display-one padding-bottom="71px" responsive="none">Display One Rr2</labor-adobe-typo-display-one>
             </mj-column>
         </labor-adobe-section>
         <mj-section>
@@ -316,7 +316,7 @@
         </mj-section>
         <labor-adobe-section>
             <mj-column>
-                <labor-adobe-typo-display-one padding-top="70px">Display One Rr3</labor-adobe-typo-display-one>
+                <labor-adobe-typo-display-one padding-top="70px" responsive="none">Display One Rr3</labor-adobe-typo-display-one>
             </mj-column>
         </labor-adobe-section>
         <mj-section>
@@ -339,7 +339,7 @@
         </mj-section>
         <labor-adobe-section>
             <mj-column>
-                <labor-adobe-typo-display-one type="quiet">Display One Rr4</labor-adobe-typo-display-one>
+                <labor-adobe-typo-display-one type="quiet" responsive="none">Display One Rr4</labor-adobe-typo-display-one>
             </mj-column>
         </labor-adobe-section>
         <mj-section>
@@ -362,7 +362,7 @@
         </mj-section>
         <labor-adobe-section>
             <mj-column>
-                <labor-adobe-typo-display-one type="quiet" padding-bottom="70px">Display One Rr5</labor-adobe-typo-display-one>
+                <labor-adobe-typo-display-one type="quiet" padding-bottom="70px" responsive="none">Display One Rr5</labor-adobe-typo-display-one>
             </mj-column>
         </labor-adobe-section>
         <mj-section>
@@ -374,7 +374,7 @@
         <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
             <mj-column>
                 <labor-adobe-typo-heading-three>
-                    Display One - normal - responsiveDisplayTwo
+                    Display One - normal - responsiveDisplayTwo (default)
                 </labor-adobe-typo-heading-three>
             </mj-column>
         </labor-adobe-section>
@@ -385,7 +385,7 @@
         </mj-section>
         <labor-adobe-section>
             <mj-column>
-                <labor-adobe-typo-display-one responsive="displayTwo" >Display One Rr6</labor-adobe-typo-display-one>
+                <labor-adobe-typo-display-one>Display One Rr6</labor-adobe-typo-display-one>
             </mj-column>
         </labor-adobe-section>
         <mj-section>
@@ -397,7 +397,7 @@
         <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
             <mj-column>
                 <labor-adobe-typo-heading-three>
-                    Display One - normal - responsiveDisplayTwo - with padding bottom
+                    Display One - normal - responsiveDisplayTwo (default) - with padding bottom
                 </labor-adobe-typo-heading-three>
             </mj-column>
         </labor-adobe-section>
@@ -408,7 +408,7 @@
         </mj-section>
         <labor-adobe-section>
             <mj-column>
-                <labor-adobe-typo-display-one responsive="displayTwo" padding-bottom="71px">Display One Rr7</labor-adobe-typo-display-one>
+                <labor-adobe-typo-display-one padding-bottom="71px">Display One Rr7</labor-adobe-typo-display-one>
             </mj-column>
         </labor-adobe-section>
         <mj-section>
@@ -420,7 +420,7 @@
         <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
             <mj-column>
                 <labor-adobe-typo-heading-three>
-                    Display One - quiet - responsiveDisplayTwo
+                    Display One - quiet - responsiveDisplayTwo (default)
                 </labor-adobe-typo-heading-three>
             </mj-column>
         </labor-adobe-section>
@@ -431,7 +431,7 @@
         </mj-section>
         <labor-adobe-section>
             <mj-column>
-                <labor-adobe-typo-display-one type="quiet" responsive="displayTwo" >Display One Rr8</labor-adobe-typo-display-one>
+                <labor-adobe-typo-display-one type="quiet">Display One Rr8</labor-adobe-typo-display-one>
             </mj-column>
         </labor-adobe-section>
         <mj-section>

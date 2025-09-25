@@ -23,7 +23,7 @@ export default class LaborAdobeTypoDisplayThree extends BodyComponent {
     'on-background': false,
     'type': 'normal',
 
-    'padding-bottom': styleMapping.spacings.vertical.px16,
+    'padding-bottom': styleMapping.typographies.displayThree.paddingBottom,
   }
 
   static additionalAttributes = {
@@ -32,7 +32,7 @@ export default class LaborAdobeTypoDisplayThree extends BodyComponent {
     fontWeight: styleMapping.typographies.displayThree.fontWeight,
     letterSpacing: styleMapping.typographies.displayThree.letterSpacing,
     onBackgroundColor: styleMapping.colors.white.hex,
-    color: styleMapping.typographies.displayThree.paddingBottom,
+    color: styleMapping.typographies.displayThree.color,
   }
 
   render() {
