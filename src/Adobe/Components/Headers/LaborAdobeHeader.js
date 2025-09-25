@@ -145,15 +145,19 @@ export default class LaborAdobeHeader extends BodyComponent {
         : '0',
     }
 
+    let sectionAttrs = {
+      'section-bg-class': this.getAttribute('header-bg-class'),
+      'with-padding': false,
+      'padding-bottom': this.getAttribute('additional-padding-bottom') ?? 0
+    }
+    if(this.getAttribute('border')) sectionAttrs['border-top'] = LaborAdobeHeader.additionalAttributes.withBorder;
+
     if (title) imgAttrs['title'] = title;
     if (alt) imgAttrs['alt'] = alt;
 
     return this.renderMJML(`
       <labor-adobe-section
-        section-bg-class="${this.getAttribute('header-bg-class')}"
-        border-top="${this.getAttribute('border') ? LaborAdobeHeader.additionalAttributes.withBorder : ''}"
-        with-padding="false"
-        padding-bottom=${this.getAttribute('additional-padding-bottom') ?? 0}"
+        ${this.htmlAttributes(sectionAttrs)}
       >
         <mj-column>
           <mj-image ${this.htmlAttributes(imgAttrs)} />
