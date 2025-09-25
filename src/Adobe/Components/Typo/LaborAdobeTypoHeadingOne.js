@@ -43,6 +43,7 @@ export default class LaborAdobeTypoHeadingOne extends BodyComponent {
       'color': this.getAttribute('on-background')
         ? LaborAdobeTypoHeadingOne.additionalAttributes.onBackgroundColor
         : LaborAdobeTypoHeadingOne.additionalAttributes.color,
+      'font-family': "adobe-clean-display, 'adobe-clean', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'",
     }
 
     return this.renderMJML(`

@@ -44,6 +44,7 @@ export default class LaborAdobeTypoHeadingFour extends BodyComponent {
       'color': this.getAttribute('on-background')
         ? LaborAdobeTypoHeadingFour.additionalAttributes.onBackgroundColor
         : LaborAdobeTypoHeadingFour.additionalAttributes.color,
+      'font-family': "adobe-clean-display, 'adobe-clean', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'",
     }
 
     return this.renderMJML(`
