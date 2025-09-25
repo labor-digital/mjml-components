@@ -14,12 +14,15 @@ export default class LaborAdobeTypoHeadingOne extends BodyComponent {
 
   static allowedAttributes = {
     'on-background': 'boolean',
+
+    'padding-top': 'unit(px,%)',
     'padding-bottom': 'unit(px,%)',
   }
 
   static defaultAttributes = {
     'on-background': false,
-    'padding-bottom': styleMapping.spacings.vertical.px0,
+
+    'padding-bottom': styleMapping.typographies.headingOne.paddingBottom,
   }
 
   static additionalAttributes = {
@@ -40,7 +43,6 @@ export default class LaborAdobeTypoHeadingOne extends BodyComponent {
       'color': this.getAttribute('on-background')
         ? LaborAdobeTypoHeadingOne.additionalAttributes.onBackgroundColor
         : LaborAdobeTypoHeadingOne.additionalAttributes.color,
-      'padding-bottom': this.getAttribute('padding-bottom'),
     }
 
     return this.renderMJML(`

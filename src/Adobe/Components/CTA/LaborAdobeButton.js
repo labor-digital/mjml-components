@@ -7,6 +7,7 @@ const styleMapping = AdobeRedStyleMapping
 registerDependencies({
   'labor-adobe-button': [],
   'mj-column': ['labor-adobe-button'],
+  'labor-adobe-actioncard': ['labor-adobe-button'],
 })
 
 export default class LaborAdobeButton extends BodyComponent {
@@ -15,14 +16,19 @@ export default class LaborAdobeButton extends BodyComponent {
   static allowedAttributes = {
     'type': 'enum(standard,inverted,quiet)',
     'href': 'string',
-    'padding-bottom': 'unit(px,%)',
     'width': 'unit(px)',
+
+    'padding-bottom': 'unit(px,%)',
+    'padding-top': 'unit(px,%)',
   }
 
   static defaultAttributes = {
-    type: 'standard',
-    href: '#',
-    width: '200px',
+    'type': 'standard',
+    'href': '#',
+    'width': '200px',
+
+    'padding-bottom': styleMapping.typographies.cta.paddingBottom,
+    'padding-top': styleMapping.typographies.cta.paddingTop,
   }
 
   render() {

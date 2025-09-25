@@ -1,8 +1,8 @@
 <mjml owa="desktop">
     <mj-head>
-        <mj-title>LABOR Adobe CTA</mj-title>
+        <mj-title>LABOR Adobe Headers</mj-title>
         <mj-preview></mj-preview>
-        <mj-font href="https://use.typekit.net/onr8tbr.css" name="adobe-clean"/>
+        <mj-font href="https://use.typekit.net/ulc2sof.css" name="adobe-clean"/>
         <mj-attributes>
             <mj-class name="body-bg" background-color="#eaeaea" />
             <mj-class name="footer-bg" background-color="#f5f5f5" />
@@ -10,7 +10,6 @@
             <mj-class name="heading-bg"  background-color="#FAFAFA" />
             <mj-class name="inverted-bg"  background-color="#464646" />
             <mj-class name="divider" border-width="1px" border-style="dotted" border-color="#646464" />
-            <mj-class name="divider-inverted" border-width="1px" border-style="dotted" border-color="#FFF" />
 
             <mj-all font-family="'adobe-clean', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'" padding="0" />
         </mj-attributes>
@@ -35,22 +34,201 @@
         <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
             <mj-column>
                 <labor-adobe-typo-heading-three>
-                    Header
+                    Header (red_gray / red_black)
                 </labor-adobe-typo-heading-three>
             </mj-column>
         </labor-adobe-section>
 
-        <mj-section>
-            <mj-column>
-                <mj-divider mj-class="divider" />
-            </mj-column>
-        </mj-section>
+        <labor-adobe-header
+                product="acrobat"
+                product-color="red_gray"
+                header-bg-class="content-bg"
+        />
+        <labor-adobe-header
+                product="acrobat"
+                product-color="red_black"
+                header-bg-class="content-bg"
+        />
 
         <labor-adobe-header
-                src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_education_exchange.red.928x168.png"
-                height="42px"
-                width="232px"
-                alt="Adobe Education Exchange"
+                product="acrobat_pro"
+                product-color="red_gray"
+                header-bg-class="content-bg"
+        />
+        <labor-adobe-header
+                product="acrobat_pro"
+                product-color="red_black"
+                header-bg-class="content-bg"
+        />
+
+        <labor-adobe-header
+                product="acrobat_reader"
+                product-color="red_gray"
+                header-bg-class="content-bg"
+        />
+        <labor-adobe-header
+                product="acrobat_reader"
+                product-color="red_black"
+                header-bg-class="content-bg"
+        />
+
+        <labor-adobe-header
+                product="acrobat_sign"
+                product-color="red_gray"
+                header-bg-class="content-bg"
+        />
+        <labor-adobe-header
+                product="acrobat_sign"
+                product-color="red_black"
+                header-bg-class="content-bg"
+        />
+
+        <labor-adobe-header
+                product="acrobat_standard"
+                product-color="red_gray"
+                header-bg-class="content-bg"
+        />
+        <labor-adobe-header
+                product="acrobat_standard"
+                product-color="red_black"
+                header-bg-class="content-bg"
+        />
+
+        <labor-adobe-header
+                product="after_effects"
+                product-color="red_gray"
+                header-bg-class="content-bg"
+        />
+        <labor-adobe-header
+                product="after_effects"
+                product-color="red_black"
+                header-bg-class="content-bg"
+        />
+
+        <labor-adobe-header
+                product="creative_cloud"
+                product-color="red_gray"
+                header-bg-class="content-bg"
+        />
+        <labor-adobe-header
+                product="creative_cloud"
+                product-color="red_black"
+                header-bg-class="content-bg"
+        />
+
+        <labor-adobe-header
+                product="document_cloud"
+                product-color="red_gray"
+                header-bg-class="content-bg"
+        />
+        <labor-adobe-header
+                product="document_cloud"
+                product-color="red_black"
+                header-bg-class="content-bg"
+        />
+
+        <labor-adobe-header
+                product="experience_cloud"
+                product-color="red_gray"
+                header-bg-class="content-bg"
+        />
+        <labor-adobe-header
+                product="experience_cloud"
+                product-color="red_black"
+                header-bg-class="content-bg"
+        />
+
+        <labor-adobe-header
+                product="express"
+                product-color="red_gray"
+                header-bg-class="content-bg"
+        />
+        <labor-adobe-header
+                product="express"
+                product-color="red_black"
+                header-bg-class="content-bg"
+        />
+
+        <labor-adobe-header
+                product="firefly"
+                product-color="red_gray"
+                header-bg-class="content-bg"
+        />
+        <labor-adobe-header
+                product="firefly"
+                product-color="red_black"
+                header-bg-class="content-bg"
+        />
+
+        <labor-adobe-header
+                product="illustrator"
+                product-color="red_gray"
+                header-bg-class="content-bg"
+        />
+        <labor-adobe-header
+                product="illustrator"
+                product-color="red_black"
+                header-bg-class="content-bg"
+        />
+
+        <labor-adobe-header
+                product="indesign"
+                product-color="red_gray"
+                header-bg-class="content-bg"
+        />
+        <labor-adobe-header
+                product="indesign"
+                product-color="red_black"
+                header-bg-class="content-bg"
+        />
+
+        <labor-adobe-header
+                product="photoshop"
+                product-color="red_gray"
+                header-bg-class="content-bg"
+        />
+        <labor-adobe-header
+                product="photoshop"
+                product-color="red_black"
+                header-bg-class="content-bg"
+        />
+
+        <labor-adobe-header
+                product="premiere_pro"
+                product-color="red_gray"
+                header-bg-class="content-bg"
+        />
+        <labor-adobe-header
+                product="premiere_pro"
+                product-color="red_black"
+                header-bg-class="content-bg"
+        />
+
+        <labor-adobe-header
+                product="scan"
+                product-color="red_gray"
+                header-bg-class="content-bg"
+        />
+        <labor-adobe-header
+                product="scan"
+                product-color="red_black"
+                header-bg-class="content-bg"
+        />
+
+        <labor-adobe-header
+                product="stock"
+                product-color="red_gray"
+                header-bg-class="content-bg"
+        />
+        <labor-adobe-header
+                product="stock"
+                product-color="red_black"
+                header-bg-class="content-bg"
+        />
+
+        <labor-adobe-header
+                product="brand"
+                product-color="red"
                 header-bg-class="content-bg"
         />
 
@@ -63,16 +241,79 @@
         <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
             <mj-column>
                 <labor-adobe-typo-heading-three>
-                    Product Header
+                    Header (product & custom src/height/width with href, alt, padding)
                 </labor-adobe-typo-heading-three>
             </mj-column>
         </labor-adobe-section>
 
         <mj-section>
             <mj-column>
-                <mj-divider mj-class="divider" />
+                <mj-divider mj-class="divider"/>
             </mj-column>
         </mj-section>
+
+        <labor-adobe-header
+                product-src-overwrite="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_education_exchange.red.928x168.png"
+                product-height-overwrite="84px"
+                product-width-overwrite="464px"
+                header-bg-class="content-bg"
+                alt="Adobe Education Exchange"
+                href="https://google.com"
+        />
+
+        <labor-adobe-header
+                product-src-overwrite="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_education_exchange.red.928x168.png"
+                product-height-overwrite="42px"
+                product-width-overwrite="232px"
+                header-bg-class="content-bg"
+                alt="Adobe Education Exchange"
+                href="https://google.com"
+        />
+
+        <labor-adobe-header
+                product-src-overwrite="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_education_exchange.red.928x168.png"
+                product-height-overwrite="42px"
+                product-width-overwrite="232px"
+                header-bg-class="content-bg"
+                alt="Adobe Education Exchange"
+                href="https://google.com"
+                with-padding="false"
+        />
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider"/>
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Header (with border)
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider"/>
+            </mj-column>
+        </mj-section>
+
+
+        <labor-adobe-header
+                product="stock"
+                product-color="red_black"
+                header-bg-class="content-bg"
+                border="true"
+        />
+
+        <labor-adobe-header
+                product="brand"
+                product-color="red"
+                header-bg-class="content-bg"
+                border="true"
+        />
 
         <labor-adobe-section padding-bottom="100px" section-bg-class="heading-bg" />
 

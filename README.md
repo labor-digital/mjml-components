@@ -59,4 +59,4 @@ exports.build = gulp.series(
 
 ## Documentation
 
-Will be available in the future.
+- Media queries should use max-width, not min-width, to prevent issues with Outlook desktop.

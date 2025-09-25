@@ -14,12 +14,16 @@ export default class LaborAdobeTypoDisplayThree extends BodyComponent {
   static allowedAttributes = {
     'on-background': 'boolean',
     'type': 'enum(normal,quiet)',
+
+    'padding-top': 'unit(px,%)',
     'padding-bottom': 'unit(px,%)',
   }
+
   static defaultAttributes = {
     'on-background': false,
     'type': 'normal',
-    'padding-bottom': styleMapping.spacings.vertical.px8,
+
+    'padding-bottom': styleMapping.typographies.displayThree.paddingBottom,
   }
 
   static additionalAttributes = {
@@ -40,7 +44,6 @@ export default class LaborAdobeTypoDisplayThree extends BodyComponent {
       'color': this.getAttribute('on-background')
         ? LaborAdobeTypoDisplayThree.additionalAttributes.onBackgroundColor
         : LaborAdobeTypoDisplayThree.additionalAttributes.color,
-      'padding-bottom': this.getAttribute('padding-bottom'),
     }
 
     return this.renderMJML(`

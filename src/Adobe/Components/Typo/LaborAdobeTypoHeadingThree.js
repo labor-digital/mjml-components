@@ -6,6 +6,7 @@ const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
   'mj-column': ['labor-adobe-typo-heading-three'],
+  'labor-adobe-actioncard': ['labor-adobe-typo-heading-three'],
   'labor-adobe-typo-heading-three': [],
 })
 
@@ -14,11 +15,15 @@ export default class LaborAdobeTypoHeadingThree extends BodyComponent {
 
   static allowedAttributes = {
     'on-background': 'boolean',
+
+    'padding-top': 'unit(px,%)',
     'padding-bottom': 'unit(px,%)',
   }
 
   static defaultAttributes = {
     'on-background': false,
+
+    'padding-bottom': styleMapping.typographies.headingThree.paddingBottom,
   }
 
   static additionalAttributes = {
@@ -39,7 +44,6 @@ export default class LaborAdobeTypoHeadingThree extends BodyComponent {
       'color': this.getAttribute('on-background')
         ? LaborAdobeTypoHeadingThree.additionalAttributes.onBackgroundColor
         : LaborAdobeTypoHeadingThree.additionalAttributes.color,
-      'padding-bottom': this.getAttribute('padding-bottom'),
     }
 
     return this.renderMJML(`

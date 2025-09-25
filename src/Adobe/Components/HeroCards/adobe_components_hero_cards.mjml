@@ -2,7 +2,7 @@
     <mj-head>
         <mj-title>LABOR Adobe Hero Cards</mj-title>
         <mj-preview></mj-preview>
-        <mj-font href="https://use.typekit.net/onr8tbr.css" name="adobe-clean"/>
+        <mj-font href="https://use.typekit.net/ulc2sof.css" name="adobe-clean"/>
         <mj-attributes>
             <mj-class name="body-bg" background-color="#eaeaea" />
             <mj-class name="footer-bg" background-color="#f5f5f5" />
@@ -55,10 +55,8 @@
 
 
         <labor-adobe-hero-card-simple-one
-            header-image-src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_creative_cloud_express.black.328x60.png"
-            header-alt="AltText"
-            header-width="164px"
-            header-height="30px"
+            product="express"
+            product-color="red_black"
 
             headline="Lorem ipsum dolor sit amet. xx/xx"
 
@@ -89,10 +87,8 @@
         </mj-section>
 
         <labor-adobe-hero-card-simple-two
-            header-image-src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_creative_cloud_express.black.328x60.png"
-            header-alt="AltText"
-            header-width="164px"
-            header-height="30px"
+            product="express"
+            product-color="red_black"
 
             pre-text="June 2025"
             headline="Lorem ipsum dolor sit amet. xx/xx"
@@ -119,18 +115,15 @@
         </mj-section>
 
         <labor-adobe-hero-card-split-one
-            header-image-src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_creative_cloud_express.black.328x60.png"
-            header-alt="AltText"
-            header-width="164px"
-            header-height="30px"
+            product="photoshop"
 
             headline="Lorem ipsum dolor sit amet. xx/xx"
 
             cta-text="Test button"
             cta-href="#"
 
-            image-src="https://landing.adobe.com/dam/uploads/2021/emea/forrester_header_03_1200px.jpg"
-            image-src-mobile="https://landing.adobe.com/dam/uploads/2021/emea/forrester_header_03_800px.jpg"
+            image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/hero_card.jpg"
+            image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/hero_card_m.jpg"
         >
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 18/25
         </labor-adobe-hero-card-split-one>
@@ -156,10 +149,7 @@
         </mj-section>
 
         <labor-adobe-hero-card-split-two
-            header-image-src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_creative_cloud_express.black.328x60.png"
-            header-alt="AltText"
-            header-width="164px"
-            header-height="30px"
+            product="stock"
 
             pre-text="June 2025"
             headline="Lorem ipsum dolor sit amet. xx/xx"
@@ -167,8 +157,8 @@
             cta-text="Test button"
             cta-href="#"
 
-            image-src="https://landing.adobe.com/dam/uploads/2021/emea/forrester_header_03_1200px.jpg"
-            image-src-mobile="https://landing.adobe.com/dam/uploads/2021/emea/forrester_header_03_800px.jpg"
+            image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/hero_card.jpg"
+            image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/hero_card_m.jpg"
        />
 
         <mj-section>
@@ -192,19 +182,18 @@
         </mj-section>
 
         <labor-adobe-hero-card-immersive-one
+                header-bg-class="immersive-bg"
                 section-bg-class="immersive-bg"
 
-                header-image-src="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_creative_cloud_express.black.328x60.png"
-                header-alt="AltText"
-                header-width="164px"
-                header-height="30px"
+                product="photoshop"
+                product-color="white_black"
 
-                headline="Lorem ipsum dolor sit amet. xx/xx"
+                headline="Lorem ipsum dolor sit amet.1 xx/xx"
 
                 cta-text="Test button"
                 cta-href="#"
 
-                image-src="https://landing.adobe.com/dam/uploads/2023/na/2023-digital-edge-asset-student-mail-US-3.png"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/hero_card_immersive.png"
         >
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 18/25
         </labor-adobe-hero-card-immersive-one>

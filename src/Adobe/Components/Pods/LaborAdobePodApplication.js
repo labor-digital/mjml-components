@@ -6,7 +6,7 @@ const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
   'mj-body': ['labor-adobe-pod-application'],
-  'labor-adobe-pod': [],
+  'labor-adobe-pod-application': [],
 })
 
 export default class LaborAdobePodApplication extends BodyComponent {
@@ -16,6 +16,7 @@ export default class LaborAdobePodApplication extends BodyComponent {
     'section-bg-class': 'string',
 
     'product': 'string',
+    'product-color': 'string',
     'product-type': 'string',
 
     'primary-cta': 'string',
@@ -23,25 +24,26 @@ export default class LaborAdobePodApplication extends BodyComponent {
   }
 
   static defaultAttributes = {
-    'product': 'ccx',
-    'product-type': 'grey',
+    'product': 'express',
+    'product-color': 'gray',
+    'product-type': 'regular',
 
     'section-bg-class': 'content-bg',
   }
 
   render() {
     return this.renderMJML(`
-                <labor-adobe-pod
-                    section-bg-class="${this.getAttribute('section-bg-class')}"
-     
-                    product="${this.getAttribute('product')}"
-                    product-type="${this.getAttribute('product-type')}"
-                    
-                    primary-cta="${this.getAttribute('primary-cta')}"
-                    primary-cta-href="${this.getAttribute('primary-cta-href')}"
-                >
-                    ${this.getContent()}
-                </labor-adobe-pod>
-            `)
+      <labor-adobe-pod
+          section-bg-class="${this.getAttribute('section-bg-class')}"
+
+          product="${this.getAttribute('product')}"
+          product-type="${this.getAttribute('product-type')}"
+          
+          primary-cta="${this.getAttribute('primary-cta')}"
+          primary-cta-href="${this.getAttribute('primary-cta-href')}"
+      >
+          ${this.getContent()}
+      </labor-adobe-pod>
+  `)
   }
 }

@@ -1,0 +1,183 @@
+<mjml owa="desktop">
+    <mj-head>
+        <mj-title>LABOR Adobe Two Col Img Text Section</mj-title>
+        <mj-preview></mj-preview>
+        <mj-font href="https://use.typekit.net/ulc2sof.css" name="adobe-clean"/>
+        <mj-attributes>
+            <mj-class name="body-bg" background-color="#eaeaea" />
+            <mj-class name="footer-bg" background-color="#f5f5f5" />
+            <mj-class name="content-bg" background-color="#ffffff" />
+            <mj-class name="heading-bg"  background-color="#FAFAFA" />
+            <mj-class name="divider" border-width="1px" border-style="dotted" border-color="#646464" />
+
+            <mj-all font-family="'adobe-clean', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'" padding="0" />
+        </mj-attributes>
+        <mj-breakpoint width="480px"/>
+        <mj-style>
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        </mj-style>
+    </mj-head>
+    <mj-body mj-class="body-bg">
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px">
+            <mj-column>
+                <labor-adobe-typo-heading-one>
+                    LABOR Adobe Two Col Img Text Section
+                </labor-adobe-typo-heading-one>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                   Two Col Img Text Section
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-two-col-img-text-section
+                section-bg-class="content-bg"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_rtl.jpg"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_m.jpg"
+                direction="rtl"
+        >
+            <labor-adobe-typo-heading-four>
+                Give your students exclusive access to Adobe MAX.
+            </labor-adobe-typo-heading-four>
+            <labor-adobe-typo-body padding-bottom="40px">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor magna aliquyam erat, sed diam voluptua.
+            </labor-adobe-typo-body>
+            <labor-adobe-button href="#" padding-bottom="0">
+                Learn more
+            </labor-adobe-button>
+        </labor-adobe-two-col-img-text-section>
+
+        <labor-adobe-two-col-img-text-section
+                section-bg-class="content-bg"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_ltr.jpg"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_m.jpg"
+                direction="ltr"
+        >
+            <labor-adobe-typo-body padding-bottom="0">
+                <strong>Serwah Attafuah</strong> is a multidisciplinary artist based on Dharug land in West Sydney, Australia, whose clients include Mercedes Benz and Charli XCX.
+            </labor-adobe-typo-body>
+        </labor-adobe-two-col-img-text-section>
+
+        <labor-adobe-two-col-img-text-section
+                section-bg-class="content-bg"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_rtl.jpg"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_m.jpg"
+                direction="rtl"
+        >
+            <labor-adobe-typo-heading-four>
+                Give your students exclusive access to Adobe MAX.
+            </labor-adobe-typo-heading-four>
+            <labor-adobe-typo-body padding-bottom="40px">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor magna aliquyam erat, sed diam voluptua.
+            </labor-adobe-typo-body>
+            <labor-adobe-button href="#" padding-bottom="0">
+                Learn more
+            </labor-adobe-button>
+        </labor-adobe-two-col-img-text-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Two Col Img Text Section - All paddings 70px
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-two-col-img-text-section
+                section-bg-class="content-bg"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_rtl.jpg"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_m.jpg"
+                direction="rtl"
+                padding-bottom="70px"
+                padding-top="70px"
+                padding-bottom-cols="70px"
+        >
+            <labor-adobe-typo-heading-four>
+                Give your students exclusive access to Adobe MAX.
+            </labor-adobe-typo-heading-four>
+            <labor-adobe-typo-body padding-bottom="40px">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor magna aliquyam erat, sed diam voluptua.
+            </labor-adobe-typo-body>
+            <labor-adobe-button href="#" padding-bottom="0">
+                Learn more
+            </labor-adobe-button>
+        </labor-adobe-two-col-img-text-section>
+
+        <labor-adobe-two-col-img-text-section
+                section-bg-class="content-bg"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_ltr.jpg"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_m.jpg"
+                direction="ltr"
+                padding-bottom="70px"
+                padding-top="70px"
+                padding-bottom-cols="70px"
+        >
+            <labor-adobe-typo-body padding-bottom="0">
+                <strong>Serwah Attafuah</strong> is a multidisciplinary artist based on Dharug land in West Sydney, Australia, whose clients include Mercedes Benz and Charli XCX.
+            </labor-adobe-typo-body>
+        </labor-adobe-two-col-img-text-section>
+
+        <labor-adobe-two-col-img-text-section
+                section-bg-class="content-bg"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_rtl.jpg"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_m.jpg"
+                direction="rtl"
+                padding-bottom="70px"
+                padding-top="70px"
+                padding-bottom-cols="70px"
+        >
+            <labor-adobe-typo-heading-four>
+                Give your students exclusive access to Adobe MAX.
+            </labor-adobe-typo-heading-four>
+            <labor-adobe-typo-body padding-bottom="40px">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor magna aliquyam erat, sed diam voluptua.
+            </labor-adobe-typo-body>
+            <labor-adobe-button href="#" padding-bottom="0">
+                Learn more
+            </labor-adobe-button>
+        </labor-adobe-two-col-img-text-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-bottom="100px" section-bg-class="heading-bg">
+
+        </labor-adobe-section>
+
+    </mj-body>
+</mjml>

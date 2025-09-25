@@ -1,7 +1,6 @@
 import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
-import AdobeProductLogoMapping from '../../Mapping/AdobeProductLogoMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
@@ -24,8 +23,8 @@ export default class LaborAdobePod extends BodyComponent {
     'headline': 'string',
 
     'product': 'string',
+    'product-color': 'string',
     'product-type': 'string',
-    'product-height': 'unit(px)',
 
     'custom-category': 'string',
 
@@ -42,7 +41,7 @@ export default class LaborAdobePod extends BodyComponent {
     'section-bg-class': 'content-bg',
 
     'product': '',
-    'product-type': 'grey',
+    'product-color': 'gray',
     'product-height': '35px',
 
     'image-with-padding': 'false',
@@ -50,97 +49,28 @@ export default class LaborAdobePod extends BodyComponent {
     'padding-bottom': styleMapping.spacings.horizontal.px100,
   }
 
-  // TODO
-  static calculateZPodPaddings = () => {
-    const desktopLeftPadding =
-      this.getAttribute('z-formation-align') === 'left'
-        ? '0px'
-        : this.getAttribute('z-formation-align') === 'right'
-        ? '0px'
-        : styleMapping.grids.desktop.contentSpacing
-
-    const mobileLeftPadding =
-      this.getAttribute('z-formation-align') === 'left'
-        ? '0px'
-        : this.getAttribute('z-formation-align') === 'right'
-        ? '0px'
-        : styleMapping.grids.mobile.contentSpacing
-
-    const desktopRightPadding =
-      this.getAttribute('z-formation-align') === 'left'
-        ? '0px'
-        : this.getAttribute('z-formation-align') === 'right'
-        ? '0px'
-        : styleMapping.grids.desktop.contentSpacing
-
-    const mobileRightPadding =
-      this.getAttribute('z-formation-align') === 'left'
-        ? '0px'
-        : this.getAttribute('z-formation-align') === 'right'
-        ? '0px'
-        : styleMapping.grids.desktop.contentSpacing
-  }
-
   render() {
-    // Calculate height based on ratio
-    let calculateLogoHeight = () => {
-      let ratio = 3
-      return (
-        Math.floor(
-          parseInt(
-            AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')][
-              'height'
-            ]
-              .toString()
-              .replace('px', '')
-          ) / ratio
-        ) + 'px'
-      )
-    }
-
-    // Calculate the product width based on it's height
-    let calculateLogoWidth = () => {
-      let logoHeight =
-        AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')][
-          'height'
-        ]
-      let logoWidth =
-        AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][this.getAttribute('product-type')][
-          'width'
-        ]
-
-      let cleanLogoHeight = parseInt(logoHeight.replace('px', ''))
-      let cleanLogoWidth = parseInt(logoWidth.replace('px', ''))
-
-      let cleanTargetHeight = parseInt(this.getAttribute('product-height').replace('px', ''))
-
-      let quotient = cleanLogoHeight / cleanTargetHeight
-      let newLogoWidth = cleanLogoWidth / quotient
-
-      return Math.floor(newLogoWidth).toString() + 'px'
-    }
-
     return (
       (this.getAttribute('image-src')
         ? this.renderMJML(`
-                        <labor-adobe-section 
-                            with-padding="${this.getAttribute('image-with-padding')}"
-                            padding-bottom=${styleMapping.spacings.horizontal.px40}
-                            section-bg-class="${this.getAttribute('section-bg-class')}"
-                        >
-                            <mj-column>            
-                                <labor-responsive-image
-                                    src="${this.getAttribute('image-src')}"
-                                    src-mobile="${this.getAttribute('image-src-mobile')}"
-                                    fluid-on-mobile="true"
-                                    width="600px"
-                                    align="left"
-                                    target="_blank"
-                                    href="${this.getAttribute('image-href')}"
-                                    alt="${this.getAttribute('headline')}"
-                                />
-                            </mj-column>
-                        </labor-adobe-section>           
+          <labor-adobe-section 
+              with-padding="${this.getAttribute('image-with-padding')}"
+              padding-bottom=${styleMapping.spacings.horizontal.px40}
+              section-bg-class="${this.getAttribute('section-bg-class')}"
+          >
+            <mj-column>            
+              <labor-responsive-image
+                  src="${this.getAttribute('image-src')}"
+                  src-mobile="${this.getAttribute('image-src-mobile')}"
+                  fluid-on-mobile="true"
+                  width="600px"
+                  align="left"
+                  target="_blank"
+                  href="${this.getAttribute('image-href')}"
+                  alt="${this.getAttribute('headline')}"
+              />
+            </mj-column>
+          </labor-adobe-section>           
                     `)
         : ``) +
       this.renderMJML(`
@@ -158,20 +88,12 @@ export default class LaborAdobePod extends BodyComponent {
                     
                         ${
                           this.getAttribute('product')
-                            ? `
-                            <mj-image
-                                src="${
-                                  AdobeProductLogoMapping.logos[this.getAttribute('product')]['images'][
-                                    this.getAttribute('product-type')
-                                  ]['location']
-                                }"
-                                align="left"
-                                width=${calculateLogoWidth()}
-                                height=${calculateLogoHeight()}  
-                                target="_blank"
-                                padding-bottom="${styleMapping.spacings.horizontal.px24}"
-                                alt="${AdobeProductLogoMapping.logos[this.getAttribute('product')]['name']}"
-                            />`
+                            ? 
+                            `<labor-adobe-product-logo
+                                product="${this.getAttribute('product')}"
+                                product-type="regular"
+                                product-color="${this.getAttribute('product-color')}"
+                              />`
                             : ``
                         }
                         
@@ -189,9 +111,7 @@ export default class LaborAdobePod extends BodyComponent {
                         ${
                           this.getAttribute('headline')
                             ? `
-                            <labor-adobe-typo-heading-three
-                                padding-bottom="${styleMapping.spacings.horizontal.px12}"
-                            >
+                            <labor-adobe-typo-heading-three>
                                 ${this.getAttribute('headline')}
                             </labor-adobe-typo-heading-three>`
                             : ``
@@ -209,7 +129,8 @@ export default class LaborAdobePod extends BodyComponent {
                               <labor-adobe-button
                                   type="quiet"
                                   href="${this.getAttribute('primary-cta-href')}"
-                                  width="${this.getAttribute('primary-cta-width')}"               
+                                  width="${this.getAttribute('primary-cta-width')}"   
+                                  padding-bottom="0"            
                               >
                                   ${this.getAttribute('primary-cta')}
                               </labor-adobe-button>`
@@ -219,12 +140,13 @@ export default class LaborAdobePod extends BodyComponent {
                         ${
                           this.getAttribute('secondary-cta-href')
                             ? `
-                              <labor-adobe-secondary-cta
+                              <labor-adobe-link
                                   type="normal"
                                   href="${this.getAttribute('secondary-cta-href')}"
+                                  padding-bottom="0"       
                               >
                                   ${this.getAttribute('secondary-cta')}
-                              </labor-adobe-secondary-cta>`
+                              </labor-adobe-link>`
                             : ``
                         }
                     </mj-column>

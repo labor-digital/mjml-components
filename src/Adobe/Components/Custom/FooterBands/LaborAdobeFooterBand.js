@@ -15,6 +15,7 @@ export default class LaborAdobeFooterBand extends BodyComponent {
   static allowedAttributes = {
     'bg-color': 'string',
     'color': 'string',
+
     'padding-top': 'unit(px,%)',
     'padding-bottom': 'unit(px,%)',
   }
@@ -26,6 +27,7 @@ export default class LaborAdobeFooterBand extends BodyComponent {
     'font-weight': styleMapping.typographyFontWeight.extraBold,
     'line-height': '20px',
     'align': 'left',
+
     'padding-top': '4px',
     'padding-bottom': '6px',
   }
@@ -42,13 +44,13 @@ export default class LaborAdobeFooterBand extends BodyComponent {
     }
 
     return this.renderMJML(`
-            <labor-adobe-section background-color="${this.getAttribute('bg-color')}">
-                <mj-column>
-                    <mj-text ${this.htmlAttributes(typoAttrs)} >
-                        ${this.getContent()}
-                    </mj-text>
-                </mj-column>
-            </labor-adobe-section>
-        `)
+      <labor-adobe-section background-color="${this.getAttribute('bg-color')}">
+        <mj-column>
+          <mj-text ${this.htmlAttributes(typoAttrs)} >
+            ${this.getContent()}
+          </mj-text>
+        </mj-column>
+      </labor-adobe-section>
+    `)
   }
 }
