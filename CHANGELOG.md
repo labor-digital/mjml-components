@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.26](https://github.com/labor-digital/mjml-components/compare/v3.0.25...v3.0.26) (2025-09-25)
+
+
+### Bug Fixes
+
+* refactor header to drop border attribute when not needed ([b74ee26](https://github.com/labor-digital/mjml-components/commit/b74ee26cf350a407ef8f95d13254c10ed764e99d))
+
 ### [3.0.25](https://github.com/labor-digital/mjml-components/compare/v3.0.24...v3.0.25) (2025-09-25)
 
 
