@@ -43,9 +43,6 @@ export default class LaborAdobeHeader extends BodyComponent {
   static defaultAttributes = {
     'header-bg-class': 'content-bg',
 
-    // Use red_gray as default to promote darkmode compatibility
-    'product-color': 'red_gray',
-
     'href': '',
     'title': '',
     'alt': '',

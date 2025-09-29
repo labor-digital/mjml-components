@@ -9,7 +9,6 @@ export default class AdobeProductLockupMapping {
     if(!color) {
       color = this.lockups[product]['defaultColor'] ?? this.defaultColor;
     }
-    console.log('labcon color', color)
 
     if( !product || !color || !this.lockups[product] || !this.lockups[product]['width'] || !this.lockups[product]['images'][color]) return null;
 
@@ -128,6 +127,20 @@ export default class AdobeProductLockupMapping {
         red_gray: {},
         red_white: {},
         white_black: {},
+      },
+    },
+    education_exchange :{
+      name: 'Education Exchange',
+      key: 'education_exchange',
+      width: 984,
+      defaultColor: 'red',
+      images: {
+        red: {
+          location: 'education_exchange.red.984x168.png'
+        },
+        white: {
+          location: 'education_exchange.white.984x168.png'
+        },
       },
     },
     experience_cloud: {
