@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.27](https://github.com/labor-digital/mjml-components/compare/v3.0.26...v3.0.27) (2025-09-29)
+
+
+### Bug Fixes
+
+* allow defaultColor per Lockup and update brand, swap header alt/title description ([1496ec9](https://github.com/labor-digital/mjml-components/commit/1496ec96682b07873f9226f6b10bdc83265dd5de))
+
 ### [3.0.26](https://github.com/labor-digital/mjml-components/compare/v3.0.25...v3.0.26) (2025-09-25)
 
 
