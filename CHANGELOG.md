@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.29](https://github.com/labor-digital/mjml-components/compare/v3.0.28...v3.0.29) (2025-09-29)
+
+
+### Bug Fixes
+
+* updating the display heading line-heights to be at least the font-size ([01bc379](https://github.com/labor-digital/mjml-components/commit/01bc379154c3d4f9ff6d1f7680efa6d18378e656))
+
 ### [3.0.28](https://github.com/labor-digital/mjml-components/compare/v3.0.27...v3.0.28) (2025-09-29)
 
 
