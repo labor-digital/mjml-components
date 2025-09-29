@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.28](https://github.com/labor-digital/mjml-components/compare/v3.0.27...v3.0.28) (2025-09-29)
+
+
+### Bug Fixes
+
+* add education exchange & default per-product-color ([ba1600f](https://github.com/labor-digital/mjml-components/commit/ba1600f2296867942aad69d658f9fa94701c7460))
+
 ### [3.0.27](https://github.com/labor-digital/mjml-components/compare/v3.0.26...v3.0.27) (2025-09-29)
 
 
