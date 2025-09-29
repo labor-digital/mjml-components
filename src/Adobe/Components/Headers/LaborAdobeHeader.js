@@ -103,8 +103,8 @@ export default class LaborAdobeHeader extends BodyComponent {
       let productLockup = AdobeProductLockupMapping.getLockup(this.getAttribute('product'), this.getAttribute('product-color'));
       if (!productLockup) return '';
       src = productLockup.location;
-      title = productLockup.name;
-      alt = productLockup.name + ' logo';
+      title = productLockup.name+ ' logo';
+      alt = productLockup.name;
 
       let getImageRatio = () => {
         let cleanTargetHeight = parseInt(imgHeight.replace('px', ''))

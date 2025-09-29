@@ -4,7 +4,12 @@ export default class AdobeProductLockupMapping {
   static defaultHeight = 168;
   static defaultColor = 'red_gray'
 
-  static getLockup = (product, color = this.defaultColor) => {
+  static getLockup = (product, color) => {
+
+    if(!color) {
+      color = this.lockups[product]['defaultColor'] ?? this.defaultColor;
+    }
+    console.log('labcon color', color)
 
     if( !product || !color || !this.lockups[product] || !this.lockups[product]['width'] || !this.lockups[product]['images'][color]) return null;
 
@@ -27,8 +32,7 @@ export default class AdobeProductLockupMapping {
       name: 'Adobe',
       key: 'brand',
       width: 328,
-      height: 168,
-      scaling: 4,
+      defaultColor: 'red',
       images: {
         red: {
           location: 'brand.01.red.328x168.png'

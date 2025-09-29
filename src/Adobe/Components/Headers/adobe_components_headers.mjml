@@ -228,7 +228,6 @@
 
         <labor-adobe-header
                 product="brand"
-                product-color="red"
                 header-bg-class="content-bg"
         />
 
@@ -310,7 +309,6 @@
 
         <labor-adobe-header
                 product="brand"
-                product-color="red"
                 header-bg-class="content-bg"
                 border="true"
         />
