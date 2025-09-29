@@ -169,11 +169,11 @@ export default class AdobeRedStyleMapping {
   }
 
   static typographyLineHeight = {
-    size57: '57px',
+    size57: '60px',//'57px',
     size46: '46px',
-    size43: '43px',
+    size43: '45px',//'43px',
     size40: '40px',
-    size38: '38px',
+    size38: '40px',//,'38px',
     size36: '36px',
     size31: '31px',
     size26: '26px',
