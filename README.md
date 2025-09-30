@@ -59,4 +59,4 @@ exports.build = gulp.series(
 
 ## Documentation
 
-Will be available in the future.
+This is a legacy branch to keep old v1 templates working. Use the master branch for new projects.
