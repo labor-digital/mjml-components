@@ -3,7 +3,7 @@ name: Release_v2
 on:
   push:
     branches:
-      - feature/component-mapping
+      - master
 
 jobs:
   build:
