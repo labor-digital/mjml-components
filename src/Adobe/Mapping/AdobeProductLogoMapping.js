@@ -18,7 +18,7 @@ export default class AdobeProductLogoMapping {
       key: this.logos[product]['key'],
       width: width,
       height: height,
-      location: this.basePath + this.logos[product]['key'] + '.' + color + '.' + width + 'x' + height + '.png',
+      location: this.logos[product]['images'][color]['location'] ?? this.basePath + this.logos[product]['key'] + '.' + color + '.' + width + 'x' + height + '.png',
     }
   }
 
@@ -119,7 +119,11 @@ export default class AdobeProductLogoMapping {
       width: 756,
       images: {
         black: {},
-        gray: {},
+        gray: {
+          width: 561,
+          height: 105,
+          location: "https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/logos/express/adobe_express.grey.561x105.png"
+        },
         white: {},
       },
     },
