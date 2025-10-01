@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.31](https://github.com/labor-digital/mjml-components/compare/v3.0.30...v3.0.31) (2025-10-01)
+
+
+### Bug Fixes
+
+* fix product logo width/height values, remove display/heading/detail letter spacings ([fb37bd9](https://github.com/labor-digital/mjml-components/commit/fb37bd9982239b77eb89390ebede6b13264e9439))
+
 ### [3.0.30](https://github.com/labor-digital/mjml-components/compare/v3.0.29...v3.0.30) (2025-09-30)
 
 
