@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.32](https://github.com/labor-digital/mjml-components/compare/v3.0.31...v3.0.32) (2025-10-01)
+
+
+### Bug Fixes
+
+* use previous express logo until new ones are available ([c04ab1d](https://github.com/labor-digital/mjml-components/commit/c04ab1d309c63bd62a3b94bb6f1cfd5527b887c6))
+
 ### [3.0.31](https://github.com/labor-digital/mjml-components/compare/v3.0.30...v3.0.31) (2025-10-01)
 
 
