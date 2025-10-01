@@ -29,7 +29,6 @@ export default class LaborAdobeTypoHeadingOne extends BodyComponent {
     fontSize: styleMapping.typographies.headingOne.fontSize,
     lineHeight: styleMapping.typographies.headingOne.lineHeight,
     fontWeight: styleMapping.typographies.headingOne.fontWeight,
-    letterSpacing: styleMapping.typographies.headingOne.letterSpacing,
     color: styleMapping.typographies.headingOne.color,
     onBackgroundColor: styleMapping.colors.white.hex,
   }
@@ -39,7 +38,6 @@ export default class LaborAdobeTypoHeadingOne extends BodyComponent {
       'font-size': LaborAdobeTypoHeadingOne.additionalAttributes.fontSize,
       'line-height': LaborAdobeTypoHeadingOne.additionalAttributes.lineHeight,
       'font-weight': LaborAdobeTypoHeadingOne.additionalAttributes.fontWeight,
-      'letter-spacing': LaborAdobeTypoHeadingOne.additionalAttributes.letterSpacing,
       'color': this.getAttribute('on-background')
         ? LaborAdobeTypoHeadingOne.additionalAttributes.onBackgroundColor
         : LaborAdobeTypoHeadingOne.additionalAttributes.color,

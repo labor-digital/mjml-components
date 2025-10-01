@@ -57,12 +57,12 @@ export default class LaborAdobeProductLogo extends MjImage {
           targetHeight = LaborAdobeProductLogo.additionalAttributes.heightAlt;
         }
 
-        return targetHeight;
+        return parseInt(targetHeight.replace('px', ''));
       }
 
       // Calulate the ratio of the actual image to the target height which can then be used to calculate the width of the image
       let getImageRatio = () => {
-        let cleanTargetHeight = parseInt(getLogoHeight().replace('px', ''))
+        let cleanTargetHeight = getLogoHeight();
         let cleanImageHeight = parseInt(productLogo.height)
 
         return cleanImageHeight / cleanTargetHeight
@@ -71,7 +71,7 @@ export default class LaborAdobeProductLogo extends MjImage {
       let calculateLogoWidth = () => {
         let imageRatio = getImageRatio();
         let logoWidth = parseInt(productLogo.width);
-        return Math.floor(logoWidth / imageRatio).toString() + 'px'
+        return Math.floor(logoWidth / imageRatio)
       }
 
       let getPaddingBottom = () => {

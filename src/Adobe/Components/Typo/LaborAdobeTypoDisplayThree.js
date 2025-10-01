@@ -30,7 +30,6 @@ export default class LaborAdobeTypoDisplayThree extends BodyComponent {
     fontSize: styleMapping.typographies.displayThree.fontSize,
     lineHeight: styleMapping.typographies.displayThree.lineHeight,
     fontWeight: styleMapping.typographies.displayThree.fontWeight,
-    letterSpacing: styleMapping.typographies.displayThree.letterSpacing,
     onBackgroundColor: styleMapping.colors.white.hex,
     color: styleMapping.typographies.displayThree.color,
   }
@@ -40,7 +39,6 @@ export default class LaborAdobeTypoDisplayThree extends BodyComponent {
       'font-size': LaborAdobeTypoDisplayThree.additionalAttributes.fontSize,
       'line-height': LaborAdobeTypoDisplayThree.additionalAttributes.lineHeight,
       'font-weight': LaborAdobeTypoDisplayThree.additionalAttributes.fontWeight[this.getAttribute('type')],
-      'letter-spacing': LaborAdobeTypoDisplayThree.additionalAttributes.letterSpacing,
       'color': this.getAttribute('on-background')
         ? LaborAdobeTypoDisplayThree.additionalAttributes.onBackgroundColor
         : LaborAdobeTypoDisplayThree.additionalAttributes.color,

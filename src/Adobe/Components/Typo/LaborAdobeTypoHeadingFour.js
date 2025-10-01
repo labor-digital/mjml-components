@@ -30,7 +30,6 @@ export default class LaborAdobeTypoHeadingFour extends BodyComponent {
     fontSize: styleMapping.typographies.headingFour.fontSize,
     lineHeight: styleMapping.typographies.headingFour.lineHeight,
     fontWeight: styleMapping.typographies.headingFour.fontWeight,
-    letterSpacing: styleMapping.typographies.headingFour.letterSpacing,
     color: styleMapping.typographies.headingFour.color,
     onBackgroundColor: styleMapping.colors.white.hex,
   }
@@ -40,7 +39,6 @@ export default class LaborAdobeTypoHeadingFour extends BodyComponent {
       'font-size': LaborAdobeTypoHeadingFour.additionalAttributes.fontSize,
       'line-height': LaborAdobeTypoHeadingFour.additionalAttributes.lineHeight,
       'font-weight': LaborAdobeTypoHeadingFour.additionalAttributes.fontWeight,
-      'letter-spacing': LaborAdobeTypoHeadingFour.additionalAttributes.letterSpacing,
       'color': this.getAttribute('on-background')
         ? LaborAdobeTypoHeadingFour.additionalAttributes.onBackgroundColor
         : LaborAdobeTypoHeadingFour.additionalAttributes.color,

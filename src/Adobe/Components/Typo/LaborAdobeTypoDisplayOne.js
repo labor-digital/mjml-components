@@ -41,7 +41,6 @@ export default class LaborAdobeTypoDisplayOne extends BodyComponent {
     lineHeight: styleMapping.typographies.displayOne.lineHeight,
     fontWeightNormal: styleMapping.typographies.displayOne.fontWeight.normal,
     fontWeightQuiet: styleMapping.typographies.displayOne.fontWeight.quiet,
-    letterSpacing: styleMapping.typographies.displayOne.letterSpacing,
     defaultPaddingBottom: styleMapping.typographies.displayOne.padding.defaultPaddingBottom,
     color: styleMapping.typographies.displayOne.color,
     onBackgroundColor: styleMapping.typographies.displayOne.colorOnBackground,
@@ -55,14 +54,12 @@ export default class LaborAdobeTypoDisplayOne extends BodyComponent {
     responsiveTwoMobileLineHeight: styleMapping.typographies.displayTwo.lineHeight,
     responsiveTwoMobileFontWeightNormal: styleMapping.typographies.displayTwo.fontWeight.normal,
     responsiveTwoMobileFontWeightQuiet: styleMapping.typographies.displayTwo.fontWeight.quiet,
-    responsiveTwoMobileLetterSpacing: styleMapping.typographies.displayTwo.letterSpacing,
 
     // DisplayThree attributes
     responsiveThreeMobileFontSize: styleMapping.typographies.displayThree.fontSize,
     responsiveThreeMobileLineHeight: styleMapping.typographies.displayThree.lineHeight,
     responsiveThreeMobileFontWeightNormal: styleMapping.typographies.displayThree.fontWeight.normal,
     responsiveThreeMobileFontWeightQuiet: styleMapping.typographies.displayThree.fontWeight.quiet,
-    responsiveThreeMobileLetterSpacing: styleMapping.typographies.displayThree.letterSpacing,
   }
 
   headStyle = (breakpoint) => `
@@ -79,7 +76,6 @@ export default class LaborAdobeTypoDisplayOne extends BodyComponent {
           ? LaborAdobeTypoDisplayOne.additionalAttributes.fontWeightQuiet
           : LaborAdobeTypoDisplayOne.additionalAttributes.fontWeightNormal
       };
-      letter-spacing: ${LaborAdobeTypoDisplayOne.additionalAttributes.letterSpacing};
     } 
     
     @media only screen and (max-width:${breakpoint}) {
@@ -96,7 +92,6 @@ export default class LaborAdobeTypoDisplayOne extends BodyComponent {
             ? LaborAdobeTypoDisplayOne.additionalAttributes.responsiveTwoMobileFontWeightQuiet
             : LaborAdobeTypoDisplayOne.additionalAttributes.responsiveTwoMobileFontWeightNormal
         };
-        letter-spacing: ${LaborAdobeTypoDisplayOne.additionalAttributes.responsiveTwoMobileLetterSpacing};
       }
     
       .labor-adobe-typo-display-one--responsive-three {
@@ -107,7 +102,6 @@ export default class LaborAdobeTypoDisplayOne extends BodyComponent {
             ? LaborAdobeTypoDisplayOne.additionalAttributes.responsiveThreeMobileFontWeightQuiet
             : LaborAdobeTypoDisplayOne.additionalAttributes.responsiveThreeMobileFontWeightNormal
         };
-        letter-spacing: ${LaborAdobeTypoDisplayOne.additionalAttributes.responsiveThreeMobileLetterSpacing};
       }
    }
   `
@@ -132,7 +126,6 @@ export default class LaborAdobeTypoDisplayOne extends BodyComponent {
         this.getAttribute('type') === 'quiet'
           ? LaborAdobeTypoDisplayOne.additionalAttributes.fontWeightQuiet
           : LaborAdobeTypoDisplayOne.additionalAttributes.fontWeightNormal,
-      'letter-spacing': LaborAdobeTypoDisplayOne.additionalAttributes.letterSpacing,
       'color': this.getAttribute('on-background')
         ? LaborAdobeTypoDisplayOne.additionalAttributes.onBackgroundColor
         : LaborAdobeTypoDisplayOne.additionalAttributes.color,

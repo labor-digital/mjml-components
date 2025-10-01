@@ -31,7 +31,6 @@ export default class LaborAdobeTypoDisplayTwo extends BodyComponent {
     fontSize: styleMapping.typographies.displayTwo.fontSize,
     lineHeight: styleMapping.typographies.displayTwo.lineHeight,
     fontWeight: styleMapping.typographies.displayTwo.fontWeight,
-    letterSpacing: styleMapping.typographies.displayTwo.letterSpacing,
     onBackgroundColor: styleMapping.colors.white.hex,
     color: styleMapping.typographies.displayTwo.color,
   }
@@ -41,7 +40,6 @@ export default class LaborAdobeTypoDisplayTwo extends BodyComponent {
       'font-size': LaborAdobeTypoDisplayTwo.additionalAttributes.fontSize,
       'line-height': LaborAdobeTypoDisplayTwo.additionalAttributes.lineHeight,
       'font-weight': LaborAdobeTypoDisplayTwo.additionalAttributes.fontWeight[this.getAttribute('type')],
-      'letter-spacing': LaborAdobeTypoDisplayTwo.additionalAttributes.letterSpacing,
       'color': this.getAttribute('on-background')
         ? LaborAdobeTypoDisplayTwo.additionalAttributes.onBackgroundColor
         : LaborAdobeTypoDisplayTwo.additionalAttributes.color,
