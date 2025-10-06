@@ -1,5 +1,5 @@
 import { registerDependencies } from 'mjml-validator'
-import MjImage from 'mjml-image'
+import { BodyComponent } from 'mjml-core'
 import AdobeProductLogoMapping from '../../Mapping/AdobeProductLogoMapping'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
@@ -10,27 +10,8 @@ registerDependencies({
   'labor-adobe-product-logo': [],
 })
 
-export default class LaborAdobeProductLogo extends MjImage {
+export default class LaborAdobeProductLogo extends BodyComponent {
   static endingTag = true
-
-  static allowedAttributes = {
-    'product': 'string',
-    'product-color': 'enum(gray,black,white)',
-    'product-type': 'enum(regular,alt)',
-
-    'padding-top-overwrite': 'unit(px)',
-    'padding-bottom-overwrite': 'unit(px)',
-
-    'product-src-overwrite': 'string',
-    'product-height-overwrite': 'unit(px)',
-    'product-width-overwrite': 'unit(px)',
-  }
-
-  static defaultAttributes = {
-    'product': 'express',
-    'product-color': 'gray',
-    'product-type': 'regular'
-  }
 
   static additionalAttributes = {
     heightRegular: '35px',
@@ -39,69 +20,79 @@ export default class LaborAdobeProductLogo extends MjImage {
     paddingBottomAlt: styleMapping.spacings.custom.px5,
   }
 
-  renderImage = () => {
+  static allowedAttributes = {
+    'product': 'string',
+    'product-color': 'enum(gray,black,white)',
+    'product-type': 'enum(regular,alt)',
+
+    'product-src-overwrite': 'string',
+    'product-height-overwrite': 'unit(px)',
+    'product-width-overwrite': 'unit(px)',
+
+    'padding-bottom': 'unit(px)',
+    'padding-top': 'unit(px)',
+  }
+
+  static defaultAttributes = {
+    'product': 'express',
+    'product-color': 'gray',
+    'product-type': 'regular',
+
+    'padding-bottom': LaborAdobeProductLogo.additionalAttributes.paddingBottomRegular,
+  }
+
+
+
+  render() {
 
     let productLogo = AdobeProductLogoMapping.getLogo(this.getAttribute('product'), this.getAttribute('product-color'));
     if (!productLogo) return '';
 
+
+
+    let calculateLogoWidth = () => {
+      let imageRatio = getImageRatio();
+      let logoWidth = parseInt(productLogo.width);
+      return Math.floor(logoWidth / imageRatio)
+    }
+
     // Return the correct logo height based on the product type and the overwrite attribute
-      let getLogoHeight = () => {
+    let getLogoHeight = () => {
 
-        let targetHeight = 0;
+      let targetHeight = 0;
 
-        if(this.getAttribute('product-height-overwrite')) {
-          targetHeight = this.getAttribute('product-height-overwrite');
-        } else if(this.getAttribute('product-type') === 'regular') {
-          targetHeight = LaborAdobeProductLogo.additionalAttributes.heightRegular;
-        } else if(this.getAttribute('product-type') === 'alt') {
-          targetHeight = LaborAdobeProductLogo.additionalAttributes.heightAlt;
-        }
-
-        return parseInt(targetHeight.replace('px', ''));
+      if(this.getAttribute('product-height-overwrite')) {
+        targetHeight = this.getAttribute('product-height-overwrite');
+      } else if(this.getAttribute('product-type') === 'regular') {
+        targetHeight = LaborAdobeProductLogo.additionalAttributes.heightRegular;
+      } else if(this.getAttribute('product-type') === 'alt') {
+        targetHeight = LaborAdobeProductLogo.additionalAttributes.heightAlt;
       }
 
-      // Calulate the ratio of the actual image to the target height which can then be used to calculate the width of the image
-      let getImageRatio = () => {
-        let cleanTargetHeight = getLogoHeight();
-        let cleanImageHeight = parseInt(productLogo.height)
+      return parseInt(targetHeight.replace('px', ''));
+    }
 
-        return cleanImageHeight / cleanTargetHeight
-      }
+    // Calulate the ratio of the actual image to the target height which can then be used to calculate the width of the image
+    let getImageRatio = () => {
+      let cleanTargetHeight = getLogoHeight();
+      let cleanImageHeight = parseInt(productLogo.height)
 
-      let calculateLogoWidth = () => {
-        let imageRatio = getImageRatio();
-        let logoWidth = parseInt(productLogo.width);
-        return Math.floor(logoWidth / imageRatio)
-      }
+      return cleanImageHeight / cleanTargetHeight
+    }
 
-      let getPaddingBottom = () => {
-        let paddingBottom = 0;
+    let withPx = (value) => {
+      return value + 'px';
+    }
 
-        if(this.getAttribute('padding-bottom-overwrite')) {
-          paddingBottom = this.getAttribute('padding-bottom-overwrite');
-        } else if(this.getAttribute('product-type') === 'regular') {
-          paddingBottom = LaborAdobeProductLogo.additionalAttributes.paddingBottomRegular;
-        } else if(this.getAttribute('product-type') === 'alt') {
-          paddingBottom = LaborAdobeProductLogo.additionalAttributes.paddingBottomAlt;
-        }
+    return this.renderMJML(`<mj-image
+      src="${this.getAttribute('product-src-overwrite') ?? productLogo.location}" 
+      align="left"
+      width="${withPx(calculateLogoWidth())}"
+      height="${withPx(getLogoHeight())}"
+      target="_blank" 
+      alt="${this.getAttribute('product') ? productLogo.name : ''}"
+    />`);
 
-        return paddingBottom;
-      }
-
-    return `<img
-      ${this.htmlAttributes({
-        src: this.getAttribute('product-src-overwrite') ?? productLogo.location,
-        align: "left",
-        width: calculateLogoWidth(),
-        height: getLogoHeight(),
-        target: "_blank",
-        style: {
-          'padding-bottom': getPaddingBottom(),
-          'padding-top': this.getAttribute('padding-top-overwrite') ?? 0,
-        },
-        alt: this.getAttribute('product') ? productLogo.name : ''
-      })}
-    />`;
   }
 
 }

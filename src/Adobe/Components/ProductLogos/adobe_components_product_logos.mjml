@@ -179,22 +179,22 @@
 
         <labor-adobe-section>
             <mj-column>
-                <labor-adobe-product-logo product="acrobat_pro" product-type="alt"/>
-                <labor-adobe-product-logo product="acrobat_reader" product-type="alt"/>
-                <labor-adobe-product-logo product="acrobat_sign" product-type="alt"/>
-                <labor-adobe-product-logo product="acrobat_standard" product-type="alt"/>
-                <labor-adobe-product-logo product="after_effects" product-type="alt"/>
-                <labor-adobe-product-logo product="creative_cloud" product-type="alt"/>
-                <labor-adobe-product-logo product="document_cloud" product-type="alt"/>
-                <labor-adobe-product-logo product="experience_cloud" product-type="alt"/>
-                <labor-adobe-product-logo product="express" product-type="alt"/>
-                <labor-adobe-product-logo product="firefly" product-type="alt"/>
-                <labor-adobe-product-logo product="illustrator" product-type="alt"/>
-                <labor-adobe-product-logo product="indesign" product-type="alt"/>
-                <labor-adobe-product-logo product="photoshop" product-type="alt"/>
-                <labor-adobe-product-logo product="premiere_pro" product-type="alt"/>
-                <labor-adobe-product-logo product="scan" product-type="alt"/>
-                <labor-adobe-product-logo product="stock" product-type="alt"/>
+                <labor-adobe-product-logo product="acrobat_pro" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="acrobat_reader" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="acrobat_sign" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="acrobat_standard" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="after_effects" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="creative_cloud" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="document_cloud" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="experience_cloud" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="express" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="firefly" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="illustrator" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="indesign" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="photoshop" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="premiere_pro" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="scan" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="stock" product-type="alt" padding-bottom="5px"/>
             </mj-column>
         </labor-adobe-section>
 
@@ -208,7 +208,7 @@
         <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
             <mj-column>
                 <labor-adobe-typo-heading-three>
-                    Product Logos - regular - black
+                    Product Logos - alt - black
                 </labor-adobe-typo-heading-three>
             </mj-column>
         </labor-adobe-section>
@@ -221,22 +221,22 @@
 
         <labor-adobe-section>
             <mj-column>
-                <labor-adobe-product-logo product="acrobat_pro" product-color="black" product-type="alt"/>
-                <labor-adobe-product-logo product="acrobat_reader" product-color="black" product-type="alt"/>
-                <labor-adobe-product-logo product="acrobat_sign" product-color="black" product-type="alt"/>
-                <labor-adobe-product-logo product="acrobat_standard" product-color="black" product-type="alt"/>
-                <labor-adobe-product-logo product="after_effects" product-color="black" product-type="alt"/>
-                <labor-adobe-product-logo product="creative_cloud" product-color="black" product-type="alt"/>
-                <labor-adobe-product-logo product="document_cloud" product-color="black" product-type="alt"/>
-                <labor-adobe-product-logo product="experience_cloud" product-color="black" product-type="alt"/>
-                <labor-adobe-product-logo product="express" product-color="black" product-type="alt"/>
-                <labor-adobe-product-logo product="firefly" product-color="black" product-type="alt"/>
-                <labor-adobe-product-logo product="illustrator" product-color="black" product-type="alt"/>
-                <labor-adobe-product-logo product="indesign" product-color="black" product-type="alt"/>
-                <labor-adobe-product-logo product="photoshop" product-color="black" product-type="alt"/>
-                <labor-adobe-product-logo product="premiere_pro" product-color="black" product-type="alt"/>
-                <labor-adobe-product-logo product="scan" product-color="black" product-type="alt"/>
-                <labor-adobe-product-logo product="stock" product-color="black" product-type="alt"/>
+                <labor-adobe-product-logo product="acrobat_pro" product-color="black" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="acrobat_reader" product-color="black" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="acrobat_sign" product-color="black" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="acrobat_standard" product-color="black" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="after_effects" product-color="black" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="creative_cloud" product-color="black" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="document_cloud" product-color="black" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="experience_cloud" product-color="black" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="express" product-color="black" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="firefly" product-color="black" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="illustrator" product-color="black" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="indesign" product-color="black" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="photoshop" product-color="black" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="premiere_pro" product-color="black" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="scan" product-color="black" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="stock" product-color="black" product-type="alt" padding-bottom="5px"/>
             </mj-column>
         </labor-adobe-section>
 
@@ -250,7 +250,7 @@
         <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
             <mj-column>
                 <labor-adobe-typo-heading-three>
-                    Product Logos - regular - white
+                    Product Logos - alt - white
                 </labor-adobe-typo-heading-three>
             </mj-column>
         </labor-adobe-section>
@@ -263,22 +263,22 @@
 
         <labor-adobe-section section-bg-class="inverted-bg">
             <mj-column>
-                <labor-adobe-product-logo product="acrobat_pro" product-color="white" product-type="alt"/>
-                <labor-adobe-product-logo product="acrobat_reader" product-color="white" product-type="alt"/>
-                <labor-adobe-product-logo product="acrobat_sign" product-color="white" product-type="alt"/>
-                <labor-adobe-product-logo product="acrobat_standard" product-color="white" product-type="alt"/>
-                <labor-adobe-product-logo product="after_effects" product-color="white" product-type="alt"/>
-                <labor-adobe-product-logo product="creative_cloud" product-color="white" product-type="alt"/>
-                <labor-adobe-product-logo product="document_cloud" product-color="white" product-type="alt"/>
-                <labor-adobe-product-logo product="experience_cloud" product-color="white" product-type="alt"/>
-                <labor-adobe-product-logo product="express" product-color="white" product-type="alt"/>
-                <labor-adobe-product-logo product="firefly" product-color="white" product-type="alt"/>
-                <labor-adobe-product-logo product="illustrator" product-color="white" product-type="alt"/>
-                <labor-adobe-product-logo product="indesign" product-color="white" product-type="alt"/>
-                <labor-adobe-product-logo product="photoshop" product-color="white" product-type="alt"/>
-                <labor-adobe-product-logo product="premiere_pro" product-color="white" product-type="alt"/>
-                <labor-adobe-product-logo product="scan" product-color="white" product-type="alt"/>
-                <labor-adobe-product-logo product="stock" product-color="white" product-type="alt"/>
+                <labor-adobe-product-logo product="acrobat_pro" product-color="white" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="acrobat_reader" product-color="white" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="acrobat_sign" product-color="white" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="acrobat_standard" product-color="white" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="after_effects" product-color="white" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="creative_cloud" product-color="white" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="document_cloud" product-color="white" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="experience_cloud" product-color="white" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="express" product-color="white" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="firefly" product-color="white" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="illustrator" product-color="white" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="indesign" product-color="white" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="photoshop" product-color="white" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="premiere_pro" product-color="white" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="scan" product-color="white" product-type="alt" padding-bottom="5px"/>
+                <labor-adobe-product-logo product="stock" product-color="white" product-type="alt" padding-bottom="5px"/>
             </mj-column>
         </labor-adobe-section>
 
