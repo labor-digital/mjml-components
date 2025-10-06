@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.33](https://github.com/labor-digital/mjml-components/compare/v3.0.32...v3.0.33) (2025-10-06)
+
+
+### Bug Fixes
+
+* replace product logo img with mj-image ([16dcdc9](https://github.com/labor-digital/mjml-components/commit/16dcdc91d8f1f426d447590f07b48b90905fc640))
+
 ### [3.0.32](https://github.com/labor-digital/mjml-components/compare/v3.0.31...v3.0.32) (2025-10-01)
 
 
