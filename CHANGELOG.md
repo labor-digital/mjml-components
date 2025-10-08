@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.36](https://github.com/labor-digital/mjml-components/compare/v3.0.35...v3.0.36) (2025-10-08)
+
+
+### Bug Fixes
+
+* adobe pod secondary cta type ([b562051](https://github.com/labor-digital/mjml-components/commit/b562051dd61425546a9bf5adb3ab6de311805153))
+
 ### [3.0.35](https://github.com/labor-digital/mjml-components/compare/v3.0.34...v3.0.35) (2025-10-08)
 
 
