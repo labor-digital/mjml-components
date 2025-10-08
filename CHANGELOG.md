@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.34](https://github.com/labor-digital/mjml-components/compare/v3.0.33...v3.0.34) (2025-10-08)
+
+
+### Bug Fixes
+
+* add z formation pod, fix two col img css naming ([022bf3c](https://github.com/labor-digital/mjml-components/commit/022bf3cb99b95d9c39ee23d6c8b9b186979e3d47))
+
 ### [3.0.33](https://github.com/labor-digital/mjml-components/compare/v3.0.32...v3.0.33) (2025-10-06)
 
 
