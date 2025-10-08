@@ -105,7 +105,6 @@ export default class LaborAdobePodZFormation extends BodyComponent {
                 ? 'left'
                 : 'right'
             }"
-            
           />
         </mj-column>
         <mj-column 
