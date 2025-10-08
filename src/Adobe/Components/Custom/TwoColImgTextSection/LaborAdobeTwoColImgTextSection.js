@@ -43,7 +43,7 @@ export default class LaborAdobeTwoColImgTextSection extends BodyComponent {
 
   headStyle = (breakpoint) => `
     @media only screen and (max-width: ${breakpoint}) {
-      .labor-adobe-edex-two-col-img-text-section-responsive > table > tbody > tr > td {
+      .labor-adobe-two-col-img-text-section-responsive > table > tbody > tr > td {
         padding-left: ${styleMapping.grids.mobile.contentSpacing} !important;
         padding-right: ${styleMapping.grids.mobile.contentSpacing} !important;
       }
@@ -72,7 +72,7 @@ export default class LaborAdobeTwoColImgTextSection extends BodyComponent {
       >
         <mj-column 
           vertical-align="middle"
-          css-class="${this.getAttribute('with-padding') ? 'labor-adobe-edex-two-col-img-text-section-responsive' : ''}"
+          css-class="${this.getAttribute('with-padding') ? 'labor-adobe-two-col-img-text-section-responsive' : ''}"
           padding="${imagePadding}"
           padding-bottom="${this.getAttribute('padding-bottom-cols')}"
         >
@@ -84,7 +84,7 @@ export default class LaborAdobeTwoColImgTextSection extends BodyComponent {
         </mj-column>
         <mj-column 
           vertical-align="middle" 
-          css-class="${this.getAttribute('with-padding') ? 'labor-adobe-edex-two-col-img-text-section-responsive' : ''}"
+          css-class="${this.getAttribute('with-padding') ? 'labor-adobe-two-col-img-text-section-responsive' : ''}"
           padding="${textPadding}"
           padding-bottom="${this.getAttribute('padding-bottom-cols')}"
         >

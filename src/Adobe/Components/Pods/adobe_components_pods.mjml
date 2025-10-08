@@ -166,6 +166,68 @@
         <labor-adobe-section padding-bottom="40px" padding-top="40px" section-bg-class="heading-bg">
             <mj-column>
                 <labor-adobe-typo-heading-three>
+                    Pod Z Formation (LTR, RTL, LTR)
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-pod-z-formation
+                direction="ltr"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/z_image_desktop.png"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/z_image_mobile.png"
+        >
+            <labor-adobe-typo-heading-four>
+                Give your students exclusive access to Adobe MAX.
+            </labor-adobe-typo-heading-four>
+            <labor-adobe-typo-body>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor magna aliquyam erat, sed diam voluptua.
+            </labor-adobe-typo-body>
+            <labor-adobe-link href="#" padding-bottom="0">
+                Learn more
+            </labor-adobe-link>
+        </labor-adobe-pod-z-formation>
+
+        <labor-adobe-pod-z-formation
+                direction="rtl"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/z_image_desktop.png"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/z_image_mobile.png"
+        >
+            <labor-adobe-typo-heading-four>
+                Give your students exclusive access to Adobe MAX.
+            </labor-adobe-typo-heading-four>
+            <labor-adobe-typo-body>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor magna aliquyam erat, sed diam voluptua.
+            </labor-adobe-typo-body>
+            <labor-adobe-link href="#" padding-bottom="0">
+                Learn more
+            </labor-adobe-link>
+        </labor-adobe-pod-z-formation>
+
+        <labor-adobe-pod-z-formation
+                direction="ltr"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/z_image_desktop.png"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/z_image_mobile.png"
+        >
+            <labor-adobe-typo-heading-four>
+                Give your students exclusive access to Adobe MAX.
+            </labor-adobe-typo-heading-four>
+            <labor-adobe-typo-body>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor magna aliquyam erat, sed diam voluptua.
+            </labor-adobe-typo-body>
+            <labor-adobe-link href="#" padding-bottom="0">
+                Learn more
+            </labor-adobe-link>
+        </labor-adobe-pod-z-formation>
+
+        <labor-adobe-section padding-bottom="40px" padding-top="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
                     Application Pod (35px logos)
                 </labor-adobe-typo-heading-three>
             </mj-column>
