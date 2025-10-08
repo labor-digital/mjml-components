@@ -141,7 +141,7 @@ export default class LaborAdobePod extends BodyComponent {
                           this.getAttribute('secondary-cta-href')
                             ? `
                               <labor-adobe-link
-                                  type="normal"
+                                  type="standard"
                                   href="${this.getAttribute('secondary-cta-href')}"
                                   padding-bottom="0"       
                               >
