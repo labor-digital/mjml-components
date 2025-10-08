@@ -73,7 +73,6 @@ export default class LaborAdobeHeroCardImmersiveOne extends BodyComponent {
           >
           <mj-column>
             <labor-adobe-typo-display-one
-              responsive="displayTwo"
               on-background="true"
             >
               ${this.getAttribute('headline')}

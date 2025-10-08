@@ -58,9 +58,7 @@ export default class LaborAdobeHeroCardSimpleOne extends BodyComponent {
           section-bg-class="${this.getAttribute('section-bg-class')}"
         >
           <mj-column>
-            <labor-adobe-typo-display-one
-              responsive="displayTwo"
-            >
+            <labor-adobe-typo-display-one>
               ${this.getAttribute('headline')}
             </labor-adobe-typo-display-one>
             

@@ -82,7 +82,6 @@ export default class LaborAdobeHeroCardSplitTwo extends BodyComponent {
             </labor-adobe-typo-detail>
             
             <labor-adobe-typo-display-one
-              type="responsiveDisplayTwo"
               padding-bottom="40px"
             >
               ${this.getAttribute('headline')}

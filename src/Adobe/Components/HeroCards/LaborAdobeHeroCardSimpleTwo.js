@@ -60,7 +60,6 @@ export default class LaborAdobeHeroCardSimpleTwo extends BodyComponent {
               ${this.getAttribute('pre-text')}
             </labor-adobe-typo-detail>
             <labor-adobe-typo-display-one
-              type="responsiveDisplayTwo"
               padding-bottom="0"
             >
               ${this.getAttribute('headline')}
