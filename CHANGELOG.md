@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.43](https://github.com/labor-digital/mjml-components/compare/v3.0.42...v3.0.43) (2025-10-09)
+
+
+### Bug Fixes
+
+* update the product logos with adobe prefix ([2939e10](https://github.com/labor-digital/mjml-components/commit/2939e105d0372d27cd3dafa789c0be317f868609))
+
 ### [3.0.42](https://github.com/labor-digital/mjml-components/compare/v3.0.41...v3.0.42) (2025-10-09)
 
 
