@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.41](https://github.com/labor-digital/mjml-components/compare/v3.0.40...v3.0.41) (2025-10-09)
+
+
+### Bug Fixes
+
+* allow inverted button style for immersive hero cards ([4c96049](https://github.com/labor-digital/mjml-components/commit/4c96049183f651b7ef9d61b51019e6692808e951))
+
 ### [3.0.40](https://github.com/labor-digital/mjml-components/compare/v3.0.39...v3.0.40) (2025-10-09)
 
 
