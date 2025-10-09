@@ -20,11 +20,17 @@ export default class LaborAdobePodNoImage extends BodyComponent {
     'cta-type': 'enum(button,link)',
     'cta': 'string',
     'cta-href': 'string',
+
+    'padding-bottom': 'unit(px)',
+    'padding-top': 'unit(px)',
   }
 
   static defaultAttributes = {
     'section-bg-class': 'content-bg',
     'cta-type': 'button',
+
+    'padding-bottom': styleMapping.spacings.vertical.px100,
+    'padding-top': styleMapping.spacings.custom.px0,
   }
 
   render() {
@@ -37,6 +43,8 @@ export default class LaborAdobePodNoImage extends BodyComponent {
                     
                     primary-cta="${this.getAttribute('cta')}"
                     primary-cta-href="${this.getAttribute('cta-href')}"
+                    
+                    padding-top="${this.getAttribute('padding-top')}"
                 >
                     ${this.getContent()}
                 </labor-adobe-pod>
@@ -49,6 +57,8 @@ export default class LaborAdobePodNoImage extends BodyComponent {
                     
                     secondary-cta="${this.getAttribute('cta')}"
                     secondary-cta-href="${this.getAttribute('cta-href')}"
+                    
+                    padding-bottom="${this.getAttribute('padding-bottom')}"
                 >
                     ${this.getContent()}
                 </labor-adobe-pod>

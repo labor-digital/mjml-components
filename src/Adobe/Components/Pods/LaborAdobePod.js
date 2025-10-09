@@ -34,7 +34,9 @@ export default class LaborAdobePod extends BodyComponent {
 
     'secondary-cta': 'string',
     'secondary-cta-href': 'string',
+
     'padding-bottom': 'unit(px)',
+    'padding-top': 'unit(px)',
   }
 
   static defaultAttributes = {
@@ -46,7 +48,9 @@ export default class LaborAdobePod extends BodyComponent {
 
     'image-with-padding': 'false',
     'primary-cta-width': '200px',
+
     'padding-bottom': styleMapping.spacings.horizontal.px100,
+    'padding-top': styleMapping.spacings.custom.px0,
   }
 
   render() {
@@ -56,6 +60,7 @@ export default class LaborAdobePod extends BodyComponent {
           <labor-adobe-section 
               with-padding="${this.getAttribute('image-with-padding')}"
               padding-bottom=${styleMapping.spacings.horizontal.px40}
+              padding-top="${this.getAttribute('padding-top')}"
               section-bg-class="${this.getAttribute('section-bg-class')}"
           >
             <mj-column>            
