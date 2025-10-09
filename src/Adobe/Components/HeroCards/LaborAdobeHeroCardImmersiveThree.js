@@ -5,11 +5,11 @@ import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 const styleMapping = AdobeRedStyleMapping
 
 registerDependencies({
-  'mj-body': ['labor-adobe-hero-card-simple-two'],
-  'labor-adobe-hero-card-simple-two': [],
+  'mj-body': ['labor-adobe-hero-card-immersive-three'],
+  'labor-adobe-hero-card-immersive-three': [],
 })
 
-export default class LaborAdobeHeroCardSimpleTwo extends BodyComponent {
+export default class LaborAdobeHeroCardImmersiveThree extends BodyComponent {
   static endingTag = true
 
   static allowedAttributes = {
@@ -26,11 +26,20 @@ export default class LaborAdobeHeroCardSimpleTwo extends BodyComponent {
     'header-alt': 'string',
     'header-title': 'string',
 
-    'pre-text': 'string',
     'headline': 'string',
 
+    'cta-text': 'string,',
+    'cta-href': 'string',
+
+    'image-src': 'string',
+    'image-src-mobile': 'string',
+    'image-title': 'string',
+    'image-alt': 'string',
+
     'padding-bottom': 'unit(px)',
-    'header-additional-padding-bottom' : 'unit(px)',
+
+    'header-additional-padding-bottom': 'unit(px)',
+    'section-padding-bottom': 'unit(px)',
   }
 
   static defaultAttributes = {
@@ -40,12 +49,23 @@ export default class LaborAdobeHeroCardSimpleTwo extends BodyComponent {
     'product': 'express',
     'product-color': 'red_gray',
 
-    'pre-text': '',
     'headline': '',
 
-    'padding-bottom': styleMapping.spacings.vertical.px100,
+    'cta-text': '',
+    'cta-href': '',
+
+    'image-src': '',
+    'image-src-mobile': '',
+    'image-title': '',
+    'image-alt': '',
+
+    'padding-bottom': styleMapping.spacings.custom.px0,
+
     'header-additional-padding-bottom': styleMapping.spacings.vertical.px20,
+    'section-padding-bottom': styleMapping.spacings.vertical.px40,
   }
+
+
 
   render() {
     let header =
@@ -70,19 +90,44 @@ export default class LaborAdobeHeroCardSimpleTwo extends BodyComponent {
       this.renderMJML(header) +
       this.renderMJML(`
         <labor-adobe-section
-          padding-bottom="${this.getAttribute('padding-bottom')}"
+          padding-bottom="${this.getAttribute('section-padding-bottom')}"
           section-bg-class="${this.getAttribute('section-bg-class')}"
-         >
+          >
           <mj-column>
-            <labor-adobe-typo-detail>
-              ${this.getAttribute('pre-text')}
-            </labor-adobe-typo-detail>
-            <labor-adobe-typo-display-one
-              padding-bottom="0"
-            >
+            <labor-adobe-typo-display-one>
               ${this.getAttribute('headline')}
             </labor-adobe-typo-display-one>
+            
+            <labor-adobe-typo-body>
+              ${this.getContent()}
+            </labor-adobe-typo-body>
+            
+            <labor-adobe-button
+              href="${this.getAttribute('cta-href')}"
+              padding-bottom="0"
+            >
+            ${this.getAttribute('cta-text')}
+            </labor-adobe-button>
           </mj-column>    
+        </labor-adobe-section>
+      `) +
+      this.renderMJML(`
+        <labor-adobe-section
+          with-padding="false"
+          padding-bottom="${this.getAttribute('padding-bottom')}"
+          section-bg-class="${this.getAttribute('section-bg-class')}"
+        >
+          <mj-column>
+            <labor-responsive-image
+              src="${this.getAttribute('image-src')}"
+              src-mobile="${this.getAttribute('image-src-mobile')}"
+              fluid-on-mobile="true"
+              width="600px"
+              align="left"
+              alt="${this.getAttribute('image-alt')}"
+              title="${this.getAttribute('image-title')}"
+            />
+          </mj-column>
         </labor-adobe-section>
       `)
     )

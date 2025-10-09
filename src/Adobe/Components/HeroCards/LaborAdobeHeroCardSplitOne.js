@@ -19,6 +19,13 @@ export default class LaborAdobeHeroCardSplitOne extends BodyComponent {
     'product': 'string',
     'product-color': 'enum(red_black,red_gray,red_white,white_black)',
 
+    'product-src-overwrite': 'string',
+    'product-height-overwrite': 'unit(px)',
+    'product-width-overwrite': 'unit(px)',
+
+    'header-alt': 'string',
+    'header-title': 'string',
+
     'headline': 'string',
 
     'cta-text': 'string,',
@@ -31,6 +38,8 @@ export default class LaborAdobeHeroCardSplitOne extends BodyComponent {
 
     'padding-bottom': 'unit(px)',
     'header-additional-padding-bottom' : 'unit(px)',
+
+    'section-padding-bottom': 'unit(px)'
   }
 
   static defaultAttributes = {
@@ -51,27 +60,36 @@ export default class LaborAdobeHeroCardSplitOne extends BodyComponent {
 
     'padding-bottom': styleMapping.spacings.custom.px0,
     'header-additional-padding-bottom': styleMapping.spacings.vertical.px20,
-  }
 
-  static additionalAttributes = {
     'section-padding-bottom': styleMapping.spacings.vertical.px60,
   }
 
   render() {
+    let header =
+      this.getAttribute('product-src-overwrite')
+        ? `<labor-adobe-header
+            product-src-overwrite="${this.getAttribute('product-src-overwrite')}"
+            product-height-overwrite="${this.getAttribute('product-height-overwrite')}"
+            product-width-overwrite="${this.getAttribute('product-width-overwrite')}"
+            alt="${this.getAttribute('header-alt') ?? ''}"
+            title="${this.getAttribute('header-title') ?? ''}"
+            header-bg-class="${this.getAttribute('header-bg-class')}"
+            additional-padding-bottom=${this.getAttribute('header-additional-padding-bottom')}
+          />`
+        : `<labor-adobe-header
+            product="${this.getAttribute('product')}"
+            product-color="${this.getAttribute('product-color')}"
+            header-bg-class="${this.getAttribute('header-bg-class')}"
+            additional-padding-bottom=${this.getAttribute('header-additional-padding-bottom')}
+          />`
+
     return (
-      this.renderMJML(`
-        <labor-adobe-header
-          product="${this.getAttribute('product')}"
-          product-color="${this.getAttribute('product-color')}"
-          header-bg-class="${this.getAttribute('header-bg-class')}"
-          additional-padding-bottom="${this.getAttribute('header-additional-padding-bottom')}"
-        />
-     `) +
+      this.renderMJML(header) +
       this.renderMJML(`
         <labor-adobe-section
-          padding-bottom="${LaborAdobeHeroCardSplitOne.additionalAttributes['section-padding-bottom']}"
+          padding-bottom="${this.getAttribute('section-padding-bottom')}"
           section-bg-class="${this.getAttribute('section-bg-class')}"
-          >
+        >
           <mj-column>
             <labor-adobe-typo-display-one
               padding-bottom="40px"
