@@ -51,13 +51,12 @@ export default class LaborAdobeTypoDetail extends BodyComponent {
 
   render() {
     let fontWeight = styleMapping.typographies.detail.fontWeight.normal;
+    let fontFamily = "'adobe-clean-display', 'adobe-clean', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'";
     switch (this.getAttribute('type')) {
       case 'light':
         fontWeight = styleMapping.typographies.detail.fontWeight.light;
-        break
-      case 'normal':
-        fontWeight = styleMapping.typographies.detail.fontWeight.normal;
-        break
+        fontFamily = "'adobe-clean', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'";
+        break;
     }
 
     const attrs = {
@@ -67,13 +66,14 @@ export default class LaborAdobeTypoDetail extends BodyComponent {
       'color': this.getAttribute('on-background')
         ? LaborAdobeTypoDetail.additionalAttributes.onBackgroundColor
         : LaborAdobeTypoDetail.additionalAttributes.color,
+      'font-family': fontFamily,
     }
 
     return this.renderMJML(`
       <mj-text
         ${this.htmlAttributes(attrs)}
       >
-        ${this.getContent().toUpperCase()}
+        ${this.getContent()}
       </mj-text>
     `)
   }

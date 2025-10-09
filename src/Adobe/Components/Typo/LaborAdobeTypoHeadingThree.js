@@ -42,7 +42,7 @@ export default class LaborAdobeTypoHeadingThree extends BodyComponent {
       'color': this.getAttribute('on-background')
         ? LaborAdobeTypoHeadingThree.additionalAttributes.onBackgroundColor
         : LaborAdobeTypoHeadingThree.additionalAttributes.color,
-      'font-family': "adobe-clean-display, 'adobe-clean', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'",
+      'font-family': "'adobe-clean-display', 'adobe-clean', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'",
     }
 
     return this.renderMJML(`

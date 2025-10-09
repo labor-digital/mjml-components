@@ -314,7 +314,7 @@ export default class AdobeRedStyleMapping {
       fontSize: AdobeRedStyleMapping.typographyFontSize.size18,
       lineHeight: AdobeRedStyleMapping.typographyLineHeight.size20,
       fontWeight: {
-        normal: AdobeRedStyleMapping.typographyFontWeight.bold,
+        normal: AdobeRedStyleMapping.typographyFontWeight.extraBold,
         light: AdobeRedStyleMapping.typographyFontWeight.regular,
       },
       letterSpacing: AdobeRedStyleMapping.typographyLetterSpacing.minusThree,
