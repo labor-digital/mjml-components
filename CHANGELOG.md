@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.38](https://github.com/labor-digital/mjml-components/compare/v3.0.37...v3.0.38) (2025-10-09)
+
+
+### Bug Fixes
+
+* add no-image-pod paddings for immersive-focussed mails ([c7950e1](https://github.com/labor-digital/mjml-components/commit/c7950e1742bbe72cd229afee16a0c71ee7ef90c7))
+
 ### [3.0.37](https://github.com/labor-digital/mjml-components/compare/v3.0.36...v3.0.37) (2025-10-09)
 
 
