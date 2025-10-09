@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.40](https://github.com/labor-digital/mjml-components/compare/v3.0.39...v3.0.40) (2025-10-09)
+
+
+### Bug Fixes
+
+* no-image-pod top padding for link type ([c72ac8d](https://github.com/labor-digital/mjml-components/commit/c72ac8d260ebcf6e4331c0080f980da0ecd070ca))
+
 ### [3.0.39](https://github.com/labor-digital/mjml-components/compare/v3.0.38...v3.0.39) (2025-10-09)
 
 
