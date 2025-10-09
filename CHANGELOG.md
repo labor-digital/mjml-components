@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.44](https://github.com/labor-digital/mjml-components/compare/v3.0.43...v3.0.44) (2025-10-09)
+
+
+### Bug Fixes
+
+* update typo normal detail to extrabold clean display & no longer force uppercase and is no extrabold, fix clean display font names ([36a817d](https://github.com/labor-digital/mjml-components/commit/36a817d26ef4f21c4c46120725c5fd338023f9b6))
+
 ### [3.0.43](https://github.com/labor-digital/mjml-components/compare/v3.0.42...v3.0.43) (2025-10-09)
 
 
