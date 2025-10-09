@@ -30,7 +30,7 @@ export default class LaborAdobePodNoImage extends BodyComponent {
     'cta-type': 'button',
 
     'padding-bottom': styleMapping.spacings.vertical.px100,
-    'padding-top': styleMapping.spacings.custom.px0,
+    'padding-top': styleMapping.spacings.vertical.px100,
   }
 
   render() {
@@ -44,7 +44,7 @@ export default class LaborAdobePodNoImage extends BodyComponent {
                     primary-cta="${this.getAttribute('cta')}"
                     primary-cta-href="${this.getAttribute('cta-href')}"
                     
-                    padding-top="${this.getAttribute('padding-top')}"
+                    content-section-padding-top="${this.getAttribute('padding-top')}"
                 >
                     ${this.getContent()}
                 </labor-adobe-pod>

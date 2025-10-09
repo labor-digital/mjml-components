@@ -37,6 +37,7 @@ export default class LaborAdobePod extends BodyComponent {
 
     'padding-bottom': 'unit(px)',
     'padding-top': 'unit(px)',
+    'content-section-padding-top': 'unit(px)',
   }
 
   static defaultAttributes = {
@@ -86,7 +87,9 @@ export default class LaborAdobePod extends BodyComponent {
                     padding-top="${
                       this.getAttribute('image-src')
                         ? styleMapping.spacings.horizontal.px0
-                        : styleMapping.spacings.horizontal.px100
+                        : this.getAttribute('content-section-padding-top')
+                          ? this.getAttribute('content-section-padding-top')
+                          : styleMapping.spacings.horizontal.px100
                     }"
                 >
                     <mj-column>
