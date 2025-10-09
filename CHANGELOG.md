@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.37](https://github.com/labor-digital/mjml-components/compare/v3.0.36...v3.0.37) (2025-10-09)
+
+
+### Bug Fixes
+
+* extend hero card products, add immersive 3 and refactor padding attrs ([a4aa6b4](https://github.com/labor-digital/mjml-components/commit/a4aa6b49a629799f6c3eed3b0532c09c86b7fc8e))
+* hero card display one attrs ([6add1a5](https://github.com/labor-digital/mjml-components/commit/6add1a5aaf178878f7f93eea58fa9a6f255ca6f5))
+
 ### [3.0.36](https://github.com/labor-digital/mjml-components/compare/v3.0.35...v3.0.36) (2025-10-08)
 
 
