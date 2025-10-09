@@ -116,21 +116,17 @@ export default class AdobeProductLogoMapping {
     express: {
       name: 'Adobe Express',
       key: 'express',
-      width: 756,
+      width: 1176,
       images: {
         black: {},
-        gray: {
-          width: 561,
-          height: 105,
-          location: "https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/logos/express/adobe_express.grey.561x105.png"
-        },
+        gray: {},
         white: {},
       },
     },
     firefly: {
       name: 'Adobe Firefly',
       key: 'firefly',
-      width: 672,
+      width: 1092,
       images: {
         black: {},
         gray: {},
@@ -190,7 +186,7 @@ export default class AdobeProductLogoMapping {
     stock: {
       name: 'Adobe Stock',
       key: 'stock',
-      width: 672,
+      width: 1050,
       images: {
         black: {},
         gray: {},
