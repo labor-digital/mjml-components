@@ -30,6 +30,7 @@ export default class LaborAdobeHeroCardImmersiveOne extends BodyComponent {
 
     'cta-text': 'string,',
     'cta-href': 'string',
+    'cta-type': 'enum(standard,inverted)',
 
     'image-src': 'string',
     'image-src-mobile': 'string',
@@ -53,6 +54,7 @@ export default class LaborAdobeHeroCardImmersiveOne extends BodyComponent {
 
     'cta-text': '',
     'cta-href': '',
+    'cta-type': 'standard',
 
     'image-src': '',
     'image-src-mobile': '',
@@ -109,6 +111,7 @@ export default class LaborAdobeHeroCardImmersiveOne extends BodyComponent {
             <labor-adobe-button
               href="${this.getAttribute('cta-href')}"
               padding-bottom="0"
+              type="${this.getAttribute('cta-type')}"
             >
             ${this.getAttribute('cta-text')}
             </labor-adobe-button>
