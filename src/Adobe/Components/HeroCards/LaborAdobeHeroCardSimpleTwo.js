@@ -43,7 +43,7 @@ export default class LaborAdobeHeroCardSimpleTwo extends BodyComponent {
     'pre-text': '',
     'headline': '',
 
-    'padding-bottom': styleMapping.spacings.vertical.px100,
+    'padding-bottom': styleMapping.spacings.vertical.px60,
     'header-additional-padding-bottom': styleMapping.spacings.vertical.px20,
   }
 
