@@ -44,6 +44,7 @@ export default class LaborAdobePodNoImage extends BodyComponent {
                     primary-cta="${this.getAttribute('cta')}"
                     primary-cta-href="${this.getAttribute('cta-href')}"
                     
+                    padding-bottom="${this.getAttribute('padding-bottom')}"
                     content-section-padding-top="${this.getAttribute('padding-top')}"
                 >
                     ${this.getContent()}
@@ -59,6 +60,7 @@ export default class LaborAdobePodNoImage extends BodyComponent {
                     secondary-cta-href="${this.getAttribute('cta-href')}"
                     
                     padding-bottom="${this.getAttribute('padding-bottom')}"
+                    content-section-padding-top="${this.getAttribute('padding-top')}"
                 >
                     ${this.getContent()}
                 </labor-adobe-pod>

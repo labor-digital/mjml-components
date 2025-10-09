@@ -157,12 +157,6 @@
             </mj-column>
         </mj-section>
 
-        <mj-section>
-            <mj-column>
-                <mj-divider mj-class="divider" />
-            </mj-column>
-        </mj-section>
-
         <labor-adobe-section padding-bottom="40px" padding-top="40px" section-bg-class="heading-bg">
             <mj-column>
                 <labor-adobe-typo-heading-three>
@@ -182,6 +176,37 @@
                 cta-type="link"
                 cta="Lorem ipsum"
                 cta-href="#"
+        >
+            <a class="labor-adobe-typo-body-link-blue" href="#" target="_blank">css link test</a>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        </labor-adobe-pod-no-image>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-bottom="40px" padding-top="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Pod No Image (with Link, padding-top reduced)
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-pod-no-image
+                headline="Lorem ipsum dolor sit amet"
+                cta-type="link"
+                cta="Lorem ipsum"
+                cta-href="#"
+                padding-top="20px"
         >
             <a class="labor-adobe-typo-body-link-blue" href="#" target="_blank">css link test</a>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
