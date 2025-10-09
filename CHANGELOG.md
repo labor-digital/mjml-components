@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.42](https://github.com/labor-digital/mjml-components/compare/v3.0.41...v3.0.42) (2025-10-09)
+
+
+### Bug Fixes
+
+* hero card simple 2 bottom padding ([7147fc3](https://github.com/labor-digital/mjml-components/commit/7147fc324a3c102a3d9f68f8d3da5d0a5056facd))
+
 ### [3.0.41](https://github.com/labor-digital/mjml-components/compare/v3.0.40...v3.0.41) (2025-10-09)
 
 
