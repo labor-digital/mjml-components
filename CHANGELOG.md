@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.45](https://github.com/labor-digital/mjml-components/compare/v3.0.44...v3.0.45) (2025-10-14)
+
+
+### Bug Fixes
+
+* change pod image href target ([e871f13](https://github.com/labor-digital/mjml-components/commit/e871f13d074f3050018593a785309e02b1778609))
+
 ### [3.0.44](https://github.com/labor-digital/mjml-components/compare/v3.0.43...v3.0.44) (2025-10-09)
 
 
