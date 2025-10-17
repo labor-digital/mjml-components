@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.46](https://github.com/labor-digital/mjml-components/compare/v3.0.45...v3.0.46) (2025-10-17)
+
+
+### Bug Fixes
+
+* remove obligate mobile image attribute for pods ([5af5cf4](https://github.com/labor-digital/mjml-components/commit/5af5cf485e6ad8a0fc9a2abeb604bc20a80d4dfc))
+
 ### [3.0.45](https://github.com/labor-digital/mjml-components/compare/v3.0.44...v3.0.45) (2025-10-14)
 
 
