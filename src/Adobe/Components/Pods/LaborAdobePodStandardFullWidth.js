@@ -31,12 +31,14 @@ export default class LaborAdobePodStandardFullWidth extends BodyComponent {
   }
 
   render() {
+    const srcMobileAttr = this.getAttribute('image-src-mobile') ? `image-src-mobile="${this.getAttribute('image-src-mobile')}"` : '';
+
     return this.renderMJML(`
                 <labor-adobe-pod
                     section-bg-class="${this.getAttribute('section-bg-class')}"
                  
                     image-src="${this.getAttribute('image-src')}"
-                    image-src-mobile="${this.getAttribute('image-src-mobile') ?? this.getAttribute('image-src')}"
+                    ${srcMobileAttr}
                     image-href="${this.getAttribute('primary-cta-href"')}"
                     image-with-padding="false"
                     

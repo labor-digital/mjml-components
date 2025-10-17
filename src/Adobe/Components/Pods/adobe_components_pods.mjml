@@ -67,6 +67,36 @@
             </mj-column>
         </mj-section>
 
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Pod Standard (no mobile image)
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-pod-standard
+                headline="Lorem ipsum dolor sit amet"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/pod_image.png"
+                primary-cta="Lorem ipsum"
+                primary-cta-href="#"
+        >
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            <a class="labor-adobe-typo-body-link-blue" href="#" target="_blank">consetetur sadipscing elitr</a>
+        </labor-adobe-pod-standard>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
         <labor-adobe-section padding-bottom="40px" padding-top="40px" section-bg-class="heading-bg">
             <mj-column>
                 <labor-adobe-typo-heading-three>
@@ -85,6 +115,36 @@
                 headline="Lorem ipsum dolor sit amet"
                 image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/pod_image.png"
                 image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/pod_image_m.png"
+                primary-cta="Lorem ipsum"
+                primary-cta-href="#"
+        >
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            <a class="labor-adobe-typo-body-link-blue" href="#" target="_blank">consetetur sadipscing elitr</a>
+        </labor-adobe-pod-standard-full-width>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-bottom="40px" padding-top="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    Pod Standard Full Width (no mobile image)
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-pod-standard-full-width
+                headline="Lorem ipsum dolor sit amet1"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/pod_image.png"
                 primary-cta="Lorem ipsum"
                 primary-cta-href="#"
         >
