@@ -47,6 +47,9 @@ export default class AdobeRedStyleMapping {
     adobeRed: {
       hex: '#EB1000',
     },
+    buttonExpress: {
+      hex: '#5C5CE0'
+    },
     buttonQuiet: {
       hex: '#747474',
     },

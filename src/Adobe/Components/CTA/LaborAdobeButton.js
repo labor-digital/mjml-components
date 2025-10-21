@@ -14,7 +14,7 @@ export default class LaborAdobeButton extends BodyComponent {
   static endingTag = true
 
   static allowedAttributes = {
-    'type': 'enum(standard,inverted,quiet)',
+    'type': 'enum(standard,express,inverted,quiet)',
     'href': 'string',
     'width': 'unit(px)',
 
@@ -50,6 +50,11 @@ export default class LaborAdobeButton extends BodyComponent {
       case 'inverted':
         attrs['color'] = styleMapping.colors.white.hex
         attrs['border-color'] = styleMapping.colors.white.hex
+        break
+      case 'express':
+        attrs['color'] = styleMapping.colors.white.hex
+        attrs['background-color'] = styleMapping.colors.buttonExpress.hex
+        attrs['border-color'] = styleMapping.colors.buttonExpress.hex
         break
       case 'standard':
       default:
