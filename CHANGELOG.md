@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.47](https://github.com/labor-digital/mjml-components/compare/v3.0.46...v3.0.47) (2025-10-21)
+
+
+### Bug Fixes
+
+* add styling for Express button ([80f5079](https://github.com/labor-digital/mjml-components/commit/80f50799d3432a249e506958d91403d9e7aa6392))
+
 ### [3.0.46](https://github.com/labor-digital/mjml-components/compare/v3.0.45...v3.0.46) (2025-10-17)
 
 
