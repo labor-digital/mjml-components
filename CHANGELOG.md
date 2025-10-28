@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.50](https://github.com/labor-digital/mjml-components/compare/v3.0.49...v3.0.50) (2025-10-28)
+
+
+### Bug Fixes
+
+* add padding top attr to standard pods ([edfd3d2](https://github.com/labor-digital/mjml-components/commit/edfd3d21b0b6642fe8f508e9bdbe23714f581b96))
+
 ### [3.0.49](https://github.com/labor-digital/mjml-components/compare/v3.0.48...v3.0.49) (2025-10-28)
 
 
