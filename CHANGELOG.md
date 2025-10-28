@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.48](https://github.com/labor-digital/mjml-components/compare/v3.0.47...v3.0.48) (2025-10-28)
+
+
+### Bug Fixes
+
+* allow on-background on hero card immersive two ([9b40471](https://github.com/labor-digital/mjml-components/commit/9b404713d8c7a7cb1ef67bd6027b33c6164a973e))
+
 ### [3.0.47](https://github.com/labor-digital/mjml-components/compare/v3.0.46...v3.0.47) (2025-10-21)
 
 
