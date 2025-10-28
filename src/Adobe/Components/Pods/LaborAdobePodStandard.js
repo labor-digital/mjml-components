@@ -23,11 +23,17 @@ export default class LaborAdobePodStandard extends BodyComponent {
     'primary-cta': 'string',
     'primary-cta-href': 'string',
     'primary-cta-width': 'unit(px)',
+
+    // this is the only pod in red templates which can currently be placed beneath an immersive hero
+    // in that case it should have a top padding of 40
+    'padding-top': 'unit(px)',
   }
 
   static defaultAttributes = {
     'section-bg-class': 'content-bg',
     'primary-cta-width': '200px',
+
+    'padding-top': '0',
   }
 
   render() {
@@ -47,6 +53,8 @@ export default class LaborAdobePodStandard extends BodyComponent {
                     primary-cta="${this.getAttribute('primary-cta')}"
                     primary-cta-href="${this.getAttribute('primary-cta-href')}"
                     primary-cta-width="${this.getAttribute('primary-cta-width')}"
+                    
+                    padding-top="${this.getAttribute('padding-top')}"
                 >
                     ${this.getContent()}
                 </labor-adobe-pod>
