@@ -295,7 +295,7 @@
         <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
             <mj-column>
                 <labor-adobe-typo-heading-three>
-                    Hero Card Immersive Two (inverted button)
+                    Hero Card Immersive Two (on-background)
                 </labor-adobe-typo-heading-three>
             </mj-column>
         </labor-adobe-section>
@@ -321,9 +321,10 @@
 
                 cta-text="Test button"
                 cta-href="#"
-                cta-type="inverted"
 
                 image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/hero_card_immersive.png"
+
+                on-background="true"
         >
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 18/25
         </labor-adobe-hero-card-immersive-two>
@@ -352,7 +353,7 @@
                 header-bg-class="immersive-bg"
                 section-bg-class="immersive-bg"
 
-                product-src-overwrite="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_education_exchange.red.928x168.png"
+                product-src-overwrite="https://landing.adobe.com/dam/uploads/2024/na/labor-email-assets/products-and-header/adobe_education_exchange.white.928x168.png"
                 product-height-overwrite="42px"
                 product-width-overwrite="232px"
 

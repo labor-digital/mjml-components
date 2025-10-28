@@ -31,7 +31,6 @@ export default class LaborAdobeHeroCardImmersiveTwo extends BodyComponent {
 
     'cta-text': 'string,',
     'cta-href': 'string',
-    'cta-type': 'enum(standard,inverted)',
 
     'image-src': 'string',
     'image-src-mobile': 'string',
@@ -43,6 +42,9 @@ export default class LaborAdobeHeroCardImmersiveTwo extends BodyComponent {
 
     'section-padding-bottom': 'unit(px)',
     'section-padding-top': 'unit(px)',
+
+    // not shown in the red templates, but might still make sense in some cases depending on bg color
+    'on-background': 'boolean',
   }
 
   static defaultAttributes = {
@@ -57,7 +59,6 @@ export default class LaborAdobeHeroCardImmersiveTwo extends BodyComponent {
 
     'cta-text': '',
     'cta-href': '',
-    'cta-type': 'standard',
 
     'image-src': '',
     'image-src-mobile': '',
@@ -69,9 +70,12 @@ export default class LaborAdobeHeroCardImmersiveTwo extends BodyComponent {
 
     'section-padding-bottom': styleMapping.spacings.custom.px0,
     'section-padding-top': styleMapping.spacings.vertical.px20,
+
+    'on-background': 'false',
   }
 
   render() {
+    console.log(this.getAttribute('on-background'))
     let header =
       this.getAttribute('product-src-overwrite')
         ? `<labor-adobe-header
@@ -120,13 +124,13 @@ export default class LaborAdobeHeroCardImmersiveTwo extends BodyComponent {
           >
           <mj-column>
             <labor-adobe-typo-display-one
-              on-background="true"
+              on-background="${this.getAttribute('on-background')}"
             >
               ${this.getAttribute('headline')}
             </labor-adobe-typo-display-one>
             
             <labor-adobe-typo-body
-             on-background="true"
+              on-background="${this.getAttribute('on-background')}"
              >
               ${this.getContent()}
             </labor-adobe-typo-body>
@@ -134,7 +138,7 @@ export default class LaborAdobeHeroCardImmersiveTwo extends BodyComponent {
             <labor-adobe-button
               href="${this.getAttribute('cta-href')}"
               padding-bottom="0"
-              type="${this.getAttribute('cta-type')}"
+              type="${this.getAttribute('on-background') === true ? 'inverted' : 'standard'}"
             >
             ${this.getAttribute('cta-text')}
             </labor-adobe-button>
