@@ -75,7 +75,6 @@ export default class LaborAdobeHeroCardImmersiveTwo extends BodyComponent {
   }
 
   render() {
-    console.log(this.getAttribute('on-background'))
     let header =
       this.getAttribute('product-src-overwrite')
         ? `<labor-adobe-header
