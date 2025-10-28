@@ -1,6 +1,6 @@
 {
   "name": "@labor-digital/mjml-components",
-  "version": "3.0.48",
+  "version": "3.0.49",
   "description": "A library of MJML components for internal email projects",
   "homepage": "https://github.com/labor-digital/mjml-components",
   "license": "Apache-2.0",
