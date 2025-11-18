@@ -20,6 +20,7 @@ export default class LaborAdobeFooter extends BodyComponent {
     'discord-url': 'string',
     'linkedin-url': 'string',
     'footer-bg-class': 'string',
+    'overwrite-padding-bottom': 'unit(px,%)'
   }
   static defaultAttributes = {
     'facebook-url': '',
@@ -175,7 +176,9 @@ export default class LaborAdobeFooter extends BodyComponent {
       this.renderMJML(`
       <labor-adobe-section
         section-bg-class="${this.getAttribute('footer-bg-class')}"
-        padding-bottom=${LaborAdobeFooter.additionalAttributes.contentSectionPaddingBottom}
+        padding-bottom=${this.getAttribute('overwrite-padding-bottom') 
+          ? this.getAttribute('overwrite-padding-bottom') 
+          : LaborAdobeFooter.additionalAttributes.contentSectionPaddingBottom}
       >
         <mj-column>
           ${this.renderChildren(this.props.children, {
