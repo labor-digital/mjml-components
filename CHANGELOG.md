@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.51](https://github.com/labor-digital/mjml-components/compare/v3.0.50...v3.0.51) (2025-11-18)
+
+
+### Bug Fixes
+
+* add padding bottom overwrite attr to footers ([bca6360](https://github.com/labor-digital/mjml-components/commit/bca6360217a3d9e606ea10f05ea7e243d4099c4e))
+
 ### [3.0.50](https://github.com/labor-digital/mjml-components/compare/v3.0.49...v3.0.50) (2025-10-28)
 
 
