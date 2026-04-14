@@ -17,9 +17,11 @@
     "url": "https://labor.digital"
   },
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "watch": "gulp watch",
-    "build": "gulp build",
+    "build": "tsc",
+    "preview": "npm run build && tsx scripts/compile-previews.ts",
+    "watch": "tsc --watch",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.js' --write",
     "test": "playwright test",
     "test:ui": "playwright test --ui",
@@ -46,7 +48,9 @@
     "gulp-watch": "^4.3.11",
     "prettier": "^2.8.8",
     "pretty": "^2.0.0",
-    "through2": "^4.0.2"
+    "through2": "^4.0.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.4.0"
   },
   "engines": {
     "node": ">=18.18.0",

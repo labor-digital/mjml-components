@@ -59,7 +59,7 @@ export default class LaborAdobeProductLogo extends BodyComponent {
     // Return the correct logo height based on the product type and the overwrite attribute
     let getLogoHeight = () => {
 
-      let targetHeight = 0;
+      let targetHeight: any = 0;
 
       if(this.getAttribute('product-height-overwrite')) {
         targetHeight = this.getAttribute('product-height-overwrite');

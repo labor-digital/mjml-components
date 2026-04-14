@@ -106,9 +106,8 @@ export default class LaborAdobeTypoDisplayOne extends BodyComponent {
    }
   `
 
-  constructor(initialData = {}) {
+  constructor(initialData: any = {}) {
     super(initialData);
-
     this.userAttributes = initialData.attributes || {};
     if(!this.userAttributes['responsive'] || this.userAttributes['responsive'] === 'none' || this.userAttributes['padding-bottom']){
       this.attributes['css-class'] = '';
