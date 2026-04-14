@@ -20,7 +20,12 @@
   "scripts": {
     "watch": "gulp watch",
     "build": "gulp build",
-    "prettier-format": "prettier --config .prettierrc 'src/**/*.js' --write"
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.js' --write",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report"
   },
   "sideEffects": false,
   "dependencies": {
@@ -33,6 +38,7 @@
     "@babel/plugin-proposal-decorators": "^7.24.6",
     "@babel/preset-env": "^7.24.6",
     "@babel/register": "^7.24.6",
+    "@playwright/test": "^1.59.1",
     "glob": "^10.4.1",
     "gulp": "^5.0.0",
     "gulp-babel": "^8.0.0",

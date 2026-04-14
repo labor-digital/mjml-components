@@ -1,0 +1,1917 @@
+{
+  "config": {
+    "configFile": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright.config.js",
+    "rootDir": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright",
+    "forbidOnly": true,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 10
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 10
+        },
+        "id": "chromium-xs",
+        "name": "chromium-xs",
+        "testDir": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 10
+        },
+        "id": "chromium-md",
+        "name": "chromium-md",
+        "testDir": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 10
+        },
+        "id": "chromium-lg",
+        "name": "chromium-lg",
+        "testDir": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 10
+        },
+        "id": "chromium-xl",
+        "name": "chromium-xl",
+        "testDir": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "./playwright/test-reports"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./playwright/test-reports/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "./playwright/test-reports/results.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 10,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "snapshots.spec.ts",
+      "file": "snapshots.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Preview Snapshots",
+          "file": "snapshots.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "adobe_components_cta.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1607,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:00.615Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-19bcab821fd2a0358247",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_action_cards.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1518,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:00.616Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-fdc4d839b2ba0bb42516",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_avatars.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1562,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:00.599Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-df15bb7c78f7d29da7d3",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_edex.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1452,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:00.589Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-a8369d08a93c35f778b0",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_footer_bands.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 1448,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:00.621Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-d383f089b8e68ccaae6f",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_two_col_img_text_section.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 1359,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:00.594Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-83986d53d7f463052b31",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_footers.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 1269,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:00.595Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-1fe7b682d497ede810d2",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_headers.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 1233,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:00.620Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-f6d55e7619b95b2d3c19",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_headers_white.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 8,
+                      "status": "passed",
+                      "duration": 1128,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:00.575Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-0fbded51301c23fa652f",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_hero_cards.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 9,
+                      "status": "passed",
+                      "duration": 1640,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:00.605Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-9c69503747d78ad6bc81",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_pods.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 8,
+                      "status": "passed",
+                      "duration": 1131,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:02.092Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-2e3366002707f89a67a3",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_product_logos.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 1004,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:02.195Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-777c71b2af7357f999da",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_typo.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 1089,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:02.257Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-a43617065f3c40d79c12",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_cta.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-md",
+                  "projectName": "chromium-md",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 833,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:02.616Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-55af284054a2eb59e3ba",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_action_cards.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-md",
+                  "projectName": "chromium-md",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1201,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:02.691Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-020c98ca918ef34e41e5",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_avatars.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-md",
+                  "projectName": "chromium-md",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 1035,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:02.736Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-0481423a35b6ed43702b",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_edex.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-md",
+                  "projectName": "chromium-md",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1148,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:02.727Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-6d636949cc601f0223ef",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_footer_bands.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-md",
+                  "projectName": "chromium-md",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 947,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:02.790Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-f07651acd5ce81cb8c76",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_two_col_img_text_section.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-md",
+                  "projectName": "chromium-md",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1023,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:02.877Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-c609ac6ed05d4c244c2b",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_footers.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-md",
+                  "projectName": "chromium-md",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 9,
+                      "status": "passed",
+                      "duration": 917,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:02.965Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-92a9b2df03a7446af651",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_headers.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-md",
+                  "projectName": "chromium-md",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 1125,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:03.483Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-d8f8ec2604b609b1022d",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_headers_white.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-md",
+                  "projectName": "chromium-md",
+                  "results": [
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 8,
+                      "status": "passed",
+                      "duration": 1078,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:03.488Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-318905bb8311ab58a867",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_hero_cards.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-md",
+                  "projectName": "chromium-md",
+                  "results": [
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 1525,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:03.624Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-ad3fc430f0f597b0cfa9",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_pods.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-md",
+                  "projectName": "chromium-md",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 1270,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:03.552Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-02a5a2d9047a185d5a4f",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_product_logos.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-md",
+                  "projectName": "chromium-md",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 985,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:03.926Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-d9b59ff26de6b37bc51c",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_typo.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-md",
+                  "projectName": "chromium-md",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1138,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:03.983Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-8040c2ed092d8b9442ab",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_cta.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1048,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:04.305Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-f8a922e0ad80f2d231af",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_action_cards.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 9,
+                      "status": "passed",
+                      "duration": 1212,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:04.304Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-5cc993f3d78c3c1c47f4",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_avatars.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 22,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 948,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:04.330Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-5aa7312cf54e719c4563",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_edex.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 23,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1113,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:04.402Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-f4d2906a28cb54c411f8",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_footer_bands.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 8,
+                      "status": "passed",
+                      "duration": 781,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:04.997Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-8e12479dab5cad9742b4",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_two_col_img_text_section.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 25,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 931,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:05.018Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-5182a75dcedbc64a6578",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_footers.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 26,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 839,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:05.112Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-cbc892315449896694fc",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_headers.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 27,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 1125,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:05.221Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-a78aa1f8a503f286103d",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_headers_white.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 28,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1110,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:05.528Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-58f3cafd6c5be20d218a",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_hero_cards.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 29,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 1762,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:05.631Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-fdbb3d248d8f7c236e39",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_pods.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 22,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1449,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:05.413Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-ff96bac6768092c60398",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_product_logos.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1119,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:05.514Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-7d4335e34068c333ccc5",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_typo.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 9,
+                      "status": "passed",
+                      "duration": 1374,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:05.681Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-ba46b3d669a650a677b2",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_cta.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xl",
+                  "projectName": "chromium-xl",
+                  "results": [
+                    {
+                      "workerIndex": 30,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1022,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:06.015Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-50ec3269ec1287c53b0a",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_action_cards.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xl",
+                  "projectName": "chromium-xl",
+                  "results": [
+                    {
+                      "workerIndex": 31,
+                      "parallelIndex": 8,
+                      "status": "passed",
+                      "duration": 1415,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:06.146Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-802b8bd849223adfb748",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_avatars.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xl",
+                  "projectName": "chromium-xl",
+                  "results": [
+                    {
+                      "workerIndex": 32,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 1114,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:06.443Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-b5d9547e5b9212219e85",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_edex.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xl",
+                  "projectName": "chromium-xl",
+                  "results": [
+                    {
+                      "workerIndex": 33,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 1341,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:06.451Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-a0ae542026f4c1bde009",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_footer_bands.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xl",
+                  "projectName": "chromium-xl",
+                  "results": [
+                    {
+                      "workerIndex": 34,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 887,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:06.860Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-d21cdb0f86a15a6a31ff",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_two_col_img_text_section.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xl",
+                  "projectName": "chromium-xl",
+                  "results": [
+                    {
+                      "workerIndex": 35,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1080,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:06.995Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-14512f8c3c2a9ab3b2c8",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_footers.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xl",
+                  "projectName": "chromium-xl",
+                  "results": [
+                    {
+                      "workerIndex": 36,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 927,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:07.087Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-b3b91393ec2d11885911",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_headers.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xl",
+                  "projectName": "chromium-xl",
+                  "results": [
+                    {
+                      "workerIndex": 37,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1281,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:07.276Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-e6a719f22438486f3672",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_headers_white.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xl",
+                  "projectName": "chromium-xl",
+                  "results": [
+                    {
+                      "workerIndex": 38,
+                      "parallelIndex": 9,
+                      "status": "passed",
+                      "duration": 1224,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:07.465Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-a296f51489ac5a5ad236",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_hero_cards.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xl",
+                  "projectName": "chromium-xl",
+                  "results": [
+                    {
+                      "workerIndex": 30,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1918,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:07.159Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-9dae213ad0247e837220",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_pods.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xl",
+                  "projectName": "chromium-xl",
+                  "results": [
+                    {
+                      "workerIndex": 39,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 1513,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:07.940Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-225f0808d02e13c4fd5a",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_product_logos.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xl",
+                  "projectName": "chromium-xl",
+                  "results": [
+                    {
+                      "workerIndex": 31,
+                      "parallelIndex": 8,
+                      "status": "passed",
+                      "duration": 1258,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:07.698Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-390a52b336441b867554",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_typo.html",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-xl",
+                  "projectName": "chromium-xl",
+                  "results": [
+                    {
+                      "workerIndex": 32,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 1613,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-14T09:16:07.705Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-efa0fbf10bad2be56963",
+              "file": "snapshots.spec.ts",
+              "line": 15,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-14T09:16:00.237Z",
+    "duration": 9350.637,
+    "expected": 52,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
