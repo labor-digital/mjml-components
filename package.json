@@ -32,7 +32,8 @@
   "sideEffects": false,
   "dependencies": {
     "js-md5": "^0.8.3",
-    "mjml": "4.7.*"
+    "mjml": "4.7.*",
+    "mjml-custom-component-decorator": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.24.6",
