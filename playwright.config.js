@@ -8,7 +8,7 @@ export default defineConfig({
   outputDir: './playwright/test-results',
   // testIgnore: '*test-assets',
   testMatch: '**/*.spec.ts',
-  snapshotPathTemplate: './playwright/test-snapshots/{testFilePath}/{testName}/{projectName}-{platform}{ext}',
+  snapshotPathTemplate: './playwright/test-snapshots/{testFilePath}/{testName}/{projectName}{ext}',
   timeout: 60000,
   fullyParallel: true,
   forbidOnly: true,
@@ -20,24 +20,12 @@ export default defineConfig({
     ['json', { outputFile: './playwright/test-reports/results.json' }],
     ['junit', { outputFile: './playwright/test-reports/results.xml' }],
   ],
-  use: {
-    baseURL: process.env.TEST_BASE_URL,
-    trace: 'on-first-retry',
-    ignoreHTTPSErrors: true,
-  },
   projects: [
     {
       name: 'chromium-xs',
       use: {
         ...devices['Desktop Chrome'],
-        viewport: { width: 480, height: 700 },
-      },
-    },
-    {
-      name: 'chromium-md',
-      use: {
-        ...devices['Desktop Chrome'],
-        viewport: { width: 700, height: 1000 },
+        viewport: { width: 400, height: 700 },
       },
     },
     {
@@ -45,13 +33,6 @@ export default defineConfig({
       use: {
         ...devices['Desktop Chrome'],
         viewport: { width: 1024, height: 768 },
-      },
-    },
-    {
-      name: 'chromium-xl',
-      use: {
-        ...devices['Desktop Chrome'],
-        viewport: { width: 1920, height: 1080 },
       },
     },
     // {
