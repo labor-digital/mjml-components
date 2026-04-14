@@ -1,0 +1,58 @@
+<testsuites id="" name="" tests="26" failures="0" skipped="0" errors="0" time="4.980745">
+<testsuite name="snapshots.spec.ts" timestamp="2026-04-14T13:28:05.181Z" hostname="chromium-xs" tests="13" failures="0" skipped="0" time="15.865" errors="0">
+<testcase name="Preview Snapshots › adobe_components_cta.html" classname="snapshots.spec.ts" time="1.302">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_custom_action_cards.html" classname="snapshots.spec.ts" time="1.314">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_custom_avatars.html" classname="snapshots.spec.ts" time="1.087">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_custom_edex.html" classname="snapshots.spec.ts" time="1.424">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_custom_footer_bands.html" classname="snapshots.spec.ts" time="1.046">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_custom_two_col_img_text_section.html" classname="snapshots.spec.ts" time="1.282">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_footers.html" classname="snapshots.spec.ts" time="1.083">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_headers.html" classname="snapshots.spec.ts" time="1.27">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_headers_white.html" classname="snapshots.spec.ts" time="1.235">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_hero_cards.html" classname="snapshots.spec.ts" time="1.45">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_pods.html" classname="snapshots.spec.ts" time="1.144">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_product_logos.html" classname="snapshots.spec.ts" time="1.043">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_typo.html" classname="snapshots.spec.ts" time="1.185">
+</testcase>
+</testsuite>
+<testsuite name="snapshots.spec.ts" timestamp="2026-04-14T13:28:05.181Z" hostname="chromium-lg" tests="13" failures="0" skipped="0" time="14.962" errors="0">
+<testcase name="Preview Snapshots › adobe_components_cta.html" classname="snapshots.spec.ts" time="1.125">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_custom_action_cards.html" classname="snapshots.spec.ts" time="1.361">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_custom_avatars.html" classname="snapshots.spec.ts" time="1.168">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_custom_edex.html" classname="snapshots.spec.ts" time="1.255">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_custom_footer_bands.html" classname="snapshots.spec.ts" time="0.992">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_custom_two_col_img_text_section.html" classname="snapshots.spec.ts" time="1.038">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_footers.html" classname="snapshots.spec.ts" time="0.86">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_headers.html" classname="snapshots.spec.ts" time="1.042">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_headers_white.html" classname="snapshots.spec.ts" time="1.015">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_hero_cards.html" classname="snapshots.spec.ts" time="1.574">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_pods.html" classname="snapshots.spec.ts" time="1.246">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_product_logos.html" classname="snapshots.spec.ts" time="1.036">
+</testcase>
+<testcase name="Preview Snapshots › adobe_components_typo.html" classname="snapshots.spec.ts" time="1.25">
+</testcase>
+</testsuite>
+</testsuites>
