@@ -1,39 +1,46 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-body': ['labor-adobe-pod-z-formation'],
-  'labor-adobe-pod-z-formation': [
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-pod-z-formation',
+  attributes: {
+    'section-bg-class': {
+      type: 'string',
+      default: 'content-bg',
+    },
+    'direction': {
+      type: 'enum(ltr,rtl)',
+      default: 'ltr',
+    },
+    'image-src': {
+      type: 'string',
+      default: '',
+    },
+    'image-src-mobile': {
+      type: 'string',
+      default: '',
+    },
+    'padding-top': {
+      type: 'unit(px,%)',
+    },
+    'padding-bottom': {
+      type: 'unit(px,%)',
+      default: styleMapping.spacings.vertical.px100,
+    },
+  },
+  allowedParentTags: ['mj-body'],
+  allowedChildTags: [
     'labor-adobe-typo-body',
     'labor-adobe-typo-heading-four',
-    'labor-adobe-link'
+    'labor-adobe-link',
   ],
 })
 
-export default class LaborAdobePodZFormation extends BodyComponent {
+class LaborAdobePodZFormation extends BodyComponent {
   static endingTag = false
-
-  static allowedAttributes = {
-    'section-bg-class': 'string',
-    'direction': 'enum(ltr,rtl)',
-    'image-src': 'string',
-    'image-src-mobile': 'string',
-
-    'padding-top': 'unit(px,%)',
-    'padding-bottom': 'unit(px,%)',
-  }
-
-  static defaultAttributes = {
-    'section-bg-class': 'content-bg',
-    'direction': 'ltr',
-    'image-src': '',
-    'image-src-mobile': '',
-
-    'padding-bottom': styleMapping.spacings.vertical.px100,
-  }
 
   static additionalAttributes = {
     'padding-to-edge-mobile' : (parseInt(styleMapping.grids.mobile.contentSpacing)
@@ -124,10 +131,7 @@ export default class LaborAdobePodZFormation extends BodyComponent {
               : '0'
           }"
         >
-          ${this.renderChildren(this.props.children, {
-            rawXML: true,
-            renderer: (component) => component.render,
-          })}
+          ${this.props.content}
         </mj-column>
       </labor-adobe-section>
     `)

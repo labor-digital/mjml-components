@@ -1,12 +1,14 @@
-import { registerDependencies } from 'mjml-validator'
 import MjWrapper from 'mjml-wrapper'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 
-registerDependencies({
-  'labor-bg-wrapper': ['mj-section'],
-  'mj-body': ['labor-bg-wrapper'],
+export default @MJMLCustomComponent({
+  tag: 'labor-bg-wrapper',
+  attributes: {},
+  allowedParentTags: ['mj-body'],
+  allowedChildTags: ['mj-section'],
 })
 
-export default class LaborBgWrapper extends MjWrapper {
+class LaborBgWrapper extends MjWrapper {
   getStyles() {
     const fullWidth = this.isFullWidth()
     let styles = super.getStyles()

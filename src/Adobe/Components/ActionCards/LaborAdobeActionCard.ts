@@ -1,12 +1,37 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
-const styleMapping = AdobeRedStyleMapping;
+const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-body': ['labor-adobe-action-card'],
-  'labor-adobe-action-card': [
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-action-card',
+  attributes: {
+    'section-bg-class': {
+      type: 'string',
+      default: 'content-bg',
+    },
+    'image-src': {
+      type: 'string',
+    },
+    'image-src-mobile': {
+      type: 'string',
+    },
+    'image-alt': {
+      type: 'string',
+      default: 'Alt Text',
+    },
+    'padding-top': {
+      type: 'unit(px)',
+      default: styleMapping.spacings.custom.px0,
+    },
+    'padding-bottom': {
+      type: 'unit(px)',
+      default: styleMapping.spacings.custom.px0,
+    },
+  },
+  allowedParentTags: ['mj-body'],
+  allowedChildTags: [
     'labor-responsive-image',
     'labor-adobe-typo-body',
     'labor-adobe-typo-heading-three',
@@ -15,24 +40,7 @@ registerDependencies({
   ],
 })
 
-export default class LaborAdobeActionCard extends BodyComponent {
-  static allowedAttributes = {
-    'section-bg-class': 'string',
-
-    'image-src': 'string',
-    'image-src-mobile': 'string',
-    'image-alt': 'string',
-
-    'padding-top': 'unit(px)',
-    'padding-bottom': 'unit(px)',
-  }
-
-  static defaultAttributes = {
-    'section-bg-class': 'content-bg',
-
-    'padding-top': styleMapping.spacings.custom.px0,
-    'padding-bottom': styleMapping.spacings.custom.px0,
-  }
+class LaborAdobeActionCard extends BodyComponent {
 
   static additionalAttributes = {
     'image-section-padding': styleMapping.spacings.vertical.px40,
@@ -103,10 +111,7 @@ export default class LaborAdobeActionCard extends BodyComponent {
           padding-right=${LaborAdobeActionCard.additionalAttributes['padding-left-right']}
           css-class="labor-adobe-action-card-image"
         >
-          ${this.renderChildren(this.props.children, {
-            rawXML: true,
-            renderer: (component) => component.render,
-          })}
+          ${this.props.content}
         </mj-column>
       </labor-adobe-section>
     `)

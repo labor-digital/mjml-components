@@ -1,26 +1,27 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-body': ['labor-adobe-footer-image-band'],
-  'labor-adobe-footer-image-band': [],
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-footer-image-band',
+  attributes: {
+    'src': {
+      type: 'string',
+      default: '',
+    },
+    'src-mobile': {
+      type: 'string',
+      default: '',
+    },
+  },
+  allowedParentTags: ['mj-body'],
+  allowedChildTags: [],
 })
 
-export default class LaborAdobeFooterImageBand extends BodyComponent {
+class LaborAdobeFooterImageBand extends BodyComponent {
   static endingTag = true
-
-  static allowedAttributes = {
-    'src': 'string',
-    'src-mobile': 'string',
-  }
-
-  static defaultAttributes = {
-    'src': '',
-    'src-mobile': '',
-  }
 
   render() {
     let imgAttrs = {

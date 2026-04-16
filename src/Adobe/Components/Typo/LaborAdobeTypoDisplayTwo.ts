@@ -1,31 +1,34 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-column': ['labor-adobe-typo-display-two'],
-  'labor-adobe-typo-display-two': [],
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-typo-display-two',
+  attributes: {
+    'on-background': {
+      type: 'boolean',
+      default: false,
+    },
+    'type': {
+      type: 'enum(normal,quiet)',
+      default: 'normal',
+    },
+    'padding-top': {
+      type: 'unit(px,%)',
+    },
+    'padding-bottom': {
+      type: 'unit(px,%)',
+      default: styleMapping.typographies.displayTwo.paddingBottom,
+    },
+  },
+  allowedParentTags: ['mj-column'],
+  allowedChildTags: [],
 })
 
-export default class LaborAdobeTypoDisplayTwo extends BodyComponent {
+class LaborAdobeTypoDisplayTwo extends BodyComponent {
   static endingTag = true
-
-  static allowedAttributes = {
-    'on-background': 'boolean',
-    'type': 'enum(normal,quiet)',
-
-    'padding-top': 'unit(px,%)',
-    'padding-bottom': 'unit(px,%)',
-  }
-
-  static defaultAttributes = {
-    'on-background': false,
-    'type': 'normal',
-
-    'padding-bottom': styleMapping.typographies.displayTwo.paddingBottom,
-  }
 
   static additionalAttributes = {
     fontSize: styleMapping.typographies.displayTwo.fontSize,

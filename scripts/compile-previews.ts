@@ -4,46 +4,96 @@ import { registerComponent } from 'mjml-core'
 import mjml2html from 'mjml'
 import { globSync } from 'glob'
 
-const libDir = path.resolve(__dirname, '..', 'lib')
+// Adobe Components - Sections
+import '../src/Adobe/Components/Sections/LaborAdobeSection'
+
+
+// Adobe Components - Action Cards
+import '../src/Adobe/Components/ActionCards/LaborAdobeActionCard'
+
+// Adobe Components - CTA
+import '../src/Adobe/Components/CTA/LaborAdobeButton'
+import '../src/Adobe/Components/CTA/LaborAdobeLink'
+
+// Adobe Components - Custom - Avatars
+import '../src/Adobe/Components/Custom/Avatars/LaborAdobeAvatar'
+
+// Adobe Components - Custom - EdexArticle
+import '../src/Adobe/Components/Custom/EdexArticle/EdexCategory/LaborAdobeEdexCategory'
+import '../src/Adobe/Components/Custom/EdexArticle/LaborAdobeEdexArticle'
+
+// Adobe Components - Custom - FooterBands
+import '../src/Adobe/Components/Custom/FooterBands/LaborAdobeFooterBand'
+import '../src/Adobe/Components/Custom/FooterBands/LaborAdobeFooterImageBand'
+
+// Adobe Components - Custom - TwoColImgTextSection
+import '../src/Adobe/Components/Custom/TwoColImgTextSection/LaborAdobeTwoColImgTextSection'
+
+// Adobe Components - Footers
+import '../src/Adobe/Components/Footers/LaborAdobeFooter'
+
+// Adobe Components - Headers
+import '../src/Adobe/Components/Headers/LaborAdobeHeader'
+
+// Adobe Components - HeroCards
+import '../src/Adobe/Components/HeroCards/LaborAdobeHeroCardImmersiveOne'
+import '../src/Adobe/Components/HeroCards/LaborAdobeHeroCardImmersiveThree'
+import '../src/Adobe/Components/HeroCards/LaborAdobeHeroCardImmersiveTwo'
+import '../src/Adobe/Components/HeroCards/LaborAdobeHeroCardSimpleOne'
+import '../src/Adobe/Components/HeroCards/LaborAdobeHeroCardSimpleTwo'
+import '../src/Adobe/Components/HeroCards/LaborAdobeHeroCardSplitOne'
+import '../src/Adobe/Components/HeroCards/LaborAdobeHeroCardSplitTwo'
+
+// Adobe Components - Pods
+import '../src/Adobe/Components/Pods/LaborAdobePod'
+import '../src/Adobe/Components/Pods/LaborAdobePodApplication'
+import '../src/Adobe/Components/Pods/LaborAdobePodNoImage'
+import '../src/Adobe/Components/Pods/LaborAdobePodStandard'
+import '../src/Adobe/Components/Pods/LaborAdobePodStandardFullWidth'
+import '../src/Adobe/Components/Pods/LaborAdobePodZFormation'
+
+// Adobe Components - Product Logos
+import '../src/Adobe/Components/ProductLogos/LaborAdobeProductLogo'
+
+
+// Adobe Components - Typo
+import '../src/Adobe/Components/Typo/LaborAdobeTypoBody'
+import '../src/Adobe/Components/Typo/LaborAdobeTypoCaption'
+import '../src/Adobe/Components/Typo/LaborAdobeTypoDetail'
+import '../src/Adobe/Components/Typo/LaborAdobeTypoDisplayOne'
+import '../src/Adobe/Components/Typo/LaborAdobeTypoDisplayThree'
+import '../src/Adobe/Components/Typo/LaborAdobeTypoDisplayTwo'
+import '../src/Adobe/Components/Typo/LaborAdobeTypoHeadingFour'
+import '../src/Adobe/Components/Typo/LaborAdobeTypoHeadingOne'
+import '../src/Adobe/Components/Typo/LaborAdobeTypoHeadingThree'
+import '../src/Adobe/Components/Typo/LaborAdobeTypoHeadingTwo'
+import '../src/Adobe/Components/Typo/LaborAdobeTypoLegal'
+
+// Labor Components
+import '../src/Labor/LaborBgWrapper'
+import '../src/Labor/LaborResponsiveImage'
+import '../src/Labor/LaborRoundedButton'
+
+// const templatePath = path.join(__dirname, '..', 'src', 'Adobe', 'Components', 'ProductLogos', 'adobe_components_product_logos.mjml')
+// const template = fs.readFileSync(templatePath, 'utf8')
+//
+// const result = mjml2html(template, {
+//   validationLevel: "strict",
+// });
+//
+// if (result.errors?.length) {
+//   console.error("MJML Errors:", result.errors);
+// }
+//
+// const outputPath = path.join(__dirname, "test-output-2.html");
+// fs.writeFileSync(outputPath, result.html);
+// console.log(`HTML output written to: ${outputPath}`);
+
+
+
+
 const srcDir = path.resolve(__dirname, '..', 'src')
 const previewsDir = path.resolve(__dirname, '..', 'previews')
-
-const filesToIgnore = [
-  'AdobeProductLockupMapping.js',
-  'AdobeProductLogoMapping.js',
-  'index.js',
-  'code-example.js',
-  'AdobeRedStyleMapping.js',
-  'AdobeComponentMapping.js',
-]
-
-const fileTypesToIgnore = ['.style.js']
-
-function filterNonComponent(file: string): boolean {
-  const basename = path.basename(file)
-  if (filesToIgnore.includes(basename)) return false
-  const ext = basename.substring(basename.indexOf('.'))
-  if (fileTypesToIgnore.includes(ext)) return false
-  return true
-}
-
-// 1. Register all compiled components
-const jsFiles = globSync('**/*.js', { cwd: libDir })
-for (const file of jsFiles) {
-  const fullPath = path.join(libDir, file)
-  if (filterNonComponent(file)) {
-    try {
-      const mod = require(fullPath)
-      const component = mod.default || mod
-      if (component && typeof component === 'function') {
-        registerComponent(component)
-        console.log(`Registered: ${file}`)
-      }
-    } catch (e: any) {
-      console.log(`Error registering ${file}: ${e.message}`)
-    }
-  }
-}
 
 // 2. Find all .mjml files
 const mjmlFiles = [
@@ -63,7 +113,7 @@ for (const file of mjmlFiles) {
   const fullPath = path.join(srcDir, file)
   const data = fs.readFileSync(fullPath, 'utf8')
   const parsed = path.parse(file)
-  const result = mjml2html(data)
+  const result = mjml2html(data, {validationLevel: 'strict'})
 
   if (result.errors && result.errors.length) {
     console.error(`\n${result.errors.length} error(s) in ${file}:`)

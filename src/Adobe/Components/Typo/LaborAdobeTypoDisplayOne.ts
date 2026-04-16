@@ -1,39 +1,43 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-column': ['labor-adobe-typo-display-one'],
-  'labor-adobe-typo-display-one': [],
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-typo-display-one',
+  attributes: {
+    'on-background': {
+      type: 'boolean',
+      default: false,
+    },
+    'type': {
+      type: 'enum(normal,quiet)',
+      default: 'normal',
+    },
+    'responsive': {
+      type: 'enum(none,displayTwo,displayThree)',
+      default: 'displayTwo',
+    },
+    'padding-top': {
+      type: 'unit(px,%)',
+    },
+    'padding-bottom': {
+      type: 'unit(px,%)',
+      default: styleMapping.typographies.displayOne.padding.defaultPaddingBottom,
+    },
+    'css-class': {
+      type: 'string',
+      default: 'labor-adobe-typo-display-one-responsive-padding',
+    },
+  },
+  allowedParentTags: ['mj-column'],
+  allowedChildTags: [],
 })
 
-export default class LaborAdobeTypoDisplayOne extends BodyComponent {
+class LaborAdobeTypoDisplayOne extends BodyComponent {
 
   static endingTag = true
-
-  static allowedAttributes = {
-    'on-background': 'boolean',
-    'type': 'enum(normal,quiet)',
-
-    // In the red figma, in all cases where DisplayOne is used in a pod or hero card, DisplayTwo or DisplayThree is used for the mobile version.
-    // Examples: HeroCards (DisplayTwo), Focused - Single Pods (DisplayThree)
-    'responsive': 'enum(none,displayTwo,displayThree)',
-
-    // Only allow padding-bottom to be set if the responsive attribute is not set
-    'padding-top': 'unit(px,%)',
-    'padding-bottom': 'unit(px,%)',
-  }
-
-  static defaultAttributes = {
-    'on-background': false,
-    'type': 'normal',
-    'responsive': 'displayTwo',
-
-    'padding-bottom': styleMapping.typographies.displayOne.padding.defaultPaddingBottom,
-    'css-class': 'labor-adobe-typo-display-one-responsive-padding',
-  }
 
   static additionalAttributes = {
     // default attributes

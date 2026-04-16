@@ -1,17 +1,18 @@
-import { registerDependencies } from 'mjml-validator'
 import MjImage from 'mjml-image'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 
-registerDependencies({
-  'mj-column': ['labor-responsive-image'],
-  'labor-responsive-image': [],
+export default @MJMLCustomComponent({
+  tag: 'labor-responsive-image',
+  attributes: {
+    'src-mobile': {
+      type: 'string',
+    },
+  },
+  allowedParentTags: ['mj-column'],
+  allowedChildTags: [],
 })
 
-export default class LaborResponsiveImage extends MjImage {
-  static allowedAttributes = {
-    ...MjImage.allowedAttributes,
-    'src-mobile': 'string',
-  }
-
+class LaborResponsiveImage extends MjImage {
   static endingTag = true
 
   headStyle = (breakpoint) =>

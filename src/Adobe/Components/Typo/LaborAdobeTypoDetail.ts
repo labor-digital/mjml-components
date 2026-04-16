@@ -1,30 +1,34 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-column': ['labor-adobe-typo-detail'],
-  'labor-adobe-typo-detail': [],
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-typo-detail',
+  attributes: {
+    'on-background': {
+      type: 'boolean',
+      default: false,
+    },
+    'type': {
+      type: 'enum(normal,light)',
+      default: 'normal',
+    },
+    'padding-top': {
+      type: 'unit(px,%)',
+    },
+    'padding-bottom': {
+      type: 'unit(px,%)',
+      default: styleMapping.typographies.detail.paddingBottom,
+    },
+  },
+  allowedParentTags: ['mj-column'],
+  allowedChildTags: [],
 })
 
-export default class LaborAdobeTypoDetail extends BodyComponent {
+class LaborAdobeTypoDetail extends BodyComponent {
   static endingTag = true
-
-  static allowedAttributes = {
-    'on-background': 'boolean',
-    'type': 'enum(normal,light)',
-
-    'padding-top': 'unit(px,%)',
-    'padding-bottom': 'unit(px,%)',
-  }
-  static defaultAttributes = {
-    'on-background': false,
-    'type': 'normal',
-
-    'padding-bottom': styleMapping.typographies.detail.paddingBottom,
-  }
 
   static additionalAttributes = {
     fontSize: styleMapping.typographies.detail.fontSize,

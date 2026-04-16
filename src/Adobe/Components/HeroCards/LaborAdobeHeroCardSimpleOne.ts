@@ -1,53 +1,70 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-body': ['labor-adobe-hero-card-simple-one'],
-  'labor-adobe-hero-card-simple-one': [],
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-hero-card-simple-one',
+  attributes: {
+    'header-bg-class': {
+      type: 'string',
+      default: 'content-bg',
+    },
+    'section-bg-class': {
+      type: 'string',
+      default: 'content-bg',
+    },
+    'product': {
+      type: 'string',
+      default: 'express',
+    },
+    'product-color': {
+      type: 'enum(red_black,red_gray,red_white,white_black)',
+      default: 'red_gray',
+    },
+    'product-src-overwrite': {
+      type: 'string',
+    },
+    'product-height-overwrite': {
+      type: 'unit(px)',
+    },
+    'product-width-overwrite': {
+      type: 'unit(px)',
+    },
+    'header-alt': {
+      type: 'string',
+    },
+    'header-title': {
+      type: 'string',
+    },
+    'headline': {
+      type: 'string',
+      default: '',
+    },
+    'cta-text': {
+      type: 'string',
+      default: '',
+    },
+    'cta-href': {
+      type: 'string',
+      default: '',
+    },
+    'padding-bottom': {
+      type: 'unit(px)',
+      default: styleMapping.spacings.vertical.px100,
+    },
+    'header-additional-padding-bottom': {
+      type: 'unit(px)',
+      default: styleMapping.spacings.vertical.px20,
+    },
+  },
+  allowedParentTags: ['mj-body'],
+  allowedChildTags: [],
 })
 
-export default class LaborAdobeHeroCardSimpleOne extends BodyComponent {
+class LaborAdobeHeroCardSimpleOne extends BodyComponent {
   static endingTag = true
-
-  static allowedAttributes = {
-    'header-bg-class': 'string',
-    'section-bg-class': 'string',
-
-    'product': 'string',
-    'product-color': 'enum(red_black,red_gray,red_white,white_black)',
-
-    'product-src-overwrite': 'string',
-    'product-height-overwrite': 'unit(px)',
-    'product-width-overwrite': 'unit(px)',
-
-    'header-alt': 'string',
-    'header-title': 'string',
-
-    'headline': 'string',
-    'cta-text': 'string,',
-    'cta-href': 'string',
-
-    'padding-bottom': 'unit(px)',
-    'header-additional-padding-bottom' : 'unit(px)',
-  }
-
-  static defaultAttributes = {
-    'header-bg-class': 'content-bg',
-    'section-bg-class': 'content-bg',
-
-    'product': 'express',
-    'product-color': 'red_gray',
-
-    'headline': '',
-    'cta-text': '',
-    'cta-href': '',
-
-    'padding-bottom': styleMapping.spacings.vertical.px100,
-    'header-additional-padding-bottom': styleMapping.spacings.vertical.px20,
-  }
 
   render() {
     let header =

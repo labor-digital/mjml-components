@@ -1,30 +1,30 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-column': ['labor-adobe-typo-heading-four'],
-  'labor-adobe-actioncard': ['labor-adobe-typo-heading-four'],
-  'labor-adobe-typo-heading-four': [],
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-typo-heading-four',
+  attributes: {
+    'on-background': {
+      type: 'boolean',
+      default: false,
+    },
+    'padding-top': {
+      type: 'unit(px,%)',
+    },
+    'padding-bottom': {
+      type: 'unit(px,%)',
+      default: styleMapping.typographies.headingFour.paddingBottom,
+    },
+  },
+  allowedParentTags: ['mj-column', 'labor-adobe-actioncard'],
+  allowedChildTags: [],
 })
 
-export default class LaborAdobeTypoHeadingFour extends BodyComponent {
+class LaborAdobeTypoHeadingFour extends BodyComponent {
   static endingTag = true
-
-  static allowedAttributes = {
-    'on-background': 'boolean',
-
-    'padding-top': 'unit(px,%)',
-    'padding-bottom': 'unit(px,%)',
-  }
-
-  static defaultAttributes = {
-    'on-background': false,
-
-    'padding-bottom': styleMapping.typographies.headingFour.paddingBottom,
-  }
 
   static additionalAttributes = {
     fontSize: styleMapping.typographies.headingFour.fontSize,

@@ -1,29 +1,30 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-column': ['labor-adobe-typo-heading-one'],
-  'labor-adobe-typo-heading-one': [],
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-typo-heading-one',
+  attributes: {
+    'on-background': {
+      type: 'boolean',
+      default: false,
+    },
+    'padding-top': {
+      type: 'unit(px,%)',
+    },
+    'padding-bottom': {
+      type: 'unit(px,%)',
+      default: styleMapping.typographies.headingOne.paddingBottom,
+    },
+  },
+  allowedParentTags: ['mj-column'],
+  allowedChildTags: [],
 })
 
-export default class LaborAdobeTypoHeadingOne extends BodyComponent {
+class LaborAdobeTypoHeadingOne extends BodyComponent {
   static endingTag = true
-
-  static allowedAttributes = {
-    'on-background': 'boolean',
-
-    'padding-top': 'unit(px,%)',
-    'padding-bottom': 'unit(px,%)',
-  }
-
-  static defaultAttributes = {
-    'on-background': false,
-
-    'padding-bottom': styleMapping.typographies.headingOne.paddingBottom,
-  }
 
   static additionalAttributes = {
     fontSize: styleMapping.typographies.headingOne.fontSize,

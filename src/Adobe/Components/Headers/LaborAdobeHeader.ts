@@ -1,64 +1,86 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 import AdobeProductLockupMapping from '../../Mapping/AdobeProductLockupMapping'
 import AdobeProductLogoMapping from '../../Mapping/AdobeProductLogoMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-body': ['labor-adobe-header'],
-  'labor-adobe-header': [],
-})
-
-export default class LaborAdobeHeader extends BodyComponent {
-  static endingTag = true
-
-  static allowedAttributes = {
-    'header-bg-class': 'string',
-
-    'product': 'string',
-    'product-color': 'enum(red,white,red_black,red_gray,red_white,white_black)',
-
-    'href': 'string',
-    'title': 'string',
-    'alt': 'string',
-    'target': 'string',
-    'border': 'boolean',
-    'with-padding': 'boolean',
-
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-header',
+  attributes: {
+    'header-bg-class': {
+      type: 'string',
+      default: 'content-bg',
+    },
+    'product': {
+      type: 'string',
+    },
+    'product-color': {
+      type: 'enum(red,white,red_black,red_gray,red_white,white_black)',
+    },
+    'href': {
+      type: 'string',
+      default: '',
+    },
+    'title': {
+      type: 'string',
+      default: '',
+    },
+    'alt': {
+      type: 'string',
+      default: '',
+    },
+    'target': {
+      type: 'string',
+      default: '_blank',
+    },
+    'border': {
+      type: 'boolean',
+      default: false,
+    },
+    'with-padding': {
+      type: 'boolean',
+      default: true,
+    },
     // Not all mails use the default lockups
     // In these cases it should still be possible to use a custom image
-    'product-src-overwrite': 'string',
-    'product-height-overwrite': 'unit(px)',
-    'product-width-overwrite': 'unit(px)',
-
-    'padding-top': 'unit(px)',
-    'padding-bottom': 'unit(px)',
-
+    'product-src-overwrite': {
+      type: 'string',
+    },
+    'product-height-overwrite': {
+      type: 'unit(px)',
+    },
+    'product-width-overwrite': {
+      type: 'unit(px)',
+    },
+    'product-height': {
+      type: 'string',
+      default: '42px',
+    },
+    'product-width': {
+      type: 'string',
+      default: 'auto',
+    },
+    'padding-top': {
+      type: 'unit(px)',
+      default: styleMapping.spacings.custom.px41,
+    },
+    'padding-bottom': {
+      type: 'unit(px)',
+      default: styleMapping.spacings.custom.px41,
+    },
     // eg. for additonal 20px padding below the headers from the red specs for dark mode compatibility, or 20px for hero pods
-    'additional-padding-bottom': 'unit(px)',
-  }
+    'additional-padding-bottom': {
+      type: 'unit(px)',
+      default: styleMapping.spacings.vertical.px20,
+    },
+  },
+  allowedParentTags: ['mj-body'],
+})
 
-  static defaultAttributes = {
-    'header-bg-class': 'content-bg',
-
-    'href': '',
-    'title': '',
-    'alt': '',
-    'target': '_blank',
-    'border': false,
-    'with-padding': true,
-
-    // default value for current lockups
-    'product-height': '42px',
-    'product-width': 'auto',
-
-    'padding-top': styleMapping.spacings.custom.px41,
-    'padding-bottom': styleMapping.spacings.custom.px41,
-
-    'additional-padding-bottom': styleMapping.spacings.vertical.px20,
-  }
+class LaborAdobeHeader extends BodyComponent {
+  static endingTag = true
 
   static additionalAttributes = {
     desktopLeftRightPadding: styleMapping.grids.desktop.contentSpacing,

@@ -1,30 +1,34 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-column': ['labor-adobe-typo-legal'],
-  'labor-adobe-typo-legal': [],
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-typo-legal',
+  attributes: {
+    'on-background': {
+      type: 'boolean',
+      default: false,
+    },
+    'padding-top': {
+      type: 'unit(px,%)',
+    },
+    'padding-bottom': {
+      type: 'unit(px,%)',
+      default: styleMapping.typographies.legal.paddingBottom,
+    },
+    'css-class': {
+      type: 'string',
+      default: 'labor-adobe-typo-legal',
+    },
+  },
+  allowedParentTags: ['mj-column'],
+  allowedChildTags: [],
 })
 
-export default class LaborAdobeTypoLegal extends BodyComponent {
+class LaborAdobeTypoLegal extends BodyComponent {
   static endingTag = true
-
-  static allowedAttributes = {
-    'on-background': 'boolean',
-
-    'padding-top': 'unit(px,%)',
-    'padding-bottom': 'unit(px,%)',
-  }
-
-  static defaultAttributes = {
-    'on-background': false,
-
-    'padding-bottom': styleMapping.typographies.legal.paddingBottom,
-    'css-class': 'labor-adobe-typo-legal',
-  }
 
   static additionalAttributes = {
     fontWeight: styleMapping.typographies.legal.fontWeight,

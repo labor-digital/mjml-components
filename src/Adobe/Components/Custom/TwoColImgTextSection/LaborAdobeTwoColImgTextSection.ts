@@ -1,45 +1,59 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-body': ['labor-adobe-two-col-img-text-section'],
-  'labor-adobe-two-col-img-text-section': [
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-two-col-img-text-section',
+  attributes: {
+    'section-bg-class': {
+      type: 'string',
+      default: 'content-bg',
+    },
+    'direction': {
+      type: 'enum(ltr,rtl)',
+      default: 'ltr',
+    },
+    'image-src': {
+      type: 'string',
+      default: '',
+    },
+    'image-src-mobile': {
+      type: 'string',
+      default: '',
+    },
+    'with-padding': {
+      type: 'boolean',
+      default: true,
+    },
+    'with-padding-image': {
+      type: 'boolean',
+      default: true,
+    },
+    // when setting padding-bottom keep the padding-bottom of the columns in mind
+    'padding-top': {
+      type: 'unit(px,%)',
+    },
+    'padding-bottom': {
+      type: 'unit(px,%)',
+      default: styleMapping.spacings.vertical.px20,
+    },
+    'padding-bottom-cols': {
+      type: 'unit(px,%)',
+      default: styleMapping.spacings.vertical.px40,
+    },
+  },
+  allowedParentTags: ['mj-body'],
+  allowedChildTags: [
     'labor-adobe-typo-body',
     'labor-adobe-typo-heading-four',
     'labor-adobe-button',
   ],
 })
 
-export default class LaborAdobeTwoColImgTextSection extends BodyComponent {
+class LaborAdobeTwoColImgTextSection extends BodyComponent {
   static endingTag = false
-
-  static allowedAttributes = {
-    'section-bg-class': 'string',
-    'direction': 'enum(ltr,rtl)',
-    'image-src': 'string',
-    'image-src-mobile': 'string',
-
-    // when setting padding-bottom keep the padding-bottom of the columns in mind
-    'padding-top': 'unit(px,%)',
-    'padding-bottom': 'unit(px,%)',
-    'padding-bottom-cols': 'unit(px,%)',
-  }
-
-  static defaultAttributes = {
-    'section-bg-class': 'content-bg',
-    'direction': 'ltr',
-    'image-src': '',
-    'image-src-mobile': '',
-
-    'with-padding': true,
-    'with-padding-image': true,
-
-    'padding-bottom': styleMapping.spacings.vertical.px20,
-    'padding-bottom-cols': styleMapping.spacings.vertical.px40,
-  }
 
   headStyle = (breakpoint) => `
     @media only screen and (max-width: ${breakpoint}) {
@@ -88,10 +102,7 @@ export default class LaborAdobeTwoColImgTextSection extends BodyComponent {
           padding="${textPadding}"
           padding-bottom="${this.getAttribute('padding-bottom-cols')}"
         >
-          ${this.renderChildren(this.props.children, {
-            rawXML: true,
-            renderer: (component) => component.render,
-          })}
+          ${this.props.content}
         </mj-column>
       </labor-adobe-section>
     `)
