@@ -1,58 +1,84 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-body': ['labor-adobe-pod'],
-  'labor-adobe-pod': [],
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-pod',
+  attributes: {
+    'section-bg-class': {
+      type: 'string',
+      default: 'content-bg',
+    },
+    'image-src': {
+      type: 'string',
+    },
+    'image-src-mobile': {
+      type: 'string',
+    },
+    'image-with-padding': {
+      type: 'boolean',
+      default: false,
+    },
+    'image-href': {
+      type: 'string',
+    },
+    'headline': {
+      type: 'string',
+    },
+    'product': {
+      type: 'string',
+      default: '',
+    },
+    'product-color': {
+      type: 'string',
+      default: 'gray',
+    },
+    'product-type': {
+      type: 'string',
+    },
+    'product-height': {
+      type: 'string',
+      default: '35px',
+    },
+    'custom-category': {
+      type: 'string',
+    },
+    'primary-cta': {
+      type: 'string',
+    },
+    'primary-cta-width': {
+      type: 'unit(px)',
+      default: '200px',
+    },
+    'primary-cta-href': {
+      type: 'string',
+    },
+    'secondary-cta': {
+      type: 'string',
+    },
+    'secondary-cta-href': {
+      type: 'string',
+    },
+    'padding-bottom': {
+      type: 'unit(px)',
+      default: styleMapping.spacings.horizontal.px100,
+    },
+    'padding-top': {
+      type: 'unit(px)',
+      default: styleMapping.spacings.custom.px0,
+    },
+    'content-section-padding-top': {
+      type: 'unit(px)',
+    },
+  },
+  allowedParentTags: ['mj-body'],
+  allowedChildTags: [],
 })
 
-export default class LaborAdobePod extends BodyComponent {
+class LaborAdobePod extends BodyComponent {
   static endingTag = true
-
-  static allowedAttributes = {
-    'section-bg-class': 'string',
-
-    'image-src': 'string',
-    'image-src-mobile': 'string',
-    'image-with-padding': 'boolean',
-    'image-href': 'string',
-
-    'headline': 'string',
-
-    'product': 'string',
-    'product-color': 'string',
-    'product-type': 'string',
-
-    'custom-category': 'string',
-
-    'primary-cta': 'string',
-    'primary-cta-width': 'unit(px)',
-    'primary-cta-href': 'string',
-
-    'secondary-cta': 'string',
-    'secondary-cta-href': 'string',
-
-    'padding-bottom': 'unit(px)',
-    'padding-top': 'unit(px)',
-    'content-section-padding-top': 'unit(px)',
-  }
-
-  static defaultAttributes = {
-    'section-bg-class': 'content-bg',
-
-    'product': '',
-    'product-color': 'gray',
-    'product-height': '35px',
-
-    'image-with-padding': 'false',
-    'primary-cta-width': '200px',
-
-    'padding-bottom': styleMapping.spacings.horizontal.px100,
-    'padding-top': styleMapping.spacings.custom.px0,
-  }
 
   render() {
     const srcMobileAttr = this.getAttribute('image-src-mobile') ? `src-mobile="${this.getAttribute('image-src-mobile')}"` : '';

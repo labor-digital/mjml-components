@@ -1,50 +1,70 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import widthParser from 'mjml-core/lib/helpers/widthParser'
 
-registerDependencies({
-  'labor-rounded-button': [],
-  'mj-column': ['labor-rounded-button'],
+export default @MJMLCustomComponent({
+  tag: 'labor-rounded-button',
+  attributes: {
+    'href': {
+      type: 'string',
+    },
+    'padding-bottom': {
+      type: 'unit(px,%)',
+    },
+    'width': {
+      type: 'unit(px)',
+    },
+    'inner-padding': {
+      type: 'unit(px){1,4}',
+      default: '10px 30px',
+    },
+    'color': {
+      type: 'color',
+      default: '#fff',
+    },
+    'font-family': {
+      type: 'string',
+      default: '',
+    },
+    'font-size': {
+      type: 'unit(px)',
+      default: '16px',
+    },
+    'line-height': {
+      type: 'unit(px)',
+      default: '18px',
+    },
+    'font-weight': {
+      type: 'string',
+      default: '400',
+    },
+    'background-color': {
+      type: 'color',
+      default: '',
+    },
+    'border-color': {
+      type: 'color',
+      default: '',
+    },
+    'border-width': {
+      type: 'unit(px)',
+      default: '2px',
+    },
+    'border-radius': {
+      type: 'unit(px)',
+      default: '30px',
+    },
+    'arcsize': {
+      type: 'unit(%)',
+      default: '50%',
+    },
+  },
+  allowedParentTags: ['mj-column'],
+  allowedChildTags: [],
 })
 
-export default class LaborRoundedButton extends BodyComponent {
+class LaborRoundedButton extends BodyComponent {
   static endingTag = true
-
-  static allowedAttributes = {
-    'href': 'string',
-    'padding-bottom': 'unit(px,%)',
-    'width': 'unit(px)',
-    'inner-padding': 'unit(px){1,4}',
-    'color': 'color',
-    'font-family': 'string',
-    'font-size': 'unit(px)',
-    'line-height': 'unit(px)',
-    'font-weight': 'string',
-    'background-color': 'color',
-    'border-color': 'color',
-    'border-width': 'unit(px)',
-    'border-radius': 'unit(px)',
-    'arcsize': 'unit(%)',
-  }
-
-  static defaultAttributes = {
-    'href': null,
-
-    'width': null,
-    'inner-padding': '10px 30px',
-
-    'font-family': '',
-    'font-size': '16px',
-    'line-height': '18px',
-    'font-weight': '400',
-
-    'color': '#fff',
-    'background-color': '',
-    'border-color': '',
-    'border-width': '2px',
-    'border-radius': '30px',
-    'arcsize': '50%',
-  }
 
   calculateAWidth(width) {
     if (!width) return null

@@ -1,33 +1,35 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'labor-adobe-link': [],
-  'mj-column': ['labor-adobe-link'],
-  'labor-adobe-actioncard': ['labor-adobe-link'],
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-link',
+  attributes: {
+    'type': {
+      type: 'enum(standard,inverted,quiet)',
+      default: 'standard',
+    },
+    'href': {
+      type: 'string',
+      default: '#',
+    },
+    'padding-bottom': {
+      type: 'unit(px,%)',
+      default: styleMapping.spacings.vertical.px100,
+    },
+    'padding-top': {
+      type: 'unit(px,%)',
+      default: styleMapping.spacings.custom.px0,
+    },
+  },
+  allowedParentTags: ['mj-column', 'labor-adobe-actioncard'],
+  allowedChildTags: [],
 })
 
-export default class LaborAdobeLink extends BodyComponent {
+class LaborAdobeLink extends BodyComponent {
   static endingTag = true
-
-  static allowedAttributes = {
-    'type': 'enum(standard,inverted,quiet)',
-    'href': 'string',
-
-    'padding-bottom': 'unit(px,%)',
-    'padding-top': 'unit(px,%)',
-  }
-
-  static defaultAttributes = {
-    'type': 'standard',
-    'href': '#',
-
-    'padding-bottom': styleMapping.spacings.vertical.px100,
-    'padding-top': styleMapping.spacings.custom.px0,
-  }
 
   getStyles() {
     let color = ''

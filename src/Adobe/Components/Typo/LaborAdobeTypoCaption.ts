@@ -1,31 +1,40 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-column': ['labor-adobe-typo-caption'],
-  'labor-adobe-typo-caption': [],
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-typo-caption',
+  attributes: {
+    'on-background': {
+      type: 'boolean',
+      default: false,
+    },
+    'font-style': {
+      type: 'enum(regular,italic)',
+      default: 'italic',
+    },
+    'padding-bottom': {
+      type: 'unit(px,%)',
+      default: styleMapping.typographies.caption.paddingBottom,
+    },
+    'padding-top': {
+      type: 'unit(px,%)',
+    },
+    'padding-left': {
+      type: 'unit(px,%)',
+    },
+    'padding-right': {
+      type: 'unit(px,%)',
+    },
+  },
+  allowedParentTags: ['mj-column'],
+  allowedChildTags: [],
 })
 
-export default class LaborAdobeTypoCaption extends BodyComponent {
+class LaborAdobeTypoCaption extends BodyComponent {
   static endingTag = true
-
-  static allowedAttributes = {
-    'on-background': 'boolean',
-    'font-style': 'enum(regular,italic)',
-
-    'padding-bottom': 'unit(px,%)',
-    'padding-top': 'unit(px,%)',
-  }
-
-  static defaultAttributes = {
-    'on-background': false,
-    'font-style': 'italic',
-
-    'padding-bottom': styleMapping.typographies.caption.paddingBottom,
-  }
 
   static additionalAttributes = {
     fontWeight: styleMapping.typographies.caption.fontWeight,

@@ -1,30 +1,30 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-column': ['labor-adobe-typo-heading-three'],
-  'labor-adobe-actioncard': ['labor-adobe-typo-heading-three'],
-  'labor-adobe-typo-heading-three': [],
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-typo-heading-three',
+  attributes: {
+    'on-background': {
+      type: 'boolean',
+      default: false,
+    },
+    'padding-top': {
+      type: 'unit(px,%)',
+    },
+    'padding-bottom': {
+      type: 'unit(px,%)',
+      default: styleMapping.typographies.headingThree.paddingBottom,
+    },
+  },
+  allowedParentTags: ['mj-column', 'labor-adobe-actioncard'],
+  allowedChildTags: [],
 })
 
-export default class LaborAdobeTypoHeadingThree extends BodyComponent {
+class LaborAdobeTypoHeadingThree extends BodyComponent {
   static endingTag = true
-
-  static allowedAttributes = {
-    'on-background': 'boolean',
-
-    'padding-top': 'unit(px,%)',
-    'padding-bottom': 'unit(px,%)',
-  }
-
-  static defaultAttributes = {
-    'on-background': false,
-
-    'padding-bottom': styleMapping.typographies.headingThree.paddingBottom,
-  }
 
   static additionalAttributes = {
     fontSize: styleMapping.typographies.headingThree.fontSize,

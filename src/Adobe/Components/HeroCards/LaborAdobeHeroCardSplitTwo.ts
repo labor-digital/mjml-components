@@ -1,65 +1,78 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-body': ['labor-adobe-hero-card-split-two'],
-  'labor-adobe-hero-card-split-two': [],
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-hero-card-split-two',
+  attributes: {
+    'header-bg-class': {
+      type: 'string',
+      default: 'content-bg',
+    },
+    'section-bg-class': {
+      type: 'string',
+      default: 'content-bg',
+    },
+    'product': {
+      type: 'string',
+      default: 'express',
+    },
+    'product-color': {
+      type: 'enum(red_black,red_gray,red_white,white_black)',
+      default: 'red_gray',
+    },
+    'pre-text': {
+      type: 'string',
+    },
+    'headline': {
+      type: 'string',
+      default: '',
+    },
+    'cta-text': {
+      type: 'string',
+      default: '',
+    },
+    'cta-href': {
+      type: 'string',
+      default: '',
+    },
+    'image-src': {
+      type: 'string',
+      default: '',
+    },
+    'image-src-mobile': {
+      type: 'string',
+      default: '',
+    },
+    'image-title': {
+      type: 'string',
+      default: '',
+    },
+    'image-alt': {
+      type: 'string',
+      default: '',
+    },
+    'padding-bottom': {
+      type: 'unit(px)',
+      default: styleMapping.spacings.custom.px0,
+    },
+    'header-additional-padding-bottom': {
+      type: 'unit(px)',
+      default: styleMapping.spacings.vertical.px20,
+    },
+    'section-padding-bottom': {
+      type: 'unit(px)',
+      default: styleMapping.spacings.vertical.px60,
+    },
+  },
+  allowedParentTags: ['mj-body'],
+  allowedChildTags: [],
 })
 
-export default class LaborAdobeHeroCardSplitTwo extends BodyComponent {
+class LaborAdobeHeroCardSplitTwo extends BodyComponent {
   static endingTag = true
-
-  static allowedAttributes = {
-    'header-bg-class': 'string',
-    'section-bg-class': 'string',
-
-    'product': 'string',
-    'product-color': 'enum(red_black,red_gray,red_white,white_black)',
-
-    'pre-text': 'string',
-    'headline': 'string',
-
-    'cta-text': 'string,',
-    'cta-href': 'string',
-
-    'image-src': 'string,',
-    'image-src-mobile': 'string',
-    'image-title': 'string',
-    'image-alt': 'string',
-
-    'padding-bottom': 'unit(px)',
-    'header-additional-padding-bottom' : 'unit(px)',
-
-    'section-padding-bottom': 'unit(px)',
-  }
-
-  static defaultAttributes = {
-    'header-bg-class': 'content-bg',
-    'section-bg-class': 'content-bg',
-
-    'product': 'express',
-    'product-color': 'red_gray',
-
-    'headline': '',
-    'cta-text': '',
-    'cta-href': '',
-
-    'image-src': '',
-    'image-src-mobile': '',
-    'image-title': '',
-    'image-alt': '',
-
-    'padding-bottom': 'unit(px)',
-    'header-additional-padding-bottom': styleMapping.spacings.vertical.px20,
-
-    'section-padding-bottom': styleMapping.spacings.vertical.px60,
-  }
-
-  static additionalAttributes = {
-  }
 
   render() {
     let header =

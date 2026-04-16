@@ -1,30 +1,31 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import { md5 } from 'js-md5'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-column': ['labor-adobe-typo-body'],
-  'labor-adobe-actioncard': ['labor-adobe-typo-body'],
-  'labor-adobe-typo-body': [],
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-typo-body',
+  attributes: {
+    'on-background': {
+      type: 'boolean',
+      default: false,
+    },
+    'padding-bottom': {
+      type: 'unit(px,%)',
+      default: styleMapping.typographies.body.paddingBottom,
+    },
+    'padding-top': {
+      type: 'unit(px,%)',
+    },
+  },
+  allowedParentTags: ['mj-column', 'labor-adobe-actioncard'],
+  allowedChildTags: [],
 })
 
-export default class LaborAdobeTypoBody extends BodyComponent {
+class LaborAdobeTypoBody extends BodyComponent {
   static endingTag = true
-  static allowedAttributes = {
-    'on-background': 'boolean',
-
-    'padding-bottom': 'unit(px,%)',
-    'padding-top': 'unit(px,%)',
-  }
-
-  static defaultAttributes = {
-    'on-background': false,
-
-    'padding-bottom': styleMapping.typographies.body.paddingBottom,
-  }
 
   static additionalAttributes = {
     fontWeight: styleMapping.typographies.body.fontWeight,

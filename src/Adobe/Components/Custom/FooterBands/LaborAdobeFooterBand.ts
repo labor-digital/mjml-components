@@ -1,36 +1,50 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-body': ['labor-adobe-footer-band'],
-  'labor-adobe-footer-band': [],
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-footer-band',
+  attributes: {
+    'bg-color': {
+      type: 'string',
+      default: styleMapping.colors.adobeRed.hex,
+    },
+    color: {
+      type: 'string',
+      default: styleMapping.colors.white.hex,
+    },
+    'font-size': {
+      type: 'string',
+      default: '16px',
+    },
+    'font-weight': {
+      type: 'string',
+      default: '' + styleMapping.typographyFontWeight.extraBold,
+    },
+    'line-height': {
+      type: 'string',
+      default: '20px',
+    },
+    align: {
+      type: 'string',
+      default: 'left',
+    },
+    'padding-top': {
+      type: 'unit(px,%)',
+      default: '4px',
+    },
+    'padding-bottom': {
+      type: 'unit(px,%)',
+      default: '6px',
+    },
+  },
+  allowedParentTags: ['mj-body'],
 })
 
-export default class LaborAdobeFooterBand extends BodyComponent {
+class LaborAdobeFooterBand extends BodyComponent {
   static endingTag = true
-
-  static allowedAttributes = {
-    'bg-color': 'string',
-    'color': 'string',
-
-    'padding-top': 'unit(px,%)',
-    'padding-bottom': 'unit(px,%)',
-  }
-
-  static defaultAttributes = {
-    'bg-color': styleMapping.colors.adobeRed.hex,
-    'color': styleMapping.colors.white.hex,
-    'font-size': '16px',
-    'font-weight': styleMapping.typographyFontWeight.extraBold,
-    'line-height': '20px',
-    'align': 'left',
-
-    'padding-top': '4px',
-    'padding-bottom': '6px',
-  }
 
   render() {
     let typoAttrs = {

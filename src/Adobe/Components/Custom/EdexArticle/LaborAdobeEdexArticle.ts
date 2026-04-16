@@ -1,57 +1,82 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-body': ['labor-adobe-edex-article'],
-  'labor-adobe-edex-article': [],
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-edex-article',
+  attributes: {
+    'section-bg-class': {
+      type: 'string',
+      default: 'content-bg',
+    },
+    'image-src': {
+      type: 'string',
+    },
+    'image-src-mobile': {
+      type: 'string',
+      default: '',
+    },
+    'image-href': {
+      type: 'string',
+      default: '',
+    },
+    'href': {
+      type: 'string',
+      default: '',
+    },
+    'headline': {
+      type: 'string',
+    },
+    'category': {
+      type: 'string',
+    },
+    'text': {
+      type: 'string',
+    },
+    'cta': {
+      type: 'string',
+      default: '',
+    },
+    'cta-width': {
+      type: 'unit(px)',
+      default: '200px',
+    },
+    'product': {
+      type: 'string',
+      default: '',
+    },
+    'product-color': {
+      type: 'enum(gray,black,white)',
+      default: 'gray',
+    },
+    'product-type': {
+      type: 'enum(regular,alt)',
+      default: 'regular',
+    },
+    'secondary-cta': {
+      type: 'string',
+      default: '',
+    },
+    'secondary-href': {
+      type: 'string',
+      default: '',
+    },
+    'padding-top': {
+      type: 'unit(px)',
+    },
+    'padding-bottom': {
+      type: 'unit(px)',
+      default: '100px',
+    },
+  },
+  allowedParentTags: ['mj-body'],
+  allowedChildTags: [],
 })
 
-export default class LaborAdobeEdexArticle extends BodyComponent {
+class LaborAdobeEdexArticle extends BodyComponent {
   static endingTag = true
-
-  static allowedAttributes = {
-    'section-bg-class': 'string',
-    'image-src': 'string',
-    'image-src-mobile': 'string',
-    'image-href': 'string',
-
-    'href': 'string',
-    'headline': 'string',
-    'category': 'string',
-    'text': 'string',
-
-    'cta': 'string',
-    'cta-width': 'unit(px)',
-
-    'product': 'string',
-    'product-color': 'enum(gray,black,white)',
-    'product-type': 'enum(regular,alt)',
-
-    'secondary-cta': 'string',
-    'secondary-href': 'string',
-
-    'padding-top': 'unit(px)',
-    'padding-bottom': 'unit(px)',
-  }
-
-  static defaultAttributes = {
-    'section-bg-class': 'content-bg',
-    'image-src-mobile': '',
-    'image-href': '',
-    'cta-width': '200px',
-    'product': '',
-    'product-type': 'regular',
-    'product-color': 'gray',
-    'secondary-cta': '',
-    'secondary-href': '',
-    'cta': '',
-    'href': '',
-
-    'padding-bottom': '100px',
-  }
 
   render() {
     return (

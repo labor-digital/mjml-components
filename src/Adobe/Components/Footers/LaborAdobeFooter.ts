@@ -1,37 +1,54 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-body': ['labor-adobe-footer'],
-  'labor-adobe-footer': ['labor-adobe-typo-legal'],
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-footer',
+  attributes: {
+    'facebook-url': {
+      type: 'string',
+      default: '',
+    },
+    'x-url': {
+      type: 'string',
+      default: '',
+    },
+    'instagram-url': {
+      type: 'string',
+      default: '',
+    },
+    'youtube-url': {
+      type: 'string',
+      default: '',
+    },
+    'tiktok-url': {
+      type: 'string',
+      default: '',
+    },
+    'discord-url': {
+      type: 'string',
+      default: '',
+    },
+    'linkedin-url': {
+      type: 'string',
+      default: '',
+    },
+    'footer-bg-class': {
+      type: 'string',
+      default: 'footer-bg',
+    },
+    'overwrite-padding-bottom': {
+      type: 'unit(px,%)',
+    },
+  },
+  allowedParentTags: ['mj-body'],
+  allowedChildTags: ['labor-adobe-typo-legal'],
 })
 
-export default class LaborAdobeFooter extends BodyComponent {
+class LaborAdobeFooter extends BodyComponent {
   static endingTag = false
-  static allowedAttributes = {
-    'facebook-url': 'string',
-    'x-url': 'string',
-    'instagram-url': 'string',
-    'youtube-url': 'string',
-    'tiktok-url': 'string',
-    'discord-url': 'string',
-    'linkedin-url': 'string',
-    'footer-bg-class': 'string',
-    'overwrite-padding-bottom': 'unit(px,%)'
-  }
-  static defaultAttributes = {
-    'facebook-url': '',
-    'x-url': '',
-    'instagram-url': '',
-    'youtube-url': '',
-    'tiktok-url': '',
-    'discord-url': '',
-    'linkedin-url': '',
-    'footer-bg-class': 'footer-bg',
-  }
 
   static additionalAttributes = {
     desktopLeftRightPadding: styleMapping.grids.desktop.contentSpacing,
@@ -181,10 +198,7 @@ export default class LaborAdobeFooter extends BodyComponent {
           : LaborAdobeFooter.additionalAttributes.contentSectionPaddingBottom}
       >
         <mj-column>
-          ${this.renderChildren(this.props.children, {
-            rawXML: true,
-            renderer: (component) => component.render,
-          })}
+          ${this.props.content}
         </mj-column>
       </labor-adobe-section>
     `)

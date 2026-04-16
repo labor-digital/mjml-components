@@ -1,30 +1,36 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../../Styles/AdobeRedStyleMapping'
+
 const styleMapping = AdobeRedStyleMapping
 
-
-registerDependencies({
-  'labor-adobe-avatar': [],
-  'mj-column': ['labor-adobe-avatar'],
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-avatar',
+  attributes: {
+    'src': {
+      type: 'string',
+    },
+    'name': {
+      type: 'string',
+      default: '',
+    },
+    'on-background': {
+      type: 'boolean',
+      default: false,
+    },
+    'padding-top': {
+      type: 'unit(px,%)',
+    },
+    'padding-bottom': {
+      type: 'unit(px,%)',
+    },
+  },
+  allowedParentTags: ['mj-column'],
+  allowedChildTags: [],
 })
 
-export default class LaborAdobeAvatar extends BodyComponent {
+class LaborAdobeAvatar extends BodyComponent {
   static endingTag = false
-
-  static allowedAttributes = {
-    'src': 'string',
-    'name': 'string',
-    'on-background': 'boolean',
-
-    'padding-top': 'unit(px,%)',
-    'padding-bottom': 'unit(px,%)',
-  }
-
-  static defaultAttributes = {
-    'name': '',
-    'on-background': false,
-  }
 
   render() {
     const attrs = {

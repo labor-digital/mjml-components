@@ -1,29 +1,32 @@
-import { registerDependencies } from 'mjml-validator'
 import MjSection from 'mjml-section'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'labor-adobe-section': ['mj-group', 'mj-column'],
-  'mj-wrapper': ['labor-adobe-section'],
-  'labor-bg-wrapper': ['labor-adobe-section'],
-  'mj-body': ['labor-adobe-section'],
+@MJMLCustomComponent({
+  tag: 'labor-adobe-section',
+  attributes: {
+    'with-padding': {
+      type: 'boolean',
+      default: true,
+    },
+    'section-bg-class': {
+      type: 'string',
+      default: 'content-bg',
+    },
+    'padding-bottom': {
+      type: 'unit(px,%)',
+    },
+    'padding-top': {
+      type: 'unit(px,%)',
+    },
+  },
+  allowedParentTags: ['mj-wrapper', 'labor-bg-wrapper', 'mj-body'],
+  allowedChildTags: ['mj-group', 'mj-column'],
 })
 
-export default class LaborAdobeSection extends MjSection {
-  static allowedAttributes = {
-    'with-padding': 'boolean',
-    'section-bg-class': 'string',
-
-    'padding-bottom': 'unit(px,%)',
-    'padding-top': 'unit(px,%)',
-  }
-
-  static defaultAttributes = {
-    'with-padding': true,
-    'section-bg-class': 'content-bg',
-  }
+export class LaborAdobeSection extends MjSection {
 
   static additionalAttributes = {
     desktopLeftRightPadding: styleMapping.grids.desktop.contentSpacing,
@@ -61,10 +64,7 @@ export default class LaborAdobeSection extends MjSection {
         css-class="${this.getAttribute('with-padding') ? 'labor-adobe-section-responsive' : ''}"
         ${this.htmlAttributes(attrs)}
       >
-        ${this.renderChildren(this.props.children, {
-          rawXML: true,
-          renderer: (component) => component.render,
-        })}
+        ${this.props.content}
       </mj-section>
     `)
   }

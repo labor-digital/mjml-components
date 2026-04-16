@@ -1,26 +1,28 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import { md5 } from 'js-md5'
 import AdobeRedStyleMapping from '../../../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-column': ['labor-adobe-edex-category'],
-  'labor-adobe-edex-category': [],
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-edex-category',
+  attributes: {
+    'on-background': {
+      type: 'boolean',
+      default: false,
+    },
+    'padding-bottom': {
+      type: 'unit(px,%)',
+      default: styleMapping.spacings.vertical.px40,
+    },
+  },
+  allowedParentTags: ['mj-column'],
+  allowedChildTags: [],
 })
 
-export default class LaborAdobeEdexCategory extends BodyComponent {
+class LaborAdobeEdexCategory extends BodyComponent {
   static endingTag = true
-  static allowedAttributes = {
-    'on-background': 'boolean',
-    'padding-bottom': 'unit(px,%)',
-  }
-
-  static defaultAttributes = {
-    'on-background': false,
-    'padding-bottom': styleMapping.spacings.vertical.px40,
-  }
 
   static additionalAttributes = {
     fontWeight: styleMapping.typographyFontWeight.medium,

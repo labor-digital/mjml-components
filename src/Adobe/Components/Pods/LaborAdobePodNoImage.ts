@@ -1,37 +1,44 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-body': ['labor-adobe-pod-no-image'],
-  'labor-adobe-pod-no-image': [],
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-pod-no-image',
+  attributes: {
+    'section-bg-class': {
+      type: 'string',
+      default: 'content-bg',
+    },
+    'headline': {
+      type: 'string',
+    },
+    'cta-type': {
+      type: 'enum(button,link)',
+      default: 'button',
+    },
+    'cta': {
+      type: 'string',
+    },
+    'cta-href': {
+      type: 'string',
+    },
+    'padding-bottom': {
+      type: 'unit(px)',
+      default: styleMapping.spacings.vertical.px100,
+    },
+    'padding-top': {
+      type: 'unit(px)',
+      default: styleMapping.spacings.vertical.px100,
+    },
+  },
+  allowedParentTags: ['mj-body'],
+  allowedChildTags: [],
 })
 
-export default class LaborAdobePodNoImage extends BodyComponent {
+class LaborAdobePodNoImage extends BodyComponent {
   static endingTag = true
-
-  static allowedAttributes = {
-    'section-bg-class': 'string',
-
-    'headline': 'string',
-
-    'cta-type': 'enum(button,link)',
-    'cta': 'string',
-    'cta-href': 'string',
-
-    'padding-bottom': 'unit(px)',
-    'padding-top': 'unit(px)',
-  }
-
-  static defaultAttributes = {
-    'section-bg-class': 'content-bg',
-    'cta-type': 'button',
-
-    'padding-bottom': styleMapping.spacings.vertical.px100,
-    'padding-top': styleMapping.spacings.vertical.px100,
-  }
 
   render() {
     return this.getAttribute('cta-type') === 'button'

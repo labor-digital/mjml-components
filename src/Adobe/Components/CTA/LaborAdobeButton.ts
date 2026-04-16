@@ -1,35 +1,39 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'labor-adobe-button': [],
-  'mj-column': ['labor-adobe-button'],
-  'labor-adobe-actioncard': ['labor-adobe-button'],
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-button',
+  attributes: {
+    'type': {
+      type: 'enum(standard,express,inverted,quiet)',
+      default: 'standard',
+    },
+    'href': {
+      type: 'string',
+      default: '#',
+    },
+    'width': {
+      type: 'unit(px)',
+      default: '200px',
+    },
+    'padding-bottom': {
+      type: 'unit(px,%)',
+      default: styleMapping.typographies.cta.paddingBottom,
+    },
+    'padding-top': {
+      type: 'unit(px,%)',
+      default: styleMapping.typographies.cta.paddingTop,
+    },
+  },
+  allowedParentTags: ['mj-column', 'labor-adobe-actioncard'],
+  allowedChildTags: [],
 })
 
-export default class LaborAdobeButton extends BodyComponent {
+class LaborAdobeButton extends BodyComponent {
   static endingTag = true
-
-  static allowedAttributes = {
-    'type': 'enum(standard,express,inverted,quiet)',
-    'href': 'string',
-    'width': 'unit(px)',
-
-    'padding-bottom': 'unit(px,%)',
-    'padding-top': 'unit(px,%)',
-  }
-
-  static defaultAttributes = {
-    'type': 'standard',
-    'href': '#',
-    'width': '200px',
-
-    'padding-bottom': styleMapping.typographies.cta.paddingBottom,
-    'padding-top': styleMapping.typographies.cta.paddingTop,
-  }
 
   render() {
     let attrs = {

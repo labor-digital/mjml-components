@@ -1,35 +1,41 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-body': ['labor-adobe-pod-application'],
-  'labor-adobe-pod-application': [],
+export default @MJMLCustomComponent({
+  tag: 'labor-adobe-pod-application',
+  attributes: {
+    'section-bg-class': {
+      type: 'string',
+      default: 'content-bg',
+    },
+    'product': {
+      type: 'string',
+      default: 'express',
+    },
+    'product-color': {
+      type: 'string',
+      default: 'gray',
+    },
+    'product-type': {
+      type: 'string',
+      default: 'regular',
+    },
+    'primary-cta': {
+      type: 'string',
+    },
+    'primary-cta-href': {
+      type: 'string',
+    },
+  },
+  allowedParentTags: ['mj-body'],
+  allowedChildTags: [],
 })
 
-export default class LaborAdobePodApplication extends BodyComponent {
+class LaborAdobePodApplication extends BodyComponent {
   static endingTag = true
-
-  static allowedAttributes = {
-    'section-bg-class': 'string',
-
-    'product': 'string',
-    'product-color': 'string',
-    'product-type': 'string',
-
-    'primary-cta': 'string',
-    'primary-cta-href': 'string',
-  }
-
-  static defaultAttributes = {
-    'product': 'express',
-    'product-color': 'gray',
-    'product-type': 'regular',
-
-    'section-bg-class': 'content-bg',
-  }
 
   render() {
     return this.renderMJML(`

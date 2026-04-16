@@ -1,16 +1,47 @@
-import { registerDependencies } from 'mjml-validator'
 import { BodyComponent } from 'mjml-core'
+import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeProductLogoMapping from '../../Mapping/AdobeProductLogoMapping'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-registerDependencies({
-  'mj-column': ['labor-adobe-product-logo'],
-  'labor-adobe-product-logo': [],
+@MJMLCustomComponent({
+  tag: "labor-adobe-product-logo",
+  attributes: {
+    'product': {
+      type: 'string',
+      default: 'express',
+    },
+    'product-color': {
+      type: 'enum(gray,black,white)',
+      default: 'gray',
+    },
+    'product-type': {
+      type: 'enum(regular,alt)',
+      default: 'regular',
+    },
+    'product-src-overwrite': {
+      type: 'string',
+    },
+    'product-height-overwrite': {
+      type: 'unit(px)',
+    },
+    'product-width-overwrite': {
+      type: 'unit(px)',
+    },
+    'padding-bottom': {
+      type: 'unit(px)',
+      default: styleMapping.spacings.custom.px24,
+    },
+    'padding-top': {
+      type: 'unit(px)',
+    },
+  },
+  allowedParentTags: ["mj-column"],
+  allowedChildTags: [],
 })
 
-export default class LaborAdobeProductLogo extends BodyComponent {
+export  class LaborAdobeProductLogo extends BodyComponent {
   static endingTag = true
 
   static additionalAttributes = {
@@ -18,27 +49,6 @@ export default class LaborAdobeProductLogo extends BodyComponent {
     heightAlt: '30px',
     paddingBottomRegular: styleMapping.spacings.custom.px24,
     paddingBottomAlt: styleMapping.spacings.custom.px5,
-  }
-
-  static allowedAttributes = {
-    'product': 'string',
-    'product-color': 'enum(gray,black,white)',
-    'product-type': 'enum(regular,alt)',
-
-    'product-src-overwrite': 'string',
-    'product-height-overwrite': 'unit(px)',
-    'product-width-overwrite': 'unit(px)',
-
-    'padding-bottom': 'unit(px)',
-    'padding-top': 'unit(px)',
-  }
-
-  static defaultAttributes = {
-    'product': 'express',
-    'product-color': 'gray',
-    'product-type': 'regular',
-
-    'padding-bottom': LaborAdobeProductLogo.additionalAttributes.paddingBottomRegular,
   }
 
 
