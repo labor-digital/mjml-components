@@ -99,6 +99,8 @@ class LaborAdobeHeroCardImmersiveTwo extends BodyComponent {
   static endingTag = true
 
   render() {
+    const srcMobileAttr = this.getAttribute('image-src-mobile') ? `src-mobile="${this.getAttribute('image-src-mobile')}"` : '';
+
     let header =
       this.getAttribute('product-src-overwrite')
         ? `<labor-adobe-header
@@ -129,7 +131,7 @@ class LaborAdobeHeroCardImmersiveTwo extends BodyComponent {
           <mj-column>
             <labor-responsive-image
               src="${this.getAttribute('image-src')}"
-              src-mobile="${this.getAttribute('image-src-mobile')}"
+              ${srcMobileAttr}
               fluid-on-mobile="true"
               width="600px"
               align="left"
@@ -147,13 +149,13 @@ class LaborAdobeHeroCardImmersiveTwo extends BodyComponent {
           >
           <mj-column>
             <labor-adobe-typo-display-one
-              on-background="${this.getAttribute('on-background')}"
+              on-background="${this.getAttribute('on-background') === true}"
             >
               ${this.getAttribute('headline')}
             </labor-adobe-typo-display-one>
             
             <labor-adobe-typo-body
-              on-background="${this.getAttribute('on-background')}"
+              on-background="${this.getAttribute('on-background') === true}"
              >
               ${this.getContent()}
             </labor-adobe-typo-body>
