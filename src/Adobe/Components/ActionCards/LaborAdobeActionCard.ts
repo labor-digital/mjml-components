@@ -62,6 +62,8 @@ class LaborAdobeActionCard extends BodyComponent {
   `
 
   render() {
+    const srcMobileAttr = this.getAttribute('image-src-mobile') ? `src-mobile="${this.getAttribute('image-src-mobile')}"` : '';
+
     let upperSectionAttrs = {}
     upperSectionAttrs['padding-top'] = this.getAttribute('padding-top')
 
@@ -81,7 +83,7 @@ class LaborAdobeActionCard extends BodyComponent {
         >
           <labor-responsive-image
             src="${this.getAttribute('image-src')}"
-            src-mobile="${this.getAttribute('image-src-mobile')}"
+            ${srcMobileAttr}
             alt="${this.getAttribute('image-alt')}"
             border-radius="${LaborAdobeActionCard.additionalAttributes['border-radius-top-only']}"
             padding-bottom="0"

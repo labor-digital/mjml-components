@@ -87,7 +87,7 @@ class LaborAdobePod extends BodyComponent {
       (this.getAttribute('image-src')
         ? this.renderMJML(`
           <labor-adobe-section 
-              with-padding="${this.getAttribute('image-with-padding')}"
+              with-padding="${this.getAttribute('image-with-padding') === true}"
               padding-bottom=${styleMapping.spacings.horizontal.px40}
               padding-top="${this.getAttribute('padding-top')}"
               section-bg-class="${this.getAttribute('section-bg-class')}"

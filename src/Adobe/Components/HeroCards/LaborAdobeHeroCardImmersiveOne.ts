@@ -89,10 +89,9 @@ export default @MJMLCustomComponent({
 
 class LaborAdobeHeroCardImmersiveOne extends BodyComponent {
   static endingTag = true
-
-
-
   render() {
+    const srcMobileAttr = this.getAttribute('image-src-mobile') ? `src-mobile="${this.getAttribute('image-src-mobile')}"` : '';
+
     let header =
       this.getAttribute('product-src-overwrite')
         ? `<labor-adobe-header
@@ -150,7 +149,7 @@ class LaborAdobeHeroCardImmersiveOne extends BodyComponent {
           <mj-column>
             <labor-responsive-image
               src="${this.getAttribute('image-src')}"
-              src-mobile="${this.getAttribute('image-src-mobile')}"
+              ${srcMobileAttr}
               fluid-on-mobile="true"
               width="600px"
               align="left"
