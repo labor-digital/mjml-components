@@ -2,13 +2,25 @@ import MjSection from 'mjml-section'
 import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
+const styleMapping = AdobeRedStyleMapping
+
 @MJMLCustomComponent({
   tag: 'labor-adobe-section',
   attributes: {
-    'with-padding': { type: 'boolean', default: true },
-    'section-bg-class': { type: 'string', default: 'content-bg' },
-    'padding-bottom': { type: 'unit(px,%)' },
-    'padding-top': { type: 'unit(px,%)' },
+    'with-padding': {
+      type: 'boolean',
+      default: true,
+    },
+    'section-bg-class': {
+      type: 'string',
+      default: 'content-bg',
+    },
+    'padding-bottom': {
+      type: 'unit(px,%)',
+    },
+    'padding-top': {
+      type: 'unit(px,%)',
+    },
   },
   allowedParentTags: ['mj-wrapper', 'labor-bg-wrapper', 'mj-body'],
   allowedChildTags: ['mj-group', 'mj-column'],
@@ -17,8 +29,8 @@ import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 export class LaborAdobeSection extends MjSection {
 
   static additionalAttributes = {
-    desktopLeftRightPadding: AdobeRedStyleMapping.grids.desktop.contentSpacing,
-    mobileLeftRightPadding: AdobeRedStyleMapping.grids.mobile.contentSpacing,
+    desktopLeftRightPadding: styleMapping.grids.desktop.contentSpacing,
+    mobileLeftRightPadding: styleMapping.grids.mobile.contentSpacing,
   }
 
   headStyle = (breakpoint) => `
@@ -31,24 +43,24 @@ export class LaborAdobeSection extends MjSection {
     `
 
   render() {
-    const attrs = {}
-    for (const attrName in this.attributes) {
+    let attrs = {}
+    for (var attrName in this.attributes) {
       if (attrName == 'with-padding') continue
       if (attrName == 'padding-top') continue
       if (attrName == 'padding-bottom') continue
       attrs[attrName] = this.getAttribute(attrName)
     }
 
-    const pT = this.getAttribute('padding-top') && this.getAttribute('padding-top') != 'undefined' ? this.getAttribute('padding-top') : '0'
-    const pB = this.getAttribute('padding-bottom') && this.getAttribute('padding-bottom') != 'undefined' ? this.getAttribute('padding-bottom') : '0'
-    const pL = this.getAttribute('with-padding') ? LaborAdobeSection.additionalAttributes.desktopLeftRightPadding : '0'
-    const pR = this.getAttribute('with-padding') ? LaborAdobeSection.additionalAttributes.desktopLeftRightPadding : '0'
+    let pT = this.getAttribute('padding-top') && this.getAttribute('padding-top') != 'undefined' ? this.getAttribute('padding-top') : '0'
+    let pB = this.getAttribute('padding-bottom') && this.getAttribute('padding-bottom') != 'undefined' ? this.getAttribute('padding-bottom') : '0'
+    let pL = this.getAttribute('with-padding') ? LaborAdobeSection.additionalAttributes.desktopLeftRightPadding : '0'
+    let pR = this.getAttribute('with-padding') ? LaborAdobeSection.additionalAttributes.desktopLeftRightPadding : '0'
 
     attrs['padding'] = pT + ' ' + pR + ' ' + pB + ' ' + pL
 
     return this.renderMJML(`
-      <mj-section
-        mj-class="${this.getAttribute('section-bg-class')}"
+      <mj-section 
+        mj-class="${this.getAttribute('section-bg-class')}" 
         css-class="${this.getAttribute('with-padding') ? 'labor-adobe-section-responsive' : ''}"
         ${this.htmlAttributes(attrs)}
       >

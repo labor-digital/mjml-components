@@ -2,19 +2,47 @@ import { BodyComponent } from 'mjml-core'
 import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../../Styles/AdobeRedStyleMapping'
 
+const styleMapping = AdobeRedStyleMapping
+
 export default @MJMLCustomComponent({
   tag: 'labor-adobe-two-col-img-text-section',
   attributes: {
-    'section-bg-class': { type: 'string', default: 'content-bg' },
-    'direction': { type: 'enum(ltr,rtl)', default: 'ltr' },
-    'image-src': { type: 'string', default: '' },
-    'image-src-mobile': { type: 'string', default: '' },
-    'with-padding': { type: 'boolean', default: true },
-    'with-padding-image': { type: 'boolean', default: true },
+    'section-bg-class': {
+      type: 'string',
+      default: 'content-bg',
+    },
+    'direction': {
+      type: 'enum(ltr,rtl)',
+      default: 'ltr',
+    },
+    'image-src': {
+      type: 'string',
+      default: '',
+    },
+    'image-src-mobile': {
+      type: 'string',
+      default: '',
+    },
+    'with-padding': {
+      type: 'boolean',
+      default: true,
+    },
+    'with-padding-image': {
+      type: 'boolean',
+      default: true,
+    },
     // when setting padding-bottom keep the padding-bottom of the columns in mind
-    'padding-top': { type: 'unit(px,%)' },
-    'padding-bottom': { type: 'unit(px,%)', default: AdobeRedStyleMapping.spacings.vertical.px20 },
-    'padding-bottom-cols': { type: 'unit(px,%)', default: AdobeRedStyleMapping.spacings.vertical.px40 },
+    'padding-top': {
+      type: 'unit(px,%)',
+    },
+    'padding-bottom': {
+      type: 'unit(px,%)',
+      default: styleMapping.spacings.vertical.px20,
+    },
+    'padding-bottom-cols': {
+      type: 'unit(px,%)',
+      default: styleMapping.spacings.vertical.px40,
+    },
   },
   allowedParentTags: ['mj-body'],
   allowedChildTags: [
@@ -30,67 +58,49 @@ class LaborAdobeTwoColImgTextSection extends BodyComponent {
   headStyle = (breakpoint) => `
     @media only screen and (max-width: ${breakpoint}) {
       .labor-adobe-two-col-img-text-section-responsive > table > tbody > tr > td {
-        padding-left: ${AdobeRedStyleMapping.grids.mobile.contentSpacing} !important;
-        padding-right: ${AdobeRedStyleMapping.grids.mobile.contentSpacing} !important;
+        padding-left: ${styleMapping.grids.mobile.contentSpacing} !important;
+        padding-right: ${styleMapping.grids.mobile.contentSpacing} !important;
       }
     }
   `
 
   render() {
-    const attrs = {
-      sectionBgClass: this.getAttribute('section-bg-class') || 'content-bg',
-      direction: this.getAttribute('direction') || 'ltr',
-      imageSrc: this.getAttribute('image-src') || '',
-      imageSrcMobile: this.getAttribute('image-src-mobile') || '',
-      paddingBottom: this.getAttribute('padding-bottom') || AdobeRedStyleMapping.spacings.vertical.px20,
-      paddingBottomCols: this.getAttribute('padding-bottom-cols') || AdobeRedStyleMapping.spacings.vertical.px40,
-      paddingTop: this.getAttribute('padding-top'),
-    }
-
-    const _withPadding = this.getAttribute('with-padding')
-    const withPadding = _withPadding === true || _withPadding === 'true'
-    const _withPaddingImage = this.getAttribute('with-padding-image')
-    const withPaddingImage = _withPaddingImage === true || _withPaddingImage === 'true'
-
-    const defaultPadding = withPadding ? AdobeRedStyleMapping.grids.desktop.contentSpacing : 0
-    const imageDefaultPadding = withPaddingImage ? AdobeRedStyleMapping.grids.desktop.contentSpacing : 0
-    const isRtl = attrs.direction === 'rtl'
+    const defaultPadding = this.getAttribute('with-padding') ? styleMapping.grids.desktop.contentSpacing : 0
+    const imageDefaultPadding = this.getAttribute('with-padding-image') ? styleMapping.grids.desktop.contentSpacing : 0
 
     let imagePadding = `0 0 0 ${imageDefaultPadding}`
     let textPadding = `0 ${defaultPadding} 0 0`
 
-    if (isRtl) {
+    if ('rtl' === this.getAttribute('direction')) {
       imagePadding = `0 ${imageDefaultPadding} 0 0`
       textPadding = `0 0 0 ${defaultPadding}`
     }
 
-    const responsiveCssClass = withPadding ? 'labor-adobe-two-col-img-text-section-responsive' : ''
-
     return this.renderMJML(`
       <labor-adobe-section
-        direction="${attrs.direction}"
+        direction="${this.getAttribute('direction')}"
         with-padding="false"
-        padding-bottom="${attrs.paddingBottom}"
-        padding-top="${attrs.paddingTop || ''}"
-        section-bg-class="${attrs.sectionBgClass}"
+        padding-bottom="${this.getAttribute('padding-bottom')}"
+        padding-top="${this.getAttribute('padding-top')}"
+        section-bg-class="${this.getAttribute('section-bg-class')}"
       >
-        <mj-column
+        <mj-column 
           vertical-align="middle"
-          css-class="${responsiveCssClass}"
+          css-class="${this.getAttribute('with-padding') ? 'labor-adobe-two-col-img-text-section-responsive' : ''}"
           padding="${imagePadding}"
-          padding-bottom="${attrs.paddingBottomCols}"
+          padding-bottom="${this.getAttribute('padding-bottom-cols')}"
         >
-          <labor-responsive-image
-            src="${attrs.imageSrc}"
-            src-mobile="${attrs.imageSrcMobile}"
+          <labor-responsive-image 
+            src="${this.getAttribute('image-src')}"
+            src-mobile="${this.getAttribute('image-src-mobile')}"
             full-width="full-width"
           />
         </mj-column>
-        <mj-column
-          vertical-align="middle"
-          css-class="${responsiveCssClass}"
+        <mj-column 
+          vertical-align="middle" 
+          css-class="${this.getAttribute('with-padding') ? 'labor-adobe-two-col-img-text-section-responsive' : ''}"
           padding="${textPadding}"
-          padding-bottom="${attrs.paddingBottomCols}"
+          padding-bottom="${this.getAttribute('padding-bottom-cols')}"
         >
           ${this.props.content}
         </mj-column>
