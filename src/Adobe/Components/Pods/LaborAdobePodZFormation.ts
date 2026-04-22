@@ -2,34 +2,15 @@ import { BodyComponent } from 'mjml-core'
 import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
-const styleMapping = AdobeRedStyleMapping
-
 export default @MJMLCustomComponent({
   tag: 'labor-adobe-pod-z-formation',
   attributes: {
-    'section-bg-class': {
-      type: 'string',
-      default: 'content-bg',
-    },
-    'direction': {
-      type: 'enum(ltr,rtl)',
-      default: 'ltr',
-    },
-    'image-src': {
-      type: 'string',
-      default: '',
-    },
-    'image-src-mobile': {
-      type: 'string',
-      default: '',
-    },
-    'padding-top': {
-      type: 'unit(px,%)',
-    },
-    'padding-bottom': {
-      type: 'unit(px,%)',
-      default: styleMapping.spacings.vertical.px100,
-    },
+    'section-bg-class': { type: 'string', default: 'content-bg' },
+    'direction': { type: 'enum(ltr,rtl)', default: 'ltr' },
+    'image-src': { type: 'string', default: '' },
+    'image-src-mobile': { type: 'string', default: '' },
+    'padding-top': { type: 'unit(px,%)' },
+    'padding-bottom': { type: 'unit(px,%)', default: AdobeRedStyleMapping.spacings.vertical.px100 },
   },
   allowedParentTags: ['mj-body'],
   allowedChildTags: [
@@ -43,9 +24,9 @@ class LaborAdobePodZFormation extends BodyComponent {
   static endingTag = false
 
   static additionalAttributes = {
-    'padding-to-edge-mobile' : (parseInt(styleMapping.grids.mobile.contentSpacing)
-                                       + parseInt(styleMapping.spacings.horizontal.px60) + 'px'),
-    'padding-image-to-content-desktop' : styleMapping.spacings.horizontal.px40
+    'padding-to-edge-mobile': (parseInt(AdobeRedStyleMapping.grids.mobile.contentSpacing)
+                               + parseInt(AdobeRedStyleMapping.spacings.horizontal.px60) + 'px'),
+    'padding-image-to-content-desktop': AdobeRedStyleMapping.spacings.horizontal.px40,
   }
 
   headStyle = (breakpoint) => `
@@ -56,15 +37,14 @@ class LaborAdobePodZFormation extends BodyComponent {
       .labor-adobe-z-content-col-responsive--ltr > table > tbody > tr > td {
         padding-top: 40px !important;
         padding-left: ${LaborAdobePodZFormation.additionalAttributes['padding-to-edge-mobile']} !important;
-        padding-right: ${styleMapping.grids.mobile.contentSpacing} !important;
+        padding-right: ${AdobeRedStyleMapping.grids.mobile.contentSpacing} !important;
       }
       .labor-adobe-z-content-col-responsive--rtl > table > tbody > tr > td {
         padding-top: 40px !important;
-        padding-left: ${styleMapping.grids.mobile.contentSpacing} !important;
+        padding-left: ${AdobeRedStyleMapping.grids.mobile.contentSpacing} !important;
         padding-right: ${LaborAdobePodZFormation.additionalAttributes['padding-to-edge-mobile']} !important;
       }
-      
-      
+
       .labor-adobe-z-image-col-responsive > table > tbody > tr > td > table > tbody > tr > td > table > tbody > tr > td {
         width: 100% !important;
       }
@@ -80,56 +60,44 @@ class LaborAdobePodZFormation extends BodyComponent {
   `
 
   render() {
+    const attrs = {
+      sectionBgClass: this.getAttribute('section-bg-class') || 'content-bg',
+      direction: this.getAttribute('direction') || 'ltr',
+      imageSrc: this.getAttribute('image-src') || '',
+      imageSrcMobile: this.getAttribute('image-src-mobile') || '',
+      paddingBottom: this.getAttribute('padding-bottom') || AdobeRedStyleMapping.spacings.vertical.px100,
+      paddingTop: this.getAttribute('padding-top'),
+    }
+
+    const isLtr = attrs.direction === 'ltr'
+    const aa = LaborAdobePodZFormation.additionalAttributes
+
     return this.renderMJML(`
       <labor-adobe-section
-        direction="${this.getAttribute('direction')}"
+        direction="${attrs.direction}"
         with-padding="false"
-        padding-bottom="${this.getAttribute('padding-bottom')}"
-        padding-top="${this.getAttribute('padding-top')}"
-        section-bg-class="${this.getAttribute('section-bg-class')}"
+        padding-bottom="${attrs.paddingBottom}"
+        padding-top="${attrs.paddingTop || ''}"
+        section-bg-class="${attrs.sectionBgClass}"
       >
-        <mj-column 
+        <mj-column
           vertical-align="top"
-          css-class="labor-adobe-z-image-col-responsive ${this.getAttribute('direction') === 'ltr' 
-                      ? 'labor-adobe-z-image-col-responsive--ltr' 
-                      : 'labor-adobe-z-image-col-responsive--rtl'}"
-          padding-left="${
-            this.getAttribute('direction') === 'ltr'
-              ? '0'
-              : LaborAdobePodZFormation.additionalAttributes['padding-image-to-content-desktop']
-          }"
-          padding-right="${
-            this.getAttribute('direction') === 'ltr'
-              ? LaborAdobePodZFormation.additionalAttributes['padding-image-to-content-desktop']
-              : '0'
-          }"
+          css-class="labor-adobe-z-image-col-responsive ${isLtr ? 'labor-adobe-z-image-col-responsive--ltr' : 'labor-adobe-z-image-col-responsive--rtl'}"
+          padding-left="${isLtr ? '0' : aa['padding-image-to-content-desktop']}"
+          padding-right="${isLtr ? aa['padding-image-to-content-desktop'] : '0'}"
         >
-          <labor-responsive-image 
-            src="${this.getAttribute('image-src')}"
-            src-mobile="${this.getAttribute('image-src-mobile')}"
-            align="${
-              this.getAttribute('direction') === 'ltr' 
-                ? 'left'
-                : 'right'
-            }"
+          <labor-responsive-image
+            src="${attrs.imageSrc}"
+            src-mobile="${attrs.imageSrcMobile}"
+            align="${isLtr ? 'left' : 'right'}"
           />
         </mj-column>
-        <mj-column 
+        <mj-column
           vertical-align="top"
-          css-class="labor-adobe-z-content-col-responsive ${this.getAttribute('direction') === 'ltr' 
-                      ? 'labor-adobe-z-content-col-responsive--ltr'
-                      : 'labor-adobe-z-content-col-responsive--rtl'}" 
+          css-class="labor-adobe-z-content-col-responsive ${isLtr ? 'labor-adobe-z-content-col-responsive--ltr' : 'labor-adobe-z-content-col-responsive--rtl'}"
           padding-top="12px"
-          padding-left="${
-            this.getAttribute('direction') === 'ltr' 
-              ? '0' 
-              : LaborAdobePodZFormation.additionalAttributes['padding-image-to-content-desktop']
-          }"
-          padding-right="${
-            this.getAttribute('direction') === 'ltr' 
-              ? LaborAdobePodZFormation.additionalAttributes['padding-image-to-content-desktop']
-              : '0'
-          }"
+          padding-left="${isLtr ? '0' : aa['padding-image-to-content-desktop']}"
+          padding-right="${isLtr ? aa['padding-image-to-content-desktop'] : '0'}"
         >
           ${this.props.content}
         </mj-column>

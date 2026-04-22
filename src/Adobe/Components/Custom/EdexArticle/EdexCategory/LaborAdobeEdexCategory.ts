@@ -3,19 +3,11 @@ import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import { md5 } from 'js-md5'
 import AdobeRedStyleMapping from '../../../../Styles/AdobeRedStyleMapping'
 
-const styleMapping = AdobeRedStyleMapping
-
 export default @MJMLCustomComponent({
   tag: 'labor-adobe-edex-category',
   attributes: {
-    'on-background': {
-      type: 'boolean',
-      default: false,
-    },
-    'padding-bottom': {
-      type: 'unit(px,%)',
-      default: styleMapping.spacings.vertical.px40,
-    },
+    'on-background': { type: 'boolean', default: false },
+    'padding-bottom': { type: 'unit(px,%)', default: AdobeRedStyleMapping.spacings.vertical.px40 },
   },
   allowedParentTags: ['mj-column'],
   allowedChildTags: [],
@@ -25,9 +17,9 @@ class LaborAdobeEdexCategory extends BodyComponent {
   static endingTag = true
 
   static additionalAttributes = {
-    fontWeight: styleMapping.typographyFontWeight.medium,
-    fontSize: styleMapping.typographyFontSize.size18,
-    color: styleMapping.labor.colors.edexCategory.hex,
+    fontWeight: AdobeRedStyleMapping.typographyFontWeight.medium,
+    fontSize: AdobeRedStyleMapping.typographyFontSize.size18,
+    color: AdobeRedStyleMapping.labor.colors.edexCategory.hex,
   }
 
   constructor(initialDatas = {}) {

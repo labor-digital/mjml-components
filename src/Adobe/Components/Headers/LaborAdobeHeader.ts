@@ -4,89 +4,40 @@ import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 import AdobeProductLockupMapping from '../../Mapping/AdobeProductLockupMapping'
 import AdobeProductLogoMapping from '../../Mapping/AdobeProductLogoMapping'
 
-const styleMapping = AdobeRedStyleMapping
-
 export default @MJMLCustomComponent({
   tag: 'labor-adobe-header',
   attributes: {
-    'header-bg-class': {
-      type: 'string',
-      default: 'content-bg',
-    },
-    'product': {
-      type: 'string',
-    },
-    'product-color': {
-      type: 'enum(red,white,red_black,red_gray,red_white,white_black)',
-    },
-    'href': {
-      type: 'string',
-      default: '',
-    },
-    'title': {
-      type: 'string',
-      default: '',
-    },
-    'alt': {
-      type: 'string',
-      default: '',
-    },
-    'target': {
-      type: 'string',
-      default: '_blank',
-    },
-    'border': {
-      type: 'boolean',
-      default: false,
-    },
-    'with-padding': {
-      type: 'boolean',
-      default: true,
-    },
-    // Not all mails use the default lockups
-    // In these cases it should still be possible to use a custom image
-    'product-src-overwrite': {
-      type: 'string',
-    },
-    'product-height-overwrite': {
-      type: 'unit(px)',
-    },
-    'product-width-overwrite': {
-      type: 'unit(px)',
-    },
-    'product-height': {
-      type: 'string',
-      default: '42px',
-    },
-    'product-width': {
-      type: 'string',
-      default: 'auto',
-    },
-    'padding-top': {
-      type: 'unit(px)',
-      default: styleMapping.spacings.custom.px41,
-    },
-    'padding-bottom': {
-      type: 'unit(px)',
-      default: styleMapping.spacings.custom.px41,
-    },
-    // eg. for additonal 20px padding below the headers from the red specs for dark mode compatibility, or 20px for hero pods
-    'additional-padding-bottom': {
-      type: 'unit(px)',
-      default: styleMapping.spacings.vertical.px20,
-    },
+    'header-bg-class': { type: 'string', default: 'content-bg' },
+    'product': { type: 'string' },
+    'product-color': { type: 'enum(red,white,red_black,red_gray,red_white,white_black)' },
+    'href': { type: 'string', default: '' },
+    'title': { type: 'string', default: '' },
+    'alt': { type: 'string', default: '' },
+    'target': { type: 'string', default: '_blank' },
+    'border': { type: 'boolean', default: false },
+    'with-padding': { type: 'boolean', default: true },
+    // Not all mails use the default lockups — custom image is supported via these
+    'product-src-overwrite': { type: 'string' },
+    'product-height-overwrite': { type: 'unit(px)' },
+    'product-width-overwrite': { type: 'unit(px)' },
+    'product-height': { type: 'string', default: '42px' },
+    'product-width': { type: 'string', default: 'auto' },
+    'padding-top': { type: 'unit(px)', default: AdobeRedStyleMapping.spacings.custom.px41 },
+    'padding-bottom': { type: 'unit(px)', default: AdobeRedStyleMapping.spacings.custom.px41 },
+    'additional-padding-bottom': { type: 'unit(px)', default: AdobeRedStyleMapping.spacings.vertical.px20 },
   },
   allowedParentTags: ['mj-body'],
+  allowedChildTags: [],
 })
 
 class LaborAdobeHeader extends BodyComponent {
   static endingTag = true
 
   static additionalAttributes = {
-    desktopLeftRightPadding: styleMapping.grids.desktop.contentSpacing,
-    mobileLeftRightPadding: styleMapping.grids.mobile.contentSpacing,
-    defaultPaddingTop: styleMapping.spacings.custom.px41,
-    withBorder: styleMapping.labor.borders.header,
+    desktopLeftRightPadding: AdobeRedStyleMapping.grids.desktop.contentSpacing,
+    mobileLeftRightPadding: AdobeRedStyleMapping.grids.mobile.contentSpacing,
+    defaultPaddingTop: AdobeRedStyleMapping.spacings.custom.px41,
+    withBorder: AdobeRedStyleMapping.labor.borders.header,
     align: 'left',
   }
 
@@ -100,79 +51,78 @@ class LaborAdobeHeader extends BodyComponent {
   `
 
   render() {
+    const productSrcOverwrite = this.getAttribute('product-src-overwrite')
+    const productHeightOverwrite = this.getAttribute('product-height-overwrite')
+    const productWidthOverwrite = this.getAttribute('product-width-overwrite')
+    const withPadding = this.getAttribute('with-padding')
+    const border = this.getAttribute('border')
 
-    // If it's one of the default lockups, use the values from mapping
-    // Otherwise fall back to default props
-    let src;
-    let imgHeight;
-    let imgWidth;
-    let title;
-    let alt;
+    let src: string
+    let imgHeight: string
+    let imgWidth: string
+    let title: string
+    let alt: string
 
-    if (this.getAttribute('product-src-overwrite')) {
-      // custom image, use provided values
-      src = this.getAttribute('product-src-overwrite');
-      title = this.getAttribute('title') ?? '';
-      alt = this.getAttribute('alt') ?? '';
-      imgHeight = this.getAttribute('product-height-overwrite') ?? this.getAttribute('product-height');
-      imgWidth = this.getAttribute('product-width-overwrite') ?? this.getAttribute('product-width');
-
+    if (productSrcOverwrite) {
+      src = productSrcOverwrite
+      title = this.getAttribute('title') || ''
+      alt = this.getAttribute('alt') || ''
+      imgHeight = productHeightOverwrite || this.getAttribute('product-height') || '42px'
+      imgWidth = productWidthOverwrite || this.getAttribute('product-width') || 'auto'
     } else {
-      // default lockup, use values from mapping
-      let productLockup = AdobeProductLockupMapping.getLockup(this.getAttribute('product'), this.getAttribute('product-color'));
-      if (!productLockup) return '';
-      src = productLockup.location;
-      title = productLockup.name+ ' logo';
-      alt = productLockup.name;
+      const productLockup = AdobeProductLockupMapping.getLockup(
+        this.getAttribute('product'),
+        this.getAttribute('product-color'),
+      )
+      if (!productLockup) return ''
+      src = productLockup.location
+      title = productLockup.name + ' logo'
+      alt = productLockup.name
 
-      let getImageRatio = () => {
-        let cleanTargetHeight = parseInt(imgHeight.replace('px', ''))
-        let cleanImageHeight = parseInt(productLockup.height)
+      imgHeight = this.getAttribute('product-height') || '42px'
 
+      const getImageRatio = () => {
+        const cleanTargetHeight = parseInt(imgHeight.replace('px', ''))
+        const cleanImageHeight = parseInt(productLockup.height)
         return cleanImageHeight / cleanTargetHeight
       }
 
-      let calculateLogoWidth = () => {
-        let imageRatio = getImageRatio();
-        let logoWidth = parseInt(productLockup.width);
+      const calculateLogoWidth = () => {
+        const imageRatio = getImageRatio()
+        const logoWidth = parseInt(productLockup.width)
         return Math.floor(logoWidth / imageRatio).toString() + 'px'
       }
 
-      imgHeight = this.getAttribute('product-height');
-      imgWidth = calculateLogoWidth();
+      imgWidth = calculateLogoWidth()
     }
 
-    let imgAttrs = {
+    const imgAttrs: Record<string, any> = {
       'src': src,
       'height': imgHeight,
       'width': imgWidth,
-
-      'href': this.getAttribute('href'),
-      'target': this.getAttribute('target'),
-
+      'href': this.getAttribute('href') || '',
+      'target': this.getAttribute('target') || '_blank',
       'align': LaborAdobeHeader.additionalAttributes.align,
-      'css-class': this.getAttribute('with-padding') ? 'labor-adobe-header-responsive' : '',
-
-      'padding-top': this.getAttribute('padding-top'),
-      'padding-bottom': this.getAttribute('padding-bottom'),
-
-      'padding-left': this.getAttribute('with-padding')
+      'css-class': withPadding ? 'labor-adobe-header-responsive' : '',
+      'padding-top': this.getAttribute('padding-top') || AdobeRedStyleMapping.spacings.custom.px41,
+      'padding-bottom': this.getAttribute('padding-bottom') || AdobeRedStyleMapping.spacings.custom.px41,
+      'padding-left': withPadding
         ? LaborAdobeHeader.additionalAttributes.desktopLeftRightPadding
         : '0',
-      'padding-right': this.getAttribute('with-padding')
+      'padding-right': withPadding
         ? LaborAdobeHeader.additionalAttributes.desktopLeftRightPadding
         : '0',
     }
 
-    let sectionAttrs = {
-      'section-bg-class': this.getAttribute('header-bg-class'),
+    if (title) imgAttrs['title'] = title
+    if (alt) imgAttrs['alt'] = alt
+
+    const sectionAttrs: Record<string, any> = {
+      'section-bg-class': this.getAttribute('header-bg-class') || 'content-bg',
       'with-padding': false,
-      'padding-bottom': this.getAttribute('additional-padding-bottom') ?? 0
+      'padding-bottom': this.getAttribute('additional-padding-bottom') || AdobeRedStyleMapping.spacings.vertical.px20,
     }
-    if(this.getAttribute('border')) sectionAttrs['border-top'] = LaborAdobeHeader.additionalAttributes.withBorder;
-
-    if (title) imgAttrs['title'] = title;
-    if (alt) imgAttrs['alt'] = alt;
+    if (border) sectionAttrs['border-top'] = LaborAdobeHeader.additionalAttributes.withBorder
 
     return this.renderMJML(`
       <labor-adobe-section

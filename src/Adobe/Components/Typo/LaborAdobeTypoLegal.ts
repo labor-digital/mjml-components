@@ -2,26 +2,13 @@ import { BodyComponent } from 'mjml-core'
 import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
-const styleMapping = AdobeRedStyleMapping
-
 export default @MJMLCustomComponent({
   tag: 'labor-adobe-typo-legal',
   attributes: {
-    'on-background': {
-      type: 'boolean',
-      default: false,
-    },
-    'padding-top': {
-      type: 'unit(px,%)',
-    },
-    'padding-bottom': {
-      type: 'unit(px,%)',
-      default: styleMapping.typographies.legal.paddingBottom,
-    },
-    'css-class': {
-      type: 'string',
-      default: 'labor-adobe-typo-legal',
-    },
+    'on-background': { type: 'boolean', default: false },
+    'padding-top': { type: 'unit(px,%)' },
+    'padding-bottom': { type: 'unit(px,%)', default: AdobeRedStyleMapping.typographies.legal.paddingBottom },
+    'css-class': { type: 'string', default: 'labor-adobe-typo-legal' },
   },
   allowedParentTags: ['mj-column'],
   allowedChildTags: [],
@@ -31,11 +18,11 @@ class LaborAdobeTypoLegal extends BodyComponent {
   static endingTag = true
 
   static additionalAttributes = {
-    fontWeight: styleMapping.typographies.legal.fontWeight,
-    fontSize: styleMapping.typographies.legal.fontSize,
-    lineHeight: styleMapping.typographies.legal.lineHeight,
-    color: styleMapping.typographies.legal.color,
-    onBackgroundColor: styleMapping.colors.white.hex,
+    fontWeight: AdobeRedStyleMapping.typographies.legal.fontWeight,
+    fontSize: AdobeRedStyleMapping.typographies.legal.fontSize,
+    lineHeight: AdobeRedStyleMapping.typographies.legal.lineHeight,
+    color: AdobeRedStyleMapping.typographies.legal.color,
+    onBackgroundColor: AdobeRedStyleMapping.colors.white.hex,
   }
 
   headStyle = (breakpoint) => `
@@ -50,11 +37,14 @@ class LaborAdobeTypoLegal extends BodyComponent {
   `
 
   render() {
+    const _onBackground = this.getAttribute('on-background')
+    const onBackground = _onBackground === true || _onBackground === 'true'
+
     const attrs = {
       'font-size': LaborAdobeTypoLegal.additionalAttributes.fontSize,
       'line-height': LaborAdobeTypoLegal.additionalAttributes.lineHeight,
       'font-weight': LaborAdobeTypoLegal.additionalAttributes.fontWeight,
-      'color': this.getAttribute('on-background')
+      'color': onBackground
         ? LaborAdobeTypoLegal.additionalAttributes.onBackgroundColor
         : LaborAdobeTypoLegal.additionalAttributes.color,
     }
