@@ -1,8 +1,8 @@
 import fs from 'fs'
 import path from 'path'
-import { registerComponent } from 'mjml-core'
 import mjml2html from 'mjml'
 import { globSync } from 'glob'
+import { buildAttrRegistry, validateAllAttributes } from './custom-validator'
 
 // Adobe Components - Sections
 import '../src/Adobe/Components/Sections/LaborAdobeSection'
@@ -19,8 +19,8 @@ import '../src/Adobe/Components/CTA/LaborAdobeLink'
 import '../src/Adobe/Components/Custom/Avatars/LaborAdobeAvatar'
 
 // Adobe Components - Custom - EdexArticle
-import '../src/Adobe/Components/Custom/EdexArticle/EdexCategory/LaborAdobeEdexCategory'
-import '../src/Adobe/Components/Custom/EdexArticle/LaborAdobeEdexArticle'
+import '../lib/Adobe/Components/Custom/EdexArticle/EdexCategory/LaborAdobeEdexCategory'
+import '../lib/Adobe/Components/Custom/EdexArticle/LaborAdobeEdexArticle'
 
 // Adobe Components - Custom - FooterBands
 import '../src/Adobe/Components/Custom/FooterBands/LaborAdobeFooterBand'
@@ -67,30 +67,14 @@ import '../src/Adobe/Components/Typo/LaborAdobeTypoHeadingFour'
 import '../src/Adobe/Components/Typo/LaborAdobeTypoHeadingOne'
 import '../src/Adobe/Components/Typo/LaborAdobeTypoHeadingThree'
 import '../src/Adobe/Components/Typo/LaborAdobeTypoHeadingTwo'
-import '../src/Adobe/Components/Typo/LaborAdobeTypoLegal'
+import '../lib/Adobe/Components/Typo/LaborAdobeTypoLegal'
 
 // Labor Components
 import '../src/Labor/LaborBgWrapper'
 import '../src/Labor/LaborResponsiveImage'
 import '../src/Labor/LaborRoundedButton'
 
-// const templatePath = path.join(__dirname, '..', 'src', 'Adobe', 'Components', 'ProductLogos', 'adobe_components_product_logos.mjml')
-// const template = fs.readFileSync(templatePath, 'utf8')
-//
-// const result = mjml2html(template, {
-//   validationLevel: "strict",
-// });
-//
-// if (result.errors?.length) {
-//   console.error("MJML Errors:", result.errors);
-// }
-//
-// const outputPath = path.join(__dirname, "test-output-2.html");
-// fs.writeFileSync(outputPath, result.html);
-// console.log(`HTML output written to: ${outputPath}`);
-
-
-
+const attrRegistry = buildAttrRegistry()
 
 const srcDir = path.resolve(__dirname, '..', 'src')
 const previewsDir = path.resolve(__dirname, '..', 'previews')
@@ -113,6 +97,15 @@ for (const file of mjmlFiles) {
   const fullPath = path.join(srcDir, file)
   const data = fs.readFileSync(fullPath, 'utf8')
   const parsed = path.parse(file)
+
+  const attrErrors = validateAllAttributes(data, attrRegistry)
+  if (attrErrors.length) {
+    console.error(`\n${attrErrors.length} attribute error(s) in ${file}:`)
+    for (const err of attrErrors) console.error(`  - ${err}`)
+    hasErrors = true
+    continue
+  }
+
   const result = mjml2html(data, {validationLevel: 'strict'})
 
   if (result.errors && result.errors.length) {
