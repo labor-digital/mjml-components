@@ -2,33 +2,15 @@ import { BodyComponent } from 'mjml-core'
 import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
-const styleMapping = AdobeRedStyleMapping
-
 export default @MJMLCustomComponent({
   tag: 'labor-adobe-action-card',
   attributes: {
-    'section-bg-class': {
-      type: 'string',
-      default: 'content-bg',
-    },
-    'image-src': {
-      type: 'string',
-    },
-    'image-src-mobile': {
-      type: 'string',
-    },
-    'image-alt': {
-      type: 'string',
-      default: 'Alt Text',
-    },
-    'padding-top': {
-      type: 'unit(px)',
-      default: styleMapping.spacings.custom.px0,
-    },
-    'padding-bottom': {
-      type: 'unit(px)',
-      default: styleMapping.spacings.custom.px0,
-    },
+    'section-bg-class': { type: 'string', default: 'content-bg' },
+    'image-src': { type: 'string' },
+    'image-src-mobile': { type: 'string' },
+    'image-alt': { type: 'string', default: 'Alt Text' },
+    'padding-top': { type: 'unit(px)', default: AdobeRedStyleMapping.spacings.custom.px0 },
+    'padding-bottom': { type: 'unit(px)', default: AdobeRedStyleMapping.spacings.custom.px0 },
   },
   allowedParentTags: ['mj-body'],
   allowedChildTags: [
@@ -43,14 +25,14 @@ export default @MJMLCustomComponent({
 class LaborAdobeActionCard extends BodyComponent {
 
   static additionalAttributes = {
-    'image-section-padding': styleMapping.spacings.vertical.px40,
-    'image-section-padding-mobile': styleMapping.spacings.custom.px30,
-    'padding-left-right': styleMapping.spacings.custom.px50,
-    'inner-padding-top-bottom': styleMapping.spacings.vertical.px60,
+    'image-section-padding': AdobeRedStyleMapping.spacings.vertical.px40,
+    'image-section-padding-mobile': AdobeRedStyleMapping.spacings.custom.px30,
+    'padding-left-right': AdobeRedStyleMapping.spacings.custom.px50,
+    'inner-padding-top-bottom': AdobeRedStyleMapping.spacings.vertical.px60,
     'border-radius-top-only': '8px 8px 0 0',
     'border-radius-bottom-only': '0 0 8px 8px',
     'border-radius-both': '8px',
-    'column-background-color': styleMapping.labor.colors.actionCardBackgroundColor.hex
+    'column-background-color': AdobeRedStyleMapping.labor.colors.actionCardBackgroundColor.hex,
   }
 
   headStyle = (breakpoint) => `
@@ -62,60 +44,68 @@ class LaborAdobeActionCard extends BodyComponent {
   `
 
   render() {
-    const srcMobileAttr = this.getAttribute('image-src-mobile') ? `src-mobile="${this.getAttribute('image-src-mobile')}"` : '';
+    const attrs = {
+      sectionBgClass: this.getAttribute('section-bg-class') || 'content-bg',
+      imageAlt: this.getAttribute('image-alt') || 'Alt Text',
+      paddingTop: this.getAttribute('padding-top') || AdobeRedStyleMapping.spacings.custom.px0,
+      paddingBottom: this.getAttribute('padding-bottom') || AdobeRedStyleMapping.spacings.custom.px0,
+    }
 
-    let upperSectionAttrs = {}
-    upperSectionAttrs['padding-top'] = this.getAttribute('padding-top')
+    const imageSrc = this.getAttribute('image-src')
+    const imageSrcMobile = this.getAttribute('image-src-mobile')
+    const imageSrcMobileAttr = imageSrcMobile ? `src-mobile="${imageSrcMobile}"` : ''
 
-    let lowerSectionAttrs = {}
-    lowerSectionAttrs['padding-top'] = this.getAttribute('image-src') ? "0" : this.getAttribute('padding-top')
-    lowerSectionAttrs['padding-bottom'] = this.getAttribute('padding-bottom')
+    const aa = LaborAdobeActionCard.additionalAttributes
 
-    let imageSection = this.getAttribute('image-src') ?
-      `<labor-adobe-section
-        with-padding="true"
-        section-bg-class="${this.getAttribute('section-bg-class')}"
-        ${this.htmlAttributes(upperSectionAttrs)}
-      >
-        <mj-column 
-          border-radius="${LaborAdobeActionCard.additionalAttributes['border-radius-top-only']}"
-          padding-top="0"
+    const upperSectionAttrs = { 'padding-top': attrs.paddingTop }
+    const lowerSectionAttrs = {
+      'padding-top': imageSrc ? '0' : attrs.paddingTop,
+      'padding-bottom': attrs.paddingBottom,
+    }
+
+    const imageSection = imageSrc
+      ? `<labor-adobe-section
+          with-padding="true"
+          section-bg-class="${attrs.sectionBgClass}"
+          ${this.htmlAttributes(upperSectionAttrs)}
         >
-          <labor-responsive-image
-            src="${this.getAttribute('image-src')}"
-            ${srcMobileAttr}
-            alt="${this.getAttribute('image-alt')}"
-            border-radius="${LaborAdobeActionCard.additionalAttributes['border-radius-top-only']}"
-            padding-bottom="0"
-            fluid-on-mobile="true"
-          />
-        </mj-column>
-      </labor-adobe-section>`
-      : ``
+          <mj-column
+            border-radius="${aa['border-radius-top-only']}"
+            padding-top="0"
+          >
+            <labor-responsive-image
+              src="${imageSrc}"
+              ${imageSrcMobileAttr}
+              alt="${attrs.imageAlt}"
+              border-radius="${aa['border-radius-top-only']}"
+              padding-bottom="0"
+              fluid-on-mobile="true"
+            />
+          </mj-column>
+        </labor-adobe-section>`
+      : ''
 
-    return (imageSection ?
-      this.renderMJML(`${imageSection}`) : ``)
-      + this.renderMJML(`
-      <labor-adobe-section
-        with-padding="true"
-        section-bg-class="${this.getAttribute('section-bg-class')}"
-        ${this.htmlAttributes(lowerSectionAttrs)}
-      >
-        <mj-column 
-          background-color=${LaborAdobeActionCard.additionalAttributes['column-background-color']}
-          border-radius=
-          "${imageSection 
-              ? LaborAdobeActionCard.additionalAttributes['border-radius-bottom-only']
-              : LaborAdobeActionCard.additionalAttributes['border-radius-both']}"
-          padding-top=${this.getAttribute('image-src') ? LaborAdobeActionCard.additionalAttributes['image-section-padding'] : LaborAdobeActionCard.additionalAttributes['inner-padding-top-bottom']}
-          padding-bottom=${LaborAdobeActionCard.additionalAttributes['inner-padding-top-bottom']}
-          padding-left=${LaborAdobeActionCard.additionalAttributes['padding-left-right']}
-          padding-right=${LaborAdobeActionCard.additionalAttributes['padding-left-right']}
-          css-class="labor-adobe-action-card-image"
+    return (
+      (imageSection ? this.renderMJML(imageSection) : '') +
+      this.renderMJML(`
+        <labor-adobe-section
+          with-padding="true"
+          section-bg-class="${attrs.sectionBgClass}"
+          ${this.htmlAttributes(lowerSectionAttrs)}
         >
-          ${this.props.content}
-        </mj-column>
-      </labor-adobe-section>
-    `)
+          <mj-column
+            background-color="${aa['column-background-color']}"
+            border-radius="${imageSrc ? aa['border-radius-bottom-only'] : aa['border-radius-both']}"
+            padding-top="${imageSrc ? aa['image-section-padding'] : aa['inner-padding-top-bottom']}"
+            padding-bottom="${aa['inner-padding-top-bottom']}"
+            padding-left="${aa['padding-left-right']}"
+            padding-right="${aa['padding-left-right']}"
+            css-class="labor-adobe-action-card-image"
+          >
+            ${this.props.content}
+          </mj-column>
+        </labor-adobe-section>
+      `)
+    )
   }
 }
