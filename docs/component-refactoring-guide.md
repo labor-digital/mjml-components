@@ -76,6 +76,16 @@ Work through the file in this order.
 - [ ] Remove any `?? ''` or `|| ''` inside the template strings — normalization belongs in `attrs`, not the template.
 - [ ] Change `let header = ...` to `const header = ...` wherever the variable is assigned once via a ternary.
 
+### Boolean attributes
+
+`getAttribute()` may return either the boolean `true` or the string `'true'` depending on how MJML processes the attribute. Comparing with `=== true` alone will silently fail when the string form is returned. Always normalize to cover both:
+
+```typescript
+onBackground: this.getAttribute('on-background') === true || this.getAttribute('on-background') === 'true',
+```
+
+The double-check is safe for the `false` case too: `undefined`, `false`, and `'false'` all produce `false` without a special branch.
+
 ### Attribute strings in templates
 
 Always quote attribute values: `additional-padding-bottom="${attrs.headerPaddingBottom}"`, not `additional-padding-bottom=${...}`.
