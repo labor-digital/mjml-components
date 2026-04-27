@@ -2,7 +2,7 @@ import { BodyComponent } from 'mjml-core'
 import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import widthParser from 'mjml-core/lib/helpers/widthParser'
 
-export default @MJMLCustomComponent({
+@MJMLCustomComponent({
   tag: 'labor-rounded-button',
   attributes: {
     'href': {
@@ -63,8 +63,8 @@ export default @MJMLCustomComponent({
   allowedChildTags: [],
 })
 
-class LaborRoundedButton extends BodyComponent {
-  static endingTag = true
+export class LaborRoundedButton extends BodyComponent {
+  // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
 
   calculateAWidth(width) {
     if (!width) return null

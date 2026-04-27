@@ -4,7 +4,7 @@ import AdobeRedStyleMapping from '../../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-export default @MJMLCustomComponent({
+@MJMLCustomComponent({
   tag: 'labor-adobe-avatar',
   attributes: {
     'src': {
@@ -29,9 +29,7 @@ export default @MJMLCustomComponent({
   allowedChildTags: [],
 })
 
-class LaborAdobeAvatar extends BodyComponent {
-  static endingTag = false
-
+export class LaborAdobeAvatar extends BodyComponent {
   render() {
     const attrs = {
       'font-size': '14px',

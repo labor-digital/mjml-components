@@ -1,7 +1,7 @@
 import MjImage from 'mjml-image'
 import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 
-export default @MJMLCustomComponent({
+@MJMLCustomComponent({
   tag: 'labor-responsive-image',
   attributes: {
     'src-mobile': {
@@ -12,8 +12,8 @@ export default @MJMLCustomComponent({
   allowedChildTags: [],
 })
 
-class LaborResponsiveImage extends MjImage {
-  static endingTag = true
+export class LaborResponsiveImage extends MjImage {
+  // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
 
   headStyle = (breakpoint) =>
     new MjImage().headStyle(breakpoint) +

@@ -2,7 +2,7 @@ import { BodyComponent } from 'mjml-core'
 import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
-export default @MJMLCustomComponent({
+@MJMLCustomComponent({
   tag: 'labor-adobe-hero-card-split-one',
   attributes: {
     'header-bg-class': { type: 'string', default: 'content-bg' },
@@ -29,8 +29,8 @@ export default @MJMLCustomComponent({
   allowedChildTags: [],
 })
 
-class LaborAdobeHeroCardSplitOne extends BodyComponent {
-  static endingTag = true
+export class LaborAdobeHeroCardSplitOne extends BodyComponent {
+  // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
 
   render() {
     const attrs = {

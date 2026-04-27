@@ -24,6 +24,7 @@ const styleMapping = AdobeRedStyleMapping
   },
   allowedParentTags: ['mj-wrapper', 'labor-bg-wrapper', 'mj-body'],
   allowedChildTags: ['mj-group', 'mj-column'],
+  endingTag: false,
 })
 
 export class LaborAdobeSection extends MjSection {
@@ -43,29 +44,28 @@ export class LaborAdobeSection extends MjSection {
     `
 
   render() {
-    let attrs = {}
-    for (var attrName in this.attributes) {
-      if (attrName == 'with-padding') continue
-      if (attrName == 'padding-top') continue
-      if (attrName == 'padding-bottom') continue
+    const attrs: Record<string, any> = {}
+    for (const attrName in this.attributes) {
+      if (attrName === 'with-padding') continue
+      if (attrName === 'padding-top') continue
+      if (attrName === 'padding-bottom') continue
       attrs[attrName] = this.getAttribute(attrName)
     }
 
-    let pT = this.getAttribute('padding-top') && this.getAttribute('padding-top') != 'undefined' ? this.getAttribute('padding-top') : '0'
-    let pB = this.getAttribute('padding-bottom') && this.getAttribute('padding-bottom') != 'undefined' ? this.getAttribute('padding-bottom') : '0'
-    let pL = this.getAttribute('with-padding') ? LaborAdobeSection.additionalAttributes.desktopLeftRightPadding : '0'
-    let pR = this.getAttribute('with-padding') ? LaborAdobeSection.additionalAttributes.desktopLeftRightPadding : '0'
+    const pT = this.getAttribute('padding-top') && this.getAttribute('padding-top') !== 'undefined' ? this.getAttribute('padding-top') : '0'
+    const pB = this.getAttribute('padding-bottom') && this.getAttribute('padding-bottom') !== 'undefined' ? this.getAttribute('padding-bottom') : '0'
+    const pL = this.getAttribute('with-padding') ? LaborAdobeSection.additionalAttributes.desktopLeftRightPadding : '0'
+    const pR = this.getAttribute('with-padding') ? LaborAdobeSection.additionalAttributes.desktopLeftRightPadding : '0'
 
-    attrs['padding'] = pT + ' ' + pR + ' ' + pB + ' ' + pL
-
-    return this.renderMJML(`
-      <mj-section 
-        mj-class="${this.getAttribute('section-bg-class')}" 
-        css-class="${this.getAttribute('with-padding') ? 'labor-adobe-section-responsive' : ''}"
-        ${this.htmlAttributes(attrs)}
-      >
-        ${this.props.content}
-      </mj-section>
-    `)
+    return this.renderMJML({
+      tagName: 'mj-section',
+      attributes: {
+        'mj-class': this.getAttribute('section-bg-class'),
+        'css-class': this.getAttribute('with-padding') ? 'labor-adobe-section-responsive' : '',
+        ...attrs,
+        padding: `${pT} ${pR} ${pB} ${pL}`,
+      },
+      children: this.props.children,
+    } as any)
   }
 }

@@ -4,7 +4,7 @@ import AdobeRedStyleMapping from '../../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-export default @MJMLCustomComponent({
+@MJMLCustomComponent({
   tag: 'labor-adobe-footer-image-band',
   attributes: {
     'src': {
@@ -20,8 +20,8 @@ export default @MJMLCustomComponent({
   allowedChildTags: [],
 })
 
-class LaborAdobeFooterImageBand extends BodyComponent {
-  static endingTag = true
+export class LaborAdobeFooterImageBand extends BodyComponent {
+  // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
 
   render() {
     let imgAttrs = {

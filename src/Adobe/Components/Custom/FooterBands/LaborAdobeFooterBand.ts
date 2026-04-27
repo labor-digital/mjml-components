@@ -4,7 +4,7 @@ import AdobeRedStyleMapping from '../../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-export default @MJMLCustomComponent({
+@MJMLCustomComponent({
   tag: 'labor-adobe-footer-band',
   attributes: {
     'bg-color': {
@@ -43,8 +43,8 @@ export default @MJMLCustomComponent({
   allowedParentTags: ['mj-body'],
 })
 
-class LaborAdobeFooterBand extends BodyComponent {
-  static endingTag = true
+export class LaborAdobeFooterBand extends BodyComponent {
+  // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
 
   render() {
     let typoAttrs = {

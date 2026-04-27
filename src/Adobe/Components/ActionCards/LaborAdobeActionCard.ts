@@ -4,7 +4,7 @@ import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-export default @MJMLCustomComponent({
+@MJMLCustomComponent({
   tag: 'labor-adobe-action-card',
   attributes: {
     'section-bg-class': {
@@ -38,9 +38,10 @@ export default @MJMLCustomComponent({
     'labor-adobe-typo-heading-four',
     'labor-adobe-link',
   ],
+  endingTag: false,
 })
 
-class LaborAdobeActionCard extends BodyComponent {
+export class LaborAdobeActionCard extends BodyComponent {
 
   static additionalAttributes = {
     'image-section-padding': styleMapping.spacings.vertical.px40,
@@ -113,7 +114,7 @@ class LaborAdobeActionCard extends BodyComponent {
           padding-right=${LaborAdobeActionCard.additionalAttributes['padding-left-right']}
           css-class="labor-adobe-action-card-image"
         >
-          ${this.props.content}
+          ${this.renderChildren(null, { rawXML: true })}
         </mj-column>
       </labor-adobe-section>
     `)

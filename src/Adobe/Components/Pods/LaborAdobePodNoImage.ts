@@ -4,7 +4,7 @@ import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-export default @MJMLCustomComponent({
+@MJMLCustomComponent({
   tag: 'labor-adobe-pod-no-image',
   attributes: {
     'section-bg-class': {
@@ -37,8 +37,8 @@ export default @MJMLCustomComponent({
   allowedChildTags: [],
 })
 
-class LaborAdobePodNoImage extends BodyComponent {
-  static endingTag = true
+export class LaborAdobePodNoImage extends BodyComponent {
+  // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
 
   render() {
     return this.getAttribute('cta-type') === 'button'

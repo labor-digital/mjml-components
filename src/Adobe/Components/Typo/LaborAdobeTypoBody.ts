@@ -5,7 +5,7 @@ import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-export default @MJMLCustomComponent({
+@MJMLCustomComponent({
   tag: 'labor-adobe-typo-body',
   attributes: {
     'on-background': {
@@ -24,8 +24,8 @@ export default @MJMLCustomComponent({
   allowedChildTags: [],
 })
 
-class LaborAdobeTypoBody extends BodyComponent {
-  static endingTag = true
+export class LaborAdobeTypoBody extends BodyComponent {
+  // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
 
   static additionalAttributes = {
     fontWeight: styleMapping.typographies.body.fontWeight,

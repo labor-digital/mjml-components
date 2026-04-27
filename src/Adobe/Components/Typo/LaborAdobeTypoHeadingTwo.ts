@@ -4,7 +4,7 @@ import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-export default @MJMLCustomComponent({
+@MJMLCustomComponent({
   tag: 'labor-adobe-typo-heading-two',
   attributes: {
     'on-background': {
@@ -23,8 +23,8 @@ export default @MJMLCustomComponent({
   allowedChildTags: [],
 })
 
-class LaborAdobeTypoHeadingTwo extends BodyComponent {
-  static endingTag = true
+export class LaborAdobeTypoHeadingTwo extends BodyComponent {
+  // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
 
   static additionalAttributes = {
     fontSize: styleMapping.typographies.headingTwo.fontSize,

@@ -4,7 +4,7 @@ import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-export default @MJMLCustomComponent({
+@MJMLCustomComponent({
   tag: 'labor-adobe-typo-display-one',
   attributes: {
     'on-background': {
@@ -35,9 +35,9 @@ export default @MJMLCustomComponent({
   allowedChildTags: [],
 })
 
-class LaborAdobeTypoDisplayOne extends BodyComponent {
+export class LaborAdobeTypoDisplayOne extends BodyComponent {
+  // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
 
-  static endingTag = true
 
   static additionalAttributes = {
     // default attributes

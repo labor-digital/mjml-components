@@ -4,7 +4,7 @@ import AdobeRedStyleMapping from '../../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-export default @MJMLCustomComponent({
+@MJMLCustomComponent({
   tag: 'labor-adobe-two-col-img-text-section',
   attributes: {
     'section-bg-class': {
@@ -50,10 +50,10 @@ export default @MJMLCustomComponent({
     'labor-adobe-typo-heading-four',
     'labor-adobe-button',
   ],
+  endingTag: false,
 })
 
-class LaborAdobeTwoColImgTextSection extends BodyComponent {
-  static endingTag = false
+export class LaborAdobeTwoColImgTextSection extends BodyComponent {
 
   headStyle = (breakpoint) => `
     @media only screen and (max-width: ${breakpoint}) {
@@ -102,7 +102,7 @@ class LaborAdobeTwoColImgTextSection extends BodyComponent {
           padding="${textPadding}"
           padding-bottom="${this.getAttribute('padding-bottom-cols')}"
         >
-          ${this.props.content}
+          ${this.renderChildren(null, { rawXML: true })}
         </mj-column>
       </labor-adobe-section>
     `)

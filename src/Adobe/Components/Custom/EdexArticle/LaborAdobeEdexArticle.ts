@@ -4,7 +4,7 @@ import AdobeRedStyleMapping from '../../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-export default @MJMLCustomComponent({
+@MJMLCustomComponent({
   tag: 'labor-adobe-edex-article',
   attributes: {
     'section-bg-class': {
@@ -75,8 +75,8 @@ export default @MJMLCustomComponent({
   allowedChildTags: [],
 })
 
-class LaborAdobeEdexArticle extends BodyComponent {
-  static endingTag = true
+export class LaborAdobeEdexArticle extends BodyComponent {
+  // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
 
   render() {
     return (

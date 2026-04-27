@@ -4,7 +4,7 @@ import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-export default @MJMLCustomComponent({
+@MJMLCustomComponent({
   tag: 'labor-adobe-footer',
   attributes: {
     'facebook-url': {
@@ -45,10 +45,10 @@ export default @MJMLCustomComponent({
   },
   allowedParentTags: ['mj-body'],
   allowedChildTags: ['labor-adobe-typo-legal'],
+  endingTag: false,
 })
 
-class LaborAdobeFooter extends BodyComponent {
-  static endingTag = false
+export class LaborAdobeFooter extends BodyComponent {
 
   static additionalAttributes = {
     desktopLeftRightPadding: styleMapping.grids.desktop.contentSpacing,
@@ -198,7 +198,7 @@ class LaborAdobeFooter extends BodyComponent {
           : LaborAdobeFooter.additionalAttributes.contentSectionPaddingBottom}
       >
         <mj-column>
-          ${this.props.content}
+          ${this.renderChildren(null, { rawXML: true })}
         </mj-column>
       </labor-adobe-section>
     `)
