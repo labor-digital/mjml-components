@@ -4,7 +4,7 @@ import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-export default @MJMLCustomComponent({
+@MJMLCustomComponent({
   tag: 'labor-adobe-hero-card-simple-one',
   attributes: {
     'header-bg-class': {
@@ -63,8 +63,8 @@ export default @MJMLCustomComponent({
   allowedChildTags: [],
 })
 
-class LaborAdobeHeroCardSimpleOne extends BodyComponent {
-  static endingTag = true
+export class LaborAdobeHeroCardSimpleOne extends BodyComponent {
+  // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
 
   render() {
     let header =

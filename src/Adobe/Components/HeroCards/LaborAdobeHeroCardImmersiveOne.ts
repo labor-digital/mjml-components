@@ -4,7 +4,7 @@ import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-export default @MJMLCustomComponent({
+@MJMLCustomComponent({
   tag: 'labor-adobe-hero-card-immersive-one',
   attributes: {
     'header-bg-class': {
@@ -87,8 +87,8 @@ export default @MJMLCustomComponent({
   allowedChildTags: [],
 })
 
-class LaborAdobeHeroCardImmersiveOne extends BodyComponent {
-  static endingTag = true
+export class LaborAdobeHeroCardImmersiveOne extends BodyComponent {
+  // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
   render() {
     const srcMobileAttr = this.getAttribute('image-src-mobile') ? `src-mobile="${this.getAttribute('image-src-mobile')}"` : '';
 

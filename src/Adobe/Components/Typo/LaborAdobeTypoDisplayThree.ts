@@ -4,7 +4,7 @@ import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-export default @MJMLCustomComponent({
+@MJMLCustomComponent({
   tag: 'labor-adobe-typo-display-three',
   attributes: {
     'on-background': {
@@ -27,8 +27,8 @@ export default @MJMLCustomComponent({
   allowedChildTags: [],
 })
 
-class LaborAdobeTypoDisplayThree extends BodyComponent {
-  static endingTag = true
+export class LaborAdobeTypoDisplayThree extends BodyComponent {
+  // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
 
   static additionalAttributes = {
     fontSize: styleMapping.typographies.displayThree.fontSize,

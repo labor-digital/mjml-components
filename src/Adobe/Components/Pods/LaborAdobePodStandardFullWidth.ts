@@ -4,7 +4,7 @@ import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-export default @MJMLCustomComponent({
+@MJMLCustomComponent({
   tag: 'labor-adobe-pod-standard-full-width',
   attributes: {
     'section-bg-class': {
@@ -35,8 +35,8 @@ export default @MJMLCustomComponent({
   allowedChildTags: [],
 })
 
-class LaborAdobePodStandardFullWidth extends BodyComponent {
-  static endingTag = true
+export class LaborAdobePodStandardFullWidth extends BodyComponent {
+  // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
 
   render() {
     const srcMobileAttr = this.getAttribute('image-src-mobile') ? `image-src-mobile="${this.getAttribute('image-src-mobile')}"` : '';

@@ -4,7 +4,7 @@ import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-export default @MJMLCustomComponent({
+@MJMLCustomComponent({
   tag: 'labor-adobe-pod-z-formation',
   attributes: {
     'section-bg-class': {
@@ -37,10 +37,10 @@ export default @MJMLCustomComponent({
     'labor-adobe-typo-heading-four',
     'labor-adobe-link',
   ],
+  endingTag: false,
 })
 
-class LaborAdobePodZFormation extends BodyComponent {
-  static endingTag = false
+export class LaborAdobePodZFormation extends BodyComponent {
 
   static additionalAttributes = {
     'padding-to-edge-mobile' : (parseInt(styleMapping.grids.mobile.contentSpacing)
@@ -131,7 +131,7 @@ class LaborAdobePodZFormation extends BodyComponent {
               : '0'
           }"
         >
-          ${this.props.content}
+          ${this.renderChildren(null, { rawXML: true })}
         </mj-column>
       </labor-adobe-section>
     `)

@@ -6,7 +6,7 @@ import AdobeProductLogoMapping from '../../Mapping/AdobeProductLogoMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-export default @MJMLCustomComponent({
+@MJMLCustomComponent({
   tag: 'labor-adobe-header',
   attributes: {
     'header-bg-class': {
@@ -79,8 +79,8 @@ export default @MJMLCustomComponent({
   allowedParentTags: ['mj-body'],
 })
 
-class LaborAdobeHeader extends BodyComponent {
-  static endingTag = true
+export class LaborAdobeHeader extends BodyComponent {
+  // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
 
   static additionalAttributes = {
     desktopLeftRightPadding: styleMapping.grids.desktop.contentSpacing,

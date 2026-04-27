@@ -5,7 +5,7 @@ import AdobeRedStyleMapping from '../../../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
-export default @MJMLCustomComponent({
+@MJMLCustomComponent({
   tag: 'labor-adobe-edex-category',
   attributes: {
     'on-background': {
@@ -21,8 +21,8 @@ export default @MJMLCustomComponent({
   allowedChildTags: [],
 })
 
-class LaborAdobeEdexCategory extends BodyComponent {
-  static endingTag = true
+export class LaborAdobeEdexCategory extends BodyComponent {
+  // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
 
   static additionalAttributes = {
     fontWeight: styleMapping.typographyFontWeight.medium,

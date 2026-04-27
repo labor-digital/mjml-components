@@ -41,8 +41,8 @@ const styleMapping = AdobeRedStyleMapping
   allowedChildTags: [],
 })
 
-export  class LaborAdobeProductLogo extends BodyComponent {
-  static endingTag = true
+export class LaborAdobeProductLogo extends BodyComponent {
+  // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
 
   static additionalAttributes = {
     heightRegular: '35px',

@@ -20,7 +20,7 @@
     "declarationMap": true,
 //    "sourceMap": true,
     "outDir": "./lib",
-    "rootDir": "./src",
+    "rootDirs": ["./src", "./scripts"],
 //    "allowSyntheticDefaultImports": true,
 //    "useDefineForClassFields": true,
   },

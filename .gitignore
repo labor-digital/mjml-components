@@ -12,3 +12,4 @@ lib/
 SyncToy*
 *storybook.log
 src/*-errors.json
+errors.json

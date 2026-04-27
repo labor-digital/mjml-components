@@ -1,14 +1,15 @@
 import MjWrapper from 'mjml-wrapper'
 import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 
-export default @MJMLCustomComponent({
+@MJMLCustomComponent({
   tag: 'labor-bg-wrapper',
   attributes: {},
   allowedParentTags: ['mj-body'],
   allowedChildTags: ['mj-section'],
+  endingTag: false,
 })
 
-class LaborBgWrapper extends MjWrapper {
+export class LaborBgWrapper extends MjWrapper {
   getStyles() {
     const fullWidth = this.isFullWidth()
     let styles = super.getStyles()
