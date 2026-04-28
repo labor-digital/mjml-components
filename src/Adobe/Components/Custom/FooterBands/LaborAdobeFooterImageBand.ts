@@ -15,6 +15,10 @@ const styleMapping = AdobeRedStyleMapping
       type: 'string',
       default: '',
     },
+    'alt': {
+      type: 'string',
+      default: '',
+    },
   },
   allowedParentTags: ['mj-body'],
   allowedChildTags: [],
@@ -27,6 +31,7 @@ export class LaborAdobeFooterImageBand extends BodyComponent {
     let imgAttrs = {
       'src': this.getAttribute('src'),
       'src-mobile': this.getAttribute('src-mobile'),
+      'alt': this.getAttribute('alt'),
       'fluid-on-mobile': true,
       'width': '600px',
       'align': 'left',

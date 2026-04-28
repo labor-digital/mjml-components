@@ -51,7 +51,7 @@ export class LaborAdobePodStandard extends BodyComponent {
                  
                     image-src="${this.getAttribute('image-src')}"
                     ${srcMobileAttr}
-                    image-href="${this.getAttribute('primary-cta-href"')}"
+                    image-href="${this.getAttribute('primary-cta-href')}"
                     image-with-padding="true"
                     
                     headline="${this.getAttribute('headline')}"

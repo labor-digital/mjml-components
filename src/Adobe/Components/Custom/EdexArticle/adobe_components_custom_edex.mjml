@@ -57,8 +57,8 @@
                 text="Students will build visual storytelling skills as they use photos and design elements to create moodboards that set the tone for the year ahead."
                 cta="Get started"
                 href="#"
-                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/article_image.gif"
-                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/article_image_m.gif"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/pod_image.png"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/pod_image_m.png"
                 product="acrobat"
         />
 
@@ -89,8 +89,8 @@
                 text="Students will build visual storytelling skills as they use photos and design elements to create moodboards that set the tone for the year ahead."
                 cta="Get started"
                 href="#"
-                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/article_image.gif"
-                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/article_image_m.gif"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/pod_image.png"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/pod_image_m.png"
                 product="express"
                 padding-bottom="150px"
                 padding-top="150px"
@@ -123,8 +123,8 @@
                 text="Students will build visual storytelling skills as they use photos and design elements to create moodboards that set the tone for the year ahead."
                 cta="Get started"
                 href="#"
-                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/article_image.gif"
-                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/article_image_m.gif"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/pod_image.png"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/pod_image_m.png"
                 product="premiere_pro"
         />
 
@@ -134,6 +134,39 @@
             </mj-column>
         </mj-section>
 
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
+                    EdEx Article - with separate image-href
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-edex-article
+                section-bg-class="content-bg"
+                headline="Design a 2025 moodboard"
+                category="Template"
+                text="Students will build visual storytelling skills as they use photos and design elements to create moodboards that set the tone for the year ahead."
+                cta="Get started"
+                href="#cta"
+                image-href="#image"
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/pod_image.png"
+                image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/pod_image_m.png"
+                product="acrobat"
+        />
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
 
         <labor-adobe-section padding-bottom="100px" section-bg-class="heading-bg">
 
