@@ -1,0 +1,65 @@
+<mjml>
+    <mj-head>
+        <mj-attributes>
+            <mj-all padding="0" />
+        </mj-attributes>
+    </mj-head>
+    <mj-body>
+
+        <!-- Case 1: labor-adobe-pod wrong parent — must be inside mj-body, not mj-column -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-pod headline="Test">Content</labor-adobe-pod>
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 2: labor-adobe-pod-standard wrong parent -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-pod-standard headline="Test" primary-cta-href="#">Content</labor-adobe-pod-standard>
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 3: labor-adobe-pod-standard-full-width wrong parent -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-pod-standard-full-width headline="Test" primary-cta-href="#">Content</labor-adobe-pod-standard-full-width>
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 4: labor-adobe-pod-no-image wrong parent -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-pod-no-image headline="Test" cta="Click" cta-href="#">Content</labor-adobe-pod-no-image>
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 5: labor-adobe-pod-no-image invalid cta-type enum -->
+        <labor-adobe-pod-no-image headline="Test" cta="Click" cta-href="#" cta-type="not-a-type">Content</labor-adobe-pod-no-image>
+
+        <!-- Case 6: labor-adobe-pod-application wrong parent -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-pod-application product="express" primary-cta-href="#">Content</labor-adobe-pod-application>
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 7: labor-adobe-pod-z-formation wrong parent -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-pod-z-formation image-src="placeholder.jpg">
+                    <labor-adobe-typo-body>Content</labor-adobe-typo-body>
+                </labor-adobe-pod-z-formation>
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 8: labor-adobe-pod-z-formation invalid direction enum -->
+        <labor-adobe-pod-z-formation image-src="placeholder.jpg" direction="diagonal">
+            <labor-adobe-typo-body>Content</labor-adobe-typo-body>
+        </labor-adobe-pod-z-formation>
+
+        <!-- Case 9: labor-adobe-pod unknown attribute -->
+        <labor-adobe-pod headline="Test" unknown-attr="foo">Content</labor-adobe-pod>
+
+    </mj-body>
+</mjml>

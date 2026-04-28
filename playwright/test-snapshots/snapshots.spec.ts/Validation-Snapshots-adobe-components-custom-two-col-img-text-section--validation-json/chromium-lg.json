@@ -1,0 +1,14 @@
+[
+  {
+    "tagName": "labor-adobe-two-col-img-text-section",
+    "message": "labor-adobe-two-col-img-text-section cannot be used inside mj-column, only inside: mj-attributes, mj-body"
+  },
+  {
+    "tagName": "labor-adobe-two-col-img-text-section",
+    "message": "Attribute direction has invalid value: diagonal for type Enum, only accepts ltr, rtl"
+  },
+  {
+    "tagName": "labor-adobe-two-col-img-text-section",
+    "message": "Attribute unknown-attr is illegal"
+  }
+]

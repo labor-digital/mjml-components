@@ -1,0 +1,18 @@
+[
+  {
+    "tagName": "labor-adobe-product-logo",
+    "message": "labor-adobe-product-logo cannot be used inside mj-body, only inside: mj-attributes, mj-column"
+  },
+  {
+    "tagName": "labor-adobe-product-logo",
+    "message": "Attribute product-color has invalid value: rainbow for type Enum, only accepts gray, black, white"
+  },
+  {
+    "tagName": "labor-adobe-product-logo",
+    "message": "Attribute product-type has invalid value: special for type Enum, only accepts regular, alt"
+  },
+  {
+    "tagName": "labor-adobe-product-logo",
+    "message": "Attribute unknown-attr is illegal"
+  }
+]

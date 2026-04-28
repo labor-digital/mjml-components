@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { join } from 'path';
-import { readdirSync } from 'fs';
+import { readdirSync, readFileSync, existsSync } from 'fs';
 import prettier from 'prettier';
 
 test.describe('Preview Snapshots', () => {
@@ -20,6 +20,27 @@ test.describe('Preview Snapshots', () => {
       
       const snapshotName = `${fileName.replace('.html', '')}-${testInfo.project.name}.png`;
       await expect(page).toHaveScreenshot(snapshotName, { fullPage: true });
+    });
+  }
+});
+
+test.describe('Validation Snapshots', () => {
+  const validationDir = join(process.cwd(), 'validation-errors');
+
+  if (!existsSync(validationDir)) {
+    console.warn(`\nWarning: validation-errors/ directory not found — Validation Snapshots will be skipped. Run "npm run preview:validation" first.\n`);
+  }
+
+  const jsonFiles = existsSync(validationDir)
+    ? readdirSync(validationDir).filter(file => file.endsWith('.json')).sort()
+    : [];
+
+  for (const fileName of jsonFiles) {
+    test(fileName, ({}, testInfo) => {
+      // Validation output is not browser-based — skip the redundant project
+      test.skip(testInfo.project.name !== 'chromium-lg');
+      const content = readFileSync(join(validationDir, fileName), 'utf8');
+      expect(content).toMatchSnapshot(fileName);
     });
   }
 });

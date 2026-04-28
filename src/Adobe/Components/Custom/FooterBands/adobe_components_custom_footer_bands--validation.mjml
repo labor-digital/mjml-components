@@ -1,0 +1,30 @@
+<mjml>
+    <mj-head>
+        <mj-attributes>
+            <mj-all padding="0" />
+        </mj-attributes>
+    </mj-head>
+    <mj-body>
+
+        <!-- Case 1: labor-adobe-footer-band wrong parent — must be inside mj-body, not mj-column -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-footer-band>Footer text</labor-adobe-footer-band>
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 2: labor-adobe-footer-band invalid padding-top unit -->
+        <labor-adobe-footer-band padding-top="not-a-unit">Footer text</labor-adobe-footer-band>
+
+        <!-- Case 3: labor-adobe-footer-image-band wrong parent — must be inside mj-body, not mj-column -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-footer-image-band image-src="placeholder.jpg" />
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 4: labor-adobe-footer-band unknown attribute -->
+        <labor-adobe-footer-band unknown-attr="foo">Footer text</labor-adobe-footer-band>
+
+    </mj-body>
+</mjml>

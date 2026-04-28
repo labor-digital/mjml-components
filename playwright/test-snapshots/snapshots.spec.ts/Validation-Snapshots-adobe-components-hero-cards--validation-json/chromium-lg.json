@@ -1,0 +1,58 @@
+[
+  {
+    "tagName": "labor-adobe-hero-card-simple-one",
+    "message": "labor-adobe-hero-card-simple-one cannot be used inside mj-column, only inside: mj-attributes, mj-body"
+  },
+  {
+    "tagName": "labor-adobe-hero-card-simple-one",
+    "message": "Attribute product-color has invalid value: rainbow for type Enum, only accepts red_black, red_gray, red_white, white_black"
+  },
+  {
+    "tagName": "labor-adobe-hero-card-simple-two",
+    "message": "labor-adobe-hero-card-simple-two cannot be used inside mj-column, only inside: mj-attributes, mj-body"
+  },
+  {
+    "tagName": "labor-adobe-hero-card-simple-two",
+    "message": "Attribute product-color has invalid value: rainbow for type Enum, only accepts red_black, red_gray, red_white, white_black"
+  },
+  {
+    "tagName": "labor-adobe-hero-card-split-one",
+    "message": "labor-adobe-hero-card-split-one cannot be used inside mj-column, only inside: mj-attributes, mj-body"
+  },
+  {
+    "tagName": "labor-adobe-hero-card-split-one",
+    "message": "Attribute product-color has invalid value: rainbow for type Enum, only accepts red_black, red_gray, red_white, white_black"
+  },
+  {
+    "tagName": "labor-adobe-hero-card-split-two",
+    "message": "labor-adobe-hero-card-split-two cannot be used inside mj-column, only inside: mj-attributes, mj-body"
+  },
+  {
+    "tagName": "labor-adobe-hero-card-split-two",
+    "message": "Attribute product-color has invalid value: rainbow for type Enum, only accepts red_black, red_gray, red_white, white_black"
+  },
+  {
+    "tagName": "labor-adobe-hero-card-immersive-one",
+    "message": "labor-adobe-hero-card-immersive-one cannot be used inside mj-column, only inside: mj-attributes, mj-body"
+  },
+  {
+    "tagName": "labor-adobe-hero-card-immersive-one",
+    "message": "Attribute cta-type has invalid value: not-a-type for type Enum, only accepts standard, inverted"
+  },
+  {
+    "tagName": "labor-adobe-hero-card-immersive-two",
+    "message": "labor-adobe-hero-card-immersive-two cannot be used inside mj-column, only inside: mj-attributes, mj-body"
+  },
+  {
+    "tagName": "labor-adobe-hero-card-immersive-two",
+    "message": "Attribute product-color has invalid value: rainbow for type Enum, only accepts red_black, red_gray, red_white, white_black"
+  },
+  {
+    "tagName": "labor-adobe-hero-card-immersive-three",
+    "message": "labor-adobe-hero-card-immersive-three cannot be used inside mj-column, only inside: mj-attributes, mj-body"
+  },
+  {
+    "tagName": "labor-adobe-hero-card-simple-one",
+    "message": "Attribute unknown-attr is illegal"
+  }
+]

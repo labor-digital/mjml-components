@@ -1,0 +1,29 @@
+<mjml>
+    <mj-head>
+        <mj-attributes>
+            <mj-all padding="0" />
+        </mj-attributes>
+    </mj-head>
+    <mj-body>
+
+        <!-- Case 1: wrong parent — labor-adobe-action-card must be a direct child of mj-body, not mj-column -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-action-card>
+                    <labor-adobe-typo-body>Content</labor-adobe-typo-body>
+                </labor-adobe-action-card>
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 2: invalid attribute value — padding-top expects unit(px), not an arbitrary string -->
+        <labor-adobe-action-card padding-top="not-a-unit">
+            <labor-adobe-typo-body>Content</labor-adobe-typo-body>
+        </labor-adobe-action-card>
+
+        <!-- Case 3: labor-adobe-action-card unknown attribute -->
+        <labor-adobe-action-card unknown-attr="foo">
+            <labor-adobe-typo-body>Content</labor-adobe-typo-body>
+        </labor-adobe-action-card>
+
+    </mj-body>
+</mjml>

@@ -1,0 +1,70 @@
+[
+  {
+    "tagName": "labor-adobe-typo-body",
+    "message": "labor-adobe-typo-body cannot be used inside mj-body, only inside: mj-attributes, mj-column, labor-adobe-actioncard, labor-adobe-pod-z-formation, labor-adobe-two-col-img-text-section, labor-adobe-action-card"
+  },
+  {
+    "tagName": "labor-adobe-typo-heading-one",
+    "message": "labor-adobe-typo-heading-one cannot be used inside mj-body, only inside: mj-attributes, mj-column"
+  },
+  {
+    "tagName": "labor-adobe-typo-heading-two",
+    "message": "labor-adobe-typo-heading-two cannot be used inside mj-body, only inside: mj-attributes, mj-column"
+  },
+  {
+    "tagName": "labor-adobe-typo-heading-three",
+    "message": "labor-adobe-typo-heading-three cannot be used inside mj-body, only inside: mj-attributes, mj-column, labor-adobe-actioncard, labor-adobe-action-card"
+  },
+  {
+    "tagName": "labor-adobe-typo-heading-four",
+    "message": "labor-adobe-typo-heading-four cannot be used inside mj-body, only inside: mj-attributes, mj-column, labor-adobe-actioncard, labor-adobe-pod-z-formation, labor-adobe-two-col-img-text-section, labor-adobe-action-card"
+  },
+  {
+    "tagName": "labor-adobe-typo-display-one",
+    "message": "labor-adobe-typo-display-one cannot be used inside mj-body, only inside: mj-attributes, mj-column"
+  },
+  {
+    "tagName": "labor-adobe-typo-display-two",
+    "message": "labor-adobe-typo-display-two cannot be used inside mj-body, only inside: mj-attributes, mj-column"
+  },
+  {
+    "tagName": "labor-adobe-typo-display-three",
+    "message": "labor-adobe-typo-display-three cannot be used inside mj-body, only inside: mj-attributes, mj-column"
+  },
+  {
+    "tagName": "labor-adobe-typo-caption",
+    "message": "labor-adobe-typo-caption cannot be used inside mj-body, only inside: mj-attributes, mj-column"
+  },
+  {
+    "tagName": "labor-adobe-typo-detail",
+    "message": "labor-adobe-typo-detail cannot be used inside mj-body, only inside: mj-attributes, mj-column"
+  },
+  {
+    "tagName": "labor-adobe-typo-legal",
+    "message": "labor-adobe-typo-legal cannot be used inside mj-body, only inside: mj-attributes, mj-column, labor-adobe-footer"
+  },
+  {
+    "tagName": "labor-adobe-typo-display-one",
+    "message": "Attribute type has invalid value: not-a-type for type Enum, only accepts normal, quiet"
+  },
+  {
+    "tagName": "labor-adobe-typo-display-two",
+    "message": "Attribute type has invalid value: not-a-type for type Enum, only accepts normal, quiet"
+  },
+  {
+    "tagName": "labor-adobe-typo-display-three",
+    "message": "Attribute type has invalid value: not-a-type for type Enum, only accepts normal, quiet"
+  },
+  {
+    "tagName": "labor-adobe-typo-caption",
+    "message": "Attribute font-style has invalid value: not-a-style for type Enum, only accepts regular, italic"
+  },
+  {
+    "tagName": "labor-adobe-typo-detail",
+    "message": "Attribute type has invalid value: not-a-type for type Enum, only accepts normal, light"
+  },
+  {
+    "tagName": "labor-adobe-typo-body",
+    "message": "Attribute unknown-attr is illegal"
+  }
+]

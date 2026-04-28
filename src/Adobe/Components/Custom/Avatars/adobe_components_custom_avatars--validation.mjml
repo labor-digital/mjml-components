@@ -1,0 +1,27 @@
+<mjml>
+    <mj-head>
+        <mj-attributes>
+            <mj-all padding="0" />
+        </mj-attributes>
+    </mj-head>
+    <mj-body>
+
+        <!-- Case 1: labor-adobe-avatar wrong parent — must be inside mj-column, not mj-body -->
+        <labor-adobe-avatar name="Jane Doe" />
+
+        <!-- Case 2: labor-adobe-avatar invalid padding-bottom unit -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-avatar name="Jane Doe" padding-bottom="not-a-unit" />
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 3: labor-adobe-avatar unknown attribute -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-avatar name="Jane Doe" unknown-attr="foo" />
+            </mj-column>
+        </mj-section>
+
+    </mj-body>
+</mjml>

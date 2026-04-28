@@ -1,0 +1,128 @@
+<mjml>
+    <mj-head>
+        <mj-attributes>
+            <mj-all padding="0" />
+        </mj-attributes>
+    </mj-head>
+    <mj-body>
+
+        <!-- Case 1: labor-adobe-hero-card-simple-one wrong parent -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-hero-card-simple-one product="express" headline="Test" cta-text="Click" cta-href="#" />
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 2: labor-adobe-hero-card-simple-one invalid product-color enum -->
+        <labor-adobe-hero-card-simple-one product="express" product-color="rainbow" headline="Test" cta-text="Click" cta-href="#" />
+
+        <!-- Case 3: labor-adobe-hero-card-simple-two wrong parent -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-hero-card-simple-two product="express" headline="Test" />
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 4: labor-adobe-hero-card-simple-two invalid product-color enum -->
+        <labor-adobe-hero-card-simple-two product="express" product-color="rainbow" headline="Test" />
+
+        <!-- Case 5: labor-adobe-hero-card-split-one wrong parent -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-hero-card-split-one product="photoshop" headline="Test" cta-text="Click" cta-href="#" image-src="placeholder.jpg" />
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 6: labor-adobe-hero-card-split-one invalid product-color enum -->
+        <labor-adobe-hero-card-split-one product="photoshop" product-color="rainbow" headline="Test" cta-text="Click" cta-href="#" image-src="placeholder.jpg" />
+
+        <!-- Case 7: labor-adobe-hero-card-split-two wrong parent -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-hero-card-split-two product="stock" headline="Test" cta-text="Click" cta-href="#" image-src="placeholder.jpg" />
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 8: labor-adobe-hero-card-split-two invalid product-color enum -->
+        <labor-adobe-hero-card-split-two product="stock" product-color="rainbow" headline="Test" cta-text="Click" cta-href="#" image-src="placeholder.jpg" />
+
+        <!-- Case 9: labor-adobe-hero-card-immersive-one wrong parent -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-hero-card-immersive-one
+                    header-bg-class="immersive-bg"
+                    section-bg-class="immersive-bg"
+                    product-src-overwrite="placeholder.jpg"
+                    headline="Test"
+                    cta-text="Click"
+                    cta-href="#"
+                    image-src="placeholder.jpg"
+                />
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 10: labor-adobe-hero-card-immersive-one invalid cta-type enum -->
+        <labor-adobe-hero-card-immersive-one
+            header-bg-class="immersive-bg"
+            section-bg-class="immersive-bg"
+            product-src-overwrite="placeholder.jpg"
+            headline="Test"
+            cta-text="Click"
+            cta-href="#"
+            cta-type="not-a-type"
+            image-src="placeholder.jpg"
+        />
+
+        <!-- Case 11: labor-adobe-hero-card-immersive-two wrong parent -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-hero-card-immersive-two
+                    header-bg-class="immersive-bg"
+                    section-bg-class="immersive-bg"
+                    product="photoshop"
+                    headline="Test"
+                    cta-text="Click"
+                    cta-href="#"
+                    image-src="placeholder.jpg"
+                />
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 12: labor-adobe-hero-card-immersive-two invalid product-color enum -->
+        <labor-adobe-hero-card-immersive-two
+            header-bg-class="immersive-bg"
+            section-bg-class="immersive-bg"
+            product="photoshop"
+            product-color="rainbow"
+            headline="Test"
+            cta-text="Click"
+            cta-href="#"
+            image-src="placeholder.jpg"
+        />
+
+        <!-- Case 13: labor-adobe-hero-card-immersive-three wrong parent -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-hero-card-immersive-three
+                    header-bg-class="immersive-bg"
+                    section-bg-class="immersive-bg"
+                    product-src-overwrite="placeholder.jpg"
+                    headline="Test"
+                    cta-text="Click"
+                    cta-href="#"
+                    image-src="placeholder.jpg"
+                />
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 14: labor-adobe-hero-card-simple-one unknown attribute -->
+        <labor-adobe-hero-card-simple-one
+            product="express"
+            headline="Test"
+            cta-text="Click"
+            cta-href="#"
+            unknown-attr="foo"
+        />
+
+    </mj-body>
+</mjml>

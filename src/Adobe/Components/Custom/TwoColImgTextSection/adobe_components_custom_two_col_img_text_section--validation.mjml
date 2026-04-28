@@ -1,0 +1,29 @@
+<mjml>
+    <mj-head>
+        <mj-attributes>
+            <mj-all padding="0" />
+        </mj-attributes>
+    </mj-head>
+    <mj-body>
+
+        <!-- Case 1: labor-adobe-two-col-img-text-section wrong parent — must be inside mj-body, not mj-column -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-two-col-img-text-section image-src="placeholder.jpg">
+                    <labor-adobe-typo-body>Content</labor-adobe-typo-body>
+                </labor-adobe-two-col-img-text-section>
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 2: labor-adobe-two-col-img-text-section invalid direction enum -->
+        <labor-adobe-two-col-img-text-section image-src="placeholder.jpg" direction="diagonal">
+            <labor-adobe-typo-body>Content</labor-adobe-typo-body>
+        </labor-adobe-two-col-img-text-section>
+
+        <!-- Case 3: labor-adobe-two-col-img-text-section unknown attribute -->
+        <labor-adobe-two-col-img-text-section image-src="placeholder.jpg" unknown-attr="foo">
+            <labor-adobe-typo-body>Content</labor-adobe-typo-body>
+        </labor-adobe-two-col-img-text-section>
+
+    </mj-body>
+</mjml>

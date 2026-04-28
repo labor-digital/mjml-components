@@ -1,0 +1,34 @@
+<mjml>
+    <mj-head>
+        <mj-attributes>
+            <mj-all padding="0" />
+        </mj-attributes>
+    </mj-head>
+    <mj-body>
+
+        <!-- Case 1: labor-adobe-product-logo wrong parent — must be inside mj-column, not mj-body -->
+        <labor-adobe-product-logo product="express" />
+
+        <!-- Case 2: labor-adobe-product-logo invalid product-color enum -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-product-logo product="express" product-color="rainbow" />
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 3: labor-adobe-product-logo invalid product-type enum -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-product-logo product="express" product-type="special" />
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 4: labor-adobe-product-logo unknown attribute -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-product-logo product="express" unknown-attr="foo" />
+            </mj-column>
+        </mj-section>
+
+    </mj-body>
+</mjml>

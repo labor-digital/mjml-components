@@ -1,0 +1,85 @@
+<mjml>
+    <mj-head>
+        <mj-attributes>
+            <mj-all padding="0" />
+        </mj-attributes>
+    </mj-head>
+    <mj-body>
+
+        <!-- Case 1: labor-adobe-typo-body wrong parent — must be inside mj-column, not mj-body -->
+        <labor-adobe-typo-body>Content</labor-adobe-typo-body>
+
+        <!-- Case 2: labor-adobe-typo-heading-one wrong parent -->
+        <labor-adobe-typo-heading-one>Content</labor-adobe-typo-heading-one>
+
+        <!-- Case 3: labor-adobe-typo-heading-two wrong parent -->
+        <labor-adobe-typo-heading-two>Content</labor-adobe-typo-heading-two>
+
+        <!-- Case 4: labor-adobe-typo-heading-three wrong parent -->
+        <labor-adobe-typo-heading-three>Content</labor-adobe-typo-heading-three>
+
+        <!-- Case 5: labor-adobe-typo-heading-four wrong parent -->
+        <labor-adobe-typo-heading-four>Content</labor-adobe-typo-heading-four>
+
+        <!-- Case 6: labor-adobe-typo-display-one wrong parent -->
+        <labor-adobe-typo-display-one>Content</labor-adobe-typo-display-one>
+
+        <!-- Case 7: labor-adobe-typo-display-one invalid type enum -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-typo-display-one type="not-a-type">Content</labor-adobe-typo-display-one>
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 8: labor-adobe-typo-display-two wrong parent -->
+        <labor-adobe-typo-display-two>Content</labor-adobe-typo-display-two>
+
+        <!-- Case 9: labor-adobe-typo-display-two invalid type enum -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-typo-display-two type="not-a-type">Content</labor-adobe-typo-display-two>
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 10: labor-adobe-typo-display-three wrong parent -->
+        <labor-adobe-typo-display-three>Content</labor-adobe-typo-display-three>
+
+        <!-- Case 11: labor-adobe-typo-display-three invalid type enum -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-typo-display-three type="not-a-type">Content</labor-adobe-typo-display-three>
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 12: labor-adobe-typo-caption wrong parent -->
+        <labor-adobe-typo-caption>Content</labor-adobe-typo-caption>
+
+        <!-- Case 13: labor-adobe-typo-caption invalid font-style enum -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-typo-caption font-style="not-a-style">Content</labor-adobe-typo-caption>
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 14: labor-adobe-typo-detail wrong parent -->
+        <labor-adobe-typo-detail>Content</labor-adobe-typo-detail>
+
+        <!-- Case 15: labor-adobe-typo-detail invalid type enum -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-typo-detail type="not-a-type">Content</labor-adobe-typo-detail>
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 16: labor-adobe-typo-legal wrong parent -->
+        <labor-adobe-typo-legal>Content</labor-adobe-typo-legal>
+
+        <!-- Case 17: labor-adobe-typo-body unknown attribute -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-typo-body unknown-attr="foo">Content</labor-adobe-typo-body>
+            </mj-column>
+        </mj-section>
+
+    </mj-body>
+</mjml>

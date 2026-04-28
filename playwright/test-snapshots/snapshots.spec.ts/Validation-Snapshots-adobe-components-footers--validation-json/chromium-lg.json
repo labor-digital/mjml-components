@@ -1,0 +1,18 @@
+[
+  {
+    "tagName": "labor-adobe-footer",
+    "message": "labor-adobe-footer cannot be used inside mj-column, only inside: mj-attributes, mj-body"
+  },
+  {
+    "tagName": "labor-adobe-typo-body",
+    "message": "labor-adobe-typo-body cannot be used inside labor-adobe-footer, only inside: mj-attributes, mj-column, labor-adobe-actioncard, labor-adobe-pod-z-formation, labor-adobe-two-col-img-text-section, labor-adobe-action-card"
+  },
+  {
+    "tagName": "labor-adobe-footer",
+    "message": "Attribute overwrite-padding-bottom has invalid value: not-a-unit for type Unit, only accepts (px, %) units and 1 value(s)"
+  },
+  {
+    "tagName": "labor-adobe-footer",
+    "message": "Attribute unknown-attr is illegal"
+  }
+]
