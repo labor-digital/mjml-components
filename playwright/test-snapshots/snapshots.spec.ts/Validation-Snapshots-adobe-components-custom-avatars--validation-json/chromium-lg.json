@@ -1,0 +1,14 @@
+[
+  {
+    "tagName": "labor-adobe-avatar",
+    "message": "labor-adobe-avatar cannot be used inside mj-body, only inside: mj-attributes, mj-column"
+  },
+  {
+    "tagName": "labor-adobe-avatar",
+    "message": "Attribute padding-bottom has invalid value: not-a-unit for type Unit, only accepts (px, %) units and 1 value(s)"
+  },
+  {
+    "tagName": "labor-adobe-avatar",
+    "message": "Attribute unknown-attr is illegal"
+  }
+]

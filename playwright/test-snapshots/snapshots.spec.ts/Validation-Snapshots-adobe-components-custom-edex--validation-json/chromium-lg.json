@@ -1,0 +1,14 @@
+[
+  {
+    "tagName": "labor-adobe-edex-article",
+    "message": "labor-adobe-edex-article cannot be used inside mj-column, only inside: mj-attributes, mj-body"
+  },
+  {
+    "tagName": "labor-adobe-edex-article",
+    "message": "Attribute padding-top has invalid value: not-a-unit for type Unit, only accepts (px) units and 1 value(s)"
+  },
+  {
+    "tagName": "labor-adobe-edex-article",
+    "message": "Attribute unknown-attr is illegal"
+  }
+]

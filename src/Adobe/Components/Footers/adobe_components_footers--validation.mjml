@@ -1,0 +1,34 @@
+<mjml>
+    <mj-head>
+        <mj-attributes>
+            <mj-all padding="0" />
+        </mj-attributes>
+    </mj-head>
+    <mj-body>
+
+        <!-- Case 1: labor-adobe-footer wrong parent — must be inside mj-body, not mj-column -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-footer>
+                    <labor-adobe-typo-legal>Legal text</labor-adobe-typo-legal>
+                </labor-adobe-footer>
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 2: labor-adobe-footer invalid child — only labor-adobe-typo-legal is allowed -->
+        <labor-adobe-footer>
+            <labor-adobe-typo-body>Legal text</labor-adobe-typo-body>
+        </labor-adobe-footer>
+
+        <!-- Case 3: labor-adobe-footer invalid overwrite-padding-bottom unit -->
+        <labor-adobe-footer overwrite-padding-bottom="not-a-unit">
+            <labor-adobe-typo-legal>Legal text</labor-adobe-typo-legal>
+        </labor-adobe-footer>
+
+        <!-- Case 4: labor-adobe-footer unknown attribute -->
+        <labor-adobe-footer unknown-attr="foo">
+            <labor-adobe-typo-legal>Legal text</labor-adobe-typo-legal>
+        </labor-adobe-footer>
+
+    </mj-body>
+</mjml>

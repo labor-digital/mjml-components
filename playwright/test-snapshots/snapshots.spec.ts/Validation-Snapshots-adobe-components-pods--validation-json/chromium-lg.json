@@ -1,0 +1,38 @@
+[
+  {
+    "tagName": "labor-adobe-pod",
+    "message": "labor-adobe-pod cannot be used inside mj-column, only inside: mj-attributes, mj-body"
+  },
+  {
+    "tagName": "labor-adobe-pod-standard",
+    "message": "labor-adobe-pod-standard cannot be used inside mj-column, only inside: mj-attributes, mj-body"
+  },
+  {
+    "tagName": "labor-adobe-pod-standard-full-width",
+    "message": "labor-adobe-pod-standard-full-width cannot be used inside mj-column, only inside: mj-attributes, mj-body"
+  },
+  {
+    "tagName": "labor-adobe-pod-no-image",
+    "message": "labor-adobe-pod-no-image cannot be used inside mj-column, only inside: mj-attributes, mj-body"
+  },
+  {
+    "tagName": "labor-adobe-pod-no-image",
+    "message": "Attribute cta-type has invalid value: not-a-type for type Enum, only accepts button, link"
+  },
+  {
+    "tagName": "labor-adobe-pod-application",
+    "message": "labor-adobe-pod-application cannot be used inside mj-column, only inside: mj-attributes, mj-body"
+  },
+  {
+    "tagName": "labor-adobe-pod-z-formation",
+    "message": "labor-adobe-pod-z-formation cannot be used inside mj-column, only inside: mj-attributes, mj-body"
+  },
+  {
+    "tagName": "labor-adobe-pod-z-formation",
+    "message": "Attribute direction has invalid value: diagonal for type Enum, only accepts ltr, rtl"
+  },
+  {
+    "tagName": "labor-adobe-pod",
+    "message": "Attribute unknown-attr is illegal"
+  }
+]

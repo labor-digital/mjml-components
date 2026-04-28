@@ -1,0 +1,41 @@
+<mjml>
+    <mj-head>
+        <mj-attributes>
+            <mj-all padding="0" />
+        </mj-attributes>
+    </mj-head>
+    <mj-body>
+
+        <!-- Case 1: labor-adobe-button wrong parent — must be inside mj-column, not mj-section -->
+        <mj-section>
+            <labor-adobe-button href="#">Click</labor-adobe-button>
+        </mj-section>
+
+        <!-- Case 2: labor-adobe-button invalid type enum -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-button type="not-a-type" href="#">Click</labor-adobe-button>
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 3: labor-adobe-link wrong parent — must be inside mj-column, not mj-section -->
+        <mj-section>
+            <labor-adobe-link href="#">Click</labor-adobe-link>
+        </mj-section>
+
+        <!-- Case 4: labor-adobe-link invalid type enum -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-link type="not-a-type" href="#">Click</labor-adobe-link>
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 5: labor-adobe-button unknown attribute -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-button href="#" unknown-attr="foo">Click</labor-adobe-button>
+            </mj-column>
+        </mj-section>
+
+    </mj-body>
+</mjml>

@@ -1,0 +1,14 @@
+[
+  {
+    "tagName": "labor-adobe-header",
+    "message": "labor-adobe-header cannot be used inside mj-column, only inside: mj-attributes, mj-body"
+  },
+  {
+    "tagName": "labor-adobe-header",
+    "message": "Attribute product-color has invalid value: rainbow for type Enum, only accepts red, white, red_black, red_gray, red_white, white_black"
+  },
+  {
+    "tagName": "labor-adobe-header",
+    "message": "Attribute unknown-attr is illegal"
+  }
+]

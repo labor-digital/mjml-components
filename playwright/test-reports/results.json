@@ -116,12 +116,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1245,
+                      "duration": 1247,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:31.441Z",
+                      "startTime": "2026-04-28T22:24:25.846Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -150,12 +150,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1500,
+                      "duration": 1506,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:31.444Z",
+                      "startTime": "2026-04-28T22:24:25.859Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -184,12 +184,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1349,
+                      "duration": 1419,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:31.433Z",
+                      "startTime": "2026-04-28T22:24:25.890Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -218,12 +218,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1498,
+                      "duration": 1481,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:31.451Z",
+                      "startTime": "2026-04-28T22:24:25.890Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -252,12 +252,12 @@
                       "workerIndex": 4,
                       "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 1301,
+                      "duration": 1306,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:31.454Z",
+                      "startTime": "2026-04-28T22:24:25.904Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -286,12 +286,12 @@
                       "workerIndex": 5,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 1417,
+                      "duration": 1496,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:31.449Z",
+                      "startTime": "2026-04-28T22:24:25.883Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -320,12 +320,12 @@
                       "workerIndex": 6,
                       "parallelIndex": 6,
                       "status": "passed",
-                      "duration": 1278,
+                      "duration": 1178,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:31.495Z",
+                      "startTime": "2026-04-28T22:24:25.866Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -354,12 +354,12 @@
                       "workerIndex": 7,
                       "parallelIndex": 7,
                       "status": "passed",
-                      "duration": 1356,
+                      "duration": 1444,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:31.431Z",
+                      "startTime": "2026-04-28T22:24:25.895Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -388,12 +388,12 @@
                       "workerIndex": 8,
                       "parallelIndex": 8,
                       "status": "passed",
-                      "duration": 1330,
+                      "duration": 1232,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:31.449Z",
+                      "startTime": "2026-04-28T22:24:25.891Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -422,12 +422,12 @@
                       "workerIndex": 9,
                       "parallelIndex": 9,
                       "status": "passed",
-                      "duration": 1655,
+                      "duration": 1708,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:31.486Z",
+                      "startTime": "2026-04-28T22:24:25.910Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -453,15 +453,15 @@
                   "projectName": "chromium-xs",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
                       "status": "passed",
-                      "duration": 1384,
+                      "duration": 1346,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.093Z",
+                      "startTime": "2026-04-28T22:24:27.360Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -487,15 +487,15 @@
                   "projectName": "chromium-xs",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 8,
+                      "parallelIndex": 8,
                       "status": "passed",
-                      "duration": 1262,
+                      "duration": 1271,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.097Z",
+                      "startTime": "2026-04-28T22:24:27.410Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -521,15 +521,15 @@
                   "projectName": "chromium-xs",
                   "results": [
                     {
-                      "workerIndex": 7,
-                      "parallelIndex": 7,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1347,
+                      "duration": 1400,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.124Z",
+                      "startTime": "2026-04-28T22:24:27.435Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -556,14 +556,14 @@
                   "results": [
                     {
                       "workerIndex": 10,
-                      "parallelIndex": 5,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1180,
+                      "duration": 1121,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.742Z",
+                      "startTime": "2026-04-28T22:24:28.126Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -589,15 +589,15 @@
                   "projectName": "chromium-lg",
                   "results": [
                     {
-                      "workerIndex": 13,
-                      "parallelIndex": 8,
+                      "workerIndex": 11,
+                      "parallelIndex": 7,
                       "status": "passed",
-                      "duration": 1374,
+                      "duration": 1348,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.737Z",
+                      "startTime": "2026-04-28T22:24:28.164Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -623,15 +623,15 @@
                   "projectName": "chromium-lg",
                   "results": [
                     {
-                      "workerIndex": 11,
-                      "parallelIndex": 6,
+                      "workerIndex": 13,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 1030,
+                      "duration": 967,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.735Z",
+                      "startTime": "2026-04-28T22:24:28.184Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -658,14 +658,14 @@
                   "results": [
                     {
                       "workerIndex": 12,
-                      "parallelIndex": 2,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 1348,
+                      "duration": 1197,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.738Z",
+                      "startTime": "2026-04-28T22:24:28.147Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -692,14 +692,14 @@
                   "results": [
                     {
                       "workerIndex": 14,
-                      "parallelIndex": 1,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1104,
+                      "duration": 1005,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.770Z",
+                      "startTime": "2026-04-28T22:24:28.183Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -726,14 +726,14 @@
                   "results": [
                     {
                       "workerIndex": 15,
-                      "parallelIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1282,
+                      "duration": 1146,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.768Z",
+                      "startTime": "2026-04-28T22:24:28.193Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -762,12 +762,12 @@
                       "workerIndex": 16,
                       "parallelIndex": 9,
                       "status": "passed",
-                      "duration": 1175,
+                      "duration": 1028,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.816Z",
+                      "startTime": "2026-04-28T22:24:28.263Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -794,14 +794,14 @@
                   "results": [
                     {
                       "workerIndex": 17,
-                      "parallelIndex": 0,
+                      "parallelIndex": 8,
                       "status": "passed",
-                      "duration": 1078,
+                      "duration": 1137,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:34.653Z",
+                      "startTime": "2026-04-28T22:24:29.022Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -828,14 +828,14 @@
                   "results": [
                     {
                       "workerIndex": 18,
-                      "parallelIndex": 4,
+                      "parallelIndex": 6,
                       "status": "passed",
-                      "duration": 1203,
+                      "duration": 1087,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:34.760Z",
+                      "startTime": "2026-04-28T22:24:29.029Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -862,14 +862,14 @@
                   "results": [
                     {
                       "workerIndex": 19,
-                      "parallelIndex": 7,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1811,
+                      "duration": 1644,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:34.762Z",
+                      "startTime": "2026-04-28T22:24:29.142Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -895,15 +895,15 @@
                   "projectName": "chromium-lg",
                   "results": [
                     {
-                      "workerIndex": 11,
-                      "parallelIndex": 6,
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1560,
+                      "duration": 1458,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:34.972Z",
+                      "startTime": "2026-04-28T22:24:29.485Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -930,14 +930,14 @@
                   "results": [
                     {
                       "workerIndex": 14,
-                      "parallelIndex": 1,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1137,
+                      "duration": 1135,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:35.074Z",
+                      "startTime": "2026-04-28T22:24:29.539Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -963,15 +963,15 @@
                   "projectName": "chromium-lg",
                   "results": [
                     {
-                      "workerIndex": 10,
-                      "parallelIndex": 5,
+                      "workerIndex": 13,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 1507,
+                      "duration": 1504,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:35.103Z",
+                      "startTime": "2026-04-28T22:24:29.542Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -987,9 +987,1049 @@
           ]
         },
         {
-          "title": "HTML Snapshots",
+          "title": "Validation Snapshots",
           "file": "snapshots.spec.ts",
           "line": 27,
+          "column": 6,
+          "specs": [
+            {
+              "title": "adobe_components_cta--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                        "line": 41,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "skipped",
+                      "duration": 4,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:27.484Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                            "line": 41,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "95206587925d7902ff45-1cc9758ba0ef7dbd746e",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_action_cards--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                        "line": 41,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "skipped",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:27.510Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                            "line": 41,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "95206587925d7902ff45-0a11c9fdd8ee4b11f935",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_avatars--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                        "line": 41,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:27.525Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                            "line": 41,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "95206587925d7902ff45-6bba17d5de0ba579a333",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_edex--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                        "line": 41,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:27.539Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                            "line": 41,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "95206587925d7902ff45-0165988a67605d172ed0",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_footer_bands--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                        "line": 41,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "skipped",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:27.547Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                            "line": 41,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "95206587925d7902ff45-400d974d2f10f0af43e5",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_two_col_img_text_section--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                        "line": 41,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:27.559Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                            "line": 41,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "95206587925d7902ff45-380db04fb52a25b1cc00",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_footers--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                        "line": 41,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "skipped",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:27.566Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                            "line": 41,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "95206587925d7902ff45-1812a694ff64d6360fe1",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_headers--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                        "line": 41,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "skipped",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:27.576Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                            "line": 41,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "95206587925d7902ff45-259a8d22675672e0203c",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_hero_cards--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                        "line": 41,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "skipped",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:27.589Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                            "line": 41,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "95206587925d7902ff45-bcf61db654f035934c68",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_pods--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                        "line": 41,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "skipped",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:27.592Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                            "line": 41,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "95206587925d7902ff45-3162916a1c5caaf98801",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_product_logos--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                        "line": 41,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "skipped",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:27.601Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                            "line": 41,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "95206587925d7902ff45-a1797663606a817d3203",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_typo--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                        "line": 41,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium-xs",
+                  "projectName": "chromium-xs",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "skipped",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:27.603Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
+                            "line": 41,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "95206587925d7902ff45-a63ef7456da213ca89b0",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_cta--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 2,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:29.545Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-40c257f3a42d1f2e3000",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_action_cards--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:29.567Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-c62a5401d719f7455306",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_avatars--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:29.575Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-4ab5c232c9c49b1ec730",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_edex--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:29.586Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-3c3f2f588f9cd98a82ac",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_footer_bands--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:29.589Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-f631d271d318ff984a2d",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_custom_two_col_img_text_section--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 3,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:29.599Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-534639b0d2004f3b5f4e",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_footers--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:29.605Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-1b32fa9e72bd9c551d7b",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_headers--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:29.614Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-c4611c6e7ded0764cf0a",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_hero_cards--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:29.618Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-d20b44e59adce6ef2bd5",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_pods--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:29.620Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-6981eac4810bb54cb7bb",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_product_logos--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:29.628Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-3b851c9fe546fec78d84",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "adobe_components_typo--validation.json",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium-lg",
+                  "projectName": "chromium-lg",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T22:24:29.629Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "95206587925d7902ff45-dc445da3cdef8c743007",
+              "file": "snapshots.spec.ts",
+              "line": 39,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "HTML Snapshots",
+          "file": "snapshots.spec.ts",
+          "line": 48,
           "column": 6,
           "specs": [
             {
@@ -1004,7 +2044,7 @@
                       "type": "skip",
                       "location": {
                         "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                        "line": 37,
+                        "line": 58,
                         "column": 12
                       }
                     }
@@ -1014,21 +2054,21 @@
                   "projectName": "chromium-xs",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
                       "status": "skipped",
-                      "duration": 77,
+                      "duration": 56,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.146Z",
+                      "startTime": "2026-04-28T22:24:27.613Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "location": {
                             "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                            "line": 37,
+                            "line": 58,
                             "column": 12
                           }
                         }
@@ -1041,7 +2081,7 @@
               ],
               "id": "95206587925d7902ff45-d63cdca336d25d7c9088",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -1056,7 +2096,7 @@
                       "type": "skip",
                       "location": {
                         "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                        "line": 37,
+                        "line": 58,
                         "column": 12
                       }
                     }
@@ -1066,21 +2106,21 @@
                   "projectName": "chromium-xs",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "parallelIndex": 6,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "skipped",
-                      "duration": 74,
+                      "duration": 57,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.141Z",
+                      "startTime": "2026-04-28T22:24:27.618Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "location": {
                             "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                            "line": 37,
+                            "line": 58,
                             "column": 12
                           }
                         }
@@ -1093,7 +2133,7 @@
               ],
               "id": "95206587925d7902ff45-67ec059823a3037f3358",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -1108,7 +2148,7 @@
                       "type": "skip",
                       "location": {
                         "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                        "line": 37,
+                        "line": 58,
                         "column": 12
                       }
                     }
@@ -1118,21 +2158,21 @@
                   "projectName": "chromium-xs",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 5,
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
                       "status": "skipped",
-                      "duration": 72,
+                      "duration": 56,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.203Z",
+                      "startTime": "2026-04-28T22:24:27.630Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "location": {
                             "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                            "line": 37,
+                            "line": 58,
                             "column": 12
                           }
                         }
@@ -1145,7 +2185,7 @@
               ],
               "id": "95206587925d7902ff45-5348f6a91fe30e0b189a",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -1160,7 +2200,7 @@
                       "type": "skip",
                       "location": {
                         "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                        "line": 37,
+                        "line": 58,
                         "column": 12
                       }
                     }
@@ -1170,21 +2210,21 @@
                   "projectName": "chromium-xs",
                   "results": [
                     {
-                      "workerIndex": 8,
-                      "parallelIndex": 8,
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
                       "status": "skipped",
-                      "duration": 68,
+                      "duration": 76,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.227Z",
+                      "startTime": "2026-04-28T22:24:27.661Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "location": {
                             "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                            "line": 37,
+                            "line": 58,
                             "column": 12
                           }
                         }
@@ -1197,7 +2237,7 @@
               ],
               "id": "95206587925d7902ff45-26e7b70001b9a1e864ad",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -1212,7 +2252,7 @@
                       "type": "skip",
                       "location": {
                         "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                        "line": 37,
+                        "line": 58,
                         "column": 12
                       }
                     }
@@ -1222,21 +2262,21 @@
                   "projectName": "chromium-xs",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "parallelIndex": 6,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "skipped",
-                      "duration": 64,
+                      "duration": 63,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.243Z",
+                      "startTime": "2026-04-28T22:24:27.663Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "location": {
                             "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                            "line": 37,
+                            "line": 58,
                             "column": 12
                           }
                         }
@@ -1249,7 +2289,7 @@
               ],
               "id": "95206587925d7902ff45-79e187be0966deed05da",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -1264,7 +2304,7 @@
                       "type": "skip",
                       "location": {
                         "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                        "line": 37,
+                        "line": 58,
                         "column": 12
                       }
                     }
@@ -1274,21 +2314,21 @@
                   "projectName": "chromium-xs",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
                       "status": "skipped",
-                      "duration": 66,
+                      "duration": 60,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.243Z",
+                      "startTime": "2026-04-28T22:24:27.681Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "location": {
                             "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                            "line": 37,
+                            "line": 58,
                             "column": 12
                           }
                         }
@@ -1301,7 +2341,7 @@
               ],
               "id": "95206587925d7902ff45-87694e26f302a2e03cec",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -1316,7 +2356,7 @@
                       "type": "skip",
                       "location": {
                         "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                        "line": 37,
+                        "line": 58,
                         "column": 12
                       }
                     }
@@ -1326,21 +2366,21 @@
                   "projectName": "chromium-xs",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "skipped",
-                      "duration": 84,
+                      "duration": 68,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.280Z",
+                      "startTime": "2026-04-28T22:24:27.693Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "location": {
                             "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                            "line": 37,
+                            "line": 58,
                             "column": 12
                           }
                         }
@@ -1353,7 +2393,7 @@
               ],
               "id": "95206587925d7902ff45-d936692ebd5ea1a48722",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -1368,7 +2408,7 @@
                       "type": "skip",
                       "location": {
                         "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                        "line": 37,
+                        "line": 58,
                         "column": 12
                       }
                     }
@@ -1378,21 +2418,21 @@
                   "projectName": "chromium-xs",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 5,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "skipped",
-                      "duration": 60,
+                      "duration": 59,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.313Z",
+                      "startTime": "2026-04-28T22:24:27.698Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "location": {
                             "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                            "line": 37,
+                            "line": 58,
                             "column": 12
                           }
                         }
@@ -1405,7 +2445,7 @@
               ],
               "id": "95206587925d7902ff45-b8b2b35e2478fc2abf17",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -1420,7 +2460,7 @@
                       "type": "skip",
                       "location": {
                         "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                        "line": 37,
+                        "line": 58,
                         "column": 12
                       }
                     }
@@ -1430,21 +2470,21 @@
                   "projectName": "chromium-xs",
                   "results": [
                     {
-                      "workerIndex": 8,
-                      "parallelIndex": 8,
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
                       "status": "skipped",
-                      "duration": 66,
+                      "duration": 78,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.315Z",
+                      "startTime": "2026-04-28T22:24:27.700Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "location": {
                             "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                            "line": 37,
+                            "line": 58,
                             "column": 12
                           }
                         }
@@ -1457,7 +2497,7 @@
               ],
               "id": "95206587925d7902ff45-fc8ac3dcd305a0f936d1",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -1472,7 +2512,7 @@
                       "type": "skip",
                       "location": {
                         "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                        "line": 37,
+                        "line": 58,
                         "column": 12
                       }
                     }
@@ -1482,21 +2522,21 @@
                   "projectName": "chromium-xs",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "skipped",
-                      "duration": 69,
+                      "duration": 75,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.318Z",
+                      "startTime": "2026-04-28T22:24:27.743Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "location": {
                             "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                            "line": 37,
+                            "line": 58,
                             "column": 12
                           }
                         }
@@ -1509,7 +2549,7 @@
               ],
               "id": "95206587925d7902ff45-06832fdc03f1fcff6acd",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -1524,7 +2564,7 @@
                       "type": "skip",
                       "location": {
                         "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                        "line": 37,
+                        "line": 58,
                         "column": 12
                       }
                     }
@@ -1534,21 +2574,21 @@
                   "projectName": "chromium-xs",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "parallelIndex": 6,
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
                       "status": "skipped",
-                      "duration": 70,
+                      "duration": 59,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.320Z",
+                      "startTime": "2026-04-28T22:24:27.756Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "location": {
                             "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                            "line": 37,
+                            "line": 58,
                             "column": 12
                           }
                         }
@@ -1561,7 +2601,7 @@
               ],
               "id": "95206587925d7902ff45-9ad8356421dab3440f69",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -1576,7 +2616,7 @@
                       "type": "skip",
                       "location": {
                         "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                        "line": 37,
+                        "line": 58,
                         "column": 12
                       }
                     }
@@ -1586,21 +2626,21 @@
                   "projectName": "chromium-xs",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
                       "status": "skipped",
-                      "duration": 60,
+                      "duration": 57,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.368Z",
+                      "startTime": "2026-04-28T22:24:27.757Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "location": {
                             "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                            "line": 37,
+                            "line": 58,
                             "column": 12
                           }
                         }
@@ -1613,7 +2653,7 @@
               ],
               "id": "95206587925d7902ff45-c673629f79d5225900d5",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -1628,7 +2668,7 @@
                       "type": "skip",
                       "location": {
                         "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                        "line": 37,
+                        "line": 58,
                         "column": 12
                       }
                     }
@@ -1638,21 +2678,21 @@
                   "projectName": "chromium-xs",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "skipped",
-                      "duration": 54,
+                      "duration": 72,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:33.381Z",
+                      "startTime": "2026-04-28T22:24:27.770Z",
                       "annotations": [
                         {
                           "type": "skip",
                           "location": {
                             "file": "/Users/philipp/Documents/projects/labor/github/mjml-components/playwright/snapshots.spec.ts",
-                            "line": 37,
+                            "line": 58,
                             "column": 12
                           }
                         }
@@ -1665,7 +2705,7 @@
               ],
               "id": "95206587925d7902ff45-95e44d47e4b27c703c40",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -1681,15 +2721,15 @@
                   "projectName": "chromium-lg",
                   "results": [
                     {
-                      "workerIndex": 16,
-                      "parallelIndex": 9,
+                      "workerIndex": 12,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 3896,
+                      "duration": 3910,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:35.161Z",
+                      "startTime": "2026-04-28T22:24:29.634Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1699,7 +2739,7 @@
               ],
               "id": "95206587925d7902ff45-29bbe9cd97b54409e612",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -1716,14 +2756,14 @@
                   "results": [
                     {
                       "workerIndex": 15,
-                      "parallelIndex": 3,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2520,
+                      "duration": 2565,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:35.203Z",
+                      "startTime": "2026-04-28T22:24:29.635Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1733,7 +2773,7 @@
               ],
               "id": "95206587925d7902ff45-c7cee7f15931994ee4cc",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -1749,15 +2789,15 @@
                   "projectName": "chromium-lg",
                   "results": [
                     {
-                      "workerIndex": 12,
-                      "parallelIndex": 2,
+                      "workerIndex": 16,
+                      "parallelIndex": 9,
                       "status": "passed",
-                      "duration": 1497,
+                      "duration": 1477,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:35.281Z",
+                      "startTime": "2026-04-28T22:24:29.648Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1767,7 +2807,7 @@
               ],
               "id": "95206587925d7902ff45-f5705c2471cd6a6d366e",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -1783,15 +2823,15 @@
                   "projectName": "chromium-lg",
                   "results": [
                     {
-                      "workerIndex": 13,
-                      "parallelIndex": 8,
+                      "workerIndex": 11,
+                      "parallelIndex": 7,
                       "status": "passed",
-                      "duration": 2421,
+                      "duration": 2420,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:35.303Z",
+                      "startTime": "2026-04-28T22:24:29.763Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1801,7 +2841,7 @@
               ],
               "id": "95206587925d7902ff45-4bc3478b1a742a12a576",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -1817,15 +2857,15 @@
                   "projectName": "chromium-lg",
                   "results": [
                     {
-                      "workerIndex": 17,
-                      "parallelIndex": 0,
+                      "workerIndex": 18,
+                      "parallelIndex": 6,
                       "status": "passed",
-                      "duration": 1244,
+                      "duration": 1224,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:35.819Z",
+                      "startTime": "2026-04-28T22:24:30.218Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1835,7 +2875,7 @@
               ],
               "id": "95206587925d7902ff45-21b1571e30330f1d8472",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -1851,15 +2891,15 @@
                   "projectName": "chromium-lg",
                   "results": [
                     {
-                      "workerIndex": 18,
-                      "parallelIndex": 4,
+                      "workerIndex": 17,
+                      "parallelIndex": 8,
                       "status": "passed",
-                      "duration": 1891,
+                      "duration": 1846,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:36.097Z",
+                      "startTime": "2026-04-28T22:24:30.267Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1869,7 +2909,7 @@
               ],
               "id": "95206587925d7902ff45-7765aab69a40ca6b00ae",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -1886,14 +2926,14 @@
                   "results": [
                     {
                       "workerIndex": 14,
-                      "parallelIndex": 1,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1435,
+                      "duration": 1475,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:36.218Z",
+                      "startTime": "2026-04-28T22:24:30.690Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1903,7 +2943,7 @@
               ],
               "id": "95206587925d7902ff45-dd82325f5e26e73b29b0",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -1919,15 +2959,15 @@
                   "projectName": "chromium-lg",
                   "results": [
                     {
-                      "workerIndex": 11,
-                      "parallelIndex": 6,
+                      "workerIndex": 19,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4724,
+                      "duration": 4719,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:36.551Z",
+                      "startTime": "2026-04-28T22:24:30.934Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1937,7 +2977,7 @@
               ],
               "id": "95206587925d7902ff45-3108a810d5616aad9b77",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -1954,14 +2994,14 @@
                   "results": [
                     {
                       "workerIndex": 10,
-                      "parallelIndex": 5,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3474,
+                      "duration": 3482,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:36.624Z",
+                      "startTime": "2026-04-28T22:24:30.953Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1971,7 +3011,7 @@
               ],
               "id": "95206587925d7902ff45-b84175e95bf4c25ce45e",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -1987,15 +3027,15 @@
                   "projectName": "chromium-lg",
                   "results": [
                     {
-                      "workerIndex": 19,
-                      "parallelIndex": 7,
+                      "workerIndex": 13,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 6582,
+                      "duration": 6557,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:36.705Z",
+                      "startTime": "2026-04-28T22:24:31.064Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2005,7 +3045,7 @@
               ],
               "id": "95206587925d7902ff45-26a5066d16d0aa5c801d",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -2021,15 +3061,15 @@
                   "projectName": "chromium-lg",
                   "results": [
                     {
-                      "workerIndex": 12,
-                      "parallelIndex": 2,
+                      "workerIndex": 16,
+                      "parallelIndex": 9,
                       "status": "passed",
-                      "duration": 11847,
+                      "duration": 11885,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:36.793Z",
+                      "startTime": "2026-04-28T22:24:31.133Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2039,7 +3079,7 @@
               ],
               "id": "95206587925d7902ff45-b8a078bd0d48379c0229",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -2055,15 +3095,15 @@
                   "projectName": "chromium-lg",
                   "results": [
                     {
-                      "workerIndex": 17,
-                      "parallelIndex": 0,
+                      "workerIndex": 18,
+                      "parallelIndex": 6,
                       "status": "passed",
-                      "duration": 2865,
+                      "duration": 2836,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:37.070Z",
+                      "startTime": "2026-04-28T22:24:31.450Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2073,7 +3113,7 @@
               ],
               "id": "95206587925d7902ff45-8c0c67fc0c5745c9ca26",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             },
             {
@@ -2089,15 +3129,15 @@
                   "projectName": "chromium-lg",
                   "results": [
                     {
-                      "workerIndex": 14,
-                      "parallelIndex": 1,
+                      "workerIndex": 17,
+                      "parallelIndex": 8,
                       "status": "passed",
-                      "duration": 36605,
+                      "duration": 36936,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-28T08:38:37.661Z",
+                      "startTime": "2026-04-28T22:24:32.140Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2107,7 +3147,7 @@
               ],
               "id": "95206587925d7902ff45-a8a02b02694b19239868",
               "file": "snapshots.spec.ts",
-              "line": 35,
+              "line": 56,
               "column": 9
             }
           ]
@@ -2117,10 +3157,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-28T08:38:31.032Z",
-    "duration": 43278.896,
-    "expected": 39,
-    "skipped": 13,
+    "startTime": "2026-04-28T22:24:25.443Z",
+    "duration": 43674.514,
+    "expected": 51,
+    "skipped": 25,
     "unexpected": 0,
     "flaky": 0
   }

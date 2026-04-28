@@ -1,0 +1,22 @@
+[
+  {
+    "tagName": "labor-adobe-button",
+    "message": "labor-adobe-button cannot be used inside mj-section, only inside: mj-attributes, mj-column, labor-adobe-actioncard, labor-adobe-two-col-img-text-section"
+  },
+  {
+    "tagName": "labor-adobe-button",
+    "message": "Attribute type has invalid value: not-a-type for type Enum, only accepts standard, express, inverted, quiet"
+  },
+  {
+    "tagName": "labor-adobe-link",
+    "message": "labor-adobe-link cannot be used inside mj-section, only inside: mj-attributes, mj-column, labor-adobe-actioncard, labor-adobe-pod-z-formation, labor-adobe-action-card"
+  },
+  {
+    "tagName": "labor-adobe-link",
+    "message": "Attribute type has invalid value: not-a-type for type Enum, only accepts standard, inverted, quiet"
+  },
+  {
+    "tagName": "labor-adobe-button",
+    "message": "Attribute unknown-attr is illegal"
+  }
+]

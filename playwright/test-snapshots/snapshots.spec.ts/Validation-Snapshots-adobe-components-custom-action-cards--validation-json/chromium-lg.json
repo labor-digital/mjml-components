@@ -1,0 +1,14 @@
+[
+  {
+    "tagName": "labor-adobe-action-card",
+    "message": "labor-adobe-action-card cannot be used inside mj-column, only inside: mj-attributes, mj-body"
+  },
+  {
+    "tagName": "labor-adobe-action-card",
+    "message": "Attribute padding-top has invalid value: not-a-unit for type Unit, only accepts (px) units and 1 value(s)"
+  },
+  {
+    "tagName": "labor-adobe-action-card",
+    "message": "Attribute unknown-attr is illegal"
+  }
+]

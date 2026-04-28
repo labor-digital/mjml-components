@@ -1,0 +1,23 @@
+<mjml>
+    <mj-head>
+        <mj-attributes>
+            <mj-all padding="0" />
+        </mj-attributes>
+    </mj-head>
+    <mj-body>
+
+        <!-- Case 1: labor-adobe-header wrong parent — must be inside mj-body, not mj-column -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-header product="acrobat" product-color="red_gray" />
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 2: labor-adobe-header invalid product-color enum -->
+        <labor-adobe-header product="acrobat" product-color="rainbow" />
+
+        <!-- Case 3: labor-adobe-header unknown attribute -->
+        <labor-adobe-header product="acrobat" product-color="red_gray" unknown-attr="foo" />
+
+    </mj-body>
+</mjml>

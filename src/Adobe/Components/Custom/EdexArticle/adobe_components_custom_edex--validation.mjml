@@ -1,0 +1,37 @@
+<mjml>
+    <mj-head>
+        <mj-attributes>
+            <mj-all padding="0" />
+        </mj-attributes>
+    </mj-head>
+    <mj-body>
+
+        <!-- Case 1: labor-adobe-edex-article wrong parent — must be inside mj-body, not mj-column -->
+        <mj-section>
+            <mj-column>
+                <labor-adobe-edex-article
+                    headline="Test"
+                    href="#"
+                    image-src="placeholder.jpg"
+                />
+            </mj-column>
+        </mj-section>
+
+        <!-- Case 2: labor-adobe-edex-article invalid padding-top unit -->
+        <labor-adobe-edex-article
+            headline="Test"
+            href="#"
+            image-src="placeholder.jpg"
+            padding-top="not-a-unit"
+        />
+
+        <!-- Case 3: labor-adobe-edex-article unknown attribute -->
+        <labor-adobe-edex-article
+            headline="Test"
+            href="#"
+            image-src="placeholder.jpg"
+            unknown-attr="foo"
+        />
+
+    </mj-body>
+</mjml>

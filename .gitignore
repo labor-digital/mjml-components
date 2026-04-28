@@ -6,6 +6,7 @@
 .vs-code/
 node_modules/
 previews/
+validation-errors/
 dist/
 lib/
 *.html

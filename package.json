@@ -22,6 +22,7 @@
     "build": "tsx scripts/generate-index.ts && tsc",
     "register-components": "npm run build && tsx scripts/register-components.ts",
     "preview": "npm run build && tsx scripts/compile-previews.ts",
+    "preview:validation": "npm run build && tsx scripts/compile-previews.ts --validation",
     "watch": "tsx scripts/generate-index.ts && tsc --watch",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.js' --write",
     "test": "playwright test",

@@ -1,0 +1,22 @@
+[
+  {
+    "tagName": "labor-adobe-footer-band",
+    "message": "labor-adobe-footer-band cannot be used inside mj-column, only inside: mj-attributes, mj-body"
+  },
+  {
+    "tagName": "labor-adobe-footer-band",
+    "message": "Attribute padding-top has invalid value: not-a-unit for type Unit, only accepts (px, %) units and 1 value(s)"
+  },
+  {
+    "tagName": "labor-adobe-footer-image-band",
+    "message": "labor-adobe-footer-image-band cannot be used inside mj-column, only inside: mj-attributes, mj-body"
+  },
+  {
+    "tagName": "labor-adobe-footer-image-band",
+    "message": "Attribute image-src is illegal"
+  },
+  {
+    "tagName": "labor-adobe-footer-band",
+    "message": "Attribute unknown-attr is illegal"
+  }
+]
