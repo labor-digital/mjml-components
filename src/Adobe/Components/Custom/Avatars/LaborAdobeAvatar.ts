@@ -40,6 +40,7 @@ export class LaborAdobeAvatar extends BodyComponent {
       'color': this.getAttribute('on-background') ? styleMapping.colors.white.hex : styleMapping.colors.gray600.hex,
       'align': 'left',
       'src': this.getAttribute('src'),
+      'alt': this.getAttribute('name'), // avatar photo of a person — their name is the appropriate alt text
     }
 
     return this.renderMJML(`

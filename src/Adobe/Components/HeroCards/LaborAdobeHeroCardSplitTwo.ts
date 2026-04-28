@@ -76,6 +76,8 @@ export class LaborAdobeHeroCardSplitTwo extends BodyComponent {
 
   render() {
     const srcMobileAttr = this.getAttribute('image-src-mobile') ? `src-mobile="${this.getAttribute('image-src-mobile')}"` : '';
+    const imageAltAttr = this.getAttribute('image-alt') ? `alt="${this.getAttribute('image-alt')}"` : '';
+    const imageTitleAttr = this.getAttribute('image-title') ? `title="${this.getAttribute('image-title')}"` : '';
 
     let header =
       this.getAttribute('product-src-overwrite')
@@ -136,8 +138,8 @@ export class LaborAdobeHeroCardSplitTwo extends BodyComponent {
               fluid-on-mobile="true"
               width="600px"
               align="left"
-              alt="${this.getAttribute('image-alt')}"
-              title="${this.getAttribute('image-title')}"
+              ${imageAltAttr}
+              ${imageTitleAttr}
             />
           </mj-column>
         </labor-adobe-section>

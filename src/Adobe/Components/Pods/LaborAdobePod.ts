@@ -100,7 +100,7 @@ export class LaborAdobePod extends BodyComponent {
                   width="600px"
                   align="left"
                   target="_blank"
-                  href="${this.getAttribute('primary-cta-href')}"
+                  href="${this.getAttribute('image-href') || this.getAttribute('primary-cta-href')}"
                   alt="${this.getAttribute('headline')}"
               />
             </mj-column>

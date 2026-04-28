@@ -23,6 +23,10 @@ const styleMapping = AdobeRedStyleMapping
       type: 'string',
       default: '',
     },
+    'image-alt': {
+      type: 'string',
+      default: '',
+    },
     'padding-top': {
       type: 'unit(px,%)',
     },
@@ -80,6 +84,7 @@ export class LaborAdobePodZFormation extends BodyComponent {
   `
 
   render() {
+    const imageAltAttr = this.getAttribute('image-alt') ? `alt="${this.getAttribute('image-alt')}"` : '';
     return this.renderMJML(`
       <labor-adobe-section
         direction="${this.getAttribute('direction')}"
@@ -104,9 +109,10 @@ export class LaborAdobePodZFormation extends BodyComponent {
               : '0'
           }"
         >
-          <labor-responsive-image 
+          <labor-responsive-image
             src="${this.getAttribute('image-src')}"
             src-mobile="${this.getAttribute('image-src-mobile')}"
+            ${imageAltAttr}
             align="${
               this.getAttribute('direction') === 'ltr' 
                 ? 'left'

@@ -54,6 +54,7 @@
                 section-bg-class="content-bg"
                 image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_rtl.jpg"
                 image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_m.jpg"
+                image-alt="Section image"
                 direction="rtl"
         >
             <labor-adobe-typo-heading-four>
@@ -71,6 +72,7 @@
                 section-bg-class="content-bg"
                 image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_ltr.jpg"
                 image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_m.jpg"
+                image-alt="Section image"
                 direction="ltr"
         >
             <labor-adobe-typo-body padding-bottom="0">
@@ -82,6 +84,7 @@
                 section-bg-class="content-bg"
                 image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_rtl.jpg"
                 image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_m.jpg"
+                image-alt="Section image"
                 direction="rtl"
         >
             <labor-adobe-typo-heading-four>
@@ -119,6 +122,7 @@
                 section-bg-class="content-bg"
                 image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_rtl.jpg"
                 image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_m.jpg"
+                image-alt="Section image"
                 direction="rtl"
                 padding-bottom="70px"
                 padding-top="70px"
@@ -139,6 +143,7 @@
                 section-bg-class="content-bg"
                 image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_ltr.jpg"
                 image-src-mobile="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/placeholder_m.jpg"
+                image-alt="Section image"
                 direction="ltr"
                 padding-bottom="70px"
                 padding-top="70px"

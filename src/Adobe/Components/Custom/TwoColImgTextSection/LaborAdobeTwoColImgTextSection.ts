@@ -23,6 +23,10 @@ const styleMapping = AdobeRedStyleMapping
       type: 'string',
       default: '',
     },
+    'image-alt': {
+      type: 'string',
+      default: '',
+    },
     'with-padding': {
       type: 'boolean',
       default: true,
@@ -65,6 +69,7 @@ export class LaborAdobeTwoColImgTextSection extends BodyComponent {
   `
 
   render() {
+    const imageAltAttr = this.getAttribute('image-alt') ? `alt="${this.getAttribute('image-alt')}"` : '';
     const defaultPadding = this.getAttribute('with-padding') ? styleMapping.grids.desktop.contentSpacing : 0
     const imageDefaultPadding = this.getAttribute('with-padding-image') ? styleMapping.grids.desktop.contentSpacing : 0
 
@@ -90,9 +95,10 @@ export class LaborAdobeTwoColImgTextSection extends BodyComponent {
           padding="${imagePadding}"
           padding-bottom="${this.getAttribute('padding-bottom-cols')}"
         >
-          <labor-responsive-image 
+          <labor-responsive-image
             src="${this.getAttribute('image-src')}"
             src-mobile="${this.getAttribute('image-src-mobile')}"
+            ${imageAltAttr}
             full-width="full-width"
           />
         </mj-column>
