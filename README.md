@@ -1,6 +1,6 @@
 # LABOR - MJML Components
 
-This package contains a number of custom mjml components. //
+xThis package contains a number of custom mjml components. //
 
 ## Installation
 
