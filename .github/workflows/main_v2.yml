@@ -35,4 +35,4 @@ jobs:
           github-token: ${{ secrets.github_token }}
       -
         name: Publish library on npm
-        run: npm publish --provenance --access public
+        run: npm publish
