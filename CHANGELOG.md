@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.59](https://github.com/labor-digital/mjml-components/compare/v3.0.58...v3.0.59) (2026-05-04)
+
+
+### Bug Fixes
+
+* restore id-token write permission for OIDC npm publish ([e4ad045](https://github.com/labor-digital/mjml-components/commit/e4ad045c23945620bb3180fa6ce02d31c01cbc71))
+
 ### [3.0.58](https://github.com/labor-digital/mjml-components/compare/v3.0.57...v3.0.58) (2026-05-04)
 
 
