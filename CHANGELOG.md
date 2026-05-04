@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 3.0.60 (2026-05-04)
+
+
+### Bug Fixes
+
+* use OIDC provenance for npm publish, upgrade actions to v4 ([597f133](https://github.com/labor-digital/mjml-components/commit/597f133899f8e0b685980d56db0ea4bd1cfa0269))
+
 ### [3.0.59](https://github.com/labor-digital/mjml-components/compare/v3.0.58...v3.0.59) (2026-05-04)
 
 
