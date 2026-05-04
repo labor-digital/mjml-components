@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 3.0.63 (2026-05-04)
+
+
+### Bug Fixes
+
+* set registry-url in setup-node for npm configuration ([d8747b2](https://github.com/labor-digital/mjml-components/commit/d8747b281f06b37832cbda3d93b88ac748a39a64))
+
 ### 3.0.62 (2026-05-04)
 
 
