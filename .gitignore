@@ -14,3 +14,5 @@ SyncToy*
 *storybook.log
 src/*-errors.json
 errors.json
+playwright/test-results/
+playwright/test-reports/

@@ -346,6 +346,54 @@
         <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
             <mj-column>
                 <labor-adobe-typo-heading-three>
+                    Hero Card Immersive Two (custom section paddings)
+                </labor-adobe-typo-heading-three>
+            </mj-column>
+        </labor-adobe-section>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-hero-card-immersive-two
+                header-bg-class="immersive-bg"
+                section-bg-class="immersive-bg"
+                section-bottom-bg-class="immersive-bg-2"
+
+                product="photoshop"
+                product-color="white_black"
+
+                header-alt="alt"
+                header-title="title"
+
+                headline="Lorem ipsum dolor sit amet.1 xx/xx"
+
+                cta-text="Test button"
+                cta-href="#"
+
+                image-src="https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/placeholders/hero_card_immersive.png"
+                image-alt="Hero card image"
+                image-title="Hero card"
+
+                image-section-padding-top="40px"
+                image-section-padding-bottom="40px"
+                content-section-padding-top="40px"
+                content-section-padding-bottom="40px"
+        >
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 18/25
+        </labor-adobe-hero-card-immersive-two>
+
+        <mj-section>
+            <mj-column>
+                <mj-divider mj-class="divider" />
+            </mj-column>
+        </mj-section>
+
+        <labor-adobe-section padding-top="40px" padding-bottom="40px" section-bg-class="heading-bg">
+            <mj-column>
+                <labor-adobe-typo-heading-three>
                     Hero Card Immersive Three
                 </labor-adobe-typo-heading-three>
             </mj-column>

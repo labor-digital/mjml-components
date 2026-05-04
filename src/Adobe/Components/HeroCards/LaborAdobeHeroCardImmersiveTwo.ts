@@ -70,21 +70,25 @@ const styleMapping = AdobeRedStyleMapping
       type: 'string',
       default: '',
     },
-    'padding-bottom': {
-      type: 'unit(px)',
-      default: styleMapping.spacings.vertical.px100,
-    },
     'header-additional-padding-bottom': {
       type: 'unit(px)',
       default: styleMapping.spacings.custom.px0,
     },
-    'section-padding-bottom': {
+    'image-section-padding-bottom': {
       type: 'unit(px)',
       default: styleMapping.spacings.custom.px0,
     },
-    'section-padding-top': {
+    'image-section-padding-top': {
       type: 'unit(px)',
       default: styleMapping.spacings.vertical.px20,
+    },
+    'content-section-padding-top': {
+      type: 'unit(px)',
+      default: styleMapping.spacings.vertical.px20,
+    },
+    'content-section-padding-bottom': {
+      type: 'unit(px)',
+      default: styleMapping.spacings.vertical.px100,
     },
     'on-background': {
       type: 'boolean',
@@ -126,8 +130,8 @@ export class LaborAdobeHeroCardImmersiveTwo extends BodyComponent {
       this.renderMJML(`
         <labor-adobe-section
           with-padding="false"
-          padding-bottom="${this.getAttribute('section-padding-bottom')}"
-          padding-top="${this.getAttribute('section-padding-top')}"
+          padding-bottom="${this.getAttribute('image-section-padding-bottom')}"
+          padding-top="${this.getAttribute('image-section-padding-top')}"
           section-bg-class="${this.getAttribute('section-bg-class')}"
         >
           <mj-column>
@@ -145,8 +149,8 @@ export class LaborAdobeHeroCardImmersiveTwo extends BodyComponent {
       `) +
       this.renderMJML(`
         <labor-adobe-section
-          padding-top="${this.getAttribute('section-padding-top')}"
-          padding-bottom="${this.getAttribute('padding-bottom')}"
+          padding-top="${this.getAttribute('content-section-padding-top')}"
+          padding-bottom="${this.getAttribute('content-section-padding-bottom')}"
           section-bg-class="${this.getAttribute('section-bottom-bg-class')}"
           >
           <mj-column>
