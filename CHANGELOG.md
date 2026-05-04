@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 3.0.61 (2026-05-04)
+
+
+### Bug Fixes
+
+* remove registry-url from setup-node to allow npm OIDC Trusted Publisher auth ([dbd715c](https://github.com/labor-digital/mjml-components/commit/dbd715c350a505920dd99b79dd678c4f19e565be))
+
 ### 3.0.60 (2026-05-04)
 
 
