@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.58](https://github.com/labor-digital/mjml-components/compare/v3.0.57...v3.0.58) (2026-05-04)
+
+
+### Bug Fixes
+
+* grant GITHUB_TOKEN write permission for release pushes ([4b5f98b](https://github.com/labor-digital/mjml-components/commit/4b5f98bd3f6b723b62ecf4731f43529ad39b5287))
+
 ### [3.0.57](https://github.com/labor-digital/mjml-components/compare/v3.0.56...v3.0.57) (2026-05-04)
 
 ### [3.0.56](https://github.com/labor-digital/mjml-components/compare/v3.0.55...v3.0.56) (2026-05-04)
