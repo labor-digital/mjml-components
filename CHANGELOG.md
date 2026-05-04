@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 3.0.64 (2026-05-04)
+
+
+### Bug Fixes
+
+* upgrade to Node 24 for npm OIDC Trusted Publisher support, clean up permissions ([7089eec](https://github.com/labor-digital/mjml-components/commit/7089eeca5487b0f5be153751f7fa877bd6670f78))
+
 ### 3.0.63 (2026-05-04)
 
 
