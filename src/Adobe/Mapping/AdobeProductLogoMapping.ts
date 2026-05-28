@@ -2,23 +2,30 @@
 // Red template app pods use 38 (mobile) + 35 (desktop) height, + 30 alt pod height
 // We'll only use 35 for mobile&desktop app pods, and 30 for alt pods
 export default class AdobeProductLogoMapping {
-
-  static basePath = 'https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/product_logos/';
-  static defaultHeight = 210;
+  static basePath = 'https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/product_logos/'
+  static defaultHeight = 210
   static defaultColor = 'gray'
   static getLogo = (product, color = this.defaultColor) => {
+    if (
+      !product ||
+      !color ||
+      !this.logos[product] ||
+      !this.logos[product]['width'] ||
+      !this.logos[product]['images'][color]
+    )
+      return null
 
-    if( !product || !color || !this.logos[product] || !this.logos[product]['width'] || !this.logos[product]['images'][color]) return null;
+    let width = this.logos[product]['images'][color]['width'] ?? this.logos[product]['width']
+    let height = this.logos[product]['images'][color]['height'] ?? this.logos[product]['height'] ?? this.defaultHeight
 
-    let width = this.logos[product]['images'][color]['width'] ?? this.logos[product]['width'];
-    let height =  this.logos[product]['images'][color]['height'] ?? this.logos[product]['height'] ?? this.defaultHeight;
-
-    return  {
+    return {
       name: this.logos[product]['name'],
       key: this.logos[product]['key'],
       width: width,
       height: height,
-      location: this.logos[product]['images'][color]['location'] ?? this.basePath + this.logos[product]['key'] + '.' + color + '.' + width + 'x' + height + '.png',
+      location:
+        this.logos[product]['images'][color]['location'] ??
+        this.basePath + this.logos[product]['key'] + '.' + color + '.' + width + 'x' + height + '.png',
     }
   }
 

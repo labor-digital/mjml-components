@@ -26,9 +26,7 @@ const styleMapping = AdobeRedStyleMapping
   allowedChildTags: ['mj-group', 'mj-column'],
   endingTag: false,
 })
-
 export class LaborAdobeSection extends MjSection {
-
   static additionalAttributes = {
     desktopLeftRightPadding: styleMapping.grids.desktop.contentSpacing,
     mobileLeftRightPadding: styleMapping.grids.mobile.contentSpacing,
@@ -52,8 +50,14 @@ export class LaborAdobeSection extends MjSection {
       attrs[attrName] = this.getAttribute(attrName)
     }
 
-    const pT = this.getAttribute('padding-top') && this.getAttribute('padding-top') !== 'undefined' ? this.getAttribute('padding-top') : '0'
-    const pB = this.getAttribute('padding-bottom') && this.getAttribute('padding-bottom') !== 'undefined' ? this.getAttribute('padding-bottom') : '0'
+    const pT =
+      this.getAttribute('padding-top') && this.getAttribute('padding-top') !== 'undefined'
+        ? this.getAttribute('padding-top')
+        : '0'
+    const pB =
+      this.getAttribute('padding-bottom') && this.getAttribute('padding-bottom') !== 'undefined'
+        ? this.getAttribute('padding-bottom')
+        : '0'
     const pL = this.getAttribute('with-padding') ? LaborAdobeSection.additionalAttributes.desktopLeftRightPadding : '0'
     const pR = this.getAttribute('with-padding') ? LaborAdobeSection.additionalAttributes.desktopLeftRightPadding : '0'
 
@@ -63,7 +67,7 @@ export class LaborAdobeSection extends MjSection {
         'mj-class': this.getAttribute('section-bg-class'),
         'css-class': this.getAttribute('with-padding') ? 'labor-adobe-section-responsive' : '',
         ...attrs,
-        padding: `${pT} ${pR} ${pB} ${pL}`,
+        'padding': `${pT} ${pR} ${pB} ${pL}`,
       },
       children: this.props.children,
     } as any)

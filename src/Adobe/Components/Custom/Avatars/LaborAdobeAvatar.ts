@@ -28,7 +28,6 @@ const styleMapping = AdobeRedStyleMapping
   allowedParentTags: ['mj-column'],
   allowedChildTags: [],
 })
-
 export class LaborAdobeAvatar extends BodyComponent {
   render() {
     const attrs = {

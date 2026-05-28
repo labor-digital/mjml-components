@@ -4,6 +4,8 @@
 .env.production
 .idea/
 .vs-code/
+.ai/
+
 node_modules/
 previews/
 validation-errors/
@@ -13,6 +15,6 @@ lib/
 SyncToy*
 *storybook.log
 src/*-errors.json
-errors.json
-playwright/test-results/
-playwright/test-reports/
+tests/errors.json
+tests/test-results/
+tests/test-reports/

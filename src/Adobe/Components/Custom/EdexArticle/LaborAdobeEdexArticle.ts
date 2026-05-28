@@ -74,9 +74,9 @@ const styleMapping = AdobeRedStyleMapping
   allowedParentTags: ['mj-body'],
   allowedChildTags: [],
 })
-
 export class LaborAdobeEdexArticle extends BodyComponent {
   // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
+  // endingTag = true
 
   render() {
     return (
@@ -84,9 +84,7 @@ export class LaborAdobeEdexArticle extends BodyComponent {
         <labor-adobe-section
           with-padding="false"
           padding-bottom="${
-            this.getAttribute('product') 
-              ? styleMapping.spacings.horizontal.px40 
-              : styleMapping.spacings.horizontal.px34
+            this.getAttribute('product') ? styleMapping.spacings.horizontal.px40 : styleMapping.spacings.horizontal.px34
           }"
           padding-top="${this.getAttribute('padding-top')}" 
           section-bg-class="${this.getAttribute('section-bg-class')}"
@@ -99,11 +97,7 @@ export class LaborAdobeEdexArticle extends BodyComponent {
             width="600px"
             align="left"
             target="_blank"
-            href="${
-              this.getAttribute('image-href')
-                ? this.getAttribute('image-href')
-                : this.getAttribute('href')
-            }"
+            href="${this.getAttribute('image-href') ? this.getAttribute('image-href') : this.getAttribute('href')}"
             alt="${this.getAttribute('headline')}"
           />
         </mj-column>
@@ -133,7 +127,7 @@ export class LaborAdobeEdexArticle extends BodyComponent {
                   >
                     ${this.getAttribute('category')}
                   </labor-adobe-edex-category>
-                  ` 
+                  `
                 : ``
             }
             <labor-adobe-typo-heading-three
@@ -143,9 +137,7 @@ export class LaborAdobeEdexArticle extends BodyComponent {
             </labor-adobe-typo-heading-three>
             <labor-adobe-typo-body
               padding-bottom="${
-                this.getAttribute('href')
-                  ? styleMapping.spacings.horizontal.px40
-                  : styleMapping.spacings.horizontal.px0
+                this.getAttribute('href') ? styleMapping.spacings.horizontal.px40 : styleMapping.spacings.horizontal.px0
               }"
             >
               ${this.getAttribute('text')}
@@ -172,13 +164,13 @@ export class LaborAdobeEdexArticle extends BodyComponent {
                       this.getAttribute('href')
                         ? styleMapping.spacings.horizontal.px10
                         : styleMapping.spacings.horizontal.px30
-                      }"
+                    }"
                     type="quiet"
                     href="${this.getAttribute('secondary-href')}"
                   >
                     ${this.getAttribute('secondary-cta')}
                   </labor-adobe-secondary-cta>
-                  ` 
+                  `
                 : ``
             }
           </mj-column>

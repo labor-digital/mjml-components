@@ -11,9 +11,9 @@ import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
   allowedParentTags: ['mj-column'],
   allowedChildTags: [],
 })
-
 export class LaborResponsiveImage extends MjImage {
   // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
+  // endingTag = true
 
   headStyle = (breakpoint) =>
     new MjImage().headStyle(breakpoint) +

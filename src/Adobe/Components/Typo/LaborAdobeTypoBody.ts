@@ -23,9 +23,12 @@ const styleMapping = AdobeRedStyleMapping
   allowedParentTags: ['mj-column', 'labor-adobe-actioncard'],
   allowedChildTags: [],
 })
-
 export class LaborAdobeTypoBody extends BodyComponent {
   // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
+  // endingTag = true
+
+  // declared to satisfy TypeScript; assigned in constructor based on whether css-class is provided
+  setCustomStyles: boolean = false
 
   static additionalAttributes = {
     fontWeight: styleMapping.typographies.body.fontWeight,
@@ -56,11 +59,7 @@ export class LaborAdobeTypoBody extends BodyComponent {
       margin-bottom: 0;
     }
     .${this.attributes['css-class']} a {
-      text-decoration: ${
-        this.getAttribute('on-background')
-          ? 'underline'
-          : 'none'
-      } !important;
+      text-decoration: ${this.getAttribute('on-background') ? 'underline' : 'none'} !important;
       color: ${
         this.getAttribute('on-background')
           ? LaborAdobeTypoBody.additionalAttributes.onBackgroundColor
@@ -68,11 +67,7 @@ export class LaborAdobeTypoBody extends BodyComponent {
       } !important;
     }
     .${this.attributes['css-class']} a:hover {
-      text-decoration: ${
-        this.getAttribute('on-background')
-          ? 'none'
-          : 'underline'
-      } !important;
+      text-decoration: ${this.getAttribute('on-background') ? 'none' : 'underline'} !important;
       cursor: pointer;
     }
     .${this.attributes['css-class']} .labor-adobe-typo-body-link-alt {

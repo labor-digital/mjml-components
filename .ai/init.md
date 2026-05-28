@@ -94,11 +94,11 @@ Use `max-width` (not `min-width`) in all media queries to avoid layout issues in
 
 ### Testing
 
-Tests live in `playwright/snapshots.spec.ts`. The spec discovers every `.html` file in `previews/` (except `index.html`) and takes full-page screenshots at two viewports:
+Tests live in `tests/snapshots.spec.ts`. The spec discovers every `.html` file in `previews/` (except `index.html`) and takes full-page screenshots at two viewports:
 - `chromium-xs` — 400×700 (mobile)
 - `chromium-lg` — 1024×768 (desktop)
 
-Snapshots are stored in `playwright/test-snapshots/`. Run `--update-snapshots` after any intentional visual change.
+Snapshots are stored in `tests/test-snapshots/`. Run `--update-snapshots` after any intentional visual change.
 
 ### Registering Components in Consumer Projects
 

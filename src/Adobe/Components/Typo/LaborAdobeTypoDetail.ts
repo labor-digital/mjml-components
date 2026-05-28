@@ -26,9 +26,9 @@ const styleMapping = AdobeRedStyleMapping
   allowedParentTags: ['mj-column'],
   allowedChildTags: [],
 })
-
 export class LaborAdobeTypoDetail extends BodyComponent {
   // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
+  // endingTag = true
 
   static additionalAttributes = {
     fontSize: styleMapping.typographies.detail.fontSize,
@@ -54,13 +54,13 @@ export class LaborAdobeTypoDetail extends BodyComponent {
   `
 
   render() {
-    let fontWeight = styleMapping.typographies.detail.fontWeight.normal;
-    let fontFamily = "'adobe-clean-display', 'adobe-clean', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'";
+    let fontWeight = styleMapping.typographies.detail.fontWeight.normal
+    let fontFamily = "'adobe-clean-display', 'adobe-clean', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'"
     switch (this.getAttribute('type')) {
       case 'light':
-        fontWeight = styleMapping.typographies.detail.fontWeight.light;
-        fontFamily = "'adobe-clean', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'";
-        break;
+        fontWeight = styleMapping.typographies.detail.fontWeight.light
+        fontFamily = "'adobe-clean', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'"
+        break
     }
 
     const attrs = {

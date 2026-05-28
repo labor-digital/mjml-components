@@ -58,14 +58,13 @@ const styleMapping = AdobeRedStyleMapping
   allowedParentTags: ['mj-body'],
   allowedChildTags: [],
 })
-
 export class LaborAdobeHeroCardSimpleTwo extends BodyComponent {
   // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
+  // endingTag = true
 
   render() {
-    let header =
-      this.getAttribute('product-src-overwrite')
-        ? `<labor-adobe-header
+    let header = this.getAttribute('product-src-overwrite')
+      ? `<labor-adobe-header
             product-src-overwrite="${this.getAttribute('product-src-overwrite')}"
             product-height-overwrite="${this.getAttribute('product-height-overwrite')}"
             product-width-overwrite="${this.getAttribute('product-width-overwrite')}"
@@ -74,7 +73,7 @@ export class LaborAdobeHeroCardSimpleTwo extends BodyComponent {
             header-bg-class="${this.getAttribute('header-bg-class')}"
             additional-padding-bottom=${this.getAttribute('header-additional-padding-bottom')}
           />`
-        : `<labor-adobe-header
+      : `<labor-adobe-header
             product="${this.getAttribute('product')}"
             product-color="${this.getAttribute('product-color')}"
             header-bg-class="${this.getAttribute('header-bg-class')}"

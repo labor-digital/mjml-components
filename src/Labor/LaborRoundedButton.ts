@@ -62,9 +62,9 @@ import widthParser from 'mjml-core/lib/helpers/widthParser'
   allowedParentTags: ['mj-column'],
   allowedChildTags: [],
 })
-
 export class LaborRoundedButton extends BodyComponent {
   // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
+  // endingTag = true
 
   calculateAWidth(width) {
     if (!width) return null

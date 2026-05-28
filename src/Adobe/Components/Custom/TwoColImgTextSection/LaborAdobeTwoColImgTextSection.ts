@@ -49,16 +49,10 @@ const styleMapping = AdobeRedStyleMapping
     },
   },
   allowedParentTags: ['mj-body'],
-  allowedChildTags: [
-    'labor-adobe-typo-body',
-    'labor-adobe-typo-heading-four',
-    'labor-adobe-button',
-  ],
+  allowedChildTags: ['labor-adobe-typo-body', 'labor-adobe-typo-heading-four', 'labor-adobe-button'],
   endingTag: false,
 })
-
 export class LaborAdobeTwoColImgTextSection extends BodyComponent {
-
   headStyle = (breakpoint) => `
     @media only screen and (max-width: ${breakpoint}) {
       .labor-adobe-two-col-img-text-section-responsive > table > tbody > tr > td {
@@ -69,7 +63,7 @@ export class LaborAdobeTwoColImgTextSection extends BodyComponent {
   `
 
   render() {
-    const imageAltAttr = this.getAttribute('image-alt') ? `alt="${this.getAttribute('image-alt')}"` : '';
+    const imageAltAttr = this.getAttribute('image-alt') ? `alt="${this.getAttribute('image-alt')}"` : ''
     const defaultPadding = this.getAttribute('with-padding') ? styleMapping.grids.desktop.contentSpacing : 0
     const imageDefaultPadding = this.getAttribute('with-padding-image') ? styleMapping.grids.desktop.contentSpacing : 0
 

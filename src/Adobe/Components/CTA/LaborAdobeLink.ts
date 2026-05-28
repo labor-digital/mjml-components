@@ -27,9 +27,9 @@ const styleMapping = AdobeRedStyleMapping
   allowedParentTags: ['mj-column', 'labor-adobe-actioncard'],
   allowedChildTags: [],
 })
-
 export class LaborAdobeLink extends BodyComponent {
   // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
+  // endingTag = true
 
   getStyles() {
     let color = ''

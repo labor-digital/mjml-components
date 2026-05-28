@@ -4,11 +4,11 @@ import { defineConfig, devices } from '@playwright/test';
  * @see https://playwright.dev/docs/test-configuration
  */
 export default defineConfig({
-  testDir: './playwright',
-  outputDir: './playwright/test-results',
+  testDir: '.',
+  outputDir: './test-results',
   // testIgnore: '*test-assets',
   testMatch: '**/*.spec.ts',
-  snapshotPathTemplate: './playwright/test-snapshots/{testFilePath}/{testName}/{projectName}{ext}',
+  snapshotPathTemplate: './test-snapshots/{testFilePath}/{testName}/{projectName}{ext}',
   timeout: 60000,
   fullyParallel: true,
   forbidOnly: true,
@@ -16,9 +16,9 @@ export default defineConfig({
   workers: 10,
   reporter: [
     ['list'],
-    ['html', { open: 'never', outputFolder: './playwright/test-reports' }],
-    ['json', { outputFile: './playwright/test-reports/results.json' }],
-    ['junit', { outputFile: './playwright/test-reports/results.xml' }],
+    ['html', { open: 'never', outputFolder: './test-reports' }],
+    ['json', { outputFile: './test-reports/results.json' }],
+    ['junit', { outputFile: './test-reports/results.xml' }],
   ],
   projects: [
     {

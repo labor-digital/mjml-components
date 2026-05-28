@@ -76,12 +76,14 @@ const styleMapping = AdobeRedStyleMapping
   allowedParentTags: ['mj-body'],
   allowedChildTags: [],
 })
-
 export class LaborAdobePod extends BodyComponent {
   // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
+  // endingTag = true
 
   render() {
-    const srcMobileAttr = this.getAttribute('image-src-mobile') ? `src-mobile="${this.getAttribute('image-src-mobile')}"` : '';
+    const srcMobileAttr = this.getAttribute('image-src-mobile')
+      ? `src-mobile="${this.getAttribute('image-src-mobile')}"`
+      : ''
 
     return (
       (this.getAttribute('image-src')
@@ -116,16 +118,15 @@ export class LaborAdobePod extends BodyComponent {
                       this.getAttribute('image-src')
                         ? styleMapping.spacings.horizontal.px0
                         : this.getAttribute('content-section-padding-top')
-                          ? this.getAttribute('content-section-padding-top')
-                          : styleMapping.spacings.horizontal.px100
+                        ? this.getAttribute('content-section-padding-top')
+                        : styleMapping.spacings.horizontal.px100
                     }"
                 >
                     <mj-column>
                     
                         ${
                           this.getAttribute('product')
-                            ? 
-                            `<labor-adobe-product-logo
+                            ? `<labor-adobe-product-logo
                                 product="${this.getAttribute('product')}"
                                 product-type="regular"
                                 product-color="${this.getAttribute('product-color')}"

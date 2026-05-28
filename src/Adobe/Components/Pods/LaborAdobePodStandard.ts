@@ -38,12 +38,14 @@ const styleMapping = AdobeRedStyleMapping
   allowedParentTags: ['mj-body'],
   allowedChildTags: [],
 })
-
 export class LaborAdobePodStandard extends BodyComponent {
   // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
+  // endingTag = true
 
   render() {
-    const srcMobileAttr = this.getAttribute('image-src-mobile') ? `image-src-mobile="${this.getAttribute('image-src-mobile')}"` : '';
+    const srcMobileAttr = this.getAttribute('image-src-mobile')
+      ? `image-src-mobile="${this.getAttribute('image-src-mobile')}"`
+      : ''
 
     return this.renderMJML(`
                 <labor-adobe-pod

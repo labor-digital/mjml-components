@@ -98,18 +98,19 @@ const styleMapping = AdobeRedStyleMapping
   allowedParentTags: ['mj-body'],
   allowedChildTags: [],
 })
-
 export class LaborAdobeHeroCardImmersiveTwo extends BodyComponent {
   // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
+  // endingTag = true
 
   render() {
-    const srcMobileAttr = this.getAttribute('image-src-mobile') ? `src-mobile="${this.getAttribute('image-src-mobile')}"` : '';
-    const imageAltAttr = this.getAttribute('image-alt') ? `alt="${this.getAttribute('image-alt')}"` : '';
-    const imageTitleAttr = this.getAttribute('image-title') ? `title="${this.getAttribute('image-title')}"` : '';
+    const srcMobileAttr = this.getAttribute('image-src-mobile')
+      ? `src-mobile="${this.getAttribute('image-src-mobile')}"`
+      : ''
+    const imageAltAttr = this.getAttribute('image-alt') ? `alt="${this.getAttribute('image-alt')}"` : ''
+    const imageTitleAttr = this.getAttribute('image-title') ? `title="${this.getAttribute('image-title')}"` : ''
 
-    let header =
-      this.getAttribute('product-src-overwrite')
-        ? `<labor-adobe-header
+    let header = this.getAttribute('product-src-overwrite')
+      ? `<labor-adobe-header
             product-src-overwrite="${this.getAttribute('product-src-overwrite')}"
             product-height-overwrite="${this.getAttribute('product-height-overwrite')}"
             product-width-overwrite="${this.getAttribute('product-width-overwrite')}"
@@ -118,11 +119,11 @@ export class LaborAdobeHeroCardImmersiveTwo extends BodyComponent {
             header-bg-class="${this.getAttribute('header-bg-class')}"
             additional-padding-bottom=${this.getAttribute('header-additional-padding-bottom')}
           />`
-        : `<labor-adobe-header
+      : `<labor-adobe-header
             product="${this.getAttribute('product')}"
             product-color="${this.getAttribute('product-color')}"
             header-bg-class="${this.getAttribute('header-bg-class')}"
-            additional-padding-bottom=${this.getAttribute('header-additional-padding-bottom') }
+            additional-padding-bottom=${this.getAttribute('header-additional-padding-bottom')}
           />`
 
     return (

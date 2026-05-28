@@ -34,10 +34,11 @@ const styleMapping = AdobeRedStyleMapping
   allowedParentTags: ['mj-column'],
   allowedChildTags: [],
 })
-
 export class LaborAdobeTypoDisplayOne extends BodyComponent {
   // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
+  // endingTag = true
 
+  userAttributes: Record<string, any> = {}
 
   static additionalAttributes = {
     // default attributes
@@ -111,17 +112,20 @@ export class LaborAdobeTypoDisplayOne extends BodyComponent {
   `
 
   constructor(initialData: any = {}) {
-    super(initialData);
-    this.userAttributes = initialData.attributes || {};
-    if(!this.userAttributes['responsive'] || this.userAttributes['responsive'] === 'none' || this.userAttributes['padding-bottom']){
-      this.attributes['css-class'] = '';
+    super(initialData)
+    this.userAttributes = initialData.attributes || {}
+    if (
+      !this.userAttributes['responsive'] ||
+      this.userAttributes['responsive'] === 'none' ||
+      this.userAttributes['padding-bottom']
+    ) {
+      this.attributes['css-class'] = ''
     } else {
-      this.attributes['padding-bottom'] = styleMapping.typographies.displayOne.padding.defaultPaddingBottom;
+      this.attributes['padding-bottom'] = styleMapping.typographies.displayOne.padding.defaultPaddingBottom
     }
   }
 
   render() {
-
     const attrs = {
       'font-size': LaborAdobeTypoDisplayOne.additionalAttributes.fontSize,
       'line-height': LaborAdobeTypoDisplayOne.additionalAttributes.lineHeight,
@@ -145,8 +149,8 @@ export class LaborAdobeTypoDisplayOne extends BodyComponent {
               this.getAttribute('responsive') === 'displayTwo'
                 ? 'labor-adobe-typo-display-one--responsive-two'
                 : this.getAttribute('responsive') === 'displayThree'
-                  ? 'labor-adobe-typo-display-one--responsive-three'
-                   : '', 
+                ? 'labor-adobe-typo-display-one--responsive-three'
+                : '',
           })}
         >
           ${this.getContent()}

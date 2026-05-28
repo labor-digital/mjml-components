@@ -20,16 +20,10 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsx scripts/generate-index.ts && tsc",
-    "register-components": "npm run build && tsx scripts/register-components.ts",
-    "preview": "npm run build && tsx scripts/compile-previews.ts",
-    "preview:validation": "npm run build && tsx scripts/compile-previews.ts --validation",
     "watch": "tsx scripts/generate-index.ts && tsc --watch",
-    "prettier-format": "prettier --config .prettierrc 'src/**/*.js' --write",
-    "test": "playwright test",
-    "test:ui": "playwright test --ui",
-    "test:headed": "playwright test --headed",
-    "test:debug": "playwright test --debug",
-    "test:report": "playwright show-report"
+    "preview": "npm run build && tsx scripts/compile-previews.ts",
+    "test": "npm run build && tsx scripts/compile-previews.ts && tsx scripts/compile-previews.ts --validation && playwright test --config=tests/playwright.config.js",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
   },
   "sideEffects": false,
   "dependencies": {
@@ -44,6 +38,8 @@
     "@babel/preset-env": "^7.24.6",
     "@babel/register": "^7.24.6",
     "@playwright/test": "^1.59.1",
+    "@types/mjml": "^5.0.0",
+    "@types/mjml-core": "^5.0.0",
     "glob": "^10.4.1",
     "gulp": "^5.0.0",
     "gulp-babel": "^8.0.0",

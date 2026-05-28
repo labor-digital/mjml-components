@@ -8,6 +8,7 @@ const isValidation = process.argv.includes('--validation')
 
 const rootDir = path.resolve(__dirname, '..')
 const srcDir = path.resolve(rootDir, 'src')
+const testsDir = path.resolve(rootDir, 'tests')
 const outputDir = path.resolve(rootDir, isValidation ? 'validation-errors' : 'previews')
 
 const mjmlFiles = isValidation
@@ -76,13 +77,13 @@ for (const file of mjmlFiles) {
 
 if (!isValidation) {
   fs.writeFileSync(
-    path.join(rootDir, 'errors.json'),
+    path.join(testsDir, 'errors.json'),
     JSON.stringify({ totalErrors, files: report }, null, 2),
   )
 }
 
 if (!isValidation && totalErrors) {
-  console.error(`\nPreview compilation finished with ${totalErrors} error(s). See errors.json for details.`)
+  console.error(`\nPreview compilation finished with ${totalErrors} error(s). See tests/errors.json for details.`)
   process.exit(1)
 } else if (isValidation) {
   console.log(`\nValidation compilation finished. ${totalErrors} error(s) across ${mjmlFiles.length} file(s).`)

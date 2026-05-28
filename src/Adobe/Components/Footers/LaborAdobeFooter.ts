@@ -47,9 +47,7 @@ const styleMapping = AdobeRedStyleMapping
   allowedChildTags: ['labor-adobe-typo-legal'],
   endingTag: false,
 })
-
 export class LaborAdobeFooter extends BodyComponent {
-
   static additionalAttributes = {
     desktopLeftRightPadding: styleMapping.grids.desktop.contentSpacing,
     mobileLeftRightPadding: styleMapping.grids.mobile.contentSpacing,
@@ -80,7 +78,7 @@ export class LaborAdobeFooter extends BodyComponent {
   `
 
   render() {
-    let basepath = "https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/footer_icons/"
+    let basepath = 'https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/footer_icons/'
 
     let socialElements = ``
 
@@ -91,7 +89,7 @@ export class LaborAdobeFooter extends BodyComponent {
         <mj-social-element
           name="facebook-noshare"
           href="${this.getAttribute('facebook-url')}"
-          src=${basepath + "facebook-logo-condensed.100x64.png"} 
+          src=${basepath + 'facebook-logo-condensed.100x64.png'} 
           alt="Facebook"
           background-color=${backgroundColor}
           border-radius=${iconRadius}
@@ -102,7 +100,7 @@ export class LaborAdobeFooter extends BodyComponent {
         <mj-social-element
           name="instagram"
           href="${this.getAttribute('instagram-url')}"
-          src=${basepath + "instagram-logo.100x64.png"}
+          src=${basepath + 'instagram-logo.100x64.png'}
           alt="Instagram"
           background-color=${backgroundColor}
           border-radius=${iconRadius}
@@ -113,7 +111,7 @@ export class LaborAdobeFooter extends BodyComponent {
         <mj-social-element
           name="youtube"
           href="${this.getAttribute('youtube-url')}"
-          src=${basepath + "youtube-logo.100x64.png"}
+          src=${basepath + 'youtube-logo.100x64.png'}
           alt="YouTube"
           background-color=${backgroundColor}
           border-radius=${iconRadius}
@@ -124,7 +122,7 @@ export class LaborAdobeFooter extends BodyComponent {
         <mj-social-element
           name="x-noshare"
           href="${this.getAttribute('x-url')}"
-          src=${basepath + "x-logo.100x64.png"}
+          src=${basepath + 'x-logo.100x64.png'}
           alt="X"
           background-color=${backgroundColor}
           border-radius=${iconRadius}
@@ -136,7 +134,7 @@ export class LaborAdobeFooter extends BodyComponent {
         <mj-social-element
           name="tiktok"
           href="${this.getAttribute('tiktok-url')}"
-          src=${basepath + "tiktok-logo.100x64.png"}
+          src=${basepath + 'tiktok-logo.100x64.png'}
           alt="TikTok"
           background-color=${backgroundColor}
           border-radius=${iconRadius}
@@ -147,7 +145,7 @@ export class LaborAdobeFooter extends BodyComponent {
         <mj-social-element
           name="discord"
           href="${this.getAttribute('discord-url')}"
-          src=${basepath + "discord-logo.100x64.png"}
+          src=${basepath + 'discord-logo.100x64.png'}
           alt="Discord"
           background-color=${backgroundColor}
           border-radius=${iconRadius}
@@ -158,7 +156,7 @@ export class LaborAdobeFooter extends BodyComponent {
         <mj-social-element
           name="linkedin-noshare"
           href="${this.getAttribute('linkedin-url')}"
-          src=${basepath + "linkedin-logo.100x64.png"}
+          src=${basepath + 'linkedin-logo.100x64.png'}
           alt="LinkedIn"
           background-color=${backgroundColor}
           border-radius=${iconRadius}
@@ -176,7 +174,7 @@ export class LaborAdobeFooter extends BodyComponent {
           LaborAdobeFooter.additionalAttributes.socialSectionLogoPaddingTop
         }>
           <mj-image
-            src=${basepath + "adobe-logo.red.320x76.png"}
+            src=${basepath + 'adobe-logo.red.320x76.png'}
             width="80px"
             height="19px"
             align="left"
@@ -193,9 +191,11 @@ export class LaborAdobeFooter extends BodyComponent {
       this.renderMJML(`
       <labor-adobe-section
         section-bg-class="${this.getAttribute('footer-bg-class')}"
-        padding-bottom=${this.getAttribute('overwrite-padding-bottom') 
-          ? this.getAttribute('overwrite-padding-bottom') 
-          : LaborAdobeFooter.additionalAttributes.contentSectionPaddingBottom}
+        padding-bottom=${
+          this.getAttribute('overwrite-padding-bottom')
+            ? this.getAttribute('overwrite-padding-bottom')
+            : LaborAdobeFooter.additionalAttributes.contentSectionPaddingBottom
+        }
       >
         <mj-column>
           ${this.renderChildren(null, { rawXML: true })}

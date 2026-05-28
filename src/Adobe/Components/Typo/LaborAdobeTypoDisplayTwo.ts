@@ -26,9 +26,9 @@ const styleMapping = AdobeRedStyleMapping
   allowedParentTags: ['mj-column'],
   allowedChildTags: [],
 })
-
 export class LaborAdobeTypoDisplayTwo extends BodyComponent {
   // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
+  // endingTag = true
 
   static additionalAttributes = {
     fontSize: styleMapping.typographies.displayTwo.fontSize,

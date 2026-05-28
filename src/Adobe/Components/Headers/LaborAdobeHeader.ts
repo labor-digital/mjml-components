@@ -78,9 +78,9 @@ const styleMapping = AdobeRedStyleMapping
   },
   allowedParentTags: ['mj-body'],
 })
-
 export class LaborAdobeHeader extends BodyComponent {
   // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
+  // endingTag = true
 
   static additionalAttributes = {
     desktopLeftRightPadding: styleMapping.grids.desktop.contentSpacing,
@@ -100,30 +100,31 @@ export class LaborAdobeHeader extends BodyComponent {
   `
 
   render() {
-
     // If it's one of the default lockups, use the values from mapping
     // Otherwise fall back to default props
-    let src;
-    let imgHeight;
-    let imgWidth;
-    let title;
-    let alt;
+    let src
+    let imgHeight
+    let imgWidth
+    let title
+    let alt
 
     if (this.getAttribute('product-src-overwrite')) {
       // custom image, use provided values
-      src = this.getAttribute('product-src-overwrite');
-      title = this.getAttribute('title') ?? '';
-      alt = this.getAttribute('alt') ?? '';
-      imgHeight = this.getAttribute('product-height-overwrite') ?? this.getAttribute('product-height');
-      imgWidth = this.getAttribute('product-width-overwrite') ?? this.getAttribute('product-width');
-
+      src = this.getAttribute('product-src-overwrite')
+      title = this.getAttribute('title') ?? ''
+      alt = this.getAttribute('alt') ?? ''
+      imgHeight = this.getAttribute('product-height-overwrite') ?? this.getAttribute('product-height')
+      imgWidth = this.getAttribute('product-width-overwrite') ?? this.getAttribute('product-width')
     } else {
       // default lockup, use values from mapping
-      let productLockup = AdobeProductLockupMapping.getLockup(this.getAttribute('product'), this.getAttribute('product-color'));
-      if (!productLockup) return '';
-      src = productLockup.location;
-      title = productLockup.name+ ' logo';
-      alt = productLockup.name;
+      let productLockup = AdobeProductLockupMapping.getLockup(
+        this.getAttribute('product'),
+        this.getAttribute('product-color')
+      )
+      if (!productLockup) return ''
+      src = productLockup.location
+      title = productLockup.name + ' logo'
+      alt = productLockup.name
 
       let getImageRatio = () => {
         let cleanTargetHeight = parseInt(imgHeight.replace('px', ''))
@@ -133,13 +134,13 @@ export class LaborAdobeHeader extends BodyComponent {
       }
 
       let calculateLogoWidth = () => {
-        let imageRatio = getImageRatio();
-        let logoWidth = parseInt(productLockup.width);
+        let imageRatio = getImageRatio()
+        let logoWidth = parseInt(productLockup.width)
         return Math.floor(logoWidth / imageRatio).toString() + 'px'
       }
 
-      imgHeight = this.getAttribute('product-height');
-      imgWidth = calculateLogoWidth();
+      imgHeight = this.getAttribute('product-height')
+      imgWidth = calculateLogoWidth()
     }
 
     let imgAttrs = {
@@ -167,12 +168,12 @@ export class LaborAdobeHeader extends BodyComponent {
     let sectionAttrs = {
       'section-bg-class': this.getAttribute('header-bg-class'),
       'with-padding': false,
-      'padding-bottom': this.getAttribute('additional-padding-bottom') ?? 0
+      'padding-bottom': this.getAttribute('additional-padding-bottom') ?? 0,
     }
-    if(this.getAttribute('border')) sectionAttrs['border-top'] = LaborAdobeHeader.additionalAttributes.withBorder;
+    if (this.getAttribute('border')) sectionAttrs['border-top'] = LaborAdobeHeader.additionalAttributes.withBorder
 
-    if (title) imgAttrs['title'] = title;
-    if (alt) imgAttrs['alt'] = alt;
+    if (title) imgAttrs['title'] = title
+    if (alt) imgAttrs['alt'] = alt
 
     return this.renderMJML(`
       <labor-adobe-section

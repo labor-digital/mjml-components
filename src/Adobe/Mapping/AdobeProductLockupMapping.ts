@@ -1,43 +1,51 @@
 export default class AdobeProductLockupMapping {
-
-  static basePath = 'https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/product_lockups/';
-  static defaultHeight = 168;
+  static basePath = 'https://landing.adobe.com/dam/uploads/2025/na/labor-email-assets/red/product_lockups/'
+  static defaultHeight = 168
   static defaultColor = 'red_gray'
 
   static getLockup = (product, color) => {
-
-    if(!color) {
-      color = this.lockups[product]['defaultColor'] ?? this.defaultColor;
+    if (!color) {
+      color = this.lockups[product]['defaultColor'] ?? this.defaultColor
     }
 
-    if( !product || !color || !this.lockups[product] || !this.lockups[product]['width'] || !this.lockups[product]['images'][color]) return null;
+    if (
+      !product ||
+      !color ||
+      !this.lockups[product] ||
+      !this.lockups[product]['width'] ||
+      !this.lockups[product]['images'][color]
+    )
+      return null
 
-    let width = this.lockups[product]['images'][color]['width'] ?? this.lockups[product]['width'];
-    let height =  this.lockups[product]['images'][color]['height'] ?? this.lockups[product]['height'] ?? this.defaultHeight;
+    let width = this.lockups[product]['images'][color]['width'] ?? this.lockups[product]['width']
+    let height =
+      this.lockups[product]['images'][color]['height'] ?? this.lockups[product]['height'] ?? this.defaultHeight
 
-    return  {
+    return {
       name: this.lockups[product]['name'],
       key: this.lockups[product]['key'],
       // keep it possible to use image specific width/height eg. after an update, otherwise use the default values
       width: width,
       height: height,
       location:
-        this.basePath + (this.lockups[product]['images'][color]['location'] ?? this.lockups[product]['key'] + '.' + color + '.' + width + 'x' + height + '.png'),
+        this.basePath +
+        (this.lockups[product]['images'][color]['location'] ??
+          this.lockups[product]['key'] + '.' + color + '.' + width + 'x' + height + '.png'),
     }
   }
 
   static lockups = {
-    brand :{
+    brand: {
       name: 'Adobe',
       key: 'brand',
       width: 328,
       defaultColor: 'red',
       images: {
         red: {
-          location: 'brand.01.red.328x168.png'
+          location: 'brand.01.red.328x168.png',
         },
         white: {
-          location: 'brand.01.white.328x168.png'
+          location: 'brand.01.white.328x168.png',
         },
       },
     },
@@ -129,17 +137,17 @@ export default class AdobeProductLockupMapping {
         white_black: {},
       },
     },
-    education_exchange :{
+    education_exchange: {
       name: 'Education Exchange',
       key: 'education_exchange',
       width: 984,
       defaultColor: 'red',
       images: {
         red: {
-          location: 'education_exchange.red.984x168.png'
+          location: 'education_exchange.red.984x168.png',
         },
         white: {
-          location: 'education_exchange.white.984x168.png'
+          location: 'education_exchange.white.984x168.png',
         },
       },
     },

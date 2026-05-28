@@ -36,20 +36,14 @@ const styleMapping = AdobeRedStyleMapping
     },
   },
   allowedParentTags: ['mj-body'],
-  allowedChildTags: [
-    'labor-adobe-typo-body',
-    'labor-adobe-typo-heading-four',
-    'labor-adobe-link',
-  ],
+  allowedChildTags: ['labor-adobe-typo-body', 'labor-adobe-typo-heading-four', 'labor-adobe-link'],
   endingTag: false,
 })
-
 export class LaborAdobePodZFormation extends BodyComponent {
-
   static additionalAttributes = {
-    'padding-to-edge-mobile' : (parseInt(styleMapping.grids.mobile.contentSpacing)
-                                       + parseInt(styleMapping.spacings.horizontal.px60) + 'px'),
-    'padding-image-to-content-desktop' : styleMapping.spacings.horizontal.px40
+    'padding-to-edge-mobile':
+      parseInt(styleMapping.grids.mobile.contentSpacing) + parseInt(styleMapping.spacings.horizontal.px60) + 'px',
+    'padding-image-to-content-desktop': styleMapping.spacings.horizontal.px40,
   }
 
   headStyle = (breakpoint) => `
@@ -84,7 +78,7 @@ export class LaborAdobePodZFormation extends BodyComponent {
   `
 
   render() {
-    const imageAltAttr = this.getAttribute('image-alt') ? `alt="${this.getAttribute('image-alt')}"` : '';
+    const imageAltAttr = this.getAttribute('image-alt') ? `alt="${this.getAttribute('image-alt')}"` : ''
     return this.renderMJML(`
       <labor-adobe-section
         direction="${this.getAttribute('direction')}"
@@ -95,9 +89,11 @@ export class LaborAdobePodZFormation extends BodyComponent {
       >
         <mj-column 
           vertical-align="top"
-          css-class="labor-adobe-z-image-col-responsive ${this.getAttribute('direction') === 'ltr' 
-                      ? 'labor-adobe-z-image-col-responsive--ltr' 
-                      : 'labor-adobe-z-image-col-responsive--rtl'}"
+          css-class="labor-adobe-z-image-col-responsive ${
+            this.getAttribute('direction') === 'ltr'
+              ? 'labor-adobe-z-image-col-responsive--ltr'
+              : 'labor-adobe-z-image-col-responsive--rtl'
+          }"
           padding-left="${
             this.getAttribute('direction') === 'ltr'
               ? '0'
@@ -113,26 +109,24 @@ export class LaborAdobePodZFormation extends BodyComponent {
             src="${this.getAttribute('image-src')}"
             src-mobile="${this.getAttribute('image-src-mobile')}"
             ${imageAltAttr}
-            align="${
-              this.getAttribute('direction') === 'ltr' 
-                ? 'left'
-                : 'right'
-            }"
+            align="${this.getAttribute('direction') === 'ltr' ? 'left' : 'right'}"
           />
         </mj-column>
         <mj-column 
           vertical-align="top"
-          css-class="labor-adobe-z-content-col-responsive ${this.getAttribute('direction') === 'ltr' 
-                      ? 'labor-adobe-z-content-col-responsive--ltr'
-                      : 'labor-adobe-z-content-col-responsive--rtl'}" 
+          css-class="labor-adobe-z-content-col-responsive ${
+            this.getAttribute('direction') === 'ltr'
+              ? 'labor-adobe-z-content-col-responsive--ltr'
+              : 'labor-adobe-z-content-col-responsive--rtl'
+          }" 
           padding-top="12px"
           padding-left="${
-            this.getAttribute('direction') === 'ltr' 
-              ? '0' 
+            this.getAttribute('direction') === 'ltr'
+              ? '0'
               : LaborAdobePodZFormation.additionalAttributes['padding-image-to-content-desktop']
           }"
           padding-right="${
-            this.getAttribute('direction') === 'ltr' 
+            this.getAttribute('direction') === 'ltr'
               ? LaborAdobePodZFormation.additionalAttributes['padding-image-to-content-desktop']
               : '0'
           }"

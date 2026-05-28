@@ -11,7 +11,7 @@ const styleMapping = AdobeRedStyleMapping
       type: 'string',
       default: styleMapping.colors.adobeRed.hex,
     },
-    color: {
+    'color': {
       type: 'string',
       default: styleMapping.colors.white.hex,
     },
@@ -27,7 +27,7 @@ const styleMapping = AdobeRedStyleMapping
       type: 'string',
       default: '20px',
     },
-    align: {
+    'align': {
       type: 'string',
       default: 'left',
     },
@@ -42,9 +42,9 @@ const styleMapping = AdobeRedStyleMapping
   },
   allowedParentTags: ['mj-body'],
 })
-
 export class LaborAdobeFooterBand extends BodyComponent {
   // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
+  // endingTag = true
 
   render() {
     let typoAttrs = {

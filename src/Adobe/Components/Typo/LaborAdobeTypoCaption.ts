@@ -32,9 +32,9 @@ const styleMapping = AdobeRedStyleMapping
   allowedParentTags: ['mj-column'],
   allowedChildTags: [],
 })
-
 export class LaborAdobeTypoCaption extends BodyComponent {
   // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
+  // endingTag = true
 
   static additionalAttributes = {
     fontWeight: styleMapping.typographies.caption.fontWeight,

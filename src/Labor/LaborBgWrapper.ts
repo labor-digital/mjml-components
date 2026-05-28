@@ -8,7 +8,6 @@ import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
   allowedChildTags: ['mj-section'],
   endingTag: false,
 })
-
 export class LaborBgWrapper extends MjWrapper {
   getStyles() {
     const fullWidth = this.isFullWidth()

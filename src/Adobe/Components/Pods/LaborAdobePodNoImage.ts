@@ -36,9 +36,9 @@ const styleMapping = AdobeRedStyleMapping
   allowedParentTags: ['mj-body'],
   allowedChildTags: [],
 })
-
 export class LaborAdobePodNoImage extends BodyComponent {
   // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
+  // endingTag = true
 
   render() {
     return this.getAttribute('cta-type') === 'button'
@@ -57,7 +57,7 @@ export class LaborAdobePodNoImage extends BodyComponent {
                     ${this.getContent()}
                 </labor-adobe-pod>
             `)
-        : this.renderMJML(`
+      : this.renderMJML(`
                 <labor-adobe-pod
                     section-bg-class="${this.getAttribute('section-bg-class')}"
      

@@ -28,9 +28,9 @@ import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
   allowedParentTags: ['mj-body'],
   allowedChildTags: [],
 })
-
 export class LaborAdobeHeroCardSplitOne extends BodyComponent {
   // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
+  // endingTag = true
 
   render() {
     const attrs = {
@@ -47,7 +47,8 @@ export class LaborAdobeHeroCardSplitOne extends BodyComponent {
       imageTitle: this.getAttribute('image-title') || '',
       imageAlt: this.getAttribute('image-alt') || '',
       paddingBottom: this.getAttribute('padding-bottom') || AdobeRedStyleMapping.spacings.custom.px0,
-      headerPaddingBottom: this.getAttribute('header-additional-padding-bottom') || AdobeRedStyleMapping.spacings.vertical.px20,
+      headerPaddingBottom:
+        this.getAttribute('header-additional-padding-bottom') || AdobeRedStyleMapping.spacings.vertical.px20,
       sectionPaddingBottom: this.getAttribute('section-padding-bottom') || AdobeRedStyleMapping.spacings.vertical.px60,
     }
 
@@ -56,7 +57,9 @@ export class LaborAdobeHeroCardSplitOne extends BodyComponent {
     const productWidthOverwrite = this.getAttribute('product-width-overwrite')
     const imageSrcMobile = this.getAttribute('image-src-mobile')
 
-    const productHeightOverwriteAttr = productHeightOverwrite ? `product-height-overwrite="${productHeightOverwrite}"` : ''
+    const productHeightOverwriteAttr = productHeightOverwrite
+      ? `product-height-overwrite="${productHeightOverwrite}"`
+      : ''
     const productWidthOverwriteAttr = productWidthOverwrite ? `product-width-overwrite="${productWidthOverwrite}"` : ''
     const imageSrcMobileAttr = imageSrcMobile ? `src-mobile="${imageSrcMobile}"` : ''
 

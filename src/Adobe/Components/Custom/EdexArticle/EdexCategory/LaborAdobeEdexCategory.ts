@@ -20,9 +20,12 @@ const styleMapping = AdobeRedStyleMapping
   allowedParentTags: ['mj-column'],
   allowedChildTags: [],
 })
-
 export class LaborAdobeEdexCategory extends BodyComponent {
   // endingTag is set to true by default in @MJMLCustomComponent when not specified in options
+  // endingTag = true
+
+  // declared to satisfy TypeScript; assigned in constructor based on whether css-class is provided
+  setCustomStyles: boolean = false
 
   static additionalAttributes = {
     fontWeight: styleMapping.typographyFontWeight.medium,
