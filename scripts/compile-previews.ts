@@ -1,6 +1,9 @@
 import fs from 'fs'
 import path from 'path'
-import mjml2html from 'mjml'
+import type { MJMLParseResults, MJMLParsingOptions } from 'mjml-core'
+import _mjml2html from 'mjml'
+// @types/mjml-core incorrectly declares mjml2html as async; cast to the actual synchronous signature
+const mjml2html = _mjml2html as unknown as (input: string, options?: MJMLParsingOptions) => MJMLParseResults
 import { globSync } from 'glob'
 import './register-components'
 
@@ -9,7 +12,7 @@ const isValidation = process.argv.includes('--validation')
 const rootDir = path.resolve(__dirname, '..')
 const srcDir = path.resolve(rootDir, 'src')
 const testsDir = path.resolve(rootDir, 'tests')
-const outputDir = path.resolve(rootDir, isValidation ? 'validation-errors' : 'previews')
+const outputDir = path.resolve(rootDir, isValidation ? 'tests/test-validation-errors' : 'previews')
 
 const mjmlFiles = isValidation
   ? globSync('Adobe/**/*--validation.mjml', { cwd: srcDir })

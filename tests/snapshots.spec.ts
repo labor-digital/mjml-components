@@ -25,10 +25,10 @@ test.describe('Preview Snapshots', () => {
 });
 
 test.describe('Validation Snapshots', () => {
-  const validationDir = join(process.cwd(), 'validation-errors');
+  const validationDir = join(process.cwd(), 'tests/test-validation-errors');
 
   if (!existsSync(validationDir)) {
-    console.warn(`\nWarning: validation-errors/ directory not found — Validation Snapshots will be skipped. Run "npm run preview:validation" first.\n`);
+    console.warn(`\nWarning: tests/test-validation-errors/ directory not found — Validation Snapshots will be skipped. Run "npm run test" to generate them.\n`);
   }
 
   const jsonFiles = existsSync(validationDir)

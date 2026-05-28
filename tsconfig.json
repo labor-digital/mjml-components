@@ -18,11 +18,8 @@
     "target": "ES6",
     "module": "CommonJS",
     "declarationMap": true,
-//    "sourceMap": true,
     "outDir": "./lib",
     "rootDirs": ["./src", "./scripts"],
-//    "allowSyntheticDefaultImports": true,
-//    "useDefineForClassFields": true,
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "lib", "previews"]

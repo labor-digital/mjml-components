@@ -22,32 +22,22 @@
     "build": "tsx scripts/generate-index.ts && tsc",
     "watch": "tsx scripts/generate-index.ts && tsc --watch",
     "preview": "npm run build && tsx scripts/compile-previews.ts",
-    "test": "npm run build && tsx scripts/compile-previews.ts && tsx scripts/compile-previews.ts --validation && playwright test --config=tests/playwright.config.js",
+    "test": "npm run build && tsx scripts/compile-previews.ts && tsx scripts/compile-previews.ts --validation && tsx scripts/check-browsers.ts && playwright test --config=tests/playwright.config.js",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
   },
   "sideEffects": false,
   "dependencies": {
     "js-md5": "^0.8.3",
     "mjml": "4.7.*",
-    "mjml-custom-component-decorator": "^4.1.0"
+    "mjml-custom-component-decorator": "^4.1.0",
+    "mjml-validator": "^4.7.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.6",
-    "@babel/eslint-parser": "^7.24.6",
-    "@babel/plugin-proposal-decorators": "^7.24.6",
-    "@babel/preset-env": "^7.24.6",
-    "@babel/register": "^7.24.6",
     "@playwright/test": "^1.59.1",
     "@types/mjml": "^5.0.0",
     "@types/mjml-core": "^5.0.0",
     "glob": "^10.4.1",
-    "gulp": "^5.0.0",
-    "gulp-babel": "^8.0.0",
-    "gulp-collect": "^0.1.0",
-    "gulp-watch": "^4.3.11",
     "prettier": "^2.8.8",
-    "pretty": "^2.0.0",
-    "through2": "^4.0.2",
     "tsx": "^4.21.0",
     "typescript": "^5.4.0"
   },

@@ -1,9 +1,13 @@
-.babelrc
-.editorconfig
+.ai
 .github
 .gitignore
 .idea
-gulpfile.babel.js
-node_modules
+.nvmrc
 .prettierrc
+node_modules
+scripts
 src
+tests
+tsconfig.json
+errors.json
+previews
