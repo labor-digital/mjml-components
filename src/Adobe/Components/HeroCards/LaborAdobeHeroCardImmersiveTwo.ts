@@ -24,7 +24,7 @@ const styleMapping = AdobeRedStyleMapping
       default: 'express',
     },
     'product-color': {
-      type: 'enum(red_black,red_gray,red_white,white_black)',
+      type: 'enum(red,white,red_black,red_gray,red_white,white_black)',
       default: 'red_gray',
     },
     'product-src-overwrite': {

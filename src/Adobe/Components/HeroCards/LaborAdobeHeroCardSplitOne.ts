@@ -8,7 +8,7 @@ import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
     'header-bg-class': { type: 'string', default: 'content-bg' },
     'section-bg-class': { type: 'string', default: 'content-bg' },
     'product': { type: 'string', default: 'express' },
-    'product-color': { type: 'enum(red_black,red_gray,red_white,white_black)', default: 'red_gray' },
+    'product-color': { type: 'enum(red,white,red_black,red_gray,red_white,white_black)', default: 'red_gray' },
     'product-src-overwrite': { type: 'string' },
     'product-height-overwrite': { type: 'unit(px)' },
     'product-width-overwrite': { type: 'unit(px)' },
