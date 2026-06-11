@@ -8,6 +8,10 @@ import widthParser from 'mjml-core/lib/helpers/widthParser'
     'href': {
       type: 'string',
     },
+    'target': {
+      type: 'string',
+      default: '_blank',
+    },
     'padding-bottom': {
       type: 'unit(px,%)',
     },
@@ -146,7 +150,7 @@ export class LaborRoundedButton extends BodyComponent {
                           <!--<![endif]-->
                             <a ${this.htmlAttributes({
                               href: this.getAttribute('href'),
-                              target: '_blank',
+                              target: this.getAttribute('target'),
                               style: {
                                 'color': this.getAttribute('color'),
 

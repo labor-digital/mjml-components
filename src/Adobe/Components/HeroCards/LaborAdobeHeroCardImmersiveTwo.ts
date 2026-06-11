@@ -90,6 +90,10 @@ const styleMapping = AdobeRedStyleMapping
       type: 'unit(px)',
       default: styleMapping.spacings.vertical.px100,
     },
+    // deprecated aliases
+    'section-padding-bottom': { type: 'unit(px)' },
+    'section-padding-top': { type: 'unit(px)' },
+    'padding-bottom': { type: 'unit(px)' },
     'on-background': {
       type: 'boolean',
       default: false,
@@ -131,8 +135,8 @@ export class LaborAdobeHeroCardImmersiveTwo extends BodyComponent {
       this.renderMJML(`
         <labor-adobe-section
           with-padding="false"
-          padding-bottom="${this.getAttribute('image-section-padding-bottom')}"
-          padding-top="${this.getAttribute('image-section-padding-top')}"
+          padding-bottom="${this.getAttribute('image-section-padding-bottom') || this.getAttribute('section-padding-bottom')}"
+          padding-top="${this.getAttribute('image-section-padding-top') || this.getAttribute('section-padding-top')}"
           section-bg-class="${this.getAttribute('section-bg-class')}"
         >
           <mj-column>
@@ -151,7 +155,7 @@ export class LaborAdobeHeroCardImmersiveTwo extends BodyComponent {
       this.renderMJML(`
         <labor-adobe-section
           padding-top="${this.getAttribute('content-section-padding-top')}"
-          padding-bottom="${this.getAttribute('content-section-padding-bottom')}"
+          padding-bottom="${this.getAttribute('content-section-padding-bottom') || this.getAttribute('padding-bottom')}"
           section-bg-class="${this.getAttribute('section-bottom-bg-class')}"
           >
           <mj-column>

@@ -4,9 +4,14 @@ import AdobeRedStyleMapping from '../../Styles/AdobeRedStyleMapping'
 
 const styleMapping = AdobeRedStyleMapping
 
+const inheritedAttributes = Object.fromEntries(
+  Object.entries((MjSection as any).allowedAttributes as Record<string, string>).map(([k, v]) => [k, { type: v }])
+)
+
 @MJMLCustomComponent({
   tag: 'labor-adobe-section',
   attributes: {
+    ...inheritedAttributes,
     'with-padding': {
       type: 'boolean',
       default: true,

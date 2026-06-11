@@ -1,9 +1,14 @@
 import MjImage from 'mjml-image'
 import { MJMLCustomComponent } from 'mjml-custom-component-decorator'
 
+const inheritedAttributes = Object.fromEntries(
+  Object.entries((MjImage as any).allowedAttributes as Record<string, string>).map(([k, v]) => [k, { type: v }])
+)
+
 @MJMLCustomComponent({
   tag: 'labor-responsive-image',
   attributes: {
+    ...inheritedAttributes,
     'src-mobile': {
       type: 'string',
     },
