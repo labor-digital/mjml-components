@@ -5,7 +5,7 @@
   },
   {
     "tagName": "labor-adobe-hero-card-simple-one",
-    "message": "Attribute product-color has invalid value: rainbow for type Enum, only accepts red_black, red_gray, red_white, white_black"
+    "message": "Attribute product-color has invalid value: rainbow for type Enum, only accepts red, white, red_black, red_gray, red_white, white_black"
   },
   {
     "tagName": "labor-adobe-hero-card-simple-two",
@@ -13,7 +13,7 @@
   },
   {
     "tagName": "labor-adobe-hero-card-simple-two",
-    "message": "Attribute product-color has invalid value: rainbow for type Enum, only accepts red_black, red_gray, red_white, white_black"
+    "message": "Attribute product-color has invalid value: rainbow for type Enum, only accepts red, white, red_black, red_gray, red_white, white_black"
   },
   {
     "tagName": "labor-adobe-hero-card-split-one",
@@ -21,7 +21,7 @@
   },
   {
     "tagName": "labor-adobe-hero-card-split-one",
-    "message": "Attribute product-color has invalid value: rainbow for type Enum, only accepts red_black, red_gray, red_white, white_black"
+    "message": "Attribute product-color has invalid value: rainbow for type Enum, only accepts red, white, red_black, red_gray, red_white, white_black"
   },
   {
     "tagName": "labor-adobe-hero-card-split-two",
@@ -29,7 +29,7 @@
   },
   {
     "tagName": "labor-adobe-hero-card-split-two",
-    "message": "Attribute product-color has invalid value: rainbow for type Enum, only accepts red_black, red_gray, red_white, white_black"
+    "message": "Attribute product-color has invalid value: rainbow for type Enum, only accepts red, white, red_black, red_gray, red_white, white_black"
   },
   {
     "tagName": "labor-adobe-hero-card-immersive-one",
@@ -45,7 +45,7 @@
   },
   {
     "tagName": "labor-adobe-hero-card-immersive-two",
-    "message": "Attribute product-color has invalid value: rainbow for type Enum, only accepts red_black, red_gray, red_white, white_black"
+    "message": "Attribute product-color has invalid value: rainbow for type Enum, only accepts red, white, red_black, red_gray, red_white, white_black"
   },
   {
     "tagName": "labor-adobe-hero-card-immersive-three",

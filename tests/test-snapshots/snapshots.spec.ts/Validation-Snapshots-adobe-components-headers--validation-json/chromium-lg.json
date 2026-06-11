@@ -1,7 +1,7 @@
 [
   {
     "tagName": "labor-adobe-header",
-    "message": "labor-adobe-header cannot be used inside mj-column, only inside: mj-attributes, mj-body"
+    "message": "labor-adobe-header cannot be used inside mj-column, only inside: mj-attributes, mj-body, labor-bg-wrapper"
   },
   {
     "tagName": "labor-adobe-header",
