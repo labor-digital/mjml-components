@@ -76,7 +76,7 @@ const styleMapping = AdobeRedStyleMapping
       default: styleMapping.spacings.vertical.px20,
     },
   },
-  allowedParentTags: ['mj-body'],
+  allowedParentTags: ['mj-body', 'labor-bg-wrapper'],
 })
 export class LaborAdobeHeader extends BodyComponent {
   // endingTag is set to true by default in @MJMLCustomComponent when not specified in options

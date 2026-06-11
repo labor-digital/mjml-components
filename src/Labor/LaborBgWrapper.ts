@@ -9,7 +9,7 @@ const inheritedAttributes = Object.fromEntries(
   tag: 'labor-bg-wrapper',
   attributes: { ...inheritedAttributes },
   allowedParentTags: ['mj-body'],
-  allowedChildTags: ['mj-section'],
+  allowedChildTags: ['mj-section', 'labor-adobe-header'],
   endingTag: false,
 })
 export class LaborBgWrapper extends MjWrapper {
