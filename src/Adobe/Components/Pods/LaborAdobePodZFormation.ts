@@ -36,7 +36,7 @@ const styleMapping = AdobeRedStyleMapping
     },
   },
   allowedParentTags: ['mj-body'],
-  allowedChildTags: ['labor-adobe-typo-body', 'labor-adobe-typo-heading-four', 'labor-adobe-link'],
+  allowedChildTags: ['labor-adobe-typo-body', 'labor-adobe-typo-heading-three', 'labor-adobe-link'],
   endingTag: false,
 })
 export class LaborAdobePodZFormation extends BodyComponent {

@@ -19,7 +19,7 @@ const styleMapping = AdobeRedStyleMapping
       default: styleMapping.typographies.headingThree.paddingBottom,
     },
   },
-  allowedParentTags: ['mj-column', 'labor-adobe-actioncard'],
+  allowedParentTags: ['mj-column', 'labor-adobe-actioncard', 'labor-adobe-pod-z-formation'],
   allowedChildTags: [],
 })
 export class LaborAdobeTypoHeadingThree extends BodyComponent {

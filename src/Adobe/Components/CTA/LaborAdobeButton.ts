@@ -15,6 +15,10 @@ const styleMapping = AdobeRedStyleMapping
       type: 'string',
       default: '#',
     },
+    'target': {
+      type: 'string',
+      default: '_blank',
+    },
     'width': {
       type: 'unit(px)',
       default: '200px',
@@ -38,6 +42,7 @@ export class LaborAdobeButton extends BodyComponent {
   render() {
     let attrs = {
       'href': this.getAttribute('href'),
+      'target': this.getAttribute('target'),
       'width': this.getAttribute('width'),
       'inner-padding': '7px 18px 9px 18px',
       'border-width': '2px',

@@ -13,11 +13,11 @@
   },
   {
     "tagName": "labor-adobe-typo-heading-three",
-    "message": "labor-adobe-typo-heading-three cannot be used inside mj-body, only inside: mj-attributes, mj-column, labor-adobe-actioncard, labor-adobe-action-card"
+    "message": "labor-adobe-typo-heading-three cannot be used inside mj-body, only inside: mj-attributes, mj-column, labor-adobe-actioncard, labor-adobe-pod-z-formation, labor-adobe-action-card"
   },
   {
     "tagName": "labor-adobe-typo-heading-four",
-    "message": "labor-adobe-typo-heading-four cannot be used inside mj-body, only inside: mj-attributes, mj-column, labor-adobe-actioncard, labor-adobe-pod-z-formation, labor-adobe-two-col-img-text-section, labor-adobe-action-card"
+    "message": "labor-adobe-typo-heading-four cannot be used inside mj-body, only inside: mj-attributes, mj-column, labor-adobe-actioncard, labor-adobe-two-col-img-text-section, labor-adobe-action-card"
   },
   {
     "tagName": "labor-adobe-typo-display-one",
