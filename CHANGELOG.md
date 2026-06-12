@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 4.0.0 (2026-06-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* The build system and component registration API have changed
+completely. The Gulp/Babel pipeline is replaced with TypeScript (tsc + tsx).
+
+Components are no longer exported as default exports with static allowedAttributes
+and defaultAttributes properties. They are now named exports decorated with
+@MJMLCustomComponent, which handles registration automatically on import.
+
+Before (3.x):
+  require('@labor-digital/mjml-components')  // side-effect import, registers all
+
+After (4.x):
+  import '@labor-digital/mjml-components'    // same side-effect pattern works,
+                                             // but components are now named exports
+
+Custom components extending library classes must be updated:
+- Change `export default class Foo extends LibraryComponent` to
+  `export class Foo extends LibraryComponent`
+- Replace static `allowedAttributes`/`defaultAttributes` with the
+  `@MJMLCustomComponent` decorator
+- Node >= 22 is required (dropped support for Node 18)
+
+### Features
+
+* rewrite component library in TypeScript with decorator-based registration ([13812e9](https://github.com/labor-digital/mjml-components/commit/13812e9a849009ada9cbd6a6cc02a0c32ec96c0a))
+
 ### 3.0.65 (2026-05-04)
 
 ### 3.0.64 (2026-05-04)
