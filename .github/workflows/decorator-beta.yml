@@ -1,0 +1,36 @@
+name: Release_Decorator_Beta
+
+on:
+  push:
+    branches:
+      - decorator-beta
+
+permissions:
+  id-token: write
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        uses: actions/checkout@v6
+      -
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          registry-url: 'https://registry.npmjs.org'
+      -
+        name: Installing npm modules
+        run: npm install
+      -
+        name: Build components
+        run: npm run build
+      -
+        name: Create Changelog and bump release version
+        uses: labor-digital/conventional-release-action@master
+        with:
+          github-token: ${{ secrets.github_token }}
+      -
+        name: Publish library on npm
+        run: npm publish --provenance --access public
