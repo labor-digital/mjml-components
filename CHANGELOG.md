@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 3.0.74 (2026-07-16)
+
 ### 3.0.73 (2026-07-16)
 
 ### [3.0.71](https://github.com/labor-digital/mjml-components/compare/v3.0.50...v3.0.71) (2026-07-16)
