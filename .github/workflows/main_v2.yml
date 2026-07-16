@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - decorator-beta
 
 permissions:
   id-token: write
