@@ -15,11 +15,15 @@ export default class LaborAdobeFooterImageBand extends BodyComponent {
   static allowedAttributes = {
     'src': 'string',
     'src-mobile': 'string',
+    'href': 'string',
+    'target': 'string',
   }
 
   static defaultAttributes = {
     'src': '',
     'src-mobile': '',
+    'href': '',
+    'target': '_blank',
   }
 
   render() {
@@ -29,6 +33,11 @@ export default class LaborAdobeFooterImageBand extends BodyComponent {
       'fluid-on-mobile': true,
       'width': '600px',
       'align': 'left',
+    }
+
+    if (this.getAttribute('href')) {
+      imgAttrs['href'] = this.getAttribute('href')
+      imgAttrs['target'] = this.getAttribute('target')
     }
 
     return this.renderMJML(`
