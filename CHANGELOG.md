@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 3.0.75 (2026-07-17)
+
+
+### Bug Fixes
+
+* add href and target attributes to LaborAdobeFooterImageBand component ([4229fea](https://github.com/labor-digital/mjml-components/commit/4229fea648f39f17c965c91df01c29d90b70bfaa))
+
 ### 3.0.74 (2026-07-16)
 
 ### 3.0.73 (2026-07-16)
